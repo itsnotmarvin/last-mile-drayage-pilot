@@ -709,7 +709,7 @@
       ],
       "compliance_effect": "permit_required",
       "confidence": "high",
-      "notes": "This creates the oversize/overweight vehicle profile for Task 4."
+      "notes": "This rule provides the oversize/overweight trigger used by the representative vehicle profiles."
     },
     {
       "rule_id": "rule_031",
