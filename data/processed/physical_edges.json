@@ -1,0 +1,4349 @@
+{
+  "metadata": {
+    "status": "working_draft",
+    "created_utc": "2026-06-26T08:26:05Z",
+    "description": "Physical road edges covering candidate paths to APM Terminals Elizabeth. OSM vector geometry is used for McLester Street, Tripoli Street, and North Avenue/North Avenue East. NJ_Roads attributes are recorded where found.",
+    "candidate_paths": {
+      "path_a_exit13a_to_apm": "NJ Turnpike/I-95 Exit 13A / North Ave access -> North Ave/North Avenue East -> McLester Street -> Tripoli/terminal-side access -> APM terminal access",
+      "path_b_us1_9_to_apm": "US 1&9 / North Ave approach -> North Ave/North Avenue East -> McLester Street -> Tripoli/terminal-side access -> APM terminal access"
+    },
+    "source_summary": {
+      "osm_source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "osm_total_features_exported": 1859,
+      "osm_candidate_features_selected": 74,
+      "nj_roads_observation": {
+        "source_layer": "NJ_Roads_shp_Clip",
+        "observed_feature": {
+          "SLD_NAME": "NORTH AVE",
+          "MP_START": 0,
+          "MP_END": 0.75,
+          "MEASURED_L": 0.75,
+          "SRI": "02041097__",
+          "ROUTE_SUBT": 7,
+          "ACTIVE": "Y"
+        },
+        "interpretation": "Use as official GIS/SRI/milepost support for the North Ave portion of the candidate path."
+      },
+      "important_interpretation": "McLester and Tripoli are route-verified and represented in OSM vector geometry. Their official SRI/milepost attributes were not found in the initial NJ_Roads_shp_Clip SLD_NAME search."
+    },
+    "scope": "APM Terminals Elizabeth candidate access network"
+  },
+  "edges": [
+    {
+      "edge_id": "osm_edge_001",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "11772015",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "concrete",
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1883438,
+            40.6743933
+          ],
+          [
+            -74.1884539,
+            40.6744361
+          ],
+          [
+            -74.1885161,
+            40.674461
+          ],
+          [
+            -74.1885815,
+            40.6744883
+          ],
+          [
+            -74.188644,
+            40.6745163
+          ],
+          [
+            -74.1887064,
+            40.6745464
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_002",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "11779358",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1806659,
+            40.6708428
+          ],
+          [
+            -74.1809506,
+            40.6709481
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_003",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "11783660",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1660491,
+            40.6652067
+          ],
+          [
+            -74.1662916,
+            40.6651752
+          ],
+          [
+            -74.1663597,
+            40.6651745
+          ],
+          [
+            -74.1665435,
+            40.6651727
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_004",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "11783661",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1920977,
+            40.6753615
+          ],
+          [
+            -74.1919225,
+            40.6752909
+          ],
+          [
+            -74.1916825,
+            40.6751941
+          ],
+          [
+            -74.1912366,
+            40.6750142
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_005",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "11784931",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1627427,
+            40.6706209
+          ],
+          [
+            -74.1638353,
+            40.6690435
+          ],
+          [
+            -74.1644097,
+            40.6682142
+          ],
+          [
+            -74.1645138,
+            40.6680482
+          ],
+          [
+            -74.1646012,
+            40.6678939
+          ],
+          [
+            -74.1646978,
+            40.6677123
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_006",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "23453784",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.182133,
+            40.6712066
+          ],
+          [
+            -74.181394,
+            40.6709424
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_007",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "27650267",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1769623,
+            40.6694474
+          ],
+          [
+            -74.1785609,
+            40.6700862
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_008",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "27650268",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1785609,
+            40.6700862
+          ],
+          [
+            -74.17899,
+            40.670253
+          ],
+          [
+            -74.1793736,
+            40.6703893
+          ],
+          [
+            -74.1801726,
+            40.6706676
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_009",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "27650269",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1786881,
+            40.6699696
+          ],
+          [
+            -74.1771017,
+            40.6693313
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_010",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "27650270",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1771017,
+            40.6693313
+          ],
+          [
+            -74.1763109,
+            40.6690143
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_011",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "27650392",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "tertiary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1928748,
+            40.6756805
+          ],
+          [
+            -74.1930998,
+            40.6757702
+          ],
+          [
+            -74.193912,
+            40.676094
+          ],
+          [
+            -74.1941095,
+            40.6761737
+          ],
+          [
+            -74.1947907,
+            40.6764486
+          ],
+          [
+            -74.1953869,
+            40.6766892
+          ],
+          [
+            -74.1959672,
+            40.6769233
+          ],
+          [
+            -74.1960936,
+            40.6769743
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_012",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "38928732",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "concrete",
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1859357,
+            40.672001
+          ],
+          [
+            -74.185868,
+            40.6719572
+          ],
+          [
+            -74.1857887,
+            40.6719116
+          ],
+          [
+            -74.1857319,
+            40.6718801
+          ],
+          [
+            -74.1856731,
+            40.6718505
+          ],
+          [
+            -74.1856109,
+            40.6718207
+          ],
+          [
+            -74.1855485,
+            40.6717931
+          ],
+          [
+            -74.1854839,
+            40.6717663
+          ],
+          [
+            -74.1854218,
+            40.6717427
+          ],
+          [
+            -74.185355,
+            40.6717188
+          ],
+          [
+            -74.1852906,
+            40.6716979
+          ],
+          [
+            -74.1852238,
+            40.6716795
+          ],
+          [
+            -74.1851499,
+            40.6716614
+          ],
+          [
+            -74.1850851,
+            40.6716467
+          ],
+          [
+            -74.1850176,
+            40.6716342
+          ],
+          [
+            -74.1849448,
+            40.6716205
+          ],
+          [
+            -74.1848722,
+            40.6716097
+          ],
+          [
+            -74.184792,
+            40.6716005
+          ],
+          [
+            -74.184579,
+            40.6715799
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_013",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "38928733",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.184579,
+            40.6715799
+          ],
+          [
+            -74.1836224,
+            40.6714992
+          ],
+          [
+            -74.1833455,
+            40.6714732
+          ],
+          [
+            -74.1830922,
+            40.6714478
+          ],
+          [
+            -74.183024,
+            40.6714402
+          ],
+          [
+            -74.1829477,
+            40.6714305
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_014",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "39172320",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1873687,
+            40.6740377
+          ],
+          [
+            -74.1874442,
+            40.6740692
+          ],
+          [
+            -74.1875133,
+            40.6740971
+          ],
+          [
+            -74.1875856,
+            40.6741251
+          ],
+          [
+            -74.1876638,
+            40.6741529
+          ],
+          [
+            -74.1881878,
+            40.6743365
+          ],
+          [
+            -74.1882651,
+            40.6743638
+          ],
+          [
+            -74.1883438,
+            40.6743933
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_015",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "55120948",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1753534,
+            40.6688018
+          ],
+          [
+            -74.1762752,
+            40.669171
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_016",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "55120982",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1762752,
+            40.669171
+          ],
+          [
+            -74.1769623,
+            40.6694474
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_017",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "55121046",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": "40 mph",
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1755047,
+            40.6686891
+          ],
+          [
+            -74.1739681,
+            40.6680661
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_018",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "55121053",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1763109,
+            40.6690143
+          ],
+          [
+            -74.1755047,
+            40.6686891
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_019",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "56053768",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1912366,
+            40.6750142
+          ],
+          [
+            -74.190499,
+            40.6747213
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_020",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "56053770",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1917058,
+            40.6760886
+          ],
+          [
+            -74.1917773,
+            40.6760738
+          ],
+          [
+            -74.1918462,
+            40.6760577
+          ],
+          [
+            -74.1919073,
+            40.6760388
+          ],
+          [
+            -74.1919734,
+            40.6760134
+          ],
+          [
+            -74.1920402,
+            40.6759851
+          ],
+          [
+            -74.1921041,
+            40.6759537
+          ],
+          [
+            -74.192164,
+            40.6759218
+          ],
+          [
+            -74.1922197,
+            40.6758888
+          ],
+          [
+            -74.1922796,
+            40.6758503
+          ],
+          [
+            -74.1924412,
+            40.6757473
+          ],
+          [
+            -74.192486,
+            40.6757241
+          ],
+          [
+            -74.1925304,
+            40.6757055
+          ],
+          [
+            -74.1925745,
+            40.6756919
+          ],
+          [
+            -74.1926169,
+            40.6756832
+          ],
+          [
+            -74.1926628,
+            40.6756772
+          ],
+          [
+            -74.1927105,
+            40.6756755
+          ],
+          [
+            -74.1927602,
+            40.675677
+          ],
+          [
+            -74.1928155,
+            40.6756802
+          ],
+          [
+            -74.1928313,
+            40.675681
+          ],
+          [
+            -74.1928748,
+            40.6756805
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_021",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "60730847",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1803908,
+            40.670587
+          ],
+          [
+            -74.1790836,
+            40.6701192
+          ],
+          [
+            -74.1789586,
+            40.6700745
+          ],
+          [
+            -74.1788243,
+            40.6700237
+          ],
+          [
+            -74.1786881,
+            40.6699696
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_022",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "123617818",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "1",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1887064,
+            40.6745464
+          ],
+          [
+            -74.1887656,
+            40.6745808
+          ],
+          [
+            -74.1888183,
+            40.6746123
+          ],
+          [
+            -74.1888763,
+            40.6746505
+          ],
+          [
+            -74.1889273,
+            40.6746876
+          ],
+          [
+            -74.1889788,
+            40.6747275
+          ],
+          [
+            -74.1890367,
+            40.6747734
+          ],
+          [
+            -74.1890855,
+            40.6748143
+          ],
+          [
+            -74.1891458,
+            40.6748695
+          ],
+          [
+            -74.1892035,
+            40.674923
+          ],
+          [
+            -74.1892565,
+            40.674977
+          ],
+          [
+            -74.1893023,
+            40.6750282
+          ],
+          [
+            -74.1893449,
+            40.6750807
+          ],
+          [
+            -74.1893853,
+            40.6751384
+          ],
+          [
+            -74.1894932,
+            40.6753
+          ],
+          [
+            -74.1895283,
+            40.6753511
+          ],
+          [
+            -74.1895624,
+            40.6753977
+          ],
+          [
+            -74.1896001,
+            40.675442
+          ],
+          [
+            -74.1896393,
+            40.6754875
+          ],
+          [
+            -74.1896788,
+            40.6755302
+          ],
+          [
+            -74.1897205,
+            40.67557
+          ],
+          [
+            -74.1897649,
+            40.6756081
+          ],
+          [
+            -74.1898125,
+            40.6756474
+          ],
+          [
+            -74.1898703,
+            40.6756933
+          ],
+          [
+            -74.1899271,
+            40.6757366
+          ],
+          [
+            -74.1899875,
+            40.6757783
+          ],
+          [
+            -74.1900444,
+            40.6758159
+          ],
+          [
+            -74.190108,
+            40.6758552
+          ],
+          [
+            -74.1901639,
+            40.6758882
+          ],
+          [
+            -74.1902347,
+            40.6759268
+          ],
+          [
+            -74.1902937,
+            40.6759576
+          ],
+          [
+            -74.1903569,
+            40.675989
+          ],
+          [
+            -74.1904213,
+            40.676018
+          ],
+          [
+            -74.1904888,
+            40.676045
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_023",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "123617819",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.190499,
+            40.6747213
+          ],
+          [
+            -74.1898996,
+            40.6744815
+          ],
+          [
+            -74.1884229,
+            40.6739035
+          ],
+          [
+            -74.1882942,
+            40.6738518
+          ],
+          [
+            -74.1881737,
+            40.6738006
+          ],
+          [
+            -74.1880552,
+            40.6737485
+          ],
+          [
+            -74.1879247,
+            40.6736882
+          ],
+          [
+            -74.1878006,
+            40.6736286
+          ],
+          [
+            -74.1876911,
+            40.6735731
+          ],
+          [
+            -74.1875895,
+            40.6735203
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_024",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "123617822",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1817367,
+            40.6712468
+          ],
+          [
+            -74.1829825,
+            40.671731
+          ],
+          [
+            -74.1849905,
+            40.6725389
+          ],
+          [
+            -74.1851161,
+            40.6725904
+          ],
+          [
+            -74.1852535,
+            40.6726501
+          ],
+          [
+            -74.1853784,
+            40.6727089
+          ],
+          [
+            -74.1855008,
+            40.6727723
+          ],
+          [
+            -74.1856139,
+            40.6728375
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_025",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "235364504",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1659707,
+            40.6650369
+          ],
+          [
+            -74.1656933,
+            40.6651293
+          ],
+          [
+            -74.1655053,
+            40.6652264
+          ],
+          [
+            -74.1653308,
+            40.6653557
+          ],
+          [
+            -74.1651821,
+            40.665499
+          ],
+          [
+            -74.1650519,
+            40.665671
+          ],
+          [
+            -74.1649859,
+            40.6658438
+          ],
+          [
+            -74.1649331,
+            40.6660526
+          ],
+          [
+            -74.1648644,
+            40.6664103
+          ],
+          [
+            -74.1648292,
+            40.66658
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_026",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "262807606",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "7",
+        "lanes_forward": "3",
+        "lanes_backward": "4",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1716161,
+            40.667115
+          ],
+          [
+            -74.1718216,
+            40.6671969
+          ],
+          [
+            -74.1725448,
+            40.6674881
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_027",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "426517212",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "4",
+        "lanes_forward": "2",
+        "lanes_backward": "2",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1593243,
+            40.6753348
+          ],
+          [
+            -74.1590845,
+            40.6756498
+          ],
+          [
+            -74.1587736,
+            40.6760355
+          ],
+          [
+            -74.1578818,
+            40.6771096
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_028",
+      "name": "Tripoli Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "terminal_access_or_port_interface",
+      "jurisdiction_basis": "OSM vector feature plus APM route context; exact owner/jurisdiction should be confirmed later if needed.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "426517213",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "Tripoli Street",
+        "highway": "service",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": null,
+        "tiger_cfcc": null
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1601678,
+            40.6741861
+          ],
+          [
+            -74.1599519,
+            40.6740939
+          ],
+          [
+            -74.1598898,
+            40.6740693
+          ],
+          [
+            -74.1590689,
+            40.6737438
+          ],
+          [
+            -74.1580429,
+            40.6733288
+          ],
+          [
+            -74.1572953,
+            40.6730406
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_029",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "426517214",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "4",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1678638,
+            40.6654654
+          ],
+          [
+            -74.1672393,
+            40.6651434
+          ],
+          [
+            -74.1669564,
+            40.6650362
+          ],
+          [
+            -74.1668139,
+            40.6649999
+          ],
+          [
+            -74.1665632,
+            40.6649696
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_030",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "426517215",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.168201,
+            40.6657191
+          ],
+          [
+            -74.1682623,
+            40.6657636
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_031",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "426523623",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": "40 mph",
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1739681,
+            40.6680661
+          ],
+          [
+            -74.1746405,
+            40.6684651
+          ],
+          [
+            -74.1748042,
+            40.6685485
+          ],
+          [
+            -74.1749393,
+            40.6686161
+          ],
+          [
+            -74.1750742,
+            40.6686802
+          ],
+          [
+            -74.1751938,
+            40.6687347
+          ],
+          [
+            -74.1753534,
+            40.6688018
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_032",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "476216587",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1963599,
+            40.6770804
+          ],
+          [
+            -74.1967491,
+            40.6772356
+          ],
+          [
+            -74.1967835,
+            40.6772493
+          ],
+          [
+            -74.1969358,
+            40.67731
+          ],
+          [
+            -74.1970513,
+            40.6773561
+          ],
+          [
+            -74.1971827,
+            40.67741
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_033",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "476470654",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1872962,
+            40.6733388
+          ],
+          [
+            -74.1872079,
+            40.6732738
+          ],
+          [
+            -74.1871379,
+            40.6732158
+          ],
+          [
+            -74.1870722,
+            40.6731585
+          ],
+          [
+            -74.1869982,
+            40.673087
+          ],
+          [
+            -74.1869308,
+            40.6730197
+          ],
+          [
+            -74.1868673,
+            40.6729555
+          ],
+          [
+            -74.1863735,
+            40.6724184
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_034",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "506734760",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A31"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1972998,
+            40.677458
+          ],
+          [
+            -74.1974255,
+            40.6775112
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_035",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "506734783",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A31"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1971827,
+            40.67741
+          ],
+          [
+            -74.1972998,
+            40.677458
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_036",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "573126459",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.181394,
+            40.6709424
+          ],
+          [
+            -74.1809284,
+            40.6707772
+          ],
+          [
+            -74.1807479,
+            40.6707132
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_037",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "573126460",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1807479,
+            40.6707132
+          ],
+          [
+            -74.1803908,
+            40.670587
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_038",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "573126461",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1801726,
+            40.6706676
+          ],
+          [
+            -74.1805207,
+            40.6707904
+          ],
+          [
+            -74.1806659,
+            40.6708428
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_039",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "579755517",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1904888,
+            40.676045
+          ],
+          [
+            -74.1905517,
+            40.6760664
+          ],
+          [
+            -74.1906228,
+            40.6760877
+          ],
+          [
+            -74.1906999,
+            40.6761081
+          ],
+          [
+            -74.1907791,
+            40.6761252
+          ],
+          [
+            -74.1908594,
+            40.6761382
+          ],
+          [
+            -74.1909411,
+            40.6761487
+          ],
+          [
+            -74.1910222,
+            40.6761548
+          ],
+          [
+            -74.191106,
+            40.6761582
+          ],
+          [
+            -74.1911851,
+            40.6761581
+          ],
+          [
+            -74.1912733,
+            40.6761543
+          ],
+          [
+            -74.1913679,
+            40.6761465
+          ],
+          [
+            -74.1914518,
+            40.6761352
+          ],
+          [
+            -74.191543,
+            40.6761209
+          ],
+          [
+            -74.1917058,
+            40.6760886
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_040",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "582734764",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A31"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1974255,
+            40.6775112
+          ],
+          [
+            -74.1975223,
+            40.6775521
+          ],
+          [
+            -74.1975487,
+            40.6775633
+          ],
+          [
+            -74.1985489,
+            40.6779866
+          ],
+          [
+            -74.1996827,
+            40.6784622
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_041",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "582734767",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1875895,
+            40.6735203
+          ],
+          [
+            -74.1874874,
+            40.6734616
+          ],
+          [
+            -74.1873943,
+            40.6734038
+          ],
+          [
+            -74.1872962,
+            40.6733388
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_042",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "682840547",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "tertiary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1960936,
+            40.6769743
+          ],
+          [
+            -74.1963599,
+            40.6770804
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_043",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "692525097",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1646978,
+            40.6677123
+          ],
+          [
+            -74.1647673,
+            40.6675185
+          ],
+          [
+            -74.164823,
+            40.6673631
+          ],
+          [
+            -74.1648869,
+            40.6671278
+          ],
+          [
+            -74.1650392,
+            40.6666065
+          ],
+          [
+            -74.1651763,
+            40.6659698
+          ],
+          [
+            -74.165244,
+            40.6657816
+          ],
+          [
+            -74.1653432,
+            40.6656273
+          ],
+          [
+            -74.1654972,
+            40.6654749
+          ],
+          [
+            -74.1656756,
+            40.6653481
+          ],
+          [
+            -74.1658832,
+            40.6652548
+          ],
+          [
+            -74.1660491,
+            40.6652067
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_044",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "692525104",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.164542,
+            40.6676655
+          ],
+          [
+            -74.1644258,
+            40.6678887
+          ],
+          [
+            -74.1642863,
+            40.6681206
+          ],
+          [
+            -74.1635248,
+            40.6692138
+          ],
+          [
+            -74.1629869,
+            40.669986
+          ],
+          [
+            -74.1627697,
+            40.6702979
+          ],
+          [
+            -74.1625854,
+            40.6705624
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_045",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "966197498",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A31"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1996827,
+            40.6784622
+          ],
+          [
+            -74.2008157,
+            40.6789423
+          ],
+          [
+            -74.2019676,
+            40.6794304
+          ],
+          [
+            -74.2030465,
+            40.6798806
+          ],
+          [
+            -74.2031337,
+            40.6799171
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_046",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "968418465",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1665435,
+            40.6651727
+          ],
+          [
+            -74.1667909,
+            40.6652225
+          ],
+          [
+            -74.167045,
+            40.6653032
+          ],
+          [
+            -74.1678971,
+            40.6656713
+          ],
+          [
+            -74.1679479,
+            40.6656906
+          ],
+          [
+            -74.1679976,
+            40.6657032
+          ],
+          [
+            -74.1680578,
+            40.6657114
+          ],
+          [
+            -74.1681273,
+            40.6657161
+          ],
+          [
+            -74.168201,
+            40.6657191
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_047",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "968418466",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1665632,
+            40.6649696
+          ],
+          [
+            -74.1664005,
+            40.6649713
+          ],
+          [
+            -74.1663494,
+            40.6649764
+          ],
+          [
+            -74.166186,
+            40.6649924
+          ],
+          [
+            -74.1659707,
+            40.6650369
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_048",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "968426514",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "7",
+        "lanes_forward": "4",
+        "lanes_backward": "3",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1706477,
+            40.666728
+          ],
+          [
+            -74.1713978,
+            40.6670315
+          ],
+          [
+            -74.1716161,
+            40.667115
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_049",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1051843087",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "1",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1928748,
+            40.6756805
+          ],
+          [
+            -74.1927416,
+            40.6756257
+          ],
+          [
+            -74.1921931,
+            40.6754
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_050",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1062939437",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "tertiary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1921931,
+            40.6754
+          ],
+          [
+            -74.1920977,
+            40.6753615
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_051",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1079702929",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.168201,
+            40.6657191
+          ],
+          [
+            -74.1681663,
+            40.6656605
+          ],
+          [
+            -74.1681202,
+            40.6656121
+          ],
+          [
+            -74.168087,
+            40.6655815
+          ],
+          [
+            -74.168031,
+            40.6655424
+          ],
+          [
+            -74.1679634,
+            40.6655085
+          ],
+          [
+            -74.1678638,
+            40.6654654
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_052",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1089320816",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1829477,
+            40.6714305
+          ],
+          [
+            -74.1828646,
+            40.6714175
+          ],
+          [
+            -74.1827788,
+            40.6714018
+          ],
+          [
+            -74.1826814,
+            40.6713798
+          ],
+          [
+            -74.182602,
+            40.6713595
+          ],
+          [
+            -74.1825163,
+            40.6713359
+          ],
+          [
+            -74.1824321,
+            40.67131
+          ],
+          [
+            -74.1823526,
+            40.6712843
+          ],
+          [
+            -74.1822565,
+            40.6712509
+          ],
+          [
+            -74.182133,
+            40.6712066
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_053",
+      "name": "North Avenue",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1089321884",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A31"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.2031337,
+            40.6799171
+          ],
+          [
+            -74.2032295,
+            40.6799583
+          ],
+          [
+            -74.2041709,
+            40.6803634
+          ],
+          [
+            -74.204275,
+            40.6804082
+          ],
+          [
+            -74.2043682,
+            40.6804477
+          ],
+          [
+            -74.2051449,
+            40.6807769
+          ],
+          [
+            -74.2054124,
+            40.6808902
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_054",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1089322272",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1863735,
+            40.6724184
+          ],
+          [
+            -74.1861033,
+            40.6721373
+          ],
+          [
+            -74.1860605,
+            40.6720979
+          ],
+          [
+            -74.1860107,
+            40.6720568
+          ],
+          [
+            -74.1859357,
+            40.672001
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_055",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1091066899",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1602392,
+            40.6740902
+          ],
+          [
+            -74.1604024,
+            40.6740107
+          ],
+          [
+            -74.160447,
+            40.6739463
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_056",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1123644967",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "2",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1856139,
+            40.6728375
+          ],
+          [
+            -74.1857301,
+            40.6729107
+          ],
+          [
+            -74.1858337,
+            40.6729837
+          ],
+          [
+            -74.1859223,
+            40.6730524
+          ],
+          [
+            -74.1860283,
+            40.6731355
+          ],
+          [
+            -74.186222,
+            40.6732896
+          ],
+          [
+            -74.1864241,
+            40.6734479
+          ],
+          [
+            -74.1866259,
+            40.673601
+          ],
+          [
+            -74.1867256,
+            40.6736737
+          ],
+          [
+            -74.1868345,
+            40.6737472
+          ],
+          [
+            -74.1868869,
+            40.6737826
+          ],
+          [
+            -74.1869449,
+            40.6738178
+          ],
+          [
+            -74.1869982,
+            40.67385
+          ],
+          [
+            -74.1870543,
+            40.6738817
+          ],
+          [
+            -74.1871129,
+            40.6739131
+          ],
+          [
+            -74.1871754,
+            40.6739463
+          ],
+          [
+            -74.1872341,
+            40.6739755
+          ],
+          [
+            -74.187294,
+            40.6740041
+          ],
+          [
+            -74.1873687,
+            40.6740377
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_057",
+      "name": "Tripoli Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "terminal_access_or_port_interface",
+      "jurisdiction_basis": "OSM vector feature plus APM route context; exact owner/jurisdiction should be confirmed later if needed.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1126604353",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "Tripoli Street",
+        "highway": "service",
+        "oneway": null,
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": null,
+        "tiger_cfcc": null
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1572953,
+            40.6730406
+          ],
+          [
+            -74.1570141,
+            40.6729291
+          ],
+          [
+            -74.1568004,
+            40.6728444
+          ],
+          [
+            -74.1559308,
+            40.6724996
+          ],
+          [
+            -74.1550864,
+            40.6721649
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_058",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1280423095",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": "asphalt",
+        "maxspeed": null,
+        "NJDOT_SRI": "20000624",
+        "HFCS": "Urban Minor Arterial",
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "available_or_partially_available",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1809506,
+            40.6709481
+          ],
+          [
+            -74.181229,
+            40.6710539
+          ],
+          [
+            -74.1817367,
+            40.6712468
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_059",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1305236073",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "4",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1613071,
+            40.6723953
+          ],
+          [
+            -74.1610859,
+            40.6727152
+          ],
+          [
+            -74.1610569,
+            40.6727647
+          ],
+          [
+            -74.1610401,
+            40.6727933
+          ],
+          [
+            -74.1609127,
+            40.6729691
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_060",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1305242765",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "4",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1647336,
+            40.6670404
+          ],
+          [
+            -74.1647227,
+            40.6670932
+          ],
+          [
+            -74.1646463,
+            40.6673719
+          ],
+          [
+            -74.164621,
+            40.6674432
+          ],
+          [
+            -74.1646009,
+            40.6674998
+          ],
+          [
+            -74.164542,
+            40.6676655
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_061",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1305242766",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "5",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1648292,
+            40.66658
+          ],
+          [
+            -74.1647336,
+            40.6670404
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_062",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1305702109",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "7",
+        "lanes_forward": "3",
+        "lanes_backward": "4",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1602392,
+            40.6740902
+          ],
+          [
+            -74.1601678,
+            40.6741861
+          ],
+          [
+            -74.1600656,
+            40.6743279
+          ],
+          [
+            -74.160033,
+            40.6743696
+          ],
+          [
+            -74.1596539,
+            40.6748623
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_063",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1305702110",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "5",
+        "lanes_forward": "2",
+        "lanes_backward": "3",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1596539,
+            40.6748623
+          ],
+          [
+            -74.1593243,
+            40.6753348
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_064",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1306103687",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "8",
+        "lanes_forward": "3",
+        "lanes_backward": "5",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1682623,
+            40.6657636
+          ],
+          [
+            -74.1684352,
+            40.6658335
+          ],
+          [
+            -74.1689544,
+            40.6660435
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_065",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1306103688",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "6",
+        "lanes_forward": "3",
+        "lanes_backward": "3",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1689544,
+            40.6660435
+          ],
+          [
+            -74.1694168,
+            40.6662306
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_066",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1306103689",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "7",
+        "lanes_forward": "4",
+        "lanes_backward": "3",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1694168,
+            40.6662306
+          ],
+          [
+            -74.1697023,
+            40.6663468
+          ],
+          [
+            -74.1697516,
+            40.6663668
+          ],
+          [
+            -74.1699448,
+            40.6664453
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_067",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1306103690",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "7",
+        "lanes_forward": "3",
+        "lanes_backward": "4",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1699448,
+            40.6664453
+          ],
+          [
+            -74.1700814,
+            40.6664978
+          ],
+          [
+            -74.1702163,
+            40.6665555
+          ],
+          [
+            -74.1706477,
+            40.666728
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_068",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1306103691",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "7",
+        "lanes_forward": "3",
+        "lanes_backward": "4",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1734186,
+            40.667839
+          ],
+          [
+            -74.173631,
+            40.6679236
+          ],
+          [
+            -74.1739681,
+            40.6680661
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_069",
+      "name": "North Avenue East",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "local_or_county_road_union_nj_with_nj_roads_attribute_support",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; NJ_Roads search also found NORTH AVE with SRI/milepost attributes.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1306103692",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "North Avenue East",
+        "highway": "secondary",
+        "oneway": null,
+        "lanes": "7",
+        "lanes_forward": "3",
+        "lanes_backward": "4",
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1725448,
+            40.6674881
+          ],
+          [
+            -74.1727757,
+            40.6675811
+          ],
+          [
+            -74.1733237,
+            40.6678012
+          ],
+          [
+            -74.1734186,
+            40.667839
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_070",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1376393939",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": null,
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1610803,
+            40.6730306
+          ],
+          [
+            -74.1612131,
+            40.6728256
+          ],
+          [
+            -74.1612447,
+            40.6727834
+          ],
+          [
+            -74.1626737,
+            40.6707205
+          ],
+          [
+            -74.1627427,
+            40.6706209
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_071",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1376393940",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1625854,
+            40.6705624
+          ],
+          [
+            -74.1623637,
+            40.6708807
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_072",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1376393942",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1623637,
+            40.6708807
+          ],
+          [
+            -74.1623267,
+            40.6709338
+          ],
+          [
+            -74.1613071,
+            40.6723953
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_073",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1532377836",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.160447,
+            40.6739463
+          ],
+          [
+            -74.1610803,
+            40.6730306
+          ]
+        ]
+      }
+    },
+    {
+      "edge_id": "osm_edge_074",
+      "name": "McLester Street",
+      "from_node": null,
+      "to_node": null,
+      "candidate_paths": [
+        "path_a_exit13a_to_apm",
+        "path_b_us1_9_to_apm"
+      ],
+      "jurisdiction": "port_access_local_road_union_nj",
+      "jurisdiction_basis": "OSM tiger:county=Union, NJ; road functions as APM/port approach segment.",
+      "geometry_source": "QuickOSM export from OpenStreetMap",
+      "source_file": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "source_osm_id": "1532377838",
+      "source_osm_type": "way",
+      "rule_relevant_attributes": {
+        "name": "McLester Street",
+        "highway": "secondary",
+        "oneway": "yes",
+        "lanes": "3",
+        "lanes_forward": null,
+        "lanes_backward": null,
+        "surface": null,
+        "maxspeed": null,
+        "NJDOT_SRI": null,
+        "HFCS": null,
+        "tiger_county": "Union, NJ",
+        "tiger_cfcc": "A41"
+      },
+      "sri_milepost_status": "not_available_in_osm_feature; use NJ_Roads attributes where found",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1609127,
+            40.6729691
+          ],
+          [
+            -74.1607659,
+            40.6731807
+          ],
+          [
+            -74.1602324,
+            40.6739494
+          ],
+          [
+            -74.1602392,
+            40.6740902
+          ]
+        ]
+      }
+    }
+  ]
+}
