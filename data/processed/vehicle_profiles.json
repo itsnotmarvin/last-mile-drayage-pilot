@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "description": "Representative drayage truck profiles for later route-rule evaluation. Profiles are source-backed rule-test profiles, not observed fleet records.",
-  "status": "draft_task4_source_verified_representative_profiles",
+  "status": "source_backed_representative_profiles",
   "profiles": [
     {
       "profile_id": "standard_5_axle_drayage_truck",
@@ -48,43 +48,60 @@
           "property": "weight_lbs",
           "value": 80000,
           "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "Overweight Corridors and Permitting — New Jersey; summary of NJ truck weight limits",
-          "rule_ids": ["rule_030"]
+          "source_section": "Overweight Corridors and Permitting \u2014 New Jersey; summary of NJ truck weight limits",
+          "rule_ids": [
+            "rule_030"
+          ]
         },
         {
           "property": "axles",
           "value": 5,
           "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "Overweight Corridors and Permitting — New Jersey; gross weight 80,000 lbs / 5 axles",
-          "rule_ids": ["rule_030"]
+          "source_section": "Overweight Corridors and Permitting \u2014 New Jersey; gross weight 80,000 lbs / 5 axles",
+          "rule_ids": [
+            "rule_030"
+          ]
         },
         {
           "property": "width_inches",
           "value": 102,
           "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-          "source_section": "2.1.1 Width — 102 inches on National Network and NJ Access Routes",
-          "rule_ids": ["rule_027"]
+          "source_section": "2.1.1 Width \u2014 102 inches on National Network and NJ Access Routes",
+          "rule_ids": [
+            "rule_027"
+          ]
         },
         {
           "property": "height_feet_inches",
           "value": "13 ft 6 in",
           "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
           "source_section": "2.1.2 Height",
-          "rule_ids": ["rule_028"]
+          "rule_ids": [
+            "rule_028"
+          ]
         },
         {
           "property": "trailer_length_feet",
           "value": 53,
           "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-          "source_section": "2.1.3 Length — trailers and semitrailers on National Network and access routes",
-          "rule_ids": ["rule_029"]
+          "source_section": "2.1.3 Length \u2014 trailers and semitrailers on National Network and access routes",
+          "rule_ids": [
+            "rule_029"
+          ]
         },
         {
           "property": "credential_status",
           "value": "valid CDL, TWIC, SeaLink, RFID, DTR registration, appointment where applicable",
           "source_doc": "PANYNJ Truckers Resource Guidebook",
           "source_section": "What to Have Prior to Arriving at Gate; SeaLink; RFID",
-          "rule_ids": ["rule_008", "rule_009", "rule_012", "rule_014", "rule_015", "rule_020"]
+          "rule_ids": [
+            "rule_008",
+            "rule_009",
+            "rule_012",
+            "rule_014",
+            "rule_015",
+            "rule_020"
+          ]
         }
       ],
       "notes": "This is not an observed truck from a specific carrier. It is a source-backed representative profile built from rule thresholds and port access requirements."
@@ -128,22 +145,34 @@
           "property": "engine_model_year",
           "value": 1998,
           "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "Radio-Frequency Identification (RFID) — trucks with 1998 and older engine models are prohibited and denied access",
-          "rule_ids": ["rule_017", "rule_019"]
+          "source_section": "Radio-Frequency Identification (RFID) \u2014 trucks with 1998 and older engine models are prohibited and denied access",
+          "rule_ids": [
+            "rule_017",
+            "rule_019"
+          ]
         },
         {
           "property": "rfid_status",
           "value": "entry_denied_due_to_engine_year",
           "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "Radio-Frequency Identification (RFID) — DTR/RFID access denial reasons",
-          "rule_ids": ["rule_014", "rule_015", "rule_019"]
+          "source_section": "Radio-Frequency Identification (RFID) \u2014 DTR/RFID access denial reasons",
+          "rule_ids": [
+            "rule_014",
+            "rule_015",
+            "rule_019"
+          ]
         },
         {
           "property": "credential_status",
           "value": "valid CDL, TWIC, SeaLink still required even though vehicle may fail engine/DTR access rules",
           "source_doc": "PANYNJ Truckers Resource Guidebook",
           "source_section": "What to Have Prior to Arriving at Gate; SeaLink; RFID",
-          "rule_ids": ["rule_009", "rule_012", "rule_013", "rule_014"]
+          "rule_ids": [
+            "rule_009",
+            "rule_012",
+            "rule_013",
+            "rule_014"
+          ]
         }
       ],
       "notes": "This profile intentionally uses a 1998 engine model year because that is the explicit access-denial threshold in the extracted PANYNJ guidebook rule."
@@ -190,28 +219,37 @@
           "value": "os_ow_permit_required_if_size_or_weight_limits_exceeded",
           "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
           "source_section": "Legal Size and Weight Limits; FAQ on overdimensional or overweight loads",
-          "rule_ids": ["rule_030", "rule_031"]
+          "rule_ids": [
+            "rule_030",
+            "rule_031"
+          ]
         },
         {
           "property": "load_type",
           "value": "OOG / out-of-gauge",
           "source_doc": "APM Terminals Elizabeth Hours of Operation",
           "source_section": "Hours of Operation cutoff table",
-          "rule_ids": ["rule_003"]
+          "rule_ids": [
+            "rule_003"
+          ]
         },
         {
           "property": "width_inches",
           "value": "legal threshold is 96 inches on non-network/non-access routes and 102 inches on National Network/NJ Access Routes",
           "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
           "source_section": "2.1.1 Width",
-          "rule_ids": ["rule_027"]
+          "rule_ids": [
+            "rule_027"
+          ]
         },
         {
           "property": "height_feet_inches",
           "value": "legal threshold is 13 ft 6 in unless otherwise identified",
           "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
           "source_section": "2.1.2 Height",
-          "rule_ids": ["rule_028"]
+          "rule_ids": [
+            "rule_028"
+          ]
         }
       ],
       "notes": "This is a verified rule-trigger profile, not a specific observed shipment. Exact dimensions and weight remain pending until a real example load is chosen."

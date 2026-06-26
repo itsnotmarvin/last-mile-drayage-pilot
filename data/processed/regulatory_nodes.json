@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1",
   "description": "State, Port Authority/APM, and federal regulatory nodes extracted for the APM Elizabeth last-mile drayage pilot. Municipal rules are intentionally excluded until after Stage 4 field work.",
-  "status": "draft_task3_in_progress",
+  "status": "working_draft",
   "rules": [
     {
       "rule_id": "rule_001",
