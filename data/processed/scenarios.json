@@ -1,0 +1,210 @@
+{
+ "schema_version": "0.1.0",
+ "generated": "2026-07-16",
+ "timezone": "America/New_York",
+ "description": "Concrete vehicle-movement scenarios for the contradiction scan. Each scenario binds one representative profile to concrete fuel type, engine year, dimensions, weight, credential states, permit status, appointment status, route, and timestamp. Unknown facts are 'unresolved' and can never produce compliant/contradictory/noncontradictory outcomes by assumption.",
+ "scenarios": [
+  {
+   "scenario_id": "scn_001_std_diesel_path_a",
+   "profile_id": "standard_5_axle_drayage_truck",
+   "fuel_or_powertrain_type": "diesel",
+   "engine_model_year": 2016,
+   "meets_epa_my2014_standard": true,
+   "dimensions": {
+    "width_inches": 102,
+    "height_ft_in": "13'6\"",
+    "trailer_length_feet": 53,
+    "overall_length": "unresolved"
+   },
+   "weight_lbs": 80000,
+   "axles": 5,
+   "credentials": {
+    "cdl": "valid",
+    "twic": "valid",
+    "sealink": "valid",
+    "rfid": "valid",
+    "dtr_registration": "registered_verified",
+    "uiia": "valid",
+    "safety_induction": "passed"
+   },
+   "permit_status": "none_required_legal_weight",
+   "appointment_status": "valid_termpoint_appointment",
+   "load_type": "dry_import",
+   "route": {
+    "path_id": "path_a_exit13a_to_apm",
+    "edges": [
+     "lrs_edge_102",
+     "lrs_edge_101",
+     "lrs_edge_104",
+     "osm North Ave/North Ave East set",
+     "McLester Street set",
+     "Tripoli Street set"
+    ],
+    "destination": "APM terminal gate, 5080 McLester St"
+   },
+   "datetime_local": "2026-07-16T10:00:00-04:00"
+  },
+  {
+   "scenario_id": "scn_002_std_diesel_path_b",
+   "profile_id": "standard_5_axle_drayage_truck",
+   "fuel_or_powertrain_type": "diesel",
+   "engine_model_year": 2016,
+   "meets_epa_my2014_standard": true,
+   "dimensions": {
+    "width_inches": 102,
+    "height_ft_in": "13'6\"",
+    "trailer_length_feet": 53,
+    "overall_length": "unresolved"
+   },
+   "weight_lbs": 80000,
+   "axles": 5,
+   "credentials": {
+    "cdl": "valid",
+    "twic": "valid",
+    "sealink": "valid",
+    "rfid": "valid",
+    "dtr_registration": "registered_verified",
+    "uiia": "valid",
+    "safety_induction": "passed"
+   },
+   "permit_status": "none_required_legal_weight",
+   "appointment_status": "valid_termpoint_appointment",
+   "load_type": "dry_import",
+   "route": {
+    "path_id": "path_b_us1_9_to_apm",
+    "edges": [
+     "lrs_edge_103",
+     "osm North Ave East set",
+     "McLester Street set",
+     "Tripoli Street set"
+    ],
+    "destination": "APM terminal gate, 5080 McLester St"
+   },
+   "datetime_local": "2026-07-16T10:00:00-04:00"
+  },
+  {
+   "scenario_id": "scn_003_1998_diesel_path_a",
+   "profile_id": "older_engine_access_denied_drayage_truck",
+   "fuel_or_powertrain_type": "diesel",
+   "engine_model_year": 1998,
+   "meets_epa_my2014_standard": false,
+   "dimensions": {
+    "width_inches": 102,
+    "height_ft_in": "13'6\"",
+    "trailer_length_feet": 53,
+    "overall_length": "unresolved"
+   },
+   "weight_lbs": 80000,
+   "axles": 5,
+   "credentials": {
+    "cdl": "valid",
+    "twic": "valid",
+    "sealink": "valid",
+    "rfid": "valid",
+    "dtr_registration": "denied_engine_standard",
+    "uiia": "valid",
+    "safety_induction": "passed"
+   },
+   "permit_status": "none_required_legal_weight",
+   "appointment_status": "unobtainable_without_dtr",
+   "load_type": "dry_import",
+   "route": {
+    "path_id": "path_a_exit13a_to_apm",
+    "edges": [
+     "lrs_edge_102",
+     "lrs_edge_101",
+     "lrs_edge_104",
+     "osm North Ave/North Ave East set",
+     "McLester Street set",
+     "Tripoli Street set"
+    ],
+    "destination": "APM terminal gate, 5080 McLester St"
+   },
+   "datetime_local": "2026-07-16T10:00:00-04:00"
+  },
+  {
+   "scenario_id": "scn_004_lng_alternative_path_a",
+   "profile_id": "standard_5_axle_drayage_truck",
+   "profile_variant": "alternative_drayage_truck_lng",
+   "fuel_or_powertrain_type": "lng",
+   "engine_model_year": 2022,
+   "meets_epa_my2014_standard": true,
+   "dimensions": {
+    "width_inches": 102,
+    "height_ft_in": "13'6\"",
+    "trailer_length_feet": 53,
+    "overall_length": "unresolved"
+   },
+   "weight_lbs": 80000,
+   "axles": 5,
+   "credentials": {
+    "cdl": "valid",
+    "twic": "valid",
+    "sealink": "valid",
+    "rfid": "valid",
+    "dtr_registration": "registered_verified",
+    "uiia": "valid",
+    "safety_induction": "passed"
+   },
+   "permit_status": "none_required_legal_weight",
+   "appointment_status": "valid_termpoint_appointment",
+   "load_type": "dry_import",
+   "route": {
+    "path_id": "path_a_exit13a_to_apm",
+    "edges": [
+     "lrs_edge_102",
+     "lrs_edge_101",
+     "lrs_edge_104",
+     "osm North Ave/North Ave East set",
+     "McLester Street set",
+     "Tripoli Street set"
+    ],
+    "destination": "APM terminal gate, 5080 McLester St"
+   },
+   "datetime_local": "2026-07-16T10:00:00-04:00",
+   "purpose": "Qualifies as Alternative Drayage Truck under 34-1060; used to isolate the effect of PA-10 34-1140(c)."
+  },
+  {
+   "scenario_id": "scn_005_my1999_diesel_2027",
+   "profile_id": "standard_5_axle_drayage_truck",
+   "profile_variant": "my1999_diesel_future_threshold",
+   "fuel_or_powertrain_type": "diesel",
+   "engine_model_year": 1999,
+   "meets_epa_my2014_standard": false,
+   "dimensions": {
+    "width_inches": 102,
+    "height_ft_in": "13'6\"",
+    "trailer_length_feet": 53,
+    "overall_length": "unresolved"
+   },
+   "weight_lbs": 80000,
+   "axles": 5,
+   "credentials": {
+    "cdl": "valid",
+    "twic": "valid",
+    "sealink": "valid",
+    "rfid": "valid",
+    "dtr_registration": "legacy_registration_unresolved",
+    "uiia": "valid",
+    "safety_induction": "passed"
+   },
+   "permit_status": "none_required_legal_weight",
+   "appointment_status": "unresolved",
+   "load_type": "dry_import",
+   "route": {
+    "path_id": "path_a_exit13a_to_apm",
+    "edges": [
+     "lrs_edge_102",
+     "lrs_edge_101",
+     "lrs_edge_104",
+     "osm North Ave/North Ave East set",
+     "McLester Street set",
+     "Tripoli Street set"
+    ],
+    "destination": "APM terminal gate, 5080 McLester St"
+   },
+   "datetime_local": "2027-06-01T10:00:00-04:00",
+   "purpose": "Tests the 2027-05-01 stanza of Subrule 34-1140 (engine MY1999-or-older denial)."
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "schema_version": "0.1.0",
+ "generated": "2026-07-16",
+ "as_of": "2026-07-16T12:00:00-04:00",
+ "conclusion": "not_determinable_named_source_unavailable",
+ "scope": {
+  "included": [
+   "Roadway operation on both candidate paths (NJ Turnpike Exit 13A / NJ 81 / US 1&9 approaches; North Ave, North Ave East, McLester St, Tripoli St)",
+   "State routing framework N.J.A.C. 16:32 (current, expires 2029-11-30)",
+   "Elizabeth municipal Title 10 (Supp. 31, through Ord. 6138 of 2025-06-24)",
+   "PA-10 tariff terminal-entry and registry rules (current, byte-verified 2026-07-16)",
+   "APM operational gate rules (snapshots 2026-07-16)",
+   "Scenarios scn_001-scn_005 (data/processed/scenarios.json)"
+  ],
+  "excluded": [
+   "Field signage (gap 7; web-only phase)",
+   "TWIC/secure-area federal credentialing detail (kept out of contradiction scope)",
+   "Elizabeth ordinances adopted after 2025-06-24 (not programmatically enumerable)",
+   "OS/OW load-specific facts (profile intentionally unresolved)"
+  ]
+ },
+ "unresolved_pairs": [
+  "pair_0035",
+  "pair_0075",
+  "pair_0114",
+  "pair_0152",
+  "pair_0189",
+  "pair_0225",
+  "pair_0260",
+  "pair_0294",
+  "pair_0327",
+  "pair_0359",
+  "pair_0390",
+  "pair_0420",
+  "pair_0449",
+  "pair_0477",
+  "pair_0504",
+  "pair_0555",
+  "pair_0602",
+  "pair_0624",
+  "pair_0834",
+  "pair_0842",
+  "pair_0843",
+  "pair_0844",
+  "pair_0845",
+  "pair_0846"
+ ],
+ "named_blocker": "PANYNJ authoritative clarification, erratum, or superseding PA-10 text resolving Subrule 34-1140(c), checked as of 2026-07-16",
+ "statement": "Not determinable. Every serious candidate pair in the fully investigated scope resolves to a non-contradiction disposition except the pairs that turn on PA-10 Subrule 34-1140(c). Clause (c) read literally denies terminal access to every non-alternative-fuel drayage truck (since 2023-07-02), while PANYNJ's own registration pathway (34-1101), sticker schedule (34-1120), operational program statements, and APM's live diesel appointment operations treat compliant MY2014+ diesels as admissible and alternative-fuel trucks as an exemption category. Whether clause (c) is a drafting artifact of the 2010 phase schedule (present unchanged since at least June 2019 with deadlines that repeatedly passed without diesel exclusion) or an operative prohibition contradicted by the agency's own operational framework cannot be resolved without: PANYNJ authoritative clarification, erratum, or superseding PA-10 text resolving Subrule 34-1140(c), checked as of 2026-07-16. If PANYNJ affirmed the literal reading, the 34-1140(c)-vs-operational-framework pair would satisfy all four contradiction conditions at the gate; if PANYNJ confirmed a drafting error, every remaining pair classifies as non-contradictory and the corridor result would be 'no contradiction within scope'.",
+ "summary_counts": {
+  "layered": 348,
+  "different_scope": 634,
+  "unresolved": 24,
+  "different_time_circumstance": 1,
+  "compatible": 25,
+  "exception_relationship": 2,
+  "blocking_not_contradictory": 1
+ }
+}

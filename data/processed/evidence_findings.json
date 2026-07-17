@@ -1,0 +1,450 @@
+{
+ "schema_version": "0.1.0",
+ "audit_date": "2026-07-16",
+ "evidence_boundary": "Repository contents plus targeted read-only web retrieval of authoritative primary sources performed 2026-07-16 (Phase A; see docs/audits/phase_a_source_resolution.md). Field signage explicitly out of scope.",
+ "contradiction_supported": "not_determinable",
+ "classification_definitions": {
+  "layered": "Multiple requirements apply and can be satisfied together.",
+  "conditional": "Access or route use depends on one or more stated conditions.",
+  "blocking": "A verified rule denies the selected profile under the stated circumstance.",
+  "unresolved": "The repository lacks current, sufficiently precise, or connected evidence for a determination.",
+  "potential_contradiction": "Two verified rules govern the same location, vehicle, time, and circumstance but impose incompatible outcomes."
+ },
+ "findings": [
+  {
+   "finding_id": "finding_001",
+   "classification": "conditional",
+   "title": "Standard profile is conditional on APM appointment and gate windows",
+   "vehicle_profile_ids": [
+    "standard_5_axle_drayage_truck"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "APM terminal access area reached by both candidate paths",
+   "rule_ids": [
+    "rule_001",
+    "rule_002",
+    "rule_007",
+    "rule_008",
+    "rule_041"
+   ],
+   "explanation": "The standard profile may reach APM terminal access only within the applicable gate windows for its load type (rule_001, rule_002) and with the required appointment (rule_008; APMT-specific mandate rule_041). The OOG cutoff (rule_003) does not apply to this non-OOG profile and was removed 2026-07-16; the standard 4:00 p.m. cutoff applies to empties, dry, and reefer loads, and the profile's load type is unspecified, so the exact window is conditional on load type. The repository supports terminal-area/path-level applicability but not an exact gate-edge coupling.",
+   "evidence_files": [
+    "data/processed/regulatory_nodes.json",
+    "data/processed/vehicle_profiles.json",
+    "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
+    "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
+    "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf"
+   ],
+   "applicability_precision": "terminal_area",
+   "evidence_status": "verified_with_limitation",
+   "limitations": [
+    "Operational pages are mutable.",
+    "Rule records use a terminal-area label rather than exact physical edge IDs.",
+    "Correction 2026-07-16: rule_003 (OOG cutoff) previously misapplied to this non-OOG profile."
+   ],
+   "requires_human_review": false
+  },
+  {
+   "finding_id": "finding_002",
+   "classification": "layered",
+   "title": "Standard profile is subject to cumulative port credentials and carrier requirements",
+   "vehicle_profile_ids": [
+    "standard_5_axle_drayage_truck"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "APM terminal gate and secure/restricted terminal area",
+   "rule_ids": [
+    "rule_009",
+    "rule_012",
+    "rule_013",
+    "rule_014",
+    "rule_015",
+    "rule_016",
+    "rule_020"
+   ],
+   "explanation": "License, TWIC, SeaLink, RFID/DTR, unique-tag, UIIA, insurance, and steamship-line credit requirements can apply together. They are cumulative and compatible, so this is layered rather than contradictory.",
+   "evidence_files": [
+    "data/processed/regulatory_nodes.json",
+    "data/processed/vehicle_profiles.json",
+    "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf"
+   ],
+   "applicability_precision": "terminal_area",
+   "evidence_status": "verified_with_limitation",
+   "limitations": [
+    "The archived guidebook has no visible publication date in its front matter.",
+    "The requirements are not coupled to an exact gate edge."
+   ],
+   "requires_human_review": false
+  },
+  {
+   "finding_id": "finding_003",
+   "classification": "blocking",
+   "title": "1998-engine drayage profile is blocked at Port Authority terminal entry",
+   "vehicle_profile_ids": [
+    "older_engine_access_denied_drayage_truck"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "Entry into a Port Authority container terminal, including APM terminal access",
+   "rule_ids": [
+    "rule_017",
+    "rule_019"
+   ],
+   "explanation": "The representative profile has a 1998 engine. The cited PANYNJ guidebook rules deny entry to 1998-and-older engines and identify a pre-1999 engine as a denial reason. The archived PANYNJ tariff effective May 1, 2026 independently corroborates the threshold at Subrule 34-1140.",
+   "evidence_files": [
+    "data/processed/regulatory_nodes.json",
+    "data/processed/vehicle_profiles.json",
+    "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+    "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf"
+   ],
+   "applicability_precision": "terminal_area",
+   "evidence_status": "verified",
+   "limitations": [
+    "The block applies at terminal entry, not to travel on the public approach streets.",
+    "Corrected 2026-07-16: rule_035 supplies the tariff text (PA-10 34-1140(a)-(b)); currentness of the tariff confirmed byte-identical on 2026-07-16."
+   ],
+   "requires_human_review": false
+  },
+  {
+   "finding_id": "finding_004",
+   "classification": "conditional",
+   "title": "OS/OW/OOG profile depends on specific load, permits, facility approval, and cutoff",
+   "vehicle_profile_ids": [
+    "oversize_overweight_oog_load"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "Both candidate paths and APM terminal access; toll-authority limitation specifically implicates the Path A access label",
+   "rule_ids": [
+    "rule_003",
+    "rule_027",
+    "rule_028",
+    "rule_029",
+    "rule_030",
+    "rule_031"
+   ],
+   "explanation": "An OS/OW/OOG move is conditional on its actual dimensions and weight, load divisibility, NJ permit status, separate toll-authority approval where applicable, route designation, and the APM OOG gate cutoff. The representative profile intentionally lacks a specific shipment configuration, so no route-level pass/fail result is supported.",
+   "evidence_files": [
+    "data/processed/regulatory_nodes.json",
+    "data/processed/vehicle_profiles.json",
+    "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+    "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf"
+   ],
+   "applicability_precision": "path",
+   "evidence_status": "verified_with_limitation",
+   "limitations": [
+    "Profile weight, axle configuration, and dimensions are pending a specific load.",
+    "Physical edges do not include the Turnpike/Route 81 or US 1&9 approach segments.",
+    "Road-specific clearance and capacity evidence is absent."
+   ],
+   "requires_human_review": true
+  },
+  {
+   "finding_id": "finding_005",
+   "classification": "layered",
+   "title": "State terminal-access framework is current and permits corridor use for terminal access",
+   "vehicle_profile_ids": [
+    "standard_5_axle_drayage_truck",
+    "older_engine_access_denied_drayage_truck",
+    "oversize_overweight_oog_load"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "State and local portions of both candidate paths",
+   "rule_ids": [
+    "rule_021",
+    "rule_022",
+    "rule_023",
+    "rule_024",
+    "rule_025",
+    "rule_026"
+   ],
+   "explanation": "RESOLVED 2026-07-16: the current NJDOT courtesy copy (Supp. 1-3-23) shows Chapter 32 readopted as R.2023 d.002 effective 2022-11-30, expiring 2029-11-30. rule_021-026 are in current force. Route 81 is National Network (16:32-1.3(a)5); the terminal-access provisions (16:32-1.2(b), 16:32-1.5) permit 102-inch standard trucks to leave the National/Access Network as necessary to reach the APM terminal by the direct route; the savings clause 16:32-1.2(e) preserves municipal/county restrictions (none found on the corridor).",
+   "evidence_files": [
+    "data/processed/regulatory_nodes.json",
+    "data/raw/documents/state/njac_16_32_njdot_courtesy_2026-07-16.pdf",
+    "data/raw/documents/state/njac_16_32_truck_access.pdf"
+   ],
+   "applicability_precision": "path",
+   "evidence_status": "verified",
+   "limitations": [
+    "Official OAL/LexisNexis version not separately archived; NJDOT courtesy copy is the state-published text.",
+    "Direct-route compliance is supported by APM official directions but not computed as shortest-path geometry."
+   ],
+   "requires_human_review": false
+  },
+  {
+   "finding_id": "finding_006",
+   "classification": "unresolved",
+   "title": "Rules are not connected to exact physical edges",
+   "vehicle_profile_ids": [],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "Entire modeled physical network",
+   "rule_ids": [
+    "rule_001",
+    "rule_002",
+    "rule_003",
+    "rule_004",
+    "rule_005",
+    "rule_006",
+    "rule_007",
+    "rule_008",
+    "rule_009",
+    "rule_010",
+    "rule_011",
+    "rule_012",
+    "rule_013",
+    "rule_014",
+    "rule_015",
+    "rule_016",
+    "rule_017",
+    "rule_018",
+    "rule_019",
+    "rule_020",
+    "rule_021",
+    "rule_022",
+    "rule_023",
+    "rule_024",
+    "rule_025",
+    "rule_026",
+    "rule_027",
+    "rule_028",
+    "rule_029",
+    "rule_030",
+    "rule_031",
+    "rule_032",
+    "rule_033",
+    "rule_034"
+   ],
+   "explanation": "The regulatory records use broad path, road-name, and terminal-area labels rather than exact edge IDs. The physical network's 74 edges all have null from_node and to_node values, and both candidate paths are assigned to the same North Avenue/North Avenue East, McLester Street, and Tripoli Street edge set. Route 81, Turnpike, and US 1&9 approach edges are not present. Exact rule-to-edge evaluation is therefore unsupported. UPDATE 2026-07-16: approach edges added (lrs_edge_101..104); designations and jurisdiction now recorded per edge from the current N.J.A.C. 16:32 text and NJDOT LRS; couplings upgraded to street-exact/exact-edge where evidence supports.",
+   "evidence_files": [
+    "data/processed/regulatory_nodes.json",
+    "data/processed/physical_edges.json",
+    "data/processed/physical_nodes.geojson",
+    "data/processed/coupling_edges.json"
+   ],
+   "applicability_precision": "unresolved",
+   "evidence_status": "unresolved",
+   "limitations": [
+    "Corrected 2026-07-16: coupling_edges.json now has 45 couplings including exact-edge couplings for Route 81/Turnpike and street-exact municipal couplings.",
+    "OSM edge from_node/to_node remain null (documented limitation); same-location testing uses street/edge identity, not graph traversal.",
+    "Approach edges lrs_edge_101..104 added from the official NJDOT LRS."
+   ],
+   "requires_human_review": true
+  },
+  {
+   "finding_id": "finding_007",
+   "classification": "layered",
+   "title": "No municipal or county restriction prohibits the corridor; state savings clause preserves nothing adverse",
+   "vehicle_profile_ids": [
+    "standard_5_axle_drayage_truck",
+    "older_engine_access_denied_drayage_truck",
+    "oversize_overweight_oog_load"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "Elizabeth/Union County portions of both candidate paths",
+   "rule_ids": [
+    "rule_024",
+    "rule_043",
+    "rule_044",
+    "rule_045",
+    "rule_046"
+   ],
+   "explanation": "RESOLVED 2026-07-16: Elizabeth Title 10 (official Municode publication, Supp. 31) was retrieved and archived. The corridor streets (North Ave, North Ave East, McLester, Tripoli, Kapkowski, Dowd) are NOT on the 4-ton (10.16.010) or 5-ton (10.16.040) exclusion schedules and no municipal truck-route exclusion covers them; 10.16.050 creates a permissive 80,000-lb overweight-vehicle zone on North Ave East connecting to the Port Authority zone; Ch. 10.40 restricts truck parking only (distinct act). The state savings clause (rule_024) therefore preserves no municipal prohibition on the corridor. No Union County restriction was found; NJDOT LRS codes all corridor segments as municipal (subtype 7).",
+   "evidence_files": [
+    "data/processed/municipal_rules_verified.json",
+    "data/raw/documents/municipal/elizabeth_title10_TIT10VETR_CH10.16WELI_supp31_2026-07-16.json",
+    "data/raw/gis/state/njdot_roadway_network_corridor_2026-07-16.geojson"
+   ],
+   "applicability_precision": "unresolved",
+   "evidence_status": "verified",
+   "limitations": [
+    "Codified through Ord. 6138 (2025-06-24); later ordinances could not be enumerated programmatically (recorded residual).",
+    "County-vs-municipal designation exactly at the NJ 81/North Ave interchange (CR 624 labels) is a recorded residual ambiguity; both branches yield no verified restriction.",
+    "Field signage (gap 7) remains out of scope for this web-only phase."
+   ],
+   "requires_human_review": false
+  },
+  {
+   "finding_id": "finding_008",
+   "classification": "unresolved",
+   "title": "Tariff Subrule 34-1140(c) literally denies non-alternative-fuel trucks; interpretation unresolved",
+   "vehicle_profile_ids": [
+    "standard_5_axle_drayage_truck",
+    "oversize_overweight_oog_load"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "Port Authority container terminal gates, including APM terminal access",
+   "rule_ids": [
+    "rule_036",
+    "rule_035",
+    "rule_037",
+    "rule_039"
+   ],
+   "explanation": "The archived tariff (effective 2026-05-01) Subrule 34-1140 clause (c) states that no Container Terminal Facility shall permit access by any drayage truck that is not an Alternative Drayage Truck as defined in Subrule 34-1060 (LNG/CNG/electric/hybrid only). Verified as genuine document text via layout-aware extraction, repeated in the 2023, 2027, and 2028 stanzas. A literal reading would deny every conventional diesel truck since July 2023, rendering clauses (a)-(b) and Subrule 34-1101's diesel DTR-registration pathway surplusage and conflicting with the guidebook's operational description of the port. This does not satisfy the four-condition contradiction test: 34-1101 governs registration while 34-1140 governs gate access (different acts), the profiles carry no fuel/powertrain property, and a drafting error is plausible. Classified unresolved pending agency clarification. UPDATE 2026-07-16: version history archived - clause (c) appears in every PA-10 edition since at least June 2019 (then tied to the 2020-08-01 deadline), always annotated ISSUED 15 OCTOBER 2010; PANYNJ's operational program description (drayage-truck-registration page; mirrored by US DOE AFDC) states the MY2014+ diesel standard governs terminal access and that alternative-fuel trucks are EXEMPT - an exemption category, not an exclusive class; Subrule 34-1120's sticker schedule treats 1998+ diesels and Alternative Drayage Trucks as parallel compliant categories. No PANYNJ erratum or clarification exists publicly as of 2026-07-16. Interpretation remains unresolved as a matter of authoritative text; the literal reading remains uncorroborated by any operational or enforcement evidence.",
+   "evidence_files": [
+    "data/processed/regulatory_nodes.json",
+    "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+    "data/raw/documents/port_authority/panynj_pa10_current_check_2026-07-16.pdf",
+    "data/raw/documents/port_authority/panynj_pa10_effective_2024_01_01.pdf",
+    "data/raw/documents/port_authority/panynj_pa10_effective_2025_02_10.pdf",
+    "data/raw/documents/port_authority/panynj_pa10_effective_2026_03_10.pdf",
+    "data/raw/documents/port_authority/panynj_pa10_published_2022_01.pdf",
+    "data/raw/documents/port_authority/panynj_pa10_published_2023_01.pdf",
+    "data/raw/documents/port_authority/panynj_pa10_sectionG_published_2019_06.pdf",
+    "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf"
+   ],
+   "applicability_precision": "terminal_area",
+   "evidence_status": "unresolved",
+   "limitations": [
+    "Interpretation of clause (c) cannot be resolved from the repository.",
+    "Vehicle profiles carry no fuel_or_powertrain_type property.",
+    "The repository cannot prove the archived tariff was not amended after archival."
+   ],
+   "requires_human_review": true
+  },
+  {
+   "finding_id": "finding_009",
+   "classification": "layered",
+   "title": "APMT-specific appointment mandate and mandatory safety induction apply to all profiles at the APM gate",
+   "vehicle_profile_ids": [
+    "standard_5_axle_drayage_truck",
+    "older_engine_access_denied_drayage_truck",
+    "oversize_overweight_oog_load"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "APM terminal gate",
+   "rule_ids": [
+    "rule_041",
+    "rule_042"
+   ],
+   "explanation": "The guidebook's APM section (printed pp.18-19) states that all gate moves at APMT require an appointment and that all drivers must complete the mandatory online safety induction to access the terminal, with induction status tied to the SeaLink number and surfaced in TERMPoint per the archived appointment-system page. These are cumulative requirements compatible with the existing credential stack: layered, not contradictory. Extracted 2026-07-16; previously missing from regulatory_nodes.json.",
+   "evidence_files": [
+    "data/processed/regulatory_nodes.json",
+    "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+    "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf"
+   ],
+   "applicability_precision": "terminal_area",
+   "evidence_status": "verified_with_limitation",
+   "limitations": [
+    "The archived guidebook shows no publication date; currentness of the APMT section is a limitation."
+   ],
+   "requires_human_review": false
+  },
+  {
+   "finding_id": "finding_010",
+   "classification": "layered",
+   "title": "Approach designations resolved: Path A rides the National Network, Path B the Access Network, both end on municipal terminal-access streets",
+   "vehicle_profile_ids": [
+    "standard_5_axle_drayage_truck",
+    "older_engine_access_denied_drayage_truck",
+    "oversize_overweight_oog_load"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [
+    "lrs_edge_101",
+    "lrs_edge_102",
+    "lrs_edge_103",
+    "lrs_edge_104"
+   ],
+   "location_scope": "Approach roads: NJ Turnpike Exit 13A, NJ Route 81, US 1&9, Route 81/North Ave ramps",
+   "rule_ids": [
+    "rule_021",
+    "rule_022",
+    "rule_023",
+    "rule_025"
+   ],
+   "explanation": "Current N.J.A.C. 16:32 designates the NJ Turnpike (entire length) and NJ Route 81 (MP 0.00-approx. 1.00, Elizabeth) as National Network and US 1&9 (not excepted in Appendix A) as NJ Access Network. Official NJDOT LRS geometry for these segments is archived. A 102-inch standard truck on either candidate path is on designated network for the entire approach and uses municipal streets only under the terminal-access provisions (16:32-1.5). The two candidate paths are now distinct in the model.",
+   "evidence_files": [
+    "data/raw/documents/state/njac_16_32_njdot_courtesy_2026-07-16.pdf",
+    "data/raw/gis/state/njdot_roadway_network_corridor_2026-07-16.geojson",
+    "data/processed/physical_edges.json"
+   ],
+   "applicability_precision": "exact_edge",
+   "evidence_status": "verified",
+   "limitations": [
+    "OSM-level per-segment connectivity remains null; street-level identity is used."
+   ],
+   "requires_human_review": false
+  },
+  {
+   "finding_id": "finding_011",
+   "classification": "conditional",
+   "title": "Current APM gate operating facts re-verified live on 2026-07-16",
+   "vehicle_profile_ids": [
+    "standard_5_axle_drayage_truck",
+    "older_engine_access_denied_drayage_truck",
+    "oversize_overweight_oog_load"
+   ],
+   "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "physical_edge_ids": [],
+   "location_scope": "APM terminal gate, 5080 McLester St",
+   "rule_ids": [
+    "rule_001",
+    "rule_002",
+    "rule_003",
+    "rule_008",
+    "rule_041",
+    "rule_042"
+   ],
+   "explanation": "Live APM pages (archived 2026-07-16) confirm: gates M-F from 6:00 a.m.; cutoffs 4:00 p.m. (empties/dry/reefer) and 3:30 p.m. (OOG); appointment number required at the inbound gate; driver Safety Induction status is checked at the inbound gate and lacking it is a turn-away reason; official truck directions use exactly the modeled corridor (Exit 13A or US 1&9 -> North Ave/North Ave East -> McLester -> Tripoli).",
+   "evidence_files": [
+    "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation_2026-07-16.html",
+    "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system_2026-07-16.html",
+    "data/raw/documents/port_authority/apm_elizabeth_contact_directions_2026-07-16.html"
+   ],
+   "applicability_precision": "terminal_area",
+   "evidence_status": "verified_with_limitation",
+   "limitations": [
+    "Operational pages are mutable; archived snapshots are dated."
+   ],
+   "requires_human_review": false
+  }
+ ],
+ "last_updated": "2026-07-16",
+ "contradiction_supported_values": {
+  "supported": "At least one finding meets the four-condition potential-contradiction test.",
+  "not_determinable": "The current repository does not contain enough connected and verified evidence to determine whether a contradiction exists.",
+  "no_contradiction_verified": "Reserved: complete, current, coupled evidence affirmatively shows no incompatible rule pair. Not achievable from an incomplete dataset."
+ },
+ "terminal_conclusion_pointer": "The single terminal conclusion lives in data/processed/contradiction_conclusion.json (generated by src/analyze.py on 2026-07-16): not_determinable_named_source_unavailable, named blocker = PANYNJ authoritative clarification, erratum, or superseding PA-10 text resolving Subrule 34-1140(c), checked as of 2026-07-16."
+}

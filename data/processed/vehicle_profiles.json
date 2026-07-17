@@ -1,258 +1,264 @@
 {
-  "schema_version": "0.1",
-  "description": "Representative drayage truck profiles for later route-rule evaluation. Profiles are source-backed rule-test profiles, not observed fleet records.",
-  "status": "source_backed_representative_profiles",
-  "profiles": [
+ "schema_version": "0.1",
+ "description": "Representative drayage truck profiles for later route-rule evaluation. Profiles are source-backed rule-test profiles, not observed fleet records. Updated 2026-07-16: fuel_or_powertrain_type added per Phase A requirement; concrete date/route/appointment facts live in data/processed/scenarios.json.",
+ "status": "source_backed_representative_profiles",
+ "profiles": [
+  {
+   "profile_id": "standard_5_axle_drayage_truck",
+   "profile_name": "Standard legal 5-axle container drayage truck",
+   "description": "Representative compliant Class 8 drayage truck used to test normal APM Elizabeth access under regular size/weight and credential conditions.",
+   "verification_status": "source_backed_representative_profile",
+   "weight_lbs": 80000,
+   "axles": 5,
+   "engine_model_year": "2014_or_newer_for_DTR_registration",
+   "dimensions": {
+    "width_inches": 102,
+    "height_feet_inches": "13 ft 6 in or less",
+    "trailer_length_feet": 53,
+    "overall_length_feet": "pending_route_specific_verification"
+   },
+   "permit_status": "no_os_ow_permit_assumed_if_within_legal_limits",
+   "credential_status": {
+    "driver_license": "valid_cdl_required",
+    "twic": "valid_required",
+    "sealink": "valid_required",
+    "twic_registered_with_port_authority": "required",
+    "rfid": "valid_required",
+    "dtr_registration": "required",
+    "appointment": "required_where_applicable",
+    "uiia_registration": "required_for_carrier",
+    "insurance_and_steamship_line_credit": "required_for_carrier"
+   },
+   "rule_property_keys": [
+    "weight_lbs",
+    "axles",
+    "engine_model_year",
+    "width_inches",
+    "height_feet_inches",
+    "trailer_length_feet",
+    "appointment_status",
+    "twic_status",
+    "sealink_status",
+    "rfid_status",
+    "registration_status",
+    "carrier_registration_status"
+   ],
+   "source_evidence": [
     {
-      "profile_id": "standard_5_axle_drayage_truck",
-      "profile_name": "Standard legal 5-axle container drayage truck",
-      "description": "Representative compliant Class 8 drayage truck used to test normal APM Elizabeth access under regular size/weight and credential conditions.",
-      "verification_status": "source_backed_representative_profile",
-      "weight_lbs": 80000,
-      "axles": 5,
-      "engine_model_year": "2014_or_newer_for_DTR_registration",
-      "dimensions": {
-        "width_inches": 102,
-        "height_feet_inches": "13 ft 6 in or less",
-        "trailer_length_feet": 53,
-        "overall_length_feet": "pending_route_specific_verification"
-      },
-      "permit_status": "no_os_ow_permit_assumed_if_within_legal_limits",
-      "credential_status": {
-        "driver_license": "valid_cdl_required",
-        "twic": "valid_required",
-        "sealink": "valid_required",
-        "twic_registered_with_port_authority": "required",
-        "rfid": "valid_required",
-        "dtr_registration": "required",
-        "appointment": "required_where_applicable",
-        "uiia_registration": "required_for_carrier",
-        "insurance_and_steamship_line_credit": "required_for_carrier"
-      },
-      "rule_property_keys": [
-        "weight_lbs",
-        "axles",
-        "engine_model_year",
-        "width_inches",
-        "height_feet_inches",
-        "trailer_length_feet",
-        "appointment_status",
-        "twic_status",
-        "sealink_status",
-        "rfid_status",
-        "registration_status",
-        "carrier_registration_status"
-      ],
-      "source_evidence": [
-        {
-          "property": "weight_lbs",
-          "value": 80000,
-          "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "Overweight Corridors and Permitting \u2014 New Jersey; summary of NJ truck weight limits",
-          "rule_ids": [
-            "rule_030"
-          ]
-        },
-        {
-          "property": "axles",
-          "value": 5,
-          "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "Overweight Corridors and Permitting \u2014 New Jersey; gross weight 80,000 lbs / 5 axles",
-          "rule_ids": [
-            "rule_030"
-          ]
-        },
-        {
-          "property": "width_inches",
-          "value": 102,
-          "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-          "source_section": "2.1.1 Width \u2014 102 inches on National Network and NJ Access Routes",
-          "rule_ids": [
-            "rule_027"
-          ]
-        },
-        {
-          "property": "height_feet_inches",
-          "value": "13 ft 6 in",
-          "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-          "source_section": "2.1.2 Height",
-          "rule_ids": [
-            "rule_028"
-          ]
-        },
-        {
-          "property": "trailer_length_feet",
-          "value": 53,
-          "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-          "source_section": "2.1.3 Length \u2014 trailers and semitrailers on National Network and access routes",
-          "rule_ids": [
-            "rule_029"
-          ]
-        },
-        {
-          "property": "credential_status",
-          "value": "valid CDL, TWIC, SeaLink, RFID, DTR registration, appointment where applicable",
-          "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "What to Have Prior to Arriving at Gate; SeaLink; RFID",
-          "rule_ids": [
-            "rule_008",
-            "rule_009",
-            "rule_012",
-            "rule_014",
-            "rule_015",
-            "rule_020"
-          ]
-        }
-      ],
-      "notes": "This is not an observed truck from a specific carrier. It is a source-backed representative profile built from rule thresholds and port access requirements."
+     "property": "weight_lbs",
+     "value": 80000,
+     "source_doc": "PANYNJ Truckers Resource Guidebook",
+     "source_section": "Overweight Corridors and Permitting \u2014 New Jersey; summary of NJ truck weight limits",
+     "rule_ids": [
+      "rule_030"
+     ]
     },
     {
-      "profile_id": "older_engine_access_denied_drayage_truck",
-      "profile_name": "Older-engine drayage truck likely denied terminal access",
-      "description": "Representative Class 8 drayage truck used to test PANYNJ/PortTruckPass engine-year and DTR/RFID access rules.",
-      "verification_status": "source_backed_representative_profile",
-      "weight_lbs": 80000,
-      "axles": 5,
-      "engine_model_year": 1998,
-      "dimensions": {
-        "width_inches": 102,
-        "height_feet_inches": "13 ft 6 in or less",
-        "trailer_length_feet": 53,
-        "overall_length_feet": "pending_route_specific_verification"
-      },
-      "permit_status": "no_os_ow_permit_assumed_if_within_legal_limits",
-      "credential_status": {
-        "driver_license": "valid_cdl_required",
-        "twic": "valid_required",
-        "sealink": "valid_required",
-        "twic_registered_with_port_authority": "required",
-        "rfid": "entry_denied_due_to_engine_year",
-        "dtr_registration": "entry_denied_due_to_engine_year",
-        "appointment": "required_where_applicable",
-        "uiia_registration": "required_for_carrier",
-        "insurance_and_steamship_line_credit": "required_for_carrier"
-      },
-      "rule_property_keys": [
-        "engine_model_year",
-        "rfid_status",
-        "registration_status",
-        "appointment_status",
-        "twic_status",
-        "sealink_status"
-      ],
-      "source_evidence": [
-        {
-          "property": "engine_model_year",
-          "value": 1998,
-          "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "Radio-Frequency Identification (RFID) \u2014 trucks with 1998 and older engine models are prohibited and denied access",
-          "rule_ids": [
-            "rule_017",
-            "rule_019"
-          ]
-        },
-        {
-          "property": "rfid_status",
-          "value": "entry_denied_due_to_engine_year",
-          "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "Radio-Frequency Identification (RFID) \u2014 DTR/RFID access denial reasons",
-          "rule_ids": [
-            "rule_014",
-            "rule_015",
-            "rule_019"
-          ]
-        },
-        {
-          "property": "credential_status",
-          "value": "valid CDL, TWIC, SeaLink still required even though vehicle may fail engine/DTR access rules",
-          "source_doc": "PANYNJ Truckers Resource Guidebook",
-          "source_section": "What to Have Prior to Arriving at Gate; SeaLink; RFID",
-          "rule_ids": [
-            "rule_009",
-            "rule_012",
-            "rule_013",
-            "rule_014"
-          ]
-        }
-      ],
-      "notes": "This profile intentionally uses a 1998 engine model year because that is the explicit access-denial threshold in the extracted PANYNJ guidebook rule."
+     "property": "axles",
+     "value": 5,
+     "source_doc": "PANYNJ Truckers Resource Guidebook",
+     "source_section": "Overweight Corridors and Permitting \u2014 New Jersey; gross weight 80,000 lbs / 5 axles",
+     "rule_ids": [
+      "rule_030"
+     ]
     },
     {
-      "profile_id": "oversize_overweight_oog_load",
-      "profile_name": "Oversize/overweight or out-of-gauge load",
-      "description": "Representative OS/OW or OOG move used to test NJ size/weight permitting rules and APM's earlier OOG gate cutoff.",
-      "verification_status": "source_backed_rule_trigger_profile_pending_specific_load",
-      "weight_lbs": "exceeds_legal_limit_pending_specific_load",
-      "axles": "pending_specific_load_configuration",
-      "engine_model_year": "2014_or_newer_for_DTR_registration_assumed",
-      "dimensions": {
-        "width_inches": "exceeds_legal_width_limit_or_pending_specific_load",
-        "height_feet_inches": "may_exceed_13 ft 6 in depending_on_load",
-        "trailer_length_feet": "pending_specific_load",
-        "overall_length_feet": "pending_specific_load"
-      },
-      "permit_status": "os_ow_permit_required_if_size_or_weight_limits_exceeded",
-      "credential_status": {
-        "driver_license": "valid_cdl_required",
-        "twic": "valid_required",
-        "sealink": "valid_required",
-        "twic_registered_with_port_authority": "required",
-        "rfid": "valid_required",
-        "dtr_registration": "required",
-        "appointment": "required_where_applicable",
-        "uiia_registration": "required_for_carrier",
-        "insurance_and_steamship_line_credit": "required_for_carrier"
-      },
-      "rule_property_keys": [
-        "weight_lbs",
-        "width_inches",
-        "height_feet_inches",
-        "length_feet",
-        "permit_status",
-        "load_type",
-        "appointment_status",
-        "route_designation_status"
-      ],
-      "source_evidence": [
-        {
-          "property": "permit_status",
-          "value": "os_ow_permit_required_if_size_or_weight_limits_exceeded",
-          "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-          "source_section": "Legal Size and Weight Limits; FAQ on overdimensional or overweight loads",
-          "rule_ids": [
-            "rule_030",
-            "rule_031"
-          ]
-        },
-        {
-          "property": "load_type",
-          "value": "OOG / out-of-gauge",
-          "source_doc": "APM Terminals Elizabeth Hours of Operation",
-          "source_section": "Hours of Operation cutoff table",
-          "rule_ids": [
-            "rule_003"
-          ]
-        },
-        {
-          "property": "width_inches",
-          "value": "legal threshold is 96 inches on non-network/non-access routes and 102 inches on National Network/NJ Access Routes",
-          "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-          "source_section": "2.1.1 Width",
-          "rule_ids": [
-            "rule_027"
-          ]
-        },
-        {
-          "property": "height_feet_inches",
-          "value": "legal threshold is 13 ft 6 in unless otherwise identified",
-          "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-          "source_section": "2.1.2 Height",
-          "rule_ids": [
-            "rule_028"
-          ]
-        }
-      ],
-      "notes": "This is a verified rule-trigger profile, not a specific observed shipment. Exact dimensions and weight remain pending until a real example load is chosen."
+     "property": "width_inches",
+     "value": 102,
+     "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
+     "source_section": "2.1.1 Width \u2014 102 inches on National Network and NJ Access Routes",
+     "rule_ids": [
+      "rule_027"
+     ]
+    },
+    {
+     "property": "height_feet_inches",
+     "value": "13 ft 6 in",
+     "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
+     "source_section": "2.1.2 Height",
+     "rule_ids": [
+      "rule_028"
+     ]
+    },
+    {
+     "property": "trailer_length_feet",
+     "value": 53,
+     "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
+     "source_section": "2.1.3 Length \u2014 trailers and semitrailers on National Network and access routes",
+     "rule_ids": [
+      "rule_029"
+     ]
+    },
+    {
+     "property": "credential_status",
+     "value": "valid CDL, TWIC, SeaLink, RFID, DTR registration, appointment where applicable",
+     "source_doc": "PANYNJ Truckers Resource Guidebook",
+     "source_section": "What to Have Prior to Arriving at Gate; SeaLink; RFID",
+     "rule_ids": [
+      "rule_008",
+      "rule_009",
+      "rule_012",
+      "rule_014",
+      "rule_015",
+      "rule_020"
+     ]
     }
-  ]
+   ],
+   "notes": "This is not an observed truck from a specific carrier. It is a source-backed representative profile built from rule thresholds and port access requirements.",
+   "fuel_or_powertrain_type": "diesel",
+   "fuel_note": "Added 2026-07-16: representative conventional diesel Class 8 tractor; not an Alternative Drayage Truck under PA-10 Subrule 34-1060."
+  },
+  {
+   "profile_id": "older_engine_access_denied_drayage_truck",
+   "profile_name": "Older-engine drayage truck likely denied terminal access",
+   "description": "Representative Class 8 drayage truck used to test PANYNJ/PortTruckPass engine-year and DTR/RFID access rules.",
+   "verification_status": "source_backed_representative_profile",
+   "weight_lbs": 80000,
+   "axles": 5,
+   "engine_model_year": 1998,
+   "dimensions": {
+    "width_inches": 102,
+    "height_feet_inches": "13 ft 6 in or less",
+    "trailer_length_feet": 53,
+    "overall_length_feet": "pending_route_specific_verification"
+   },
+   "permit_status": "no_os_ow_permit_assumed_if_within_legal_limits",
+   "credential_status": {
+    "driver_license": "valid_cdl_required",
+    "twic": "valid_required",
+    "sealink": "valid_required",
+    "twic_registered_with_port_authority": "required",
+    "rfid": "entry_denied_due_to_engine_year",
+    "dtr_registration": "entry_denied_due_to_engine_year",
+    "appointment": "required_where_applicable",
+    "uiia_registration": "required_for_carrier",
+    "insurance_and_steamship_line_credit": "required_for_carrier"
+   },
+   "rule_property_keys": [
+    "engine_model_year",
+    "rfid_status",
+    "registration_status",
+    "appointment_status",
+    "twic_status",
+    "sealink_status"
+   ],
+   "source_evidence": [
+    {
+     "property": "engine_model_year",
+     "value": 1998,
+     "source_doc": "PANYNJ Truckers Resource Guidebook",
+     "source_section": "Radio-Frequency Identification (RFID) \u2014 trucks with 1998 and older engine models are prohibited and denied access",
+     "rule_ids": [
+      "rule_017",
+      "rule_019"
+     ]
+    },
+    {
+     "property": "rfid_status",
+     "value": "entry_denied_due_to_engine_year",
+     "source_doc": "PANYNJ Truckers Resource Guidebook",
+     "source_section": "Radio-Frequency Identification (RFID) \u2014 DTR/RFID access denial reasons",
+     "rule_ids": [
+      "rule_014",
+      "rule_015",
+      "rule_019"
+     ]
+    },
+    {
+     "property": "credential_status",
+     "value": "valid CDL, TWIC, SeaLink still required even though vehicle may fail engine/DTR access rules",
+     "source_doc": "PANYNJ Truckers Resource Guidebook",
+     "source_section": "What to Have Prior to Arriving at Gate; SeaLink; RFID",
+     "rule_ids": [
+      "rule_009",
+      "rule_012",
+      "rule_013",
+      "rule_014"
+     ]
+    }
+   ],
+   "notes": "This profile intentionally uses a 1998 engine model year because that is the explicit access-denial threshold in the extracted PANYNJ guidebook rule.",
+   "fuel_or_powertrain_type": "diesel",
+   "fuel_note": "Added 2026-07-16: 1998-engine conventional diesel; not an Alternative Drayage Truck under PA-10 Subrule 34-1060."
+  },
+  {
+   "profile_id": "oversize_overweight_oog_load",
+   "profile_name": "Oversize/overweight or out-of-gauge load",
+   "description": "Representative OS/OW or OOG move used to test NJ size/weight permitting rules and APM's earlier OOG gate cutoff.",
+   "verification_status": "source_backed_rule_trigger_profile_pending_specific_load",
+   "weight_lbs": "exceeds_legal_limit_pending_specific_load",
+   "axles": "pending_specific_load_configuration",
+   "engine_model_year": "2014_or_newer_for_DTR_registration_assumed",
+   "dimensions": {
+    "width_inches": "exceeds_legal_width_limit_or_pending_specific_load",
+    "height_feet_inches": "may_exceed_13 ft 6 in depending_on_load",
+    "trailer_length_feet": "pending_specific_load",
+    "overall_length_feet": "pending_specific_load"
+   },
+   "permit_status": "os_ow_permit_required_if_size_or_weight_limits_exceeded",
+   "credential_status": {
+    "driver_license": "valid_cdl_required",
+    "twic": "valid_required",
+    "sealink": "valid_required",
+    "twic_registered_with_port_authority": "required",
+    "rfid": "valid_required",
+    "dtr_registration": "required",
+    "appointment": "required_where_applicable",
+    "uiia_registration": "required_for_carrier",
+    "insurance_and_steamship_line_credit": "required_for_carrier"
+   },
+   "rule_property_keys": [
+    "weight_lbs",
+    "width_inches",
+    "height_feet_inches",
+    "length_feet",
+    "permit_status",
+    "load_type",
+    "appointment_status",
+    "route_designation_status"
+   ],
+   "source_evidence": [
+    {
+     "property": "permit_status",
+     "value": "os_ow_permit_required_if_size_or_weight_limits_exceeded",
+     "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
+     "source_section": "Legal Size and Weight Limits; FAQ on overdimensional or overweight loads",
+     "rule_ids": [
+      "rule_030",
+      "rule_031"
+     ]
+    },
+    {
+     "property": "load_type",
+     "value": "OOG / out-of-gauge",
+     "source_doc": "APM Terminals Elizabeth Hours of Operation",
+     "source_section": "Hours of Operation cutoff table",
+     "rule_ids": [
+      "rule_003"
+     ]
+    },
+    {
+     "property": "width_inches",
+     "value": "legal threshold is 96 inches on non-network/non-access routes and 102 inches on National Network/NJ Access Routes",
+     "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
+     "source_section": "2.1.1 Width",
+     "rule_ids": [
+      "rule_027"
+     ]
+    },
+    {
+     "property": "height_feet_inches",
+     "value": "legal threshold is 13 ft 6 in unless otherwise identified",
+     "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
+     "source_section": "2.1.2 Height",
+     "rule_ids": [
+      "rule_028"
+     ]
+    }
+   ],
+   "notes": "This is a verified rule-trigger profile, not a specific observed shipment. Exact dimensions and weight remain pending until a real example load is chosen.",
+   "fuel_or_powertrain_type": "diesel_assumed_pending_load_specific_verification",
+   "fuel_note": "Added 2026-07-16: fuel type recorded as unresolved-leaning-diesel; concrete scenario required."
+  }
+ ]
 }

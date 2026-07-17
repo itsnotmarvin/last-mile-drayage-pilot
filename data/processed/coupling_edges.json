@@ -1,0 +1,878 @@
+{
+ "schema_version": "0.1.0",
+ "generated": "2026-07-16",
+ "description": "Rule-to-physical couplings. Only evidence-supported couplings are recorded: terminal-gate rules couple to the anchor_apm_terminal_access node at terminal_area precision; state road rules couple to the two canonical paths at path precision because per-segment National Network / NJ Access Route designation is unverified. No exact-edge (osm_edge_*) coupling is currently supported. rule_025 (Route 81) has no coupling because no Route 81 edge exists; rule_034 is reference-only; definitions and system descriptions are not coupled. Updated 2026-07-16: exact-edge couplings added for NJAC network designations and Route 81; municipal couplings added; negative coupling recorded for the Elizabeth 4-ton schedule.",
+ "known_omissions": [
+  "rule_034: reference-only map, not coupled (unchanged).",
+  "Exact edge-ID resolution within the OSM street sets remains street-level, not per-OSM-segment.",
+  "PANYNJ/APM property boundary geometry unavailable publicly; terminal-side vs public-street split at Tripoli St is approximate.",
+  "RESOLVED 2026-07-16: rule_025 now coupled (coupling to lrs_edge_101); municipal rules now archived and coupled; approach edges now exist (lrs_edge_101..104)."
+ ],
+ "couplings": [
+  {
+   "coupling_id": "coupling_001",
+   "rule_id": "rule_001",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "time_window",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_timing",
+   "evidence_citation": "APM Terminals Elizabeth Hours of Operation \u2014 Hours of Operation page, page 1",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Mutable webpage"
+  },
+  {
+   "coupling_id": "coupling_002",
+   "rule_id": "rule_002",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "time_window",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_timing",
+   "evidence_citation": "APM Terminals Elizabeth Hours of Operation \u2014 Hours of Operation cutoff table, page 1",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Standard cutoff applies to empties/dry/reefer; profile load types unspecified, so window is conditional on load type"
+  },
+  {
+   "coupling_id": "coupling_003",
+   "rule_id": "rule_003",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "time_window",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_timing",
+   "evidence_citation": "APM Terminals Elizabeth Hours of Operation \u2014 Hours of Operation cutoff table, page 1",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "OOG loads only"
+  },
+  {
+   "coupling_id": "coupling_004",
+   "rule_id": "rule_004",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "time_window",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_timing",
+   "evidence_citation": "APM Terminals Elizabeth Hours of Operation \u2014 Hours of Operation page, pages 1-2",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Weekend/holiday variation"
+  },
+  {
+   "coupling_id": "coupling_005",
+   "rule_id": "rule_007",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "time_window",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_timing",
+   "evidence_citation": "APM Terminals Elizabeth Truck Appointment System \u2014 Appointment Availability, page 2",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Operational constraint"
+  },
+  {
+   "coupling_id": "coupling_006",
+   "rule_id": "rule_008",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "appointment_required_or_operational_access",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_precondition",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 General Information \u2014 What to Have Prior to Arriving at Gate, page 3",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Vague 'applicable marine terminal'; APMT-specific mandate is rule_041"
+  },
+  {
+   "coupling_id": "coupling_007",
+   "rule_id": "rule_009",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_precondition",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 General Information \u2014 What to Have Prior to Arriving at Gate, page 3",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Undated guidebook"
+  },
+  {
+   "coupling_id": "coupling_008",
+   "rule_id": "rule_010",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "secure_area_access",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 Transportation Workers Identification Credential (TWIC), page 3",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "PANYNJ summary of federal law; primary facility-access authority not archived"
+  },
+  {
+   "coupling_id": "coupling_009",
+   "rule_id": "rule_011",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "secure_area_access",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 TWIC Care and Handling Instructions, page 3",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Same summary limitation"
+  },
+  {
+   "coupling_id": "coupling_010",
+   "rule_id": "rule_012",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "port_business_precondition",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 SeaLink, page 4",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Undated guidebook"
+  },
+  {
+   "coupling_id": "coupling_011",
+   "rule_id": "rule_013",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "port_business_precondition",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 TWIC and SeaLink, page 4",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Undated guidebook"
+  },
+  {
+   "coupling_id": "coupling_012",
+   "rule_id": "rule_014",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_precondition",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 Radio-Frequency Identification (RFID), page 4",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Tariff (rule_038/040) is current controlling text"
+  },
+  {
+   "coupling_id": "coupling_013",
+   "rule_id": "rule_015",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "denies",
+   "applicability_predicate": "entry_denied",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 Radio-Frequency Identification (RFID), page 4",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Denial condition: missing RFID"
+  },
+  {
+   "coupling_id": "coupling_014",
+   "rule_id": "rule_016",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "registration",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 Radio-Frequency Identification (RFID), page 4",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "One tag per vehicle"
+  },
+  {
+   "coupling_id": "coupling_015",
+   "rule_id": "rule_017",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "denies",
+   "applicability_predicate": "entry_denied",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 Radio-Frequency Identification (RFID), page 4",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Superseded in practice by tariff rule_035; thresholds time-stepped there"
+  },
+  {
+   "coupling_id": "coupling_016",
+   "rule_id": "rule_018",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "registration_required_or_denied",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "registration",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 Radio-Frequency Identification (RFID), page 4",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Registration act, not gate entry; tariff rule_037 is current text"
+  },
+  {
+   "coupling_id": "coupling_017",
+   "rule_id": "rule_019",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "denies",
+   "applicability_predicate": "entry_denied",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 Radio-Frequency Identification (RFID), page 4",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Denial reasons incl. pre-1999 engine"
+  },
+  {
+   "coupling_id": "coupling_018",
+   "rule_id": "rule_020",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "carrier_documentation_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_precondition",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 General Information \u2014 What to Have Prior to Arriving at Gate, page 3",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Carrier-level"
+  },
+  {
+   "coupling_id": "coupling_019",
+   "rule_id": "rule_021",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "route_priority",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "road_travel",
+   "evidence_citation": "N.J.A.C. 16:32 Truck Access \u2014 16:32-1.1 Purpose and scope",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "Courtesy copy expired 2022-07-02; current force unresolved"
+  },
+  {
+   "coupling_id": "coupling_020",
+   "rule_id": "rule_022",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "route_restriction_with_terminal_access_exception",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "road_travel",
+   "evidence_citation": "N.J.A.C. 16:32 Truck Access \u2014 16:32-1.2 General provisions",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "Same currentness problem"
+  },
+  {
+   "coupling_id": "coupling_021",
+   "rule_id": "rule_023",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "excepts",
+   "applicability_predicate": "terminal_access_exception",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "road_travel",
+   "evidence_citation": "N.J.A.C. 16:32 Truck Access \u2014 16:32-1.5 Reasonable access to terminals",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "Same; path directness not computed"
+  },
+  {
+   "coupling_id": "coupling_022",
+   "rule_id": "rule_024",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "additional_local_restrictions_may_apply",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "road_travel",
+   "evidence_citation": "N.J.A.C. 16:32 Truck Access \u2014 16:32-1.2(e) General provisions",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "No municipal/county rules archived to test"
+  },
+  {
+   "coupling_id": "coupling_023",
+   "rule_id": "rule_025",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "route_designation",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "route_designation",
+   "evidence_citation": "N.J.A.C. 16:32 Truck Access \u2014 16:32-1.3 Designated National Network travel routes",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "No Route 81 edge in network"
+  },
+  {
+   "coupling_id": "coupling_024",
+   "rule_id": "rule_026",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "documentation_required_or_supporting_compliance",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "road_travel_documentation",
+   "evidence_citation": "N.J.A.C. 16:32 Truck Access \u2014 16:32-1.5(c) Reasonable access to terminals",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "Permissive: documentation may demonstrate compliance"
+  },
+  {
+   "coupling_id": "coupling_025",
+   "rule_id": "rule_027",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "size_limit",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "road_travel",
+   "evidence_citation": "New Jersey Commercial Vehicle Size and Weight Guidebook \u2014 2.1.1 Width\u2014N.J.S.A. 39:3-84.a(1), page 13",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "Per-segment designation unverified; std/older profiles are 102 in wide, so off-network legality is indeterminate"
+  },
+  {
+   "coupling_id": "coupling_026",
+   "rule_id": "rule_028",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "size_limit",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "road_travel",
+   "evidence_citation": "New Jersey Commercial Vehicle Size and Weight Guidebook \u2014 2.1.2 Height\u2014N.J.S.A. 39:3-84.a(2), page 14",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "Std/older profiles at or under 13 ft 6 in; OOG dimensions pending"
+  },
+  {
+   "coupling_id": "coupling_027",
+   "rule_id": "rule_029",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "size_limit",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "road_travel",
+   "evidence_citation": "New Jersey Commercial Vehicle Size and Weight Guidebook \u2014 2.1.3 Length, page 15",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "Designation-dependent; 53 ft trailers indeterminate off-network"
+  },
+  {
+   "coupling_id": "coupling_028",
+   "rule_id": "rule_030",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "permit_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "permit_trigger",
+   "evidence_citation": "New Jersey Commercial Vehicle Size and Weight Guidebook \u2014 Legal Size and Weight Limits, page 12; FAQ pages 8-9",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "OS/OW profile triggers; exact load pending"
+  },
+  {
+   "coupling_id": "coupling_029",
+   "rule_id": "rule_031",
+   "target_type": "path",
+   "target_ids": [
+    "path_a_exit13a_to_apm"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "permit_authority_limitation",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "permit_scope",
+   "evidence_citation": "New Jersey Commercial Vehicle Size and Weight Guidebook \u2014 FAQ, page 10",
+   "spatial_precision": "path",
+   "confidence": "low",
+   "notes": "Applies to permit holders using listed toll facilities; Turnpike approach unmodeled"
+  },
+  {
+   "coupling_id": "coupling_030",
+   "rule_id": "rule_032",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "credentialing",
+   "evidence_citation": "eCFR 49 CFR Part 1572 \u2014 49 CFR 1572.1 Applicability and 1572.3 Scope",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "eCFR snapshot as of 2026-06-23; mutable"
+  },
+  {
+   "coupling_id": "coupling_031",
+   "rule_id": "rule_033",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "credential_denial_or_invalidation",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "credentialing",
+   "evidence_citation": "eCFR 49 CFR Part 1572 \u2014 49 CFR 1572.5 Standards for security threat assessments",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Same"
+  },
+  {
+   "coupling_id": "coupling_032",
+   "rule_id": "rule_035",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "denies",
+   "applicability_predicate": "entry_denied",
+   "valid_interval": {
+    "from": "2023-07-02",
+    "to": null
+   },
+   "circumstance": "gate_entry",
+   "evidence_citation": "PANYNJ Marine Terminal Tariff PA-10 (effective May 1, 2026) \u2014 Subrule 34-1140 Drayage Truck Deadline, PDF page 56",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Effective steps: 1998 now, 1999 from 2027-05-01, 2000 from 2028-05-01; std/oog does_not_apply assumes DTR-verified compliance"
+  },
+  {
+   "coupling_id": "coupling_033",
+   "rule_id": "rule_036",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "denies",
+   "applicability_predicate": "entry_denied_if_read_literally_interpretation_unresolved",
+   "valid_interval": {
+    "from": "2023-07-02",
+    "to": null
+   },
+   "circumstance": "gate_entry",
+   "evidence_citation": "PANYNJ Marine Terminal Tariff PA-10 (effective May 1, 2026) \u2014 Subrule 34-1140 Drayage Truck Deadline, clause (c), PDF page 56",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Literal clause (c); profiles lack fuel_or_powertrain_type; plausible drafting error; agency review required"
+  },
+  {
+   "coupling_id": "coupling_034",
+   "rule_id": "rule_037",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "registration_required_or_denied",
+   "valid_interval": {
+    "from": "2023-07-02",
+    "to": null
+   },
+   "circumstance": "registration",
+   "evidence_citation": "PANYNJ Marine Terminal Tariff PA-10 (effective May 1, 2026) \u2014 Subrule 34-1101 Registration in Drayage Truck Registry (DTR), PDF page 56",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Registration act only"
+  },
+  {
+   "coupling_id": "coupling_035",
+   "rule_id": "rule_038",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "gate_verification_mechanism",
+   "valid_interval": {
+    "from": "2026-05-01",
+    "to": null
+   },
+   "circumstance": "gate_verification",
+   "evidence_citation": "PANYNJ Marine Terminal Tariff PA-10 (effective May 1, 2026) \u2014 Subrule 34-1121 Gate Access, PDF page 56",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Obligation on terminal, not truck"
+  },
+  {
+   "coupling_id": "coupling_036",
+   "rule_id": "rule_041",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "appointment_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_precondition",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 APM Terminals section, printed pages 18-19 (PDF page 11)",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Undated guidebook; APMT-specific"
+  },
+  {
+   "coupling_id": "coupling_037",
+   "rule_id": "rule_042",
+   "target_type": "node",
+   "target_ids": [
+    "anchor_apm_terminal_access"
+   ],
+   "relationship": "requires",
+   "applicability_predicate": "training_required",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "gate_entry_precondition",
+   "evidence_citation": "PANYNJ Truckers Resource Guidebook \u2014 APM Terminals section, Mandatory Trucker Training, printed pages 18-19 (PDF page 11)",
+   "spatial_precision": "terminal_area",
+   "confidence": "medium",
+   "notes": "Undated guidebook; induction tied to SeaLink number"
+  },
+  {
+   "coupling_id": "coupling_038",
+   "rule_id": "rule_022",
+   "target_type": "edge_set",
+   "target_ids": [
+    "lrs_edge_101",
+    "lrs_edge_102"
+   ],
+   "relationship": "designates",
+   "applicability_predicate": "large_truck_national_network_routing",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "trip_completion",
+   "evidence_citation": "N.J.A.C. 16:32-1.3(a)2, (a)5 (Supp. 1-3-23)",
+   "spatial_precision": "exact_edge",
+   "confidence": "high",
+   "notes": "Route 81 and NJ Turnpike are National Network; exact-edge coupling now supported by current text + official LRS."
+  },
+  {
+   "coupling_id": "coupling_039",
+   "rule_id": "rule_023",
+   "target_type": "edge_set",
+   "target_ids": [
+    "osm North Avenue/North Avenue East edges",
+    "osm McLester Street edges",
+    "osm Tripoli Street edges"
+   ],
+   "relationship": "permits_as_necessary",
+   "applicability_predicate": "terminal_access_direct_route",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "terminal_access",
+   "evidence_citation": "N.J.A.C. 16:32-1.5(a)2 (Supp. 1-3-23); APM official directions (2026-07-16)",
+   "spatial_precision": "street_exact",
+   "confidence": "high",
+   "notes": "Local unrestricted roadways usable as necessary to reach the APM terminal; APM directions confirm these exact streets."
+  },
+  {
+   "coupling_id": "coupling_040",
+   "rule_id": "rule_025",
+   "target_type": "edge_set",
+   "target_ids": [
+    "lrs_edge_101"
+   ],
+   "relationship": "designates",
+   "applicability_predicate": "route_81_terminal_corridor",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "terminal_access",
+   "evidence_citation": "N.J.A.C. 16:32-1.3(a)5; NJDOT LRS SRI 00000081__",
+   "spatial_precision": "exact_edge",
+   "confidence": "high",
+   "notes": "Previously listed as uncoupled in known_omissions; now coupled to the Route 81 mainline edge."
+  },
+  {
+   "coupling_id": "coupling_041",
+   "rule_id": "rule_031",
+   "target_type": "edge_set",
+   "target_ids": [
+    "lrs_edge_102"
+   ],
+   "relationship": "conditions",
+   "applicability_predicate": "toll_authority_approval_for_osow",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "osow_movement",
+   "evidence_citation": "NJ Turnpike Authority requirement recorded in rule_031; NJDOT LRS Turnpike edges",
+   "spatial_precision": "exact_edge",
+   "confidence": "medium",
+   "notes": "Path A only: Turnpike approach requires separate NJTA approval for OS/OW."
+  },
+  {
+   "coupling_id": "coupling_042",
+   "rule_id": "rule_043",
+   "target_type": "street_list",
+   "target_ids": [],
+   "relationship": "governs_none_of_corridor",
+   "applicability_predicate": "gross_weight_over_4_tons",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "roadway_operation",
+   "evidence_citation": "Elizabeth Code 10.16.010 (Supp. 31, retrieved 2026-07-16)",
+   "spatial_precision": "street_list_exact",
+   "confidence": "high",
+   "notes": "Negative coupling: no modeled corridor street is on the 4-ton exclusion schedule."
+  },
+  {
+   "coupling_id": "coupling_043",
+   "rule_id": "rule_044",
+   "target_type": "edge_subsegment",
+   "target_ids": [
+    "North Avenue East (440-960 ft east of Kapkowski Rd)"
+   ],
+   "relationship": "permits",
+   "applicability_predicate": "overweight_zone_connection",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "overweight_movement",
+   "evidence_citation": "Elizabeth Code 10.16.050 (Ord. 4654, 2015-12-22)",
+   "spatial_precision": "subsegment_exact",
+   "confidence": "high",
+   "notes": "Permissive overweight-zone connection to the Port Authority zone."
+  },
+  {
+   "coupling_id": "coupling_044",
+   "rule_id": "rule_045",
+   "target_type": "citywide",
+   "target_ids": [],
+   "relationship": "governs",
+   "applicability_predicate": "truck_parking",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "parking",
+   "evidence_citation": "Elizabeth Code 10.40.020/.090 (Supp. 31)",
+   "spatial_precision": "citywide",
+   "confidence": "high",
+   "notes": "Parking act only; kept separate from operation and entry."
+  },
+  {
+   "coupling_id": "coupling_045",
+   "rule_id": "rule_046",
+   "target_type": "node_set",
+   "target_ids": [
+    "North Avenue East & Kapkowski Rd",
+    "Dowd Ave & York St"
+   ],
+   "relationship": "governs",
+   "applicability_predicate": "traffic_control",
+   "valid_interval": {
+    "from": null,
+    "to": null
+   },
+   "circumstance": "roadway_operation",
+   "evidence_citation": "Elizabeth Code 10.08 schedules (Supp. 31)",
+   "spatial_precision": "intersection_exact",
+   "confidence": "high",
+   "notes": "Ordinary traffic control devices on the corridor."
+  }
+ ]
+}

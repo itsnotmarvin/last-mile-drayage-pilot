@@ -2,7 +2,6 @@
   "type": "FeatureCollection",
   "name": "physical_nodes",
   "metadata": {
-    "status": "working_draft",
     "created_utc": "2026-06-26T08:26:05Z",
     "description": "Physical route nodes for 2 candidate APM Elizabeth access paths. Includes OSM-derived road segment endpoints and candidate path anchor nodes.",
     "scope": "APM Terminals Elizabeth candidate access network"

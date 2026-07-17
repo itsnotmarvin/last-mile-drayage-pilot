@@ -1,0 +1,1627 @@
+{
+ "schema_version": "0.1.0",
+ "generated": "2026-07-16",
+ "description": "Per-rule normalized applicability derived from data/processed/regulatory_nodes.json and the 2026-07-16 provenance audit. profile_results semantics: applies = the rule's predicate is triggered by the profile in the stated circumstance; does_not_apply = predicate not triggered or rule is non-operative for profiles; indeterminate = a required property, designation, or the rule's current force is unknown. Missing values never default to compliant. Updated 2026-07-16 (Phase A): NJAC currentness resolved, PA-10 confirmed, municipal rules rule_043-046 added, legal_addressee/act separation added for tariff gate rules.",
+ "evidence_boundary": "Repository contents only.",
+ "records": [
+  {
+   "rule_id": "rule_001",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "operational",
+   "actor": "terminal_operator",
+   "action": "gate_entry_timing",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "time_window",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Mutable webpage"
+   ]
+  },
+  {
+   "rule_id": "rule_002",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "operational",
+   "actor": "terminal_operator",
+   "action": "gate_entry_timing",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "time_window",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Standard cutoff applies to empties/dry/reefer; profile load types unspecified, so window is conditional on load type"
+   ]
+  },
+  {
+   "rule_id": "rule_003",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "operational",
+   "actor": "terminal_operator",
+   "action": "gate_entry_timing",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "time_window",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "OOG loads only"
+   ]
+  },
+  {
+   "rule_id": "rule_004",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "operational",
+   "actor": "terminal_operator",
+   "action": "gate_entry_timing",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "time_window",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Weekend/holiday variation"
+   ]
+  },
+  {
+   "rule_id": "rule_005",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "descriptive",
+   "actor": "terminal_operator",
+   "action": "system_description",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "appointment_required_or_operational_access",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Descriptive; mandatory statement is rule_041"
+   ]
+  },
+  {
+   "rule_id": "rule_006",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "descriptive",
+   "actor": "terminal_operator",
+   "action": "system_description",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "appointment_required_or_operational_access",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Descriptive"
+   ]
+  },
+  {
+   "rule_id": "rule_007",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "operational",
+   "actor": "terminal_operator",
+   "action": "gate_entry_timing",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "time_window",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Operational constraint"
+   ]
+  },
+  {
+   "rule_id": "rule_008",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "advisory_phrased",
+   "actor": "driver_or_carrier",
+   "action": "gate_entry_precondition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "appointment_required_or_operational_access",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Vague 'applicable marine terminal'; APMT-specific mandate is rule_041"
+   ]
+  },
+  {
+   "rule_id": "rule_009",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "advisory_phrased",
+   "actor": "driver",
+   "action": "gate_entry_precondition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Undated guidebook"
+   ]
+  },
+  {
+   "rule_id": "rule_010",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory_summarized",
+   "actor": "driver",
+   "action": "secure_area_access",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "PANYNJ summary of federal law; primary facility-access authority not archived"
+   ]
+  },
+  {
+   "rule_id": "rule_011",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory",
+   "actor": "driver",
+   "action": "secure_area_access",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Same summary limitation"
+   ]
+  },
+  {
+   "rule_id": "rule_012",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory",
+   "actor": "driver",
+   "action": "port_business_precondition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Undated guidebook"
+   ]
+  },
+  {
+   "rule_id": "rule_013",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory",
+   "actor": "driver",
+   "action": "port_business_precondition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Undated guidebook"
+   ]
+  },
+  {
+   "rule_id": "rule_014",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory",
+   "actor": "vehicle",
+   "action": "gate_entry_precondition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Tariff (rule_038/040) is current controlling text"
+   ]
+  },
+  {
+   "rule_id": "rule_015",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "prohibitory",
+   "actor": "vehicle",
+   "action": "gate_entry",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "entry_denied",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Denial condition: missing RFID"
+   ]
+  },
+  {
+   "rule_id": "rule_016",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory",
+   "actor": "vehicle",
+   "action": "registration",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "One tag per vehicle"
+   ]
+  },
+  {
+   "rule_id": "rule_017",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "prohibitory",
+   "actor": "vehicle",
+   "action": "gate_entry",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "entry_denied",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Superseded in practice by tariff rule_035; thresholds time-stepped there"
+   ]
+  },
+  {
+   "rule_id": "rule_018",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory",
+   "actor": "vehicle",
+   "action": "registration",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "registration_required_or_denied",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Registration act, not gate entry; tariff rule_037 is current text"
+   ]
+  },
+  {
+   "rule_id": "rule_019",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "prohibitory",
+   "actor": "vehicle",
+   "action": "gate_entry",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "entry_denied",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Denial reasons incl. pre-1999 engine"
+   ]
+  },
+  {
+   "rule_id": "rule_020",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "advisory_phrased",
+   "actor": "carrier",
+   "action": "gate_entry_precondition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "carrier_documentation_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Carrier-level"
+   ]
+  },
+  {
+   "rule_id": "rule_021",
+   "provenance_status": "text_verified",
+   "currentness": "current_official_text",
+   "modality": "regulatory_text",
+   "actor": "vehicle",
+   "action": "road_travel",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "route_priority",
+   "valid_from": "2022-11-30",
+   "valid_to": "2029-11-30",
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Currentness resolved 2026-07-16 via NJDOT courtesy copy Supp. 1-3-23 (chapter expires 2029-11-30)."
+   ]
+  },
+  {
+   "rule_id": "rule_022",
+   "provenance_status": "text_verified",
+   "currentness": "current_official_text",
+   "modality": "regulatory_text",
+   "actor": "vehicle",
+   "action": "road_travel",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "route_restriction_with_terminal_access_exception",
+   "valid_from": "2022-11-30",
+   "valid_to": "2029-11-30",
+   "exceptions": [
+    "terminal_access_exception (rule_023)"
+   ],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Currentness resolved 2026-07-16 via NJDOT courtesy copy Supp. 1-3-23 (chapter expires 2029-11-30)."
+   ]
+  },
+  {
+   "rule_id": "rule_023",
+   "provenance_status": "text_verified",
+   "currentness": "current_official_text",
+   "modality": "regulatory_exception_text",
+   "actor": "vehicle",
+   "action": "road_travel",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "terminal_access_exception",
+   "valid_from": "2022-11-30",
+   "valid_to": "2029-11-30",
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Same; path directness not computed",
+    "Currentness resolved 2026-07-16 via NJDOT courtesy copy Supp. 1-3-23 (chapter expires 2029-11-30)."
+   ]
+  },
+  {
+   "rule_id": "rule_024",
+   "provenance_status": "text_verified",
+   "currentness": "current_official_text",
+   "modality": "savings_clause_text",
+   "actor": "jurisdictions",
+   "action": "road_travel",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "additional_local_restrictions_may_apply",
+   "valid_from": "2022-11-30",
+   "valid_to": "2029-11-30",
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "No municipal/county rules archived to test",
+    "Currentness resolved 2026-07-16 via NJDOT courtesy copy Supp. 1-3-23 (chapter expires 2029-11-30)."
+   ]
+  },
+  {
+   "rule_id": "rule_025",
+   "provenance_status": "text_verified",
+   "currentness": "current_official_text",
+   "modality": "designation_text",
+   "actor": "road_segment",
+   "action": "route_designation",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "route_designation",
+   "valid_from": "2022-11-30",
+   "valid_to": "2029-11-30",
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "unresolved",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "No Route 81 edge in network",
+    "Currentness resolved 2026-07-16 via NJDOT courtesy copy Supp. 1-3-23 (chapter expires 2029-11-30)."
+   ]
+  },
+  {
+   "rule_id": "rule_026",
+   "provenance_status": "text_verified",
+   "currentness": "current_official_text",
+   "modality": "permissive_text",
+   "actor": "driver",
+   "action": "road_travel_documentation",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "documentation_required_or_supporting_compliance",
+   "valid_from": "2022-11-30",
+   "valid_to": "2029-11-30",
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Permissive: documentation may demonstrate compliance",
+    "Currentness resolved 2026-07-16 via NJDOT courtesy copy Supp. 1-3-23 (chapter expires 2029-11-30)."
+   ]
+  },
+  {
+   "rule_id": "rule_027",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "mandatory",
+   "actor": "vehicle",
+   "action": "road_travel",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "size_limit",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [
+    "102 in allowed on National Network / NJ Access Routes"
+   ],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Per-segment designation unverified; std/older profiles are 102 in wide, so off-network legality is indeterminate"
+   ]
+  },
+  {
+   "rule_id": "rule_028",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "mandatory",
+   "actor": "vehicle",
+   "action": "road_travel",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "size_limit",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Std/older profiles at or under 13 ft 6 in; OOG dimensions pending"
+   ]
+  },
+  {
+   "rule_id": "rule_029",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "mandatory",
+   "actor": "vehicle",
+   "action": "road_travel",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "size_limit",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [
+    "53 ft allowed on National Network / access routes"
+   ],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Designation-dependent; 53 ft trailers indeterminate off-network"
+   ]
+  },
+  {
+   "rule_id": "rule_030",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "mandatory",
+   "actor": "vehicle",
+   "action": "permit_trigger",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "permit_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "OS/OW profile triggers; exact load pending"
+   ]
+  },
+  {
+   "rule_id": "rule_031",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "mandatory_limitation",
+   "actor": "vehicle",
+   "action": "permit_scope",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "permit_authority_limitation",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "path",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Applies to permit holders using listed toll facilities; Turnpike approach unmodeled"
+   ]
+  },
+  {
+   "rule_id": "rule_032",
+   "provenance_status": "text_verified",
+   "currentness": "current_per_document_text",
+   "modality": "regulatory",
+   "actor": "driver",
+   "action": "credentialing",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "eCFR snapshot as of 2026-06-23; mutable"
+   ]
+  },
+  {
+   "rule_id": "rule_033",
+   "provenance_status": "text_verified",
+   "currentness": "current_per_document_text",
+   "modality": "regulatory",
+   "actor": "driver",
+   "action": "credentialing",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "credential_denial_or_invalidation",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Same"
+   ]
+  },
+  {
+   "rule_id": "rule_034",
+   "provenance_status": "text_verified",
+   "currentness": "current_operational",
+   "modality": "reference_only",
+   "actor": "road_segment",
+   "action": "route_designation_reference",
+   "spatial_target": {
+    "target_type": "path",
+    "target_ids": [
+     "path_a_exit13a_to_apm",
+     "path_b_us1_9_to_apm"
+    ],
+    "label": "candidate approach paths (per-segment designation unverified)"
+   },
+   "circumstance": "route_designation_reference",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "unresolved",
+   "confidence": {
+    "text": "medium",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Map is reference; does not supersede regulation text"
+   ]
+  },
+  {
+   "rule_id": "rule_035",
+   "provenance_status": "text_verified",
+   "currentness": "current_confirmed_2026_07_16",
+   "modality": "prohibitory",
+   "actor": "vehicle",
+   "action": "gate_entry",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "entry_denied",
+   "valid_from": "2023-07-02",
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Effective steps: 1998 now, 1999 from 2027-05-01, 2000 from 2028-05-01; std/oog does_not_apply assumes DTR-verified compliance",
+    "Live tariff byte-identical to archive (SHA-256, 2026-07-16)."
+   ],
+   "legal_addressee": "container_terminal_facility",
+   "regulated_actor_or_object": "drayage_truck",
+   "outcome": "terminal_entry_denied",
+   "act": "terminal_entry"
+  },
+  {
+   "rule_id": "rule_036",
+   "provenance_status": "text_verified",
+   "currentness": "current_confirmed_2026_07_16",
+   "modality": "prohibitory_text_interpretation_unresolved",
+   "actor": "vehicle",
+   "action": "gate_entry",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "entry_denied_if_read_literally_interpretation_unresolved",
+   "valid_from": "2023-07-02",
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "indeterminate",
+    "older_engine_access_denied_drayage_truck": "indeterminate",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Literal clause (c); profiles lack fuel_or_powertrain_type; plausible drafting error; agency review required",
+    "Live tariff byte-identical to archive (SHA-256, 2026-07-16)."
+   ],
+   "legal_addressee": "container_terminal_facility",
+   "regulated_actor_or_object": "drayage_truck",
+   "outcome": "terminal_entry_denied",
+   "act": "terminal_entry"
+  },
+  {
+   "rule_id": "rule_037",
+   "provenance_status": "text_verified",
+   "currentness": "current_confirmed_2026_07_16",
+   "modality": "mandatory",
+   "actor": "vehicle",
+   "action": "registration",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "registration_required_or_denied",
+   "valid_from": "2023-07-02",
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Registration act only",
+    "Live tariff byte-identical to archive (SHA-256, 2026-07-16)."
+   ],
+   "legal_addressee": "drayage_truck_owner",
+   "regulated_actor_or_object": "drayage_truck",
+   "outcome": "dtr_registration_permitted_or_denied",
+   "act": "registration"
+  },
+  {
+   "rule_id": "rule_038",
+   "provenance_status": "text_verified",
+   "currentness": "current_confirmed_2026_07_16",
+   "modality": "mandatory_on_terminal_operator",
+   "actor": "terminal_operator",
+   "action": "gate_verification",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "gate_verification_mechanism",
+   "valid_from": "2026-05-01",
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Obligation on terminal, not truck",
+    "Live tariff byte-identical to archive (SHA-256, 2026-07-16)."
+   ]
+  },
+  {
+   "rule_id": "rule_039",
+   "provenance_status": "text_verified",
+   "currentness": "current_confirmed_2026_07_16",
+   "modality": "definitional",
+   "actor": "n_a",
+   "action": "definition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "definition_reference",
+   "valid_from": "2026-05-01",
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Definition only",
+    "Live tariff byte-identical to archive (SHA-256, 2026-07-16)."
+   ]
+  },
+  {
+   "rule_id": "rule_040",
+   "provenance_status": "text_verified",
+   "currentness": "current_confirmed_2026_07_16",
+   "modality": "definitional",
+   "actor": "n_a",
+   "action": "definition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "definition_reference",
+   "valid_from": "2026-05-01",
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "high",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Definition only",
+    "Live tariff byte-identical to archive (SHA-256, 2026-07-16)."
+   ]
+  },
+  {
+   "rule_id": "rule_041",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory",
+   "actor": "driver_or_carrier",
+   "action": "gate_entry_precondition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "appointment_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Undated guidebook; APMT-specific"
+   ]
+  },
+  {
+   "rule_id": "rule_042",
+   "provenance_status": "text_verified",
+   "currentness": "undated_source",
+   "modality": "mandatory",
+   "actor": "driver",
+   "action": "gate_entry_precondition",
+   "spatial_target": {
+    "target_type": "node",
+    "target_ids": [
+     "anchor_apm_terminal_access"
+    ],
+    "label": "APM terminal gate / terminal area"
+   },
+   "circumstance": "training_required",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "terminal_area",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "low",
+    "spatial": "low"
+   },
+   "limitations": [
+    "Undated guidebook; induction tied to SeaLink number"
+   ]
+  },
+  {
+   "rule_id": "rule_043",
+   "provenance_status": "text_verified",
+   "currentness": "current_per_supplement_31",
+   "modality": "prohibitory",
+   "actor": "truck_operator",
+   "action": "roadway_operation",
+   "act": "roadway_operation",
+   "legal_addressee": "truck_operator",
+   "regulated_actor_or_object": "truck_over_4_tons",
+   "outcome": "operation_prohibited_on_listed_streets",
+   "spatial_target": {
+    "target_type": "street_list",
+    "target_ids": [],
+    "label": "10.16.010 enumerated streets; none on modeled corridor"
+   },
+   "circumstance": "any_time",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [
+    "pickup_and_delivery_on_listed_street"
+   ],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "does_not_apply"
+   },
+   "applicability_precision": "street_list_exact",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "high"
+   },
+   "limitations": [
+    "Codified through Ord. 6138 (2025-06-24); post-supplement ordinances not enumerable programmatically."
+   ]
+  },
+  {
+   "rule_id": "rule_044",
+   "provenance_status": "text_verified",
+   "currentness": "current_per_supplement_31",
+   "modality": "permissive",
+   "actor": "truck_operator",
+   "action": "roadway_operation",
+   "act": "roadway_operation",
+   "legal_addressee": "truck_operator",
+   "regulated_actor_or_object": "overweight_vehicle",
+   "outcome": "overweight_zone_connection_permitted",
+   "spatial_target": {
+    "target_type": "edge_subsegment",
+    "target_ids": [
+     "North Avenue East 440-960 ft east of Kapkowski Rd"
+    ],
+    "label": "North Ave East overweight-zone connection"
+   },
+   "circumstance": "overweight_movement_within_zone",
+   "valid_from": "2015-12-22",
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "does_not_apply",
+    "older_engine_access_denied_drayage_truck": "does_not_apply",
+    "oversize_overweight_oog_load": "indeterminate"
+   },
+   "applicability_precision": "subsegment_exact",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "high"
+   },
+   "limitations": [
+    "Permissive zone; interacts with the (unmodeled) Port Authority overweight vehicle zone."
+   ]
+  },
+  {
+   "rule_id": "rule_045",
+   "provenance_status": "text_verified",
+   "currentness": "current_per_supplement_31",
+   "modality": "prohibitory",
+   "actor": "truck_operator",
+   "action": "parking",
+   "act": "parking",
+   "legal_addressee": "vehicle_owner_or_operator",
+   "regulated_actor_or_object": "truck_or_commercial_vehicle",
+   "outcome": "parking_prohibited",
+   "spatial_target": {
+    "target_type": "citywide",
+    "target_ids": [],
+    "label": "Elizabeth city streets (parking act)"
+   },
+   "circumstance": "21:00-06:00_and_listed_school_park_zones",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [
+    "loading_unloading_and_listed_exceptions"
+   ],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "citywide",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "medium"
+   },
+   "limitations": [
+    "Parking is a distinct act; cannot conflict with operation/entry rules by definition."
+   ]
+  },
+  {
+   "rule_id": "rule_046",
+   "provenance_status": "text_verified",
+   "currentness": "current_per_supplement_31",
+   "modality": "operational",
+   "actor": "all_drivers",
+   "action": "roadway_operation",
+   "act": "roadway_operation",
+   "legal_addressee": "all_drivers",
+   "regulated_actor_or_object": "all_vehicles",
+   "outcome": "traffic_control_compliance_required",
+   "spatial_target": {
+    "target_type": "intersections",
+    "target_ids": [
+     "North Avenue East & Kapkowski Rd",
+     "Dowd Ave & York St"
+    ],
+    "label": "corridor intersections"
+   },
+   "circumstance": "any_time",
+   "valid_from": null,
+   "valid_to": null,
+   "exceptions": [],
+   "profile_results": {
+    "standard_5_axle_drayage_truck": "applies",
+    "older_engine_access_denied_drayage_truck": "applies",
+    "oversize_overweight_oog_load": "applies"
+   },
+   "applicability_precision": "intersection_exact",
+   "confidence": {
+    "text": "high",
+    "authority": "high",
+    "currentness": "medium",
+    "spatial": "high"
+   },
+   "limitations": []
+  }
+ ]
+}

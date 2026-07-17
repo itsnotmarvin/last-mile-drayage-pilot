@@ -1,0 +1,118 @@
+{
+ "schema_version": "0.1.0",
+ "generated": "2026-07-16",
+ "description": "Verified City of Elizabeth municipal rules relevant to the APM Elizabeth corridor, extracted from the official Municode publication of the Elizabeth City Code (Supplement 31, codified through Ord. 6138, 2025-06-24; retrieved via api.municode.com productId 16168 jobId 472747 on 2026-07-16). Acts are kept distinct: roadway operation, parking, registration, and terminal entry are different acts.",
+ "currentness_limit": "Codified through Ord. 6138 (2025-06-24). No post-supplement ordinance affecting Title 10 on the corridor was found via targeted search on 2026-07-16, but Municode's ordinance bank could not be enumerated programmatically; absolute currentness after 2025-06-24 is a recorded limitation.",
+ "corridor_negative_finding": {
+  "statement": "North Avenue, North Avenue East, McLester Street, Tripoli Street, Kapkowski Road, and Dowd Avenue do NOT appear in Elizabeth's 4-ton weight-exclusion schedule (10.16.010), the 5-ton schedule (10.16.040), or any truck-route exclusion; Title 10 contains no municipal truck-route system ordinance under N.J.S.A. 40:67-16.1 covering these streets.",
+  "checked_chapters": [
+   "10.04",
+   "10.08",
+   "10.12",
+   "10.16",
+   "10.20",
+   "10.40",
+   "10.72"
+  ],
+  "evidence": "data/raw/documents/municipal/elizabeth_title10_TIT10VETR_CH10.16WELI_supp31_2026-07-16.json and sibling captures"
+ },
+ "rules": [
+  {
+   "rule_id": "rule_043",
+   "rule_name": "Elizabeth 4-ton gross-weight exclusion streets (corridor streets not listed)",
+   "jurisdiction": "municipal",
+   "authority": "City of Elizabeth",
+   "source_doc": "Elizabeth City Code Ch. 10.16",
+   "source_section": "10.16.010 Four-ton weight limit\u2014Streets affected",
+   "source_url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI",
+   "local_path": "data/raw/documents/municipal/elizabeth_title10_TIT10VETR_CH10.16WELI_supp31_2026-07-16.json",
+   "rule_summary": "Trucks over 4 tons gross weight are excluded from the streets enumerated in 10.16.010 except for pickup and delivery on such street. The enumerated schedule does not include North Avenue, North Avenue East, McLester Street, Tripoli Street, Kapkowski Road, or Dowd Avenue.",
+   "act": "roadway_operation",
+   "vehicle_property_keys": [
+    "gross_weight"
+   ],
+   "applies_to_segments_or_paths": [
+    "enumerated_10.16.010_streets_only_none_on_modeled_corridor"
+   ],
+   "compliance_effect": "operation_prohibited_on_listed_streets_with_delivery_exception",
+   "confidence": "high",
+   "modality": "prohibitory",
+   "effective_from": null,
+   "effective_to": null,
+   "notes": "Included so the corridor negative finding is testable in the pair scan. Couples to no modeled corridor edge."
+  },
+  {
+   "rule_id": "rule_044",
+   "rule_name": "Elizabeth 80,000-lb overweight-vehicle zone on North Avenue East (permissive port connection)",
+   "jurisdiction": "municipal",
+   "authority": "City of Elizabeth",
+   "source_doc": "Elizabeth City Code Ch. 10.16",
+   "source_section": "10.16.050 An 80,000 pound overweight vehicle zone limit\u2014Streets affected (Ord. 4654, 2015-12-22)",
+   "source_url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI",
+   "local_path": "data/raw/documents/municipal/elizabeth_title10_TIT10VETR_CH10.16WELI_supp31_2026-07-16.json",
+   "rule_summary": "Designates an over-80,000-lb overweight vehicle zone on North Avenue East beginning 440 feet east of the Kapkowski Road intersection and continuing 520 feet east to the vacated portion of North Avenue East and its connection to the Port Authority overweight vehicle zone.",
+   "act": "roadway_operation",
+   "vehicle_property_keys": [
+    "gross_weight",
+    "overweight_permit_status"
+   ],
+   "applies_to_segments_or_paths": [
+    "North Avenue East (440-960 ft east of Kapkowski Rd)"
+   ],
+   "compliance_effect": "overweight_zone_connection_permitted",
+   "confidence": "high",
+   "modality": "permissive",
+   "effective_from": "2015-12-22",
+   "effective_to": null,
+   "notes": "Permissive zone designation connecting to the Port Authority overweight vehicle zone; not a prohibition on legal-weight trucks."
+  },
+  {
+   "rule_id": "rule_045",
+   "rule_name": "Elizabeth overnight truck parking prohibition (parking act only)",
+   "jurisdiction": "municipal",
+   "authority": "City of Elizabeth",
+   "source_doc": "Elizabeth City Code Ch. 10.40",
+   "source_section": "10.40.020 No parking of certain vehicles from 9:00 p.m. to 6:00 a.m.; 10.40.090 no truck parking near schools/parks",
+   "source_url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.40PARETRBUCOVE",
+   "local_path": "data/raw/documents/municipal/elizabeth_title10_TIT10VETR_CH10.40PARETRBUCOVE_supp31_2026-07-16.json",
+   "rule_summary": "Prohibits parking of trucks/commercial vehicles on city streets 9:00 p.m.-6:00 a.m. (with exceptions) and at all times near listed schools/parks (one listed zone borders a midtown block of North Avenue East near Kellogg Park). Governs the act of parking only, not roadway operation or terminal entry.",
+   "act": "parking",
+   "vehicle_property_keys": [
+    "vehicle_class",
+    "time_of_day"
+   ],
+   "applies_to_segments_or_paths": [
+    "citywide_parking_only"
+   ],
+   "compliance_effect": "parking_prohibited",
+   "confidence": "high",
+   "modality": "prohibitory",
+   "effective_from": null,
+   "effective_to": null,
+   "notes": "Recorded to keep the parking act separate from operating restrictions per project rule. Cannot contradict operating or entry rules (different act)."
+  },
+  {
+   "rule_id": "rule_046",
+   "rule_name": "Elizabeth traffic-control devices on corridor intersections (signal/stops)",
+   "jurisdiction": "municipal",
+   "authority": "City of Elizabeth",
+   "source_doc": "Elizabeth City Code Ch. 10.08",
+   "source_section": "10.08 schedules: signal at North Avenue East & Kapkowski Road; three-way stop at Dowd Avenue & York Street",
+   "source_url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.08STINYIINTHSTNOPAZO",
+   "local_path": "data/raw/documents/municipal/elizabeth_title10_TIT10VETR_CH10.08STINYIINTHSTNOPAZO_supp31_2026-07-16.json",
+   "rule_summary": "Establishes traffic-control devices (signal, stop signs) at corridor intersections. Imposes ordinary traffic control, not a truck prohibition or truck route restriction.",
+   "act": "roadway_operation",
+   "vehicle_property_keys": [],
+   "applies_to_segments_or_paths": [
+    "North Avenue East & Kapkowski Road intersection",
+    "Dowd Avenue & York Street intersection"
+   ],
+   "compliance_effect": "traffic_control_compliance_required",
+   "confidence": "high",
+   "modality": "operational",
+   "effective_from": null,
+   "effective_to": null,
+   "notes": "Included for completeness of the municipal movement layer on the corridor."
+  }
+ ]
+}

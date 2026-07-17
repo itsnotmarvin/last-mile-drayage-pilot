@@ -1,0 +1,200 @@
+{
+ "schema_version": "0.1.0",
+ "generated": "2026-07-16",
+ "description": "Profile-by-path evaluations under the 2026-07-16 repository-only audit. No evaluation asserts a legal conclusion; unresolved inputs are preserved. contradiction_pair_ids is empty for every evaluation: no potential contradiction is currently verifiable (see rule_pair_evaluations.json).",
+ "overall_statement": "Updated 2026-07-16 after Phase A evidence completion: road-leg evidence is now current and connected; remaining unresolved items are the PA-10 34-1140(c) interpretation (named blocker), load-specific facts for the OS/OW profile, and field signage (out of scope). See data/processed/contradiction_conclusion.json for the terminal conclusion.",
+ "evaluations": [
+  {
+   "evaluation_id": "eval_001",
+   "profile_id": "standard_5_axle_drayage_truck",
+   "path_id": "path_a_exit13a_to_apm",
+   "as_of": "2026-07-16",
+   "timezone": "America/New_York",
+   "load_circumstance": "unspecified",
+   "per_edge_results": [],
+   "per_edge_results_note": "Edge-level evaluation is unsupported: no rule-to-edge coupling exists at exact-edge precision and per-segment designation is unverified.",
+   "gate_result": "conditional",
+   "classification": "conditional",
+   "rule_ids": [
+    "rule_001",
+    "rule_002",
+    "rule_008",
+    "rule_041",
+    "rule_042",
+    "rule_009",
+    "rule_012",
+    "rule_013",
+    "rule_014",
+    "rule_015",
+    "rule_016",
+    "rule_020"
+   ],
+   "blocking_rule_ids": [],
+   "unresolved_inputs": [
+    "PA-10 34-1140(c) authoritative interpretation",
+    "load-type-specific gate window",
+    "field signage (out of scope)"
+   ],
+   "contradiction_pair_ids": [],
+   "explanation": "Updated 2026-07-16: road legs are affirmatively supported - approach on designated network (NN for Path A via Turnpike/Route 81, Access Network for Path B via US 1&9), municipal terminal-access streets carry no municipal/county restriction (Elizabeth Title 10 Supp. 31; NJDOT LRS). Gate result remains conditional on load-type window, valid appointment, safety induction, and credentials. The PA-10 34-1140(c) literal-reading question remains an unresolved interpretation issue at the gate (finding_008).",
+   "requires_human_review": true
+  },
+  {
+   "evaluation_id": "eval_002",
+   "profile_id": "standard_5_axle_drayage_truck",
+   "path_id": "path_b_us1_9_to_apm",
+   "as_of": "2026-07-16",
+   "timezone": "America/New_York",
+   "load_circumstance": "unspecified",
+   "per_edge_results": [],
+   "per_edge_results_note": "Edge-level evaluation is unsupported: no rule-to-edge coupling exists at exact-edge precision and per-segment designation is unverified.",
+   "gate_result": "conditional",
+   "classification": "conditional",
+   "rule_ids": [
+    "rule_001",
+    "rule_002",
+    "rule_008",
+    "rule_041",
+    "rule_042",
+    "rule_009",
+    "rule_012",
+    "rule_013",
+    "rule_014",
+    "rule_015",
+    "rule_016",
+    "rule_020"
+   ],
+   "blocking_rule_ids": [],
+   "unresolved_inputs": [
+    "PA-10 34-1140(c) authoritative interpretation",
+    "load-type-specific gate window",
+    "field signage (out of scope)"
+   ],
+   "contradiction_pair_ids": [],
+   "explanation": "Updated 2026-07-16: road legs are affirmatively supported - approach on designated network (NN for Path A via Turnpike/Route 81, Access Network for Path B via US 1&9), municipal terminal-access streets carry no municipal/county restriction (Elizabeth Title 10 Supp. 31; NJDOT LRS). Gate result remains conditional on load-type window, valid appointment, safety induction, and credentials. The PA-10 34-1140(c) literal-reading question remains an unresolved interpretation issue at the gate (finding_008).",
+   "requires_human_review": true
+  },
+  {
+   "evaluation_id": "eval_003",
+   "profile_id": "older_engine_access_denied_drayage_truck",
+   "path_id": "path_a_exit13a_to_apm",
+   "as_of": "2026-07-16",
+   "timezone": "America/New_York",
+   "load_circumstance": "unspecified",
+   "per_edge_results": [],
+   "per_edge_results_note": "Edge-level evaluation is unsupported: no rule-to-edge coupling exists at exact-edge precision and per-segment designation is unverified.",
+   "gate_result": "blocking",
+   "classification": "blocking_at_terminal_entry",
+   "rule_ids": [
+    "rule_017",
+    "rule_019",
+    "rule_035"
+   ],
+   "blocking_rule_ids": [
+    "rule_017",
+    "rule_019",
+    "rule_035"
+   ],
+   "unresolved_inputs": [
+    "current N.J.A.C. 16:32 force for the road legs",
+    "per-segment route designation"
+   ],
+   "contradiction_pair_ids": [],
+   "explanation": "Updated 2026-07-16: block re-verified against the current tariff (byte-identical 2026-07-16): 34-1140(a)-(b) denies entry (1998-or-older engine; DTR verification impossible via 34-1101/34-1121). Road legs to the gate are lawful for a 102-inch standard truck under current N.J.A.C. 16:32; the denial operates at terminal entry only. Blocking, not contradictory: no rule affirmatively requires entry.",
+   "requires_human_review": false
+  },
+  {
+   "evaluation_id": "eval_004",
+   "profile_id": "older_engine_access_denied_drayage_truck",
+   "path_id": "path_b_us1_9_to_apm",
+   "as_of": "2026-07-16",
+   "timezone": "America/New_York",
+   "load_circumstance": "unspecified",
+   "per_edge_results": [],
+   "per_edge_results_note": "Edge-level evaluation is unsupported: no rule-to-edge coupling exists at exact-edge precision and per-segment designation is unverified.",
+   "gate_result": "blocking",
+   "classification": "blocking_at_terminal_entry",
+   "rule_ids": [
+    "rule_017",
+    "rule_019",
+    "rule_035"
+   ],
+   "blocking_rule_ids": [
+    "rule_017",
+    "rule_019",
+    "rule_035"
+   ],
+   "unresolved_inputs": [
+    "current N.J.A.C. 16:32 force for the road legs",
+    "per-segment route designation"
+   ],
+   "contradiction_pair_ids": [],
+   "explanation": "Updated 2026-07-16: block re-verified against the current tariff (byte-identical 2026-07-16): 34-1140(a)-(b) denies entry (1998-or-older engine; DTR verification impossible via 34-1101/34-1121). Road legs to the gate are lawful for a 102-inch standard truck under current N.J.A.C. 16:32; the denial operates at terminal entry only. Blocking, not contradictory: no rule affirmatively requires entry.",
+   "requires_human_review": false
+  },
+  {
+   "evaluation_id": "eval_005",
+   "profile_id": "oversize_overweight_oog_load",
+   "path_id": "path_a_exit13a_to_apm",
+   "as_of": "2026-07-16",
+   "timezone": "America/New_York",
+   "load_circumstance": "OOG/OSOW, specific load pending",
+   "per_edge_results": [],
+   "per_edge_results_note": "Edge-level evaluation is unsupported: no rule-to-edge coupling exists at exact-edge precision and per-segment designation is unverified.",
+   "gate_result": "conditional",
+   "classification": "conditional_and_unresolved",
+   "rule_ids": [
+    "rule_003",
+    "rule_027",
+    "rule_028",
+    "rule_029",
+    "rule_030",
+    "rule_031",
+    "rule_041",
+    "rule_042"
+   ],
+   "blocking_rule_ids": [],
+   "unresolved_inputs": [
+    "specific load configuration",
+    "permit route",
+    "per-segment designation and clearances",
+    "current N.J.A.C. 16:32 force"
+   ],
+   "contradiction_pair_ids": [],
+   "explanation": "Conditional on actual dimensions/weight, load divisibility, NJ OS/OW permit (rule_030), separate toll-authority approval for the Path A Turnpike approach (rule_031), route designation, and the 3:30 p.m. OOG cutoff (rule_003). The profile intentionally lacks a concrete load, so no pass/fail verdict is supported. Update 2026-07-16: approach edges now modeled; NJTA approval coupling (rule_031) attaches to Path A Turnpike edge; profile remains unresolved pending a concrete load (by design).",
+   "requires_human_review": true
+  },
+  {
+   "evaluation_id": "eval_006",
+   "profile_id": "oversize_overweight_oog_load",
+   "path_id": "path_b_us1_9_to_apm",
+   "as_of": "2026-07-16",
+   "timezone": "America/New_York",
+   "load_circumstance": "OOG/OSOW, specific load pending",
+   "per_edge_results": [],
+   "per_edge_results_note": "Edge-level evaluation is unsupported: no rule-to-edge coupling exists at exact-edge precision and per-segment designation is unverified.",
+   "gate_result": "conditional",
+   "classification": "conditional_and_unresolved",
+   "rule_ids": [
+    "rule_003",
+    "rule_027",
+    "rule_028",
+    "rule_029",
+    "rule_030",
+    "rule_031",
+    "rule_041",
+    "rule_042"
+   ],
+   "blocking_rule_ids": [],
+   "unresolved_inputs": [
+    "specific load configuration",
+    "permit route",
+    "per-segment designation and clearances",
+    "current N.J.A.C. 16:32 force"
+   ],
+   "contradiction_pair_ids": [],
+   "explanation": "Conditional on actual dimensions/weight, load divisibility, NJ OS/OW permit (rule_030), separate toll-authority approval for the Path A Turnpike approach (rule_031), route designation, and the 3:30 p.m. OOG cutoff (rule_003). The profile intentionally lacks a concrete load, so no pass/fail verdict is supported. Update 2026-07-16: approach edges now modeled; NJTA approval coupling (rule_031) attaches to Path A Turnpike edge; profile remains unresolved pending a concrete load (by design).",
+   "requires_human_review": true
+  }
+ ]
+}
