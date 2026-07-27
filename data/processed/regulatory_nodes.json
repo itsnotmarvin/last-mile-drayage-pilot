@@ -1,807 +1,2929 @@
 {
-  "schema_version": "0.1",
-  "description": "State, Port Authority/APM, and federal regulatory nodes extracted for the APM Elizabeth last-mile drayage pilot. Municipal rules are intentionally excluded until after Stage 4 field work.",
-  "status": "working_draft",
+  "schema_version": "0.4-clause-consolidated",
+  "description": "Clause-level regulatory catalog for the APM Terminals Elizabeth last-mile drayage pilot. Repeated source metadata is normalized into the source_registry, and related atomic requirements are nested under one regulatory rule.",
+  "status": "source-grounded evidence catalog; legal applicability, precedence, conflict, and route feasibility remain separate analytical questions",
+  "scope": {
+    "geographic": "Public approaches and terminal-related evidence for APM Terminals Elizabeth within Elizabeth, Union County, New Jersey.",
+    "node_grain": "One regulatory node per cited legal provision, shared source clause, or operational source section.",
+    "definition_policy": "Every regulatory node includes a plain, source-grounded definition assembled from the retained proposition or related propositions.",
+    "consolidation_policy": "Requirements from the same primary legal provision or shared source clause are retained as nested requirements instead of separate graph nodes."
+  },
+  "source_registry": [
+    {
+      "source_id": "apm_hours_ops",
+      "title": "APM Terminals Elizabeth Hours of Operation",
+      "issuing_authority": "APM Terminals",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
+      "local_paths": [
+        "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf"
+      ],
+      "official_status": "facility_operator_operational_information",
+      "currentness_status": "currentness_unverified",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "apm_appointment_system",
+      "title": "APM Terminals Elizabeth Truck Appointment System",
+      "issuing_authority": "APM Terminals",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
+      "local_paths": [
+        "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf"
+      ],
+      "official_status": "facility_operator_operational_information",
+      "currentness_status": "currentness_unverified",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "panynj_truckers_guide",
+      "title": "PANYNJ Truckers Resource Guidebook",
+      "issuing_authority": "Port Authority of New York and New Jersey",
+      "jurisdiction": "port_authority",
+      "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+      "local_paths": [
+        "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf"
+      ],
+      "official_status": "official_operational",
+      "currentness_status": "August_2025_revision_verified_against_current_official_URL",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "njac_16_32",
+      "title": "N.J.A.C. 16:32 — Truck Access (current NJDOT courtesy copy)",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "jurisdiction": "State of New Jersey",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+      "local_paths": [
+        "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+        "data/raw/documents/state/njac_16_32_truck_access.pdf"
+      ],
+      "official_status": "official_current_courtesy_copy",
+      "currentness_status": "current_through_document_readoption_and_amendment_notices",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "nj_size_weight_guidebook",
+      "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "jurisdiction": "state",
+      "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+      "local_paths": [
+        "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf"
+      ],
+      "official_status": "official_operational",
+      "currentness_status": "official_2024_guide_reviewed; underlying N.J.A.C. 13:18 readoption final-text reconciliation remains open",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "ecfr_twic_1572",
+      "title": "49 CFR Part 1572 — TWIC",
+      "issuing_authority": "eCFR",
+      "jurisdiction": "federal",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-D/part-1572",
+      "local_paths": [
+        "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf"
+      ],
+      "official_status": "official_government_archived_regulatory_snapshot",
+      "currentness_status": "currentness_unverified",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "nj_large_truck_map",
+      "title": "2024 NJ Large Truck Map",
+      "issuing_authority": "NJDOT",
+      "jurisdiction": "state",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/largetruckmap.pdf",
+      "local_paths": [
+        "data/raw/documents/state/nj_large_truck_map_2024.pdf"
+      ],
+      "official_status": "official_operational_map",
+      "currentness_status": "currentness_unverified",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "apm_directions",
+      "title": "APM Terminals Elizabeth Contact and Directions",
+      "issuing_authority": "APM Terminals",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
+      "local_paths": [
+        "data/raw/documents/port_authority/apm_elizabeth_contact_directions.pdf"
+      ],
+      "official_status": "facility_operator_operational_information",
+      "currentness_status": "currentness_unverified",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "panynj_marine_terminal_tariff",
+      "title": "PANYNJ Marine Terminal Tariff FMC Schedule No. PA-10",
+      "issuing_authority": "Port Authority of New York and New Jersey",
+      "jurisdiction": "port_authority",
+      "url": "https://www.panynj.gov/port/en/our-port/tariffs.html",
+      "local_paths": [
+        "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf"
+      ],
+      "official_status": "official_primary_tariff",
+      "currentness_status": "effective_2026-05-01_official_tariff_reopened_2026-07-26",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "porttruckpass_tips",
+      "title": "PortTruckPass / TIPS",
+      "issuing_authority": "PortTruckPass / PANYNJ",
+      "jurisdiction": "port_authority",
+      "url": "https://www.porttruckpass.com/",
+      "local_paths": [
+        "data/raw/documents/port_authority/porttruckpass_tips_homepage.pdf"
+      ],
+      "official_status": "official_operational_information",
+      "currentness_status": "currentness_unverified",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "panynj_truck_info",
+      "title": "PANYNJ Truck Information Page",
+      "issuing_authority": "PANYNJ",
+      "jurisdiction": "port_authority",
+      "url": "https://www.panynj.gov/port/en/shipping/truck.html",
+      "local_paths": [
+        "data/raw/documents/port_authority/panynj_truck_information_page.pdf"
+      ],
+      "official_status": "official_operational_snapshot",
+      "currentness_status": "currentness_unverified",
+      "retrieval_timestamps": [
+        "2026-06-25T00:00:00Z"
+      ]
+    },
+    {
+      "source_id": "njta_njac_19_9_readoption_2025",
+      "title": "N.J.A.C. 19:9 readoption record — proposal and adoption",
+      "issuing_authority": "New Jersey Turnpike Authority",
+      "jurisdiction": "New Jersey Turnpike Authority roadway",
+      "url": "https://www.njta.gov/document/notice-of-proposed-substantial-changes-upon-adoption-to-proposed-amendments/",
+      "local_paths": [
+        "data/raw/documents/toll_authority/njta_njac_19_9_adoption_effective_2025_01_06.pdf",
+        "data/raw/documents/toll_authority/njta_njac_19_9_proposal_2024_03_04.pdf"
+      ],
+      "official_status": "official_primary_rulemaking_record",
+      "currentness_status": "readopted_effective_2025-01-06; current NJTA regulations page reviewed 2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "njdot_us1_9_speed",
+      "title": "Traffic Regulations — Route U.S. 1 and 9 speed limits",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "jurisdiction": "State of New Jersey",
+      "url": "https://www.nj.gov/transportation/refdata/traffic_orders/speed/rt1_9.shtm",
+      "official_status": "official_primary_traffic_order",
+      "currentness_status": "live_official_page_reviewed_2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "njdot_us1_9_parking",
+      "title": "Traffic Regulations — Route U.S. 1 and 9 parking restrictions",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "jurisdiction": "State of New Jersey",
+      "url": "https://www.nj.gov/transportation/refdata/traffic_orders/parking/rt1_9.shtm",
+      "official_status": "official_primary_traffic_order",
+      "currentness_status": "live_official_page_reviewed_2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "elizabeth_code_parking_restrictions",
+      "title": "Elizabeth Code of Ordinances — Chapter 10.28 Parking Restrictions Generally",
+      "issuing_authority": "City of Elizabeth",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.28PAREGE",
+      "official_status": "officially_designated_code_publisher",
+      "currentness_status": "Municode Supplement 31 through Ordinance 6138 (2025-06-24), cross-checked against City ordinance archive through 2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "elizabeth_code_traffic_2025",
+      "title": "Elizabeth City Code, Supplement 31",
+      "issuing_authority": "City of Elizabeth",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "url": "https://library.municode.com/nj/elizabeth",
+      "official_status": "officially_designated_code_publisher",
+      "currentness_status": "Municode job 472747, online update 2025-11-11, codified through Ordinance 6138; later official archive separately reviewed",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "elizabeth_ordinance_6290_2026",
+      "title": "Elizabeth Ordinance 6290 — Front Street four-ton weight limit",
+      "issuing_authority": "City of Elizabeth City Council",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "url": "https://www.elizabethnj.org/DocumentCenter/View/10814/Ord-No-6290-Amend-1016010-4-ton-weight-limit-streets-to-add-Front-St-at-Elizabeth-River-Cossing-to-Port-Ave",
+      "local_paths": [
+        "data/raw/documents/local/elizabeth_ordinance_6290_2026_front_street_weight_limit.pdf"
+      ],
+      "official_status": "official_primary_adopted_ordinance",
+      "currentness_status": "adoption and effective delay verified from official PDF",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "union_county_laws_2026",
+      "title": "Laws of Union County, New Jersey",
+      "issuing_authority": "Union County Board of County Commissioners",
+      "jurisdiction": "Union County, New Jersey",
+      "url": "https://ucnj.org/commissioners/wp-content/uploads/sites/29/2026/04/Laws-of-Union-County-2026.pdf",
+      "official_status": "official_primary_compilation",
+      "currentness_status": "official_compilation_updated_through_2026-01; post_cutoff_actions_searched_through_2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "title": "Electronic Code of Federal Regulations — FMCSRs",
+      "issuing_authority": "Office of the Federal Register and U.S. Government Publishing Office",
+      "jurisdiction": "United States",
+      "url": "https://www.ecfr.gov/current/title-49",
+      "official_status": "official_government_current_codification_unofficial_legal_edition",
+      "currentness_status": "eCFR up to date through 2026-07-23; current section pages reviewed 2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "ecfr_hazmat_2026_07_23",
+      "title": "Electronic Code of Federal Regulations — hazardous materials transportation",
+      "issuing_authority": "Pipeline and Hazardous Materials Safety Administration",
+      "jurisdiction": "United States",
+      "url": "https://www.ecfr.gov/current/title-49",
+      "official_status": "official_government_current_codification_unofficial_legal_edition",
+      "currentness_status": "eCFR up to date through 2026-07-23; current section pages reviewed 2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "ecfr_maritime_access_2026_07_23",
+      "title": "Electronic Code of Federal Regulations — TWIC and maritime facility access",
+      "issuing_authority": "United States Coast Guard and Transportation Security Administration",
+      "jurisdiction": "United States",
+      "url": "https://www.ecfr.gov/current/title-33",
+      "official_status": "official_government_current_codification_unofficial_legal_edition",
+      "currentness_status": "current eCFR pages and 2024 reader-delay final rule reviewed 2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "uiia_supplement_2026_06_18",
+      "title": "Uniform Intermodal Interchange and Facilities Access Agreement",
+      "issuing_authority": "Intermodal Association of North America",
+      "jurisdiction": "private contractual network",
+      "url": "https://uiia.intermodal.org/documents/uiia/newuiia-legal.pdf",
+      "official_status": "private_standard_contract",
+      "currentness_status": "current_consolidated_agreement_effective_2026-06-18_reopened_2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "apm_port_status_2026_07_24",
+      "title": "APM Terminals Elizabeth Port Status and General Trucking Instructions",
+      "issuing_authority": "APM Terminals Elizabeth",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "url": "https://www2.apmterminals.com/en/port-elizabeth/practical-information/news-and-alerts/2026/Port-Status-Update",
+      "official_status": "facility_operator_operational_policy",
+      "currentness_status": "live_dynamic_page_reopened_2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "union_county_ss4a_appendix_g_2026",
+      "title": "Union County Safe Streets for All Appendix G — Corridor Countermeasures",
+      "issuing_authority": "Union County",
+      "jurisdiction": "Union County, New Jersey",
+      "url": "https://ucnj.org/safe-streets/wp-content/uploads/sites/49/2026/05/UC-SS4A_Appendix-G_Corridor-Countermeasures.pdf",
+      "official_status": "official_planning_document_not_legal_designation",
+      "currentness_status": "official_2026_planning_document",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    },
+    {
+      "source_id": "elizabeth_ordinance_6096_2025",
+      "title": "Elizabeth Ordinance 6096 final-reading notice — minimum commercial-vehicle parking penalty",
+      "issuing_authority": "City of Elizabeth City Council",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "url": "https://elizabethnj.org/DocumentCenter/View/7997/HOMENEWSTRIBUNE-FINAL-READING",
+      "local_paths": [
+        "data/raw/documents/local/elizabeth_ordinance_6096_2025_parking_restrictions.pdf"
+      ],
+      "official_status": "official_primary_adopted_ordinance",
+      "currentness_status": "official notice and current Municode §10.40.050 reopened 2026-07-26",
+      "retrieval_timestamps": [
+        "2026-07-26T23:31:28Z"
+      ]
+    }
+  ],
+  "source_count": 25,
+  "unique_source_url_count": 24,
   "rules": [
     {
       "rule_id": "rule_001",
       "rule_name": "APM Elizabeth weekday gate opening time",
-      "jurisdiction": "port_authority",
-      "authority": "APM Terminals",
-      "source_doc": "APM Terminals Elizabeth Hours of Operation",
-      "source_section": "Hours of Operation page, page 1",
-      "source_url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
-      "rule_summary": "APM Terminals Elizabeth gates open Monday through Friday at 6:00 a.m.",
-      "vehicle_property_keys": [
-        "appointment_status",
-        "load_type"
+      "definition": "APM Terminals Elizabeth gates open Monday through Friday at 6:00 a.m.",
+      "source_id": "apm_hours_ops",
+      "source_sections": [
+        "Hours of Operation page, page 1"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_001"
       ],
-      "compliance_effect": "time_window",
-      "confidence": "high",
-      "notes": "Extracted from saved APM Hours of Operation PDF. Weekend and holiday hours may vary."
+      "structured_values": [
+        {
+          "original_value": "6:00 a.m.",
+          "original_unit": "local time",
+          "canonical_measurement": "weekday_gate_opening_time",
+          "normalized_value": "06:00",
+          "normalized_unit": "local_time",
+          "measurement_scope": "APM Elizabeth gates Monday through Friday",
+          "conversion_method": "12-hour time normalized to 24-hour local time"
+        }
+      ]
     },
     {
       "rule_id": "rule_002",
       "rule_name": "APM Elizabeth standard gate cutoff time",
-      "jurisdiction": "port_authority",
-      "authority": "APM Terminals",
-      "source_doc": "APM Terminals Elizabeth Hours of Operation",
-      "source_section": "Hours of Operation cutoff table, page 1",
-      "source_url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
-      "rule_summary": "APM Terminals Elizabeth lists a 4:00 p.m. gate cutoff for empties, the PND 921 Delancey St. empty depot, dry loads, and reefer loads.",
-      "vehicle_property_keys": [
-        "load_type",
-        "appointment_status"
+      "definition": "APM Terminals Elizabeth lists a 4:00 p.m. gate cutoff for empties, the PND 921 Delancey St. empty depot, dry loads, and reefer loads. APM Terminals Elizabeth lists a 3:30 p.m. gate cutoff for Out-of-Gauge (OOG) loads.",
+      "source_id": "apm_hours_ops",
+      "source_sections": [
+        "Hours of Operation cutoff table, page 1"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "time_window",
-      "confidence": "high",
-      "notes": "Applies to listed load categories in the saved APM Hours of Operation PDF."
-    },
-    {
-      "rule_id": "rule_003",
-      "rule_name": "APM Elizabeth OOG load cutoff time",
-      "jurisdiction": "port_authority",
-      "authority": "APM Terminals",
-      "source_doc": "APM Terminals Elizabeth Hours of Operation",
-      "source_section": "Hours of Operation cutoff table, page 1",
-      "source_url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
-      "rule_summary": "APM Terminals Elizabeth lists a 3:30 p.m. gate cutoff for Out-of-Gauge (OOG) loads.",
-      "vehicle_property_keys": [
-        "load_type",
-        "dimensions",
-        "permit_status"
-      ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "time_window",
-      "confidence": "high",
-      "notes": "OOG loads are separated from standard load types and have an earlier cutoff."
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_002",
+        "rule_003"
+      ]
     },
     {
       "rule_id": "rule_004",
       "rule_name": "APM Elizabeth weekend and holiday hours may vary",
-      "jurisdiction": "port_authority",
-      "authority": "APM Terminals",
-      "source_doc": "APM Terminals Elizabeth Hours of Operation",
-      "source_section": "Hours of Operation page, pages 1-2",
-      "source_url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
-      "rule_summary": "APM Terminals Elizabeth states that weekend and holiday gate hours may vary, and the saved PDF includes a listed holiday schedule.",
-      "vehicle_property_keys": [
-        "appointment_status",
-        "load_type",
-        "date"
+      "definition": "APM Terminals Elizabeth states that weekend gate hours may vary. APM Terminals Elizabeth states that holiday gate hours may vary.",
+      "source_id": "apm_hours_ops",
+      "source_sections": [
+        "Hours of Operation page, pages 1-2"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "time_window",
-      "confidence": "high",
-      "notes": "Holiday list appears on page 2. Temporary notices, such as special 5:00 p.m. extensions, should be treated as operational alerts rather than permanent rules."
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_004",
+        "rule_split_004_holiday"
+      ]
     },
     {
       "rule_id": "rule_005",
       "rule_name": "APM Elizabeth TERMPoint appointment system",
-      "jurisdiction": "port_authority",
-      "authority": "APM Terminals",
-      "source_doc": "APM Terminals Elizabeth Truck Appointment System",
-      "source_section": "Truck Appointment System page, page 1",
-      "source_url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
-      "rule_summary": "APM Terminals Elizabeth uses TERMPoint as the truck appointment system for managing terminal truck appointments.",
-      "vehicle_property_keys": [
-        "appointment_status",
-        "credential_status"
+      "definition": "APM Terminals Elizabeth uses TERMPoint as the truck appointment system for managing terminal truck appointments.",
+      "source_id": "apm_appointment_system",
+      "source_sections": [
+        "Truck Appointment System page, page 1"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "appointment_required_or_operational_access",
-      "confidence": "high",
-      "notes": "The page presents TERMPoint as the truck appointment system and provides login/support/registration options."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_005"
+      ]
     },
     {
       "rule_id": "rule_006",
       "rule_name": "TERMPoint import and export appointment scheduling",
-      "jurisdiction": "port_authority",
-      "authority": "APM Terminals",
-      "source_doc": "APM Terminals Elizabeth Truck Appointment System",
-      "source_section": "Truck Appointment System page, page 1",
-      "source_url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
-      "rule_summary": "TERMPoint includes the ability to schedule import and export appointments, including scheduling import and export appointments simultaneously.",
-      "vehicle_property_keys": [
-        "appointment_status",
-        "load_type"
+      "definition": "TERMPoint supports requests for import appointments. TERMPoint supports requests for export appointments. TERMPoint supports simultaneous scheduling of an import appointment and an export appointment.",
+      "source_id": "apm_appointment_system",
+      "source_sections": [
+        "Truck Appointment System page, page 1"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "appointment_required_or_operational_access",
-      "confidence": "high",
-      "notes": "Visible on page 1 of the saved PDF. The page also references appointment availability and appointment features."
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_006",
+        "rule_split_006_export",
+        "rule_split_006_simultaneous"
+      ]
     },
     {
       "rule_id": "rule_007",
       "rule_name": "APM appointment availability may change with terminal closures",
-      "jurisdiction": "port_authority",
-      "authority": "APM Terminals",
-      "source_doc": "APM Terminals Elizabeth Truck Appointment System",
-      "source_section": "Appointment Availability, page 2",
-      "source_url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
-      "rule_summary": "Appointment availability is subject to change when the terminal is closed, and changes are communicated by the terminal via e-alerts.",
-      "vehicle_property_keys": [
-        "appointment_status",
-        "date",
-        "load_type"
+      "definition": "Appointment availability may change when APM Terminals Elizabeth is closed.",
+      "source_id": "apm_appointment_system",
+      "source_sections": [
+        "Appointment Availability, page 2"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "time_window",
-      "confidence": "high",
-      "notes": "This is an operational constraint rather than a static road rule."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_007"
+      ]
     },
     {
       "rule_id": "rule_008",
       "rule_name": "Marine terminal appointment prior to gate arrival",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / Port of New York and New Jersey",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "General Information \u2014 What to Have Prior to Arriving at Gate, page 3",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "If visiting an applicable marine terminal, the trucker should have an appointment before arriving at the gate.",
-      "vehicle_property_keys": [
-        "appointment_status",
-        "terminal_destination"
+      "definition": "If visiting an applicable marine terminal, the trucker should have an appointment before arriving at the gate.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "General Information — What to Have Prior to Arriving at Gate, page 3"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "appointment_required_or_operational_access",
-      "confidence": "high",
-      "notes": "This is stronger than the APM TERMPoint feature page because it frames appointment status as something to have prior to gate arrival."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_008"
+      ]
     },
     {
       "rule_id": "rule_009",
       "rule_name": "Driver license, TWIC, and SeaLink required before gate arrival",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / Port of New York and New Jersey",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "General Information \u2014 What to Have Prior to Arriving at Gate, page 3",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "Before arriving at the gate, a trucker should have a valid driver's license, TWIC, and SeaLink identification.",
-      "vehicle_property_keys": [
-        "driver_license_status",
-        "twic_status",
-        "sealink_status"
+      "definition": "The PANYNJ truckers guide recommends that a trucker have a valid driver license before arriving at a marine-terminal gate. The PANYNJ truckers guide recommends that a trucker have a valid TWIC before arriving at a marine-terminal gate. The PANYNJ truckers guide recommends that a trucker have valid SeaLink identification before arriving at a marine-terminal gate.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "General Information — What to Have Prior to Arriving at Gate, page 3"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "credential_required",
-      "confidence": "high",
-      "notes": "Later federal TWIC extraction should link this local port requirement to 49 CFR Part 1572."
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_009",
+        "rule_split_009_twic",
+        "rule_split_009_sealink"
+      ]
     },
     {
       "rule_id": "rule_010",
       "rule_name": "TWIC required for secure or restricted maritime facility access",
-      "jurisdiction": "federal",
-      "authority": "TSA / U.S. Coast Guard / PANYNJ guidebook summary",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "Transportation Workers Identification Credential (TWIC), page 3",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "TWIC is required by federal law for workers, including drayage truck drivers, who need access to secure or restricted areas of maritime facilities.",
-      "vehicle_property_keys": [
-        "twic_status",
-        "secure_area_access_needed"
+      "definition": "TWIC is required by federal law for workers, including drayage truck drivers, who need access to secure or restricted areas of maritime facilities.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Transportation Workers Identification Credential (TWIC), page 3"
       ],
-      "applies_to_segments_or_paths": [
-        "APM terminal access candidate",
-        "terminal secure/restricted area"
-      ],
-      "compliance_effect": "credential_required",
-      "confidence": "high",
-      "notes": "This should later be cross-checked against the saved eCFR 49 CFR Part 1572 PDF."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_010"
+      ]
     },
     {
       "rule_id": "rule_011",
       "rule_name": "Original TWIC must be presented for inspection",
-      "jurisdiction": "federal",
-      "authority": "TSA / U.S. Coast Guard / PANYNJ guidebook summary",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "TWIC Care and Handling Instructions, page 3",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "The original TWIC must be presented for inspection when requesting unescorted access to a secure or restricted area of a marine terminal or vessel.",
-      "vehicle_property_keys": [
-        "twic_status",
-        "unescorted_access_status"
+      "definition": "The original TWIC must be presented for inspection when requesting unescorted access to a secure or restricted area of a marine terminal or vessel.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "TWIC Care and Handling Instructions, page 3"
       ],
-      "applies_to_segments_or_paths": [
-        "APM terminal access candidate",
-        "terminal secure/restricted area"
-      ],
-      "compliance_effect": "credential_required",
-      "confidence": "high",
-      "notes": "The guidebook states that presenting a photocopy instead of an actual TWIC may lead to criminal prosecution."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_011"
+      ]
     },
     {
       "rule_id": "rule_012",
       "rule_name": "SeaLink mandatory for port truckers",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "SeaLink, page 4",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "SeaLink is the Port Authority's uniform truck driver identification system and is mandatory for all truckers doing business at the Port of New York and New Jersey.",
-      "vehicle_property_keys": [
-        "sealink_status",
-        "driver_identification_status"
+      "definition": "SeaLink is the Port Authority's uniform truck driver identification system and is mandatory for all truckers doing business at the Port of New York and New Jersey.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "SeaLink, page 4"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "credential_required",
-      "confidence": "high",
-      "notes": "SeaLink is a driver-identification credential, separate from vehicle RFID."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_012"
+      ]
     },
     {
       "rule_id": "rule_013",
       "rule_name": "SeaLink users must also have TWIC",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "TWIC and SeaLink, page 4",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "Anyone with SeaLink identification must also have a TWIC, and the TWIC must be registered with the Port Authority at the Truck Service Center.",
-      "vehicle_property_keys": [
-        "sealink_status",
-        "twic_status",
-        "twic_registration_status"
+      "definition": "Anyone with SeaLink identification must also have a TWIC, and the TWIC must be registered with the Port Authority at the Truck Service Center.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "TWIC and SeaLink, page 4"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "credential_required",
-      "confidence": "high",
-      "notes": "This is a useful coupling rule because it links two credential systems."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_013"
+      ]
     },
     {
       "rule_id": "rule_014",
       "rule_name": "Class 8 drayage trucks must be registered in DTR and have RFID",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / PortTruckPass",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "Radio-Frequency Identification (RFID), page 4",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "All Class 8 drayage trucks seeking entry onto any Port of New York and New Jersey marine terminal must be registered in the Drayage Truck Registry and have a valid RFID tag properly mounted on the vehicle.",
-      "vehicle_property_keys": [
-        "truck_class",
-        "registration_status",
-        "rfid_status"
+      "definition": "A Class 8 drayage truck seeking entry to a Port of New York and New Jersey marine terminal must be registered in the Drayage Truck Registry.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Radio-Frequency Identification (RFID), page 4"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "credential_required",
-      "confidence": "high",
-      "notes": "This is one of the strongest vehicle-level port access rules."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_014"
+      ]
     },
     {
       "rule_id": "rule_015",
       "rule_name": "No RFID tag means no entry",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / PortTruckPass",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "Radio-Frequency Identification (RFID), page 4",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "The guidebook states: no tag, no entry.",
-      "vehicle_property_keys": [
-        "rfid_status"
+      "definition": "The guidebook states: no tag, no entry. Trucks with 1998 and older engine models are prohibited and will be denied access to port terminals in the Port of New York and New Jersey. Only drayage trucks equipped with engines meeting or exceeding federal EPA on-road emission standards for 2014 model year heavy-duty diesel-fueled engines are permitted to register in the DTR via PortTruckPass.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Radio-Frequency Identification (RFID), page 4"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "entry_denied",
-      "confidence": "high",
-      "notes": "Short but important gate-access rule."
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_015",
+        "rule_017",
+        "rule_018"
+      ]
     },
     {
       "rule_id": "rule_016",
       "rule_name": "One RFID tag per unique vehicle",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / PortTruckPass",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "Radio-Frequency Identification (RFID), page 4",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "Each unique vehicle identified by VIN/license plate must be associated with only one RFID tag in the Drayage Truck Registry, and each RFID tag must be associated with only one unique vehicle.",
-      "vehicle_property_keys": [
-        "vin",
-        "license_plate",
-        "rfid_status",
-        "registration_status"
+      "definition": "Each unique vehicle identified by VIN and license plate may be associated with only one RFID tag in the Drayage Truck Registry.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Radio-Frequency Identification (RFID), page 4"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "credential_required",
-      "confidence": "high",
-      "notes": "This rule matters for matching a vehicle profile to port access eligibility."
-    },
-    {
-      "rule_id": "rule_017",
-      "rule_name": "Pre-1999 truck engines denied terminal access",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / PortTruckPass",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "Radio-Frequency Identification (RFID), page 4",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "Trucks with 1998 and older engine models are prohibited and will be denied access to port terminals in the Port of New York and New Jersey.",
-      "vehicle_property_keys": [
-        "engine_model_year"
-      ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "entry_denied",
-      "confidence": "high",
-      "notes": "This is a direct engine-year rule."
-    },
-    {
-      "rule_id": "rule_018",
-      "rule_name": "2014 EPA engine standard needed for DTR registration",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / PortTruckPass",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "Radio-Frequency Identification (RFID), page 4",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "Only drayage trucks equipped with engines meeting or exceeding federal EPA on-road emission standards for 2014 model year heavy-duty diesel-fueled engines are permitted to register in the DTR via PortTruckPass.",
-      "vehicle_property_keys": [
-        "engine_model_year",
-        "emissions_standard",
-        "registration_status"
-      ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "registration_required_or_denied",
-      "confidence": "high",
-      "notes": "This may create an important distinction between older trucks already in service and trucks attempting registration; confirm against current tariff later."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_016"
+      ]
     },
     {
       "rule_id": "rule_019",
       "rule_name": "DTR access denial reasons",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / PortTruckPass",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "Radio-Frequency Identification (RFID), page 4",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "Entry may be denied if the truck is not found in the DTR, has not been approved for port entry, or has a pre-1999 engine.",
-      "vehicle_property_keys": [
-        "registration_status",
-        "approval_status",
-        "engine_model_year"
+      "definition": "A truck may be denied marine-terminal entry when it is not found in the Drayage Truck Registry. A truck may be denied marine-terminal entry when it has not been approved for port entry. A truck may be denied marine-terminal entry when it has a pre-1999 engine.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Radio-Frequency Identification (RFID), page 4",
+        "Radio-Frequency Identification, page 4"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "entry_denied",
-      "confidence": "high",
-      "notes": "This rule directly ties vehicle registration and engine year to gate access."
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_019",
+        "rule_split_019_unapproved",
+        "rule_split_019_old_engine"
+      ]
     },
     {
       "rule_id": "rule_020",
       "rule_name": "UIIA registration and insurance/credit documentation before gate arrival",
-      "jurisdiction": "port_authority",
-      "authority": "PANYNJ / Port of New York and New Jersey",
-      "source_doc": "PANYNJ Truckers Resource Guidebook",
-      "source_section": "General Information \u2014 What to Have Prior to Arriving at Gate, page 3",
-      "source_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "rule_summary": "Before gate arrival, the trucking company should have proof of UIIA registration and valid insurance and credit with the steamship lines being hauled for.",
-      "vehicle_property_keys": [
-        "carrier_registration_status",
-        "insurance_status",
-        "steamship_line_credit_status"
+      "definition": "The PANYNJ truckers guide recommends that a trucking company have proof of UIIA registration before gate arrival. The PANYNJ truckers guide recommends that a trucking company have evidence of valid insurance with the steamship line being hauled for before gate arrival. The PANYNJ truckers guide recommends that a trucking company have valid credit with the steamship line being hauled for before gate arrival.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "General Information — What to Have Prior to Arriving at Gate, page 3"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "carrier_documentation_required",
-      "confidence": "high",
-      "notes": "This applies to the motor carrier/company, not just the individual truck."
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_020",
+        "rule_split_020_insurance",
+        "rule_split_020_credit"
+      ]
     },
     {
       "rule_id": "rule_021",
       "rule_name": "Large-truck route hierarchy in New Jersey",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "N.J.A.C. 16:32 Truck Access",
-      "source_section": "16:32-1.1 Purpose and scope",
-      "source_url": "https://nj.gov/transportation/about/rules/documents/16-32-Current.pdf",
-      "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
-      "rule_summary": "New Jersey establishes a roadway hierarchy for double-trailer truck combinations and 102-inch-wide standard trucks: National Network, New Jersey Access Network, and other local unrestricted roadways.",
-      "vehicle_property_keys": [
-        "truck_width",
-        "combination_type",
-        "terminal_destination"
+      "definition": "New Jersey establishes a roadway hierarchy for double-trailer truck combinations and 102-inch-wide standard trucks: National Network, New Jersey Access Network, and other local unrestricted roadways.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.1 Purpose and scope"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "North Avenue",
-        "McLester Street",
-        "APM terminal access candidate"
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_021"
       ],
-      "compliance_effect": "route_priority",
-      "confidence": "high",
-      "notes": "This is a core state routing rule for the physical-network coupling analysis."
+      "structured_values": [
+        {
+          "original_value": 102,
+          "original_unit": "inches vehicle width",
+          "canonical_measurement": "vehicle_width",
+          "normalized_value": 2590.8,
+          "normalized_unit": "millimetres",
+          "measurement_scope": "New Jersey standard-truck roadway hierarchy",
+          "conversion_method": "exact inches-to-millimetres conversion"
+        }
+      ]
     },
     {
       "rule_id": "rule_022",
-      "rule_name": "Large trucks must use National Network except for terminal access",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "N.J.A.C. 16:32 Truck Access",
-      "source_section": "16:32-1.2 General provisions",
-      "source_url": "https://nj.gov/transportation/about/rules/documents/16-32-Current.pdf",
-      "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
-      "rule_summary": "Double-trailer truck combinations and 102-inch-wide standard trucks must complete trips using the National Network, but may leave the National Network to access terminals under the chapter.",
-      "vehicle_property_keys": [
-        "truck_width",
-        "combination_type",
-        "terminal_destination"
+      "rule_name": "Large-truck National Network trip-completion duty",
+      "definition": "Double-trailer truck combinations and 102-inch-wide standard trucks must complete trips using the National Network except as otherwise provided in N.J.A.C. 16:32.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.2 General provisions"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B"
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_022"
       ],
-      "compliance_effect": "route_restriction_with_terminal_access_exception",
-      "confidence": "high",
-      "notes": "This is the main reason the APM terminal destination matters."
+      "structured_values": [
+        {
+          "original_value": 102,
+          "original_unit": "inches",
+          "canonical_measurement": "vehicle_width",
+          "normalized_value": 2.5908,
+          "normalized_unit": "metres",
+          "measurement_scope": "standard truck described by N.J.A.C. 16:32",
+          "conversion_method": "exact inches-to-metres conversion"
+        }
+      ]
     },
     {
       "rule_id": "rule_023",
       "rule_name": "Local unrestricted roadways only as necessary for terminal access",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "N.J.A.C. 16:32 Truck Access",
-      "source_section": "16:32-1.5 Reasonable access to terminals",
-      "source_url": "https://nj.gov/transportation/about/rules/documents/16-32-Current.pdf",
-      "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
-      "rule_summary": "Large trucks may use local unrestricted roadways only as necessary to access a terminal located on a local unrestricted roadway, and should return to the National Network or New Jersey Access Network by the direct route.",
-      "vehicle_property_keys": [
-        "truck_width",
-        "combination_type",
-        "terminal_destination",
-        "route_directness"
+      "definition": "A covered large truck may use a local unrestricted roadway only as necessary to access a terminal located on that roadway.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.5 Reasonable access to terminals"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "McLester Street",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "terminal_access_exception",
-      "confidence": "high",
-      "notes": "This will later be tested against the candidate path geometry."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_023"
+      ]
     },
     {
       "rule_id": "rule_024",
       "rule_name": "Other state, county, and municipal restrictions still apply",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "N.J.A.C. 16:32 Truck Access",
-      "source_section": "16:32-1.2(e) General provisions",
-      "source_url": "https://nj.gov/transportation/about/rules/documents/16-32-Current.pdf",
-      "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
-      "rule_summary": "N.J.A.C. 16:32 does not supersede other state rules, municipal ordinances, or county resolutions that may restrict truck movements, including posted weight limits or local truck-route restrictions.",
-      "vehicle_property_keys": [
-        "posted_weight_limit",
-        "local_truck_route_status",
-        "jurisdiction"
+      "definition": "N.J.A.C. 16:32 does not supersede other state rules, municipal ordinances, or county resolutions that may restrict truck movements, including posted weight limits or local truck-route restrictions.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.2(e) General provisions"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "municipal_segments_pending_fieldwork"
-      ],
-      "compliance_effect": "additional_local_restrictions_may_apply",
-      "confidence": "high",
-      "notes": "This is important because Elizabeth municipal rules and field signage can still restrict segments even if state access rules allow terminal access."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_024"
+      ]
     },
     {
       "rule_id": "rule_025",
       "rule_name": "NJ Route 81 is part of the National Network near Elizabeth",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "N.J.A.C. 16:32 Truck Access",
-      "source_section": "16:32-1.3 Designated National Network travel routes",
-      "source_url": "https://nj.gov/transportation/about/rules/documents/16-32-Current.pdf",
-      "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
-      "rule_summary": "NJ Route 81 from I-95 in Elizabeth to US 1 at Newark Airport is designated as part of the National Network for double-trailer truck combinations and 102-inch-wide standard trucks.",
-      "vehicle_property_keys": [
-        "truck_width",
-        "combination_type",
-        "route_designation_status"
+      "definition": "NJ Route 81 from I-95 in Elizabeth to US 1 at Newark Airport is designated as part of the National Network for double-trailer truck combinations and 102-inch-wide standard trucks.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.3 Designated National Network travel routes"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Exit 13A / Elizabeth Seaport access area"
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_025"
       ],
-      "compliance_effect": "route_designation",
-      "confidence": "high",
-      "notes": "Relevant because Path A begins near the NJ Turnpike/I-95/Elizabeth Seaport access area."
+      "structured_values": [
+        {
+          "original_value": 102,
+          "original_unit": "inches vehicle width",
+          "canonical_measurement": "vehicle_width",
+          "normalized_value": 2590.8,
+          "normalized_unit": "millimetres",
+          "measurement_scope": "vehicle class covered by the NJ Route 81 National Network designation",
+          "conversion_method": "exact inches-to-millimetres conversion"
+        }
+      ]
     },
     {
       "rule_id": "rule_026",
       "rule_name": "Terminal access documentation may demonstrate compliant routing",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "N.J.A.C. 16:32 Truck Access",
-      "source_section": "16:32-1.5(c) Reasonable access to terminals",
-      "source_url": "https://nj.gov/transportation/about/rules/documents/16-32-Current.pdf",
-      "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
-      "rule_summary": "When accessing terminals off the National Network, drivers may use documentation such as a bill of lading, delivery receipt, shipping order, manifest, log book, route map, written route description, or dispatcher confirmation to demonstrate compliant terminal-access routing.",
-      "vehicle_property_keys": [
-        "bill_of_lading_status",
-        "delivery_receipt_status",
-        "shipping_order_status",
-        "manifest_status",
-        "route_documentation_status"
+      "definition": "When accessing terminals off the National Network, drivers may use documentation such as a bill of lading, delivery receipt, shipping order, manifest, log book, route map, written route description, or dispatcher confirmation to demonstrate compliant terminal-access routing.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.5(c) Reasonable access to terminals"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "APM terminal access candidate"
-      ],
-      "compliance_effect": "documentation_required_or_supporting_compliance",
-      "confidence": "high",
-      "notes": "This links freight paperwork to the route-access rule."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_026"
+      ]
     },
     {
       "rule_id": "rule_027",
       "rule_name": "Commercial vehicle width limit depends on route designation",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-      "source_section": "2.1.1 Width\u2014N.J.S.A. 39:3-84.a(1), page 13",
-      "source_url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
-      "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
-      "rule_summary": "Commercial vehicle width is limited to 96 inches on routes that are not National Network or NJ Access Routes, and 102 inches on National Network and NJ Access Routes.",
-      "vehicle_property_keys": [
-        "width_inches",
-        "route_designation_status"
+      "definition": "A commercial vehicle is limited to 96 inches in width on a route that is neither a National Network route nor a New Jersey Access Route.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "2.1.1 Width—N.J.S.A. 39:3-84.a(1), page 13"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B"
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_027"
       ],
-      "compliance_effect": "size_limit",
-      "confidence": "high",
-      "notes": "This makes the truck-route designation field in physical_edges.json important."
+      "structured_values": [
+        {
+          "original_value": 96,
+          "original_unit": "inches",
+          "canonical_measurement": "vehicle_width",
+          "normalized_value": 2.4384,
+          "normalized_unit": "metres",
+          "measurement_scope": "non-National-Network and non-NJ-Access routes",
+          "conversion_method": "exact inches-to-metres conversion"
+        }
+      ]
     },
     {
       "rule_id": "rule_028",
       "rule_name": "Commercial vehicle height limit",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-      "source_section": "2.1.2 Height\u2014N.J.S.A. 39:3-84.a(2), page 14",
-      "source_url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
-      "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
-      "rule_summary": "The maximum height for a commercial vehicle or combination of vehicles, including load, is 13 feet 6 inches unless otherwise identified.",
-      "vehicle_property_keys": [
-        "height_feet_inches"
+      "definition": "The maximum height for a commercial vehicle or combination of vehicles, including load, is 13 feet 6 inches unless otherwise identified.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "2.1.2 Height—N.J.S.A. 39:3-84.a(2), page 14"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B"
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_028"
       ],
-      "compliance_effect": "size_limit",
-      "confidence": "high",
-      "notes": "This is why height/clearance should be captured where available in the physical network."
+      "structured_values": [
+        {
+          "original_value": "13 feet 6 inches",
+          "original_unit": "feet_and_inches",
+          "canonical_measurement": "vehicle_and_load_height",
+          "normalized_value": 4.1148,
+          "normalized_unit": "metres",
+          "measurement_scope": "commercial vehicle or vehicle combination including load",
+          "conversion_method": "exact feet/inches-to-metres conversion"
+        }
+      ]
     },
     {
       "rule_id": "rule_029",
       "rule_name": "Trailer length depends on network/access-route status",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-      "source_section": "2.1.3 Length, page 15",
-      "source_url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
-      "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
-      "rule_summary": "The guidebook lists different length limits by vehicle configuration and route type, including 53 feet for trailers and semitrailers on the National Network and access routes and 48 feet on other routes.",
-      "vehicle_property_keys": [
-        "vehicle_length_feet",
-        "trailer_length_feet",
-        "route_designation_status",
-        "combination_type"
+      "definition": "A trailer or semitrailer may be 53 feet long on the National Network and access routes, subject to the guide's configuration conditions.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "2.1.3 Length, page 15"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B"
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_029"
       ],
-      "compliance_effect": "size_limit",
-      "confidence": "high",
-      "notes": "This should later be evaluated against whether each segment is on the National Network, NJ Access Network, or local unrestricted roadway."
+      "structured_values": [
+        {
+          "original_value": 53,
+          "original_unit": "feet",
+          "canonical_measurement": "trailer_length",
+          "normalized_value": 16.1544,
+          "normalized_unit": "metres",
+          "measurement_scope": "National Network and access routes under stated configuration conditions",
+          "conversion_method": "exact feet-to-metres conversion"
+        }
+      ]
     },
     {
       "rule_id": "rule_030",
       "rule_name": "OS/OW permit required when size or weight limits are exceeded",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-      "source_section": "Legal Size and Weight Limits, page 12; FAQ pages 8-9",
-      "source_url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
-      "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
-      "rule_summary": "A vehicle or vehicle combination transporting a load that exceeds New Jersey size or weight limitations requires a special permit to move on public roads, streets, highways, or public/quasi-public property in the state.",
-      "vehicle_property_keys": [
-        "weight_lbs",
-        "width_inches",
-        "height_feet_inches",
-        "length_feet",
-        "permit_status",
-        "load_divisibility"
+      "definition": "A vehicle or vehicle combination transporting a load that exceeds New Jersey size or weight limitations requires a special permit to move on public roads, streets, highways, or public/quasi-public property in the state.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "Legal Size and Weight Limits, page 12; FAQ pages 8-9"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B"
-      ],
-      "compliance_effect": "permit_required",
-      "confidence": "high",
-      "notes": "This rule provides the oversize/overweight trigger used by the representative vehicle profiles."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_030"
+      ]
     },
     {
       "rule_id": "rule_031",
       "rule_name": "New Jersey permit validity excludes some toll facilities without approval",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "New Jersey Commercial Vehicle Size and Weight Guidebook",
-      "source_section": "FAQ, page 10",
-      "source_url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
-      "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
-      "rule_summary": "New Jersey permits may not be used on the New Jersey Turnpike, Garden State Parkway south of Exit 105, or Atlantic City Expressway without express approval of the tolling authority.",
-      "vehicle_property_keys": [
-        "permit_status",
-        "facility_authority",
-        "route_facility_type"
+      "definition": "New Jersey permits may not be used on the New Jersey Turnpike, Garden State Parkway south of Exit 105, or Atlantic City Expressway without express approval of the tolling authority.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "FAQ, page 10"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Exit 13A / NJ Turnpike access area"
-      ],
-      "compliance_effect": "permit_authority_limitation",
-      "confidence": "high",
-      "notes": "Important because Path A begins from the NJ Turnpike/Exit 13A access area."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_031"
+      ]
     },
     {
       "rule_id": "rule_032",
       "rule_name": "TWIC applicants are subject to federal credentialing and security threat assessment rules",
-      "jurisdiction": "federal",
-      "authority": "TSA / Department of Homeland Security",
-      "source_doc": "eCFR 49 CFR Part 1572",
-      "source_section": "49 CFR 1572.1 Applicability and 1572.3 Scope",
-      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-D/part-1572",
-      "local_path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
-      "rule_summary": "49 CFR Part 1572 establishes credentialing and security threat assessment regulations for certain maritime and land transportation workers, including applicants obtaining or renewing a TWIC.",
-      "vehicle_property_keys": [
-        "twic_status",
-        "security_threat_assessment_status"
+      "definition": "49 CFR Part 1572 establishes credentialing and security threat assessment regulations for certain maritime and land transportation workers, including applicants obtaining or renewing a TWIC.",
+      "source_id": "ecfr_twic_1572",
+      "source_sections": [
+        "49 CFR 1572.1 Applicability and 1572.3 Scope"
       ],
-      "applies_to_segments_or_paths": [
-        "APM terminal access candidate",
-        "terminal secure/restricted area"
-      ],
-      "compliance_effect": "credential_required",
-      "confidence": "high",
-      "notes": "This federal rule supports the TWIC-related PANYNJ rules already extracted."
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_032"
+      ]
     },
     {
       "rule_id": "rule_033",
       "rule_name": "TSA may deny or invalidate TWIC based on security threat assessment standards",
-      "jurisdiction": "federal",
-      "authority": "TSA / Department of Homeland Security",
-      "source_doc": "eCFR 49 CFR Part 1572",
-      "source_section": "49 CFR 1572.5 Standards for security threat assessments",
-      "source_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-D/part-1572",
-      "local_path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
-      "rule_summary": "TSA may determine that an applicant poses a security threat warranting denial of an HME or TWIC based on disqualifying criminal offenses, immigration status requirements, security threat analysis, or mental capacity adjudication; TSA may also invalidate a TWIC immediately for immediate threats.",
-      "vehicle_property_keys": [
-        "security_threat_assessment_status",
-        "criminal_history_status",
-        "immigration_status",
-        "mental_capacity_adjudication_status"
+      "definition": "TSA may determine that a TWIC applicant poses a security threat based on a disqualifying criminal offense specified by 49 CFR Part 1572. TSA may immediately invalidate a TWIC when it determines that the holder poses an immediate threat under 49 CFR Part 1572.",
+      "source_id": "ecfr_twic_1572",
+      "source_sections": [
+        "49 CFR 1572.5 Standards for security threat assessments",
+        "49 CFR 1572.5"
       ],
-      "applies_to_segments_or_paths": [
-        "APM terminal access candidate",
-        "terminal secure/restricted area"
-      ],
-      "compliance_effect": "credential_denial_or_invalidation",
-      "confidence": "high",
-      "notes": "This is driver/credential eligibility, not vehicle geometry."
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_033",
+        "rule_split_033_immediate"
+      ]
     },
     {
       "rule_id": "rule_034",
       "rule_name": "Large-truck map provides route-designation reference for 102-inch truck network",
-      "jurisdiction": "state",
-      "authority": "NJDOT",
-      "source_doc": "2024 NJ Large Truck Map",
-      "source_section": "Statewide large truck map, 2024",
-      "source_url": "https://www.nj.gov/transportation/freight/trucking/pdf/largetruckmap.pdf",
-      "local_path": "data/raw/documents/state/nj_large_truck_map_2024.pdf",
-      "rule_summary": "The NJ Large Truck Map provides the route-designation reference used to identify National Network and NJ Access Route status for large trucks, including the 102-inch truck route network.",
-      "vehicle_property_keys": [
-        "route_designation_status",
-        "width_inches"
+      "definition": "The NJ Large Truck Map provides the route-designation reference used to identify National Network and NJ Access Route status for large trucks, including the 102-inch truck route network.",
+      "source_id": "nj_large_truck_map",
+      "source_sections": [
+        "Statewide large truck map, 2024"
       ],
-      "applies_to_segments_or_paths": [
-        "Path A",
-        "Path B",
-        "North Avenue / access area pending GIS verification"
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_034"
       ],
-      "compliance_effect": "route_designation_reference",
-      "confidence": "medium",
-      "notes": "Use this as route-designation support. Exact segment-level designation should be verified in GIS/NJDOT data before final analysis."
+      "structured_values": [
+        {
+          "original_value": 102,
+          "original_unit": "inches vehicle width",
+          "canonical_measurement": "vehicle_width",
+          "normalized_value": 2590.8,
+          "normalized_unit": "millimetres",
+          "measurement_scope": "vehicle class depicted by the NJ Large Truck Map",
+          "conversion_method": "exact inches-to-millimetres conversion"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_035",
+      "rule_name": "APM published approach direction from US 1&9 South",
+      "definition": "APM's archived published directions for an approach from US 1&9 South instruct travelers to take the Elizabeth Seaport/North Avenue exit, follow North Avenue East to McLester Street, turn left, then turn right at Tripoli Street (the third traffic light); the named facility entrance is on the right. APM's archived published directions for an approach from New Jersey Turnpike Exit 13A instruct travelers to follow signs for Elizabeth Seaport/North Avenue, continue on North Avenue to McLester Street, turn left, then turn right at Tripoli Street (the third traffic light); the named facility entrance is on the right.",
+      "source_id": "apm_directions",
+      "source_sections": [
+        "Contact & directions, PDF page 1",
+        "Contact & directions, PDF page 2"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_035",
+        "rule_apm_directions_turnpike_13a"
+      ]
+    },
+    {
+      "rule_id": "rule_036",
+      "rule_name": "APM account supports terminal alerts and appointment services",
+      "definition": "An APMTerminals.com account enables subscription to terminal alerts.",
+      "source_id": "apm_directions",
+      "source_sections": [
+        "Create an Account and Terminal Alerts, PDF pages 4-5"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_036"
+      ]
+    },
+    {
+      "rule_id": "rule_037",
+      "rule_name": "TERMPoint covers import, export, and empty appointment requests",
+      "definition": "TERMPoint supports import appointment requests. TERMPoint supports export appointment requests. TERMPoint supports empty appointment requests. TERMPoint supports appointment-status monitoring. TERMPoint provides an import-container watch list. TERMPoint supports appointment swaps. TERMPoint displays driver information for appointment management. TERMPoint provides row-closure information.",
+      "source_id": "apm_appointment_system",
+      "source_sections": [
+        "TERMPoint features, PDF pages 1, 3-4",
+        "TERMPoint features, PDF pages 1 and 3-4"
+      ],
+      "requirement_count": 8,
+      "requirement_ids": [
+        "rule_037",
+        "rule_split_037_export",
+        "rule_split_037_empty",
+        "rule_split_037_status",
+        "rule_split_037_watch",
+        "rule_split_037_swap",
+        "rule_split_037_driver",
+        "rule_split_037_rows"
+      ]
+    },
+    {
+      "rule_id": "rule_038",
+      "rule_name": "TERMPoint Driver tab displays assigned-driver information",
+      "definition": "The TERMPoint Driver tab displays the driver assigned to an appointment. The TERMPoint Driver tab displays the assigned driver's safety-induction status. The archived APM source describes checking assigned-driver and safety-induction status before dispatch as a way to avoid turnaround at the inbound gate.",
+      "source_id": "apm_appointment_system",
+      "source_sections": [
+        "Adding Driver Details, PDF page 2"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_038",
+        "rule_apm_termpoint_safety_status",
+        "rule_apm_termpoint_turnaround_purpose"
+      ]
+    },
+    {
+      "rule_id": "rule_039",
+      "rule_name": "All APM Elizabeth gate moves require an appointment",
+      "definition": "The APM terminal-specific section states that all gate moves at APM Terminals Elizabeth require an appointment made through TERMPoint.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Terminals, printed pages 18-19 / PDF page 11"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_039"
+      ]
+    },
+    {
+      "rule_id": "rule_040",
+      "rule_name": "APM safety induction required before terminal access",
+      "definition": "A driver must complete APM's online safety induction before accessing the terminal.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Mandatory Trucker Training and Safety Advisory, printed pages 18 and 20 / PDF pages 11-12"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_040"
+      ]
+    },
+    {
+      "rule_id": "rule_041",
+      "rule_name": "APM appointment changes stop after inbound OCR",
+      "definition": "Appointments cannot be created, modified, or merged after the truck passes through inbound optical character recognition.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Appointments, printed page 18 / PDF page 11"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_041"
+      ]
+    },
+    {
+      "rule_id": "rule_042",
+      "rule_name": "Import pickup information required before gate arrival",
+      "definition": "For an import pickup, the guide lists a freight release, container number, and bill-of-lading number as pre-arrival information. For an empty pickup, the guide lists a valid booking number, steamship line, and container length, height, and type as pre-arrival information. For an empty return or drop move, the guide lists the steamship line and container length, height, and type as pre-arrival information.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "What to Have Prior to Arriving at Gate, printed page 3 / PDF page 3"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_042",
+        "rule_043",
+        "rule_045"
+      ]
+    },
+    {
+      "rule_id": "rule_044",
+      "rule_name": "Export delivery or drop information required before gate arrival",
+      "definition": "For an export delivery or drop move, the guide lists a valid booking number, steamship line, and container dimensions/type, plus hazardous documentation, vehicle titles, over-dimensional measurements, or reefer commodity and temperature when applicable.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "What to Have Prior to Arriving at Gate, printed page 3 / PDF page 3"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_044"
+      ]
+    },
+    {
+      "rule_id": "rule_046",
+      "rule_name": "Container availability and holds should be cleared before dispatch",
+      "definition": "The PANYNJ truckers guide recommends confirming container availability before dispatch for an import pickup.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Dos and Don'ts, printed pages 15-16 / PDF pages 9-10"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_046"
+      ]
+    },
+    {
+      "rule_id": "rule_047",
+      "rule_name": "Empty return destination must be checked before dispatch",
+      "definition": "The guide directs truckers to check the terminal website, mobile application, or TIPS for the current empty-return destination and acceptance information before returning an empty container.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Dos and Don'ts and FAQs, printed pages 15 and 43 / PDF pages 9 and 23"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_047"
+      ]
+    },
+    {
+      "rule_id": "rule_048",
+      "rule_name": "Reefer temperature and genset requirements must be confirmed before dispatch",
+      "definition": "The guide directs truckers to confirm required reefer temperature and genset needs with the steamship line and terminal guidance before dispatch.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Dos and Don'ts, printed pages 15-16 / PDF pages 9-10"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_048"
+      ]
+    },
+    {
+      "rule_id": "rule_049",
+      "rule_name": "APM roadability inspections depend on outbound equipment type",
+      "definition": "An outbound reefer must stop at APM's reefer roadability garage.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Roadability, printed pages 18-19 / PDF page 11"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_049"
+      ]
+    },
+    {
+      "rule_id": "rule_050",
+      "rule_name": "APM terminal exit requires completion of outbound processing",
+      "definition": "APM requires a complete outbound ticket before terminal exit.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Outgate Processing and Outbound Security, printed pages 19-20 / PDF pages 11-12"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_050"
+      ]
+    },
+    {
+      "rule_id": "rule_051",
+      "rule_name": "APM trouble conditions may trigger automatic void-out",
+      "definition": "Automatic void-out categories include container holds or status issues, driver or carrier status problems, SeaLink issues, hazardous-documentation problems, early/late/used/cancelled appointments, booking or cutoff issues, UIIA or carrier-agreement problems, and incomplete safety induction.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Trouble Tickets, printed page 20 / PDF page 12"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_051"
+      ]
+    },
+    {
+      "rule_id": "rule_052",
+      "rule_name": "APM safety violations may suspend terminal access",
+      "definition": "A listed APM safety or transaction violation may deactivate a driver's SeaLink access.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Trucker Violations and STEP Program, printed pages 22-23 / PDF page 13"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_052"
+      ]
+    },
+    {
+      "rule_id": "rule_053",
+      "rule_name": "PANYNJ marine-terminal highway size and weight limits",
+      "definition": "A containerized shipment on a PANYNJ marine-terminal highway may not exceed 128,000 pounds. The gross vehicle weight of a containerized shipment on a PANYNJ marine-terminal highway must not exceed the manufacturer's safe working loads. A vehicle exceeding 16 feet 3 inches in height or 11 feet in width requires approval from the Manager, Marine Terminals for shipment through the marine terminals.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrule 34-046, PDF page 16"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_053",
+        "rule_tariff_34_046_safe_working_load",
+        "rule_tariff_34_046_overdimension_approval"
+      ]
+    },
+    {
+      "rule_id": "rule_054",
+      "rule_name": "PANYNJ terminal speed limits follow posted signs",
+      "definition": "A vehicle at a PANYNJ marine terminal must comply with speed limits shown on posted traffic signs. A vehicle may not be driven on a PANYNJ mooring facility at more than 12 miles per hour.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrule 34-270, PDF page 31"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_054",
+        "rule_tariff_34_270_mooring_speed"
+      ]
+    },
+    {
+      "rule_id": "rule_055",
+      "rule_name": "PANYNJ terminal parking follows authorization and posted signs",
+      "definition": "A vehicle at a PANYNJ marine terminal must park only in an authorized area.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrules 34-275 and 34-276, PDF page 31"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_055"
+      ]
+    },
+    {
+      "rule_id": "rule_056",
+      "rule_name": "Vehicles and operators require registration, licensing, and specified PANYNJ authorization",
+      "definition": "Motorized equipment used for waterborne-freight handling must have the state registration required by the tariff.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrule 34-280, PDF page 31"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_056"
+      ]
+    },
+    {
+      "rule_id": "rule_057",
+      "rule_name": "Traffic directions, lane markings, driver authorization, and registration govern terminal highways",
+      "definition": "Traffic on a PANYNJ terminal highway must obey lawful directions of Port Authority Police. The tariff prohibits transporting or parking listed explosive, flammable, corrosive, poisonous, compressed-gas, radioactive, and other hazardous materials on terminal highways at a time, place, manner, or condition likely to endanger persons or property.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrule 34-290, paragraphs 2-6, PDF pages 32-33",
+        "Subrule 34-290, paragraph 7, PDF pages 33-34"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_057",
+        "rule_058"
+      ]
+    },
+    {
+      "rule_id": "rule_059",
+      "rule_name": "DTR registration information must be maintained",
+      "definition": "A drayage truck seeking PANYNJ marine-terminal entry must be registered in the Drayage Truck Registry before entry. When information supplied for a registered drayage truck changes, the registration information must be amended through PortTruckPass within ten calendar days of the change.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrules 34-1080 and 34-1100, PDF pages 55-56"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_059",
+        "rule_tariff_34_1100_update"
+      ]
+    },
+    {
+      "rule_id": "rule_060",
+      "rule_name": "2014 EPA engine standard required to complete DTR registration",
+      "definition": "Beginning July 2, 2023 at 12:01 AM local time, only drayage trucks with engines meeting or exceeding federal EPA model-year 2014 heavy-duty diesel on-road emission standards may complete DTR registration.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrule 34-1101, PDF page 56"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_060"
+      ],
+      "structured_values": [
+        {
+          "original_value": 2014,
+          "original_unit": "engine model year",
+          "canonical_measurement": "minimum_engine_emission_standard_model_year",
+          "normalized_value": 2014,
+          "normalized_unit": "model_year",
+          "measurement_scope": "DTR registration eligibility",
+          "conversion_method": "identity"
+        },
+        {
+          "original_value": "12:01 AM",
+          "original_unit": "local time",
+          "canonical_measurement": "effective_time",
+          "normalized_value": "00:01",
+          "normalized_unit": "local_time",
+          "measurement_scope": "July 2, 2023 activation",
+          "conversion_method": "12-hour to 24-hour normalization"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_061",
+      "rule_name": "PANYNJ tariff drayage access conditions beginning July 2, 2023",
+      "definition": "Beginning July 2, 2023 at 12:01 AM local time, the tariff states that a container terminal may not admit a drayage truck that cannot be verified as Drayage Truck Registry compliant. Beginning May 1, 2027 at 12:01 AM local time, the tariff states that a container terminal may not admit a drayage truck that cannot be verified as Drayage Truck Registry compliant. Beginning May 1, 2028 at 12:01 AM local time, the tariff states that a container terminal may not admit a drayage truck that cannot be verified as Drayage Truck Registry compliant. Beginning July 2, 2023 at 12:01 AM, a container terminal facility may not permit access to a drayage truck equipped with an engine of model year 1998 or older. Beginning July 2, 2023 at 12:01 AM, a container terminal facility may not permit access to a drayage truck that is not an Alternative Drayage Truck as defined in Subrule 34-1060. Beginning May 1, 2027 at 12:01 AM, a container terminal facility may not permit access to a drayage truck equipped with an engine of model year 1999 or older. Beginning May 1, 2027 at 12:01 AM, a container terminal facility may not permit access to a drayage truck that is not an Alternative Truck as defined in Subrule 34-1060. Beginning May 1, 2028 at 12:01 AM, a container terminal facility may not permit access to a drayage truck equipped with an engine of model year 2000 or older. Beginning May 1, 2028 at 12:01 AM, a container terminal facility may not permit access to a drayage truck that is not an Alternative Truck as defined in Subrule 34-1060.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrule 34-1140, PDF page 56"
+      ],
+      "requirement_count": 9,
+      "requirement_ids": [
+        "rule_061",
+        "rule_062",
+        "rule_063",
+        "rule_tariff_34_1140_2023_engine",
+        "rule_tariff_34_1140_2023_alternative",
+        "rule_tariff_34_1140_2027_engine",
+        "rule_tariff_34_1140_2027_alternative",
+        "rule_tariff_34_1140_2028_engine",
+        "rule_tariff_34_1140_2028_alternative"
+      ]
+    },
+    {
+      "rule_id": "rule_064",
+      "rule_name": "Past-due PANYNJ accounts may result in denial of terminal use",
+      "definition": "PANYNJ reserves the right to deny terminal use until a past-due account is paid. A tariff invoice unpaid within 30 calendar days of the invoice date is subject to a fee of 0.8 percent on the outstanding balance and again every 15 days thereafter.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrule 34-751, PDF page 52"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_064",
+        "rule_tariff_34_751_late_charge"
+      ]
+    },
+    {
+      "rule_id": "rule_065",
+      "rule_name": "SeaLink transactions may carry registration and processing fees",
+      "definition": "SeaLink registration, replacement, renewal, and carrier-association transactions may carry the fees stated in the tariff.",
+      "source_id": "panynj_marine_terminal_tariff",
+      "source_sections": [
+        "Subrules 34-800 and 34-810, PDF page 53"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_065"
+      ]
+    },
+    {
+      "rule_id": "rule_066",
+      "rule_name": "PortTruckPass implements PANYNJ tariff truck-registration subrules",
+      "definition": "The PortTruckPass truck-registration service states that it implements Port Authority subrules published in FMC Schedule PA-10, including revisions.",
+      "source_id": "porttruckpass_tips",
+      "source_sections": [
+        "PortTruckPass description, PDF page 2"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_066"
+      ]
+    },
+    {
+      "rule_id": "rule_067",
+      "rule_name": "TIPS provides common terminal information for cargo deployment decisions",
+      "definition": "TIPS is described as a common portal allowing motor carriers and cargo interests to manage and deploy resources when delivering or picking up cargo at the port.",
+      "source_id": "porttruckpass_tips",
+      "source_sections": [
+        "TIPS description, PDF page 2"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_067"
+      ]
+    },
+    {
+      "rule_id": "rule_068",
+      "rule_name": "New Jersey axle and gross-weight limits depend on axle configuration and route",
+      "definition": "New Jersey's general statutory maximum for a single axle is 22,400 pounds, subject to the cited exceptions and roadway context.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "Sections 2.2.1-2.2.2.2, PDF pages 27-33"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_068"
+      ],
+      "structured_values": [
+        {
+          "original_value": 22400,
+          "original_unit": "pounds",
+          "canonical_measurement": "single_axle_weight",
+          "normalized_value": 10160.5,
+          "normalized_unit": "kilograms",
+          "measurement_scope": "New Jersey general statutory single-axle maximum subject to cited exceptions",
+          "conversion_method": "pounds multiplied by 0.45359237; rounded to 0.1 kg"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_069",
+      "rule_name": "New Jersey annual ocean-borne container permit has configuration-specific weight limits",
+      "definition": "The New Jersey annual ocean-borne-container permit is limited to qualifying sealed ocean-borne containers.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "Section 3.4 and Table 5, PDF page 43"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_069"
+      ]
+    },
+    {
+      "rule_id": "rule_070",
+      "rule_name": "New Jersey single-trip OS/OW permit is time- and movement-specific",
+      "definition": "A New Jersey single-trip oversize or overweight permit is valid for five days.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "Section 3.1, PDF page 40"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_070"
+      ],
+      "structured_values": [
+        {
+          "original_value": 5,
+          "original_unit": "days",
+          "canonical_measurement": "single_trip_permit_validity",
+          "normalized_value": 5,
+          "normalized_unit": "calendar_days",
+          "measurement_scope": "New Jersey single-trip oversize/overweight permit",
+          "conversion_method": "identity"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_071",
+      "rule_name": "New Jersey Code 23 OS/OW permit is route-specific and non-divisible-load limited",
+      "definition": "A New Jersey Code 23 permit is route-specific.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "Section 3.3, PDF pages 42-43"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_071"
+      ]
+    },
+    {
+      "rule_id": "rule_072",
+      "rule_name": "New Jersey permit operation carries liability and insurance requirements",
+      "definition": "A New Jersey size or weight permit holder remains liable for injury or damage arising from the permitted operation as described in the guide.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "Sections 5.1-5.3, PDF pages 48-50"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_072"
+      ]
+    },
+    {
+      "rule_id": "rule_073",
+      "rule_name": "New Jersey oversize permit movements are subject to time and holiday conditions",
+      "definition": "An oversize permit movement with less than 10 feet of clear space on the traveled way is limited to daylight operation under the guide's stated visibility condition.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "Sections 5.3.1-5.3.2, PDF pages 49-50"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_073"
+      ],
+      "structured_values": [
+        {
+          "original_value": 10,
+          "original_unit": "feet",
+          "canonical_measurement": "clear_space_threshold",
+          "normalized_value": 3.048,
+          "normalized_unit": "metres",
+          "measurement_scope": "clear traveled-way space for oversize permit movement",
+          "conversion_method": "exact feet-to-metres conversion"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_074",
+      "rule_name": "New Jersey OS/OW operation may require escorts, signs, lamps, reflective devices, and flags",
+      "definition": "A New Jersey oversize or overweight permit movement requires escort vehicles when the dimensions and conditions in the guide's escort tables are met.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "Sections 5.5-5.8, PDF pages 51-55"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_074"
+      ]
+    },
+    {
+      "rule_id": "rule_075",
+      "rule_name": "Large trucks may detour only as necessary and must return to the designated network",
+      "definition": "A covered large truck may detour from an authorized route only as necessary to bypass a closure or restriction.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.2(c), PDF page 2"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_075"
+      ]
+    },
+    {
+      "rule_id": "rule_076",
+      "rule_name": "Terminal trips should avoid residential areas where feasible",
+      "definition": "To the extent feasible, a trip by the covered large-truck classes to a terminal should avoid residential areas.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.2(d) and 16:32-1.5(b), PDF pages 2 and 4"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_076"
+      ]
+    },
+    {
+      "rule_id": "rule_077",
+      "rule_name": "NJ Access Network designation concerns width and does not guarantee unrestricted movement",
+      "definition": "Designation as a New Jersey Access Network route pertains to permissible width and does not guarantee free movement where route, bridge-weight, or vertical-clearance restrictions apply.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.4(c), PDF page 4"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_077"
+      ]
+    },
+    {
+      "rule_id": "rule_078",
+      "rule_name": "Terminal access follows the direct route and restricted roads only when they provide the only access",
+      "definition": "A covered large truck may use access-network and local unrestricted roads as necessary by the direct route.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.5(a) and definition of direct route, PDF pages 4 and 6"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_078"
+      ]
+    },
+    {
+      "rule_id": "rule_079",
+      "rule_name": "NJDOT truck-network maps do not supersede regulatory text",
+      "definition": "Maps and graphic depictions of the designated truck network are not regulatory descriptions that supersede or replace the textual route descriptions adopted in the chapter.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "16:32-1.7(a), PDF page 6"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_079"
+      ]
+    },
+    {
+      "rule_id": "rule_080",
+      "rule_name": "PANYNJ truck-information snapshot lists a 4:00 p.m. APM OOG cutoff",
+      "definition": "The archived June 25, 2026 PANYNJ truck-information page lists a 4:00 p.m. gate cutoff for APM out-of-gauge loads.",
+      "source_id": "panynj_truck_info",
+      "source_sections": [
+        "Gate Hours - APM Terminals, PDF page 4"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_080"
+      ],
+      "structured_values": [
+        {
+          "original_value": "4:00 p.m.",
+          "original_unit": "local time",
+          "canonical_measurement": "gate_cutoff_time",
+          "normalized_value": "16:00",
+          "normalized_unit": "local_time",
+          "measurement_scope": "APM out-of-gauge load cutoff in the archived PANYNJ truck-information snapshot",
+          "conversion_method": "12-hour time normalized to 24-hour local time"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_081",
+      "rule_name": "TWIC holders have continuing disclosure and surrender responsibilities",
+      "definition": "A TWIC applicant or holder has the continuing disclosure obligations specified in 49 CFR 1572.19. A TWIC holder must notify TSA immediately if the credential is lost, damaged, or stolen.",
+      "source_id": "ecfr_twic_1572",
+      "source_sections": [
+        "49 CFR 1572.19 and 1572.21, PDF pages 10-11",
+        "49 CFR 1572.19(f), PDF page 11"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_081",
+        "rule_083"
+      ]
+    },
+    {
+      "rule_id": "rule_082",
+      "rule_name": "TWIC generally expires five years after issuance",
+      "definition": "A TWIC generally expires five years after issuance.",
+      "source_id": "ecfr_twic_1572",
+      "source_sections": [
+        "49 CFR 1572.23, PDF page 12"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_082"
+      ]
+    },
+    {
+      "rule_id": "rule_084",
+      "rule_name": "APM main intersection is one-way north-to-south",
+      "definition": "Beginning March 10, 2025, APM designates the main intersection after inbound as one-way from north to south.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Mandatory Trucker Training and Safety Advisory, printed pages 20-21 / PDF page 12"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_084"
+      ]
+    },
+    {
+      "rule_id": "rule_085",
+      "rule_name": "Port guide prohibits queue jumping, blocking intersections, and U-turns",
+      "definition": "The PANYNJ truckers guide instructs drivers not to jump a vehicle queue.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Obey and Follow the Rules of the Road, printed pages 4-5 / PDF page 4"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_085"
+      ]
+    },
+    {
+      "rule_id": "rule_086",
+      "rule_name": "NJ Turnpike left-lane restriction for heavy vehicles and trailers",
+      "definition": "On the Turnpike, a vehicle over 10,000 pounds GVWR or with an attached trailer or semitrailer may not use the farthest-left lane in a three-lane configuration, the two farthest-left lanes in a configuration of four or more lanes, or a lane designated Cars Only, except where posted or when a stated emergency or law-enforcement exception applies.",
+      "source_id": "njta_njac_19_9_readoption_2025",
+      "source_sections": [
+        "N.J.A.C. 19:9-1.9(a), Traffic control on the Turnpike"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_086"
+      ],
+      "structured_values": [
+        {
+          "original_value": 10000,
+          "original_unit": "pounds GVWR",
+          "canonical_measurement": "vehicle_GVWR_threshold",
+          "normalized_value": 4535.924,
+          "normalized_unit": "kilograms",
+          "measurement_scope": "Turnpike left-lane restriction vehicle category",
+          "conversion_method": "pounds multiplied by 0.45359237"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_087",
+      "rule_name": "US 1&9 speed limit at the North Avenue approach",
+      "definition": "The maximum legal speed is 40 mph in both directions on US 1&9 in Elizabeth between the Bayway traffic circle and 100 feet north of North Avenue, approximately mileposts 43.11 to 45.46.",
+      "source_id": "njdot_us1_9_speed",
+      "source_sections": [
+        "Union County, City of Elizabeth, Zone 2"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_087"
+      ],
+      "structured_values": [
+        {
+          "original_value": 40,
+          "original_unit": "miles per hour",
+          "canonical_measurement": "speed_limit",
+          "normalized_value": 64.37376,
+          "normalized_unit": "kilometres_per_hour",
+          "measurement_scope": "US 1&9 Elizabeth Zone 2",
+          "conversion_method": "mph multiplied by 1.609344"
+        },
+        {
+          "original_value": 100,
+          "original_unit": "feet",
+          "canonical_measurement": "linear_offset",
+          "normalized_value": 30.48,
+          "normalized_unit": "metres",
+          "measurement_scope": "north of North Avenue endpoint",
+          "conversion_method": "exact feet-to-metres conversion"
+        },
+        {
+          "original_value": "43.11-45.46",
+          "original_unit": "mileposts",
+          "canonical_measurement": "milepost_range",
+          "normalized_value": [
+            43.11,
+            45.46
+          ],
+          "normalized_unit": "miles",
+          "measurement_scope": "US 1&9 Elizabeth Zone 2",
+          "conversion_method": "range preserved"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_088",
+      "rule_name": "US 1&9 no-stopping or standing zone at North Avenue",
+      "definition": "Stopping or standing is prohibited at all times along both sides of US 1&9 between Fairmount Avenue and a point 200 feet north of North Avenue.",
+      "source_id": "njdot_us1_9_parking",
+      "source_sections": [
+        "Union County, City of Elizabeth, no stopping or standing along both sides"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_088"
+      ],
+      "structured_values": [
+        {
+          "original_value": 200,
+          "original_unit": "feet",
+          "canonical_measurement": "linear_offset",
+          "normalized_value": 60.96,
+          "normalized_unit": "metres",
+          "measurement_scope": "north of North Avenue endpoint",
+          "conversion_method": "exact feet-to-metres conversion"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_089",
+      "rule_name": "No parking on North Avenue East from Route 1 to Division Street",
+      "definition": "Parking is prohibited at all times on both sides of North Avenue East from Route 1 to Division Street. Parking is prohibited at all times on both sides of McLester Street between Bay Avenue and Tripoli Street.",
+      "source_id": "elizabeth_code_parking_restrictions",
+      "source_sections": [
+        "Sections 10.28.020(B) and 10.28.030, Schedule I"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_089",
+        "rule_092"
+      ]
+    },
+    {
+      "rule_id": "rule_090",
+      "rule_name": "No stopping or standing on North Avenue East from Division Street to McLester Street",
+      "definition": "Stopping or standing is prohibited at any time on both sides of North Avenue East from Division Street to McLester Street. Stopping or standing is prohibited at any time on both sides of McLester Street from North Avenue East to Bay Avenue.",
+      "source_id": "elizabeth_code_parking_restrictions",
+      "source_sections": [
+        "Sections 10.28.020(D) and 10.28.050, Schedule III"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_090",
+        "rule_091"
+      ]
+    },
+    {
+      "rule_id": "rule_split_007_ealerts",
+      "rule_name": "APM communicates closure appointment changes through e-alerts",
+      "definition": "APM states that it communicates appointment-availability changes caused by terminal closure through e-alerts.",
+      "source_id": "apm_appointment_system",
+      "source_sections": [
+        "Appointment Availability, page 2"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_split_007_ealerts"
+      ]
+    },
+    {
+      "rule_id": "rule_split_014_rfid",
+      "rule_name": "RFID required on registered Class 8 drayage truck",
+      "definition": "A Class 8 drayage truck seeking entry to a Port of New York and New Jersey marine terminal must have a valid RFID tag properly mounted on the vehicle. Each RFID tag in the Drayage Truck Registry may be associated with only one unique vehicle.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "Radio-Frequency Identification, page 4"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_split_014_rfid",
+        "rule_split_016_vehicle"
+      ]
+    },
+    {
+      "rule_id": "rule_split_023_return",
+      "rule_name": "Return from local terminal access by direct route",
+      "definition": "After using a local unrestricted roadway for terminal access, a covered large truck should return to the National Network or New Jersey Access Network by the direct route.",
+      "source_id": "njac_16_32",
+      "source_sections": [
+        "N.J.A.C. 16:32-1.5(a)-(b)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_split_023_return"
+      ]
+    },
+    {
+      "rule_id": "rule_split_027_102",
+      "rule_name": "102-inch width on truck networks",
+      "definition": "A commercial vehicle is limited to 102 inches in width on the National Network and New Jersey Access Routes.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "§2.1.1, PDF page 13"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_split_027_102"
+      ],
+      "structured_values": [
+        {
+          "original_value": 102,
+          "original_unit": "inches",
+          "canonical_measurement": "vehicle_width",
+          "normalized_value": 2.5908,
+          "normalized_unit": "metres",
+          "measurement_scope": "National Network and New Jersey Access Routes",
+          "conversion_method": "exact inches-to-metres conversion"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_split_029_48",
+      "rule_name": "48-foot trailer length on other routes",
+      "definition": "A trailer or semitrailer is limited to 48 feet on routes other than the National Network and access routes, subject to the guide's configuration conditions.",
+      "source_id": "nj_size_weight_guidebook",
+      "source_sections": [
+        "§2.1.3 and Table 1, PDF pages 15-16"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_split_029_48"
+      ],
+      "structured_values": [
+        {
+          "original_value": 48,
+          "original_unit": "feet",
+          "canonical_measurement": "trailer_length",
+          "normalized_value": 14.6304,
+          "normalized_unit": "metres",
+          "measurement_scope": "trailer or semitrailer on routes other than the National Network and access routes",
+          "conversion_method": "exact feet-to-metres conversion"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_split_040_sealink",
+      "rule_name": "Safety induction after new SeaLink number",
+      "definition": "The APM guidance states that a driver receiving a new SeaLink number must retake the safety induction.",
+      "source_id": "panynj_truckers_guide",
+      "source_sections": [
+        "APM Mandatory Trucker Training, printed page 18 / PDF page 11"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_split_040_sealink"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_four_ton_schedule",
+      "rule_name": "Elizabeth four-ton street-exclusion schedule",
+      "definition": "A truck over four tons gross weight may not use a street listed in Elizabeth's four-ton exclusion schedule. Elizabeth's scheduled four-ton truck exclusion does not apply when a truck is used for the pickup and delivery of materials on the listed street.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §10.16.010 and Schedule I",
+        "Elizabeth Code §10.16.010"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_local_eliz_four_ton_schedule",
+        "rule_local_eliz_four_ton_delivery"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_80k_zone",
+      "rule_name": "North Avenue East 80,000-pound-zone table entry",
+      "definition": "Elizabeth Code §10.16.050 contains a table row labeled an 80,000-pound overweight vehicle zone on North Avenue East beginning 440 feet east of Kapkowski Road and extending east 520 feet to the vacated portion of North Avenue East and its connection to the Port Authority overweight vehicle zone.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §10.16.050, North Avenue East table row"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_eliz_80k_zone"
+      ],
+      "structured_values": [
+        {
+          "original_value": 80000,
+          "original_unit": "pounds",
+          "canonical_measurement": "table_weight_value",
+          "normalized_value": 36287.39,
+          "normalized_unit": "kilograms",
+          "measurement_scope": "North Avenue East table row",
+          "conversion_method": "pounds multiplied by 0.45359237; rounded to 0.01 kg"
+        },
+        {
+          "original_value": 440,
+          "original_unit": "feet",
+          "canonical_measurement": "start_offset",
+          "normalized_value": 134.112,
+          "normalized_unit": "metres",
+          "measurement_scope": "east of Kapkowski Road",
+          "conversion_method": "exact feet-to-metres conversion"
+        },
+        {
+          "original_value": 520,
+          "original_unit": "feet",
+          "canonical_measurement": "zone_length",
+          "normalized_value": 158.496,
+          "normalized_unit": "metres",
+          "measurement_scope": "eastward table extent",
+          "conversion_method": "exact feet-to-metres conversion"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_north_blank_hours",
+      "rule_name": "North Avenue East no-stop row with blank hours",
+      "definition": "Elizabeth's no-stopping-or-standing schedule contains a North Avenue East row from the New Jersey Turnpike underpass to McLester Street whose hours field is blank. Stopping or standing is prohibited at any time on both sides of Kapkowski Road from North Avenue East south for 1,440 feet.",
+      "source_id": "elizabeth_code_parking_restrictions",
+      "source_sections": [
+        "Elizabeth Code Chapter 10.28, Schedule III row",
+        "Elizabeth Code Chapter 10.28, Schedule III"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_local_eliz_north_blank_hours",
+        "rule_local_eliz_kapkowski_no_stop"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_clean_north",
+      "rule_name": "Elizabeth North Avenue East Schedule II parking prohibition — north side",
+      "definition": "Elizabeth Schedule II prohibits parking on the north side of North Avenue East from Dowd Avenue to Spring Street on Thursday from 1:00 p.m. to 4:00 p.m. Elizabeth Schedule II prohibits parking on the south side of North Avenue East from Dowd Avenue to Spring Street on Tuesday from 1:00 p.m. to 4:00 p.m.",
+      "source_id": "elizabeth_code_parking_restrictions",
+      "source_sections": [
+        "Elizabeth Code §10.28.040, Schedule II"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_local_eliz_clean_north",
+        "rule_local_eliz_clean_south"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_emergency_parking",
+      "rule_name": "Elizabeth emergency no-parking declaration",
+      "definition": "Elizabeth may declare temporary emergency no-parking under the authorization and procedures stated in §10.28.090.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §10.28.090(A), (C), and (E)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_eliz_emergency_parking"
+      ],
+      "activation_conditions": [
+        "an authorized emergency declaration is made",
+        "temporary signs are displayed",
+        "applicable prior notice is provided",
+        "state or county approval is obtained where the affected road requires it"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_commercial_9_6",
+      "rule_name": "Elizabeth overnight commercial-vehicle street parking",
+      "definition": "A commercial vehicle may not be parked on an Elizabeth street from 9:00 p.m. to 6:00 a.m. A truck tractor may not be parked on an Elizabeth street from 6:00 p.m. to 6:00 a.m. For Elizabeth's §10.40.020 parking restrictions, a described commercial motor vehicle or truck tractor need not be registered as a commercial motor vehicle or carry commercial motor-vehicle plates. Elizabeth's §10.40.020 commercial-vehicle and truck-tractor street-parking prohibitions do not apply to authorized emergency vehicles.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §10.40.020"
+      ],
+      "requirement_count": 4,
+      "requirement_ids": [
+        "rule_local_eliz_commercial_9_6",
+        "rule_local_eliz_tractor_6_6",
+        "rule_local_eliz_parking_plate",
+        "rule_local_eliz_parking_emergency"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_trailer_parking",
+      "rule_name": "Elizabeth trailer street parking",
+      "definition": "A trailer, pole trailer, recreational vehicle, camper, or boat may not be parked on an Elizabeth street, whether attached to a towing vehicle or not. Elizabeth's §10.40.075 street-parking prohibition does not apply while the described vehicle is making a delivery to premises on that street. Elizabeth's §10.40.075 street-parking prohibition does not apply while the described vehicle is used in public-utility work. Elizabeth's §10.40.075 street-parking prohibition does not apply during temporary parking while the described vehicle is actively engaged in repair or maintenance. Elizabeth's §10.40.075 street-parking prohibition does not apply while the described vehicle is attending an emergency.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §10.40.075"
+      ],
+      "requirement_count": 5,
+      "requirement_ids": [
+        "rule_local_eliz_trailer_parking",
+        "rule_local_eliz_trailer_delivery",
+        "rule_local_eliz_trailer_utility",
+        "rule_local_eliz_trailer_repair",
+        "rule_local_eliz_trailer_emergency"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_idling_three",
+      "rule_name": "Elizabeth three-minute idling limit",
+      "definition": "A stationary motor vehicle may not idle for more than three consecutive minutes in Elizabeth. Elizabeth's three-minute stationary-motor-vehicle idling limit does not apply when the vehicle is stopped because of traffic. Elizabeth's stationary-motor-vehicle idling provision does not apply to a vehicle operating solely on electric power.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §7.08.060(B)"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_local_eliz_idling_three",
+        "rule_local_eliz_idling_traffic",
+        "rule_local_eliz_idling_electric"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_noise_vehicle",
+      "rule_name": "Elizabeth noisy-vehicle operation",
+      "definition": "Elizabeth prohibits use of an automobile, motorcycle, bus, truck, trailer, or other vehicle that is so out of repair, so loaded, or used in a manner that creates loud and unnecessary grating, rattling, grinding, clanging, or other annoying noise. The noisy loading or unloading activity described by Elizabeth §8.48.020 is prohibited in a residential area from 10:00 p.m. to 7:00 a.m., extending to 9:00 a.m. when the following day is Sunday or a legal holiday. A stationary motor vehicle whose manufacturer's gross weight exceeds 10,000 pounds, or its attached auxiliary equipment, may not operate for more than three minutes in any hour while on a public right-of-way in a residential district, in a designated quiet zone, or on private property in a residential, industrial, or business zone unless within a completely enclosed structure or adequately baffled.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §8.48.020(B)(11)",
+        "Elizabeth Code §8.48.020",
+        "Elizabeth Code §8.48.020(B)(13)"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_local_eliz_noise_vehicle",
+        "rule_local_eliz_noise_loading",
+        "rule_local_eliz_noise_10k"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_temp_closure",
+      "rule_name": "Elizabeth temporary street closure",
+      "definition": "The Mayor may temporarily close an Elizabeth street only under the findings, regulation, warning-sign, and approval conditions stated in Chapter 10.20.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code Chapter 10.20"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_eliz_temp_closure"
+      ],
+      "activation_conditions": [
+        "Mayor finds closure necessary for safety, health, or welfare",
+        "a regulation is issued",
+        "warning signs are posted",
+        "approval of the New Jersey Commissioner of Transportation is obtained"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_bridge_strike",
+      "rule_name": "Elizabeth bridge-strike liability",
+      "definition": "A person who causes a truck lacking sufficient clearance to pass under a bridge must reimburse all resulting City costs within ten days after notice.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §10.72.040(C)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_eliz_bridge_strike"
+      ],
+      "activation_conditions": [
+        "person causes a truck lacking sufficient clearance to go under a bridge",
+        "City provides notice of costs"
+      ],
+      "structured_values": [
+        {
+          "original_value": 10,
+          "original_unit": "days",
+          "canonical_measurement": "payment_deadline",
+          "normalized_value": 10,
+          "normalized_unit": "calendar_days",
+          "measurement_scope": "reimbursement after City notice",
+          "conversion_method": "identity"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_workzone_mutcd",
+      "rule_name": "Elizabeth work-zone traffic controls",
+      "definition": "Traffic-control devices for covered Elizabeth street work must conform to the Manual on Uniform Traffic Control Devices. A detour for covered Elizabeth street work requires approval by the Elizabeth Police Traffic Division. Covered Elizabeth street work is ordinarily limited to 9:00 a.m. through 4:00 p.m.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §10.72.050(A)",
+        "Elizabeth Code §10.72.050(D)",
+        "Elizabeth Code §10.72.050(I)"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_local_eliz_workzone_mutcd",
+        "rule_local_eliz_detour_police",
+        "rule_local_eliz_work_hours"
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_snow_north",
+      "rule_name": "Elizabeth snow-covered parking prohibition — North Avenue",
+      "definition": "When North Avenue from Route No. 1 to Newark Avenue is snow-covered, parking is prohibited until the street is plowed sufficiently and parking will not interfere with traffic, subject to the required signs.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code snow-emergency route schedule"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_eliz_snow_north"
+      ],
+      "activation_conditions": [
+        "North Avenue from Route No. 1 to Newark Avenue is snow-covered",
+        "required signs are in place"
+      ],
+      "exceptions": [
+        "The prohibition ends after sufficient plowing when parking will not interfere with traffic."
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_ord6290",
+      "rule_name": "Elizabeth Ordinance 6290 Front Street four-ton exclusion",
+      "definition": "A truck over four tons gross weight is excluded from Front Street from the Elizabeth River crossing to Port Avenue.",
+      "source_id": "elizabeth_ordinance_6290_2026",
+      "source_sections": [
+        "Elizabeth Ordinance 6290, adopted May 26, 2026"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_eliz_ord6290"
+      ],
+      "activation_conditions": [
+        "truck is on Front Street from the Elizabeth River crossing to Port Avenue"
+      ],
+      "exceptions": [
+        "The inherited exception applies to trucks used for the pickup and delivery of materials on that street."
+      ],
+      "structured_values": [
+        {
+          "original_value": 4,
+          "original_unit": "tons gross weight",
+          "canonical_measurement": "gross_weight_threshold",
+          "normalized_value": 3628.739,
+          "normalized_unit": "kilograms",
+          "measurement_scope": "Ordinance 6290 Front Street truck exclusion",
+          "conversion_method": "four U.S. short tons converted at 907.18474 kg per ton"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_local_union_park_four_ton",
+      "rule_name": "Union County park-road four-ton exclusion",
+      "definition": "A truck over four tons gross weight may not use a Union County park-system road listed in Schedule VI. Union County's scheduled four-ton park-road exclusion does not apply to trucks used for the pickup and delivery of materials on the listed street.",
+      "source_id": "union_county_laws_2026",
+      "source_sections": [
+        "Laws of Union County §138-8 and Schedule VI",
+        "Laws of Union County §138-8"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_local_union_park_four_ton",
+        "rule_local_union_park_delivery"
+      ]
+    },
+    {
+      "rule_id": "rule_local_union_schedule_reserved",
+      "rule_name": "Union County truck-route schedule reserved",
+      "definition": "Union County Schedule VII, referenced by §138-9 for a system of truck routes, is expressly reserved and lists no truck-route streets in the January 2026 compilation. Union County §138-9 states that trucks with a combined vehicle-and-load weight over four tons are excluded from all streets except those forming the system of truck routes described in Schedule VII.",
+      "source_id": "union_county_laws_2026",
+      "source_sections": [
+        "Laws of Union County §138-9 and Schedule VII",
+        "Laws of Union County §138-9"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_local_union_schedule_reserved",
+        "rule_local_union_138_9_text"
+      ]
+    },
+    {
+      "rule_id": "rule_local_union_emergency_parking",
+      "rule_name": "Union County temporary emergency no-parking",
+      "definition": "Union County may impose temporary emergency no-parking under the declaration, notice, sign, and removal procedures stated in §§138-23 through 138-26.",
+      "source_id": "union_county_laws_2026",
+      "source_sections": [
+        "Laws of Union County §§138-23 through 138-26"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_union_emergency_parking"
+      ],
+      "activation_conditions": [
+        "authorized emergency declaration is made",
+        "temporary signs are placed",
+        "required prior-vehicle notice is provided",
+        "vehicle-removal procedure is followed",
+        "sign-effectiveness conditions are satisfied"
+      ]
+    },
+    {
+      "rule_id": "rule_local_union_bridge_sign",
+      "rule_name": "Union County sub-20-ton bridge signs",
+      "definition": "Union County must place a sign stating the designated carrying capacity at a bridge whose carrying capacity is less than 20 tons, with the weight designation established by Board resolution.",
+      "source_id": "union_county_laws_2026",
+      "source_sections": [
+        "Laws of Union County §111-11"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_union_bridge_sign"
+      ],
+      "activation_conditions": [
+        "bridge carrying capacity is less than 20 tons",
+        "Board resolution establishes the weight designation"
+      ],
+      "structured_values": [
+        {
+          "original_value": 20,
+          "original_unit": "tons",
+          "canonical_measurement": "bridge_carrying_capacity_threshold",
+          "normalized_value": 18143.695,
+          "normalized_unit": "kilograms",
+          "measurement_scope": "Union County bridge-sign trigger",
+          "conversion_method": "20 U.S. short tons converted at 907.18474 kg per ton"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_fed_cdl_a",
+      "rule_name": "CDL Group A definition",
+      "definition": "A combination vehicle is in CDL Group A when its gross combination weight rating or gross combination weight is 26,001 pounds or more, whichever is greater, and the towed unit has a gross vehicle weight rating or gross vehicle weight over 10,000 pounds, whichever is greater. A heavy straight vehicle is in CDL Group B when its gross vehicle weight rating or gross vehicle weight is 26,001 pounds or more, whichever is greater. A small vehicle that does not meet CDL Group A or B requirements is in Group C when it is designed to transport 16 or more passengers, including the driver. A vehicle of any size that does not meet CDL Group A or B requirements is in Group C when used to transport material required to be placarded under 49 CFR part 172, subpart F, or any quantity of a select agent or toxin listed in 42 CFR part 73.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 383.5, definition of Group A",
+        "49 CFR 383.5, definition of Group B",
+        "49 CFR 383.5, definition of Group C",
+        "49 CFR 383.5, definitions of Commercial motor vehicle (Group C) and Hazardous materials"
+      ],
+      "requirement_count": 4,
+      "requirement_ids": [
+        "rule_fed_cdl_a",
+        "rule_fed_cdl_b",
+        "rule_fed_cdl_c",
+        "rule_fed_cdl_c_hazmat"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_cdl_required",
+      "rule_name": "Required commercial-driver tests",
+      "definition": "A person must not operate a commercial motor vehicle unless the person has taken and passed the knowledge and driving tests required by 49 CFR 383.23(a)(1). A person must not operate a commercial motor vehicle unless the person possesses the commercial learner's permit or commercial driver's license required by 49 CFR 383.23(a)(2), including the proper class and endorsements for the vehicle or cargo or passengers transported.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 383.23(a)(1)",
+        "49 CFR 383.23(a)(2), subject to 49 CFR 383.23(b)"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_fed_cdl_required",
+        "rule_fed_cdl_possession"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_usdot_registration",
+      "rule_name": "Motor carrier USDOT registration before operation",
+      "definition": "A motor carrier, hazardous-materials safety-permit applicant, or intermodal equipment provider subject to 49 CFR 390.19T must file the applicable identification report—Form MCS-150, MCS-150B, or MCS-150C—before beginning operations. A motor carrier subject to 49 CFR 390.19T must update its registration information every 24 months according to the USDOT-number schedule.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 390.19T(a), (b)(1)",
+        "49 CFR 390.19T(b)"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_fed_usdot_registration",
+        "rule_fed_usdot_update"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_mark_name",
+      "rule_name": "Carrier legal or trade name marking",
+      "definition": "A self-propelled commercial motor vehicle subject to 49 CFR 390.21T must display the motor carrier's legal name or single trade name on both sides. A self-propelled commercial motor vehicle subject to 49 CFR 390.21T must display the motor carrier's USDOT number preceded by the letters USDOT on both sides. A marking required by 49 CFR 390.21T must be readily legible during daylight from 50 feet while the vehicle is stationary.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 390.21T(a), (b)(1), and (c)(1)",
+        "49 CFR 390.21T(a), (b)(2), and (c)(1)",
+        "49 CFR 390.21T(c)(2)-(4)"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_fed_mark_name",
+        "rule_fed_mark_usdot",
+        "rule_fed_mark_legible"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_iep_systematic",
+      "rule_name": "Intermodal equipment provider inspection program",
+      "definition": "An intermodal equipment provider subject to 49 CFR 390.40T must systematically inspect, repair, and maintain intermodal equipment intended for interchange with a motor carrier.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 390.40T(c)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_iep_systematic"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_iep_report",
+      "rule_name": "Driver intermodal-equipment defect report",
+      "definition": "A driver or motor carrier transporting intermodal equipment must report known damage, defects, or deficiencies to the intermodal equipment provider or its designated agent when the equipment is returned, and the report must contain at least the items required by 49 CFR 396.11(b)(1).",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 390.42(b), incorporating the report items in 49 CFR 396.11(b)(1)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_iep_report"
+      ],
+      "activation_conditions": [
+        "damage, defects, or deficiencies are known when intermodal equipment is returned"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_driver_age",
+      "rule_name": "Interstate commercial-motor-vehicle driver age",
+      "definition": "A driver subject to 49 CFR 391.11 must be at least 21 years old. A driver subject to 49 CFR 391.11 must, through experience, training, or both, be able to safely operate the type of commercial motor vehicle driven. A driver subject to 49 CFR 391.11 must possess a currently valid commercial motor vehicle operator's license issued by only one State or jurisdiction.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 391.11(b)(1)",
+        "49 CFR 391.11(b)(3)",
+        "49 CFR 391.11(b)(5)"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_fed_driver_age",
+        "rule_fed_driver_license",
+        "rule_fed_driver_license_possession"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_medical",
+      "rule_name": "Driver medical certification and credential possession",
+      "definition": "A person subject to 49 CFR part 391 must not operate a commercial motor vehicle unless medically certified as physically qualified and, when on duty, carrying the required current medical examiner's certificate, subject to the CDL/CLP carrying exception and variance-document rules in 49 CFR 391.41(a)(1)-(2). A person is physically qualified to drive a commercial motor vehicle when the person meets the standards in 49 CFR 391.41(b) and the examination requirements in 49 CFR 391.43, or has the FMCSA medical variance described in 49 CFR 391.41(a)(3)(ii) and complies with §391.43.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 391.41(a)(1)-(2)",
+        "49 CFR 391.41(a)(3), (b), and 391.43"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_fed_medical",
+        "rule_fed_medical_physical_qualification"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_local_law",
+      "rule_name": "Compliance with local laws",
+      "definition": "A commercial motor vehicle must be operated in accordance with the laws, ordinances, and regulations of the jurisdiction where it is being operated, subject to the stricter federal-rule condition in 49 CFR 392.2.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 392.2"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_local_law"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_equipment_pretrip",
+      "rule_name": "Driver equipment inspection before operation",
+      "definition": "A commercial motor vehicle may not be driven unless the driver is satisfied that the equipment specified in 49 CFR 392.7 is in good working order.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 392.7"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_equipment_pretrip"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_cargo_inspect",
+      "rule_name": "Cargo securement inspection before operation",
+      "definition": "A driver subject to 49 CFR 392.9 must be satisfied before driving that cargo is properly distributed and adequately secured.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 392.9(a)(1) and (b)(1)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_cargo_inspect"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_container_corners",
+      "rule_name": "Intermodal-container four-corner securement",
+      "definition": "An intermodal container carried on a container chassis must be secured to the chassis at all lower corners as specified by 49 CFR 393.126(b)(1). The securement devices for an intermodal container on a chassis must prevent more than 1.27 cm (1/2 inch) of movement relative to the chassis in the forward, aft, right, and left directions. The securement devices for an intermodal container on a chassis must prevent more than 2.54 cm (1 inch) of vertical movement relative to the chassis.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 393.126(b)(1)",
+        "49 CFR 393.126(b)(2)"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_fed_container_corners",
+        "rule_fed_container_horizontal",
+        "rule_fed_container_vertical"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_hos_11",
+      "rule_name": "Eleven-hour driving limit",
+      "definition": "A property-carrying commercial motor vehicle driver subject to 49 CFR 395.3 may drive no more than 11 hours after 10 consecutive hours off duty. A property-carrying commercial motor vehicle driver subject to 49 CFR 395.3 may not drive after the end of the 14th consecutive hour after coming on duty following 10 consecutive hours off duty. A property-carrying commercial motor vehicle driver subject to 49 CFR 395.3 may not drive when more than eight hours of driving have passed without a consecutive 30-minute interruption made up of off-duty, sleeper-berth, or on-duty-not-driving time, or a consecutive combination of those periods.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 395.3(a)(1) and (a)(3)(i)",
+        "49 CFR 395.3(a)(2)",
+        "49 CFR 395.3(a)(3)(ii)"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_fed_hos_11",
+        "rule_fed_hos_14",
+        "rule_fed_hos_break"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_hos_record",
+      "rule_name": "Driver record of duty status",
+      "definition": "Except for a private motor carrier of passengers (nonbusiness), each driver subject to 49 CFR 395.8 must record duty status for each 24-hour period using the applicable method in 49 CFR 395.8(a)(1).",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 395.8(a)(1)-(2)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_hos_record"
+      ],
+      "exceptions": [
+        "private motor carrier of passengers (nonbusiness) exception in 49 CFR 395.8(a)(2)",
+        "ELD, manual record, time-record, and other method-specific provisions in 49 CFR 395.8 and 395.1 remain controlling"
+      ],
+      "structured_values": [
+        {
+          "original_value": 24,
+          "original_unit": "hours",
+          "canonical_measurement": "recording_period",
+          "normalized_value": "PT24H",
+          "normalized_unit": "ISO_8601_duration",
+          "measurement_scope": "driver duty-status record period",
+          "conversion_method": "duration normalization"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_fed_eld",
+      "rule_name": "Electronic logging device use",
+      "definition": "A motor carrier required to use an electronic logging device must use only an ELD on FMCSA's registered-ELDs list.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 395.22(a)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_eld"
+      ],
+      "activation_conditions": [
+        "motor carrier is required to use an ELD under 49 CFR part 395"
+      ],
+      "exceptions": [
+        "regulatory exceptions in 49 CFR part 395 remain controlling"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_systematic_maintenance",
+      "rule_name": "Systematic vehicle maintenance",
+      "definition": "A motor carrier subject to 49 CFR 396.3 must systematically inspect, repair, and maintain each vehicle under its control.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 396.3(a)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_systematic_maintenance"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_driver_vehicle_inspection",
+      "rule_name": "Driver vehicle inspection before driving",
+      "definition": "A driver subject to 49 CFR 396.13 must be satisfied that the motor vehicle is in safe operating condition before driving it.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 396.13"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_driver_vehicle_inspection"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_annual_inspection",
+      "rule_name": "Annual inspection recency condition",
+      "definition": "A motor carrier must not use a commercial motor vehicle, and an intermodal equipment provider must not tender equipment to a motor carrier, unless the vehicle or equipment has passed an inspection in accordance with 49 CFR 396.17 during the preceding 12 months. A motor carrier must not use a commercial motor vehicle, and an intermodal equipment provider must not tender equipment to a motor carrier, unless documentation of the most recent periodic inspection is on the vehicle.",
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "source_sections": [
+        "49 CFR 396.17(c)(1)",
+        "49 CFR 396.17(c)(2)"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_fed_annual_inspection",
+        "rule_fed_annual_inspection_documentation"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_hazmat_placard",
+      "rule_name": "Hazardous-material placarding",
+      "definition": "A transport vehicle containing hazardous material in a quantity and category specified by 49 CFR 172.504 must be placarded as required by that section.",
+      "source_id": "ecfr_hazmat_2026_07_23",
+      "source_sections": [
+        "49 CFR 172.504(a)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_hazmat_placard"
+      ],
+      "activation_conditions": [
+        "material, quantity, packaging, and table conditions in §172.504 are satisfied"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_hazmat_security_plan",
+      "rule_name": "Hazardous-material security-plan development",
+      "definition": "A person who offers for transportation or transports hazardous material listed in 49 CFR 172.800(b) must develop a transportation security plan meeting 49 CFR 172.802. A person who offers for transportation or transports hazardous material listed in 49 CFR 172.800(b) must adhere to the transportation security plan required by that section.",
+      "source_id": "ecfr_hazmat_2026_07_23",
+      "source_sections": [
+        "49 CFR 172.800(b)-(c) and 172.802",
+        "49 CFR 172.800(b)-(c)"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_fed_hazmat_security_plan",
+        "rule_fed_hazmat_security_plan_adhere"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_hazmat_route",
+      "rule_name": "Placarded hazardous-material route selection",
+      "definition": "When a placarded or marked hazardous material is not subject to a prescribed or restricted NRHM routing designation, the motor vehicle must avoid routes through or near heavily populated areas, places where crowds are assembled, tunnels, narrow streets, and alleys, unless an alternative allowed by 49 CFR 397.67(b) applies.",
+      "source_id": "ecfr_hazmat_2026_07_23",
+      "source_sections": [
+        "49 CFR 397.67(b)"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_hazmat_route"
+      ],
+      "activation_conditions": [
+        "vehicle contains placarded or marked hazardous material",
+        "the material is not subject to a prescribed or restricted NRHM routing designation"
+      ],
+      "exceptions": [
+        "there is no practicable alternative",
+        "a reasonable deviation is necessary to reach a terminal, point of loading or unloading, facility for food, fuel, repairs, or rest, or a safe haven",
+        "an emergency, highway-authority direction, or law-enforcement direction requires a deviation"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_twic_possession",
+      "rule_name": "TWIC possession for unescorted secure-area access",
+      "definition": "A person seeking unescorted access to a secure area of a regulated vessel or facility must possess a TWIC unless an applicable regulatory exception applies.",
+      "source_id": "ecfr_maritime_access_2026_07_23",
+      "source_sections": [
+        "33 CFR 101.514 and 49 CFR 1572.17"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_fed_twic_possession"
+      ],
+      "activation_conditions": [
+        "area is a secure area of a regulated vessel or facility",
+        "person seeks unescorted access"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_twic_escort",
+      "rule_name": "Escorted access without TWIC",
+      "definition": "A person not described in 33 CFR 101.514 must present compliant personal identification to gain entry to a regulated vessel or facility and must remain under escort while inside a secure area. Each person issued or possessing a TWIC must present the TWIC for inspection when requested by TSA, the Coast Guard, another authorized DHS representative, an authorized NTSB representative, or a Federal, State, or local law-enforcement officer. Each person issued or possessing a TWIC must pass an electronic TWIC inspection and submit a reference biometric and any other required information when requested by an official listed in 33 CFR 101.515(d)(2).",
+      "source_id": "ecfr_maritime_access_2026_07_23",
+      "source_sections": [
+        "33 CFR 101.515(a), with 33 CFR 101.514",
+        "33 CFR 101.515(d)(1)",
+        "33 CFR 101.515(d)(2)"
+      ],
+      "requirement_count": 3,
+      "requirement_ids": [
+        "rule_fed_twic_escort",
+        "rule_fed_twic_present",
+        "rule_fed_twic_electronic_inspection"
+      ]
+    },
+    {
+      "rule_id": "rule_fed_facility_access",
+      "rule_name": "Conditional secure-area access for newly hired facility employees",
+      "definition": "A newly hired facility employee may be granted secure-area entry for up to 30 consecutive calendar days before receiving a TWIC only when the conditions in 33 CFR 105.257(b) are met, the employee is accompanied by a TWIC holder, the initial name check has passed, and the employee is not being hired as the Facility Security Officer or to perform facility-security duties. If TSA does not act on a newly hired facility employee's TWIC application within 30 days, the cognizant Coast Guard COTP may extend secure-area access for another 30 days.",
+      "source_id": "ecfr_maritime_access_2026_07_23",
+      "source_sections": [
+        "33 CFR 105.257(a)-(d)",
+        "33 CFR 105.257(a)"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_fed_facility_access",
+        "rule_fed_new_hire_access_extension"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_c1",
+      "rule_name": "UIIA premises access for equipment interchange",
+      "definition": "A participating provider or facility operator grants a participating motor carrier the right to enter its terminal facility solely to complete an interchange of equipment.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA C.1, PDF pages 4-5"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_uiia_c1"
+      ],
+      "activation_conditions": [
+        "the provider or facility operator and motor carrier are parties to the UIIA",
+        "entry is solely to complete an equipment interchange"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_c2",
+      "rule_name": "UIIA good-cause premises-access refusal",
+      "definition": "A participating provider or facility operator may refuse a motor carrier access for good cause shown. A participating provider or facility operator must exercise its right to suspend a motor carrier's interchange privileges in good faith. A participating provider or facility operator must give the motor carrier advance notice of a pending suspension by e-mail through IANA. Advance notice of an interchange-privilege suspension must be furnished no less than three business days before the suspension becomes effective. A pending-suspension notice must include the reason for the action. A pending-suspension notice must include provider contact information needed to resolve the issue.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA C.2, PDF pages 4-5"
+      ],
+      "requirement_count": 6,
+      "requirement_ids": [
+        "rule_uiia_c2",
+        "rule_uiia_c2_good_faith",
+        "rule_uiia_c2_notice",
+        "rule_uiia_c2_notice_timing",
+        "rule_uiia_c2_notice_reason",
+        "rule_uiia_c2_notice_contact"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_eir",
+      "rule_name": "UIIA equipment-interchange receipt execution",
+      "definition": "At the time of interchange, the parties or their agents must execute an equipment-interchange receipt or exchange an electronic equivalent. The equipment-interchange receipt or electronic equivalent must describe the equipment and damage observable at the time of interchange.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA D.2.a, PDF page 5"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_uiia_eir",
+        "rule_uiia_eir_condition"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_fmcsr",
+      "rule_name": "UIIA FMCSR compliance before equipment interchange",
+      "definition": "UIIA parties must not interchange equipment unless they have complied with the Federal Motor Carrier Safety Regulations.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA D.3.a, PDF pages 5-6"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_uiia_fmcsr"
+      ],
+      "activation_conditions": [
+        "an equipment interchange is proposed"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_pretrip",
+      "rule_name": "UIIA motor-carrier pre-trip inspection",
+      "definition": "A motor carrier must conduct a pre-trip inspection that includes the Exhibit A items before departing with interchanged equipment.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA D.3.b and Exhibit A, PDF pages 6 and 22"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_uiia_pretrip"
+      ],
+      "activation_conditions": [
+        "before departing with interchanged equipment"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_return",
+      "rule_name": "UIIA prompt equipment return",
+      "definition": "A motor carrier must promptly return interchanged equipment after its interchange purpose is complete.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA E.1.a, PDF page 6"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_uiia_return"
+      ],
+      "activation_conditions": [
+        "the purpose for which the equipment was interchanged is complete"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_return_notice",
+      "rule_name": "UIIA changed return-location notice deadline",
+      "definition": "Whenever an equipment return location is changed, the provider must notify the motor carrier by e-mail by 16:00 local time on the business day before the change becomes effective. A motor carrier must return equipment to the physical location where it was received unless the provider directs return to a listed provider-designated satellite location within the same local commercial territory.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA E.1.b, PDF page 6"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_uiia_return_notice",
+        "rule_uiia_return_location"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_auto_insurance",
+      "rule_name": "UIIA commercial automobile liability minimum",
+      "definition": "A participating motor carrier must maintain commercial automobile insurance with a combined single limit of $1,000,000 or greater.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA F.6.a, PDF page 11"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_uiia_auto_insurance"
+      ],
+      "activation_conditions": [
+        "carrier participates under the UIIA"
+      ],
+      "structured_values": [
+        {
+          "original_value": 1000000,
+          "original_unit": "US dollars combined single limit",
+          "canonical_measurement": "automobile_liability_limit",
+          "normalized_value": 1000000,
+          "normalized_unit": "USD",
+          "measurement_scope": "UIIA participating motor-carrier commercial automobile liability combined single limit",
+          "conversion_method": "identity; nominal currency value preserved"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_cgl_insurance",
+      "rule_name": "UIIA commercial general liability minimum",
+      "definition": "A participating motor carrier must maintain commercial general liability insurance with a combined single limit of $1,000,000 per occurrence or greater. No portion of the commercial general liability coverage required by UIIA F.6.b may be self-insured.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA F.6.b, PDF page 11"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_uiia_cgl_insurance",
+        "rule_uiia_cgl_self_insurance"
+      ]
+    },
+    {
+      "rule_id": "rule_uiia_endorsement",
+      "rule_name": "UIIA UIIE-1 insurance endorsement",
+      "definition": "A participating motor carrier must keep a UIIE-1 endorsement, or a corresponding form that does not differ from UIIE-1, in the most current form available attached to its commercial automobile liability policy. The motor carrier's insurance company must provide IANA evidence of the endorsement and coverage required by UIIA F.6.c.",
+      "source_id": "uiia_supplement_2026_06_18",
+      "source_sections": [
+        "UIIA F.6.c, PDF page 11"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_uiia_endorsement",
+        "rule_uiia_endorsement_evidence"
+      ]
+    },
+    {
+      "rule_id": "rule_apm_status_stay_truck",
+      "rule_name": "APM driver location instruction",
+      "definition": "APM's live Port Status page instructs drivers to remain in their trucks unless in designated safe areas. APM's live Port Status page instructs that a single RFID tag be mounted on the exterior of the truck, specifically the mirror bracket.",
+      "source_id": "apm_port_status_2026_07_24",
+      "source_sections": [
+        "Port Status page, undated Safety Information"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_apm_status_stay_truck",
+        "rule_apm_status_rfid_mount"
+      ]
+    },
+    {
+      "rule_id": "rule_apm_status_export_two_days",
+      "rule_name": "APM export appointment horizon",
+      "definition": "APM's live Port Status page states that export drop-off appointments may be booked up to two working days in advance. APM's live Port Status page instructs drivers to have a ticket showing COMPLETE before exiting the terminal. APM's live Port Status page instructs drivers to merge appointments before entering the OCR sheds at pre-gate. APM's live Port Status page states that appointments cannot be managed after the one-hour appointment window. APM's live Port Status page instructs drivers to check container status before booking import pickup appointments.",
+      "source_id": "apm_port_status_2026_07_24",
+      "source_sections": [
+        "Port Status page, undated Gate Information"
+      ],
+      "requirement_count": 5,
+      "requirement_ids": [
+        "rule_apm_status_export_two_days",
+        "rule_apm_status_complete_ticket",
+        "rule_apm_status_merge_preocr",
+        "rule_apm_status_window",
+        "rule_apm_status_container"
+      ]
+    },
+    {
+      "rule_id": "rule_local_union_133_10_responsibility",
+      "rule_name": "Union County traffic-ordinance responsibility statement",
+      "definition": "Union County §133-10(A) states that responsibility for traffic regulation on County roads rests with Union County. Under Union County §133-10(B)-(C), when a municipality adopts a traffic ordinance affecting a County road, the County's stated policy is to adopt a consenting resolution.",
+      "source_id": "union_county_laws_2026",
+      "source_sections": [
+        "Laws of Union County §133-10(A)",
+        "Laws of Union County §133-10(B)-(C)"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_local_union_133_10_responsibility",
+        "rule_local_union_133_10_consent"
+      ]
+    },
+    {
+      "rule_id": "rule_local_union_133_14_signs",
+      "rule_name": "Union County road-sign allocation — municipal signs",
+      "definition": "Union County §133-14 assigns municipalities responsibility for installing regulatory signs and school-warning signs on County roads. Union County §133-14 assigns the County responsibility for directional and other warning signs on County roads, with municipal consent.",
+      "source_id": "union_county_laws_2026",
+      "source_sections": [
+        "Laws of Union County §133-14"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_local_union_133_14_signs",
+        "rule_local_union_133_14_county_signs"
+      ]
+    },
+    {
+      "rule_id": "rule_local_union_ss4a_planning_label",
+      "rule_name": "Union County planning-table truck-route label",
+      "definition": "Union County's Safe Streets for All Appendix G labels North Avenue between NJ 27 and U.S. 1 and 9 in Elizabeth, mileposts 0.00 through 0.67, as Truck Route: Yes.",
+      "source_id": "union_county_ss4a_appendix_g_2026",
+      "source_sections": [
+        "Appendix G, printed page 23, North Avenue corridor row"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_union_ss4a_planning_label"
+      ],
+      "structured_values": [
+        {
+          "original_value": "0.00-0.67",
+          "original_unit": "mileposts",
+          "canonical_measurement": "planning_corridor_milepost_range",
+          "normalized_value": [
+            0,
+            0.67
+          ],
+          "normalized_unit": "miles",
+          "measurement_scope": "North Avenue between NJ 27 and U.S. 1 and 9",
+          "conversion_method": "range preserved"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_ord6096_notice",
+      "rule_name": "Elizabeth Ordinance 6096 notice description",
+      "definition": "Elizabeth's official final-reading notice describes Ordinance 6096 as replacing a $250 maximum penalty with a $250 minimum penalty for off-street parking of commercial vehicles in residential zones.",
+      "source_id": "elizabeth_ordinance_6096_2025",
+      "source_sections": [
+        "Official final-reading notice, page 1"
+      ],
+      "requirement_count": 1,
+      "requirement_ids": [
+        "rule_local_eliz_ord6096_notice"
+      ],
+      "structured_values": [
+        {
+          "original_value": 250,
+          "original_unit": "US dollars minimum penalty",
+          "canonical_measurement": "minimum_penalty",
+          "normalized_value": 250,
+          "normalized_unit": "USD",
+          "measurement_scope": "off-street commercial-vehicle parking in residential zones as described by the official notice",
+          "conversion_method": "identity; nominal currency value preserved"
+        },
+        {
+          "original_value": 250,
+          "original_unit": "US dollars former maximum penalty",
+          "canonical_measurement": "former_maximum_penalty",
+          "normalized_value": 250,
+          "normalized_unit": "USD",
+          "measurement_scope": "former off-street commercial-vehicle parking penalty described by the official notice",
+          "conversion_method": "identity; nominal currency value preserved"
+        }
+      ]
+    },
+    {
+      "rule_id": "rule_local_eliz_1040_050_minimum_penalty",
+      "rule_name": "Elizabeth Chapter 10.40 minimum penalty",
+      "definition": "Unless another New Jersey statute or another section of Chapter 10.40 expressly provides a different penalty, a person convicted of a Chapter 10.40 violation is liable to a penalty of not less than $250. For a Chapter 10.40 violation, §10.40.050 permits imprisonment for a term not exceeding 15 days, or both imprisonment and the stated monetary penalty.",
+      "source_id": "elizabeth_code_traffic_2025",
+      "source_sections": [
+        "Elizabeth Code §10.40.050"
+      ],
+      "requirement_count": 2,
+      "requirement_ids": [
+        "rule_local_eliz_1040_050_minimum_penalty",
+        "rule_local_eliz_1040_050_imprisonment"
+      ]
     }
-  ]
+  ],
+  "rule_count": 146,
+  "nested_requirement_count": 243,
+  "requirement_to_rule_index": {
+    "rule_003": "rule_002",
+    "rule_split_004_holiday": "rule_004",
+    "rule_split_006_export": "rule_006",
+    "rule_split_006_simultaneous": "rule_006",
+    "rule_split_009_twic": "rule_009",
+    "rule_split_009_sealink": "rule_009",
+    "rule_017": "rule_015",
+    "rule_018": "rule_015",
+    "rule_split_019_unapproved": "rule_019",
+    "rule_split_019_old_engine": "rule_019",
+    "rule_split_020_insurance": "rule_020",
+    "rule_split_020_credit": "rule_020",
+    "rule_split_033_immediate": "rule_033",
+    "rule_apm_directions_turnpike_13a": "rule_035",
+    "rule_split_037_export": "rule_037",
+    "rule_split_037_empty": "rule_037",
+    "rule_split_037_status": "rule_037",
+    "rule_split_037_watch": "rule_037",
+    "rule_split_037_swap": "rule_037",
+    "rule_split_037_driver": "rule_037",
+    "rule_split_037_rows": "rule_037",
+    "rule_apm_termpoint_safety_status": "rule_038",
+    "rule_apm_termpoint_turnaround_purpose": "rule_038",
+    "rule_043": "rule_042",
+    "rule_045": "rule_042",
+    "rule_tariff_34_046_safe_working_load": "rule_053",
+    "rule_tariff_34_046_overdimension_approval": "rule_053",
+    "rule_tariff_34_270_mooring_speed": "rule_054",
+    "rule_058": "rule_057",
+    "rule_tariff_34_1100_update": "rule_059",
+    "rule_062": "rule_061",
+    "rule_063": "rule_061",
+    "rule_tariff_34_1140_2023_engine": "rule_061",
+    "rule_tariff_34_1140_2023_alternative": "rule_061",
+    "rule_tariff_34_1140_2027_engine": "rule_061",
+    "rule_tariff_34_1140_2027_alternative": "rule_061",
+    "rule_tariff_34_1140_2028_engine": "rule_061",
+    "rule_tariff_34_1140_2028_alternative": "rule_061",
+    "rule_tariff_34_751_late_charge": "rule_064",
+    "rule_083": "rule_081",
+    "rule_092": "rule_089",
+    "rule_091": "rule_090",
+    "rule_split_016_vehicle": "rule_split_014_rfid",
+    "rule_local_eliz_four_ton_delivery": "rule_local_eliz_four_ton_schedule",
+    "rule_local_eliz_kapkowski_no_stop": "rule_local_eliz_north_blank_hours",
+    "rule_local_eliz_clean_south": "rule_local_eliz_clean_north",
+    "rule_local_eliz_tractor_6_6": "rule_local_eliz_commercial_9_6",
+    "rule_local_eliz_parking_plate": "rule_local_eliz_commercial_9_6",
+    "rule_local_eliz_parking_emergency": "rule_local_eliz_commercial_9_6",
+    "rule_local_eliz_trailer_delivery": "rule_local_eliz_trailer_parking",
+    "rule_local_eliz_trailer_utility": "rule_local_eliz_trailer_parking",
+    "rule_local_eliz_trailer_repair": "rule_local_eliz_trailer_parking",
+    "rule_local_eliz_trailer_emergency": "rule_local_eliz_trailer_parking",
+    "rule_local_eliz_idling_traffic": "rule_local_eliz_idling_three",
+    "rule_local_eliz_idling_electric": "rule_local_eliz_idling_three",
+    "rule_local_eliz_noise_loading": "rule_local_eliz_noise_vehicle",
+    "rule_local_eliz_noise_10k": "rule_local_eliz_noise_vehicle",
+    "rule_local_eliz_detour_police": "rule_local_eliz_workzone_mutcd",
+    "rule_local_eliz_work_hours": "rule_local_eliz_workzone_mutcd",
+    "rule_local_union_park_delivery": "rule_local_union_park_four_ton",
+    "rule_local_union_138_9_text": "rule_local_union_schedule_reserved",
+    "rule_fed_cdl_b": "rule_fed_cdl_a",
+    "rule_fed_cdl_c": "rule_fed_cdl_a",
+    "rule_fed_cdl_c_hazmat": "rule_fed_cdl_a",
+    "rule_fed_cdl_possession": "rule_fed_cdl_required",
+    "rule_fed_usdot_update": "rule_fed_usdot_registration",
+    "rule_fed_mark_usdot": "rule_fed_mark_name",
+    "rule_fed_mark_legible": "rule_fed_mark_name",
+    "rule_fed_driver_license": "rule_fed_driver_age",
+    "rule_fed_driver_license_possession": "rule_fed_driver_age",
+    "rule_fed_medical_physical_qualification": "rule_fed_medical",
+    "rule_fed_container_horizontal": "rule_fed_container_corners",
+    "rule_fed_container_vertical": "rule_fed_container_corners",
+    "rule_fed_hos_14": "rule_fed_hos_11",
+    "rule_fed_hos_break": "rule_fed_hos_11",
+    "rule_fed_annual_inspection_documentation": "rule_fed_annual_inspection",
+    "rule_fed_hazmat_security_plan_adhere": "rule_fed_hazmat_security_plan",
+    "rule_fed_twic_present": "rule_fed_twic_escort",
+    "rule_fed_twic_electronic_inspection": "rule_fed_twic_escort",
+    "rule_fed_new_hire_access_extension": "rule_fed_facility_access",
+    "rule_uiia_c2_good_faith": "rule_uiia_c2",
+    "rule_uiia_c2_notice": "rule_uiia_c2",
+    "rule_uiia_c2_notice_timing": "rule_uiia_c2",
+    "rule_uiia_c2_notice_reason": "rule_uiia_c2",
+    "rule_uiia_c2_notice_contact": "rule_uiia_c2",
+    "rule_uiia_eir_condition": "rule_uiia_eir",
+    "rule_uiia_return_location": "rule_uiia_return_notice",
+    "rule_uiia_cgl_self_insurance": "rule_uiia_cgl_insurance",
+    "rule_uiia_endorsement_evidence": "rule_uiia_endorsement",
+    "rule_apm_status_rfid_mount": "rule_apm_status_stay_truck",
+    "rule_apm_status_complete_ticket": "rule_apm_status_export_two_days",
+    "rule_apm_status_merge_preocr": "rule_apm_status_export_two_days",
+    "rule_apm_status_window": "rule_apm_status_export_two_days",
+    "rule_apm_status_container": "rule_apm_status_export_two_days",
+    "rule_local_union_133_10_consent": "rule_local_union_133_10_responsibility",
+    "rule_local_union_133_14_county_signs": "rule_local_union_133_14_signs",
+    "rule_local_eliz_1040_050_imprisonment": "rule_local_eliz_1040_050_minimum_penalty"
+  },
+  "consolidation_summary": {
+    "prior_atomic_rule_count": 243,
+    "consolidated_rule_count": 146,
+    "nodes_removed": 97,
+    "reduction_percent": 39.9,
+    "source_url_occurrences_before": 243,
+    "source_url_occurrences_after": 25
+  }
 }
