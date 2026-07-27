@@ -1,0 +1,469 @@
+{
+  "schema_version": "0.1.0",
+  "status": "verified_with_open_issues",
+  "as_of_date": "2026-07-26",
+  "description": "Segment authority and current local-rule audit for the candidate North Avenue-McLester-Tripoli access path to APM Terminals Elizabeth.",
+  "route_scope": {
+    "candidate_paths": [
+      "path_a_exit13a_to_apm",
+      "path_b_us1_9_to_apm"
+    ],
+    "modeled_streets": [
+      "North Avenue",
+      "North Avenue East",
+      "McLester Street",
+      "Tripoli Street"
+    ],
+    "municipality": "City of Elizabeth",
+    "county": "Union County",
+    "excluded_authorities": [
+      {
+        "authority": "City of Newark",
+        "reason": "No modeled route segment is within Newark."
+      },
+      {
+        "authority": "Essex County",
+        "reason": "No modeled route segment is within Essex County."
+      }
+    ]
+  },
+  "authority_segments": [
+    {
+      "segment_group": "north_avenue_cr624",
+      "street_names": [
+        "North Avenue",
+        "North Avenue East"
+      ],
+      "controller": "Union County",
+      "jurisdiction_class": "county",
+      "route_designation": "County Route 624",
+      "sri": "20000624__",
+      "municipality": "City of Elizabeth",
+      "county": "Union County",
+      "state_road_centerline_values": {
+        "JURISDICTN": "C",
+        "SHLD_TYPE": "COR",
+        "SHLD_NUM": "624",
+        "ACCESSSTYP": "N",
+        "STATUSTYP": "A"
+      },
+      "confidence": "high",
+      "notes": "Elizabeth may enact traffic rules affecting a county road subject to the applicable county-consent and state-law process. The separate consent/approval file for Elizabeth Code 10.16.050 was not found."
+    },
+    {
+      "segment_group": "mclester_street",
+      "street_names": [
+        "McLester Street"
+      ],
+      "controller": "City of Elizabeth",
+      "jurisdiction_class": "municipal",
+      "sri": "200413892_",
+      "municipality": "City of Elizabeth",
+      "county": "Union County",
+      "state_road_centerline_values": {
+        "JURISDICTN": "M",
+        "ACCESSSTYP": "N",
+        "STATUSTYP": "A"
+      },
+      "source_object_ids": [
+        20994,
+        49785,
+        219821,
+        253519,
+        320648,
+        433606
+      ],
+      "confidence": "high"
+    },
+    {
+      "segment_group": "tripoli_municipal",
+      "street_names": [
+        "Tripoli Street"
+      ],
+      "controller": "City of Elizabeth",
+      "jurisdiction_class": "municipal",
+      "sri": "20041004__",
+      "from": {
+        "description": "McLester Street intersection",
+        "longitude": -74.160114111665,
+        "latitude": 40.674167142869
+      },
+      "to": {
+        "description": "NJGIN municipal/private jurisdiction break",
+        "longitude": -74.1571966391309,
+        "latitude": 40.6729993244946
+      },
+      "state_road_centerline_values": {
+        "OBJECTID": 374024,
+        "JURISDICTN": "M",
+        "ACCESSSTYP": "N",
+        "STATUSTYP": "A"
+      },
+      "confidence": "high"
+    },
+    {
+      "segment_group": "tripoli_private_terminal",
+      "street_names": [
+        "Tripoli Street",
+        "APM terminal-side access"
+      ],
+      "controller": "PANYNJ facility ownership and rules; APM Terminals operational gate control",
+      "jurisdiction_class": "private_terminal",
+      "sri": "20041004__",
+      "from": {
+        "description": "NJGIN municipal/private jurisdiction break",
+        "longitude": -74.1571966391309,
+        "latitude": 40.6729993244946
+      },
+      "to": {
+        "description": "Private Tripoli segment endpoint represented by NJGIN",
+        "longitude": -74.1541494425669,
+        "latitude": 40.6717659112918
+      },
+      "state_road_centerline_values": {
+        "OBJECTID": 395729,
+        "JURISDICTN": "P",
+        "ACCESSSTYP": "N",
+        "STATUSTYP": "A"
+      },
+      "confidence": "medium_high",
+      "notes": "The road centerline proves a public/private classification change, not deed ownership. PANYNJ states that it owns the Elizabeth-Port Authority Marine Terminal, and APM is a lessee/operator with gate control. Lease exhibits or title records are required for a deed-precision boundary."
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "union_133_10",
+      "authority": "Union County",
+      "citation": "Union County Code 133-10",
+      "title": "Traffic ordinances",
+      "current_text": "A. State law: The County is responsible. B. Union County policy: The County adopts consenting resolutions after enactment of local ordinances. C. Comment: The Commissioners have concurred with all municipal traffic ordinances on County roads with the exception of parking meter installation and regulation.",
+      "current_text_summary": "The county is responsible under state law; county policy is to adopt consenting resolutions after local traffic ordinances are enacted; the Commissioners state that they have concurred with municipal traffic ordinances on county roads except parking-meter regulation.",
+      "applies_to": [
+        "north_avenue_cr624"
+      ],
+      "vehicle_scope": "traffic ordinances generally",
+      "terminal_access_exception": "none",
+      "current_status": "present in county code updated through January 2026",
+      "later_amendment_effect": "no corridor-changing amendment found",
+      "verification": "verified_current_text"
+    },
+    {
+      "rule_id": "union_138_8_138_36",
+      "authority": "Union County",
+      "citation": "Union County Code 138-8 and 138-36, Schedule VI",
+      "title": "Vehicle weight limits",
+      "current_text": {
+        "section_138_8": "Trucks over four tons' gross weight are hereby excluded from the streets or parts of streets described in Schedule VI (§ 138-36), except for the pickup and delivery of materials on such streets, said Schedule VI (§ 138-36) being attached to and made a part of this chapter.",
+        "section_138_36_relevant_text": "In accordance with the provisions of § 138-8, trucks over four tons' gross weight are hereby excluded from all streets in the Union County park system except for the pickup and delivery of materials as excepted."
+      },
+      "current_text_summary": "Trucks over four tons gross weight are excluded from the streets in Schedule VI except for pickup and delivery on those streets. Schedule VI applies to streets in the Union County park system.",
+      "applies_to": [],
+      "does_not_apply_to": [
+        "north_avenue_cr624",
+        "mclester_street",
+        "tripoli_municipal",
+        "tripoli_private_terminal"
+      ],
+      "vehicle_scope": {
+        "type": "weight",
+        "threshold": "over 4 tons gross weight"
+      },
+      "terminal_access_exception": "No general terminal exception; only pickup/delivery on a scheduled park street.",
+      "current_status": "present in county code updated through January 2026",
+      "later_amendment_effect": "no route-changing amendment found",
+      "verification": "verified_not_applicable_to_corridor"
+    },
+    {
+      "rule_id": "union_138_9_138_37",
+      "authority": "Union County",
+      "citation": "Union County Code 138-9 and 138-37, Schedule VII",
+      "title": "Truck routes",
+      "current_text": {
+        "section_138_9": "Pursuant to N.J.S.A. 40:67-16.1, the streets or parts of streets described in Schedule VII (§ 138-37), attached to and made a part of this chapter, are hereby designated as routes for trucks over four tons. All trucks having a total combined gross weight of vehicle plus load in excess of four tons shall be excluded from all streets except from those streets which form a part of the system of truck routes.",
+        "section_138_37": "In accordance with the provisions of § 138-9 the following streets or parts of streets are hereby designated as routes for trucks over four tons: Name of Street; Location; (Reserved)."
+      },
+      "current_text_summary": "Section 138-9 excludes trucks whose combined vehicle and load exceed four tons from streets other than designated truck routes, but the required Schedule VII contains no roads and is marked Reserved.",
+      "applies_to": [
+        "scope_unresolved"
+      ],
+      "vehicle_scope": {
+        "type": "weight_and_vehicle_class",
+        "threshold": "combined vehicle plus load over 4 tons"
+      },
+      "terminal_access_exception": "none stated",
+      "current_status": "text remains in county code updated through January 2026",
+      "later_amendment_effect": "no amendment resolving the empty schedule was found",
+      "verification": "current_text_verified_scope_unresolved",
+      "open_issue": "Obtain underlying Ordinance No. 160 and a written county interpretation before treating this as either a countywide ban or a corridor designation."
+    },
+    {
+      "rule_id": "elizabeth_10_16_010",
+      "authority": "City of Elizabeth",
+      "citation": "Elizabeth Code 10.16.010",
+      "title": "Four-ton weight limit—Streets affected",
+      "current_text": "Trucks over four (4) tons gross weight are excluded from the street or parts of street described, except for the pickup and delivery of materials on such street. The current table does not include North Avenue, North Avenue East, McLester Street, or Tripoli Street.",
+      "current_text_summary": "Trucks over four tons gross weight are excluded from the streets listed in the section, with an exception for pickup and delivery on the listed street.",
+      "applies_to": [],
+      "does_not_apply_to": [
+        "north_avenue_cr624",
+        "mclester_street",
+        "tripoli_municipal"
+      ],
+      "vehicle_scope": {
+        "type": "weight_and_location",
+        "threshold": "over 4 tons gross weight",
+        "street_schedule_required": true
+      },
+      "terminal_access_exception": "No general terminal exception; pickup/delivery must occur on the listed street.",
+      "current_status": "codified through Ordinance No. 6138, with the 2026 ordinance register separately checked",
+      "later_amendment_effect": "Ordinance No. 6290, passed and approved May 26, 2026, added Front Street from the Elizabeth River crossing to Port Avenue; it did not add or change a modeled route street.",
+      "verification": "verified_not_applicable_to_corridor"
+    },
+    {
+      "rule_id": "elizabeth_10_16_040",
+      "authority": "City of Elizabeth",
+      "citation": "Elizabeth Code 10.16.040",
+      "title": "Five-ton weight limit for trucks—Streets affected",
+      "current_text_summary": "The section lists Westminster Avenue and Wilder Street, with pickup/delivery language for Wilder Street.",
+      "applies_to": [],
+      "does_not_apply_to": [
+        "north_avenue_cr624",
+        "mclester_street",
+        "tripoli_municipal"
+      ],
+      "vehicle_scope": {
+        "type": "weight_and_location",
+        "threshold": "over 5 tons"
+      },
+      "terminal_access_exception": "not applicable to the corridor",
+      "current_status": "present in current online code",
+      "later_amendment_effect": "no corridor-changing amendment found",
+      "verification": "verified_not_applicable_to_corridor"
+    },
+    {
+      "rule_id": "elizabeth_10_16_050",
+      "authority": "City of Elizabeth",
+      "citation": "Elizabeth Code 10.16.050; Ordinance No. 4654, section 1, adopted December 22, 2015",
+      "title": "An 80,000 pound overweight vehicle zone limit—Streets affected",
+      "current_text": "North Avenue East — Beginning at a point 440 feet east of the intersection of North Avenue East and Kapkowski Road and continuing east 520 feet to the vacated portion of North Avenue East and its connection to the Port Authority over weight vehicle zone.",
+      "current_text_summary": "North Avenue East beginning 440 feet east of the North Avenue East/Kapkowski Road intersection and continuing east 520 feet to the vacated North Avenue East connection with the Port Authority overweight-vehicle zone.",
+      "applies_to": [
+        "north_avenue_cr624"
+      ],
+      "vehicle_scope": {
+        "type": "weight_and_location",
+        "maximum_gross_weight_lbs": 80000,
+        "segment_length_ft": 520
+      },
+      "terminal_access_exception": "none stated; the Port Authority connection is part of the location description",
+      "current_status": "present in current online code; no repeal found in the official 2026 ordinance register",
+      "later_amendment_effect": "no later amendment to this section was found",
+      "verification": "current_text_verified_approval_and_signage_pending",
+      "open_issue": "Locate the county consenting resolution, any required state approval, and current posted signage."
+    },
+    {
+      "rule_id": "elizabeth_turns_and_through_movements",
+      "authority": "City of Elizabeth",
+      "citation": "Elizabeth Code turning schedules and official 2025-2026 ordinance register",
+      "title": "Corridor turn and through-movement check",
+      "current_text_summary": "No prohibited turn or through-movement provision naming North Avenue, McLester Street, or Tripoli Street was found. Ordinance No. 6250/10.08.112 applies at Reid Street and East Grand Street.",
+      "applies_to": [],
+      "does_not_apply_to": [
+        "north_avenue_cr624",
+        "mclester_street",
+        "tripoli_municipal"
+      ],
+      "vehicle_scope": "turning and through movements",
+      "terminal_access_exception": "not applicable",
+      "current_status": "checked through official ordinances posted July 26, 2026",
+      "later_amendment_effect": "no corridor-changing amendment found",
+      "verification": "verified_no_named_corridor_rule_found"
+    },
+    {
+      "rule_id": "njac_16_32_terminal_access",
+      "authority": "New Jersey Department of Transportation",
+      "citation": "N.J.A.C. 16:32-1.1, 16:32-1.2(e), 16:32-1.4, and 16:32-1.5",
+      "title": "Truck access and reasonable access to terminals",
+      "current_text_summary": "The chapter governs double-trailer combinations and standard trucks wider than 96 inches but no wider than 102 inches. A 102-inch-wide standard truck may use local unrestricted roads as necessary to reach a terminal by the direct route. Local and county restrictions are preserved.",
+      "applies_to": [
+        "covered_vehicle_classes_on_candidate_paths"
+      ],
+      "vehicle_scope": [
+        "double-trailer truck combinations",
+        "standard trucks greater than 96 inches and not greater than 102 inches wide"
+      ],
+      "terminal_access_exception": "Direct terminal access is allowed only as stated for the covered class; it does not supersede municipal ordinances, county resolutions, weight limits, or other restrictions.",
+      "current_status": "readopted November 30, 2022; amendments effective January 3, 2023; expires November 30, 2029",
+      "later_amendment_effect": "The 2023 text narrows the local-unrestricted-road sentence to a 102-inch-wide standard truck rather than both covered classes.",
+      "verification": "verified_current_rule"
+    },
+    {
+      "rule_id": "panynj_pa10_terminal_highway",
+      "authority": "Port Authority of New York and New Jersey",
+      "citation": "PANYNJ Marine Terminal Tariff PA-10, Subrules 34-035, 34-045, 34-046, 34-090, and 34-105",
+      "title": "Terminal highway weight, dimensions, and conditional use",
+      "current_text_summary": "Marine Terminal Highways are terminal portions PANYNJ makes available for general or limited highway use. Containerized shipments may not exceed 128,000 pounds gross vehicle weight or manufacturer safe working loads. Vehicles over 16 feet 3 inches high or 11 feet wide require terminal-manager approval. Terminal permission is conditional and users must comply with other governmental laws.",
+      "applies_to": [
+        "tripoli_private_terminal",
+        "PANYNJ marine terminal highways"
+      ],
+      "vehicle_scope": {
+        "type": "containerized_shipment_weight_and_dimensions",
+        "maximum_gross_weight_lbs": 128000,
+        "approval_if_height_over_ft": 16.25,
+        "approval_if_width_over_ft": 11
+      },
+      "terminal_access_exception": "No exception to off-terminal law. Terminal permission adds conditions and expressly preserves other governmental requirements.",
+      "current_status": "tariff effective May 1, 2026",
+      "later_amendment_effect": "This May 1, 2026 tariff is later than the March 10, 2026 edition located during the audit.",
+      "verification": "verified_current_tariff"
+    },
+    {
+      "rule_id": "panynj_pa10_drayage_registry",
+      "authority": "Port Authority of New York and New Jersey",
+      "citation": "PANYNJ Marine Terminal Tariff PA-10, Subrules 34-1000, 34-1100, and 34-1121",
+      "title": "Drayage Truck Registry and gate check",
+      "current_text_summary": "An on-road vehicle over 33,000 pounds GVWR serving a PANYNJ terminal for cargo movement is a Drayage Truck, subject to listed exclusions. Covered drayage trucks must be registered before entry, and terminal facilities must check registry compliance.",
+      "applies_to": [
+        "tripoli_private_terminal",
+        "APM terminal gate"
+      ],
+      "vehicle_scope": {
+        "type": "vehicle_class_and_gvwr",
+        "minimum_gvwr_exclusive_lbs": 33000,
+        "purpose": "terminal cargo movement"
+      },
+      "terminal_access_exception": "none; terminal business is necessary but does not itself satisfy registry or gate requirements",
+      "current_status": "tariff effective May 1, 2026",
+      "later_amendment_effect": "current tariff checked",
+      "verification": "verified_current_tariff"
+    },
+    {
+      "rule_id": "panynj_overweight_overwidth_hours",
+      "authority": "Port Authority of New York and New Jersey",
+      "citation": "PANYNJ Truck Information page",
+      "title": "Operating hours for overweight or overwidth containerized cargo",
+      "current_text_summary": "The current operating window is 8:00 a.m. to 3:00 p.m. on Monday, Wednesday, and Friday.",
+      "applies_to": [
+        "PANYNJ terminal operations"
+      ],
+      "vehicle_scope": [
+        "overweight containerized cargo",
+        "overwidth containerized cargo"
+      ],
+      "terminal_access_exception": "not an exception; this is an additional operating window",
+      "current_status": "current PANYNJ truck-information page checked July 26, 2026",
+      "later_amendment_effect": "operational hours can change independently of the tariff",
+      "verification": "verified_current_web_instruction"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "njgin_roads",
+      "title": "NJGIN Roads",
+      "url": "https://www.nj.gov/njgin/edata/roads/",
+      "status": "current monthly-updated state dataset"
+    },
+    {
+      "source_id": "njgin_road_centerline_service",
+      "title": "Statewide Road Centerlines for New Jersey, NG9-1-1 format",
+      "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/Tran_road/FeatureServer/0",
+      "status": "queried July 26, 2026"
+    },
+    {
+      "source_id": "union_county_2026_code",
+      "title": "Laws of Union County, New Jersey",
+      "url": "https://ucnj.org/commissioners/wp-content/uploads/sites/29/2026/04/Laws-of-Union-County-2026.pdf",
+      "status": "updated through January 2026; indexed official copy reviewed, but origin URL returned 404 during final link check July 26, 2026"
+    },
+    {
+      "source_id": "union_county_2025_code_accessible",
+      "title": "Laws of Union County, New Jersey",
+      "url": "https://ucnj.org/wp-content/uploads/2025/01/Laws-of-Union-County-1-6-2025.pdf",
+      "status": "accessible official January 2025 code; cited Chapter 133 and 138 text matches the January 2026 indexed copy"
+    },
+    {
+      "source_id": "union_county_ord_865_2026",
+      "title": "Union County Ordinance No. 865-2026",
+      "url": "https://ucnj.org/press-releases/public-notices/2026/03/30/ordinance-865-2026/",
+      "status": "later 2026 amendment to Chapter 49 only; no effect on Chapter 138"
+    },
+    {
+      "source_id": "union_county_ord_866_2026_final",
+      "title": "Final notice for Union County Ordinance No. 866-2026",
+      "url": "https://ucnj.org/press-releases/public-notices/2026/05/01/ordinance-866-2026-2/",
+      "status": "finally adopted April 30, 2026; amends Chapters 115 and 140 only, with no effect on Chapter 138"
+    },
+    {
+      "source_id": "elizabeth_code_ch10_16",
+      "title": "Elizabeth Code, Chapter 10.16 Weight Limits",
+      "url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI_10.16.030FONWELIIOPE",
+      "status": "Supplement 31, codified through Ordinance No. 6138 passed June 24, 2025"
+    },
+    {
+      "source_id": "elizabeth_ordinance_register",
+      "title": "City of Elizabeth official ordinance register",
+      "url": "https://www.elizabethnj.org/272/City-Ordinances",
+      "status": "checked through ordinances posted July 26, 2026"
+    },
+    {
+      "source_id": "elizabeth_ord_6290",
+      "title": "Elizabeth Ordinance No. 6290",
+      "url": "https://www.elizabethnj.org/DocumentCenter/View/10814/Ord-No-6290-Amend-1016010-4-ton-weight-limit-streets-to-add-Front-St-at-Elizabeth-River-Cossing-to-Port-Ave",
+      "status": "passed and approved May 26, 2026"
+    },
+    {
+      "source_id": "njac_16_32_current",
+      "title": "N.J.A.C. 16:32 Truck Access",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+      "status": "current courtesy copy; expires November 30, 2029"
+    },
+    {
+      "source_id": "njac_16_32_2023_adoption",
+      "title": "R.2023 d.002, N.J.A.C. 16:32 readoption with amendments",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/R.2023%20d.002%20%2855%20N.J.R.%2072%28a%29%29.pdf",
+      "status": "amendments effective January 3, 2023"
+    },
+    {
+      "source_id": "panynj_pa10_2026_05_01",
+      "title": "PANYNJ Marine Terminal Tariff FMC Schedule No. PA-10",
+      "url": "https://www.panynj.gov/content/dam/port/doing-business-pdfs/Port%20Authority%20Marine%20Terminal%20Tariff%20FMC%20Schedule%20No.%20PA%2010%20%28Effective%20May%201%20%2C2026%29.pdf",
+      "status": "effective May 1, 2026"
+    },
+    {
+      "source_id": "panynj_2026_official_statement",
+      "title": "PANYNJ Official Statement dated February 4, 2026",
+      "url": "https://www.panynj.gov/content/dam/corporate/consolidated-bonds-%26-notes-pdfs/port-authority-OS-series-251.pdf",
+      "status": "official PANYNJ ownership and lease disclosure"
+    },
+    {
+      "source_id": "apm_directions",
+      "title": "APM Terminals Elizabeth contact and directions",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
+      "status": "live operator page checked July 26, 2026"
+    },
+    {
+      "source_id": "panynj_truck_information",
+      "title": "PANYNJ Truck Information",
+      "url": "https://www.panynj.gov/port/en/shipping/truck.html",
+      "status": "live operational page checked July 26, 2026"
+    }
+  ],
+  "open_issues": [
+    {
+      "issue_id": "county_138_9_scope",
+      "description": "Union County Code 138-9 is broad, but Schedule VII contains no designated route. Underlying Ordinance No. 160 and a county interpretation are needed.",
+      "severity": "high"
+    },
+    {
+      "issue_id": "elizabeth_4654_approvals",
+      "description": "County consent, any required state approval, and installed signage for Elizabeth Ordinance No. 4654/Code 10.16.050 were not found.",
+      "severity": "high"
+    },
+    {
+      "issue_id": "tripoli_title_boundary",
+      "description": "The NJGIN public/private jurisdiction break is not a deed boundary. Lease exhibits or title/parcel records are needed for deed-precision control.",
+      "severity": "medium"
+    }
+  ]
+}

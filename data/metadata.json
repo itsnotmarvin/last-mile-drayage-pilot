@@ -1,137 +1,3268 @@
 {
-    "project": "last-mile-drayage-pilot",
-    "description": "Metadata and provenance log for core raw source documents collected for the APM Elizabeth last-mile drayage pilot.",
-    "last_updated": "2026-06-25",
-    "sources": [
-        {
-            "source_id": "njac_16_32",
-            "title": "N.J.A.C. 16:32 — Truck Access",
-            "jurisdiction": "state",
-            "publisher": "NJDOT",
-            "source_type": "PDF / regulation",
-            "original_url": "https://nj.gov/transportation/about/rules/documents/16-32-Current.pdf",
-            "wayback_url": "",
-            "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": false,
-            "notes": "Core state regulatory source for truck access rules. Saved raw PDF unchanged."
-        },
-        {
-            "source_id": "nj_large_truck_map",
-            "title": "2024 NJ Large Truck Map",
-            "jurisdiction": "state",
-            "publisher": "NJDOT",
-            "source_type": "PDF / map",
-            "original_url": "https://www.nj.gov/transportation/freight/trucking/pdf/largetruckmap.pdf",
-            "wayback_url": "",
-            "local_path": "data/raw/documents/state/nj_large_truck_map_2024.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": false,
-            "notes": "Core state source for designated large-truck network reference. Saved raw PDF unchanged."
-        },
-        {
-            "source_id": "nj_size_weight_guidebook",
-            "title": "NJ Commercial Vehicle Size and Weight Guidebook",
-            "jurisdiction": "state",
-            "publisher": "NJDOT / NJ GotPermits",
-            "source_type": "PDF / guidebook",
-            "original_url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
-            "wayback_url": "",
-            "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": false,
-            "notes": "Core state guidebook for commercial vehicle size, weight, and oversize/overweight permitting context. Saved raw PDF unchanged."
-        },
-        {
-            "source_id": "panynj_truckers_guide",
-            "title": "PANYNJ Truckers Resource Guidebook",
-            "jurisdiction": "port_authority",
-            "publisher": "PANYNJ",
-            "source_type": "PDF / guidebook",
-            "original_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-            "wayback_url": "",
-            "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": false,
-            "notes": "Core Port Authority source for port trucking requirements, credentials, terminal access, and operational guidance. Saved raw PDF unchanged."
-        },
-        {
-            "source_id": "panynj_truck_info",
-            "title": "PANYNJ Truck Information Page",
-            "jurisdiction": "port_authority",
-            "publisher": "PANYNJ",
-            "source_type": "webpage saved as PDF",
-            "original_url": "https://www.panynj.gov/port/en/shipping/truck.html",
-            "wayback_url": "https://web.archive.org/web/20260625173839/https://www.panynj.gov/port/en/shipping/truck.html#accessPort",
-            "local_path": "data/raw/documents/port_authority/panynj_truck_information_page.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": true,
-            "notes": "Core Port Authority web page for truck access information. Saved as PDF and Wayback snapshot captured because page content can change."
-        },
-        {
-            "source_id": "porttruckpass_tips",
-            "title": "PortTruckPass / TIPS",
-            "jurisdiction": "port_authority",
-            "publisher": "PortTruckPass / PANYNJ",
-            "source_type": "webpage saved as PDF",
-            "original_url": "https://www.porttruckpass.com/",
-            "wayback_url": "https://web.archive.org/web/20260625174308/https://www.porttruckpass.com/",
-            "local_path": "data/raw/documents/port_authority/porttruckpass_tips_homepage.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": true,
-            "notes": "Supporting Port Authority/port operations source showing the public PortTruckPass/TIPS portal used for drayage truck registration, RFID/tag support, and terminal access context."
-        },
-        {
-            "source_id": "apm_directions",
-            "title": "APM Terminals Elizabeth Contact and Directions",
-            "jurisdiction": "port_authority",
-            "publisher": "APM Terminals",
-            "source_type": "webpage saved as PDF",
-            "original_url": "https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
-            "wayback_url": "https://web.archive.org/web/20260625174530/https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
-            "local_path": "data/raw/documents/port_authority/apm_elizabeth_contact_directions.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": true,
-            "notes": "Core APM source for terminal approach directions from Route 1&9 and NJ Turnpike Exit 13A via North Avenue/North Avenue East to McLester Street, then Tripoli Street to the APM entrance. Saved as PDF and Wayback snapshot captured because page content can change."
-        },
-        {
-            "source_id": "apm_hours_ops",
-            "title": "APM Terminals Elizabeth Hours of Operation",
-            "jurisdiction": "port_authority",
-            "publisher": "APM Terminals",
-            "source_type": "webpage saved as PDF",
-            "original_url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
-            "wayback_url": "https://web.archive.org/web/20260625174535/https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
-            "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": true,
-            "notes": "Core APM operational source for gate hours and cutoff times. Saved as PDF and Wayback snapshot captured because operating information can change."
-        },
-        {
-            "source_id": "apm_appointment_system",
-            "title": "APM Terminals Elizabeth Truck Appointment System",
-            "jurisdiction": "port_authority",
-            "publisher": "APM Terminals",
-            "source_type": "webpage saved as PDF",
-            "original_url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
-            "wayback_url": "https://web.archive.org/web/20260625174638/https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
-            "local_path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": true,
-            "notes": "Core APM operational source for TERMPoint truck appointment requirements and scheduling. Saved as PDF and Wayback snapshot captured because appointment-system information can change."
-        },
-        {
-            "source_id": "ecfr_twic_1572",
-            "title": "49 CFR Part 1572 — TWIC",
-            "jurisdiction": "federal",
-            "publisher": "eCFR",
-            "source_type": "webpage saved as PDF / federal regulation",
-            "original_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-D/part-1572",
-            "wayback_url": "",
-            "local_path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
-            "pulled_date": "2026-06-25",
-            "mutable": true,
-            "notes": "Core federal source for TWIC credentialing and security threat assessment rules. Saved manually as PDF from the official eCFR page. Wayback capture was attempted, but Internet Archive archived an eCFR/Federal Register unblock page instead of the regulation content, so no Wayback URL is recorded."
-        }
+  "schema_version": "0.3-evidence-preparation",
+  "project": "last-mile-drayage-pilot",
+  "description": "Neutral source, regulatory-statement, entity, and physical-evidence preparation for a future last-mile drayage knowledge graph. This layer preserves evidence and uncertainty without deciding legal applicability, precedence, route feasibility, conflicts, scenarios, or findings.",
+  "status": "neutral_evidence_preparation_working_draft",
+  "source_count": 40,
+  "last_updated": "2026-07-27T03:33:12Z",
+  "scope_note": "Only the foundational source registry, regulatory statements, entities, physical nodes, and physical edges are prepared here. Candidate-path labels are research-scope tags, not ordered or validated routes.",
+  "internal_repository_inventory": {
+    "non_source_files_reviewed": [
+      {
+        "local_path": "data/raw/metadata.json",
+        "classification": "internal_legacy_source_manifest",
+        "registry_treatment": "not_registered_as_an_external_evidence_source",
+        "reason": "This file describes repository holdings; it is not an independently issued source document or dataset."
+      }
     ]
+  },
+  "extraction_coverage_definition": "Focused extraction summaries for the twelve legacy core sources. This is not the complete source registry; source-level review, exclusion, currentness, and extraction details for all forty registered sources are recorded in sources.",
+  "extraction_coverage": [
+    {
+      "source_id": "njac_16_32",
+      "status": "first_pass_complete_for_selected_evidence_scope",
+      "coverage_note": "Route hierarchy, terminal access, detours, local-rule preservation, direct-route conditions, designation limitations, and map-evidence limitations are represented. Appendix route lists remain in the source for later segment-level verification."
+    },
+    {
+      "source_id": "nj_large_truck_map",
+      "status": "visual_source_reviewed",
+      "coverage_note": "Legend, illustrative status, network classes, and restriction warning are represented. The statewide raster map has not been treated as exact local-segment geometry."
+    },
+    {
+      "source_id": "nj_size_weight_guidebook",
+      "status": "first_pass_complete_for_selected_evidence_scope_with_tables_retained",
+      "coverage_note": "Size, weight, permit type, insurance, time, holiday, escort, sign, lamp, and flag topics are represented. Configuration-specific numeric tables remain authoritative in the cited pages and are not flattened into a hypothetical vehicle scenario."
+    },
+    {
+      "source_id": "panynj_truckers_guide",
+      "status": "apm_and_portwide_access_first_pass_complete",
+      "coverage_note": "Portwide credentials and pre-arrival conditions plus APM-specific appointments, training, gate processing, inspections, void-outs, and access suspensions are represented. Other terminals' facility-specific procedures are outside the APM pilot."
+    },
+    {
+      "source_id": "panynj_truck_info",
+      "status": "apm_relevant_first_pass_complete",
+      "coverage_note": "The APM gate-hour statement and shared port-service information are retained independently. Other terminals' hours are outside the APM pilot."
+    },
+    {
+      "source_id": "porttruckpass_tips",
+      "status": "first_pass_complete",
+      "coverage_note": "The service's relationship to the tariff, DTR/RFID support, and TIPS operational-information purpose are represented."
+    },
+    {
+      "source_id": "apm_directions",
+      "status": "first_pass_complete; second_pass_verified_2026-07-26_for_archived_2026-06-25_snapshot_content",
+      "coverage_note": "Published approach directions, terminal identity, account, and alert information are represented."
+    },
+    {
+      "source_id": "apm_hours_ops",
+      "status": "first_pass_complete; second_pass_verified_2026-07-26_for_archived_2026-06-25_snapshot_content",
+      "coverage_note": "Weekday opening, move-specific cutoffs, holiday variability, and alert/account context are represented."
+    },
+    {
+      "source_id": "apm_appointment_system",
+      "status": "first_pass_complete; second_pass_verified_2026-07-26_for_archived_2026-06-25_snapshot_content",
+      "coverage_note": "Appointment categories, availability, status, driver assignment, safety-induction visibility, alerts, and system features are represented."
+    },
+    {
+      "source_id": "ecfr_twic_1572",
+      "status": "first_pass_complete_for_selected_evidence_scope",
+      "coverage_note": "TWIC application, assessment, disqualification, continuing responsibility, incident reporting, and expiration conditions relevant to access are represented; unrelated HME fee administration is not modeled."
+    },
+    {
+      "source_id": "panynj_marine_terminal_tariff",
+      "status": "drayage_and_terminal_access_first_pass_complete",
+      "coverage_note": "Terminal-highway traffic, size/weight, licensing, hazardous movement, SeaLink, DTR, access deadlines, and terminal-use denial conditions are represented. Vessel, dockage, wharfage, and berth provisions unrelated to the drayage pilot are retained in the source but not modeled."
+    },
+    {
+      "source_id": "osm_apm_study_area_roads",
+      "status": "physical_layer_prepared",
+      "coverage_note": "Current selected road geometries and exact endpoint topology are represented in the physical files. OSM attributes are not treated as legal route-designation evidence."
+    }
+  ],
+  "sources": [
+    {
+      "official_title": "APM Terminals Elizabeth Truck Appointment System",
+      "issuing_authority": "APM Terminals",
+      "source_category": "webpage saved as PDF",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "geographic_scope": "APM Terminals Elizabeth truck-appointment operations",
+      "subject_coverage": [
+        "TERMPoint appointments",
+        "import, export, and empty scheduling",
+        "driver and safety-induction status",
+        "appointment change alerts"
+      ],
+      "official_status": "facility_operator_operational_information",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
+      "sha256": "2fe8f0f94f61832512d7efd68fe07cac4c38ea0fe3295edd845d87a2e465b4ac",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
+          "sha256": "2fe8f0f94f61832512d7efd68fe07cac4c38ea0fe3295edd845d87a2e465b4ac"
+        }
+      ],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-06-25",
+      "pages_sections_reviewed": [
+        "Archived PDF pages 1-5: TERMPoint dashboard and status display, import watch list and simultaneous import/export scheduling, appointment-availability change notices, driver and safety-induction status, appointment status drilldown, scheduling feature list, and account-access information"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "TERMPoint appointment and scheduling functions",
+        "driver and safety-induction status display",
+        "appointment availability and e-alert change-notice semantics"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_archived_2026-06-25_snapshot_content",
+      "currentness_verification_status": "currentness_unverified",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The held PDF is a 2026-06-25 snapshot of a mutable terminal webpage; reopening and comparing the archived pages verifies the recorded snapshot content, not live-current operations.",
+        "Appointment availability may change when the terminal is closed; the source directs users to e-alerts for changes."
+      ],
+      "source_id": "apm_appointment_system",
+      "title": "APM Terminals Elizabeth Truck Appointment System",
+      "publisher": "APM Terminals",
+      "source_type": "webpage saved as PDF",
+      "wayback_url": "https://web.archive.org/web/20260625174638/https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
+      "pulled_date": "2026-06-25",
+      "mutable": true,
+      "notes": "Core APM operational source for TERMPoint truck appointment requirements and scheduling. Saved as PDF and Wayback snapshot captured because appointment-system information can change."
+    },
+    {
+      "official_title": "APM Terminals Elizabeth Contact and Directions",
+      "issuing_authority": "APM Terminals",
+      "source_category": "webpage saved as PDF",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "geographic_scope": "public-road approaches and named entrance serving APM Terminals Elizabeth facilities",
+      "subject_coverage": [
+        "approach directions",
+        "named facility entrance",
+        "firm code",
+        "account and Terminal Alerts information"
+      ],
+      "official_status": "facility_operator_operational_information",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/port_authority/apm_elizabeth_contact_directions.pdf",
+      "sha256": "921a2a2254faca26b60c5ee434a3f4c23b15686548e74e88eb1213be6e36e7de",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/port_authority/apm_elizabeth_contact_directions.pdf",
+          "sha256": "921a2a2254faca26b60c5ee434a3f4c23b15686548e74e88eb1213be6e36e7de"
+        }
+      ],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-06-25",
+      "pages_sections_reviewed": [
+        "Archived PDF pages 1-5: Route 1&9 and New Jersey Turnpike Exit 13A approach directions, named APM facility entrance, firm-code statement, account/watch-list information, and Terminal Alerts delivery methods"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "Route 1&9 approach via North Avenue East, McLester Street, and Tripoli Street",
+        "New Jersey Turnpike Exit 13A approach via North Avenue, McLester Street, and Tripoli Street",
+        "named facility entrance and Terminal Alerts information"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_archived_2026-06-25_snapshot_content",
+      "currentness_verification_status": "currentness_unverified",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The held PDF is a 2026-06-25 snapshot of a mutable terminal webpage; reopening and comparing the archived pages verifies the recorded snapshot content, not live-current operations.",
+        "The directions identify an entrance serving the Control Building, Garage, Warehouse, and Marine Operations; they do not establish authoritative Gate In/Gate Out coordinates or identify an over-the-road container gate."
+      ],
+      "source_id": "apm_directions",
+      "title": "APM Terminals Elizabeth Contact and Directions",
+      "publisher": "APM Terminals",
+      "source_type": "webpage saved as PDF",
+      "wayback_url": "https://web.archive.org/web/20260625174530/https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
+      "pulled_date": "2026-06-25",
+      "mutable": true,
+      "notes": "Core APM source for terminal approach directions from Route 1&9 and NJ Turnpike Exit 13A via North Avenue/North Avenue East to McLester Street, then Tripoli Street to the APM entrance. Saved as PDF and Wayback snapshot captured because page content can change."
+    },
+    {
+      "official_title": "APM Terminals Elizabeth Hours of Operation",
+      "issuing_authority": "APM Terminals",
+      "source_category": "webpage saved as PDF",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "geographic_scope": "APM Terminals Elizabeth gate operations",
+      "subject_coverage": [
+        "weekday gate opening",
+        "transaction cutoff times",
+        "holiday schedule"
+      ],
+      "official_status": "facility_operator_operational_information",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
+      "sha256": "5fdd2d5d074ec07c75a8457bea3dcc380a46d47e89a677334237a2e70c417063",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
+          "sha256": "5fdd2d5d074ec07c75a8457bea3dcc380a46d47e89a677334237a2e70c417063"
+        }
+      ],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-06-25",
+      "pages_sections_reviewed": [
+        "Archived PDF page 1: weekday gate opening and transaction cutoff table",
+        "Archived PDF pages 2-3: 2025-2026 holiday schedule and instruction to check News & Updates"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "Monday-Friday gate opening time",
+        "empty, PND 921, dry, reefer, and OOG cutoff times",
+        "holiday schedule and source direction to check current News & Updates"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_archived_2026-06-25_snapshot_content",
+      "currentness_verification_status": "currentness_unverified",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The held PDF is a 2026-06-25 snapshot of a mutable terminal webpage; reopening and comparing the archived pages verifies the recorded snapshot content, not live-current hours.",
+        "The holiday schedule does not state that the terminal closes for every listed holiday and directs users to News & Updates for current details."
+      ],
+      "source_id": "apm_hours_ops",
+      "title": "APM Terminals Elizabeth Hours of Operation",
+      "publisher": "APM Terminals",
+      "source_type": "webpage saved as PDF",
+      "wayback_url": "https://web.archive.org/web/20260625174535/https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
+      "pulled_date": "2026-06-25",
+      "mutable": true,
+      "notes": "Core APM operational source for gate hours and cutoff times. Saved as PDF and Wayback snapshot captured because operating information can change."
+    },
+    {
+      "official_title": "APM Terminals Elizabeth Port Status and General Trucking Instructions",
+      "issuing_authority": "APM Terminals Elizabeth",
+      "source_category": "terminal_published_information",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "geographic_scope": "APM Terminals Elizabeth",
+      "subject_coverage": [
+        "safety",
+        "RFID",
+        "appointments",
+        "ticketing",
+        "OCR",
+        "container status"
+      ],
+      "official_status": "facility_operator_operational_policy",
+      "publication_date": null,
+      "latest_dated_content_observed": "2026-07-24",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www2.apmterminals.com/en/port-elizabeth/practical-information/news-and-alerts/2026/Port-Status-Update",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "live Port Status page",
+        "Short-Term Vessel Schedule headed 7/24/26",
+        "undated Safety and Appointments sections"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "driver and appointment instructions"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_extracted_general_trucking_instructions",
+      "currentness_verification_status": "live_dynamic_page_reopened_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Same-URL content changes and must be revalidated shortly before operational use.",
+        "No local snapshot was added because the page is dynamic and direct fetch behavior varied.",
+        "The 2026-07-24 date belongs to the latest short-term vessel schedule observed; the general Safety and Appointments text is undated.",
+        "The stable source ID is retained even though its embedded date does not date every statement on the page."
+      ],
+      "source_id": "apm_port_status_2026_07_24",
+      "title": "APM Terminals Elizabeth Port Status and General Trucking Instructions"
+    },
+    {
+      "official_title": "TERMPoint FAQ January 2025",
+      "issuing_authority": "APM Terminals Elizabeth",
+      "source_category": "terminal_published_information",
+      "jurisdiction": "APM Terminals Elizabeth facility",
+      "geographic_scope": "APM Terminals Elizabeth",
+      "subject_coverage": [
+        "appointment scope",
+        "appointment windows",
+        "driver assignment"
+      ],
+      "official_status": "facility_operator_operational_policy",
+      "publication_date": "2025-01",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.apmterminals.com/port-elizabeth/-/media/mainsite/americas/Port-Elizabeth/Information/termpoint/term-point-faq-january-2025.pdf",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "FAQ appointment requirements and windows"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "gate move appointment scope",
+        "±30 minute window",
+        "driver assignment deadline"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "official PDF reviewed; later status-page instructions separately preserved",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Direct archive download failed in the implementation environment; no local file or hash is claimed."
+      ],
+      "source_id": "apm_termpoint_faq_2025",
+      "title": "TERMPoint FAQ January 2025"
+    },
+    {
+      "official_title": "CBP in-bond, ACE, and CTPAT official resources",
+      "issuing_authority": "United States Customs and Border Protection",
+      "source_category": "official_operational_guidance",
+      "jurisdiction": "United States",
+      "geographic_scope": "Customs cargo movements",
+      "subject_coverage": [
+        "in-bond cargo",
+        "ACE",
+        "CTPAT"
+      ],
+      "official_status": "official_operational_guidance",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.cbp.gov/trade/automated/how-to-use-ace",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "In-Bond Program",
+        "ACE use and in-bond resources",
+        "CTPAT program",
+        "CTPAT Highway Carrier minimum security criteria"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [],
+      "sections_reviewed_not_relevant": [
+        "FAST land-border program excluded absent a Canada/Mexico border movement"
+      ],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "partially_reviewed",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_public_notice_stream_only",
+      "currentness_verification_status": "official_pages reviewed in first pass; public-notice stream reopened 2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "19 CFR Part 18 section-by-section second pass was blocked by repeated eCFR API 503 responses.",
+        "In-bond conditions are cargo-specific and CTPAT is voluntary."
+      ],
+      "source_id": "cbp_cargo_security_2026_07_26",
+      "title": "CBP in-bond, ACE, and CTPAT official resources"
+    },
+    {
+      "official_title": "Electronic Code of Federal Regulations — FMCSRs",
+      "issuing_authority": "Office of the Federal Register and U.S. Government Publishing Office",
+      "source_category": "authoritative_unofficial_continuously_updated_codification",
+      "jurisdiction": "United States",
+      "geographic_scope": "Federal motor carrier regulation",
+      "subject_coverage": [
+        "CDL",
+        "motor carrier registration",
+        "driver qualifications",
+        "vehicle operation",
+        "cargo securement",
+        "hours of service",
+        "inspection and maintenance"
+      ],
+      "official_status": "official_government_current_codification_unofficial_legal_edition",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": "2026-07-22",
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.ecfr.gov/current/title-49",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-23",
+      "pages_sections_reviewed": [
+        "49 CFR §§383.5, 383.23",
+        "§§390.3T, 390.19T, 390.21T, 390.40T, 390.42",
+        "§§391.11, 391.41",
+        "§§392.2, 392.7, 392.9, 392.22",
+        "§§393.100, 393.102, 393.104, 393.126",
+        "§§395.1, 395.3, 395.8, 395.22",
+        "§§396.3, 396.7, 396.11-.13, 396.17"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "CDL thresholds",
+        "active temporary Part 390 registration and marking provisions",
+        "intermodal equipment duties",
+        "cargo/container securement",
+        "hours of service",
+        "inspection and maintenance"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_partial_2026-07-26_for_exact_reopened_sections",
+      "currentness_verification_status": "eCFR up to date through 2026-07-23; current section pages reviewed 2026-07-26",
+      "second_pass_sections_reopened": [
+        "49 CFR §§383.5, 383.23",
+        "49 CFR §§390.19T, 390.21T, 390.40T, 390.42",
+        "49 CFR §§391.11, 391.41",
+        "49 CFR §§392.2, 392.7, 392.9",
+        "49 CFR §393.126",
+        "49 CFR §§395.3, 395.8, 395.22",
+        "49 CFR §§396.3, 396.13, 396.17"
+      ],
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The eCFR is an official government source but not the official legal edition.",
+        "Dated XML archive API returned repeated HTTP 503 responses; no local XML snapshot is claimed.",
+        "Non-T versions of §§390.19, 390.21, and 390.40 remain suspended; active T sections were used.",
+        "The source-level second-pass status is partial: it applies only to second_pass_sections_reopened, not to every Part 390-396 section listed from the broader first-pass review."
+      ],
+      "source_id": "ecfr_fmcsr_2026_07_23",
+      "title": "Electronic Code of Federal Regulations — FMCSRs"
+    },
+    {
+      "official_title": "Electronic Code of Federal Regulations — hazardous materials transportation",
+      "issuing_authority": "Pipeline and Hazardous Materials Safety Administration",
+      "source_category": "authoritative_unofficial_continuously_updated_codification",
+      "jurisdiction": "United States",
+      "geographic_scope": "Federal hazardous-material transportation",
+      "subject_coverage": [
+        "placarding",
+        "security plans",
+        "routing",
+        "parking",
+        "attendance"
+      ],
+      "official_status": "official_government_current_codification_unofficial_legal_edition",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.ecfr.gov/current/title-49",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-23",
+      "pages_sections_reviewed": [
+        "49 CFR §§172.504, 172.800, 172.802",
+        "Part 177",
+        "§§397.3, 397.5, 397.7, 397.13, 397.67, 397.69, 397.71"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "conditional hazmat propositions"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_partial_2026-07-26_for_exact_reopened_sections",
+      "currentness_verification_status": "eCFR up to date through 2026-07-23; current section pages reviewed 2026-07-26",
+      "second_pass_sections_reopened": [
+        "49 CFR §§172.504, 172.800, 172.802",
+        "49 CFR §397.67 with §§397.61-.65 routing context"
+      ],
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Triggering material, quantity, placarding, and interstate facts are move-specific and were not assumed.",
+        "Dated XML archive API returned HTTP 503 responses.",
+        "The source-level second-pass status is partial: it applies only to second_pass_sections_reopened, not to every Part 177 or Part 397 provision listed from the broader first-pass review."
+      ],
+      "source_id": "ecfr_hazmat_2026_07_23",
+      "title": "Electronic Code of Federal Regulations — hazardous materials transportation"
+    },
+    {
+      "official_title": "Electronic Code of Federal Regulations — TWIC and maritime facility access",
+      "issuing_authority": "United States Coast Guard and Transportation Security Administration",
+      "source_category": "authoritative_unofficial_continuously_updated_codification",
+      "jurisdiction": "United States",
+      "geographic_scope": "MTSA-regulated maritime facilities",
+      "subject_coverage": [
+        "TWIC possession",
+        "escort",
+        "inspection",
+        "facility access control"
+      ],
+      "official_status": "official_government_current_codification_unofficial_legal_edition",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.ecfr.gov/current/title-33",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-23",
+      "pages_sections_reviewed": [
+        "33 CFR §§101.514, 101.515, 101.520",
+        "§§105.253, 105.255, 105.257",
+        "49 CFR §§1572.17, 1572.19, 1572.23"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "credentialing and access-control propositions"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_partial_2026-07-26_for_exact_reopened_sections",
+      "currentness_verification_status": "current eCFR pages and 2024 reader-delay final rule reviewed 2026-07-26",
+      "second_pass_sections_reopened": [
+        "33 CFR §§101.514, 101.515 and Part 101 context",
+        "33 CFR §§105.253, 105.257 and Part 105 context"
+      ],
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "APM's Risk Group and secure-area boundary were not established.",
+        "A valid TWIC does not by itself establish facility-specific authorization.",
+        "Direct live pages for 33 CFR §§101.520 and 105.255 were blocked during the second pass; no fresh page-level reopen is claimed for those sections.",
+        "The held 49 CFR Part 1572 PDF was not reopened at proposition level during this second pass; its separately registered source remains pending."
+      ],
+      "source_id": "ecfr_maritime_access_2026_07_23",
+      "title": "Electronic Code of Federal Regulations — TWIC and maritime facility access"
+    },
+    {
+      "official_title": "49 CFR Part 1572 — TWIC",
+      "issuing_authority": "eCFR",
+      "source_category": "webpage saved as PDF / federal regulation",
+      "jurisdiction": "federal",
+      "geographic_scope": "TWIC applicants and holders governed by 49 CFR Part 1572",
+      "subject_coverage": [
+        "TWIC applicability and scope",
+        "security threat assessment standards and immediate invalidation",
+        "continuing disclosure and incident reporting",
+        "credential expiration"
+      ],
+      "official_status": "official_government_archived_regulatory_snapshot",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-D/part-1572",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
+      "sha256": "0b167e8a4f3feddb0fde2cb931fbb89ee8edbef373d59b7ad1a601a73ba592c7",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
+          "sha256": "0b167e8a4f3feddb0fde2cb931fbb89ee8edbef373d59b7ad1a601a73ba592c7"
+        }
+      ],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-06-25",
+      "pages_sections_reviewed": [
+        "Archived PDF §§1572.1 and 1572.3",
+        "§1572.5",
+        "§§1572.19 and 1572.21 (PDF pages 10-11)",
+        "§1572.23 (PDF page 12)"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "TWIC credentialing scope",
+        "security-threat and immediate-invalidation propositions",
+        "continuing disclosure and lost/damaged/stolen credential notice",
+        "five-year general expiration"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [
+        "Hazardous-materials endorsement fee administration and other provisions outside the recorded TWIC evidence scope"
+      ],
+      "exclusion_reason": "Outside the recorded TWIC credentialing and secure-access evidence scope.",
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "currentness_unverified",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The held PDF is a 2026-06-25 snapshot of a mutable eCFR page and was not reopened proposition-by-proposition in the final second pass.",
+        "Currentness remains unverified; rules sourced only to this snapshot remain pending or explicitly limit their second-pass claim.",
+        "The attempted Internet Archive capture returned an unblock page rather than regulation text."
+      ],
+      "source_id": "ecfr_twic_1572",
+      "title": "49 CFR Part 1572 — TWIC",
+      "publisher": "eCFR",
+      "source_type": "webpage saved as PDF / federal regulation",
+      "wayback_url": "",
+      "pulled_date": "2026-06-25",
+      "mutable": true,
+      "notes": "Core federal source for TWIC credentialing and security threat assessment rules. Saved manually as PDF from the official eCFR page. Wayback capture was attempted, but Internet Archive archived an eCFR/Federal Register unblock page instead of the regulation content, so no Wayback URL is recorded."
+    },
+    {
+      "official_title": "Elizabeth Code of Ordinances — Chapter 10.28 Parking Restrictions Generally",
+      "issuing_authority": "City of Elizabeth",
+      "source_category": "codified_ordinance",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "geographic_scope": "City of Elizabeth streets",
+      "subject_coverage": [
+        "parking",
+        "stopping",
+        "standing",
+        "street cleaning"
+      ],
+      "official_status": "officially_designated_code_publisher",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.28PAREGE",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "§§10.28.020-.050",
+        "§§10.28.090-.100",
+        "Schedules I-III"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "North Avenue East rows",
+        "McLester Street rows",
+        "Kapkowski Road row",
+        "emergency parking declaration"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_extracted_rows_emergency_provision_and_blank-hours_observation",
+      "currentness_verification_status": "Municode Supplement 31 through Ordinance 6138 (2025-06-24), cross-checked against City ordinance archive through 2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Municode warns that online content may not reflect the latest legislation.",
+        "The North Avenue East row from the New Jersey Turnpike underpass has a blank hours cell.",
+        "Internal schedule cross-references do not consistently match current section headings."
+      ],
+      "source_id": "elizabeth_code_parking_restrictions",
+      "title": "Elizabeth Code of Ordinances — Chapter 10.28 Parking Restrictions Generally"
+    },
+    {
+      "official_title": "Elizabeth City Code, Supplement 31",
+      "issuing_authority": "City of Elizabeth",
+      "source_category": "codified_ordinance",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "geographic_scope": "City of Elizabeth",
+      "subject_coverage": [
+        "weight limits",
+        "one-way streets",
+        "turns",
+        "parking",
+        "idling",
+        "noise",
+        "closures",
+        "work zones",
+        "bridge strikes",
+        "snow emergencies",
+        "hazardous-material facility controls"
+      ],
+      "official_status": "officially_designated_code_publisher",
+      "publication_date": null,
+      "online_update_date": "2025-11-11",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://library.municode.com/nj/elizabeth",
+      "dataset_identifier": "Municode job 472747",
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "Chapters 7.08, 8.48, 10.04, 10.08, 10.12, 10.16, 10.20, 10.28, 10.40, 10.48, 10.64, 10.72, 12.08, 15.08"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "§7.08.060(B)",
+        "§8.48.020",
+        "§10.16.010 and .050",
+        "§10.20 temporary closures",
+        "§10.28 schedules",
+        "§10.40.020, .050, and .075",
+        "§10.48 snow emergency schedule",
+        "§10.72.040-.050"
+      ],
+      "sections_reviewed_not_relevant": [
+        "Scheduled one-way streets: no candidate-corridor entry",
+        "Scheduled turn restrictions: no candidate-corridor entry",
+        "Loading zones: no candidate-corridor entry",
+        "Four- and five-ton tables: no North Avenue East, McLester, Tripoli, or Kapkowski entry"
+      ],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_extracted_elizabeth_provisions_and_negative_corridor_schedule_search",
+      "currentness_verification_status": "Municode job 472747, online update 2025-11-11, codified through Ordinance 6138; later official archive separately reviewed",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Supplement 31 is not current through the research date.",
+        "The City ordinance archive contains duplicates and out-of-sequence entries.",
+        "Municode's December 23 supplement record was marked unpublished and was not treated as current codification."
+      ],
+      "source_id": "elizabeth_code_traffic_2025",
+      "title": "Elizabeth City Code, Supplement 31"
+    },
+    {
+      "official_title": "City of Elizabeth official ordinance archive",
+      "issuing_authority": "City of Elizabeth",
+      "source_category": "official_uncodified_ordinance_index",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "geographic_scope": "City of Elizabeth",
+      "subject_coverage": [
+        "adopted ordinances after Municode cutoff"
+      ],
+      "official_status": "official_primary_index",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.elizabethnj.org/272/City-Ordinances",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "2025 archive after Ordinance 6138",
+        "2026 archive through July 26"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "Ordinance 6290"
+      ],
+      "sections_reviewed_not_relevant": [
+        "2026 turn, signal, loading-zone, stop, and through-movement actions outside the candidate corridor"
+      ],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_2025_2026_index_and_identified_corridor_actions",
+      "currentness_verification_status": "official_archive_reviewed_through_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Archive completeness should be confirmed with the City Clerk."
+      ],
+      "source_id": "elizabeth_official_ordinance_archive_2026",
+      "title": "City of Elizabeth official ordinance archive"
+    },
+    {
+      "official_title": "Elizabeth Ordinance 6096 final-reading notice — minimum commercial-vehicle parking penalty",
+      "issuing_authority": "City of Elizabeth City Council",
+      "source_category": "uncodified_official_action",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "geographic_scope": "City of Elizabeth residential zones and Chapter 10.40 penalty provision",
+      "subject_coverage": [
+        "off-street commercial-vehicle parking in residential zones",
+        "minimum penalty",
+        "Section 10.40.050 amendment"
+      ],
+      "official_status": "official_primary_adopted_ordinance",
+      "publication_date": null,
+      "adoption_date": "2025-02-11",
+      "mayoral_approval_date": "2025-02-13",
+      "effective_from": "2025-03-05",
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://elizabethnj.org/DocumentCenter/View/7997/HOMENEWSTRIBUNE-FINAL-READING",
+      "archive_origin_url": "https://www.elizabethnj.org/DocumentCenter/View/8010/Ord-No-6096-Amend-Ch-1040-entitled-Parking-Restrictions",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/local/elizabeth_ordinance_6096_2025_parking_restrictions.pdf",
+      "sha256": "5ab3c060e56e030ed23b3fa06305fb7ed30aff5405e93b92c286824c1eef726c",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/local/elizabeth_ordinance_6096_2025_parking_restrictions.pdf",
+          "sha256": "5ab3c060e56e030ed23b3fa06305fb7ed30aff5405e93b92c286824c1eef726c"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "official final-reading notice, page 1",
+        "archived ordinance scan, pages 1-2",
+        "current Municode §10.40.050"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "adoption and mayoral-approval dates",
+        "twenty-day effective-date statement",
+        "notice description of the §10.40.050 minimum-penalty amendment"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_notice_dates_subject_and_current_codification",
+      "currentness_verification_status": "official notice and current Municode §10.40.050 reopened 2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The official final-reading notice describes the amendment in off-street residential-parking terms, while the current codified text of §10.40.050 states a chapter-wide penalty; both source statements are preserved independently without resolving their legal relationship."
+      ],
+      "source_id": "elizabeth_ordinance_6096_2025",
+      "title": "Elizabeth Ordinance 6096 final-reading notice — minimum commercial-vehicle parking penalty"
+    },
+    {
+      "official_title": "Elizabeth Ordinance 6290 — Front Street four-ton weight limit",
+      "issuing_authority": "City of Elizabeth City Council",
+      "source_category": "uncodified_official_action",
+      "jurisdiction": "City of Elizabeth, New Jersey",
+      "geographic_scope": "Front Street, Elizabeth",
+      "subject_coverage": [
+        "four-ton weight exclusion",
+        "pickup and delivery exception"
+      ],
+      "official_status": "official_primary_adopted_ordinance",
+      "publication_date": null,
+      "adoption_date": "2026-05-26",
+      "effective_from": "2026-06-15",
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.elizabethnj.org/DocumentCenter/View/10814/Ord-No-6290-Amend-1016010-4-ton-weight-limit-streets-to-add-Front-St-at-Elizabeth-River-Cossing-to-Port-Ave",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/local/elizabeth_ordinance_6290_2026_front_street_weight_limit.pdf",
+      "sha256": "e06bd0465d0a3dbf26bd436b9ddfc66187859ca2e068bb1497f77d43b0264edc",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/local/elizabeth_ordinance_6290_2026_front_street_weight_limit.pdf",
+          "sha256": "e06bd0465d0a3dbf26bd436b9ddfc66187859ca2e068bb1497f77d43b0264edc"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "PDF pages 1-2"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "Front Street segment",
+        "pickup and delivery exception",
+        "20-day effective delay"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_segment_exception_and_dates",
+      "currentness_verification_status": "adoption and effective delay verified from official PDF",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [],
+      "source_id": "elizabeth_ordinance_6290_2026",
+      "title": "Elizabeth Ordinance 6290 — Front Street four-ton weight limit"
+    },
+    {
+      "official_title": "Google Maps, Street View, and satellite observations — APM corridor",
+      "issuing_authority": "Google imagery providers",
+      "source_category": "imagery_observation",
+      "jurisdiction": "not_applicable",
+      "geographic_scope": "McLester/Tripoli junction and APM terminal approach",
+      "subject_coverage": [
+        "visible road continuity",
+        "lanes",
+        "markings",
+        "barriers",
+        "gate-area geometry"
+      ],
+      "official_status": "third_party_imagery",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://maps.google.com/",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "Street View at 40.67410,-74.16020 (displayed imagery September 2025)",
+        "Street View at 40.67286,-74.15685 (displayed imagery October 2012)",
+        "Satellite around 40.67185,-74.158 and 40.66960,-74.161"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "Visible paved continuity at McLester/Tripoli",
+        "signalized intersection and lane/marking observation",
+        "dated gate/barrier observation east on Tripoli",
+        "gate-canopy area near the APM anchor"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_recorded_imagery_observations",
+      "currentness_verification_status": "observed_and_rechecked_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Street View sign text was not legible and is not transcribed.",
+        "October 2012 imagery cannot establish current terminal operations.",
+        "Satellite imagery did not display a capture date.",
+        "No copyrighted imagery was copied into the repository."
+      ],
+      "source_id": "google_imagery_observations_2026_07_26",
+      "title": "Google Maps, Street View, and satellite observations — APM corridor"
+    },
+    {
+      "official_title": "2024 NJ Large Truck Map",
+      "issuing_authority": "NJDOT",
+      "source_category": "PDF / map",
+      "jurisdiction": "state",
+      "geographic_scope": "State of New Jersey",
+      "subject_coverage": [
+        "National Network",
+        "New Jersey Access Network",
+        "102-inch standard truck network",
+        "map legend and restriction warning"
+      ],
+      "official_status": "official_operational_map",
+      "publication_date": "2024",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.nj.gov/transportation/freight/trucking/pdf/largetruckmap.pdf",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/state/nj_large_truck_map_2024.pdf",
+      "sha256": "06a0bf8cda058f9f032f39b8ef4e921a6ab9ac989e1573de55c914aeff5d93ef",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/state/nj_large_truck_map_2024.pdf",
+          "sha256": "06a0bf8cda058f9f032f39b8ef4e921a6ab9ac989e1573de55c914aeff5d93ef"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Entire one-page 2024 statewide map, legend, network-class symbology, and restriction warning"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "map purpose and network classes",
+        "102-inch truck-network reference",
+        "warning that restrictions may exist beyond the generalized network depiction"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [
+        "Pixel-level local-segment classification and legal route authorization"
+      ],
+      "exclusion_reason": "The statewide raster is a generalized operational reference, not authoritative segment geometry or a legal determination.",
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "currentness_unverified",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The map is not treated as exact local-segment geometry or as evidence that a particular movement is authorized.",
+        "No final second-pass reopen was completed; edition currentness after 2024 remains unverified."
+      ],
+      "source_id": "nj_large_truck_map",
+      "title": "2024 NJ Large Truck Map",
+      "publisher": "NJDOT",
+      "source_type": "PDF / map",
+      "wayback_url": "",
+      "pulled_date": "2026-06-25",
+      "mutable": false,
+      "notes": "Core state source for designated large-truck network reference. Saved raw PDF unchanged."
+    },
+    {
+      "official_title": "NJ Commercial Vehicle Size and Weight Guidebook",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "source_category": "official_operational_guide",
+      "jurisdiction": "state",
+      "geographic_scope": "New Jersey roadways",
+      "subject_coverage": [
+        "dimensions",
+        "axle and gross weights",
+        "bridge formula",
+        "permit types",
+        "fees",
+        "insurance",
+        "operating conditions",
+        "escorts",
+        "signs",
+        "lamps",
+        "flags"
+      ],
+      "official_status": "official_operational",
+      "publication_date": "2024",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+          "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "PDF pages 8-16, 27-36, 37-60"
+      ],
+      "appendices_tables_reviewed": [
+        "Table 1 bridge formula chart",
+        "Table 2 permit fees",
+        "Table 4 fee structures",
+        "Table 5 ocean-borne container weights",
+        "Table 6 escort requirements"
+      ],
+      "sections_extracted": [
+        "dimension and axle/gross-weight statements",
+        "permit types, fees, insurance, and operating conditions",
+        "ocean-borne-container weight table",
+        "escort, sign, lamp, and flag requirements"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_current_pilot_scope",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "official_2024_guide_reviewed; underlying N.J.A.C. 13:18 readoption final-text reconciliation remains open",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Operational guide, not the official codified legal text.",
+        "The guide's length summary table says 50 feet for 'Truck' while the following page distinguishes 40 feet generally and 50 feet for specified non-divisible loads."
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+      "publisher": "NJDOT / NJ GotPermits",
+      "source_type": "PDF / guidebook",
+      "wayback_url": "",
+      "pulled_date": "2026-06-25",
+      "mutable": false,
+      "notes": "Core state guidebook for commercial vehicle size, weight, and oversize/overweight permitting context. Saved raw PDF unchanged."
+    },
+    {
+      "official_title": "N.J.A.C. 16:32 — Truck Access (current NJDOT courtesy copy)",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "source_category": "official_primary_administrative_regulation_courtesy_copy",
+      "jurisdiction": "State of New Jersey",
+      "geographic_scope": "New Jersey public road network",
+      "subject_coverage": [
+        "National Network",
+        "New Jersey Access Network",
+        "reasonable terminal access",
+        "route hierarchy"
+      ],
+      "official_status": "official_current_courtesy_copy",
+      "publication_date": null,
+      "adoption_date": "2022-11-30",
+      "effective_from": "2023-01-03",
+      "effective_to": null,
+      "expiration_date": "2029-11-30",
+      "amendment_date": "2023-01-03",
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+      "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+          "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "PDF pages 1-9; N.J.A.C. 16:32-1.1 through 2.1"
+      ],
+      "appendices_tables_reviewed": [
+        "Appendix references in §§1.4-1.6; appendix text was not included in this courtesy PDF"
+      ],
+      "sections_extracted": [
+        "16:32-1.1 through 1.5",
+        "16:32-2.1 definitions relevant to truck access"
+      ],
+      "sections_reviewed_not_relevant": [
+        "16:32-1.6 notice provisions"
+      ],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_current_pilot_scope",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_section_1_2_and_materially_changed_extracted_statements",
+      "currentness_verification_status": "current_through_document_readoption_and_amendment_notices",
+      "supersedes_source_ids": [
+        "njac_16_32_archived_expired_courtesy"
+      ],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Courtesy copy; the official New Jersey Administrative Code controls if discrepancies exist.",
+        "Referenced appendices require separate official retrieval for a route-by-route designation audit."
+      ],
+      "source_id": "njac_16_32",
+      "title": "N.J.A.C. 16:32 — Truck Access (current NJDOT courtesy copy)",
+      "source_type": "PDF / administrative regulation"
+    },
+    {
+      "official_title": "Archived courtesy copy of N.J.A.C. 16:32 — Truck Access",
+      "issuing_authority": "NJDOT",
+      "source_category": "PDF / regulation",
+      "jurisdiction": "state",
+      "geographic_scope": "New Jersey truck-access networks and terminal approaches described by the expired courtesy copy",
+      "subject_coverage": [
+        "truck-access definitions",
+        "National Network and New Jersey Access Network",
+        "terminal access",
+        "local-rule preservation",
+        "detours and route designations",
+        "document expiration and courtesy-copy status"
+      ],
+      "official_status": "official_archived_courtesy_copy",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": "2022-07-02",
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://nj.gov/transportation/about/rules/documents/16-32-Current.pdf",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
+      "sha256": "3d1478ac35e6f7db615f1d23f76cbc386522b4645a9020c9f589952565d84f82",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/state/njac_16_32_truck_access.pdf",
+          "sha256": "3d1478ac35e6f7db615f1d23f76cbc386522b4645a9020c9f589952565d84f82"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": "2026-06-25",
+      "pages_sections_reviewed": [
+        "Entire archived courtesy copy, including document-status notice, displayed 2022-07-02 expiration, §§16:32-1.1 and 16:32-1.2, and route appendices"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "document-status and expiration evidence",
+        "historical truck-access definitions and route conditions retained only for source comparison"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [
+        "Use as current operative authority",
+        "route-appendix entries as exact segment geometry"
+      ],
+      "exclusion_reason": "The copy displays a 2022-07-02 expiration and is superseded by the separately registered current courtesy copy.",
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_as_expired_archived_copy",
+      "currentness_verification_status": "superseded",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [
+        "njac_16_32"
+      ],
+      "source_specific_limitations": [
+        "The PDF itself displays an expiration date of 2022-07-02.",
+        "It is retained for provenance and must not be used as the current text."
+      ],
+      "source_id": "njac_16_32_archived_expired_courtesy",
+      "title": "N.J.A.C. 16:32 — Truck Access",
+      "publisher": "NJDOT",
+      "source_type": "PDF / regulation",
+      "wayback_url": "",
+      "pulled_date": "2026-06-25",
+      "mutable": false,
+      "document_status_notice": "The PDF labels itself a courtesy copy, states that the official New Jersey Administrative Code governs if discrepancies exist, and displays an expiration date of 2022-07-02. Current legal status has not been established from this archived file alone.",
+      "notes": "Core state regulatory source for truck access rules. Saved raw PDF unchanged. Statements extracted from it retain the document-status notice rather than being treated as automatically current."
+    },
+    {
+      "official_title": "NJDOT Official LRS / Roadway Network, edition 1.28",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "source_category": "official_gis",
+      "jurisdiction": "State of New Jersey",
+      "geographic_scope": "Statewide",
+      "subject_coverage": [
+        "official linear reference system",
+        "SRI",
+        "route-event geometry"
+      ],
+      "official_status": "official_gis",
+      "publication_date": "2025-08-21",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.nj.gov/transportation/refdata/gis/zip/NJ_Roads_shp.zip",
+      "dataset_identifier": "NJ_Roads_shp.zip; NJ Open Data asset 8i2w-vt9k",
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Spatial checks for SRIs 02041097__, 20000624__, 20041769__, and 20041769_W"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "SRI conflict record"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_sri_conflict_check",
+      "currentness_verification_status": "current_published_download_reviewed_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Not archived in the repository during this pass; exact custodian reconciliation remains open."
+      ],
+      "source_id": "njdot_official_lrs_2025",
+      "title": "NJDOT Official LRS / Roadway Network, edition 1.28"
+    },
+    {
+      "official_title": "NJDOT Oversize/Overweight Permits and Routing",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "source_category": "official_operational",
+      "jurisdiction": "State of New Jersey",
+      "geographic_scope": "New Jersey State highway system",
+      "subject_coverage": [
+        "OS/OW permits",
+        "routing",
+        "Superload system"
+      ],
+      "official_status": "official_operational",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.nj.gov/transportation/freight/trucking/oversize.shtm",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "permit portal and operational guidance"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "live_official_page_reviewed_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [],
+      "source_id": "njdot_osow_operational_2026",
+      "title": "NJDOT Oversize/Overweight Permits and Routing"
+    },
+    {
+      "official_title": "Traffic Regulations — Route U.S. 1 and 9 parking restrictions",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "source_category": "official_traffic_order",
+      "jurisdiction": "State of New Jersey",
+      "geographic_scope": "U.S. 1 and 9 in Union County, including Elizabeth",
+      "subject_coverage": [
+        "parking",
+        "stopping",
+        "standing"
+      ],
+      "official_status": "official_primary_traffic_order",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.nj.gov/transportation/refdata/traffic_orders/parking/rt1_9.shtm",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "Union County — City of Elizabeth"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "No stopping or standing at North Avenue"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "live_official_page_reviewed_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [],
+      "source_id": "njdot_us1_9_parking",
+      "title": "Traffic Regulations — Route U.S. 1 and 9 parking restrictions"
+    },
+    {
+      "official_title": "Traffic Regulations — Route U.S. 1 and 9 speed limits",
+      "issuing_authority": "New Jersey Department of Transportation",
+      "source_category": "official_traffic_order",
+      "jurisdiction": "State of New Jersey",
+      "geographic_scope": "U.S. 1 and 9 in Union County, including Elizabeth",
+      "subject_coverage": [
+        "speed zones"
+      ],
+      "official_status": "official_primary_traffic_order",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.nj.gov/transportation/refdata/traffic_orders/speed/rt1_9.shtm",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "Union County — City of Elizabeth"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "Zone 2"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "live_official_page_reviewed_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [],
+      "source_id": "njdot_us1_9_speed",
+      "title": "Traffic Regulations — Route U.S. 1 and 9 speed limits"
+    },
+    {
+      "official_title": "County Boundaries of NJ, Hosted, 3424 — Union County extract",
+      "issuing_authority": "New Jersey Office of GIS",
+      "source_category": "official_gis",
+      "jurisdiction": "State of New Jersey",
+      "geographic_scope": "Union County",
+      "subject_coverage": [
+        "county boundary",
+        "GNIS",
+        "FIPS"
+      ],
+      "official_status": "official_gis",
+      "publication_date": "2025-04-10",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Counties_3424/FeatureServer",
+      "dataset_identifier": "ArcGIS item 86d33b1f539843268de673825ebd47ec; layer 0",
+      "local_path": "data/raw/gis/official/njogis_union_county_boundary_2026_07_26.geojson",
+      "sha256": "e5ef1a84529a25af1623b3683a8050d154f914fb2619d13221cd0b1d80eba79c",
+      "archive_files": [
+        {
+          "local_path": "data/raw/gis/official/njogis_county_boundaries_item_2026_07_26.json",
+          "sha256": "8dfd7e5ff991e239916443adcd8347700903186a039d17d0d5eb3e7ddb313fa2"
+        },
+        {
+          "local_path": "data/raw/gis/official/njogis_county_boundaries_layer_2026_07_26.json",
+          "sha256": "f10b61a012c1faea0d95127b1ab21d160d8dbd0ce7d0805867e1ea675340612b"
+        },
+        {
+          "local_path": "data/raw/gis/official/njogis_union_county_boundary_2026_07_26.geojson",
+          "sha256": "e5ef1a84529a25af1623b3683a8050d154f914fb2619d13221cd0b1d80eba79c"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Layer schema",
+        "Union County feature COUNTY='UNION'"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "OBJECTID 20; GNIS 882235; FIPS 34039"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_all_recorded_county_assignments",
+      "currentness_verification_status": "layer_item_and_archived_polygon_rechecked_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Mapping representation is not a legal boundary description.",
+        "NJOGIS states that the polygons are not survey data and do not represent legal boundaries."
+      ],
+      "source_id": "njogis_county_boundaries_2026_07_26",
+      "title": "NJ County Boundaries 3424 — Union County extract"
+    },
+    {
+      "official_title": "Municipal Boundaries of NJ, Hosted, 3424 — Elizabeth extract",
+      "issuing_authority": "New Jersey Office of GIS",
+      "source_category": "official_gis",
+      "jurisdiction": "State of New Jersey",
+      "geographic_scope": "City of Elizabeth",
+      "subject_coverage": [
+        "municipal boundary",
+        "GNIS",
+        "municipal code",
+        "Census GEOID"
+      ],
+      "official_status": "official_gis",
+      "publication_date": "2026-02-05",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Municipal_Boundaries_3424/FeatureServer",
+      "dataset_identifier": "ArcGIS item 1c6b26a9a14e4132895194e80d6b30f8; layer 0",
+      "local_path": "data/raw/gis/official/njogis_elizabeth_boundary_2026_07_26.geojson",
+      "sha256": "3d8d76e7e810a8eff0d0f55968e07fd51b152d03852141b2be3b2ac360689b44",
+      "archive_files": [
+        {
+          "local_path": "data/raw/gis/official/njogis_municipal_boundaries_item_2026_07_26.json",
+          "sha256": "2604527ca34cc31579773c33c609d6261cf89073c364f2b91eb03c678906de09"
+        },
+        {
+          "local_path": "data/raw/gis/official/njogis_municipal_boundaries_layer_2026_07_26.json",
+          "sha256": "b0f96b4f7f5121ab542332fcb895b45fab22ccb0c44f967fd0609ac38204ccaf"
+        },
+        {
+          "local_path": "data/raw/gis/official/njogis_elizabeth_boundary_2026_07_26.geojson",
+          "sha256": "3d8d76e7e810a8eff0d0f55968e07fd51b152d03852141b2be3b2ac360689b44"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Layer schema",
+        "Elizabeth feature MUN_CODE='2004'"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "OBJECTID 273; GNIS 885205; Census GEOID 3403921000"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_all_recorded_municipal_assignments",
+      "currentness_verification_status": "layer_item_and_archived_polygon_rechecked_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "NJOGIS states that the polygons are mapping representations, not legal boundary descriptions.",
+        "NJOGIS states that the polygons are not survey data and do not represent legal boundaries."
+      ],
+      "source_id": "njogis_municipal_boundaries_2026_07_26",
+      "title": "NJ Municipal Boundaries 3424 — Elizabeth extract"
+    },
+    {
+      "official_title": "Road Centerlines of NJ, Hosted, 3424 — APM study-area extract",
+      "issuing_authority": "New Jersey Office of GIS",
+      "source_category": "official_gis",
+      "jurisdiction": "State of New Jersey",
+      "geographic_scope": "APM Elizabeth study area",
+      "subject_coverage": [
+        "road centerlines",
+        "road name",
+        "road stewardship",
+        "road class",
+        "one-way code",
+        "access status",
+        "SRI"
+      ],
+      "official_status": "official_gis",
+      "publication_date": "2026-05-20",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/Tran_road/FeatureServer",
+      "dataset_identifier": "ArcGIS item fc3d0a95921b4026b386643eef5ff088; layer 0",
+      "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+      "sha256": "9a7b56932b93e793d782f64cf2266f97c2e5913f29688b246796f25c4d38120d",
+      "archive_files": [
+        {
+          "local_path": "data/raw/gis/official/njogis_road_centerlines_item_2026_07_26.json",
+          "sha256": "40f732706b91844e1a328466548f38a81f2d2bbea3329990911bccf3a98cbfc8"
+        },
+        {
+          "local_path": "data/raw/gis/official/njogis_road_centerlines_layer_2026_07_26.json",
+          "sha256": "f19809f9c1464b42fcc4afaa0df5ad332964f26cfac47ae9a22767a7a22730d0"
+        },
+        {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "sha256": "9a7b56932b93e793d782f64cf2266f97c2e5913f29688b246796f25c4d38120d"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Layer schema",
+        "862-feature bbox extract -74.205,40.655,-74.140,40.685",
+        "North Avenue, McLester Street, Tripoli Street, NJ 81, and ramps near anchors"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "North Avenue official road attributes",
+        "McLester official road attributes and OBJECTIDs",
+        "Tripoli municipal/private stewardship transition",
+        "shared McLester/Tripoli centerline junction",
+        "anchor proximity observations"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_recorded_corridor_attribute_cross_checks",
+      "currentness_verification_status": "layer_item_and_archived_extract_rechecked_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Road-level centerline direction codes must not be transferred automatically to lane-level OSM carriageways.",
+        "SRI 20000624__ conflicts spatially with the August 2025 NJDOT Official LRS export and requires custodian reconciliation.",
+        "SRI, ONEWAY, and JURISDICTN are preserved as source attributes, not legal route conclusions.",
+        "The service is not treated as milepost evidence."
+      ],
+      "source_id": "njogis_road_centerlines_2026_07_26",
+      "title": "NJ Road Centerlines — APM study-area extract"
+    },
+    {
+      "official_title": "N.J.A.C. 19:9 readoption record — proposal and adoption",
+      "issuing_authority": "New Jersey Turnpike Authority",
+      "source_category": "official_rulemaking_record",
+      "jurisdiction": "New Jersey Turnpike Authority roadway",
+      "geographic_scope": "New Jersey Turnpike and Garden State Parkway",
+      "subject_coverage": [
+        "traffic control",
+        "roadway use",
+        "vehicle restrictions",
+        "hazardous materials",
+        "tolls"
+      ],
+      "official_status": "official_primary_rulemaking_record",
+      "publication_date": "2025-01-06",
+      "adoption_date": null,
+      "effective_from": "2025-01-06",
+      "effective_to": null,
+      "expiration_date": "2031-12-10",
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.njta.gov/document/notice-of-proposed-substantial-changes-upon-adoption-to-proposed-amendments/",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/toll_authority/njta_njac_19_9_adoption_effective_2025_01_06.pdf",
+      "sha256": "fd8da4291d0f4a6c33acb676cccec1a0ce093fde1ba5a584c81a00e70ab16e8a",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/toll_authority/njta_njac_19_9_proposal_2024_03_04.pdf",
+          "sha256": "05745f11a639b7fbb906b033a5e5ef4c41486de6edbeeaaa632ea2e46039f5da"
+        },
+        {
+          "local_path": "data/raw/documents/toll_authority/njta_njac_19_9_adoption_effective_2025_01_06.pdf",
+          "sha256": "fd8da4291d0f4a6c33acb676cccec1a0ce093fde1ba5a584c81a00e70ab16e8a"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Proposal: N.J.A.C. 19:9-1.1 through 1.19",
+        "Adoption: changes to N.J.A.C. 19:9-1.1 through 1.19"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "19:9-1.9",
+        "19:9-1.15",
+        "19:9-1.19"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "readopted_effective_2025-01-06; current NJTA regulations page reviewed 2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The adoption notice prints changed text and 'no change' markers; unchanged provisions require the proposal/readoption text and adoption record together."
+      ],
+      "source_id": "njta_njac_19_9_readoption_2025",
+      "title": "N.J.A.C. 19:9 readoption record — proposal and adoption"
+    },
+    {
+      "official_title": "NJTA Regulations and Policies",
+      "issuing_authority": "New Jersey Turnpike Authority",
+      "source_category": "official_dynamic_regulations_index",
+      "jurisdiction": "New Jersey Turnpike Authority",
+      "geographic_scope": null,
+      "subject_coverage": [
+        "rulemaking currency",
+        "traffic alerts",
+        "traffic permits"
+      ],
+      "official_status": "official_operational",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://www.njta.gov/about/regulations-and-policies/",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "NJTA Regulations",
+        "NJTA Rulemaking Notices"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "2024 proposal",
+        "2024 substantial changes",
+        "2025 adoption"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "live_page_reviewed_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Dynamic index, not the codified rule text."
+      ],
+      "source_id": "njta_regulations_page_2026_07_26",
+      "title": "NJTA Regulations and Policies"
+    },
+    {
+      "official_title": "OpenStreetMap APM Elizabeth Study-Area Roads Export",
+      "issuing_authority": "OpenStreetMap contributors",
+      "source_category": "third_party_geospatial",
+      "jurisdiction": "gis",
+      "geographic_scope": "APM Elizabeth study area",
+      "subject_coverage": [
+        "road geometry",
+        "OSM roadway attributes"
+      ],
+      "official_status": "third_party_geospatial",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-26T00:00:00Z",
+      "original_url": "https://www.openstreetmap.org/",
+      "dataset_identifier": null,
+      "local_path": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+      "sha256": "1f2fadb0b3b6cd1330b52a022de1b6e9a2b25ff004231744871252a121c5ff2d",
+      "archive_files": [
+        {
+          "local_path": "data/raw/gis/local/osm_apm_study_area_roads.geojson",
+          "sha256": "1f2fadb0b3b6cd1330b52a022de1b6e9a2b25ff004231744871252a121c5ff2d"
+        }
+      ],
+      "source_mutability": "dynamic",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "1859 exported features; 74 selected road features"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_selected_features",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_all_75_edge_lineages_and_endpoint_geometry",
+      "currentness_verification_status": "snapshot_retrieval_date_preserved; all modeled source feature lineages rechecked; not authoritative for legal restrictions",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Crowdsourced geometry and tags may be stale or incomplete.",
+        "Candidate-path membership is unordered research scope, not a verified route."
+      ],
+      "source_id": "osm_apm_study_area_roads",
+      "title": "OpenStreetMap APM Elizabeth Study-Area Roads Export",
+      "publisher": "OpenStreetMap contributors",
+      "source_type": "GeoJSON / roadway geometry and attributes",
+      "wayback_url": "",
+      "pulled_date": "2026-06-26",
+      "mutable": true,
+      "notes": "Raw local road export used to prepare the physical-network draft. OpenStreetMap attributes are observations, not legal determinations of jurisdiction, designation, or permissibility."
+    },
+    {
+      "official_title": "PANYNJ Marine Terminal Tariff FMC Schedule No. PA-10",
+      "issuing_authority": "Port Authority of New York and New Jersey",
+      "source_category": "official_bistate_authority_tariff",
+      "jurisdiction": "port_authority",
+      "geographic_scope": "Port Authority marine terminals",
+      "subject_coverage": [
+        "marine-terminal highways",
+        "access",
+        "TWIC",
+        "hazardous materials",
+        "speed",
+        "parking",
+        "DTR",
+        "engine standards"
+      ],
+      "official_status": "official_primary_tariff",
+      "publication_date": "2026-03-31",
+      "adoption_date": null,
+      "effective_from": "2026-05-01",
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.panynj.gov/port/en/our-port/tariffs.html",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+      "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+          "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+        }
+      ],
+      "source_mutability": "dynamic",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Subrules 34-046, 34-090, 34-095, 34-190, 34-270, 34-275, 34-276, 34-280, 34-290, 34-751, 34-800, 34-810, 34-1080, 34-1100, 34-1101, 34-1121, 34-1140"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "terminal-highway access, traffic, speed, parking, and hazardous-material provisions",
+        "vehicle size/weight and approval conditions",
+        "TWIC, SeaLink, and Drayage Truck Registry provisions",
+        "engine-standard and alternative-drivetrain phases",
+        "numeric safe-working-load, late-charge, and update clauses"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_current_pilot_scope",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_extracted_drayage_sections_and_numeric_clauses",
+      "currentness_verification_status": "effective_2026-05-01_official_tariff_reopened_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Subrule 34-090 contains a leased-premises proviso.",
+        "Subrule 34-1140 has unresolved internal interpretive tension and is preserved without repair."
+      ],
+      "source_id": "panynj_marine_terminal_tariff",
+      "title": "PANYNJ Marine Terminal Tariff FMC Schedule No. PA-10",
+      "publisher": "PANYNJ",
+      "source_type": "PDF / tariff, rules, regulations, rates, and charges",
+      "wayback_url": "",
+      "pulled_date": "2026-06-25",
+      "document_effective_from": "2026-05-01",
+      "mutable": true,
+      "notes": "Current archived tariff in the repository. Contains definitions, terminal-highway rules, size/access conditions, SeaLink provisions, Drayage Truck Registry provisions, charges, and future-dated access requirements."
+    },
+    {
+      "official_title": "PANYNJ Truck Information Page",
+      "issuing_authority": "PANYNJ",
+      "source_category": "webpage saved as PDF",
+      "jurisdiction": "port_authority",
+      "geographic_scope": "PANYNJ Port of New York and New Jersey marine terminals, with extraction limited to APM-relevant truck information",
+      "subject_coverage": [
+        "APM terminal gate-hours row",
+        "out-of-gauge cutoff",
+        "shared port truck-service context"
+      ],
+      "official_status": "official_operational_snapshot",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.panynj.gov/port/en/shipping/truck.html",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/port_authority/panynj_truck_information_page.pdf",
+      "sha256": "85414ab61578326a507da7384a3bd8810b2afd2fd8e4fefaff5126164996e489",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/port_authority/panynj_truck_information_page.pdf",
+          "sha256": "85414ab61578326a507da7384a3bd8810b2afd2fd8e4fefaff5126164996e489"
+        }
+      ],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-06-25",
+      "pages_sections_reviewed": [
+        "Archived PDF page 4: APM Terminals gate-hours row and out-of-gauge cutoff",
+        "Portwide truck-service context reviewed only to the extent represented by source-grounded entity records"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "archived APM out-of-gauge gate cutoff",
+        "shared port truck-service context"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [
+        "Other terminals' facility-specific gate hours and procedures"
+      ],
+      "exclusion_reason": "Outside the APM-focused evidence scope.",
+      "first_pass_status": "first_pass_complete_for_apm_relevant_content",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "currentness_unverified",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The held PDF is a 2026-06-25 snapshot of a mutable PANYNJ webpage; live currentness remains unverified.",
+        "The APM cutoff is preserved as an archived source statement and is not promoted to a current operating condition."
+      ],
+      "source_id": "panynj_truck_info",
+      "title": "PANYNJ Truck Information Page",
+      "publisher": "PANYNJ",
+      "source_type": "webpage saved as PDF",
+      "wayback_url": "https://web.archive.org/web/20260625173839/https://www.panynj.gov/port/en/shipping/truck.html#accessPort",
+      "pulled_date": "2026-06-25",
+      "mutable": true,
+      "notes": "Core Port Authority web page for truck access information. Saved as PDF and Wayback snapshot captured because page content can change."
+    },
+    {
+      "official_title": "PANYNJ Truckers Resource Guidebook",
+      "issuing_authority": "Port Authority of New York and New Jersey",
+      "source_category": "official_operational_guidance",
+      "jurisdiction": "port_authority",
+      "geographic_scope": "Port of New York and New Jersey marine terminals",
+      "subject_coverage": [
+        "gate preparation",
+        "credentials",
+        "DTR/RFID",
+        "terminal guidance",
+        "APM circulation and safety"
+      ],
+      "official_status": "official_operational",
+      "publication_date": "2025-08",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+      "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+          "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "PDF pages 3-13 and 23; APM map and guidance"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "portwide credentials, DTR, RFID, and pre-arrival preparation",
+        "move documentation and terminal-specific exceptions",
+        "APM appointment, training, circulation, safety, inspection, and suspension guidance"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_current_pilot_scope",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "August_2025_revision_verified_against_current_official_URL",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Operational guide, not a tariff or regulation.",
+        "Requirements may vary by terminal, ocean carrier, cargo, or move type."
+      ],
+      "source_id": "panynj_truckers_guide",
+      "title": "PANYNJ Truckers Resource Guidebook",
+      "publisher": "PANYNJ",
+      "source_type": "PDF / guidebook",
+      "wayback_url": "",
+      "pulled_date": "2026-06-25",
+      "mutable": false,
+      "notes": "Core Port Authority source for port trucking requirements, credentials, terminal access, and operational guidance. Saved raw PDF unchanged."
+    },
+    {
+      "official_title": "PortTruckPass / TIPS",
+      "issuing_authority": "PortTruckPass / PANYNJ",
+      "source_category": "webpage saved as PDF",
+      "jurisdiction": "port_authority",
+      "geographic_scope": "Port of New York and New Jersey truck-registration and terminal-information services",
+      "subject_coverage": [
+        "PortTruckPass relationship to PANYNJ tariff subrules",
+        "TIPS common portal purpose",
+        "truck registration and RFID/tag support context"
+      ],
+      "official_status": "official_operational_information",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-25T00:00:00Z",
+      "original_url": "https://www.porttruckpass.com/",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/port_authority/porttruckpass_tips_homepage.pdf",
+      "sha256": "791b0491296ebb5fde8cc75b7ee8a8d8a5c9fda73b0e10ee1147ac36299d43c6",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/port_authority/porttruckpass_tips_homepage.pdf",
+          "sha256": "791b0491296ebb5fde8cc75b7ee8a8d8a5c9fda73b0e10ee1147ac36299d43c6"
+        }
+      ],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-06-25",
+      "pages_sections_reviewed": [
+        "Archived PDF page 2: PortTruckPass description and TIPS description"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "PortTruckPass implementation relationship to PA-10 subrules",
+        "TIPS portal purpose for motor carriers and cargo interests"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [
+        "Carrier-specific registration, tag, or access status"
+      ],
+      "exclusion_reason": "Those facts depend on a specified carrier and live service records.",
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "currentness_unverified",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The held PDF is a 2026-06-25 snapshot of a mutable service webpage; live currentness remains unverified.",
+        "The source describes service functions and does not establish any carrier's current registration, RFID, or access status."
+      ],
+      "source_id": "porttruckpass_tips",
+      "title": "PortTruckPass / TIPS",
+      "publisher": "PortTruckPass / PANYNJ",
+      "source_type": "webpage saved as PDF",
+      "wayback_url": "https://web.archive.org/web/20260625174308/https://www.porttruckpass.com/",
+      "pulled_date": "2026-06-25",
+      "mutable": true,
+      "notes": "Supporting Port Authority/port operations source showing the public PortTruckPass/TIPS portal used for drayage truck registration, RFID/tag support, and terminal access context."
+    },
+    {
+      "official_title": "Uniform Intermodal Interchange and Facilities Access Agreement",
+      "issuing_authority": "Intermodal Association of North America",
+      "source_category": "contractual_primary",
+      "jurisdiction": "private contractual network",
+      "geographic_scope": "Participating providers, facility operators, and motor carriers",
+      "subject_coverage": [
+        "facility access",
+        "equipment interchange",
+        "EIR",
+        "pre-trip inspection",
+        "equipment return",
+        "insurance"
+      ],
+      "official_status": "private_standard_contract",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": "2026-05-05",
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": "2026-05-05",
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://uiia.intermodal.org/documents/uiia/newuiia-Home.pdf",
+      "dataset_identifier": null,
+      "local_path": "data/raw/documents/commercial/uiia_uniform_intermodal_interchange_agreement_effective_2026_05_05.pdf",
+      "sha256": "6af024be098c6588aa63d857f74cd8cf53816242d6316dcbdcde69091f9f55ed",
+      "archive_files": [
+        {
+          "local_path": "data/raw/documents/commercial/uiia_uniform_intermodal_interchange_agreement_effective_2026_05_05.pdf",
+          "sha256": "6af024be098c6588aa63d857f74cd8cf53816242d6316dcbdcde69091f9f55ed"
+        }
+      ],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Definitions",
+        "C.1-C.2",
+        "D.2-D.3",
+        "E.1",
+        "F.6",
+        "Exhibit A",
+        "Appendix VI"
+      ],
+      "appendices_tables_reviewed": [
+        "Exhibit A pre-trip list",
+        "Appendix VI prerequisites"
+      ],
+      "sections_extracted": [
+        "C.1-C.2",
+        "D.2-D.3",
+        "E.1",
+        "F.6",
+        "Exhibit A",
+        "Appendix VI"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_supersession_and_clause_comparison",
+      "currentness_verification_status": "superseded_by_consolidated_agreement_effective_2026-06-18",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [
+        "uiia_supplement_2026_06_18"
+      ],
+      "source_specific_limitations": [
+        "Contractual force depends on signatory status, provider activation, and applicable addenda.",
+        "This archived May 5 copy is superseded by the consolidated agreement effective June 18, 2026.",
+        "Retained as version evidence; current rule extractions use the consolidated June 18 instrument."
+      ],
+      "source_id": "uiia_2026_05_05",
+      "title": "Uniform Intermodal Interchange and Facilities Access Agreement"
+    },
+    {
+      "official_title": "Uniform Intermodal Interchange and Facilities Access Agreement",
+      "issuing_authority": "Intermodal Association of North America",
+      "source_category": "contractual_primary",
+      "jurisdiction": "private contractual network",
+      "geographic_scope": "Participating providers, facility operators, and motor carriers",
+      "subject_coverage": [
+        "facility access",
+        "equipment interchange",
+        "equipment-interchange receipt",
+        "pre-trip inspection",
+        "equipment return",
+        "insurance",
+        "Supplement to Exhibit C",
+        "contract amendment history"
+      ],
+      "official_status": "private_standard_contract",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": "2026-06-18",
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": "2026-06-18",
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://uiia.intermodal.org/documents/uiia/newuiia-legal.pdf",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "cover and Agreement Last Revised statement",
+        "Definitions",
+        "C.1-C.2",
+        "D.2-D.3",
+        "E.1",
+        "F.6",
+        "Supplement to Exhibit C"
+      ],
+      "appendices_tables_reviewed": [
+        "Supplement to Exhibit C revised 06/18/26"
+      ],
+      "sections_extracted": [
+        "C.1-C.2",
+        "D.2-D.3",
+        "E.1",
+        "F.6"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_extracted_sections",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_extracted_sections",
+      "currentness_verification_status": "current_consolidated_agreement_effective_2026-06-18_reopened_2026-07-26",
+      "supersedes_source_ids": [
+        "uiia_2026_05_05"
+      ],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "The stable source ID is retained for continuity even though the linked PDF is the full consolidated agreement, not only a supplement.",
+        "No party-specific participation, provider activation, or addendum applicability is assumed.",
+        "Dynamic official URL has no local archive or hash in the present corpus."
+      ],
+      "source_id": "uiia_supplement_2026_06_18",
+      "title": "Uniform Intermodal Interchange and Facilities Access Agreement (effective June 18, 2026)"
+    },
+    {
+      "official_title": "Union County current ordinances, agendas, minutes, public notices, and road projects",
+      "issuing_authority": "Union County",
+      "source_category": "official_dynamic_records_index",
+      "jurisdiction": "Union County, New Jersey",
+      "geographic_scope": "Union County",
+      "subject_coverage": [
+        "uncodified ordinances",
+        "resolutions",
+        "meeting records",
+        "construction",
+        "closures"
+      ],
+      "official_status": "official_operational",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://ucnj.org/public-notices/",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "dynamic",
+      "snapshot_date": "2026-07-26",
+      "pages_sections_reviewed": [
+        "2025-2026 ordinance index",
+        "2026 agendas and minutes",
+        "road-construction projects",
+        "public notices"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [],
+      "sections_reviewed_not_relevant": [
+        "Active Elizabeth road and bridge projects were off the candidate corridor",
+        "Ordinance 865-2026 amends Chapter 49, not Chapters 133 or 138.",
+        "Ordinance 866-2026 amends Chapters 115 and 140, not Chapters 133 or 138."
+      ],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_current_pilot_scope",
+      "second_pass_status": "pending_post_edit_source_reopen",
+      "currentness_verification_status": "official_pages_reviewed_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Temporary field controls can change after retrieval.",
+        "The second pass independently rechecked the public-notice stream; broader first-pass agenda, minutes, and road-project review was not re-performed."
+      ],
+      "source_id": "union_county_current_actions_2026",
+      "title": "Union County current ordinances, agendas, minutes, public notices, and road projects"
+    },
+    {
+      "official_title": "Laws of Union County, New Jersey",
+      "issuing_authority": "Union County Board of County Commissioners",
+      "source_category": "codified_county_ordinances_resolutions_and_policies",
+      "jurisdiction": "Union County, New Jersey",
+      "geographic_scope": "Union County",
+      "subject_coverage": [
+        "vehicles and traffic",
+        "truck routes",
+        "weight limits",
+        "bridges",
+        "road openings"
+      ],
+      "official_status": "official_primary_compilation",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://ucnj.org/commissioners/wp-content/uploads/sites/29/2026/04/Laws-of-Union-County-2026.pdf",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Chapter 46",
+        "Chapter 111 §111-11",
+        "Chapter 133 §§133-10 and 133-14",
+        "Chapter 138 §§138-1 through 138-46 and Schedules I-XVI"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "§§133-10 and 133-14",
+        "§138-8 and Schedule VI",
+        "§138-9 and reserved Schedule VII",
+        "§138-23",
+        "§111-11"
+      ],
+      "sections_reviewed_not_relevant": [
+        "One-way, stopping/standing, loading, and turn schedules contain no corridor entry"
+      ],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_current_pilot_scope",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_chapters_111_133_138_and_schedules",
+      "currentness_verification_status": "official_compilation_updated_through_2026-01; post_cutoff_actions_searched_through_2026-07-26",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Certified hard copy and post-January amendments are maintained by County Clerk and County Counsel.",
+        "Bridge weight limits may be established in separate resolutions not enumerated in the compilation.",
+        "Cover states Updated through 1/2026.",
+        "Ordinance 160 and amendments are needed to resolve §138-9 because Schedule VII is reserved."
+      ],
+      "source_id": "union_county_laws_2026",
+      "title": "Laws of Union County, New Jersey"
+    },
+    {
+      "official_title": "Union County Safe Streets for All Appendix G — Corridor Countermeasures",
+      "issuing_authority": "Union County",
+      "source_category": "official_planning_document",
+      "jurisdiction": "Union County, New Jersey",
+      "geographic_scope": "Selected Union County corridors",
+      "subject_coverage": [
+        "planning corridor inventory",
+        "North Avenue west of U.S. 1 and 9"
+      ],
+      "official_status": "official_planning_document_not_legal_designation",
+      "publication_date": null,
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "original_url": "https://ucnj.org/safe-streets/wp-content/uploads/sites/49/2026/05/UC-SS4A_Appendix-G_Corridor-Countermeasures.pdf",
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "North Avenue, Elizabeth, MP 0.00-0.67 corridor row"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [
+        "Planning-table label Truck Route: Yes"
+      ],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "first_pass_complete_for_identified_corridor_row",
+      "second_pass_status": "second_pass_verified_2026-07-26_for_appendix_g_printed_page_23_north_avenue_row",
+      "currentness_verification_status": "official_2026_planning_document",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Planning inventory, not a traffic ordinance or legal designation.",
+        "The row ends at U.S. 1 and 9 and does not establish North Avenue east of U.S. 1 and 9."
+      ],
+      "source_id": "union_county_ss4a_appendix_g_2026",
+      "title": "Union County Safe Streets for All Appendix G — Corridor Countermeasures"
+    },
+    {
+      "official_title": "User-provided candidate-corridor anchor coordinates",
+      "issuing_authority": "Project research input",
+      "source_category": "user_provided_research_input",
+      "jurisdiction": "not_applicable",
+      "geographic_scope": "APM Elizabeth candidate-corridor study area",
+      "subject_coverage": [
+        "four candidate access anchors",
+        "research-scope labels"
+      ],
+      "official_status": "non_authoritative_research_input",
+      "publication_date": "2026-06-26",
+      "adoption_date": null,
+      "effective_from": null,
+      "effective_to": null,
+      "expiration_date": null,
+      "amendment_date": null,
+      "retrieval_timestamp": "2026-06-26T08:26:05Z",
+      "original_url": null,
+      "dataset_identifier": null,
+      "local_path": null,
+      "sha256": null,
+      "archive_files": [],
+      "source_mutability": "fixed",
+      "snapshot_date": null,
+      "pages_sections_reviewed": [
+        "Four coordinates already present in physical_nodes.geojson"
+      ],
+      "appendices_tables_reviewed": [],
+      "sections_extracted": [],
+      "sections_reviewed_not_relevant": [],
+      "deliberately_excluded": [],
+      "exclusion_reason": null,
+      "first_pass_status": "input_preserved",
+      "second_pass_status": "second_pass_verified_as_input_provenance",
+      "currentness_verification_status": "not_applicable",
+      "supersedes_source_ids": [],
+      "superseded_by_source_ids": [],
+      "source_specific_limitations": [
+        "Coordinates define research anchors only.",
+        "They do not establish a road connection, gate function, legal route, or direction."
+      ],
+      "source_id": "user_study_sketch_2026_06_26",
+      "title": "User-provided candidate-corridor anchor coordinates"
+    }
+  ],
+  "source_coverage_definition": {
+    "defined_scope": "Publicly available sources material to a drayage movement research corpus for approaches to APM Terminals Elizabeth, including all counties and municipalities traversed by the current physical network and immediate connectors.",
+    "completed_means": "The identified source category was searched and sources directly material to this pilot were reviewed to the stated sections; it does not mean legal or real-world exhaustiveness.",
+    "temporal_cutoff": "2026-07-26T23:31:28Z",
+    "spatial_scope": "Current physical network, four study anchors, the McLester/Tripoli junction, and immediate NJ 81/US 1&9 terminal approaches."
+  },
+  "evidence_classifications": {
+    "official_primary": "Current enacted, adopted, codified, tariff, or rulemaking text issued by the responsible public authority.",
+    "official_operational": "Current official instructions, manuals, notices, or operational publications that are not themselves primary legal text.",
+    "official_gis": "GIS data published by the responsible government data custodian.",
+    "official_map": "A map or plan issued by a responsible authority or facility operator.",
+    "codified_ordinance": "Local provision appearing in the jurisdiction's designated code compilation.",
+    "uncodified_official_action": "Adopted ordinance, resolution, order, or official action not yet reflected in the code compilation.",
+    "official_traffic_order": "Traffic regulation/order published by the roadway authority.",
+    "contractual_primary": "Agreement text whose force depends on participation, activation, and applicable addenda.",
+    "third_party_geospatial": "Non-government geographic data such as OpenStreetMap.",
+    "imagery_observation": "A documented visual observation; it does not establish legal meaning or current operational authorization.",
+    "calculated_from_geometry": "A reproducible calculation from cited geometry.",
+    "unverified_inference": "A reasoned proposition not established by the cited evidence; never promoted to a legal or operational conclusion."
+  },
+  "source_coverage_inventory_definition": "Jurisdiction and source-category search inventory. sources_found lists every registered source under one primary research category; cross-category relevance remains in each source record.",
+  "source_coverage_inventory": [
+    {
+      "category": "federal_motor_carrier",
+      "status": "first_pass_complete_for_current_pilot_scope; second_pass_partial_for_exact_reopened_ecfr_sections",
+      "systems_searched": [
+        "eCFR Title 49",
+        "Federal Register",
+        "FMCSA/PHMSA official pages"
+      ],
+      "sources_found": [
+        "ecfr_fmcsr_2026_07_23",
+        "ecfr_hazmat_2026_07_23"
+      ],
+      "negative_or_excluded_results": [
+        "Suspended non-T Part 390 URS sections were not treated as current.",
+        "Shipment-specific hazmat triggers were not assumed."
+      ],
+      "remaining_gap_ids": [
+        "gap_federal_ecfr_xml",
+        "gap_hazmat_trigger_facts"
+      ]
+    },
+    {
+      "category": "federal_maritime_security_and_customs",
+      "status": "first_pass_complete_for_defined_public_scope; second_pass_partial_for_exact_reopened_ecfr_sections_and_public_notice_material",
+      "systems_searched": [
+        "eCFR Titles 33, 49, and 19",
+        "TSA",
+        "USCG",
+        "CBP",
+        "GovInfo"
+      ],
+      "sources_found": [
+        "ecfr_maritime_access_2026_07_23",
+        "ecfr_twic_1572",
+        "cbp_cargo_security_2026_07_26"
+      ],
+      "negative_or_excluded_results": [
+        "CTPAT is voluntary.",
+        "FAST was excluded absent a Canada/Mexico land-border movement."
+      ],
+      "remaining_gap_ids": [
+        "gap_apm_secure_area",
+        "gap_19_cfr_part18"
+      ]
+    },
+    {
+      "category": "new_jersey_state",
+      "status": "first_pass_complete_for_current_pilot_scope",
+      "systems_searched": [
+        "NJDOT rules",
+        "NJDOT freight pages",
+        "NJ traffic orders",
+        "NJOGIS",
+        "NJMVC board records"
+      ],
+      "sources_found": [
+        "njac_16_32",
+        "njac_16_32_archived_expired_courtesy",
+        "nj_size_weight_guidebook",
+        "nj_large_truck_map",
+        "njdot_official_lrs_2025",
+        "njdot_osow_operational_2026",
+        "njdot_us1_9_speed",
+        "njdot_us1_9_parking"
+      ],
+      "negative_or_excluded_results": [
+        "No current codified N.J.A.C. 13:18 courtesy text with a clear current expiration statement was located."
+      ],
+      "remaining_gap_ids": [
+        "gap_njac_13_18_current_text",
+        "gap_north_avenue_sri"
+      ]
+    },
+    {
+      "category": "turnpike_authority",
+      "status": "first_pass_complete_for_current_pilot_scope",
+      "systems_searched": [
+        "NJTA regulations",
+        "rulemaking notices",
+        "traffic alerts",
+        "traffic permits",
+        "toll pages"
+      ],
+      "sources_found": [
+        "njta_njac_19_9_readoption_2025",
+        "njta_regulations_page_2026_07_26"
+      ],
+      "negative_or_excluded_results": [
+        "No static rule was created from an absence of a live traffic alert."
+      ],
+      "remaining_gap_ids": [
+        "gap_path_a_ramp_chain",
+        "gap_live_temporary_controls"
+      ]
+    },
+    {
+      "category": "panynj_and_terminal",
+      "status": "first_pass_complete_for_public_current_sources; second_pass_partial_for_tariff_and_archived_apm_snapshot_content",
+      "systems_searched": [
+        "PANYNJ tariff and truck pages",
+        "PortTruckPass",
+        "APM pages and notices"
+      ],
+      "sources_found": [
+        "panynj_marine_terminal_tariff",
+        "panynj_truckers_guide",
+        "panynj_truck_info",
+        "porttruckpass_tips",
+        "apm_appointment_system",
+        "apm_directions",
+        "apm_hours_ops",
+        "apm_port_status_2026_07_24",
+        "apm_termpoint_faq_2025"
+      ],
+      "negative_or_excluded_results": [
+        "No authoritative georeferenced APM Gate In/Gate Out geometry was found."
+      ],
+      "remaining_gap_ids": [
+        "gap_apm_gate_geometry",
+        "gap_apm_hours",
+        "gap_tariff_34_1140",
+        "gap_apm_secure_area"
+      ]
+    },
+    {
+      "category": "commercial_contractual",
+      "status": "partial",
+      "systems_searched": [
+        "UIIA current agreement",
+        "UIIA insurance page",
+        "IIEC action summaries"
+      ],
+      "sources_found": [
+        "uiia_2026_05_05",
+        "uiia_supplement_2026_06_18"
+      ],
+      "negative_or_excluded_results": [
+        "No carrier-specific UIIA participation or provider activation was assumed."
+      ],
+      "remaining_gap_ids": [
+        "gap_uiia_activation"
+      ],
+      "resolved_gap_ids": [
+        "gap_uiia_supplement"
+      ]
+    },
+    {
+      "category": "county_and_municipal",
+      "status": "first_pass_complete_for_all_traversed_jurisdictions",
+      "systems_searched": [
+        "Elizabeth official website and City Clerk archive",
+        "Municode Supplement 31",
+        "Union County current laws",
+        "county ordinances, agendas, minutes, notices, construction pages, and GIS"
+      ],
+      "sources_found": [
+        "elizabeth_code_traffic_2025",
+        "elizabeth_code_parking_restrictions",
+        "elizabeth_official_ordinance_archive_2026",
+        "elizabeth_ordinance_6096_2025",
+        "elizabeth_ordinance_6290_2026",
+        "union_county_laws_2026",
+        "union_county_current_actions_2026",
+        "union_county_ss4a_appendix_g_2026"
+      ],
+      "negative_or_excluded_results": [
+        "No corridor-specific codified Elizabeth four-ton exclusion, one-way designation, turn restriction, or loading zone was found.",
+        "Union County Schedule VII truck routes is reserved and lists no roads.",
+        "No current official construction closure on the candidate streets was found at retrieval time."
+      ],
+      "remaining_gap_ids": [
+        "gap_elizabeth_80000_zone",
+        "gap_elizabeth_blank_hours",
+        "gap_union_bridge_resolutions",
+        "gap_live_temporary_controls"
+      ]
+    },
+    {
+      "category": "physical_geographic",
+      "status": "first_pass_complete_for_current_geometry",
+      "systems_searched": [
+        "NJOGIS",
+        "NJDOT LRS",
+        "Union County GIS",
+        "OpenStreetMap",
+        "Google Maps/Street View/satellite",
+        "PANYNJ/APM maps"
+      ],
+      "sources_found": [
+        "njogis_municipal_boundaries_2026_07_26",
+        "njogis_county_boundaries_2026_07_26",
+        "njogis_road_centerlines_2026_07_26",
+        "osm_apm_study_area_roads",
+        "google_imagery_observations_2026_07_26",
+        "user_study_sketch_2026_06_26"
+      ],
+      "negative_or_excluded_results": [
+        "No authoritative APM gate point was returned by NJ address data or geocoder."
+      ],
+      "remaining_gap_ids": [
+        "gap_apm_gate_geometry",
+        "gap_path_a_ramp_chain",
+        "gap_path_b_ramp_chain",
+        "gap_tripoli_truck_role",
+        "gap_north_avenue_sri",
+        "gap_lane_level_controls"
+      ]
+    }
+  ],
+  "jurisdiction_research_inventory": [
+    {
+      "jurisdiction_id": "jurisdiction_union_county",
+      "official_name": "Union County, New Jersey",
+      "jurisdiction_type": "county",
+      "boundary_source_id": "njogis_county_boundaries_2026_07_26",
+      "boundary_identifiers": {
+        "gnis": "882235",
+        "fips": "34039"
+      },
+      "network_coverage": "All 74 original road segments, all 74 original road endpoint nodes, four anchors, and the source-vertex topology split (which adds no connector geometry) are within Union County.",
+      "official_code_platform": "Official Laws of Union County PDF published by the Board of County Commissioners",
+      "code_currency": "Compilation updated through January 2026; post-January ordinances, agendas, minutes, notices, and road projects searched through 2026-07-26.",
+      "searches_performed": [
+        "Chapter 46 road/bridge permits",
+        "Chapter 111 bridge postings",
+        "Chapter 138 vehicles and traffic and all schedules",
+        "2025-2026 ordinance index",
+        "Board agendas and minutes",
+        "public notices",
+        "engineering/road-construction pages",
+        "county GIS and road inventory",
+        "truck mobility study"
+      ],
+      "chapters_sections_reviewed": [
+        "Chapter 46",
+        "Chapter 111 §111-11",
+        "Chapter 133 §§133-10 and 133-14",
+        "Chapter 138 §§138-1 through 138-46 and Schedules I-XVI"
+      ],
+      "relevant_provisions": [
+        "§138-8 and Schedule VI restrict trucks over four tons on County park-system roads with a pickup/delivery exception.",
+        "§138-9 creates a schedule mechanism, while Schedule VII is reserved.",
+        "§138-23 permits signed temporary emergency no-parking declarations and towing.",
+        "§111-11 requires signs on bridges with limits below 20 tons; exact limits can be in separate resolutions."
+      ],
+      "documented_negative_results": [
+        "No North Avenue East, McLester, Tripoli, or Kapkowski entry in truck-route, weight, one-way, stopping/standing, loading, or turn schedules.",
+        "No current County construction closure on the candidate streets at retrieval time.",
+        "No general County OS/OW permit, placarded-hazmat route, or idling provision found in the current compilation."
+      ],
+      "uncodified_actions_checked": true,
+      "resolutions_checked": true,
+      "meeting_records_checked": true,
+      "traffic_orders_checked": true,
+      "engineering_and_police_sources_checked": true,
+      "maps_and_gis_checked": true,
+      "currentness_status": "current_compilation_plus_post_cutoff_search",
+      "second_pass_verification_subset": "Chapters 111, 133, and 138; schedules; and the 2026 public-notice stream. Broader first-pass agenda, minutes, and road-project searches were not independently repeated.",
+      "remaining_gap_ids": [
+        "gap_union_bridge_resolutions",
+        "gap_live_temporary_controls"
+      ]
+    },
+    {
+      "jurisdiction_id": "jurisdiction_elizabeth_nj",
+      "official_name": "City of Elizabeth, New Jersey",
+      "jurisdiction_type": "municipality",
+      "boundary_source_id": "njogis_municipal_boundaries_2026_07_26",
+      "boundary_identifiers": {
+        "gnis": "885205",
+        "municipal_code": "2004",
+        "census_geoid": "3403921000"
+      },
+      "network_coverage": "All 74 original road segments, all 74 original road endpoint nodes, four anchors, and the source-vertex topology split (which adds no connector geometry) are within Elizabeth.",
+      "official_code_platform": "City website designates CivicPlus Municode; official City website separately publishes adopted ordinances.",
+      "code_currency": "Municode Supplement 31, online update 2025-11-11, codified through Ordinance 6138 passed 2025-06-24; official post-cutoff archive searched through 2026-07-26.",
+      "searches_performed": [
+        "City official code and ordinance pages",
+        "Municode current code, version history, and adopted ordinances",
+        "2025-2026 official ordinance archive",
+        "Council resolutions",
+        "agendas/minutes and public notices",
+        "Engineering, Public Works, Police Traffic, construction, and GIS sources",
+        "archived official pages and search-engine indexes"
+      ],
+      "chapters_sections_reviewed": [
+        "Chapters 7.08, 8.48, 10.04, 10.08, 10.12, 10.16, 10.20, 10.28, 10.40, 10.48, 10.64, 10.72, 12.08, and 15.08"
+      ],
+      "relevant_provisions": [
+        "North Avenue East and McLester parking/stopping schedules",
+        "North Avenue East/Kapkowski 80,000-pound zone table row",
+        "citywide commercial-vehicle and trailer parking restrictions",
+        "citywide idling/noise provisions",
+        "temporary closures, snow emergencies, work zones, and bridge-strike liability",
+        "Ordinance 6290 off-corridor Front Street four-ton exclusion"
+      ],
+      "documented_negative_results": [
+        "No codified four-ton exclusion on North Avenue East, McLester, Tripoli, or Kapkowski.",
+        "No one-way or turn schedule entry at a material candidate-corridor intersection.",
+        "No loading zone on North Avenue East, McLester, or Tripoli.",
+        "No municipal placarded-hazmat route or general municipal OS/OW permit process found.",
+        "No 2025-July 2026 uncodified action changing weight, turns, one-way operation, loading, or scheduled closures on the four corridor streets."
+      ],
+      "uncodified_actions_checked": true,
+      "resolutions_checked": true,
+      "meeting_records_checked": true,
+      "traffic_orders_checked": true,
+      "engineering_and_police_sources_checked": true,
+      "maps_and_gis_checked": true,
+      "currentness_status": "codified_source_plus_post_cutoff_official_archive",
+      "remaining_gap_ids": [
+        "gap_elizabeth_80000_zone",
+        "gap_elizabeth_blank_hours",
+        "gap_live_temporary_controls"
+      ]
+    }
+  ],
+  "research_gaps": [
+    {
+      "gap_id": "gap_apm_gate_geometry",
+      "exact_question": "What are the current authoritative coordinates and directed lane geometry for APM's OTR Gate In and Gate Out?",
+      "custodian": "APM Terminals Elizabeth Gate Operations and PANYNJ Port Department",
+      "why_it_matters": "The current facility pin does not identify separate inbound and outbound gate functions.",
+      "searches_attempted": [
+        {
+          "system": "PANYNJ guide and APM map",
+          "result": "Separate inbound/outbound functions shown but map is not georeferenced."
+        },
+        {
+          "system": "NJOGIS roads/address points/geocoder",
+          "result": "No authoritative 5080 McLester gate point or public centerline to the pin."
+        },
+        {
+          "system": "OSM and public imagery",
+          "result": "Private service roads and gate canopy visible, but operational role and current lane direction are not authoritative."
+        }
+      ],
+      "why_insufficient": "No current authoritative georeferenced gate circulation plan was publicly available.",
+      "evidence_required": "Current georeferenced gate-circulation GIS/CAD or dated written gate diagram.",
+      "exact_next_action": "Request current Gate In/Gate Out circulation geometry from APM/PANYNJ; create separate nodes only after receipt.",
+      "specialist_or_contact_required": "agency_or_operator_contact",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_path_a_ramp_chain",
+      "exact_question": "What directed NJ Turnpike Exit 13A/NJ 81 ramp sequence connects the stated approach to North Avenue?",
+      "custodian": "NJTA and NJDOT",
+      "why_it_matters": "The anchor is among multiple carriageways and ramps; a straight snap would fabricate movement.",
+      "searches_attempted": [
+        {
+          "system": "NJOGIS road centerlines",
+          "result": "Anchor is 6.2 m from NJ 81 and 9.2 m from ramp 00000081__A100020."
+        },
+        {
+          "system": "APM directions",
+          "result": "Exit 13A and North Avenue sequence stated without a lane-level ramp chain."
+        },
+        {
+          "system": "NJDOT SLD/ramp resources",
+          "result": "Resources identified; directed chain not conclusively established."
+        }
+      ],
+      "why_insufficient": "Starting Turnpike carriageway/direction and complete signed ramp sequence were not established.",
+      "evidence_required": "Current NJTA interchange plan plus NJDOT ramp diagram/videolog and sign inventory.",
+      "exact_next_action": "Ask NJTA/NJDOT to confirm the directed ramp SRIs for the specified travel direction.",
+      "specialist_or_contact_required": "gis_and_agency_confirmation",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_path_b_ramp_chain",
+      "exact_question": "What directed US 1&9 southbound ramp chain reaches North Avenue East?",
+      "custodian": "NJDOT",
+      "why_it_matters": "The anchor lies within the Dowd/CR624/NJ81 interchange and does not identify the omitted US 1&9-SB sequence.",
+      "searches_attempted": [
+        {
+          "system": "NJOGIS road centerlines",
+          "result": "Nearby Dowd, CR624, NJ81-SB, and US1 ramp records identified within 2.2-3.4 m."
+        },
+        {
+          "system": "APM directions",
+          "result": "US 1&9 southbound exit is stated without ramp IDs."
+        }
+      ],
+      "why_insufficient": "A defined starting carriageway and complete directed sign/ramp chain are absent.",
+      "evidence_required": "Current NJDOT ramp diagram/videolog and signed movement confirmation.",
+      "exact_next_action": "Trace and have NJDOT confirm US 1&9-SB ramp records through the interchange.",
+      "specialist_or_contact_required": "gis_and_agency_confirmation",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_tripoli_truck_role",
+      "exact_question": "Does current APM policy designate Tripoli Street for OTR container-gate drayage traffic?",
+      "custodian": "APM Terminals Elizabeth and PANYNJ",
+      "why_it_matters": "Public directions mention service destinations, while the guide identifies employee and rail-gate functions on Tripoli.",
+      "searches_attempted": [
+        {
+          "system": "APM directions",
+          "result": "Right turn to Tripoli is stated for Control Building, Garage, Warehouse, and Marine Operations."
+        },
+        {
+          "system": "PANYNJ guide",
+          "result": "STEP attendees are directed to an employee entrance in personal vehicles; a separate rail gate is identified."
+        },
+        {
+          "system": "imagery",
+          "result": "Road and entrances are visible, but truck role cannot be inferred."
+        }
+      ],
+      "why_insufficient": "No current truck-routing instruction ties Tripoli to the OTR container gate.",
+      "evidence_required": "Current APM truck-routing notice or gate signage distinguishing access functions.",
+      "exact_next_action": "Request written routing confirmation from APM Gate Operations.",
+      "specialist_or_contact_required": "operator_contact",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_north_avenue_sri",
+      "exact_question": "What is the authoritative current SRI for Elizabeth's North Avenue/CR 624?",
+      "custodian": "NJDOT Bureau of Transportation Data and Support and NJOGIS roads steward",
+      "why_it_matters": "Linear referencing cannot use conflicting route-event geometry.",
+      "searches_attempted": [
+        {
+          "system": "NJOGIS road centerlines",
+          "result": "Operational/reference layer reports 20000624__ on many corridor pieces."
+        },
+        {
+          "system": "NJDOT Official LRS August 2025",
+          "result": "20000624__ plots in western Union County; Elizabeth geometry appears under 20041769__/20041769_W."
+        },
+        {
+          "system": "legacy repository note",
+          "result": "02041097__ plots in Bergen County and is rejected for this corridor."
+        }
+      ],
+      "why_insufficient": "Two current official state datasets disagree spatially.",
+      "evidence_required": "Custodian-approved current route-event export or straight-line diagram for Elizabeth CR 624.",
+      "exact_next_action": "Submit the three SRI/coordinate discrepancy to NJDOT BTDS and NJOGIS for reconciliation.",
+      "specialist_or_contact_required": "agency_gis_contact",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_lane_level_controls",
+      "exact_question": "What current lane-level one-way and turn controls govern the corridor and terminal approach?",
+      "custodian": "Union County, City of Elizabeth, NJDOT/NJTA, and APM as applicable",
+      "why_it_matters": "OSM carriageway direction and NJOGIS centerline direction are different evidence levels.",
+      "searches_attempted": [
+        {
+          "system": "NJOGIS centerlines",
+          "result": "B and FT road-level codes observed."
+        },
+        {
+          "system": "Elizabeth and Union schedules",
+          "result": "No material corridor one-way/turn entry found."
+        },
+        {
+          "system": "Street View",
+          "result": "Lane geometry and markings visible at selected points; sign text was not legible."
+        }
+      ],
+      "why_insufficient": "Road-level centerline codes and selected imagery do not establish every lane movement.",
+      "evidence_required": "Recent georeferenced sign/marking inventory or agency traffic-control records.",
+      "exact_next_action": "Obtain current traffic-control plans and perform a same-day sign survey before operational routing.",
+      "specialist_or_contact_required": "traffic_engineering_and_field_check",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_elizabeth_80000_zone",
+      "exact_question": "What legal effect does Elizabeth §10.16.050 assign to the 80,000-pound North Avenue East zone?",
+      "custodian": "Elizabeth City Clerk/Engineering, NJDOT, and PANYNJ",
+      "why_it_matters": "The table does not clearly say whether it is an authorization, cap, or connecting-zone designation.",
+      "searches_attempted": [
+        {
+          "system": "Municode Chapter 10.16",
+          "result": "Exact row and 520-foot extent found."
+        },
+        {
+          "system": "Ordinance 4654 index",
+          "result": "Adoption identified; title repeats '80,000 pound overweight vehicle zone limit'."
+        },
+        {
+          "system": "City archive and maps",
+          "result": "No clarifying implementation text found."
+        }
+      ],
+      "why_insufficient": "The operative legal meaning is ambiguous on the face of the available text.",
+      "evidence_required": "Certified ordinance history, approved traffic plan, and written City/PANYNJ interpretation.",
+      "exact_next_action": "Request certified Ordinance 4654 file and implementing plan from the City Clerk/Engineering.",
+      "specialist_or_contact_required": "agency_contact_and_legal_review",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_elizabeth_blank_hours",
+      "exact_question": "What hours govern the North Avenue East no-stopping row from the Turnpike underpass to McLester?",
+      "custodian": "Elizabeth City Clerk and Police Traffic Division",
+      "why_it_matters": "The published schedule's hours cell is blank.",
+      "searches_attempted": [
+        {
+          "system": "Municode Chapter 10.28",
+          "result": "Row located; hours field blank."
+        },
+        {
+          "system": "ordinance archive/version search",
+          "result": "No conclusive source ordinance found during remote search."
+        }
+      ],
+      "why_insufficient": "No text supports inferring 'at all times' or another period.",
+      "evidence_required": "Certified schedule or source ordinance and current posted-sign confirmation.",
+      "exact_next_action": "Ask Clerk/Police Traffic for the source ordinance and current hours.",
+      "specialist_or_contact_required": "agency_contact",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_union_bridge_resolutions",
+      "exact_question": "Do current Union County bridge/culvert load resolutions impose a posting on an immediate corridor connection?",
+      "custodian": "Union County Engineer, Clerk, and County Counsel",
+      "why_it_matters": "Chapter 111 requires signs below 20 tons but does not enumerate resolution-specific limits.",
+      "searches_attempted": [
+        {
+          "system": "2026 Laws of Union County",
+          "result": "§111-11 found; exact resolution list absent."
+        },
+        {
+          "system": "County construction and bridge pages",
+          "result": "Current off-corridor bridge projects found; no corridor posting list."
+        },
+        {
+          "system": "official GIS/road inventory",
+          "result": "No complete current load-resolution layer located."
+        }
+      ],
+      "why_insufficient": "Separate current load-rating resolutions are not published in the reviewed compilation.",
+      "evidence_required": "Current bridge/culvert inventory and all active load-posting resolutions.",
+      "exact_next_action": "Request the current load-posting register from the Union County Engineer/Clerk.",
+      "specialist_or_contact_required": "agency_contact_or_records_request",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_live_temporary_controls",
+      "exact_question": "Are any temporary closure, construction, police, emergency, or posted controls active at dispatch time?",
+      "custodian": "NJTA, NJDOT, Union County, City of Elizabeth, PANYNJ, and APM",
+      "why_it_matters": "Dynamic controls may change after the evidence snapshot.",
+      "searches_attempted": [
+        {
+          "system": "official traffic/construction pages",
+          "result": "No candidate-street closure found at retrieval time."
+        },
+        {
+          "system": "local ordinance/meeting archives",
+          "result": "No current codified corridor closure found."
+        }
+      ],
+      "why_insufficient": "A negative web snapshot cannot establish future same-day conditions.",
+      "evidence_required": "Same-day official alert check and posted-sign observation.",
+      "exact_next_action": "Recheck all official alerts immediately before dispatch and inspect current signs.",
+      "specialist_or_contact_required": "operational_same_day_check",
+      "status": "dynamic_revalidation_required"
+    },
+    {
+      "gap_id": "gap_apm_hours",
+      "exact_question": "What are APM's current ordinary gate cutoffs and holiday schedule?",
+      "custodian": "APM Terminals Elizabeth",
+      "why_it_matters": "Official snapshots and current indexed content state different values.",
+      "searches_attempted": [
+        {
+          "system": "archived APM/PANYNJ pages retrieved 2026-06-25",
+          "result": "06:00 opening and 16:00 dry/empty/reefer cutoffs."
+        },
+        {
+          "system": "current indexed APM hours content",
+          "result": "17:00 dry/empty/reefer and 15:30 OOG, but an obsolete 2024-25 holiday table."
+        },
+        {
+          "system": "dated advisories",
+          "result": "Temporary extensions found and preserved separately."
+        }
+      ],
+      "why_insufficient": "Dynamic same-URL content and dated notices do not establish a single current regular schedule.",
+      "evidence_required": "Current dated APM gate-hours notice and current holiday calendar.",
+      "exact_next_action": "Obtain or capture a dated current hours notice from APM and revalidate before use.",
+      "specialist_or_contact_required": "operator_contact_or_dynamic_recheck",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_tariff_34_1140",
+      "exact_question": "How does PANYNJ implement PA-10 Subrule 34-1140's phased categories?",
+      "custodian": "PANYNJ Port Department",
+      "why_it_matters": "The clause's categories appear difficult to reconcile with Subrule 34-1101 and ordinary DTR operations.",
+      "searches_attempted": [
+        {
+          "system": "current PA-10 tariff",
+          "result": "Exact clause and dates reviewed."
+        },
+        {
+          "system": "PANYNJ truck information and PortTruckPass",
+          "result": "No clarifying interpretation found."
+        }
+      ],
+      "why_insufficient": "No authoritative clarification resolves the facial tension.",
+      "evidence_required": "Written PANYNJ interpretation or amended tariff.",
+      "exact_next_action": "Request written clarification; preserve each clause independently until then.",
+      "specialist_or_contact_required": "authority_contact_and_legal_review",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_apm_secure_area",
+      "exact_question": "What is APM Elizabeth's TWIC Risk Group and precise MTSA secure-area boundary?",
+      "custodian": "APM Facility Security Officer and United States Coast Guard",
+      "why_it_matters": "Electronic inspection method and access control depend on facility classification and approved security plan.",
+      "searches_attempted": [
+        {
+          "system": "eCFR and USCG/TSA pages",
+          "result": "General Risk Group and TWIC rules established."
+        },
+        {
+          "system": "APM/PANYNJ public pages",
+          "result": "No approved security-plan boundary or Risk Group located."
+        }
+      ],
+      "why_insufficient": "Facility security plans and detailed boundaries are not publicly available.",
+      "evidence_required": "Facility Security Officer confirmation consistent with the approved Facility Security Plan.",
+      "exact_next_action": "Request non-sensitive confirmation of Risk Group and public access-control requirements from APM FSO.",
+      "specialist_or_contact_required": "operator_security_contact",
+      "status": "externally_controlled"
+    },
+    {
+      "gap_id": "gap_uiia_supplement",
+      "exact_question": "How does the 2026-06-18 Supplement-to-Exhibit-C change relate to the 2026-05-05 base UIIA PDF?",
+      "custodian": "Intermodal Association of North America / IIEC",
+      "why_it_matters": "The current PDF cover does not show the later supplement revision.",
+      "searches_attempted": [
+        {
+          "system": "current agreement PDF",
+          "result": "The archived local copy is effective May 5, 2026."
+        },
+        {
+          "system": "current official UIIA legal PDF",
+          "result": "The official PDF is a full consolidated agreement whose cover and revision statement say effective/revised June 18, 2026; it includes the Supplement to Exhibit C revised 06/18/26."
+        }
+      ],
+      "why_insufficient": "Resolved: the current official consolidated agreement establishes the version relationship, so no evidence insufficiency remains for this question.",
+      "evidence_required": "None for the resolved version reconciliation; a newly dated official snapshot would be required for later operational reliance.",
+      "exact_next_action": "None for version reconciliation; recheck the dynamic official URL before operational reliance.",
+      "specialist_or_contact_required": "none_for_resolved_version_reconciliation",
+      "status": "resolved_2026-07-26"
+    },
+    {
+      "gap_id": "gap_uiia_activation",
+      "exact_question": "Is a particular motor carrier an active UIIA signatory with the relevant equipment provider and addenda?",
+      "custodian": "IANA/UIIA, equipment provider, and motor carrier",
+      "why_it_matters": "Base-agreement terms do not prove carrier-specific activation.",
+      "searches_attempted": [
+        {
+          "system": "public UIIA agreement and prerequisites",
+          "result": "General contractual requirements established."
+        }
+      ],
+      "why_insufficient": "No motor carrier or equipment provider was specified.",
+      "evidence_required": "Carrier-specific UIIA status, provider activation, and applicable addenda.",
+      "exact_next_action": "Verify carrier/provider status in the authorized UIIA system when a carrier is identified.",
+      "specialist_or_contact_required": "carrier_specific_operational_check",
+      "status": "fact_dependent"
+    },
+    {
+      "gap_id": "gap_19_cfr_part18",
+      "exact_question": "What current pinpoint provisions govern a shipment-specific in-bond move under 19 CFR Part 18?",
+      "custodian": "United States Customs and Border Protection",
+      "why_it_matters": "In-bond requirements matter only if cargo has that status.",
+      "searches_attempted": [
+        {
+          "system": "CBP In-Bond and ACE pages",
+          "result": "Program boundary established."
+        },
+        {
+          "system": "eCFR Part 18 API",
+          "result": "Repeated HTTP 503 responses prevented section-by-section second pass."
+        }
+      ],
+      "why_insufficient": "Current §§18.1, 18.3, 18.4, and 18.8 were not fully reopened and compared.",
+      "evidence_required": "Current official Part 18 text plus shipment status.",
+      "exact_next_action": "Retry eCFR/GovInfo retrieval and extract only if a move is identified as in-bond.",
+      "specialist_or_contact_required": "source_retrieval_and_customs_specialist_if_triggered",
+      "status": "technical_access_barrier_and_fact_dependent"
+    },
+    {
+      "gap_id": "gap_federal_ecfr_xml",
+      "exact_question": "Can dated XML snapshots of the reviewed current eCFR sections be archived?",
+      "custodian": "eCFR API",
+      "why_it_matters": "Dated machine-readable snapshots improve reproducibility.",
+      "searches_attempted": [
+        {
+          "system": "eCFR versioner API for Title 49 Part 390 dated 2026-07-23",
+          "result": "Repeated HTTP 503 response."
+        },
+        {
+          "system": "current eCFR section pages",
+          "result": "Human-readable current text remained reviewable."
+        }
+      ],
+      "why_insufficient": "API service was unavailable during the pass.",
+      "evidence_required": "Successful dated API response and SHA-256 archive.",
+      "exact_next_action": "Retry the dated versioner API; preserve XML and hashes when service recovers.",
+      "specialist_or_contact_required": "technical_retrieval",
+      "status": "technical_access_barrier"
+    },
+    {
+      "gap_id": "gap_hazmat_trigger_facts",
+      "exact_question": "Does a specific move carry material and quantity that trigger placarding, routing, security-plan, or attendance rules?",
+      "custodian": "Shipper, motor carrier, PHMSA documentation, and terminal",
+      "why_it_matters": "Federal hazmat rules are material-, quantity-, packaging-, and placarding-dependent.",
+      "searches_attempted": [
+        {
+          "system": "eCFR Parts 172, 177, and 397",
+          "result": "Conditional rules and tables identified."
+        }
+      ],
+      "why_insufficient": "No shipment facts were supplied or inferred.",
+      "evidence_required": "Shipping papers, material classification, quantity, packaging, and placarding status.",
+      "exact_next_action": "Evaluate the preserved conditions only after shipment facts are available.",
+      "specialist_or_contact_required": "qualified_hazmat_review_if_triggered",
+      "status": "fact_dependent"
+    },
+    {
+      "gap_id": "gap_njac_13_18_current_text",
+      "exact_question": "What is the fully current official text and expiration date of N.J.A.C. 13:18 after the 2026 MVC readoption?",
+      "custodian": "New Jersey Motor Vehicle Commission and Office of Administrative Law",
+      "why_it_matters": "The 2024 NJDOT guide is operational; the older courtesy rule PDF displayed an expired date.",
+      "searches_attempted": [
+        {
+          "system": "NJDOT/MVC/OAL current rules pages",
+          "result": "Older courtesy PDF and rule chapter identified."
+        },
+        {
+          "system": "OAL expiration report",
+          "result": "180-day extension to February 26, 2026 identified."
+        },
+        {
+          "system": "MVC Board minutes 2026-01-12",
+          "result": "Final adoption approval identified; consolidated current text/effective notice not located."
+        }
+      ],
+      "why_insufficient": "A current consolidated official courtesy text with publication/effective/expiration details was not found.",
+      "evidence_required": "New Jersey Register adoption notice and current OAL chapter text.",
+      "exact_next_action": "Obtain the final Register adoption and consolidated chapter from MVC/OAL.",
+      "specialist_or_contact_required": "agency_source_retrieval",
+      "status": "externally_controlled"
+    }
+  ],
+  "research_sessions": [
+    {
+      "session_id": "research_2026_07_26_foundational_evidence",
+      "started_from_branch": "main",
+      "started_from_commit": "8b80826803fa4173a1425867923357c2f5dd47a3",
+      "retrieval_timestamp": "2026-07-26T23:31:28Z",
+      "methods": [
+        "repository inventory and hash verification",
+        "official web and legal-source review",
+        "county and municipal ordinance/action audit",
+        "official GIS queries and point-in-polygon checks",
+        "Google Maps, Street View, and satellite visual inspection",
+        "PDF page/section review",
+        "independent federal/port, local, and physical research workstreams"
+      ],
+      "neutrality_boundary": "No scenario, finding, conflict, legal applicability, precedence, or route-feasibility determination was made."
+    }
+  ],
+  "regulatory_catalog_consolidation": {
+    "date": "2026-07-27",
+    "reason": "Reduce graph-node inflation, add explicit definitions, and normalize repeated source links.",
+    "prior_atomic_rule_count": 243,
+    "current_clause_level_rule_count": 146,
+    "nested_requirement_count": 243,
+    "nodes_removed": 97,
+    "reduction_percent": 39.9,
+    "source_registry_count": 25,
+    "unique_source_url_count": 24,
+    "expanded_snapshot": "data/archive/regulatory_nodes_expanded_243_2026-07-27.json",
+    "transformation_script": "src/consolidate_regulatory_nodes.mjs"
+  },
+  "research_change_record": {
+    "prior_active_objects_preserved": true,
+    "former_rule_path_labels_removed": "Prior Path A/Path B applicability-like fields were removed because sources did not establish rule-to-path applicability.",
+    "downstream_analysis_created": false,
+    "before_after_object_counts": {
+      "sources": {
+        "before": 12,
+        "after": 40
+      },
+      "regulatory_rules": {
+        "before": 92,
+        "after": 243
+      },
+      "entities": {
+        "before": 53,
+        "after": 67
+      },
+      "physical_nodes": {
+        "before": 78,
+        "after": 78
+      },
+      "physical_edges": {
+        "before": 74,
+        "after": 75
+      }
+    },
+    "count_basis": "Baseline counts were recalculated before editing; after counts were recalculated after source registration, atomic regulatory decomposition, entity normalization, the source-vertex split, and evidence-node additions."
+  }
 }
