@@ -12,29 +12,30 @@ Top-level fields:
 
 | Field | Type | Description |
 |---|---|---|
-| schema_version | string | Version of this draft schema. |
+| schema_version | string | Version of the clause-consolidated schema. |
 | description | string | Plain-English description of the file. |
-| status | string | Draft/final status. |
-| rules | array | List of extracted regulatory rule objects. |
+| status | string | Evidence and analytical status. |
+| scope | object | Geographic scope, node grain, and consolidation policies. |
+| source_registry | array | One copy of source metadata and the source URL for each logical source. |
+| source_count | integer | Number of logical sources in `source_registry`. |
+| unique_source_url_count | integer | Number of distinct non-empty source URLs. |
+| rules | array | Clause-level regulatory nodes. |
+| rule_count | integer | Number of clause-level regulatory nodes. |
+| nested_requirement_count | integer | Number of retained atomic requirements across all nodes. |
+| requirement_to_rule_index | object | Maps a nested legacy requirement ID to its clause-level `rule_id`. |
+| consolidation_summary | object | Before/after counts for the clause-level consolidation. |
 
 Rule fields:
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| rule_id | string | yes | Unique rule ID, such as rule_001. |
+| rule_id | string | yes | Stable ID for the clause-level rule. |
 | rule_name | string | yes | Short readable name for the rule. |
-| jurisdiction | string | yes | Authority level: state, port_authority, federal, or related value. |
-| authority | string | yes | Specific authority or publisher, such as NJDOT, PANYNJ, APM Terminals, eCFR/TSA. |
-| source_doc | string | yes | Source document name. |
-| source_section | string | yes | Section, page, heading, table, or page area where the rule appears. |
-| source_url | string | yes | Original live source URL. |
-| local_path | string | yes | Local saved copy in the repository. |
-| rule_summary | string | yes | Plain-English summary of the rule. |
-| vehicle_property_keys | array | yes | Truck/vehicle properties the rule depends on, such as weight, axles, dimensions, engine_model_year, permit_status, twic_status, rfid_status, appointment_status, or load_type. |
-| applies_to_segments_or_paths | array | yes | Candidate path(s), segment(s), or location(s) the rule may apply to. |
-| compliance_effect | string | yes | What the rule affects: allowed, prohibited, credential_required, appointment_required, permit_required, time_window, etc. |
-| confidence | string | yes | high, medium, or low, based on source clarity. |
-| notes | string | no | Clarifications, uncertainty, or extraction notes. |
+| definition | string | yes | Source-grounded definition assembled from the retained proposition(s). |
+| source_id | string | yes | Foreign key into `source_registry`; source URLs are not repeated on rules. |
+| source_sections | array | yes | Section, page, heading, table, or page area supporting the rule. |
+| requirement_count | integer | yes | Number of atomic requirements represented by this node. |
+| requirement_ids | array | yes | IDs of the retained atomic requirements. |
 
 ---
 
