@@ -34,6 +34,7 @@
       "entity_type": "authority",
       "source_ids": [
         "nj_size_weight_guidebook",
+        "nj_large_truck_map",
         "njac_16_32_truck_access_current_2023",
         "njogis_road_centerlines_2026_07_26"
       ]
@@ -52,7 +53,8 @@
       "entity_type": "authority",
       "source_ids": [
         "panynj_marine_terminal_tariff",
-        "panynj_truckers_guide"
+        "panynj_truckers_guide",
+        "panynj_truck_info"
       ]
     },
     {
@@ -61,7 +63,9 @@
       "entity_type": "terminal_operator",
       "source_ids": [
         "panynj_truckers_guide",
-        "apm_directions"
+        "apm_directions",
+        "apm_hours_ops",
+        "apm_appointment_system"
       ]
     },
     {
@@ -103,7 +107,10 @@
       "entity_type": "terminal",
       "source_ids": [
         "apm_directions",
-        "panynj_truckers_guide"
+        "panynj_truckers_guide",
+        "apm_hours_ops",
+        "apm_appointment_system",
+        "panynj_truck_info"
       ]
     },
     {
@@ -156,6 +163,7 @@
       "entity_type": "credential",
       "source_ids": [
         "ecfr_33_cfr_101_514_2026_07_29",
+        "ecfr_twic_1572",
         "panynj_truckers_guide"
       ]
     },
@@ -172,7 +180,8 @@
       "name": "Radio-Frequency Identification (RFID)",
       "entity_type": "credential",
       "source_ids": [
-        "panynj_truckers_guide"
+        "panynj_truckers_guide",
+        "porttruckpass_tips"
       ]
     },
     {
@@ -181,7 +190,8 @@
       "entity_type": "registration",
       "source_ids": [
         "panynj_marine_terminal_tariff",
-        "panynj_truckers_guide"
+        "panynj_truckers_guide",
+        "porttruckpass_tips"
       ]
     },
     {
@@ -189,7 +199,8 @@
       "name": "TERMPoint",
       "entity_type": "operational_system",
       "source_ids": [
-        "panynj_truckers_guide"
+        "panynj_truckers_guide",
+        "apm_appointment_system"
       ]
     },
     {

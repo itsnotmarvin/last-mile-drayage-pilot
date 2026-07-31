@@ -2,8 +2,8 @@
   "schema_version": "1.0-canonical-source-registry",
   "project": "Last-Mile Drayage Coupled-Network Pilot — APM Terminals Elizabeth",
   "last_updated": "2026-07-31",
-  "status": "canonical_sources_used_by_processed_graph_files",
-  "source_count": 13,
+  "status": "canonical_evidence_source_registry",
+  "source_count": 19,
   "sources": [
     {
       "source_id": "apm_directions",
@@ -12,9 +12,34 @@
       "source_type": "facility_operator_webpage_snapshot_pdf",
       "snapshot_date": "2026-06-25",
       "url": "https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
+      "wayback_url": "https://web.archive.org/web/20260625174530/https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
       "locally_archived": true,
       "local_path": "data/raw/documents/port_authority/apm_elizabeth_contact_directions.pdf",
       "sha256": "921a2a2254faca26b60c5ee434a3f4c23b15686548e74e88eb1213be6e36e7de"
+    },
+    {
+      "source_id": "apm_hours_ops",
+      "title": "APM Terminals Elizabeth Hours of Operation",
+      "publisher": "APM Terminals",
+      "source_type": "facility_operator_webpage_snapshot_pdf",
+      "snapshot_date": "2026-06-25",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
+      "wayback_url": "https://web.archive.org/web/20260625174535/https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
+      "locally_archived": true,
+      "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
+      "sha256": "5fdd2d5d074ec07c75a8457bea3dcc380a46d47e89a677334237a2e70c417063"
+    },
+    {
+      "source_id": "apm_appointment_system",
+      "title": "APM Terminals Elizabeth Truck Appointment System",
+      "publisher": "APM Terminals",
+      "source_type": "facility_operator_webpage_snapshot_pdf",
+      "snapshot_date": "2026-06-25",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
+      "wayback_url": "https://web.archive.org/web/20260625174638/https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
+      "locally_archived": true,
+      "local_path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
+      "sha256": "2fe8f0f94f61832512d7efd68fe07cac4c38ea0fe3295edd845d87a2e465b4ac"
     },
     {
       "source_id": "njogis_road_centerlines_2026_07_26",
@@ -85,6 +110,18 @@
       ]
     },
     {
+      "source_id": "ecfr_twic_1572",
+      "title": "eCFR Title 49, Part 1572 — Credentialing and Security Threat Assessments",
+      "publisher": "Office of the Federal Register / Government Publishing Office",
+      "source_type": "authoritative_but_unofficial_current_ecfr_snapshot_pdf",
+      "current_through": "2026-06-23",
+      "snapshot_date": "2026-06-25",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-D/part-1572",
+      "locally_archived": true,
+      "local_path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
+      "sha256": "0b167e8a4f3feddb0fde2cb931fbb89ee8edbef373d59b7ad1a601a73ba592c7"
+    },
+    {
       "source_id": "ecfr_49_cfr_383_2026_07_29",
       "title": "eCFR Title 49, Part 383",
       "publisher": "Office of the Federal Register / Government Publishing Office",
@@ -131,6 +168,19 @@
       "locally_archived": true,
       "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
       "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+    },
+    {
+      "source_id": "nj_large_truck_map",
+      "title": "2024 NJ Large Truck Map",
+      "publisher": "New Jersey Department of Transportation",
+      "source_type": "official_operational_map",
+      "publication_date": "2024-01-22",
+      "retrieval_date": "2026-06-25",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/largetruckmap.pdf",
+      "locally_archived": true,
+      "local_path": "data/raw/documents/state/nj_large_truck_map_2024.pdf",
+      "sha256": "06a0bf8cda058f9f032f39b8ef4e921a6ab9ac989e1573de55c914aeff5d93ef",
+      "use_limit": "The map states that its route designations pertain to permissible widths only."
     },
     {
       "source_id": "njac_16_32_truck_access_current_2023",
@@ -183,6 +233,30 @@
       "locally_archived": true,
       "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
       "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+    },
+    {
+      "source_id": "panynj_truck_info",
+      "title": "Truck Information",
+      "publisher": "Port Authority of New York and New Jersey",
+      "source_type": "official_webpage_snapshot_pdf",
+      "snapshot_date": "2026-06-25",
+      "url": "https://www.panynj.gov/port/en/shipping/truck.html",
+      "wayback_url": "https://web.archive.org/web/20260625173839/https://www.panynj.gov/port/en/shipping/truck.html#accessPort",
+      "locally_archived": true,
+      "local_path": "data/raw/documents/port_authority/panynj_truck_information_page.pdf",
+      "sha256": "85414ab61578326a507da7384a3bd8810b2afd2fd8e4fefaff5126164996e489"
+    },
+    {
+      "source_id": "porttruckpass_tips",
+      "title": "PortTruckPass",
+      "publisher": "Sustainable Terminal Services, Inc.",
+      "source_type": "official_port_operational_system_webpage_snapshot_pdf",
+      "snapshot_date": "2026-06-25",
+      "url": "https://www.porttruckpass.com/",
+      "wayback_url": "https://web.archive.org/web/20260625174308/https://www.porttruckpass.com/",
+      "locally_archived": true,
+      "local_path": "data/raw/documents/port_authority/porttruckpass_tips_homepage.pdf",
+      "sha256": "791b0491296ebb5fde8cc75b7ee8a8d8a5c9fda73b0e10ee1147ac36299d43c6"
     }
   ]
 }

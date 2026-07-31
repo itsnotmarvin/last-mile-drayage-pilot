@@ -1,6 +1,6 @@
 # Data dictionary
 
-The processed repository represents a coupled property graph with a physical layer, a regulatory layer, and explicit links between them. The static visual reads only the canonical arrays documented below.
+The repository is an evidence base for the scoped inbound drayage movement. The processed files provide a graph-compatible physical layer, regulatory layer, and explicit links between them. The static visual uses selected records from these files; the graph is not the entire evidence collection.
 
 ## Source-text rule
 
@@ -8,7 +8,7 @@ Regulatory `source_text` values are verbatim transcriptions from the cited sourc
 
 ## data/metadata.json
 
-Canonical registry for every `source_id` used by the processed graph.
+Canonical registry for retained source evidence. Some sources support the broader study without producing a node or edge in the static visual.
 
 | Field | Meaning |
 |---|---|
