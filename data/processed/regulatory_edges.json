@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0-regulatory-layer",
+  "description": "Edges within the regulatory layer. These do not assert that a rule governs a physical segment; those links are stored in coupling_edges.json.",
+  "status": "canonical",
+  "edges": [
+    {
+      "edge_id": "regedge_fmcsa_groupa",
+      "from_node": "authority_fmcsa",
+      "relationship": "ISSUES",
+      "to_node": "reg_federal_group_a_cmv",
+      "source_id": "ecfr_49_cfr_383_2026_07_29"
+    },
+    {
+      "edge_id": "regedge_fmcsa_cdl",
+      "from_node": "authority_fmcsa",
+      "relationship": "ISSUES",
+      "to_node": "reg_federal_cdl",
+      "source_id": "ecfr_49_cfr_383_2026_07_29"
+    },
+    {
+      "edge_id": "regedge_groupa_cdl",
+      "from_node": "reg_federal_group_a_cmv",
+      "relationship": "DEFINES_SCOPE_FOR",
+      "to_node": "reg_federal_cdl",
+      "source_id": "ecfr_49_cfr_383_2026_07_29"
+    },
+    {
+      "edge_id": "regedge_cdl_credential",
+      "from_node": "reg_federal_cdl",
+      "relationship": "REQUIRES",
+      "to_node": "credential_cdl",
+      "source_id": "ecfr_49_cfr_383_2026_07_29"
+    },
+    {
+      "edge_id": "regedge_fhwa_weight",
+      "from_node": "authority_fhwa",
+      "relationship": "ISSUES",
+      "to_node": "reg_federal_interstate_weight",
+      "source_id": "ecfr_23_cfr_658_17_2026_07_29"
+    },
+    {
+      "edge_id": "regedge_uscg_twic",
+      "from_node": "authority_uscg",
+      "relationship": "ISSUES",
+      "to_node": "reg_federal_twic",
+      "source_id": "ecfr_33_cfr_101_514_2026_07_29"
+    },
+    {
+      "edge_id": "regedge_twic_credential",
+      "from_node": "reg_federal_twic",
+      "relationship": "REQUIRES",
+      "to_node": "credential_twic",
+      "source_id": "ecfr_33_cfr_101_514_2026_07_29"
+    },
+    {
+      "edge_id": "regedge_njdot_noninterstate_single",
+      "from_node": "authority_njdot",
+      "relationship": "PUBLISHES",
+      "to_node": "reg_nj_noninterstate_single_axle",
+      "source_id": "nj_size_weight_guidebook"
+    },
+    {
+      "edge_id": "regedge_njdot_tandem_gross_bridge",
+      "from_node": "authority_njdot",
+      "relationship": "PUBLISHES",
+      "to_node": "reg_nj_tandem_gross_bridge",
+      "source_id": "nj_size_weight_guidebook"
+    },
+    {
+      "edge_id": "regedge_njdot_local_rule_preservation",
+      "from_node": "authority_njdot",
+      "relationship": "ISSUES",
+      "to_node": "reg_nj_truck_access_local_rule_preservation",
+      "source_id": "njac_16_32_truck_access_current_2023"
+    },
+    {
+      "edge_id": "regedge_njdot_access_network_600_series",
+      "from_node": "authority_njdot",
+      "relationship": "ISSUES",
+      "to_node": "reg_nj_access_network_600_series",
+      "source_id": "njac_16_32_truck_access_current_2023"
+    },
+    {
+      "edge_id": "regedge_njdot_terminal_access",
+      "from_node": "authority_njdot",
+      "relationship": "ISSUES",
+      "to_node": "reg_nj_terminal_access_102_inch_standard_truck",
+      "source_id": "njac_16_32_truck_access_current_2023"
+    },
+    {
+      "edge_id": "regedge_elizabeth_zone",
+      "from_node": "authority_elizabeth_city",
+      "relationship": "ENACTS",
+      "to_node": "reg_elizabeth_north_avenue_east_zone",
+      "source_id": "elizabeth_code_10_16_050_2025_11_11"
+    },
+    {
+      "edge_id": "regedge_panynj_terminal_weight",
+      "from_node": "authority_panynj",
+      "relationship": "ISSUES",
+      "to_node": "reg_panynj_terminal_weight_dimensions",
+      "source_id": "panynj_marine_terminal_tariff"
+    },
+    {
+      "edge_id": "regedge_panynj_terminal_traffic",
+      "from_node": "authority_panynj",
+      "relationship": "ISSUES",
+      "to_node": "reg_panynj_terminal_traffic",
+      "source_id": "panynj_marine_terminal_tariff"
+    },
+    {
+      "edge_id": "regedge_panynj_dtr",
+      "from_node": "authority_panynj",
+      "relationship": "ISSUES",
+      "to_node": "reg_panynj_dtr",
+      "source_id": "panynj_marine_terminal_tariff"
+    },
+    {
+      "edge_id": "regedge_panynj_engine",
+      "from_node": "authority_panynj",
+      "relationship": "ISSUES",
+      "to_node": "reg_panynj_dtr_engine",
+      "source_id": "panynj_marine_terminal_tariff"
+    },
+    {
+      "edge_id": "regedge_dtr_registration",
+      "from_node": "reg_panynj_dtr",
+      "relationship": "REQUIRES",
+      "to_node": "registration_dtr",
+      "source_id": "panynj_marine_terminal_tariff"
+    },
+    {
+      "edge_id": "regedge_engine_dtr",
+      "from_node": "reg_panynj_dtr_engine",
+      "relationship": "CONDITIONS_REGISTRATION_IN",
+      "to_node": "registration_dtr",
+      "source_id": "panynj_marine_terminal_tariff"
+    },
+    {
+      "edge_id": "regedge_panynj_sealink",
+      "from_node": "authority_panynj",
+      "relationship": "PUBLISHES",
+      "to_node": "reg_panynj_sealink_twic",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_sealink_credential",
+      "from_node": "reg_panynj_sealink_twic",
+      "relationship": "REQUIRES",
+      "to_node": "credential_sealink",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_sealink_twic",
+      "from_node": "reg_panynj_sealink_twic",
+      "relationship": "REQUIRES",
+      "to_node": "credential_twic",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_panynj_rfid",
+      "from_node": "authority_panynj",
+      "relationship": "PUBLISHES",
+      "to_node": "reg_panynj_rfid",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_rfid_credential",
+      "from_node": "reg_panynj_rfid",
+      "relationship": "REQUIRES",
+      "to_node": "credential_rfid",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_rfid_dtr",
+      "from_node": "reg_panynj_rfid",
+      "relationship": "REQUIRES",
+      "to_node": "registration_dtr",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_apm_appointment",
+      "from_node": "operator_apm_terminals",
+      "relationship": "PUBLISHES",
+      "to_node": "reg_apm_appointment",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_appointment_termpoint",
+      "from_node": "reg_apm_appointment",
+      "relationship": "USES",
+      "to_node": "system_termpoint",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_apm_safety",
+      "from_node": "operator_apm_terminals",
+      "relationship": "PUBLISHES",
+      "to_node": "reg_apm_safety_induction",
+      "source_id": "panynj_truckers_guide"
+    },
+    {
+      "edge_id": "regedge_safety_training",
+      "from_node": "reg_apm_safety_induction",
+      "relationship": "REQUIRES",
+      "to_node": "training_apm_safety_induction",
+      "source_id": "panynj_truckers_guide"
+    }
+  ],
+  "edge_count": 29
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0-verified-entities",
+  "description": "Entities referenced by the verified physical and regulatory layers.",
+  "status": "canonical",
+  "entity_policy": "Names are official source labels or neutral identifiers; no unsourced definitions are included.",
+  "entities": [
+    {
+      "entity_id": "authority_fmcsa",
+      "name": "Federal Motor Carrier Safety Administration",
+      "entity_type": "authority",
+      "source_ids": [
+        "ecfr_49_cfr_383_2026_07_29"
+      ]
+    },
+    {
+      "entity_id": "authority_fhwa",
+      "name": "Federal Highway Administration",
+      "entity_type": "authority",
+      "source_ids": [
+        "ecfr_23_cfr_658_17_2026_07_29"
+      ]
+    },
+    {
+      "entity_id": "authority_uscg",
+      "name": "United States Coast Guard",
+      "entity_type": "authority",
+      "source_ids": [
+        "ecfr_33_cfr_101_514_2026_07_29"
+      ]
+    },
+    {
+      "entity_id": "authority_njdot",
+      "name": "New Jersey Department of Transportation",
+      "entity_type": "authority",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njac_16_32_truck_access_current_2023",
+        "njogis_road_centerlines_2026_07_26"
+      ]
+    },
+    {
+      "entity_id": "authority_elizabeth_city",
+      "name": "City of Elizabeth",
+      "entity_type": "authority",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11"
+      ]
+    },
+    {
+      "entity_id": "authority_panynj",
+      "name": "Port Authority of New York and New Jersey",
+      "entity_type": "authority",
+      "source_ids": [
+        "panynj_marine_terminal_tariff",
+        "panynj_truckers_guide"
+      ]
+    },
+    {
+      "entity_id": "operator_apm_terminals",
+      "name": "APM Terminals",
+      "entity_type": "terminal_operator",
+      "source_ids": [
+        "panynj_truckers_guide",
+        "apm_directions"
+      ]
+    },
+    {
+      "entity_id": "jurisdiction_new_jersey",
+      "name": "State of New Jersey",
+      "entity_type": "jurisdiction",
+      "source_ids": [
+        "njogis_municipal_boundaries_2026_07_26",
+        "njogis_county_boundaries_2026_07_26"
+      ]
+    },
+    {
+      "entity_id": "jurisdiction_union_county",
+      "name": "Union County",
+      "entity_type": "jurisdiction",
+      "source_ids": [
+        "njogis_county_boundaries_2026_07_26"
+      ]
+    },
+    {
+      "entity_id": "jurisdiction_elizabeth",
+      "name": "City of Elizabeth",
+      "entity_type": "jurisdiction",
+      "source_ids": [
+        "njogis_municipal_boundaries_2026_07_26"
+      ]
+    },
+    {
+      "entity_id": "jurisdiction_panynj_terminal",
+      "name": "Port Authority Marine Terminal",
+      "entity_type": "facility_jurisdiction",
+      "source_ids": [
+        "panynj_marine_terminal_tariff"
+      ]
+    },
+    {
+      "entity_id": "facility_apm_elizabeth",
+      "name": "APM Terminals Elizabeth",
+      "entity_type": "terminal",
+      "source_ids": [
+        "apm_directions",
+        "panynj_truckers_guide"
+      ]
+    },
+    {
+      "entity_id": "road_authority_category_highway_authority",
+      "name": "Highway Authority",
+      "entity_type": "njogis_jurisdiction_domain_value",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "source_value": "JURISDICTN=HA"
+    },
+    {
+      "entity_id": "road_authority_category_state",
+      "name": "State",
+      "entity_type": "njogis_jurisdiction_domain_value",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "source_value": "JURISDICTN=S"
+    },
+    {
+      "entity_id": "road_authority_category_county",
+      "name": "County",
+      "entity_type": "njogis_jurisdiction_domain_value",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "source_value": "JURISDICTN=C"
+    },
+    {
+      "entity_id": "road_authority_category_municipal",
+      "name": "Municipal",
+      "entity_type": "njogis_jurisdiction_domain_value",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "source_value": "JURISDICTN=M"
+    },
+    {
+      "entity_id": "credential_cdl",
+      "name": "Commercial driver's license (CDL)",
+      "entity_type": "credential",
+      "source_ids": [
+        "ecfr_49_cfr_383_2026_07_29"
+      ]
+    },
+    {
+      "entity_id": "credential_twic",
+      "name": "TWIC",
+      "entity_type": "credential",
+      "source_ids": [
+        "ecfr_33_cfr_101_514_2026_07_29",
+        "panynj_truckers_guide"
+      ]
+    },
+    {
+      "entity_id": "credential_sealink",
+      "name": "SeaLink®",
+      "entity_type": "credential",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ]
+    },
+    {
+      "entity_id": "credential_rfid",
+      "name": "Radio-Frequency Identification (RFID)",
+      "entity_type": "credential",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ]
+    },
+    {
+      "entity_id": "registration_dtr",
+      "name": "Drayage Truck Registry (DTR)",
+      "entity_type": "registration",
+      "source_ids": [
+        "panynj_marine_terminal_tariff",
+        "panynj_truckers_guide"
+      ]
+    },
+    {
+      "entity_id": "system_termpoint",
+      "name": "TERMPoint",
+      "entity_type": "operational_system",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ]
+    },
+    {
+      "entity_id": "training_apm_safety_induction",
+      "name": "MANDATORY online safety induction video/quiz",
+      "entity_type": "training",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ]
+    }
+  ],
+  "entity_count": 23
+}

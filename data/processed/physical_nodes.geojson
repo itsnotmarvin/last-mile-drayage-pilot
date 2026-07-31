@@ -1,1752 +1,45 @@
 {
   "type": "FeatureCollection",
-  "name": "physical_nodes",
-  "metadata": {
-    "status": "working_draft",
-    "created_utc": "2026-06-26T08:26:05Z",
-    "description": "Physical route nodes for 2 candidate APM Elizabeth access paths. Includes OSM-derived road segment endpoints and candidate path anchor nodes.",
-    "scope": "APM Terminals Elizabeth candidate access network"
-  },
+  "name": "APM Terminals Elizabeth",
+  "schema_version": "1.0-verified-route-nodes",
+  "status": "canonical_verified_physical_graph",
+  "coordinate_crs": "EPSG:4326",
+  "feature_count": 7,
+  "source_ids": [
+    "apm_directions",
+    "njogis_road_centerlines_2026_07_26",
+    "google_maps_route_observation_2026_07_31"
+  ],
   "features": [
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.1883438,
-          40.6743933
+          -74.1775120831099,
+          40.6708416045937
         ]
       },
       "properties": {
-        "node_id": "node_001",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_001",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1887064,
-          40.6745464
-        ]
-      },
-      "properties": {
-        "node_id": "node_002",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_001",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1806659,
-          40.6708428
-        ]
-      },
-      "properties": {
-        "node_id": "node_003",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_002",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1809506,
-          40.6709481
-        ]
-      },
-      "properties": {
-        "node_id": "node_004",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_002",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1660491,
-          40.6652067
-        ]
-      },
-      "properties": {
-        "node_id": "node_005",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_003",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1665435,
-          40.6651727
-        ]
-      },
-      "properties": {
-        "node_id": "node_006",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_003",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1920977,
-          40.6753615
-        ]
-      },
-      "properties": {
-        "node_id": "node_007",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_004",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1912366,
-          40.6750142
-        ]
-      },
-      "properties": {
-        "node_id": "node_008",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_004",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1627427,
-          40.6706209
-        ]
-      },
-      "properties": {
-        "node_id": "node_009",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_005",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1646978,
-          40.6677123
-        ]
-      },
-      "properties": {
-        "node_id": "node_010",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_005",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.182133,
-          40.6712066
-        ]
-      },
-      "properties": {
-        "node_id": "node_011",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_006",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.181394,
-          40.6709424
-        ]
-      },
-      "properties": {
-        "node_id": "node_012",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_006",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1769623,
-          40.6694474
-        ]
-      },
-      "properties": {
-        "node_id": "node_013",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_007",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1785609,
-          40.6700862
-        ]
-      },
-      "properties": {
-        "node_id": "node_014",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_007",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1801726,
-          40.6706676
-        ]
-      },
-      "properties": {
-        "node_id": "node_015",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_008",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1786881,
-          40.6699696
-        ]
-      },
-      "properties": {
-        "node_id": "node_016",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_009",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1771017,
-          40.6693313
-        ]
-      },
-      "properties": {
-        "node_id": "node_017",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_009",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1763109,
-          40.6690143
-        ]
-      },
-      "properties": {
-        "node_id": "node_018",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_010",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1928748,
-          40.6756805
-        ]
-      },
-      "properties": {
-        "node_id": "node_019",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_011",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1960936,
-          40.6769743
-        ]
-      },
-      "properties": {
-        "node_id": "node_020",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_011",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1859357,
-          40.672001
-        ]
-      },
-      "properties": {
-        "node_id": "node_021",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_012",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.184579,
-          40.6715799
-        ]
-      },
-      "properties": {
-        "node_id": "node_022",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_012",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1829477,
-          40.6714305
-        ]
-      },
-      "properties": {
-        "node_id": "node_023",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_013",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1873687,
-          40.6740377
-        ]
-      },
-      "properties": {
-        "node_id": "node_024",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_014",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1753534,
-          40.6688018
-        ]
-      },
-      "properties": {
-        "node_id": "node_025",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_015",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1762752,
-          40.669171
-        ]
-      },
-      "properties": {
-        "node_id": "node_026",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_015",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1755047,
-          40.6686891
-        ]
-      },
-      "properties": {
-        "node_id": "node_027",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_017",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1739681,
-          40.6680661
-        ]
-      },
-      "properties": {
-        "node_id": "node_028",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_017",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.190499,
-          40.6747213
-        ]
-      },
-      "properties": {
-        "node_id": "node_029",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_019",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1917058,
-          40.6760886
-        ]
-      },
-      "properties": {
-        "node_id": "node_030",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_020",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1928748,
-          40.6756805
-        ]
-      },
-      "properties": {
-        "node_id": "node_031",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_020",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1803908,
-          40.670587
-        ]
-      },
-      "properties": {
-        "node_id": "node_032",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_021",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1904888,
-          40.676045
-        ]
-      },
-      "properties": {
-        "node_id": "node_033",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_022",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1875895,
-          40.6735203
-        ]
-      },
-      "properties": {
-        "node_id": "node_034",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_023",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1817367,
-          40.6712468
-        ]
-      },
-      "properties": {
-        "node_id": "node_035",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_024",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1856139,
-          40.6728375
-        ]
-      },
-      "properties": {
-        "node_id": "node_036",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_024",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1659707,
-          40.6650369
-        ]
-      },
-      "properties": {
-        "node_id": "node_037",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_025",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1648292,
-          40.66658
-        ]
-      },
-      "properties": {
-        "node_id": "node_038",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_025",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1716161,
-          40.667115
-        ]
-      },
-      "properties": {
-        "node_id": "node_039",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_026",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1725448,
-          40.6674881
-        ]
-      },
-      "properties": {
-        "node_id": "node_040",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_026",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1593243,
-          40.6753348
-        ]
-      },
-      "properties": {
-        "node_id": "node_041",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_027",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1578818,
-          40.6771096
-        ]
-      },
-      "properties": {
-        "node_id": "node_042",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_027",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1601678,
-          40.6741861
-        ]
-      },
-      "properties": {
-        "node_id": "node_043",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "Tripoli Street",
-        "source_edge_id": "osm_edge_028",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1572953,
-          40.6730406
-        ]
-      },
-      "properties": {
-        "node_id": "node_044",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "Tripoli Street",
-        "source_edge_id": "osm_edge_028",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1678638,
-          40.6654654
-        ]
-      },
-      "properties": {
-        "node_id": "node_045",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_029",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1665632,
-          40.6649696
-        ]
-      },
-      "properties": {
-        "node_id": "node_046",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_029",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.168201,
-          40.6657191
-        ]
-      },
-      "properties": {
-        "node_id": "node_047",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_030",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1682623,
-          40.6657636
-        ]
-      },
-      "properties": {
-        "node_id": "node_048",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_030",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1963599,
-          40.6770804
-        ]
-      },
-      "properties": {
-        "node_id": "node_049",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_032",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1971827,
-          40.67741
-        ]
-      },
-      "properties": {
-        "node_id": "node_050",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_032",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1872962,
-          40.6733388
-        ]
-      },
-      "properties": {
-        "node_id": "node_051",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_033",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1863735,
-          40.6724184
-        ]
-      },
-      "properties": {
-        "node_id": "node_052",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_033",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1972998,
-          40.677458
-        ]
-      },
-      "properties": {
-        "node_id": "node_053",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_034",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1974255,
-          40.6775112
-        ]
-      },
-      "properties": {
-        "node_id": "node_054",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_034",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1807479,
-          40.6707132
-        ]
-      },
-      "properties": {
-        "node_id": "node_055",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_036",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1996827,
-          40.6784622
-        ]
-      },
-      "properties": {
-        "node_id": "node_056",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_040",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1875895,
-          40.6735203
-        ]
-      },
-      "properties": {
-        "node_id": "node_057",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_041",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1872962,
-          40.6733388
-        ]
-      },
-      "properties": {
-        "node_id": "node_058",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_041",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1660491,
-          40.6652067
-        ]
-      },
-      "properties": {
-        "node_id": "node_059",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_043",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.164542,
-          40.6676655
-        ]
-      },
-      "properties": {
-        "node_id": "node_060",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_044",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1625854,
-          40.6705624
-        ]
-      },
-      "properties": {
-        "node_id": "node_061",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_044",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.2031337,
-          40.6799171
-        ]
-      },
-      "properties": {
-        "node_id": "node_062",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_045",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1659707,
-          40.6650369
-        ]
-      },
-      "properties": {
-        "node_id": "node_063",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_047",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1706477,
-          40.666728
-        ]
-      },
-      "properties": {
-        "node_id": "node_064",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_048",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1921931,
-          40.6754
-        ]
-      },
-      "properties": {
-        "node_id": "node_065",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_049",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1921931,
-          40.6754
-        ]
-      },
-      "properties": {
-        "node_id": "node_066",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_050",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1829477,
-          40.6714305
-        ]
-      },
-      "properties": {
-        "node_id": "node_067",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_052",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.182133,
-          40.6712066
-        ]
-      },
-      "properties": {
-        "node_id": "node_068",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_052",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.2054124,
-          40.6808902
-        ]
-      },
-      "properties": {
-        "node_id": "node_069",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue",
-        "source_edge_id": "osm_edge_053",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1602392,
-          40.6740902
-        ]
-      },
-      "properties": {
-        "node_id": "node_070",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_055",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.160447,
-          40.6739463
-        ]
-      },
-      "properties": {
-        "node_id": "node_071",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_055",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1550864,
-          40.6721649
-        ]
-      },
-      "properties": {
-        "node_id": "node_072",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "Tripoli Street",
-        "source_edge_id": "osm_edge_057",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1613071,
-          40.6723953
-        ]
-      },
-      "properties": {
-        "node_id": "node_073",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_059",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1609127,
-          40.6729691
-        ]
-      },
-      "properties": {
-        "node_id": "node_074",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_059",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1647336,
-          40.6670404
-        ]
-      },
-      "properties": {
-        "node_id": "node_075",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_060",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1596539,
-          40.6748623
-        ]
-      },
-      "properties": {
-        "node_id": "node_076",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_062",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1689544,
-          40.6660435
-        ]
-      },
-      "properties": {
-        "node_id": "node_077",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_064",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1694168,
-          40.6662306
-        ]
-      },
-      "properties": {
-        "node_id": "node_078",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_065",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1699448,
-          40.6664453
-        ]
-      },
-      "properties": {
-        "node_id": "node_079",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_066",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1734186,
-          40.667839
-        ]
-      },
-      "properties": {
-        "node_id": "node_080",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "North Avenue East",
-        "source_edge_id": "osm_edge_068",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1610803,
-          40.6730306
-        ]
-      },
-      "properties": {
-        "node_id": "node_081",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_070",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.1623637,
-          40.6708807
-        ]
-      },
-      "properties": {
-        "node_id": "node_082",
-        "node_type": "osm_road_segment_endpoint",
-        "road_name": "McLester Street",
-        "source_edge_id": "osm_edge_071",
-        "source": "derived_from_OSM_APM_roads_lines_export",
-        "candidate_paths": [
-          "path_a_exit13a_to_apm",
-          "path_b_us1_9_to_apm"
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -74.18378498442388,
-          40.66951666702238
-        ]
-      },
-      "properties": {
-        "node_id": "anchor_path_a_exit13a_north_ave_access",
-        "node_type": "candidate_path_access_anchor",
-        "name": "Path A access anchor: NJ Turnpike/I-95 Exit 13A to North Ave approach",
-        "source": "user-confirmed study sketch coordinate; used as candidate path anchor",
-        "candidate_paths": [
+        "node_id": "node_path_a_turnpike_sb_exit13a",
+        "node_type": "route_access_node",
+        "name": "FR NJ TURNPIKE SB TO NJ 81 NB",
+        "path_ids": [
           "path_a_exit13a_to_apm"
-        ]
+        ],
+        "incident_edge_ids": [
+          "edge_a_exit13a_connector"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          354508,
+          40708
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
       }
     },
     {
@@ -1754,18 +47,30 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.19165899592572,
-          40.67608498025092
+          -74.1941020913149,
+          40.6799845147686
         ]
       },
       "properties": {
-        "node_id": "anchor_path_b_us1_9_north_ave_access",
-        "node_type": "candidate_path_access_anchor",
-        "name": "Path B access anchor: US 1&9 / North Ave approach",
-        "source": "user-confirmed study sketch coordinate; used as candidate path anchor",
-        "candidate_paths": [
+        "node_id": "node_path_b_us1_south_access",
+        "node_type": "route_access_node",
+        "name": "US Highway 1 Express",
+        "path_ids": [
           "path_b_us1_9_to_apm"
-        ]
+        ],
+        "incident_edge_ids": [
+          "edge_b_us1_south"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          313407,
+          301684
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
       }
     },
     {
@@ -1773,19 +78,66 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.1572551732934,
-          40.67302736599623
+          -74.197175870654,
+          40.6774213279391
         ]
       },
       "properties": {
-        "node_id": "anchor_mclester_tripoli_terminal_side",
-        "node_type": "terminal_side_route_anchor",
-        "name": "McLester / Tripoli terminal-side access reference",
-        "source": "user-confirmed study sketch coordinate and APM directions context",
-        "candidate_paths": [
+        "node_id": "node_path_b_north_avenue_entry",
+        "node_type": "route_turn_node",
+        "name": "US Highway 1 Express / North Avenue East",
+        "path_ids": [
+          "path_b_us1_9_to_apm"
+        ],
+        "incident_edge_ids": [
+          "edge_b_us1_south",
+          "edge_b_north_avenue_to_merge"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          301684,
+          21853
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1785517799026,
+          40.6699210980933
+        ]
+      },
+      "properties": {
+        "node_id": "node_paths_merge_north_avenue",
+        "node_type": "path_merge_node",
+        "name": "North Avenue East / North Avenue",
+        "path_ids": [
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
-        ]
+        ],
+        "incident_edge_ids": [
+          "edge_a_exit13a_connector",
+          "edge_b_north_avenue_to_merge",
+          "edge_shared_north_avenue"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          248025,
+          350133,
+          375671
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
       }
     },
     {
@@ -1793,19 +145,102 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -74.163434,
-          40.667474
+          -74.166443767583,
+          40.6652301701734
         ]
       },
       "properties": {
-        "node_id": "anchor_apm_terminal_access",
-        "node_type": "terminal_access_anchor",
-        "name": "APM Terminals Elizabeth access/gate area anchor",
-        "source": "user-confirmed terminal access coordinate; used as candidate path endpoint anchor",
-        "candidate_paths": [
+        "node_id": "node_north_avenue_mclester",
+        "node_type": "road_intersection",
+        "name": "North Avenue East / McLester Street",
+        "path_ids": [
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
+        ],
+        "incident_edge_ids": [
+          "edge_shared_north_avenue",
+          "edge_shared_mclester"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          144184,
+          433606
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.160114111665,
+          40.674167142869
         ]
+      },
+      "properties": {
+        "node_id": "node_mclester_tripoli",
+        "node_type": "road_intersection",
+        "name": "McLester Street / Tripoli Street",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "incident_edge_ids": [
+          "edge_shared_mclester",
+          "edge_shared_tripoli_gate"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          320648,
+          374024
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1583229,
+          40.6734498
+        ]
+      },
+      "properties": {
+        "node_id": "node_apm_inbound_gate",
+        "node_type": "terminal_gate_node",
+        "name": "APM Terminals Elizabeth",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "incident_edge_ids": [
+          "edge_shared_tripoli_gate"
+        ],
+        "terminal_entity_id": "facility_apm_elizabeth",
+        "operator_entity_id": "operator_apm_terminals",
+        "source_ids": [
+          "apm_directions",
+          "google_maps_route_observation_2026_07_31"
+        ],
+        "coordinate_method": "google_maps_route_step_coordinate_observation",
+        "observation_date": "2026-07-31",
+        "observed_route_step_text": [
+          "Turn right",
+          "Continue onto Tripoli St",
+          "Destination will be on the right"
+        ],
+        "observation_url": "https://www.google.com/maps/@40.6734498,-74.1583229,3a,75y,107.83h,90t/data=!3m4!1e1!3m2!1s9gAJHVMjoN_Uk4hVTOP76A!2e0",
+        "source_trace_complete": true
       }
     }
   ]

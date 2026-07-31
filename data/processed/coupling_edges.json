@@ -1,0 +1,482 @@
+{
+  "schema_version": "1.0-rule-to-physical",
+  "description": "Verified links between physical edges or gate nodes and regulatory rules, jurisdictions, or raw NJOGIS jurisdiction categories.",
+  "status": "canonical",
+  "vehicle_profile_id": "scoped_80000lb_5axle_nonhaz_inbound_apm",
+  "path_ids": [
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+  ],
+  "edges": [
+    {
+      "edge_id": "couple_a_category",
+      "from_node": "edge_a_exit13a_connector",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_highway_authority",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_b_us1_category",
+      "from_node": "edge_b_us1_south",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_state",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_b_north_category",
+      "from_node": "edge_b_north_avenue_to_merge",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_county",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_shared_north_category",
+      "from_node": "edge_shared_north_avenue",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_county",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_mclester_category",
+      "from_node": "edge_shared_mclester",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_municipal",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_tripoli_category",
+      "from_node": "edge_shared_tripoli_gate",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_municipal",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_elizabeth_zone",
+      "from_node": "reg_elizabeth_north_avenue_east_zone",
+      "relationship": "OVERLAPS_PART_OF",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_geographic_overlap_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_cmv_profile",
+      "from_node": "reg_federal_group_a_cmv",
+      "relationship": "CLASSIFIES",
+      "to_node": "scoped_80000lb_5axle_nonhaz_inbound_apm",
+      "source_ids": [
+        "ecfr_49_cfr_383_2026_07_29"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_cdl_profile",
+      "from_node": "reg_federal_cdl",
+      "relationship": "APPLIES_TO",
+      "to_node": "scoped_80000lb_5axle_nonhaz_inbound_apm",
+      "source_ids": [
+        "ecfr_49_cfr_383_2026_07_29"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_twic_gate",
+      "from_node": "reg_federal_twic",
+      "relationship": "GOVERNS_UNESCORTED_SECURE_ACCESS_AT",
+      "to_node": "node_apm_inbound_gate",
+      "source_ids": [
+        "ecfr_33_cfr_101_514_2026_07_29",
+        "panynj_truckers_guide"
+      ],
+      "applicability_status": "confirmed_applicable_to_unescorted_secure_access",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_terminal_weight_gate",
+      "from_node": "reg_panynj_terminal_weight_dimensions",
+      "relationship": "GOVERNS_PORT_ENTRY_MOVEMENT_AT",
+      "to_node": "node_apm_inbound_gate",
+      "source_ids": [
+        "panynj_marine_terminal_tariff"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_terminal_traffic_gate",
+      "from_node": "reg_panynj_terminal_traffic",
+      "relationship": "GOVERNS_PORT_ENTRY_MOVEMENT_AT",
+      "to_node": "node_apm_inbound_gate",
+      "source_ids": [
+        "panynj_marine_terminal_tariff"
+      ],
+      "applicability_status": "confirmed_applicable_on_marine_terminal_highways",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_dtr_profile",
+      "from_node": "reg_panynj_dtr",
+      "relationship": "APPLIES_TO",
+      "to_node": "scoped_80000lb_5axle_nonhaz_inbound_apm",
+      "source_ids": [
+        "panynj_marine_terminal_tariff"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_dtr_gate",
+      "from_node": "reg_panynj_dtr",
+      "relationship": "GOVERNS_ENTRY_AT",
+      "to_node": "node_apm_inbound_gate",
+      "source_ids": [
+        "panynj_marine_terminal_tariff"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_sealink_gate",
+      "from_node": "reg_panynj_sealink_twic",
+      "relationship": "GOVERNS_ENTRY_AT",
+      "to_node": "node_apm_inbound_gate",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_rfid_profile",
+      "from_node": "reg_panynj_rfid",
+      "relationship": "APPLIES_TO",
+      "to_node": "scoped_80000lb_5axle_nonhaz_inbound_apm",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_rfid_gate",
+      "from_node": "reg_panynj_rfid",
+      "relationship": "GOVERNS_ENTRY_AT",
+      "to_node": "node_apm_inbound_gate",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_apm_appointment_gate",
+      "from_node": "reg_apm_appointment",
+      "relationship": "GOVERNS_GATE_MOVE_AT",
+      "to_node": "node_apm_inbound_gate",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_apm_safety_gate",
+      "from_node": "reg_apm_safety_induction",
+      "relationship": "GOVERNS_ACCESS_AT",
+      "to_node": "node_apm_inbound_gate",
+      "source_ids": [
+        "panynj_truckers_guide"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_a_exit13a_connector_elizabeth",
+      "from_node": "edge_a_exit13a_connector",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_municipal_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_a_exit13a_connector_union",
+      "from_node": "edge_a_exit13a_connector",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_county_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_a_exit13a_connector",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_exit13a_connector",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_b_us1_south_elizabeth",
+      "from_node": "edge_b_us1_south",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_municipal_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_b_us1_south_union",
+      "from_node": "edge_b_us1_south",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_county_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_b_us1_south",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_us1_south",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_b_north_avenue_to_merge_elizabeth",
+      "from_node": "edge_b_north_avenue_to_merge",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_municipal_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_b_north_avenue_to_merge_union",
+      "from_node": "edge_b_north_avenue_to_merge",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_county_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_b_north_avenue_to_merge",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_north_avenue_to_merge",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_shared_north_avenue_elizabeth",
+      "from_node": "edge_shared_north_avenue",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_municipal_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_shared_north_avenue_union",
+      "from_node": "edge_shared_north_avenue",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_county_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_shared_north_avenue",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_shared_mclester_elizabeth",
+      "from_node": "edge_shared_mclester",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_municipal_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_shared_mclester_union",
+      "from_node": "edge_shared_mclester",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_county_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_shared_mclester",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_mclester",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_shared_tripoli_gate_elizabeth",
+      "from_node": "edge_shared_tripoli_gate",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_municipal_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_shared_tripoli_gate_union",
+      "from_node": "edge_shared_tripoli_gate",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "njogis_county_boundaries_2026_07_26"
+      ],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_shared_tripoli_gate",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_tripoli_gate",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_b_us1_south",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_us1_south",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_b_north_avenue_to_merge",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_north_avenue_to_merge",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_shared_north_avenue",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_shared_mclester",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_mclester",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_shared_tripoli_gate",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_tripoli_gate",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    }
+  ],
+  "edge_count": 42
+}

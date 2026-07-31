@@ -1,83 +1,88 @@
+# Data dictionary
 
+The processed repository represents a coupled property graph with a physical layer, a regulatory layer, and explicit links between them. The static visual reads only the canonical arrays documented below.
 
----
+## Source-text rule
 
-## regulatory_nodes.json
+Regulatory `source_text` values are verbatim transcriptions from the cited source and locator. Applicability and compliance are stored in separate fields. A missing credential, vehicle fact, or observation is not converted into a claim.
 
-Purpose: Stores extracted state, Port Authority/APM, and federal rules that may affect whether a truck can legally or operationally use a last-mile segment.
+## data/metadata.json
 
-Location: data/processed/regulatory_nodes.json
+Canonical registry for every `source_id` used by the processed graph.
 
-Top-level fields:
+| Field | Meaning |
+|---|---|
+| source_id | Stable source key referenced by processed records. |
+| title | Official or publisher-displayed title. |
+| publisher | Issuing body or service. |
+| source_type | Official, operational, GIS, code, or third-party observation class. |
+| publication/effective/current/access date | Date supplied by the source or date of access. |
+| url | Source page or service. |
+| locally_archived | Whether the source is held in `data/raw/`. |
+| local_path | Archived file path, or null. |
+| sha256 | Hash of the archived file, or null. |
 
-| Field | Type | Description |
-|---|---|---|
-| schema_version | string | Version of the clause-consolidated schema. |
-| description | string | Plain-English description of the file. |
-| status | string | Evidence and analytical status. |
-| scope | object | Geographic scope, node grain, and consolidation policies. |
-| source_registry | array | One copy of source metadata and the source URL for each logical source. |
-| source_count | integer | Number of logical sources in `source_registry`. |
-| unique_source_url_count | integer | Number of distinct non-empty source URLs. |
-| rules | array | Clause-level regulatory nodes. |
-| rule_count | integer | Number of clause-level regulatory nodes. |
-| nested_requirement_count | integer | Number of retained atomic requirements across all nodes. |
-| requirement_to_rule_index | object | Maps a nested legacy requirement ID to its clause-level `rule_id`. |
-| consolidation_summary | object | Before/after counts for the clause-level consolidation. |
+## data/processed/physical_nodes.geojson
 
-Rule fields:
+Seven canonical route nodes: the two route starts, the Route 1 & 9/North Avenue turn, the shared merge, two shared intersections, and the observed APM entrance coordinate.
 
-| Field | Type | Required | Description |
-|---|---|---|---|
-| rule_id | string | yes | Stable ID for the clause-level rule. |
-| rule_name | string | yes | Short readable name for the rule. |
-| definition | string | yes | Source-grounded definition assembled from the retained proposition(s). |
-| source_id | string | yes | Foreign key into `source_registry`; source URLs are not repeated on rules. |
-| source_sections | array | yes | Section, page, heading, table, or page area supporting the rule. |
-| requirement_count | integer | yes | Number of atomic requirements represented by this node. |
-| requirement_ids | array | yes | IDs of the retained atomic requirements. |
+Each feature contains `node_id`, `node_type`, `name`, `path_ids`, `incident_edge_ids`, source references, and the coordinate method.
 
----
+## data/processed/physical_edges.json
 
-## vehicle_profiles.json
+Six ordered, directed roadway corridors.
 
-Purpose: Stores representative drayage truck profiles used later to test which route segments a given truck can legally or operationally use.
+| Field | Meaning |
+|---|---|
+| paths | Paths A and B with ordered edge IDs and verbatim APM directions. |
+| edges | Canonical roadway corridors. |
+| from_node / to_node | Directed physical topology. |
+| official_feature_ids | NJOGIS road-centerline features used by the corridor. |
+| official_oneway_raw | Unchanged NJOGIS `ONEWAY` values. |
+| jurisdiction_code_raw | Unchanged NJOGIS `JURISDICTN` value. |
+| geometry_reference | Archived source path, endpoints, and topology method. |
+| sequence_source_id | APM source supporting street order. |
 
-Location: data/processed/vehicle_profiles.json
+`FT` means travel from the source feature start node to end node, `B` means travel in both directions, and `TF` means travel from end node to start node, exactly as decoded by the NJOGIS layer schema.
 
-Top-level fields:
+## data/processed/vehicle_profiles.json
 
-| Field | Type | Description |
-|---|---|---|
-| schema_version | string | Version of this draft schema. |
-| description | string | Plain-English description of the file. |
-| status | string | Draft/final status. |
-| profiles | array | List of representative vehicle profiles. |
+Contains one project-supplied profile: an inbound, nonhazardous, standard five-axle tractor-semitrailer at 80,000 pounds traveling to APM Terminals Elizabeth. Only supplied facts and their confirmed classifications are stored.
 
-Profile fields:
+## data/processed/entity_nodes.json
 
-| Field | Type | Required | Description |
-|---|---|---|---|
-| profile_id | string | yes | Unique profile ID, such as standard_5_axle_drayage_truck. |
-| profile_name | string | yes | Human-readable vehicle profile name. |
-| description | string | yes | Plain-English description of the truck type. |
-| weight_lbs | number or string | yes | Approximate gross vehicle weight or unknown/pending_source. |
-| axles | number or string | yes | Number of axles if known. |
-| engine_model_year | number or string | yes | Engine model year or category if relevant. |
-| dimensions | object | yes | Length, width, height if available or unknown. |
-| permit_status | string | yes | Whether OS/OW permit is required, not required, or pending. |
-| credential_status | object | yes | TWIC, RFID, SeaLink, appointment, or other credential assumptions. |
-| rule_property_keys | array | yes | Properties that link this profile to extracted rules. |
-| notes | string | no | Any uncertainty or source notes. |
+Contains authorities, jurisdictions, the terminal, credentials, registration, operating systems, training, and the four exact NJOGIS jurisdiction-domain values referenced by graph edges.
 
-### vehicle_profiles.json verification fields
+## data/processed/regulatory_nodes.json
 
-| Field | Type | Required | Description |
-|---|---|---|---|
-| verification_status | string | yes | Explains whether the profile is source-backed, assumed, or pending more evidence. |
-| source_evidence | array | yes | List of source-backed evidence for each important profile property. |
-| source_evidence.property | string | yes | The profile property being verified, such as weight_lbs, axles, engine_model_year, twic, rfid, or permit_status. |
-| source_evidence.value | string/number/object | yes | The value used in the profile. |
-| source_evidence.source_doc | string | yes | Source document supporting the value. |
-| source_evidence.source_section | string | yes | Page, section, heading, or table supporting the value. |
-| source_evidence.rule_ids | array | no | Related rule IDs from regulatory_nodes.json. |
+Contains the verified source-text clauses used in the graph.
+
+| Field | Meaning |
+|---|---|
+| rule_id | Stable rule node key. |
+| label | Source section heading or citation. |
+| authority_entity_id | Issuing authority node. |
+| source_id / source_locator | Exact trace to the source registry and source location. |
+| source_text | Verbatim official text or table value. |
+| applicability_status | Separate classification for the scoped movement. |
+| matching_scope_facts | Project facts used for that classification. |
+| compliance_status | `not_a_compliance_claim`; the graph records requirements and does not assert that a particular driver or vehicle satisfies them. |
+| graph_eligibility | Whether the node may appear in the verified visual. |
+
+## data/processed/regulatory_edges.json
+
+Relationships within the regulatory layer, including authority-to-rule, rule-to-credential, and rule-to-operational-system edges. These edges do not assign rules to roads.
+
+## data/processed/coupling_edges.json
+
+Links rules and jurisdictions to physical corridors, the observed APM entrance node, or the scoped vehicle.
+
+| Relationship | Meaning |
+|---|---|
+| GOVERNS | The cited rule applies to the linked roadway corridor. |
+| GOVERNS_ENTRY_AT / GOVERNS_GATE_MOVE_AT / GOVERNS_ACCESS_AT | The cited requirement applies at the linked entrance node. |
+| APPLIES_TO / CLASSIFIES | The rule applies to or classifies the scoped vehicle profile. |
+| HAS_NJOGIS_JURISDICTION_CATEGORY | Direct mapping from the edge's raw `JURISDICTN` code. |
+| LOCATED_WITHIN | Mechanical all-vertices-in-polygon result using the archived official boundary. |
+| OVERLAPS_PART_OF | The exact local code location overlaps only part of the coarser corridor edge. |
+Every coupling edge lists its supporting source IDs and source-supported applicability status. Compliance is not inferred.
