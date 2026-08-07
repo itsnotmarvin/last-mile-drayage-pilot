@@ -115,6 +115,9 @@
       "source_locator": "49 CFR 383.5, definition of Commercial motor vehicle (CMV), paragraph (1)",
       "source_text": "Commercial motor vehicle (CMV) means a motor vehicle or combination of motor vehicles used in commerce to transport passengers or property if the motor vehicle is a— (1) Combination Vehicle (Group A)—having a gross combination weight rating or gross combination weight of 11,794 kilograms or more (26,001 pounds or more), whichever is greater, inclusive of a towed unit(s) with a gross vehicle weight rating or gross vehicle weight of more than 4,536 kilograms (10,000 pounds), whichever is greater;",
       "source_text_verbatim": true,
+      "keys_on": [
+        "weight"
+      ],
       "applicability_status": "confirmed_applicable",
       "matching_scope_facts": [
         "configuration=standard_five_axle_tractor_semitrailer",
@@ -131,6 +134,9 @@
       "source_locator": "49 CFR 383.23(a)(2)",
       "source_text": "Except as provided in paragraph (b) of this section, no person may legally operate a CMV unless such person possesses a CDL which meets the standards contained in subpart J of this part, issued by his/her State or jurisdiction of domicile.",
       "source_text_verbatim": true,
+      "keys_on": [
+        "permit_credential_status"
+      ],
       "applicability_status": "confirmed_applicable",
       "matching_scope_facts": [
         "reg_federal_group_a_cmv"
@@ -152,6 +158,10 @@
         "(e) No vehicle or combination of vehicles shall be moved or operated on any Interstate highway when the gross weight on two or more consecutive axles exceeds the limitations prescribed by the following formula, referred to as the Bridge Gross Weight Formula:"
       ],
       "source_text_verbatim": true,
+      "keys_on": [
+        "weight",
+        "axles"
+      ],
       "applicability_status": "confirmed_applicable_path_a_interstate_segment",
       "matching_scope_facts": [
         "path_a_exit13a_to_apm",
@@ -168,6 +178,9 @@
       "source_locator": "33 CFR 101.514(a)",
       "source_text": "All persons requiring unescorted access to secure areas of vessels, facilities, and OCS facilities regulated by parts 104, 105 or 106 of this subchapter must possess a TWIC before such access is granted, except as otherwise noted in this section. A TWIC must be obtained via the procedures established by TSA in 49 CFR part 1572.",
       "source_text_verbatim": true,
+      "keys_on": [
+        "permit_credential_status"
+      ],
       "applicability_status": "confirmed_applicable_to_unescorted_secure_access",
       "matching_scope_facts": [
         "movement_direction=inbound",
@@ -186,6 +199,10 @@
       "source_text_verbatim": true,
       "transcription_preserves_source_typo": [
         "signle"
+      ],
+      "keys_on": [
+        "weight",
+        "axles"
       ],
       "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edges",
       "matching_scope_facts": [
@@ -206,6 +223,10 @@
         "NOTE: Compliance with bridge formula weight limits may require axle weights lower than the standard weight limits of 34,000 pounds for a tandem axle set and a gross weight lower than the standard 80,000-pound limit."
       ],
       "source_text_verbatim": true,
+      "keys_on": [
+        "weight",
+        "axles"
+      ],
       "applicability_status": "confirmed_applicable",
       "matching_scope_facts": [
         "gross_weight_lbs=80000",
@@ -223,6 +244,7 @@
       "source_locator": "PDF page 2, N.J.A.C. 16:32-1.2(e)",
       "source_text": "The rules of this chapter do not supersede other State rules outside of this chapter, municipal ordinances, and county resolutions, which may otherwise restrict or control the through-movements of trucks or other vehicles. An example of such a restriction is a maximum weight posting or the designation of local \"truck route\" restrictions that have been adopted and posted as provided at N.J.S.A. 40:67-16.1 et seq.",
       "source_text_verbatim": true,
+      "keys_on": [],
       "applicability_status": "confirmed_rule_scope",
       "matching_scope_facts": [
         "geography=New_Jersey"
@@ -257,6 +279,9 @@
         657,
         673
       ],
+      "keys_on": [
+        "dimensions"
+      ],
       "applicability_status": "confirmed_cr624_not_designated_as_new_jersey_access_network_route",
       "matching_scope_facts": [
         "road=CR624",
@@ -273,6 +298,9 @@
       "source_locator": "PDF pages 3-4, N.J.A.C. 16:32-1.5(a)(2)",
       "source_text": "A 102-inch-wide standard truck may use local unrestricted roadways only as necessary to: i. Access a terminal located on a local unrestricted roadway, but must return to the National Network or New Jersey Access Network by the direct route unless continued use of the local unrestricted roadway provides the direct route to the next terminal located on a local unrestricted roadway; or ii. Reach the New Jersey Access Network from the National Network by the direct route or to access the National Network from the New Jersey Access Network by the direct route; and",
       "source_text_verbatim": true,
+      "keys_on": [
+        "dimensions"
+      ],
       "applicability_status": "confirmed_applicable_only_to_102_inch_wide_standard_trucks",
       "matching_scope_facts": [
         "rule_vehicle_scope=102-inch-wide_standard_truck"
@@ -291,6 +319,9 @@
         "location": "Beginning at a point 440 feet east of the intersection of North Avenue East and Kapkowski Road and continuing east 520 feet to the vacated portion of North Avenue East and its connection to the Port Authority over weight vehicle zone."
       },
       "source_text_verbatim": true,
+      "keys_on": [
+        "weight"
+      ],
       "applicability_status": "confirmed_geographic_overlap_only",
       "matching_scope_facts": [
         "edge_shared_north_avenue"
@@ -309,6 +340,10 @@
         "Vehicles exceeding 16’3” high and/or 11’ wide are considered over dimensional and require approval for shipment through the Marine Terminals from the Office of the Manager, Marine Terminals."
       ],
       "source_text_verbatim": true,
+      "keys_on": [
+        "weight",
+        "dimensions"
+      ],
       "applicability_status": "confirmed_applicable_at_port_authority_marine_terminal",
       "matching_scope_facts": [
         "gross_weight_lbs=80000",
@@ -329,6 +364,9 @@
         "No person shall operate a motor vehicle on an air terminal highway or marine terminal highway unless he is duly authorized to operate such vehicle on State and municipal highways in the State in which such air terminal highway or marine terminal highway is located, or unless he is especially authorized by the Port Authority to operate motor vehicles on such air terminal highway or marine terminal highway. No motor vehicle shall be permitted on any air terminal highway or marine terminal highway unless it is registered in accordance with the provisions of the law of the State in which such air terminal highway or marine terminal highway is located, or unless it is especially authorized by the Port Authority to be operated on such air terminal highway or marine terminal highway."
       ],
       "source_text_verbatim": true,
+      "keys_on": [
+        "permit_credential_status"
+      ],
       "applicability_status": "confirmed_applicable_on_port_authority_marine_terminal_highways",
       "matching_scope_facts": [
         "destination=APM_Terminals_Elizabeth_gate"
@@ -344,6 +382,9 @@
       "source_locator": "Subrule 34-1100, PDF page 55",
       "source_text": "All Drayage Trucks seeking entry onto any Port Authority Terminal shall be registered in the DTR prior to the date of entry. Registration in the DTR shall be in electronic format via the PortTruckPass (PTP) website (www.porttruckpass.com). In the event of a change to the information provided for registration in the DTR with respect to a registered vehicle, such information shall be amended within ten (10) calendar days of the change via the PortTruckPass website (www.porttruckpass.com). Supporting documentation may be required for verification purposes with regard to registration or amendment.",
       "source_text_verbatim": true,
+      "keys_on": [
+        "permit_credential_status"
+      ],
       "applicability_status": "confirmed_applicable",
       "matching_scope_facts": [
         "vehicle_use=container_drayage",
@@ -360,6 +401,9 @@
       "source_locator": "Subrule 34-1101, PDF page 56",
       "source_text": "Beginning July 2, 2023 at 12:01 AM, only Drayage Trucks that are equipped with an engine that meets or exceeds federal Environmental Protection Agency on-road emission standards for engine model year 2014 heavy-duty diesel-fueled shall be permitted to complete registration in the DTR via the PortTruckPass website (www.porttruckpass.com).",
       "source_text_verbatim": true,
+      "keys_on": [
+        "engine_model_year"
+      ],
       "applicability_status": "confirmed_requirement_for_completing_dtr_registration",
       "matching_scope_facts": [
         "vehicle_use=container_drayage"
@@ -378,6 +422,9 @@
         "Anyone with SeaLink® identification must also have a TWIC. You must register your TWIC with the Port Authority at the Truck Service Center. (Registration is free.)"
       ],
       "source_text_verbatim": true,
+      "keys_on": [
+        "permit_credential_status"
+      ],
       "applicability_status": "confirmed_applicable",
       "matching_scope_facts": [
         "vehicle_use=container_drayage",
@@ -397,6 +444,10 @@
         "No tag, no entry."
       ],
       "source_text_verbatim": true,
+      "keys_on": [
+        "weight",
+        "permit_credential_status"
+      ],
       "applicability_status": "confirmed_applicable",
       "matching_scope_facts": [
         "vehicle_use=container_drayage",
@@ -417,6 +468,9 @@
         "All appointments must be made on the TERMPoint website or APP."
       ],
       "source_text_verbatim": true,
+      "keys_on": [
+        "permit_credential_status"
+      ],
       "applicability_status": "confirmed_applicable",
       "matching_scope_facts": [
         "movement_direction=inbound",
@@ -433,6 +487,9 @@
       "source_locator": "PDF page 11 / printed page 18, APM TERMINALS — Mandatory Trucker Training",
       "source_text": "All truck drivers are required to complete the MANDATORY online safety induction video/quiz in order to access the terminal",
       "source_text_verbatim": true,
+      "keys_on": [
+        "permit_credential_status"
+      ],
       "applicability_status": "confirmed_applicable",
       "matching_scope_facts": [
         "movement_direction=inbound",

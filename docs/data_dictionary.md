@@ -66,6 +66,7 @@ Contains the verified source-text clauses used in the graph.
 | authority_entity_id | Issuing authority node. |
 | source_id / source_locator | Exact trace to the source registry and source location. |
 | source_text | Verbatim official text or table value. |
+| keys_on | Vehicle property categories the rule's text tests: weight, axles, engine_model_year, dimensions, or permit_credential_status. Empty when the rule tests no vehicle property. |
 | applicability_status | Separate classification for the scoped movement. |
 | matching_scope_facts | Project facts used for that classification. |
 | compliance_status | `not_a_compliance_claim`; the graph records requirements and does not assert that a particular driver or vehicle satisfies them. |
