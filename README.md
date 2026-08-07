@@ -18,7 +18,7 @@ The repository stores evidence and structured data. The coupled knowledge-graph 
 - `data/metadata.json` — source registry with publishers, dates, URLs, archive paths, and hashes.
 - `data/raw/documents/` — archived government, roadway-authority, port, and terminal documents.
 - `data/raw/gis/official/` — archived official NJOGIS extracts and service metadata.
-- `data/processed/vehicle_profiles.json` — the scoped vehicle and movement facts.
+- `data/processed/vehicle_profiles.json` — the scoped vehicle and movement facts, plus representative drayage truck profiles for rule matching.
 - `data/processed/physical_nodes.geojson` — verified route endpoints and intersections.
 - `data/processed/physical_edges.json` — ordered, directed roadway corridors for Paths A and B.
 - `data/processed/entity_nodes.json` — authorities, jurisdictions, facilities, credentials, and operating systems.

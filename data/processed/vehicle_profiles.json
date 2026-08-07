@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0-scoped-profile",
+  "schema_version": "2.0-drayage-truck-profiles",
   "status": "canonical_project_scope",
   "canonical_profile_id": "scoped_80000lb_5axle_nonhaz_inbound_apm",
   "profiles": [
@@ -21,7 +21,88 @@
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
         ]
+      },
+      "properties_not_supplied": {
+        "fields": [
+          "width_inches",
+          "height_inches",
+          "semitrailer_length_feet",
+          "engine_model_year"
+        ],
+        "note": "These properties were never project-supplied for the scoped movement. Rules that key on them cannot be evaluated for this profile until the facts are supplied."
       }
+    },
+    {
+      "profile_id": "representative_older_engine_drayage",
+      "fact_basis": "representative_profile_defined_for_rule_matching",
+      "definition_note": "Defined per the project brief as groundwork for rule-to-profile matching; property values are chosen from thresholds in extracted rules, not observed from a real vehicle.",
+      "defined_facts": {
+        "vehicle_use": "container_drayage",
+        "configuration": "standard_five_axle_tractor_semitrailer",
+        "gross_weight_lbs": 80000,
+        "axle_count": 5,
+        "engine_model_year": 2007,
+        "width_inches": 102,
+        "height_inches": 162,
+        "semitrailer_length_feet": 40,
+        "cargo_hazardous": false,
+        "credential_status": "cdl_twic_sealink_rfid_assumed_held_for_matching"
+      },
+      "rule_interactions": [
+        {
+          "rule_id": "reg_panynj_dtr_engine",
+          "keyed_property": "engine_model_year",
+          "interaction": "Engine model year 2007 is below the model year 2014 minimum that Subrule 34-1101 requires to complete DTR registration."
+        },
+        {
+          "rule_id": "reg_panynj_dtr",
+          "keyed_property": "permit_credential_status",
+          "interaction": "DTR registration is required for entry onto any Port Authority terminal; see reg_panynj_dtr_engine for the engine-year condition on completing that registration."
+        }
+      ],
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "profile_id": "representative_osow_ocean_container",
+      "fact_basis": "representative_profile_defined_for_rule_matching",
+      "definition_note": "Defined per the project brief as groundwork for rule-to-profile matching; property values are chosen from thresholds in extracted rules, not observed from a real vehicle.",
+      "defined_facts": {
+        "vehicle_use": "container_drayage_sealed_ocean_container",
+        "configuration": "standard_five_axle_tractor_semitrailer",
+        "gross_weight_lbs": 90000,
+        "axle_count": 5,
+        "engine_model_year": 2020,
+        "width_inches": 102,
+        "height_inches": 162,
+        "semitrailer_length_feet": 40,
+        "cargo_hazardous": false,
+        "credential_status": "cdl_twic_sealink_rfid_assumed_held_for_matching"
+      },
+      "rule_interactions": [
+        {
+          "rule_id": "reg_nj_tandem_gross_bridge",
+          "keyed_property": "weight",
+          "interaction": "Gross weight 90,000 lbs exceeds the 80,000 lb maximum overall gross weight stated in the guidebook."
+        },
+        {
+          "rule_id": "reg_nj_ocean_container_permit",
+          "keyed_property": "permit_credential_status",
+          "interaction": "90,000 lbs equals the Table 5 maximum gross weight permitted under an annual Ocean Borne Container Permit for sealed ocean containers of legal dimensions."
+        },
+        {
+          "rule_id": "reg_nj_single_trip_osow_permit",
+          "keyed_property": "permit_credential_status",
+          "interaction": "A single-trip OS/OW permit is the alternative permit path for a non-divisible load above legal weight limitations."
+        },
+        {
+          "rule_id": "reg_panynj_terminal_weight_dimensions",
+          "keyed_property": "weight",
+          "interaction": "Gross vehicle weight 90,000 lbs is within the 128,000 lb maximum for containerized shipments on marine terminal highways."
+        }
+      ],
+      "compliance_status": "not_a_compliance_claim"
     }
-  ]
+  ],
+  "description": "The project-scoped vehicle and movement facts, plus representative drayage truck profiles defined as groundwork for rule-to-profile matching.",
+  "profile_count": 3
 }

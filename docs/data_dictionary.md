@@ -49,7 +49,7 @@ Six ordered, directed roadway corridors.
 
 ## data/processed/vehicle_profiles.json
 
-Contains one project-supplied profile: an inbound, nonhazardous, standard five-axle tractor-semitrailer at 80,000 pounds traveling to APM Terminals Elizabeth. Only supplied facts and their confirmed classifications are stored.
+Contains three profiles. The scoped profile is project-supplied — an inbound, nonhazardous, standard five-axle tractor-semitrailer at 80,000 pounds traveling to APM Terminals Elizabeth — and stores only supplied facts and their confirmed classifications; its `properties_not_supplied` field lists rule-keyed properties that were never supplied. The two representative profiles (older-engine drayage, OS/OW ocean container) are defined constructs for rule-to-profile matching: their `defined_facts` are values chosen from thresholds in extracted rules, not observations, and each `rule_interactions` entry restates what the cited rule's text says about the defined value. No profile record is a compliance claim.
 
 ## data/processed/entity_nodes.json
 
