@@ -600,7 +600,423 @@
       ],
       "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
       "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_elizabeth_four_ton_b_north_avenue_to_merge",
+      "from_node": "reg_elizabeth_four_ton_limit_streets",
+      "relationship": "STREET_NOT_LISTED_IN_RESTRICTION_TABLE",
+      "to_node": "edge_b_north_avenue_to_merge",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "road_segment_match": {
+        "compared_official_list_names": [
+          "NORTH AVE E",
+          "NORTH AVE"
+        ],
+        "restriction_table_row_count": 132,
+        "comparison_method": "edge official name variants compared with every street-name cell parsed from the archived Municode table HTML",
+        "comparison_result": "street_name_not_present"
+      },
+      "applicability_status": "confirmed_street_absence_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_elizabeth_four_ton_shared_north_avenue",
+      "from_node": "reg_elizabeth_four_ton_limit_streets",
+      "relationship": "STREET_NOT_LISTED_IN_RESTRICTION_TABLE",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "road_segment_match": {
+        "compared_official_list_names": [
+          "NORTH AVE",
+          "NORTH AVE E"
+        ],
+        "restriction_table_row_count": 132,
+        "comparison_method": "edge official name variants compared with every street-name cell parsed from the archived Municode table HTML",
+        "comparison_result": "street_name_not_present"
+      },
+      "applicability_status": "confirmed_street_absence_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_elizabeth_four_ton_shared_mclester",
+      "from_node": "reg_elizabeth_four_ton_limit_streets",
+      "relationship": "STREET_NOT_LISTED_IN_RESTRICTION_TABLE",
+      "to_node": "edge_shared_mclester",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "road_segment_match": {
+        "compared_official_list_names": [
+          "MCLESTER ST"
+        ],
+        "restriction_table_row_count": 132,
+        "comparison_method": "edge official name variants compared with every street-name cell parsed from the archived Municode table HTML",
+        "comparison_result": "street_name_not_present"
+      },
+      "applicability_status": "confirmed_street_absence_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_elizabeth_four_ton_shared_tripoli_gate",
+      "from_node": "reg_elizabeth_four_ton_limit_streets",
+      "relationship": "STREET_NOT_LISTED_IN_RESTRICTION_TABLE",
+      "to_node": "edge_shared_tripoli_gate",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "road_segment_match": {
+        "compared_official_list_names": [
+          "TRIPOLI ST"
+        ],
+        "restriction_table_row_count": 132,
+        "comparison_method": "edge official name variants compared with every street-name cell parsed from the archived Municode table HTML",
+        "comparison_result": "street_name_not_present"
+      },
+      "applicability_status": "confirmed_street_absence_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_elizabeth_five_ton_b_north_avenue_to_merge",
+      "from_node": "reg_elizabeth_five_ton_limit_streets",
+      "relationship": "STREET_NOT_LISTED_IN_RESTRICTION_TABLE",
+      "to_node": "edge_b_north_avenue_to_merge",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "road_segment_match": {
+        "compared_official_list_names": [
+          "NORTH AVE E",
+          "NORTH AVE"
+        ],
+        "restriction_table_row_count": 2,
+        "comparison_method": "edge official name variants compared with every street-name cell parsed from the archived Municode table HTML",
+        "comparison_result": "street_name_not_present"
+      },
+      "applicability_status": "confirmed_street_absence_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_elizabeth_five_ton_shared_north_avenue",
+      "from_node": "reg_elizabeth_five_ton_limit_streets",
+      "relationship": "STREET_NOT_LISTED_IN_RESTRICTION_TABLE",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "road_segment_match": {
+        "compared_official_list_names": [
+          "NORTH AVE",
+          "NORTH AVE E"
+        ],
+        "restriction_table_row_count": 2,
+        "comparison_method": "edge official name variants compared with every street-name cell parsed from the archived Municode table HTML",
+        "comparison_result": "street_name_not_present"
+      },
+      "applicability_status": "confirmed_street_absence_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_elizabeth_five_ton_shared_mclester",
+      "from_node": "reg_elizabeth_five_ton_limit_streets",
+      "relationship": "STREET_NOT_LISTED_IN_RESTRICTION_TABLE",
+      "to_node": "edge_shared_mclester",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "road_segment_match": {
+        "compared_official_list_names": [
+          "MCLESTER ST"
+        ],
+        "restriction_table_row_count": 2,
+        "comparison_method": "edge official name variants compared with every street-name cell parsed from the archived Municode table HTML",
+        "comparison_result": "street_name_not_present"
+      },
+      "applicability_status": "confirmed_street_absence_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_elizabeth_five_ton_shared_tripoli_gate",
+      "from_node": "reg_elizabeth_five_ton_limit_streets",
+      "relationship": "STREET_NOT_LISTED_IN_RESTRICTION_TABLE",
+      "to_node": "edge_shared_tripoli_gate",
+      "source_ids": [
+        "elizabeth_code_10_16_050_2025_11_11",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "road_segment_match": {
+        "compared_official_list_names": [
+          "TRIPOLI ST"
+        ],
+        "restriction_table_row_count": 2,
+        "comparison_method": "edge official name variants compared with every street-name cell parsed from the archived Municode table HTML",
+        "comparison_result": "street_name_not_present"
+      },
+      "applicability_status": "confirmed_street_absence_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_width_a_exit13a_connector",
+      "from_node": "reg_nj_width_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_exit13a_connector",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_width_b_us1_south",
+      "from_node": "reg_nj_width_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_us1_south",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_width_b_north_avenue_to_merge",
+      "from_node": "reg_nj_width_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_north_avenue_to_merge",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_width_shared_north_avenue",
+      "from_node": "reg_nj_width_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_width_shared_mclester",
+      "from_node": "reg_nj_width_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_mclester",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_width_shared_tripoli_gate",
+      "from_node": "reg_nj_width_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_tripoli_gate",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_height_a_exit13a_connector",
+      "from_node": "reg_nj_height_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_exit13a_connector",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_height_b_us1_south",
+      "from_node": "reg_nj_height_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_us1_south",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_height_b_north_avenue_to_merge",
+      "from_node": "reg_nj_height_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_north_avenue_to_merge",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_height_shared_north_avenue",
+      "from_node": "reg_nj_height_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_height_shared_mclester",
+      "from_node": "reg_nj_height_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_mclester",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_height_shared_tripoli_gate",
+      "from_node": "reg_nj_height_limit",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_tripoli_gate",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_semitrailer_length_a_exit13a_connector",
+      "from_node": "reg_nj_semitrailer_length",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_exit13a_connector",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_semitrailer_length_b_us1_south",
+      "from_node": "reg_nj_semitrailer_length",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_us1_south",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_semitrailer_length_b_north_avenue_to_merge",
+      "from_node": "reg_nj_semitrailer_length",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_north_avenue_to_merge",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_semitrailer_length_shared_north_avenue",
+      "from_node": "reg_nj_semitrailer_length",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_semitrailer_length_shared_mclester",
+      "from_node": "reg_nj_semitrailer_length",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_mclester",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_semitrailer_length_shared_tripoli_gate",
+      "from_node": "reg_nj_semitrailer_length",
+      "relationship": "GOVERNS",
+      "to_node": "edge_shared_tripoli_gate",
+      "source_ids": [
+        "nj_size_weight_guidebook",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadway",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_union_county_truck_routes_b_north_avenue_to_merge",
+      "from_node": "reg_union_county_truck_routes_reserved",
+      "relationship": "TRUCK_ROUTE_SCHEDULE_RESERVED",
+      "to_node": "edge_b_north_avenue_to_merge",
+      "source_ids": [
+        "union_county_laws_2026",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_county_designation_schedule_empty",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_union_county_truck_routes_shared_north_avenue",
+      "from_node": "reg_union_county_truck_routes_reserved",
+      "relationship": "TRUCK_ROUTE_SCHEDULE_RESERVED",
+      "to_node": "edge_shared_north_avenue",
+      "source_ids": [
+        "union_county_laws_2026",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_county_designation_schedule_empty",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_njta_roadway_use_a_exit13a_connector",
+      "from_node": "reg_njta_roadway_use_limitations",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_exit13a_connector",
+      "source_ids": [
+        "njac_19_9_1_9_cornell_2026_08_07",
+        "njogis_road_centerlines_2026_07_26"
+      ],
+      "applicability_status": "confirmed_applicable_on_turnpike_authority_roadway",
+      "compliance_status": "not_a_compliance_claim"
     }
   ],
-  "edge_count": 44
+  "edge_count": 73
 }

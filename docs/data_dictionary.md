@@ -89,6 +89,8 @@ Links rules and jurisdictions to physical corridors, the observed APM entrance n
 | LOCATED_WITHIN | Mechanical all-vertices-in-polygon result using the archived official boundary. |
 | OVERLAPS_PART_OF | The exact local code location overlaps only part of the coarser corridor edge. |
 | ROUTE_NUMBER_NOT_LISTED_IN_APPENDIX_C | The edge's raw NJOGIS shield number was compared with the route numbers printed in N.J.A.C. 16:32 Appendix C and was absent. This relationship records network classification only, not a truck prohibition. |
+| STREET_NOT_LISTED_IN_RESTRICTION_TABLE | The edge's official street-name variants were compared with every street name in the cited restriction table and were absent. This relationship records absence from the table only, not a permission grant. |
+| TRUCK_ROUTE_SCHEDULE_RESERVED | The cited authority's truck-route designation schedule contains no entries ("Reserved"). This relationship records the authority's designation status for the linked corridor only, not a restriction or permission. |
 
 Road-specific couplings include a `road_segment_match` object. It records the official name variants, SRI or shield number, matched feature IDs, and any source-stated intersection offsets used for the deterministic join. Derived coordinates identify the matched extent and state their calculation method; they are not transcribed source text.
 Every coupling edge lists its supporting source IDs and source-supported applicability status. Compliance is not inferred.

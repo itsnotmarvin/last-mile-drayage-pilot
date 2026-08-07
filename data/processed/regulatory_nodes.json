@@ -497,8 +497,225 @@
       ],
       "compliance_status": "not_a_compliance_claim",
       "graph_eligibility": "include"
+    },
+    {
+      "rule_id": "reg_elizabeth_four_ton_limit_streets",
+      "label": "10.16.010 — Four-ton weight limit—Streets affected",
+      "authority_entity_id": "authority_elizabeth_city",
+      "source_id": "elizabeth_code_10_16_050_2025_11_11",
+      "source_locator": "Elizabeth Code of Ordinances 10.16.010, operative paragraph and street table (132 street entries)",
+      "source_text": "Trucks over four (4) tons gross weight are excluded from the street or parts of street described, except for the pickup and delivery of materials on such street.",
+      "source_text_verbatim": true,
+      "restriction_table_row_count": 132,
+      "restriction_table_note": "The full 132-row street table is preserved verbatim in the archived Municode chapter content; North Avenue appears in it only as a location boundary for other streets' restricted segments, never as a restricted street.",
+      "keys_on": [
+        "weight"
+      ],
+      "applicability_status": "confirmed_route_streets_not_listed_in_street_table",
+      "matching_scope_facts": [
+        "gross_weight_lbs=80000",
+        "edge_b_north_avenue_to_merge",
+        "edge_shared_north_avenue",
+        "edge_shared_mclester",
+        "edge_shared_tripoli_gate"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include_as_verified_restriction_with_route_street_absence"
+    },
+    {
+      "rule_id": "reg_elizabeth_five_ton_limit_streets",
+      "label": "10.16.040 — Five-ton weight limit for trucks—Streets affected",
+      "authority_entity_id": "authority_elizabeth_city",
+      "source_id": "elizabeth_code_10_16_050_2025_11_11",
+      "source_locator": "Elizabeth Code of Ordinances 10.16.040, street table",
+      "source_text": {
+        "table_heading": [
+          "Name of Street",
+          "Location"
+        ],
+        "rows": [
+          [
+            "Westminster Avenue",
+            ""
+          ],
+          [
+            "Wilder Street",
+            "From North Broad Street to the City Line (Except for pick-up and deliveries)"
+          ]
+        ],
+        "prior_code_note": "(Prior code § 141-84)"
+      },
+      "source_text_verbatim": true,
+      "section_prose_note": "The section contains no operative prose paragraph; its content is the table transcribed above.",
+      "keys_on": [
+        "weight"
+      ],
+      "applicability_status": "confirmed_route_streets_not_listed_in_street_table",
+      "matching_scope_facts": [
+        "gross_weight_lbs=80000",
+        "edge_b_north_avenue_to_merge",
+        "edge_shared_north_avenue",
+        "edge_shared_mclester",
+        "edge_shared_tripoli_gate"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include_as_verified_restriction_with_route_street_absence"
+    },
+    {
+      "rule_id": "reg_nj_width_limit",
+      "label": "NJ Commercial Vehicle Size and Weight Guidebook — 2.1.1 Width (N.J.S.A. 39:3-84.a(1))",
+      "authority_entity_id": "authority_njdot",
+      "source_id": "nj_size_weight_guidebook",
+      "source_locator": "PDF page 13, section 2.1.1",
+      "source_text": [
+        "Width 96 inches on routes that are not National Network or NJ Access Routes 102 inches on National Network and NJ Access Routes",
+        "As the diagram above shows, the maximum width of a commercial vehicle traveling within the State of New Jersey is 102 inches (or 8 feet 6 inches). In some instances, rules and regulations may be promulgated for those public roads, streets or highways or public or quasi-public property in this State, where it is determined that the interests of public safety and welfare require the maximum outside width be no more than 96 inches."
+      ],
+      "source_text_verbatim": true,
+      "keys_on": [
+        "dimensions"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadways_limit_depends_on_route_network_status",
+      "matching_scope_facts": [
+        "geography=New_Jersey"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include"
+    },
+    {
+      "rule_id": "reg_nj_height_limit",
+      "label": "NJ Commercial Vehicle Size and Weight Guidebook — 2.1.2 Height (N.J.S.A. 39:3-84.a(2))",
+      "authority_entity_id": "authority_njdot",
+      "source_id": "nj_size_weight_guidebook",
+      "source_locator": "PDF page 14, section 2.1.2",
+      "source_text": "The maximum height of any commercial vehicle or combination of vehicles, including load or contents of any part or portion thereof, traveling within the State of New Jersey is 13’-6” on all highways, except as otherwise identified, as shown in the height diagram above.",
+      "source_text_verbatim": true,
+      "keys_on": [
+        "dimensions"
+      ],
+      "applicability_status": "confirmed_applicable_on_new_jersey_roadways",
+      "matching_scope_facts": [
+        "geography=New_Jersey"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include"
+    },
+    {
+      "rule_id": "reg_nj_semitrailer_length",
+      "label": "NJ Commercial Vehicle Size and Weight Guidebook — 2.1.3.6 Trailers and Semitrailers (N.J.S.A. 39:3-84.a(4))",
+      "authority_entity_id": "authority_njdot",
+      "source_id": "nj_size_weight_guidebook",
+      "source_locator": "PDF page 21, section 2.1.3.6",
+      "source_text": [
+        "As the diagram above shows, the maximum length of a semitrailer shall not exceed 53 feet when operated as part of a combination of vehicles consisting of one motor-drawn vehicle and a drawing or power unit vehicle.",
+        "Semitrailers greater than 48 feet in length but not more than 53 feet in length must be transported using the National Network unless seeking food, fuel, rest, repairs or to reach a terminal by the direct route (that is, the shortest travel distance). Upon completing each trip, the large truck should return to the National Network in a manner consistent with reaching its next terminal. Trips off of the National Network or the New Jersey Access Network onto all other local unrestricted roadways should only be for the purpose of accessing a terminal on those roadways, by the shortest distance."
+      ],
+      "source_text_verbatim": true,
+      "keys_on": [
+        "dimensions"
+      ],
+      "applicability_status": "confirmed_applicable_to_tractor_semitrailer_combinations_in_new_jersey",
+      "matching_scope_facts": [
+        "configuration=standard_five_axle_tractor_semitrailer",
+        "geography=New_Jersey"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include"
+    },
+    {
+      "rule_id": "reg_nj_single_trip_osow_permit",
+      "label": "NJ Commercial Vehicle Size and Weight Guidebook — 3.1 Single-Trip OS/OW Permit (N.J.A.C. 13:18-1.6)",
+      "authority_entity_id": "authority_njdot",
+      "source_id": "nj_size_weight_guidebook",
+      "source_locator": "PDF page 40, section 3.1",
+      "source_text": "A single-trip permit allows a carrier to haul a non-divisible load above legal size and/or weight limitations and is valid for a single trip within a period of five days. In the event the one-way trip cannot be completed within the valid life of the single-trip permit due to hazardous road conditions or vehicle breakdown, a one-day extension may be granted provided that the request is made to the DOT before the permit has expired. Permit restrictions are assigned based on requested dimensions and weights.",
+      "source_text_verbatim": true,
+      "keys_on": [
+        "weight",
+        "dimensions",
+        "permit_credential_status"
+      ],
+      "applicability_status": "confirmed_not_required_for_scoped_profile_at_legal_size_and_weight",
+      "matching_scope_facts": [
+        "gross_weight_lbs=80000",
+        "cargo_hazardous=false"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include_as_conditional_permit_rule"
+    },
+    {
+      "rule_id": "reg_nj_ocean_container_permit",
+      "label": "NJ Commercial Vehicle Size and Weight Guidebook — 3.4 Ocean Borne Container Permit (Annual)",
+      "authority_entity_id": "authority_njdot",
+      "source_id": "nj_size_weight_guidebook",
+      "source_locator": "PDF page 43, section 3.4 and Table 5",
+      "source_text": [
+        "An Ocean Borne Container Permit can be obtained for a truck tractor semitrailer combination engaged in the overweight transportation of sealed containers of the type commonly used for the conveyance of freight transportation in international ocean-going commerce. Moves made under this permit type must be of legal dimensions and are subject to the weight limitations shown in Table 5.",
+        "TABLE 5 OCEAN BORNE CONTAINER PERMIT WEIGHT LIMITATIONS: Maximum Gross Weight 90,000 lbs; Maximum Tandem Weight 38,000 lbs; Maximum Tri-axle Weight 56,400 lbs."
+      ],
+      "source_text_verbatim": true,
+      "keys_on": [
+        "weight",
+        "dimensions",
+        "permit_credential_status"
+      ],
+      "applicability_status": "confirmed_not_required_for_scoped_profile_at_legal_weight",
+      "matching_scope_facts": [
+        "vehicle_use=container_drayage",
+        "gross_weight_lbs=80000"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include_as_conditional_permit_rule"
+    },
+    {
+      "rule_id": "reg_union_county_truck_routes_reserved",
+      "label": "Laws of Union County § 138-9 Truck routes and § 138-37 Schedule VII: Truck Routes (Reserved)",
+      "authority_entity_id": "authority_union_county",
+      "source_id": "union_county_laws_2026",
+      "source_locator": "PDF page 279, § 138-9; PDF page 287, § 138-37",
+      "source_text": [
+        "Pursuant to N.J.S.A. 40:67-16.1, the streets or parts of streets described in Schedule VII (§ 138-37), attached to and made a part of this chapter, are hereby designated as routes for trucks over four tons. All trucks having a total combined gross weight of vehicle plus load in excess of four tons shall be excluded from all streets except from those streets which form a part of the system of truck routes.",
+        "In accordance with the provisions of § 138-9 the following streets or parts of streets are hereby designated as routes for trucks over four tons: Name of Street Location (Reserved)"
+      ],
+      "source_text_verbatim": true,
+      "transcription_note": "Intra-citation spacing artifacts from the PDF text layer (e.g., '§ 138 - 37') normalized to '§ 138-37'.",
+      "scope_note": "Surrounding Chapter 138 schedules predominantly concern county park roadways, and the modeled route streets appear nowhere in the county code. This record documents only that Schedule VII designates no truck routes; it does not assert that § 138-9 restricts the modeled streets.",
+      "keys_on": [
+        "weight"
+      ],
+      "applicability_status": "confirmed_schedule_vii_reserved_no_county_truck_routes_designated",
+      "matching_scope_facts": [
+        "gross_weight_lbs=80000",
+        "road=CR624"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include_as_county_layer_designation_status"
+    },
+    {
+      "rule_id": "reg_njta_roadway_use_limitations",
+      "label": "N.J.A.C. 19:9-1.9 — Limitations on use of Roadway (selected vehicle prohibitions)",
+      "authority_entity_id": "authority_njta",
+      "source_id": "njac_19_9_1_9_cornell_2026_08_07",
+      "source_locator": "N.J.A.C. 19:9-1.9(a), introductory paragraph and items 21 and 24",
+      "source_text": [
+        "(a) Use of the Roadway and entry thereon by the following, unless otherwise authorized by the Authority, is prohibited:",
+        "21. Commercial motor vehicles, trailers and semitrailers, including, but not limited to, farm trucks, while loaded with hay or straw when the extreme overall dimension is greater than 102 inches in width, without special permit;",
+        "24. Vehicles operated with a tandem trailer combination, commonly known as a \"double bottom,\" if one or more of the individual trailers exceeds 28 feet, six inches in length;"
+      ],
+      "source_text_verbatim": true,
+      "keys_on": [
+        "dimensions",
+        "permit_credential_status"
+      ],
+      "applicability_status": "confirmed_applicable_on_turnpike_authority_roadway",
+      "matching_scope_facts": [
+        "edge_a_exit13a_connector",
+        "configuration=standard_five_axle_tractor_semitrailer"
+      ],
+      "compliance_status": "not_a_compliance_claim",
+      "graph_eligibility": "include"
     }
   ],
   "source_count": 8,
-  "rule_count": 18
+  "rule_count": 27
 }

@@ -3,7 +3,7 @@
   "project": "Last-Mile Drayage Coupled-Network Pilot — APM Terminals Elizabeth",
   "last_updated": "2026-08-07",
   "status": "canonical_evidence_source_registry",
-  "source_count": 20,
+  "source_count": 23,
   "sources": [
     {
       "source_id": "apm_directions",
@@ -397,6 +397,56 @@
       ],
       "source_zip_sha256": "f2b828d71e3986e2182976f2288b55fba1856a111256954626096a095636f501",
       "extract_note": "The archived GeoJSON is an unmodified attribute-and-geometry extract of all features with STFIPS=34, CTFIPS=39, and ROUTEID in ['20041769__','200413892_','00000081__'] from National_NHS_080825.shp. The full national zip is identified by source_zip_sha256 and was not retained locally."
+    },
+    {
+      "source_id": "union_county_laws_2026",
+      "title": "Laws of Union County, 2026 edition — Chapter 138, Vehicles and Traffic",
+      "publisher": "Union County Board of County Commissioners",
+      "source_type": "official_county_code_pdf",
+      "codified_through": "January 2026 edition",
+      "retrieval_date": "2026-08-07",
+      "url": "https://ucnj.org/commissioners/wp-content/uploads/sites/29/2026/04/2026-Laws-of-Union-County.pdf",
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/county/union_county_laws_2026.pdf",
+          "sha256": "590c74b68a5f2750ee817ff2cd1e5b92b2427aa1d3340c044c759623ac2bf0fa"
+        }
+      ],
+      "archive_note": "A same-month sibling URL (Laws-of-Union-County-2026.pdf) referenced in July 2026 research no longer resolves; this filename variant serves the same 2026 edition."
+    },
+    {
+      "source_id": "njta_rules_readoption_2024",
+      "title": "New Jersey Turnpike Authority Rules — Readoption with Amendments, N.J.A.C. 19:9 (56 N.J.R. 321)",
+      "publisher": "New Jersey Turnpike Authority / New Jersey Register",
+      "source_type": "official_register_notice_pdf",
+      "publication_date": "2024-03-04",
+      "retrieval_date": "2026-08-07",
+      "url": "https://www.njta.gov/document/new-jersey-turnpike-authority-rules-re-adoption-with-amendments/",
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/state/njta_rules_readoption_njr_2024_03_04.pdf",
+          "sha256": "05745f11a639b7fbb906b033a5e5ef4c41486de6edbeeaaa632ea2e46039f5da"
+        }
+      ],
+      "archive_note": "Currency evidence: the Authority readopted N.J.A.C. 19:9 in 2024."
+    },
+    {
+      "source_id": "njac_19_9_1_9_cornell_2026_08_07",
+      "title": "N.J.A.C. 19:9-1.9 — Limitations on use of Roadway (Cornell LII codification snapshot)",
+      "publisher": "Cornell Law School Legal Information Institute (codification mirror)",
+      "source_type": "authoritative_but_unofficial_codification_snapshot",
+      "retrieval_date": "2026-08-07",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-19-9-1-9",
+      "archived_files": [
+        {
+          "role": "page_snapshot_html",
+          "path": "data/raw/documents/state/njac_19_9_1_9_cornell_snapshot_2026_08_07.html",
+          "sha256": "0159cbb4d0dd0f3e8f08dad945138774d2ea10d20311e3b02c7d7ffe1fd51f55"
+        }
+      ],
+      "archive_note": "LII mirrors the codified New Jersey Administrative Code and updates quarterly; the official code of record is the OAL LexisNexis portal."
     }
   ]
 }

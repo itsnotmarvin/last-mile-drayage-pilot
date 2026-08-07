@@ -210,6 +210,23 @@
       "source_ids": [
         "panynj_truckers_guide"
       ]
+    },
+    {
+      "entity_id": "authority_union_county",
+      "name": "Union County Board of County Commissioners",
+      "entity_type": "authority",
+      "source_ids": [
+        "union_county_laws_2026"
+      ]
+    },
+    {
+      "entity_id": "authority_njta",
+      "name": "New Jersey Turnpike Authority",
+      "entity_type": "authority",
+      "source_ids": [
+        "njta_rules_readoption_2024",
+        "njac_19_9_1_9_cornell_2026_08_07"
+      ]
     }
   ],
   "entity_count": 23
