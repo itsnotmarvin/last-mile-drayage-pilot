@@ -13,9 +13,9 @@
       "current_through": "2026-07-29",
       "accessed_date": "2026-07-31",
       "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null
+      "locally_archived": true,
+      "local_path": "data/raw/documents/federal/ecfr_49_cfr_part_383_as_of_2026_07_29.xml",
+      "sha256": "519aeea036ae7fb5f250a58686861e8021b821b859c151e968e014828d7ec52b"
     },
     {
       "source_id": "ecfr_23_cfr_658_17_2026_07_29",
@@ -25,9 +25,9 @@
       "current_through": "2026-07-29",
       "accessed_date": "2026-07-31",
       "url": "https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-658/section-658.17",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null
+      "locally_archived": true,
+      "local_path": "data/raw/documents/federal/ecfr_23_cfr_658_17_as_of_2026_07_29.xml",
+      "sha256": "d846fa89b50edd7d24346082f2f2f68e640eee0295969e6b4f5c82ba1f5fbbe0"
     },
     {
       "source_id": "ecfr_33_cfr_101_514_2026_07_29",
@@ -37,9 +37,9 @@
       "current_through": "2026-07-29",
       "accessed_date": "2026-07-31",
       "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-101/subpart-E/section-101.514",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null
+      "locally_archived": true,
+      "local_path": "data/raw/documents/federal/ecfr_33_cfr_101_514_as_of_2026_07_29.xml",
+      "sha256": "daf1e34cd704b61e120825633280d8d428f6a883012adefd1aca64ff09e83411"
     },
     {
       "source_id": "nj_size_weight_guidebook",
@@ -77,9 +77,9 @@
       "accessed_date": "2026-07-31",
       "url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI_10.16.05080POOVEZOLISTAF",
       "official_city_index_url": "https://www.elizabethnj.org/272/City-Ordinances",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null
+      "locally_archived": true,
+      "local_path": "data/raw/documents/municipal/elizabeth_code_10_16_050_page_snapshot_2026_08_07.pdf",
+      "sha256": "bd44da640a8913789736132240f32c57d719ddbd39eea7f8c1e12b4c520b3606"
     },
     {
       "source_id": "panynj_marine_terminal_tariff",
@@ -221,7 +221,7 @@
       "authority_entity_id": "authority_njdot",
       "source_id": "njac_16_32_truck_access_current_2023",
       "source_locator": "PDF page 2, N.J.A.C. 16:32-1.2(e)",
-      "source_text": "The rules of this chapter do not supersede other State rules outside of this chapter, municipal ordinances and county resolutions, which may otherwise restrict or control the movements of trucks or other vehicles. An example of such a restriction is a maximum weight posting or the designation of local \"truck route\" restrictions, which have been adopted and posted as provided in N.J.S.A. 40:67-16.1 et seq.",
+      "source_text": "The rules of this chapter do not supersede other State rules outside of this chapter, municipal ordinances, and county resolutions, which may otherwise restrict or control the through-movements of trucks or other vehicles. An example of such a restriction is a maximum weight posting or the designation of local \"truck route\" restrictions that have been adopted and posted as provided at N.J.S.A. 40:67-16.1 et seq.",
       "source_text_verbatim": true,
       "applicability_status": "confirmed_rule_scope",
       "matching_scope_facts": [
@@ -236,7 +236,7 @@
       "authority_entity_id": "authority_njdot",
       "source_id": "njac_16_32_truck_access_current_2023",
       "source_locator": "PDF page 3, N.J.A.C. 16:32-1.4(a)(3); PDF page 9, Appendix C",
-      "source_text": "Those county \"600\" series roads listed under Appendix C, incorporated herein by reference, approximately 80 miles;",
+      "source_text": "Those county \"600\" series roads listed under Appendix C, incorporated herein by reference, approximately 80 miles; and",
       "source_text_verbatim": true,
       "appendix_c_route_numbers": [
         16,

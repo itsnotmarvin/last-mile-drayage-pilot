@@ -18,9 +18,7 @@ Canonical registry for retained source evidence. Some sources support the broade
 | source_type | Official, operational, GIS, code, or third-party observation class. |
 | publication/effective/current/access date | Date supplied by the source or date of access. |
 | url | Source page or service. |
-| locally_archived | Whether the source is held in `data/raw/`. |
-| local_path | Archived file path, or null. |
-| sha256 | Hash of the archived file, or null. |
+| archived_files | Files held in `data/raw/` for the source, each with a `role`, repository `path`, and SHA-256 hash. |
 
 ## data/processed/physical_nodes.geojson
 
@@ -38,8 +36,12 @@ Six ordered, directed roadway corridors.
 | edges | Canonical roadway corridors. |
 | from_node / to_node | Directed physical topology. |
 | official_feature_ids | NJOGIS road-centerline features used by the corridor. |
+| official_list_names | Exact `LST_PNAME` name variants from the archived NJOGIS features. |
+| official_sri_ids | Exact NJOGIS Standard Route Identifiers (`SRI`) used by the corridor. |
+| official_shield_types_raw / official_shield_numbers_raw | Unchanged NJOGIS route-shield attributes used for route-number joins. |
 | official_oneway_raw | Unchanged NJOGIS `ONEWAY` values. |
 | jurisdiction_code_raw | Unchanged NJOGIS `JURISDICTN` value. |
+| official_nhs_designations | Federal National Highway System status for the edge from the archived current FHWA shapefile extract: raw code, FHWA's official code meaning, and the deterministic match basis. Edges absent from the FHWA data carry no designation record. |
 | geometry_reference | Archived source path, endpoints, and topology method. |
 | sequence_source_id | APM source supporting street order. |
 
@@ -80,9 +82,12 @@ Links rules and jurisdictions to physical corridors, the observed APM entrance n
 | Relationship | Meaning |
 |---|---|
 | GOVERNS | The cited rule applies to the linked roadway corridor. |
-| GOVERNS_ENTRY_AT / GOVERNS_GATE_MOVE_AT / GOVERNS_ACCESS_AT | The cited requirement applies at the linked entrance node. |
+| GOVERNS_ENTRY_AT / GOVERNS_GATE_MOVE_AT / GOVERNS_ACCESS_AT / GOVERNS_PORT_ENTRY_MOVEMENT_AT / GOVERNS_UNESCORTED_SECURE_ACCESS_AT | The cited requirement applies at the linked entrance node. |
 | APPLIES_TO / CLASSIFIES | The rule applies to or classifies the scoped vehicle profile. |
 | HAS_NJOGIS_JURISDICTION_CATEGORY | Direct mapping from the edge's raw `JURISDICTN` code. |
 | LOCATED_WITHIN | Mechanical all-vertices-in-polygon result using the archived official boundary. |
 | OVERLAPS_PART_OF | The exact local code location overlaps only part of the coarser corridor edge. |
+| ROUTE_NUMBER_NOT_LISTED_IN_APPENDIX_C | The edge's raw NJOGIS shield number was compared with the route numbers printed in N.J.A.C. 16:32 Appendix C and was absent. This relationship records network classification only, not a truck prohibition. |
+
+Road-specific couplings include a `road_segment_match` object. It records the official name variants, SRI or shield number, matched feature IDs, and any source-stated intersection offsets used for the deterministic join. Derived coordinates identify the matched extent and state their calculation method; they are not transcribed source text.
 Every coupling edge lists its supporting source IDs and source-supported applicability status. Compliance is not inferred.

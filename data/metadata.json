@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0-canonical-source-registry",
+  "schema_version": "2.0-canonical-source-registry",
   "project": "Last-Mile Drayage Coupled-Network Pilot — APM Terminals Elizabeth",
-  "last_updated": "2026-07-31",
+  "last_updated": "2026-08-07",
   "status": "canonical_evidence_source_registry",
-  "source_count": 19,
+  "source_count": 20,
   "sources": [
     {
       "source_id": "apm_directions",
@@ -13,9 +13,13 @@
       "snapshot_date": "2026-06-25",
       "url": "https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
       "wayback_url": "https://web.archive.org/web/20260625174530/https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_contact_directions.pdf",
-      "sha256": "921a2a2254faca26b60c5ee434a3f4c23b15686548e74e88eb1213be6e36e7de"
+      "archived_files": [
+        {
+          "role": "page_snapshot_pdf",
+          "path": "data/raw/documents/port_authority/apm_elizabeth_contact_directions.pdf",
+          "sha256": "921a2a2254faca26b60c5ee434a3f4c23b15686548e74e88eb1213be6e36e7de"
+        }
+      ]
     },
     {
       "source_id": "apm_hours_ops",
@@ -25,9 +29,13 @@
       "snapshot_date": "2026-06-25",
       "url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
       "wayback_url": "https://web.archive.org/web/20260625174535/https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
-      "sha256": "5fdd2d5d074ec07c75a8457bea3dcc380a46d47e89a677334237a2e70c417063"
+      "archived_files": [
+        {
+          "role": "page_snapshot_pdf",
+          "path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
+          "sha256": "5fdd2d5d074ec07c75a8457bea3dcc380a46d47e89a677334237a2e70c417063"
+        }
+      ]
     },
     {
       "source_id": "apm_appointment_system",
@@ -37,9 +45,13 @@
       "snapshot_date": "2026-06-25",
       "url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
       "wayback_url": "https://web.archive.org/web/20260625174638/https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
-      "sha256": "2fe8f0f94f61832512d7efd68fe07cac4c38ea0fe3295edd845d87a2e465b4ac"
+      "archived_files": [
+        {
+          "role": "page_snapshot_pdf",
+          "path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
+          "sha256": "2fe8f0f94f61832512d7efd68fe07cac4c38ea0fe3295edd845d87a2e465b4ac"
+        }
+      ]
     },
     {
       "source_id": "njogis_road_centerlines_2026_07_26",
@@ -49,13 +61,23 @@
       "publication_date": "2026-05-20",
       "retrieval_date": "2026-07-26",
       "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/Tran_road/FeatureServer/0",
-      "locally_archived": true,
-      "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
-      "sha256": "9a7b56932b93e793d782f64cf2266f97c2e5913f29688b246796f25c4d38120d",
-      "item_metadata_path": "data/raw/gis/official/njogis_road_centerlines_item_2026_07_26.json",
-      "item_metadata_sha256": "40f732706b91844e1a328466548f38a81f2d2bbea3329990911bccf3a98cbfc8",
-      "schema_path": "data/raw/gis/official/njogis_road_centerlines_layer_2026_07_26.json",
-      "schema_sha256": "f19809f9c1464b42fcc4afaa0df5ad332964f26cfac47ae9a22767a7a22730d0"
+      "archived_files": [
+        {
+          "role": "gis_extract_geojson",
+          "path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "sha256": "9a7b56932b93e793d782f64cf2266f97c2e5913f29688b246796f25c4d38120d"
+        },
+        {
+          "role": "service_item_metadata",
+          "path": "data/raw/gis/official/njogis_road_centerlines_item_2026_07_26.json",
+          "sha256": "40f732706b91844e1a328466548f38a81f2d2bbea3329990911bccf3a98cbfc8"
+        },
+        {
+          "role": "service_layer_schema",
+          "path": "data/raw/gis/official/njogis_road_centerlines_layer_2026_07_26.json",
+          "sha256": "f19809f9c1464b42fcc4afaa0df5ad332964f26cfac47ae9a22767a7a22730d0"
+        }
+      ]
     },
     {
       "source_id": "njogis_municipal_boundaries_2026_07_26",
@@ -65,13 +87,23 @@
       "publication_date": "2026-02-05",
       "retrieval_date": "2026-07-26",
       "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Municipal_Boundaries_3424/FeatureServer/0",
-      "locally_archived": true,
-      "local_path": "data/raw/gis/official/njogis_elizabeth_boundary_2026_07_26.geojson",
-      "sha256": "3d8d76e7e810a8eff0d0f55968e07fd51b152d03852141b2be3b2ac360689b44",
-      "item_metadata_path": "data/raw/gis/official/njogis_municipal_boundaries_item_2026_07_26.json",
-      "item_metadata_sha256": "2604527ca34cc31579773c33c609d6261cf89073c364f2b91eb03c678906de09",
-      "schema_path": "data/raw/gis/official/njogis_municipal_boundaries_layer_2026_07_26.json",
-      "schema_sha256": "b0f96b4f7f5121ab542332fcb895b45fab22ccb0c44f967fd0609ac38204ccaf"
+      "archived_files": [
+        {
+          "role": "gis_extract_geojson",
+          "path": "data/raw/gis/official/njogis_elizabeth_boundary_2026_07_26.geojson",
+          "sha256": "3d8d76e7e810a8eff0d0f55968e07fd51b152d03852141b2be3b2ac360689b44"
+        },
+        {
+          "role": "service_item_metadata",
+          "path": "data/raw/gis/official/njogis_municipal_boundaries_item_2026_07_26.json",
+          "sha256": "2604527ca34cc31579773c33c609d6261cf89073c364f2b91eb03c678906de09"
+        },
+        {
+          "role": "service_layer_schema",
+          "path": "data/raw/gis/official/njogis_municipal_boundaries_layer_2026_07_26.json",
+          "sha256": "b0f96b4f7f5121ab542332fcb895b45fab22ccb0c44f967fd0609ac38204ccaf"
+        }
+      ]
     },
     {
       "source_id": "njogis_county_boundaries_2026_07_26",
@@ -81,13 +113,23 @@
       "publication_date": "2025-04-10",
       "retrieval_date": "2026-07-26",
       "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Counties_3424/FeatureServer/0",
-      "locally_archived": true,
-      "local_path": "data/raw/gis/official/njogis_union_county_boundary_2026_07_26.geojson",
-      "sha256": "e5ef1a84529a25af1623b3683a8050d154f914fb2619d13221cd0b1d80eba79c",
-      "item_metadata_path": "data/raw/gis/official/njogis_county_boundaries_item_2026_07_26.json",
-      "item_metadata_sha256": "8dfd7e5ff991e239916443adcd8347700903186a039d17d0d5eb3e7ddb313fa2",
-      "schema_path": "data/raw/gis/official/njogis_county_boundaries_layer_2026_07_26.json",
-      "schema_sha256": "f10b61a012c1faea0d95127b1ab21d160d8dbd0ce7d0805867e1ea675340612b"
+      "archived_files": [
+        {
+          "role": "gis_extract_geojson",
+          "path": "data/raw/gis/official/njogis_union_county_boundary_2026_07_26.geojson",
+          "sha256": "e5ef1a84529a25af1623b3683a8050d154f914fb2619d13221cd0b1d80eba79c"
+        },
+        {
+          "role": "service_item_metadata",
+          "path": "data/raw/gis/official/njogis_county_boundaries_item_2026_07_26.json",
+          "sha256": "8dfd7e5ff991e239916443adcd8347700903186a039d17d0d5eb3e7ddb313fa2"
+        },
+        {
+          "role": "service_layer_schema",
+          "path": "data/raw/gis/official/njogis_county_boundaries_layer_2026_07_26.json",
+          "sha256": "f10b61a012c1faea0d95127b1ab21d160d8dbd0ce7d0805867e1ea675340612b"
+        }
+      ]
     },
     {
       "source_id": "google_maps_route_observation_2026_07_31",
@@ -96,9 +138,13 @@
       "source_type": "third_party_current_route_observation",
       "observation_date": "2026-07-31",
       "url": "https://www.google.com/maps/@40.6734498,-74.1583229,3a,75y,107.83h,90t/data=!3m4!1e1!3m2!1s9gAJHVMjoN_Uk4hVTOP76A!2e0",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null,
+      "archived_files": [
+        {
+          "role": "streetview_screenshot",
+          "path": "data/raw/documents/third_party/google_streetview_tripoli_st_pano_9gAJHVMjoN_2026_08_07.png",
+          "sha256": "3a5f210ed29e444b10ff7a8eaa01e914d92431d5a6c76d01d1430686159cd6a4"
+        }
+      ],
       "observed_coordinate": [
         -74.1583229,
         40.6734498
@@ -107,7 +153,9 @@
         "Turn right",
         "Continue onto Tripoli St",
         "Destination will be on the right"
-      ]
+      ],
+      "archived_date": "2026-08-07",
+      "archive_note": "Same panorama ID captured 2026-08-07 at the recorded camera pose; Google reports the imagery capture date as August 2019."
     },
     {
       "source_id": "ecfr_twic_1572",
@@ -117,9 +165,13 @@
       "current_through": "2026-06-23",
       "snapshot_date": "2026-06-25",
       "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-D/part-1572",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
-      "sha256": "0b167e8a4f3feddb0fde2cb931fbb89ee8edbef373d59b7ad1a601a73ba592c7"
+      "archived_files": [
+        {
+          "role": "page_snapshot_pdf",
+          "path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
+          "sha256": "0b167e8a4f3feddb0fde2cb931fbb89ee8edbef373d59b7ad1a601a73ba592c7"
+        }
+      ]
     },
     {
       "source_id": "ecfr_49_cfr_383_2026_07_29",
@@ -129,9 +181,17 @@
       "current_through": "2026-07-29",
       "accessed_date": "2026-07-31",
       "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null
+      "archived_files": [
+        {
+          "role": "ecfr_api_point_in_time_xml",
+          "path": "data/raw/documents/federal/ecfr_49_cfr_part_383_as_of_2026_07_29.xml",
+          "sha256": "519aeea036ae7fb5f250a58686861e8021b821b859c151e968e014828d7ec52b"
+        }
+      ],
+      "archive_api_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-29/title-49.xml?part=383",
+      "archived_date": "2026-08-07",
+      "archive_note": "Point-in-time text as of 2026-07-29 retrieved from the official eCFR versioner API on 2026-08-07 (ecfr.gov blocks automated page rendering); the Wayback snapshot preserves the rendered page as of 2026-08-07.",
+      "wayback_url": "https://web.archive.org/web/20260807144350/https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383"
     },
     {
       "source_id": "ecfr_23_cfr_658_17_2026_07_29",
@@ -141,9 +201,17 @@
       "current_through": "2026-07-29",
       "accessed_date": "2026-07-31",
       "url": "https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-658/section-658.17",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null
+      "archived_files": [
+        {
+          "role": "ecfr_api_point_in_time_xml",
+          "path": "data/raw/documents/federal/ecfr_23_cfr_658_17_as_of_2026_07_29.xml",
+          "sha256": "d846fa89b50edd7d24346082f2f2f68e640eee0295969e6b4f5c82ba1f5fbbe0"
+        }
+      ],
+      "archive_api_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-29/title-23.xml?part=658&section=658.17",
+      "archived_date": "2026-08-07",
+      "archive_note": "Point-in-time text as of 2026-07-29 retrieved from the official eCFR versioner API on 2026-08-07 (ecfr.gov blocks automated page rendering); the Wayback snapshot preserves the rendered page as of 2026-08-07.",
+      "wayback_url": "https://web.archive.org/web/20260807144429/https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-658/section-658.17"
     },
     {
       "source_id": "ecfr_33_cfr_101_514_2026_07_29",
@@ -153,9 +221,17 @@
       "current_through": "2026-07-29",
       "accessed_date": "2026-07-31",
       "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-101/subpart-E/section-101.514",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null
+      "archived_files": [
+        {
+          "role": "ecfr_api_point_in_time_xml",
+          "path": "data/raw/documents/federal/ecfr_33_cfr_101_514_as_of_2026_07_29.xml",
+          "sha256": "daf1e34cd704b61e120825633280d8d428f6a883012adefd1aca64ff09e83411"
+        }
+      ],
+      "archive_api_url": "https://www.ecfr.gov/api/versioner/v1/full/2026-07-29/title-33.xml?part=101&section=101.514",
+      "archived_date": "2026-08-07",
+      "archive_note": "Point-in-time text as of 2026-07-29 retrieved from the official eCFR versioner API on 2026-08-07 (ecfr.gov blocks automated page rendering); the Wayback snapshot preserves the rendered page as of 2026-08-07.",
+      "wayback_url": "https://web.archive.org/web/20260807144509/https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-101/subpart-E/section-101.514"
     },
     {
       "source_id": "nj_size_weight_guidebook",
@@ -165,9 +241,13 @@
       "publication_date": "2024",
       "retrieval_date": "2026-06-25",
       "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
-      "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+          "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+        }
+      ]
     },
     {
       "source_id": "nj_large_truck_map",
@@ -177,9 +257,13 @@
       "publication_date": "2024-01-22",
       "retrieval_date": "2026-06-25",
       "url": "https://www.nj.gov/transportation/freight/trucking/pdf/largetruckmap.pdf",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/state/nj_large_truck_map_2024.pdf",
-      "sha256": "06a0bf8cda058f9f032f39b8ef4e921a6ab9ac989e1573de55c914aeff5d93ef",
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/state/nj_large_truck_map_2024.pdf",
+          "sha256": "06a0bf8cda058f9f032f39b8ef4e921a6ab9ac989e1573de55c914aeff5d93ef"
+        }
+      ],
       "use_limit": "The map states that its route designations pertain to permissible widths only."
     },
     {
@@ -192,9 +276,13 @@
       "expiration_date": "2029-11-30",
       "accessed_date": "2026-07-31",
       "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
-      "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+          "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+        }
+      ]
     },
     {
       "source_id": "elizabeth_code_10_16_050_2025_11_11",
@@ -206,9 +294,22 @@
       "accessed_date": "2026-07-31",
       "url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI_10.16.05080POOVEZOLISTAF",
       "official_city_index_url": "https://www.elizabethnj.org/272/City-Ordinances",
-      "locally_archived": false,
-      "local_path": null,
-      "sha256": null
+      "archived_files": [
+        {
+          "role": "page_snapshot_pdf",
+          "path": "data/raw/documents/municipal/elizabeth_code_10_16_050_page_snapshot_2026_08_07.pdf",
+          "sha256": "bd44da640a8913789736132240f32c57d719ddbd39eea7f8c1e12b4c520b3606"
+        },
+        {
+          "role": "municode_api_content",
+          "path": "data/raw/documents/municipal/elizabeth_code_ch_10_16_municode_api_2026_08_07.json",
+          "sha256": "ac448f78739bfa933f882e24a4deca5d5f098f07c89906f4029f416cb004be22"
+        }
+      ],
+      "current_url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI_10.16.050AN80000POOVVEZOLITRAF",
+      "archived_date": "2026-08-07",
+      "archive_note": "The nodeId in the 2026-07-31 access URL no longer resolved on 2026-08-07; the same code version (latest update 2025-11-11) serves the section at current_url. The Wayback snapshot stores only the Municode application shell; the archived files are the preserved copies.",
+      "wayback_url": "https://web.archive.org/web/20260807144548/https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI_10.16.050AN80000POOVVEZOLITRAF"
     },
     {
       "source_id": "panynj_marine_terminal_tariff",
@@ -218,9 +319,13 @@
       "effective_date": "2026-05-01",
       "retrieval_date": "2026-06-25",
       "url": "https://www.panynj.gov/port/en/our-port/tariffs.html",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
-      "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+          "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+        }
+      ]
     },
     {
       "source_id": "panynj_truckers_guide",
@@ -230,9 +335,13 @@
       "publication_date": "2025-08",
       "retrieval_date": "2026-06-25",
       "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
-      "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+          "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+        }
+      ]
     },
     {
       "source_id": "panynj_truck_info",
@@ -242,9 +351,13 @@
       "snapshot_date": "2026-06-25",
       "url": "https://www.panynj.gov/port/en/shipping/truck.html",
       "wayback_url": "https://web.archive.org/web/20260625173839/https://www.panynj.gov/port/en/shipping/truck.html#accessPort",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/port_authority/panynj_truck_information_page.pdf",
-      "sha256": "85414ab61578326a507da7384a3bd8810b2afd2fd8e4fefaff5126164996e489"
+      "archived_files": [
+        {
+          "role": "page_snapshot_pdf",
+          "path": "data/raw/documents/port_authority/panynj_truck_information_page.pdf",
+          "sha256": "85414ab61578326a507da7384a3bd8810b2afd2fd8e4fefaff5126164996e489"
+        }
+      ]
     },
     {
       "source_id": "porttruckpass_tips",
@@ -254,9 +367,36 @@
       "snapshot_date": "2026-06-25",
       "url": "https://www.porttruckpass.com/",
       "wayback_url": "https://web.archive.org/web/20260625174308/https://www.porttruckpass.com/",
-      "locally_archived": true,
-      "local_path": "data/raw/documents/port_authority/porttruckpass_tips_homepage.pdf",
-      "sha256": "791b0491296ebb5fde8cc75b7ee8a8d8a5c9fda73b0e10ee1147ac36299d43c6"
+      "archived_files": [
+        {
+          "role": "page_snapshot_pdf",
+          "path": "data/raw/documents/port_authority/porttruckpass_tips_homepage.pdf",
+          "sha256": "791b0491296ebb5fde8cc75b7ee8a8d8a5c9fda73b0e10ee1147ac36299d43c6"
+        }
+      ]
+    },
+    {
+      "source_id": "fhwa_nhs_shapefile_2025_08_08",
+      "title": "FHWA National Highway System shapefile, version 2025-08-08 — Union County study-route extract",
+      "publisher": "Federal Highway Administration, U.S. Department of Transportation",
+      "source_type": "official_gis",
+      "publication_date": "2025-08-08",
+      "retrieval_date": "2026-08-07",
+      "url": "https://www.fhwa.dot.gov/planning/national_highway_system/nhs_maps/nhs_2025-08-08.zip",
+      "archived_files": [
+        {
+          "role": "gis_extract_geojson",
+          "path": "data/raw/gis/official/fhwa_nhs_2025_union_study_extract_2026_08_07.geojson",
+          "sha256": "8b92536bedb6b0b722101563948c54b9bbfbd89d17a44206b17f1badd73bd69b"
+        },
+        {
+          "role": "source_metadata",
+          "path": "data/raw/gis/official/fhwa_nhs_shapefile_metadata_2023_09_06.docx",
+          "sha256": "65ca4342196c14d020c4e673ec35c7f68e03bf6336d235c0ab866a9dd8ba858a"
+        }
+      ],
+      "source_zip_sha256": "f2b828d71e3986e2182976f2288b55fba1856a111256954626096a095636f501",
+      "extract_note": "The archived GeoJSON is an unmodified attribute-and-geometry extract of all features with STFIPS=34, CTFIPS=39, and ROUTEID in ['20041769__','200413892_','00000081__'] from National_NHS_080825.shp. The full national zip is identified by source_zip_sha256 and was not retained locally."
     }
   ]
 }

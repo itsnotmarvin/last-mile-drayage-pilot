@@ -79,6 +79,16 @@
         248025
       ],
       "official_feature_name": "FR NJ TURNPIKE SB TO NJ 81 NB",
+      "official_list_names": [
+        "FR NJ TURNPIKE SB TO NJ 81 NB"
+      ],
+      "official_sri_ids": [
+        "00000095__X105660"
+      ],
+      "official_shield_types_raw": [
+        "N"
+      ],
+      "official_shield_numbers_raw": [],
       "official_oneway_raw": [
         "FT"
       ],
@@ -126,6 +136,18 @@
         301684
       ],
       "official_feature_name": "US Highway 1 Express",
+      "official_list_names": [
+        "US HWY 1 EXP"
+      ],
+      "official_sri_ids": [
+        "00000001ES"
+      ],
+      "official_shield_types_raw": [
+        "USR"
+      ],
+      "official_shield_numbers_raw": [
+        "1"
+      ],
       "official_oneway_raw": [
         "FT"
       ],
@@ -187,11 +209,41 @@
         "North Avenue East",
         "North Avenue"
       ],
+      "official_list_names": [
+        "NORTH AVE E",
+        "NORTH AVE"
+      ],
+      "official_sri_ids": [
+        "20000624__"
+      ],
+      "official_shield_types_raw": [
+        "COR"
+      ],
+      "official_shield_numbers_raw": [
+        "624"
+      ],
       "official_oneway_raw": [
         "B",
         "FT"
       ],
       "jurisdiction_code_raw": "C",
+      "official_nhs_designations": {
+        "fhwa_nhs_2025": {
+          "source_id": "fhwa_nhs_shapefile_2025_08_08",
+          "nhs_code_raw": 7,
+          "nhs_code_official_meaning": "Other NHS",
+          "nhs_code_meaning_source": "Attribute domain in the archived FHWA shapefile metadata",
+          "status_raw": 1,
+          "matched_routeid": "20041769__",
+          "matched_signed_route_raw": "C624",
+          "matched_local_name_raw": "North Av",
+          "matched_milepost_range": [
+            0.66,
+            2.51
+          ],
+          "match_basis": "SIGN1 'C624' and LNAME 'North Av' in Union County (STFIPS 34, CTFIPS 39) in the archived extract"
+        }
+      },
       "jurisdiction_label": "County",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
       "sequence_source_id": "apm_directions",
@@ -239,11 +291,41 @@
         "North Avenue",
         "North Avenue East"
       ],
+      "official_list_names": [
+        "NORTH AVE",
+        "NORTH AVE E"
+      ],
+      "official_sri_ids": [
+        "20000624__"
+      ],
+      "official_shield_types_raw": [
+        "COR"
+      ],
+      "official_shield_numbers_raw": [
+        "624"
+      ],
       "official_oneway_raw": [
         "FT",
         "B"
       ],
       "jurisdiction_code_raw": "C",
+      "official_nhs_designations": {
+        "fhwa_nhs_2025": {
+          "source_id": "fhwa_nhs_shapefile_2025_08_08",
+          "nhs_code_raw": 7,
+          "nhs_code_official_meaning": "Other NHS",
+          "nhs_code_meaning_source": "Attribute domain in the archived FHWA shapefile metadata",
+          "status_raw": 1,
+          "matched_routeid": "20041769__",
+          "matched_signed_route_raw": "C624",
+          "matched_local_name_raw": "North Av",
+          "matched_milepost_range": [
+            0.66,
+            2.51
+          ],
+          "match_basis": "SIGN1 'C624' and LNAME 'North Av' in Union County (STFIPS 34, CTFIPS 39) in the archived extract"
+        }
+      },
       "jurisdiction_label": "County",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
       "sequence_source_id": "apm_directions",
@@ -283,10 +365,47 @@
         320648
       ],
       "official_feature_name": "McLester Street",
+      "official_list_names": [
+        "MCLESTER ST"
+      ],
+      "official_sri_ids": [
+        "200413892_"
+      ],
+      "official_shield_types_raw": [
+        "N"
+      ],
+      "official_shield_numbers_raw": [],
       "official_oneway_raw": [
         "B"
       ],
       "jurisdiction_code_raw": "M",
+      "official_nhs_designations": {
+        "fhwa_nhs_2025": {
+          "source_id": "fhwa_nhs_shapefile_2025_08_08",
+          "segments": [
+            {
+              "milepost_range": [
+                0.0,
+                1.0
+              ],
+              "nhs_code_raw": 7,
+              "nhs_code_official_meaning": "Other NHS"
+            },
+            {
+              "milepost_range": [
+                1.0,
+                1.47
+              ],
+              "nhs_code_raw": 10,
+              "nhs_code_official_meaning": "Principal arterial added to the NHS under MAP-21"
+            }
+          ],
+          "nhs_code_meaning_source": "Attribute domain in the archived FHWA shapefile metadata",
+          "status_raw": 1,
+          "matched_routeid": "200413892_",
+          "match_basis": "ROUTEID in the archived extract equals this edge's NJOGIS SRI 200413892_; Union County (STFIPS 34, CTFIPS 39)"
+        }
+      },
       "jurisdiction_label": "Municipal",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
       "sequence_source_id": "apm_directions",
@@ -323,6 +442,16 @@
         374024
       ],
       "official_feature_name": "Tripoli Street",
+      "official_list_names": [
+        "TRIPOLI ST"
+      ],
+      "official_sri_ids": [
+        "20041004__"
+      ],
+      "official_shield_types_raw": [
+        "N"
+      ],
+      "official_shield_numbers_raw": [],
       "official_oneway_raw": [
         "B"
       ],
