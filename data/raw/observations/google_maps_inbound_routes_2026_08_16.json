@@ -1,0 +1,60 @@
+{
+  "source_id": "google_maps_inbound_route_observations_2026_08_16",
+  "observation_date": "2026-08-16",
+  "timezone": "America/New_York",
+  "destination_query": "APM Terminals Elizabeth, Elizabeth, NJ",
+  "destination_resolved": "APM Terminals, 5080 McLester St, Elizabeth, NJ 07201",
+  "movement_scope": "inbound_only",
+  "observations": [
+    {
+      "approach_id": "approach_a_turnpike_sb",
+      "origin_coordinate": [
+        -74.1775120831099,
+        40.6708416045937
+      ],
+      "observed_distance_miles": 3.0,
+      "observed_duration_minutes": 8,
+      "displayed_via": "North Ave E",
+      "toll_notice_displayed": true,
+      "url": "https://www.google.com/maps/dir/40.6708416045937,-74.1775120831099/APM+Terminals+Elizabeth,+Elizabeth,+NJ/@40.6702,-74.1679,15z/data=!4m2!4m1!3e0"
+    },
+    {
+      "approach_id": "approach_a_turnpike_nb",
+      "origin_coordinate": [
+        -74.1824480609753,
+        40.6636843947186
+      ],
+      "observed_distance_miles": 3.0,
+      "observed_duration_minutes": 8,
+      "displayed_via": "North Ave E",
+      "toll_notice_displayed": true,
+      "url": "https://www.google.com/maps/dir/40.6636843947186,-74.1824480609753/APM+Terminals+Elizabeth,+Elizabeth,+NJ/@40.6698,-74.1710,15z/data=!4m2!4m1!3e0"
+    },
+    {
+      "approach_id": "approach_b_us1_9_sb",
+      "origin_coordinate": [
+        -74.1931087468226,
+        40.6828636728236
+      ],
+      "observed_distance_miles": 3.3,
+      "observed_duration_minutes": 8,
+      "displayed_via": "North Ave E",
+      "toll_notice_displayed": false,
+      "url": "https://www.google.com/maps/dir/40.6828636728236,-74.1931087468226/APM+Terminals+Elizabeth,+Elizabeth,+NJ/@40.6771392,-74.1757158,15z/data=!4m2!4m1!3e0"
+    },
+    {
+      "approach_id": "approach_b_us1_9_nb",
+      "origin_coordinate": [
+        -74.198094260763,
+        40.6762518194506
+      ],
+      "observed_distance_miles": 3.2,
+      "observed_duration_minutes": 9,
+      "displayed_via": "North Ave E",
+      "toll_notice_displayed": false,
+      "url": "https://www.google.com/maps/dir/40.6762518,-74.1980943/APM+Terminals+Elizabeth,+Elizabeth,+NJ/@40.6748508,-74.1779862,15z/data=!4m2!4m1!3e0"
+    }
+  ],
+  "use_limit": "Google Maps supplied ordinary driving routes, not truck-specific routing. These observations corroborate directional continuity only and do not establish truck legality, clearance, weight suitability, or current operating conditions.",
+  "archive_note": "This record preserves the displayed route summaries and URLs observed on 2026-08-16; it does not archive Google route geometry or create a truck-routing claim."
+}
