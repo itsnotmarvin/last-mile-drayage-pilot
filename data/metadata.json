@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0-canonical-source-registry",
   "project": "Last-Mile Drayage Coupled-Network Pilot — APM Terminals Elizabeth",
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-16",
   "status": "canonical_evidence_source_registry",
-  "source_count": 23,
+  "source_count": 24,
   "sources": [
     {
       "source_id": "apm_directions",
@@ -447,6 +447,28 @@
         }
       ],
       "archive_note": "LII mirrors the codified New Jersey Administrative Code and updates quarterly; the official code of record is the OAL LexisNexis portal."
+    },
+    {
+      "source_id": "google_maps_inbound_route_observations_2026_08_16",
+      "title": "Google Maps inbound route observations — four directional approaches to APM Terminals Elizabeth",
+      "publisher": "Google Maps",
+      "source_type": "third_party_current_route_observation_not_truck_specific",
+      "observation_date": "2026-08-16",
+      "url": "https://www.google.com/maps/dir/",
+      "archived_files": [
+        {
+          "role": "route_observation_record",
+          "path": "data/raw/observations/google_maps_inbound_routes_2026_08_16.json",
+          "sha256": "3bcebf5fa81d041146a12a4759caa8ca4bbb4928b835d6463f84ebed30c18f2f"
+        }
+      ],
+      "observed_approach_ids": [
+        "approach_a_turnpike_sb",
+        "approach_a_turnpike_nb",
+        "approach_b_us1_9_sb",
+        "approach_b_us1_9_nb"
+      ],
+      "use_limit": "Ordinary driving-route observations corroborate directional continuity only. They do not establish truck legality, clearance, weight suitability, or current operating conditions."
     }
   ]
 }

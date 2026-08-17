@@ -1,30 +1,71 @@
 {
-  "schema_version": "1.0-verified-directed-corridors",
-  "status": "canonical_verified_physical_graph",
+  "schema_version": "2.0-corridor-approach-directed-corridors",
+  "status": "canonical_inbound_corridor_graph_with_mixed_approach_verification",
   "vehicle_profile_id": "scoped_80000lb_5axle_nonhaz_inbound_apm",
+  "movement_scope": "inbound_only",
   "active_path_ids": [
     "path_a_exit13a_to_apm",
     "path_b_us1_9_to_apm"
   ],
+  "active_approach_ids": [
+    "approach_a_turnpike_sb",
+    "approach_a_turnpike_nb",
+    "approach_b_us1_9_sb",
+    "approach_b_us1_9_nb"
+  ],
   "source_ids": [
     "apm_directions",
     "njogis_road_centerlines_2026_07_26",
-    "google_maps_route_observation_2026_07_31"
+    "google_maps_route_observation_2026_07_31",
+    "google_maps_inbound_route_observations_2026_08_16"
   ],
   "coordinate_crs": "EPSG:4326",
   "paths": [
     {
       "path_id": "path_a_exit13a_to_apm",
-      "name": "Travelling south on the NJ Turnpike",
+      "definition_level": "corridor_route_family",
+      "name": "NJ Turnpike / I-95 access corridor to APM",
+      "anchor_corridor": "New Jersey Turnpike / I-95",
       "movement": "inbound",
+      "destination_node": "node_apm_inbound_gate",
+      "approach_ids": [
+        "approach_a_turnpike_sb",
+        "approach_a_turnpike_nb"
+      ]
+    },
+    {
+      "path_id": "path_b_us1_9_to_apm",
+      "definition_level": "corridor_route_family",
+      "name": "US Route 1 & 9 access corridor to APM",
+      "anchor_corridor": "US Route 1 & 9",
+      "movement": "inbound",
+      "destination_node": "node_apm_inbound_gate",
+      "approach_ids": [
+        "approach_b_us1_9_sb",
+        "approach_b_us1_9_nb"
+      ]
+    }
+  ],
+  "approaches": [
+    {
+      "approach_id": "approach_a_turnpike_sb",
+      "path_id": "path_a_exit13a_to_apm",
+      "travel_direction_on_anchor_corridor": "southbound",
+      "movement": "inbound",
+      "origin_node": "node_a_sb_turnpike_exit13a",
+      "destination_node": "node_apm_inbound_gate",
+      "verification_status": "operator_published_route_supported",
       "ordered_edge_ids": [
-        "edge_a_exit13a_connector",
+        "edge_a_sb_exit13a_to_all_merge",
         "edge_shared_north_avenue",
         "edge_shared_mclester",
         "edge_shared_tripoli_gate"
       ],
-      "sequence_source_id": "apm_directions",
-      "source_locator": "PDF page 2, Travelling south on the NJ Turnpike",
+      "sequence_source_ids": [
+        "apm_directions",
+        "google_maps_inbound_route_observations_2026_08_16"
+      ],
+      "source_locator": "APM directions PDF page 2, Travelling south on the NJ Turnpike",
       "source_text": [
         "Take the NJ Turnpike to Exit 13A.",
         "Follow the signs to Elizabeth Seaport/North Avenue.",
@@ -34,23 +75,52 @@
         "The entrance to the APM Terminals Control Building, Garage, Warehouse and Marine Operations will be on the right."
       ],
       "source_text_verbatim": true,
-      "transcription_preserves_source_typo": [
-        "Turm"
-      ]
+      "transcription_preserves_source_typo": ["Turm"]
     },
     {
-      "path_id": "path_b_us1_9_to_apm",
-      "name": "Travelling south on Route 1 & 9",
+      "approach_id": "approach_a_turnpike_nb",
+      "path_id": "path_a_exit13a_to_apm",
+      "travel_direction_on_anchor_corridor": "northbound",
       "movement": "inbound",
+      "origin_node": "node_a_nb_turnpike_exit13a",
+      "destination_node": "node_apm_inbound_gate",
+      "verification_status": "candidate_observed_not_truck_verified",
       "ordered_edge_ids": [
-        "edge_b_us1_south",
-        "edge_b_north_avenue_to_merge",
+        "edge_a_nb_turnpike_exit",
+        "edge_a_nb_state_ramps_to_north_ave",
+        "edge_ab_shared_north_ave_to_all_merge",
         "edge_shared_north_avenue",
         "edge_shared_mclester",
         "edge_shared_tripoli_gate"
       ],
-      "sequence_source_id": "apm_directions",
-      "source_locator": "PDF page 1, Travelling south on Route 1 & 9",
+      "sequence_source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "google_maps_inbound_route_observations_2026_08_16"
+      ],
+      "verification_note": "Official centerlines establish directed physical continuity. Google Maps corroborates ordinary-vehicle routing to the named APM destination but is not truck-specific evidence."
+    },
+    {
+      "approach_id": "approach_b_us1_9_sb",
+      "path_id": "path_b_us1_9_to_apm",
+      "travel_direction_on_anchor_corridor": "southbound",
+      "movement": "inbound",
+      "origin_node": "node_b_sb_us1_9_exit",
+      "destination_node": "node_apm_inbound_gate",
+      "verification_status": "operator_published_route_supported",
+      "ordered_edge_ids": [
+        "edge_b_sb_us1_nj81_to_north_ave",
+        "edge_b_shared_north_ave_to_a_nb_merge",
+        "edge_ab_shared_north_ave_to_all_merge",
+        "edge_shared_north_avenue",
+        "edge_shared_mclester",
+        "edge_shared_tripoli_gate"
+      ],
+      "sequence_source_ids": [
+        "apm_directions",
+        "njogis_road_centerlines_2026_07_26",
+        "google_maps_inbound_route_observations_2026_08_16"
+      ],
+      "source_locator": "APM directions PDF page 1, Travelling south on Route 1 & 9",
       "source_text": [
         "Follow Route 1 & 9 South until sign indicating Elizabeth Seaport/North Avenue exit.",
         "Take this exit and follow North Avenue East to McLester Street.",
@@ -58,175 +128,188 @@
         "Turn right at Tripoli Street (3rd light).",
         "The entrance to the APM Terminals Control Building, Garage, Warehouse and Marine Operations will be on the right."
       ],
-      "source_text_verbatim": true
+      "source_text_verbatim": true,
+      "physical_realization_note": "The former feature 301684 realization was retired. The corrected chain follows the official US 1 southbound express exit, NJ-81 southbound, and the NJ-81 southbound ramp to North Avenue eastbound."
+    },
+    {
+      "approach_id": "approach_b_us1_9_nb",
+      "path_id": "path_b_us1_9_to_apm",
+      "travel_direction_on_anchor_corridor": "northbound",
+      "movement": "inbound",
+      "origin_node": "node_b_nb_us1_9_north_ave_exit",
+      "destination_node": "node_apm_inbound_gate",
+      "verification_status": "candidate_observed_not_truck_verified",
+      "ordered_edge_ids": [
+        "edge_b_nb_us1_to_north_ave",
+        "edge_b_nb_north_ave_to_b_merge",
+        "edge_b_shared_north_ave_to_a_nb_merge",
+        "edge_ab_shared_north_ave_to_all_merge",
+        "edge_shared_north_avenue",
+        "edge_shared_mclester",
+        "edge_shared_tripoli_gate"
+      ],
+      "sequence_source_ids": [
+        "njogis_road_centerlines_2026_07_26",
+        "google_maps_inbound_route_observations_2026_08_16"
+      ],
+      "verification_note": "The dedicated official ramp is named FR US 1 NB TO CO 624 EB. Google Maps corroborates the right-hand ordinary-vehicle movement onto North Avenue East but is not truck-specific evidence."
     }
   ],
+  "edge_count": 11,
   "edges": [
     {
-      "edge_id": "edge_a_exit13a_connector",
+      "edge_id": "edge_a_sb_exit13a_to_all_merge",
       "edge_type": "directed_roadway_corridor",
-      "name": "FR NJ TURNPIKE SB TO NJ 81 NB",
-      "from_node": "node_path_a_turnpike_sb_exit13a",
-      "to_node": "node_paths_merge_north_avenue",
-      "path_ids": [
-        "path_a_exit13a_to_apm"
-      ],
-      "sequence_by_path": {
-        "path_a_exit13a_to_apm": 1
-      },
-      "official_feature_ids": [
-        40708,
-        248025
-      ],
-      "official_feature_name": "FR NJ TURNPIKE SB TO NJ 81 NB",
-      "official_list_names": [
-        "FR NJ TURNPIKE SB TO NJ 81 NB"
-      ],
-      "official_sri_ids": [
-        "00000095__X105660"
-      ],
-      "official_shield_types_raw": [
-        "N"
-      ],
+      "name": "NJ Turnpike southbound Exit 13A connector to North Avenue",
+      "from_node": "node_a_sb_turnpike_exit13a",
+      "to_node": "node_all_approaches_merge_north_ave",
+      "path_ids": ["path_a_exit13a_to_apm"],
+      "approach_ids": ["approach_a_turnpike_sb"],
+      "sequence_by_approach": {"approach_a_turnpike_sb": 1},
+      "official_feature_ids": [40708, 248025],
+      "official_feature_names": ["FR NJ TURNPIKE SB TO NJ 81 NB"],
+      "official_sri_ids": ["00000095__X105660"],
+      "official_shield_types_raw": ["N"],
       "official_shield_numbers_raw": [],
-      "official_oneway_raw": [
-        "FT"
-      ],
+      "official_oneway_raw": ["FT"],
       "jurisdiction_code_raw": "HA",
       "jurisdiction_label": "Highway Authority",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
-      "sequence_source_id": "apm_directions",
       "geometry_reference": {
         "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
-        "start_coordinate": [
-          -74.1775120831099,
-          40.6708416045937
-        ],
-        "end_coordinate": [
-          -74.1785517799026,
-          40.6699210980933
-        ],
-        "endpoint_match_feature_ids": [
-          [
-            40708,
-            248025
-          ],
-          [
-            248025,
-            375671
-          ]
-        ]
+        "start_coordinate": [-74.1775120831099, 40.6708416045937],
+        "end_coordinate": [-74.1785517799026, 40.6699210980933],
+        "topology_method": "ordered_exact_endpoint_equality"
       },
       "source_trace_complete": true,
       "coupling_status": "ready"
     },
     {
-      "edge_id": "edge_b_us1_south",
+      "edge_id": "edge_a_nb_turnpike_exit",
       "edge_type": "directed_roadway_corridor",
-      "name": "US Highway 1 Express",
-      "from_node": "node_path_b_us1_south_access",
-      "to_node": "node_path_b_north_avenue_entry",
-      "path_ids": [
-        "path_b_us1_9_to_apm"
-      ],
-      "sequence_by_path": {
-        "path_b_us1_9_to_apm": 1
+      "name": "NJ Turnpike northbound Exit 13A authority ramps",
+      "from_node": "node_a_nb_turnpike_exit13a",
+      "to_node": "node_a_nb_turnpike_state_ramp_transition",
+      "path_ids": ["path_a_exit13a_to_apm"],
+      "approach_ids": ["approach_a_turnpike_nb"],
+      "sequence_by_approach": {"approach_a_turnpike_nb": 1},
+      "official_feature_ids": [593, 202013, 253552, 394565, 366856],
+      "official_feature_names": ["FR NJ TURNPIKE NB TO NJ 81 NB", "NEW JERSEY TPKE"],
+      "official_sri_ids": ["00000095__A105590", "00000095__"],
+      "official_shield_types_raw": ["N", "TPK"],
+      "official_shield_numbers_raw": [],
+      "official_oneway_raw": ["FT"],
+      "jurisdiction_code_raw": "HA",
+      "jurisdiction_label": "Highway Authority",
+      "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+      "geometry_reference": {
+        "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+        "start_coordinate": [-74.1824480609753, 40.6636843947186],
+        "end_coordinate": [-74.1793983127283, 40.6674594445013],
+        "topology_method": "ordered_exact_endpoint_equality"
       },
-      "official_feature_ids": [
-        301684
-      ],
-      "official_feature_name": "US Highway 1 Express",
-      "official_list_names": [
-        "US HWY 1 EXP"
-      ],
-      "official_sri_ids": [
-        "00000001ES"
-      ],
-      "official_shield_types_raw": [
-        "USR"
-      ],
-      "official_shield_numbers_raw": [
-        "1"
-      ],
-      "official_oneway_raw": [
-        "FT"
-      ],
+      "source_trace_complete": true,
+      "coupling_status": "ready"
+    },
+    {
+      "edge_id": "edge_a_nb_state_ramps_to_north_ave",
+      "edge_type": "directed_roadway_corridor",
+      "name": "Exit 13A state ramp system to North Avenue",
+      "from_node": "node_a_nb_turnpike_state_ramp_transition",
+      "to_node": "node_a_nb_joins_north_ave",
+      "path_ids": ["path_a_exit13a_to_apm"],
+      "approach_ids": ["approach_a_turnpike_nb"],
+      "sequence_by_approach": {"approach_a_turnpike_nb": 2},
+      "official_feature_ids": [198235, 316085, 52367, 32868, 84767, 72452, 305854, 326201, 97634, 222590],
+      "official_feature_names": ["FR PRIVATE RD TO RAMP Y200020", "FR RT 81 NB TO NORTH AVE"],
+      "official_sri_ids": ["00000081__Y300020", "00000081__A100020"],
+      "official_shield_types_raw": ["N"],
+      "official_shield_numbers_raw": [],
+      "official_oneway_raw": ["FT"],
       "jurisdiction_code_raw": "S",
       "jurisdiction_label": "State",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
-      "sequence_source_id": "apm_directions",
       "geometry_reference": {
         "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
-        "start_coordinate": [
-          -74.1941020913149,
-          40.6799845147686
-        ],
-        "end_coordinate": [
-          -74.197175870654,
-          40.6774213279391
-        ]
+        "start_coordinate": [-74.1793983127283, 40.6674594445013],
+        "end_coordinate": [-74.18179779279, 40.6710852588052],
+        "topology_method": "ordered_exact_endpoint_equality"
       },
       "source_trace_complete": true,
       "coupling_status": "ready"
     },
     {
-      "edge_id": "edge_b_north_avenue_to_merge",
+      "edge_id": "edge_b_sb_us1_nj81_to_north_ave",
       "edge_type": "directed_roadway_corridor",
-      "name": "North Avenue East",
-      "from_node": "node_path_b_north_avenue_entry",
-      "to_node": "node_paths_merge_north_avenue",
-      "path_ids": [
-        "path_b_us1_9_to_apm"
-      ],
-      "sequence_by_path": {
-        "path_b_us1_9_to_apm": 2
+      "name": "US 1 & 9 southbound exit via NJ-81 southbound to North Avenue",
+      "from_node": "node_b_sb_us1_9_exit",
+      "to_node": "node_b_approaches_merge_north_ave",
+      "path_ids": ["path_b_us1_9_to_apm"],
+      "approach_ids": ["approach_b_us1_9_sb"],
+      "sequence_by_approach": {"approach_b_us1_9_sb": 1},
+      "official_feature_ids": [324703, 321738, 114861, 332318, 155531, 59750, 81959, 82777, 308419, 177900, 210459, 331760, 331761, 328399, 331755],
+      "official_feature_names": ["FR US 1 SB EXPRESS TO NJ 81 SB", "STATE HWY 81", "FR NJ 81 SB TO NORTH AVE"],
+      "official_sri_ids": ["00000001__X104600", "00000081_S", "00000081__X100080"],
+      "official_shield_types_raw": ["N", "STR"],
+      "official_shield_numbers_raw": ["81"],
+      "official_oneway_raw": ["FT"],
+      "jurisdiction_code_raw": "S",
+      "jurisdiction_label": "State",
+      "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+      "geometry_reference": {
+        "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+        "start_coordinate": [-74.1931087468226, 40.6828636728236],
+        "end_coordinate": [-74.1878546482209, 40.673664180394],
+        "topology_method": "ordered_exact_endpoint_equality"
       },
-      "official_feature_ids": [
-        21853,
-        36098,
-        275508,
-        38315,
-        149567,
-        397476,
-        379364,
-        377733,
-        352874,
-        362442,
-        362068,
-        392458,
-        356932,
-        355367,
-        395878,
-        392976,
-        393144,
-        356943,
-        372772,
-        363113,
-        355826,
-        350133
-      ],
-      "official_feature_names": [
-        "North Avenue East",
-        "North Avenue"
-      ],
-      "official_list_names": [
-        "NORTH AVE E",
-        "NORTH AVE"
-      ],
-      "official_sri_ids": [
-        "20000624__"
-      ],
-      "official_shield_types_raw": [
-        "COR"
-      ],
-      "official_shield_numbers_raw": [
-        "624"
-      ],
-      "official_oneway_raw": [
-        "B",
-        "FT"
-      ],
+      "source_trace_complete": true,
+      "coupling_status": "ready"
+    },
+    {
+      "edge_id": "edge_b_nb_us1_to_north_ave",
+      "edge_type": "directed_roadway_corridor",
+      "name": "US 1 & 9 northbound right-hand ramp to North Avenue eastbound",
+      "from_node": "node_b_nb_us1_9_north_ave_exit",
+      "to_node": "node_b_nb_north_ave_join",
+      "path_ids": ["path_b_us1_9_to_apm"],
+      "approach_ids": ["approach_b_us1_9_nb"],
+      "sequence_by_approach": {"approach_b_us1_9_nb": 1},
+      "official_feature_ids": [276873],
+      "official_feature_names": ["FR US 1 NB TO CO 624 EB"],
+      "official_sri_ids": ["00000001__A104530"],
+      "official_shield_types_raw": ["N"],
+      "official_shield_numbers_raw": [],
+      "official_oneway_raw": ["FT"],
+      "jurisdiction_code_raw": "S",
+      "jurisdiction_label": "State",
+      "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+      "geometry_reference": {
+        "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+        "start_coordinate": [-74.198094260763, 40.6762518194506],
+        "end_coordinate": [-74.1962709814885, 40.6770550680897],
+        "topology_method": "exact_feature_geometry"
+      },
+      "source_trace_complete": true,
+      "coupling_status": "ready"
+    },
+    {
+      "edge_id": "edge_b_nb_north_ave_to_b_merge",
+      "edge_type": "directed_roadway_corridor",
+      "name": "North Avenue East from US 1 & 9 northbound ramp to Route 1 & 9 approach merge",
+      "from_node": "node_b_nb_north_ave_join",
+      "to_node": "node_b_approaches_merge_north_ave",
+      "path_ids": ["path_b_us1_9_to_apm"],
+      "approach_ids": ["approach_b_us1_9_nb"],
+      "sequence_by_approach": {"approach_b_us1_9_nb": 2},
+      "official_feature_ids": [275508, 38315, 149567, 397476, 379364, 377733, 352874],
+      "official_feature_names": ["North Avenue East"],
+      "official_list_names": ["NORTH AVE E"],
+      "official_sri_ids": ["20000624__"],
+      "official_shield_types_raw": ["COR"],
+      "official_shield_numbers_raw": ["624"],
+      "official_oneway_raw": ["B", "FT"],
       "jurisdiction_code_raw": "C",
+      "jurisdiction_label": "County",
       "official_nhs_designations": {
         "fhwa_nhs_2025": {
           "source_id": "fhwa_nhs_shapefile_2025_08_08",
@@ -237,27 +320,100 @@
           "matched_routeid": "20041769__",
           "matched_signed_route_raw": "C624",
           "matched_local_name_raw": "North Av",
-          "matched_milepost_range": [
-            0.66,
-            2.51
-          ],
+          "matched_milepost_range": [0.66, 2.51],
           "match_basis": "SIGN1 'C624' and LNAME 'North Av' in Union County (STFIPS 34, CTFIPS 39) in the archived extract"
         }
       },
-      "jurisdiction_label": "County",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
-      "sequence_source_id": "apm_directions",
       "geometry_reference": {
         "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
-        "start_coordinate": [
-          -74.197175870654,
-          40.6774213279391
-        ],
-        "end_coordinate": [
-          -74.1785517799026,
-          40.6699210980933
-        ],
-        "topology_method": "exact_endpoint_equality"
+        "start_coordinate": [-74.1962709814885, 40.6770550680897],
+        "end_coordinate": [-74.1878546482209, 40.673664180394],
+        "topology_method": "ordered_exact_endpoint_equality"
+      },
+      "source_trace_complete": true,
+      "coupling_status": "ready"
+    },
+    {
+      "edge_id": "edge_b_shared_north_ave_to_a_nb_merge",
+      "edge_type": "directed_roadway_corridor",
+      "name": "North Avenue from Route 1 & 9 approach merge to Turnpike northbound merge",
+      "from_node": "node_b_approaches_merge_north_ave",
+      "to_node": "node_a_nb_joins_north_ave",
+      "path_ids": ["path_b_us1_9_to_apm"],
+      "approach_ids": ["approach_b_us1_9_sb", "approach_b_us1_9_nb"],
+      "sequence_by_approach": {"approach_b_us1_9_sb": 2, "approach_b_us1_9_nb": 3},
+      "official_feature_ids": [362442, 362068, 392458, 356932, 355367, 395878, 392976, 393144, 356943],
+      "official_feature_names": ["North Avenue East", "North Avenue"],
+      "official_list_names": ["NORTH AVE E", "NORTH AVE"],
+      "official_sri_ids": ["20000624__"],
+      "official_shield_types_raw": ["COR"],
+      "official_shield_numbers_raw": ["624"],
+      "official_oneway_raw": ["FT"],
+      "jurisdiction_code_raw": "C",
+      "jurisdiction_label": "County",
+      "official_nhs_designations": {
+        "fhwa_nhs_2025": {
+          "source_id": "fhwa_nhs_shapefile_2025_08_08",
+          "nhs_code_raw": 7,
+          "nhs_code_official_meaning": "Other NHS",
+          "nhs_code_meaning_source": "Attribute domain in the archived FHWA shapefile metadata",
+          "status_raw": 1,
+          "matched_routeid": "20041769__",
+          "matched_signed_route_raw": "C624",
+          "matched_local_name_raw": "North Av",
+          "matched_milepost_range": [0.66, 2.51],
+          "match_basis": "SIGN1 'C624' and LNAME 'North Av' in Union County (STFIPS 34, CTFIPS 39) in the archived extract"
+        }
+      },
+      "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+      "geometry_reference": {
+        "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+        "start_coordinate": [-74.1878546482209, 40.673664180394],
+        "end_coordinate": [-74.18179779279, 40.6710852588052],
+        "topology_method": "ordered_exact_endpoint_equality"
+      },
+      "source_trace_complete": true,
+      "coupling_status": "ready"
+    },
+    {
+      "edge_id": "edge_ab_shared_north_ave_to_all_merge",
+      "edge_type": "directed_roadway_corridor",
+      "name": "North Avenue from Turnpike northbound merge to all-approach merge",
+      "from_node": "node_a_nb_joins_north_ave",
+      "to_node": "node_all_approaches_merge_north_ave",
+      "path_ids": ["path_a_exit13a_to_apm", "path_b_us1_9_to_apm"],
+      "approach_ids": ["approach_a_turnpike_nb", "approach_b_us1_9_sb", "approach_b_us1_9_nb"],
+      "sequence_by_approach": {"approach_a_turnpike_nb": 3, "approach_b_us1_9_sb": 3, "approach_b_us1_9_nb": 4},
+      "official_feature_ids": [372772, 363113, 355826, 350133],
+      "official_feature_names": ["North Avenue"],
+      "official_list_names": ["NORTH AVE"],
+      "official_sri_ids": ["20000624__"],
+      "official_shield_types_raw": ["COR"],
+      "official_shield_numbers_raw": ["624"],
+      "official_oneway_raw": ["FT"],
+      "jurisdiction_code_raw": "C",
+      "jurisdiction_label": "County",
+      "official_nhs_designations": {
+        "fhwa_nhs_2025": {
+          "source_id": "fhwa_nhs_shapefile_2025_08_08",
+          "nhs_code_raw": 7,
+          "nhs_code_official_meaning": "Other NHS",
+          "nhs_code_meaning_source": "Attribute domain in the archived FHWA shapefile metadata",
+          "status_raw": 1,
+          "matched_routeid": "20041769__",
+          "matched_signed_route_raw": "C624",
+          "matched_local_name_raw": "North Av",
+          "matched_milepost_range": [0.66, 2.51],
+          "match_basis": "SIGN1 'C624' and LNAME 'North Av' in Union County (STFIPS 34, CTFIPS 39) in the archived extract"
+        }
+      },
+      "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+      "geometry_reference": {
+        "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+        "start_coordinate": [-74.18179779279, 40.6710852588052],
+        "end_coordinate": [-74.1785517799026, 40.6699210980933],
+        "topology_method": "ordered_exact_endpoint_equality"
       },
       "source_trace_complete": true,
       "coupling_status": "ready"
@@ -265,50 +421,21 @@
     {
       "edge_id": "edge_shared_north_avenue",
       "edge_type": "directed_roadway_corridor",
-      "name": "North Avenue",
-      "from_node": "node_paths_merge_north_avenue",
+      "name": "North Avenue to McLester Street",
+      "from_node": "node_all_approaches_merge_north_ave",
       "to_node": "node_north_avenue_mclester",
-      "path_ids": [
-        "path_a_exit13a_to_apm",
-        "path_b_us1_9_to_apm"
-      ],
-      "sequence_by_path": {
-        "path_a_exit13a_to_apm": 2,
-        "path_b_us1_9_to_apm": 3
-      },
-      "official_feature_ids": [
-        375671,
-        359216,
-        397787,
-        361290,
-        364408,
-        394080,
-        363572,
-        243281,
-        144184
-      ],
-      "official_feature_names": [
-        "North Avenue",
-        "North Avenue East"
-      ],
-      "official_list_names": [
-        "NORTH AVE",
-        "NORTH AVE E"
-      ],
-      "official_sri_ids": [
-        "20000624__"
-      ],
-      "official_shield_types_raw": [
-        "COR"
-      ],
-      "official_shield_numbers_raw": [
-        "624"
-      ],
-      "official_oneway_raw": [
-        "FT",
-        "B"
-      ],
+      "path_ids": ["path_a_exit13a_to_apm", "path_b_us1_9_to_apm"],
+      "approach_ids": ["approach_a_turnpike_sb", "approach_a_turnpike_nb", "approach_b_us1_9_sb", "approach_b_us1_9_nb"],
+      "sequence_by_approach": {"approach_a_turnpike_sb": 2, "approach_a_turnpike_nb": 4, "approach_b_us1_9_sb": 4, "approach_b_us1_9_nb": 5},
+      "official_feature_ids": [375671, 359216, 397787, 361290, 364408, 394080, 363572, 243281, 144184],
+      "official_feature_names": ["North Avenue", "North Avenue East"],
+      "official_list_names": ["NORTH AVE", "NORTH AVE E"],
+      "official_sri_ids": ["20000624__"],
+      "official_shield_types_raw": ["COR"],
+      "official_shield_numbers_raw": ["624"],
+      "official_oneway_raw": ["FT", "B"],
       "jurisdiction_code_raw": "C",
+      "jurisdiction_label": "County",
       "official_nhs_designations": {
         "fhwa_nhs_2025": {
           "source_id": "fhwa_nhs_shapefile_2025_08_08",
@@ -319,27 +446,16 @@
           "matched_routeid": "20041769__",
           "matched_signed_route_raw": "C624",
           "matched_local_name_raw": "North Av",
-          "matched_milepost_range": [
-            0.66,
-            2.51
-          ],
+          "matched_milepost_range": [0.66, 2.51],
           "match_basis": "SIGN1 'C624' and LNAME 'North Av' in Union County (STFIPS 34, CTFIPS 39) in the archived extract"
         }
       },
-      "jurisdiction_label": "County",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
-      "sequence_source_id": "apm_directions",
       "geometry_reference": {
         "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
-        "start_coordinate": [
-          -74.1785517799026,
-          40.6699210980933
-        ],
-        "end_coordinate": [
-          -74.166443767583,
-          40.6652301701734
-        ],
-        "topology_method": "exact_endpoint_equality"
+        "start_coordinate": [-74.1785517799026, 40.6699210980933],
+        "end_coordinate": [-74.166443767583, 40.6652301701734],
+        "topology_method": "ordered_exact_endpoint_equality"
       },
       "source_trace_complete": true,
       "coupling_status": "ready"
@@ -350,52 +466,29 @@
       "name": "McLester Street",
       "from_node": "node_north_avenue_mclester",
       "to_node": "node_mclester_tripoli",
-      "path_ids": [
-        "path_a_exit13a_to_apm",
-        "path_b_us1_9_to_apm"
-      ],
-      "sequence_by_path": {
-        "path_a_exit13a_to_apm": 3,
-        "path_b_us1_9_to_apm": 4
-      },
-      "official_feature_ids": [
-        433606,
-        219821,
-        253519,
-        320648
-      ],
-      "official_feature_name": "McLester Street",
-      "official_list_names": [
-        "MCLESTER ST"
-      ],
-      "official_sri_ids": [
-        "200413892_"
-      ],
-      "official_shield_types_raw": [
-        "N"
-      ],
+      "path_ids": ["path_a_exit13a_to_apm", "path_b_us1_9_to_apm"],
+      "approach_ids": ["approach_a_turnpike_sb", "approach_a_turnpike_nb", "approach_b_us1_9_sb", "approach_b_us1_9_nb"],
+      "sequence_by_approach": {"approach_a_turnpike_sb": 3, "approach_a_turnpike_nb": 5, "approach_b_us1_9_sb": 5, "approach_b_us1_9_nb": 6},
+      "official_feature_ids": [433606, 219821, 253519, 320648],
+      "official_feature_names": ["McLester Street"],
+      "official_list_names": ["MCLESTER ST"],
+      "official_sri_ids": ["200413892_"],
+      "official_shield_types_raw": ["N"],
       "official_shield_numbers_raw": [],
-      "official_oneway_raw": [
-        "B"
-      ],
+      "official_oneway_raw": ["B"],
       "jurisdiction_code_raw": "M",
+      "jurisdiction_label": "Municipal",
       "official_nhs_designations": {
         "fhwa_nhs_2025": {
           "source_id": "fhwa_nhs_shapefile_2025_08_08",
           "segments": [
             {
-              "milepost_range": [
-                0.0,
-                1.0
-              ],
+              "milepost_range": [0.0, 1.0],
               "nhs_code_raw": 7,
               "nhs_code_official_meaning": "Other NHS"
             },
             {
-              "milepost_range": [
-                1.0,
-                1.47
-              ],
+              "milepost_range": [1.0, 1.47],
               "nhs_code_raw": 10,
               "nhs_code_official_meaning": "Principal arterial added to the NHS under MAP-21"
             }
@@ -406,20 +499,12 @@
           "match_basis": "ROUTEID in the archived extract equals this edge's NJOGIS SRI 200413892_; Union County (STFIPS 34, CTFIPS 39)"
         }
       },
-      "jurisdiction_label": "Municipal",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
-      "sequence_source_id": "apm_directions",
       "geometry_reference": {
         "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
-        "start_coordinate": [
-          -74.166443767583,
-          40.6652301701734
-        ],
-        "end_coordinate": [
-          -74.160114111665,
-          40.674167142869
-        ],
-        "topology_method": "exact_endpoint_equality"
+        "start_coordinate": [-74.166443767583, 40.6652301701734],
+        "end_coordinate": [-74.160114111665, 40.674167142869],
+        "topology_method": "ordered_exact_endpoint_equality"
       },
       "source_trace_complete": true,
       "coupling_status": "ready"
@@ -427,65 +512,38 @@
     {
       "edge_id": "edge_shared_tripoli_gate",
       "edge_type": "directed_roadway_corridor",
-      "name": "Tripoli Street",
+      "name": "Tripoli Street to observed APM inbound entrance",
       "from_node": "node_mclester_tripoli",
       "to_node": "node_apm_inbound_gate",
-      "path_ids": [
-        "path_a_exit13a_to_apm",
-        "path_b_us1_9_to_apm"
-      ],
-      "sequence_by_path": {
-        "path_a_exit13a_to_apm": 4,
-        "path_b_us1_9_to_apm": 5
-      },
-      "official_feature_ids": [
-        374024
-      ],
-      "official_feature_name": "Tripoli Street",
-      "official_list_names": [
-        "TRIPOLI ST"
-      ],
-      "official_sri_ids": [
-        "20041004__"
-      ],
-      "official_shield_types_raw": [
-        "N"
-      ],
+      "path_ids": ["path_a_exit13a_to_apm", "path_b_us1_9_to_apm"],
+      "approach_ids": ["approach_a_turnpike_sb", "approach_a_turnpike_nb", "approach_b_us1_9_sb", "approach_b_us1_9_nb"],
+      "sequence_by_approach": {"approach_a_turnpike_sb": 4, "approach_a_turnpike_nb": 6, "approach_b_us1_9_sb": 6, "approach_b_us1_9_nb": 7},
+      "official_feature_ids": [374024],
+      "official_feature_names": ["Tripoli Street"],
+      "official_list_names": ["TRIPOLI ST"],
+      "official_sri_ids": ["20041004__"],
+      "official_shield_types_raw": ["N"],
       "official_shield_numbers_raw": [],
-      "official_oneway_raw": [
-        "B"
-      ],
+      "official_oneway_raw": ["B"],
       "jurisdiction_code_raw": "M",
       "jurisdiction_label": "Municipal",
       "geometry_source_id": "njogis_road_centerlines_2026_07_26",
-      "sequence_source_id": "apm_directions",
       "gate_observation_source_id": "google_maps_route_observation_2026_07_31",
       "geometry_reference": {
         "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
-        "start_coordinate": [
-          -74.160114111665,
-          40.674167142869
-        ],
-        "end_coordinate": [
-          -74.1583229,
-          40.6734498
-        ],
+        "start_coordinate": [-74.160114111665, 40.674167142869],
+        "end_coordinate": [-74.1583229, 40.6734498],
         "official_centerline_feature_id": 374024,
         "official_feature_coverage": "partial_feature_from_mclester_intersection_to_observed_gate_coordinate",
         "gate_coordinate_distance_from_official_centerline_meters": 0.17,
         "distance_calculation": "nearest_point_equirectangular_projection",
         "google_maps_observation": {
           "observation_date": "2026-07-31",
-          "route_step_text": [
-            "Turn right",
-            "Continue onto Tripoli St",
-            "Destination will be on the right"
-          ]
+          "route_step_text": ["Turn right", "Continue onto Tripoli St", "Destination will be on the right"]
         }
       },
       "source_trace_complete": true,
       "coupling_status": "ready"
     }
-  ],
-  "edge_count": 6
+  ]
 }
