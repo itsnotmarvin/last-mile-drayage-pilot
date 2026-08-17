@@ -1,0 +1,540 @@
+{
+  "type": "FeatureCollection",
+  "name": "APM drayage regulatory and context node display layer",
+  "schema_version": "1.0",
+  "feature_count": 22,
+  "layout_note": "Nonphysical nodes use a deterministic two-column display layout east of the roadway corridor; their coordinates are diagram positions, not real-world locations.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "road_authority_category_highway_authority",
+        "rule_id": "road_authority_category_highway_authority",
+        "label": "Highway Authority",
+        "node_class": "entity_or_jurisdiction",
+        "source_id": "",
+        "connection_count": 2,
+        "authority_level": "Road authority category",
+        "authority": "Highway Authority",
+        "placement": "entity_or_jurisdiction",
+        "source_locator": "",
+        "source_text": "",
+        "governs_count": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.142,
+          40.67
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "road_authority_category_state",
+        "rule_id": "road_authority_category_state",
+        "label": "State",
+        "node_class": "entity_or_jurisdiction",
+        "source_id": "",
+        "connection_count": 3,
+        "authority_level": "Road authority category",
+        "authority": "State",
+        "placement": "entity_or_jurisdiction",
+        "source_locator": "",
+        "source_text": "",
+        "governs_count": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.13799999999999,
+          40.688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "road_authority_category_county",
+        "rule_id": "road_authority_category_county",
+        "label": "County",
+        "node_class": "entity_or_jurisdiction",
+        "source_id": "",
+        "connection_count": 4,
+        "authority_level": "Road authority category",
+        "authority": "County",
+        "placement": "entity_or_jurisdiction",
+        "source_locator": "",
+        "source_text": "",
+        "governs_count": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.142,
+          40.676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "road_authority_category_municipal",
+        "rule_id": "road_authority_category_municipal",
+        "label": "Municipal",
+        "node_class": "entity_or_jurisdiction",
+        "source_id": "",
+        "connection_count": 2,
+        "authority_level": "Road authority category",
+        "authority": "Municipal",
+        "placement": "entity_or_jurisdiction",
+        "source_locator": "",
+        "source_text": "",
+        "governs_count": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.142,
+          40.664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_elizabeth_north_avenue_east_zone",
+        "rule_id": "reg_elizabeth_north_avenue_east_zone",
+        "label": "10.16.050 — An 80,000 pound overweight vehicle zone limit—Streets affected",
+        "node_class": "regulatory_rule",
+        "source_id": "elizabeth_code_10_16_050_2025_11_11",
+        "connection_count": 1,
+        "authority_level": "Municipal",
+        "authority": "City of Elizabeth",
+        "placement": "regulatory_rule",
+        "source_locator": "Elizabeth Code of Ordinances 10.16.050, street table",
+        "source_text": {
+          "street": "North Avenue East",
+          "location": "Beginning at a point 440 feet east of the intersection of North Avenue East and Kapkowski Road and continuing east 520 feet to the vacated portion of North Avenue East and its connection to the Port Authority over weight vehicle zone."
+        },
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.663000000000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_nj_access_network_600_series",
+        "rule_id": "reg_nj_access_network_600_series",
+        "label": "N.J.A.C. 16:32-1.4(a)(3) and Appendix C — County 600-series roads",
+        "node_class": "regulatory_rule",
+        "source_id": "njac_16_32_truck_access_current_2023",
+        "connection_count": 4,
+        "authority_level": "State",
+        "authority": "New Jersey Department of Transportation",
+        "placement": "regulatory_rule",
+        "source_locator": "PDF page 3, N.J.A.C. 16:32-1.4(a)(3); PDF page 9, Appendix C",
+        "source_text": "Those county \"600\" series roads listed under Appendix C, incorporated herein by reference, approximately 80 miles; and",
+        "governs_count": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_federal_group_a_cmv",
+        "rule_id": "reg_federal_group_a_cmv",
+        "label": "49 CFR 383.5 — Commercial motor vehicle (CMV), Combination Vehicle (Group A)",
+        "node_class": "regulatory_rule",
+        "source_id": "ecfr_49_cfr_383_2026_07_29",
+        "connection_count": 1,
+        "authority_level": "Federal",
+        "authority": "Federal Motor Carrier Safety Administration",
+        "placement": "regulatory_rule",
+        "source_locator": "49 CFR 383.5, definition of Commercial motor vehicle (CMV), paragraph (1)",
+        "source_text": "Commercial motor vehicle (CMV) means a motor vehicle or combination of motor vehicles used in commerce to transport passengers or property if the motor vehicle is a— (1) Combination Vehicle (Group A)—having a gross combination weight rating or gross combination weight of 11,794 kilograms or more (26,001 pounds or more), whichever is greater, inclusive of a towed unit(s) with a gross vehicle weight rating or gross vehicle weight of more than 4,536 kilograms (10,000 pounds), whichever is greater;",
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "scoped_80000lb_5axle_nonhaz_inbound_apm",
+        "rule_id": "scoped_80000lb_5axle_nonhaz_inbound_apm",
+        "label": "Scoped 80,000 lb five-axle nonhazardous inbound drayage vehicle",
+        "node_class": "vehicle_profile",
+        "source_id": "",
+        "connection_count": 4,
+        "authority_level": "Scoped vehicle",
+        "authority": "Scoped 80,000 lb five-axle nonhazardous inbound drayage vehicle",
+        "placement": "vehicle_profile",
+        "source_locator": "",
+        "source_text": "",
+        "governs_count": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.13799999999999,
+          40.682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_federal_cdl",
+        "rule_id": "reg_federal_cdl",
+        "label": "49 CFR 383.23 — Commercial driver's license",
+        "node_class": "regulatory_rule",
+        "source_id": "ecfr_49_cfr_383_2026_07_29",
+        "connection_count": 1,
+        "authority_level": "Federal",
+        "authority": "Federal Motor Carrier Safety Administration",
+        "placement": "regulatory_rule",
+        "source_locator": "49 CFR 383.23(a)(2)",
+        "source_text": "Except as provided in paragraph (b) of this section, no person may legally operate a CMV unless such person possesses a CDL which meets the standards contained in subpart J of this part, issued by his/her State or jurisdiction of domicile.",
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.687000000000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_federal_twic",
+        "rule_id": "reg_federal_twic",
+        "label": "33 CFR 101.514 — TWIC Requirement",
+        "node_class": "regulatory_rule",
+        "source_id": "ecfr_33_cfr_101_514_2026_07_29",
+        "connection_count": 1,
+        "authority_level": "Federal",
+        "authority": "United States Coast Guard",
+        "placement": "regulatory_rule",
+        "source_locator": "33 CFR 101.514(a)",
+        "source_text": "All persons requiring unescorted access to secure areas of vessels, facilities, and OCS facilities regulated by parts 104, 105 or 106 of this subchapter must possess a TWIC before such access is granted, except as otherwise noted in this section. A TWIC must be obtained via the procedures established by TSA in 49 CFR part 1572.",
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_panynj_terminal_weight_dimensions",
+        "rule_id": "reg_panynj_terminal_weight_dimensions",
+        "label": "SUBRULE 34-046: MOVEMENT OF OVERWEIGHT OR OVER DIMENSIONAL CARGO ON MARINE TERMINAL HIGHWAYS",
+        "node_class": "regulatory_rule",
+        "source_id": "panynj_marine_terminal_tariff",
+        "connection_count": 1,
+        "authority_level": "Port Authority",
+        "authority": "Port Authority of New York and New Jersey",
+        "placement": "regulatory_rule",
+        "source_locator": "Subrule 34-046, PDF page 16",
+        "source_text": "Gross vehicle weight of containerized shipments (tractor, chassis, container, cargo, etc.) shall not exceed 128,000 lbs. and shall not exceed manufacturer safe working loads. Vehicles exceeding 16’3” high and/or 11’ wide are considered over dimensional and require approval for shipment through the Marine Terminals from the Office of the Manager, Marine Terminals.",
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.659000000000006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_panynj_terminal_traffic",
+        "rule_id": "reg_panynj_terminal_traffic",
+        "label": "SUBRULE 34-290: STATE LEGISLATION — Rules and Regulations Governing Traffic on Highways in Port Authority Air and Marine Terminals",
+        "node_class": "regulatory_rule",
+        "source_id": "panynj_marine_terminal_tariff",
+        "connection_count": 1,
+        "authority_level": "Port Authority",
+        "authority": "Port Authority of New York and New Jersey",
+        "placement": "regulatory_rule",
+        "source_locator": "Subrule 34-290(3)-(5), PDF page 33",
+        "source_text": "All persons on any air terminal highway or marine terminal highway must at all times comply with any lawful order, signal or direction by voice or hand of any member of the Port Authority police force. When traffic is controlled by traffic lights, signs or by mechanical or electrical signals, such lights, signs and signals shall be obeyed unless a Port Authority police officer directs otherwise. Unless otherwise directed, all vehicles on any air terminal highway or marine terminal highway shall at all times stay to the right of the center of the roadway, except in the case of one-way roadways; slow- moving vehicles shall remain as close as possible to the right-hand edge or curb of the roadway; and where a roadway is marked with traffic lanes, vehicles shall not cross markings. No person shall operate a motor vehicle on an air terminal highway or marine terminal highway unless he is duly authorized to operate such vehicle on State and municipal highways in the State in which such air terminal highway or marine terminal highway is located, or unless he is especially authorized by the Port Authority to operate motor vehicles on such air terminal highway or marine terminal highway. No motor vehicle shall be permitted on any air terminal highway or marine terminal highway unless it is registered in accordance with the provisions of the law of the State in which such air terminal highway or marine terminal highway is located, or unless it is especially authorized by the Port Authority to be operated on such air terminal highway or marine terminal highway.",
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1465,
+          40.691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_panynj_dtr",
+        "rule_id": "reg_panynj_dtr",
+        "label": "SUBRULE 34-1100: REGISTRATION IN DRAYAGE TRUCK REGISTRY (DTR)",
+        "node_class": "regulatory_rule",
+        "source_id": "panynj_marine_terminal_tariff",
+        "connection_count": 2,
+        "authority_level": "Port Authority",
+        "authority": "Port Authority of New York and New Jersey",
+        "placement": "regulatory_rule",
+        "source_locator": "Subrule 34-1100, PDF page 55",
+        "source_text": "All Drayage Trucks seeking entry onto any Port Authority Terminal shall be registered in the DTR prior to the date of entry. Registration in the DTR shall be in electronic format via the PortTruckPass (PTP) website (www.porttruckpass.com). In the event of a change to the information provided for registration in the DTR with respect to a registered vehicle, such information shall be amended within ten (10) calendar days of the change via the PortTruckPass website (www.porttruckpass.com). Supporting documentation may be required for verification purposes with regard to registration or amendment.",
+        "governs_count": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1465,
+          40.687000000000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_panynj_sealink_twic",
+        "rule_id": "reg_panynj_sealink_twic",
+        "label": "SeaLink®; TWIC and SeaLink®",
+        "node_class": "regulatory_rule",
+        "source_id": "panynj_truckers_guide",
+        "connection_count": 1,
+        "authority_level": "Port Authority",
+        "authority": "Port Authority of New York and New Jersey",
+        "placement": "regulatory_rule",
+        "source_locator": "PDF page 4, SeaLink® and TWIC and SeaLink®",
+        "source_text": "SeaLink® is mandatory for all truckers doing business at the Port of New York and New Jersey. Anyone with SeaLink® identification must also have a TWIC. You must register your TWIC with the Port Authority at the Truck Service Center. (Registration is free.)",
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1465,
+          40.683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_panynj_rfid",
+        "rule_id": "reg_panynj_rfid",
+        "label": "Radio-Frequency Identification (RFID)",
+        "node_class": "regulatory_rule",
+        "source_id": "panynj_truckers_guide",
+        "connection_count": 2,
+        "authority_level": "Port Authority",
+        "authority": "Port Authority of New York and New Jersey",
+        "placement": "regulatory_rule",
+        "source_locator": "PDF page 4, Radio-Frequency Identification (RFID)",
+        "source_text": "All Class 8 drayage trucks seeking entry onto any Port of New York and New Jersey Marine Terminal must be registered in the Drayage Truck Registry (DTR) and have a valid RFID tag properly mounted on the vehicle. No tag, no entry.",
+        "governs_count": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1465,
+          40.679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_apm_appointment",
+        "rule_id": "reg_apm_appointment",
+        "label": "ALL GATE MOVES AT APMT REQUIRE AN APPOINTMENT",
+        "node_class": "regulatory_rule",
+        "source_id": "panynj_truckers_guide",
+        "connection_count": 1,
+        "authority_level": "Terminal Operator",
+        "authority": "APM Terminals",
+        "placement": "regulatory_rule",
+        "source_locator": "PDF page 11 / printed page 18, APM TERMINALS",
+        "source_text": "ALL GATE MOVES AT APMT REQUIRE AN APPOINTMENT All appointments must be made on the TERMPoint website or APP.",
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1465,
+          40.675000000000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_apm_safety_induction",
+        "rule_id": "reg_apm_safety_induction",
+        "label": "Mandatory Trucker Training",
+        "node_class": "regulatory_rule",
+        "source_id": "panynj_truckers_guide",
+        "connection_count": 1,
+        "authority_level": "Terminal Operator",
+        "authority": "APM Terminals",
+        "placement": "regulatory_rule",
+        "source_locator": "PDF page 11 / printed page 18, APM TERMINALS — Mandatory Trucker Training",
+        "source_text": "All truck drivers are required to complete the MANDATORY online safety induction video/quiz in order to access the terminal",
+        "governs_count": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1465,
+          40.671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "jurisdiction_elizabeth",
+        "rule_id": "jurisdiction_elizabeth",
+        "label": "City of Elizabeth",
+        "node_class": "entity_or_jurisdiction",
+        "source_id": "",
+        "connection_count": 11,
+        "authority_level": "Jurisdiction",
+        "authority": "City of Elizabeth",
+        "placement": "entity_or_jurisdiction",
+        "source_locator": "",
+        "source_text": "",
+        "governs_count": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.142,
+          40.688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "jurisdiction_union_county",
+        "rule_id": "jurisdiction_union_county",
+        "label": "Union County",
+        "node_class": "entity_or_jurisdiction",
+        "source_id": "",
+        "connection_count": 11,
+        "authority_level": "Jurisdiction",
+        "authority": "Union County",
+        "placement": "entity_or_jurisdiction",
+        "source_locator": "",
+        "source_text": "",
+        "governs_count": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.142,
+          40.682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_nj_tandem_gross_bridge",
+        "rule_id": "reg_nj_tandem_gross_bridge",
+        "label": "NJ Commercial Vehicle Size and Weight Guidebook — 2.2.2 Groups of Two or More Axles",
+        "node_class": "regulatory_rule",
+        "source_id": "nj_size_weight_guidebook",
+        "connection_count": 11,
+        "authority_level": "State",
+        "authority": "New Jersey Department of Transportation",
+        "placement": "regulatory_rule",
+        "source_locator": "PDF pages 28-29; sections 2.2.2, 2.2.2.1, and 2.2.2.2",
+        "source_text": "The maximum weight allowed on axle group of this type is 34,000 lbs. The gross vehicle weight is defined as a vehicle or combination of vehicles, including load or contents. The maximum overall gross weight of a vehicle is 80,000 lbs., as shown in the diagram above. NOTE: Compliance with bridge formula weight limits may require axle weights lower than the standard weight limits of 34,000 pounds for a tandem axle set and a gross weight lower than the standard 80,000-pound limit.",
+        "governs_count": 11
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_nj_noninterstate_single_axle",
+        "rule_id": "reg_nj_noninterstate_single_axle",
+        "label": "NJ Commercial Vehicle Size and Weight Guidebook — 2.2.1 Single Axles",
+        "node_class": "regulatory_rule",
+        "source_id": "nj_size_weight_guidebook",
+        "connection_count": 9,
+        "authority_level": "State",
+        "authority": "New Jersey Department of Transportation",
+        "placement": "regulatory_rule",
+        "source_locator": "PDF page 27; section 2.2.1",
+        "source_text": "The maximum weight allowed on a signle axle is 22,400 lbs.",
+        "governs_count": 9
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.675000000000004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "node_id": "reg_federal_interstate_weight",
+        "rule_id": "reg_federal_interstate_weight",
+        "label": "23 CFR 658.17 — Weight",
+        "node_class": "regulatory_rule",
+        "source_id": "ecfr_23_cfr_658_17_2026_07_29",
+        "connection_count": 2,
+        "authority_level": "Federal",
+        "authority": "Federal Highway Administration",
+        "placement": "regulatory_rule",
+        "source_locator": "23 CFR 658.17(a)-(e)",
+        "source_text": "(a) The provisions of the section are applicable to the National System of Interstate and Defense Highways and reasonable access thereto. (b) The maximum gross vehicle weight shall be 80,000 pounds except where lower gross vehicle weight is dictated by the bridge formula. (c) The maximum gross weight upon any one axle, including any one axle of a group of axles, or a vehicle is 20,000 pounds. (d) The maximum gross weight on tandem axles is 34,000 pounds. (e) No vehicle or combination of vehicles shall be moved or operated on any Interstate highway when the gross weight on two or more consecutive axles exceeds the limitations prescribed by the following formula, referred to as the Bridge Gross Weight Formula:",
+        "governs_count": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.151,
+          40.683
+        ]
+      }
+    }
+  ]
+}

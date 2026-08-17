@@ -1,0 +1,106 @@
+{
+  "source_id": "esri_world_traffic_i95_approaches_2026_08_16",
+  "observation_date": "2026-08-16",
+  "sample_week": "2026-08-17/2026-08-21",
+  "timezone": "America/New_York",
+  "map_item_id": "c99508642018486a9f1a5009a85cdcfe",
+  "destination_coordinate": [
+    -74.1583229,
+    40.6734498
+  ],
+  "analysis_method": {
+    "map_layer": "Esri World Traffic Service",
+    "route_impedance": "Driving Time",
+    "route_geometry_constraint": "Previously evaluated I-95 / NJ Turnpike Exit 13A inbound geometry; the driving-time impedance was used to expose Esri historical traffic because the Map Viewer Trucking Time mode did not expose the same time-dependent traffic behavior.",
+    "units": {
+      "duration": "minutes",
+      "distance": "kilometres"
+    }
+  },
+  "approaches": [
+    {
+      "approach_id": "approach_a_turnpike_sb",
+      "origin_coordinate": [
+        -74.1775120831099,
+        40.6708416045937
+      ],
+      "distance_km": 4.0,
+      "observations": [
+        { "date": "2026-08-17", "departure": "05:00", "duration_minutes": 5 },
+        { "date": "2026-08-17", "departure": "06:00", "duration_minutes": 5 },
+        { "date": "2026-08-17", "departure": "07:00", "duration_minutes": 6 },
+        { "date": "2026-08-17", "departure": "08:00", "duration_minutes": 7 },
+        { "date": "2026-08-17", "departure": "09:00", "duration_minutes": 7 },
+        { "date": "2026-08-17", "departure": "12:00", "duration_minutes": 7 },
+        { "date": "2026-08-17", "departure": "14:00", "duration_minutes": 7 },
+        { "date": "2026-08-17", "departure": "15:00", "duration_minutes": 8 },
+        { "date": "2026-08-17", "departure": "16:00", "duration_minutes": 7 },
+        { "date": "2026-08-18", "departure": "05:00", "duration_minutes": 5 },
+        { "date": "2026-08-18", "departure": "06:00", "duration_minutes": 5 },
+        { "date": "2026-08-18", "departure": "07:00", "duration_minutes": 6 },
+        { "date": "2026-08-18", "departure": "08:00", "duration_minutes": 7 },
+        { "date": "2026-08-18", "departure": "09:00", "duration_minutes": 7 },
+        { "date": "2026-08-18", "departure": "12:00", "duration_minutes": 7 },
+        { "date": "2026-08-18", "departure": "14:00", "duration_minutes": 7 },
+        { "date": "2026-08-18", "departure": "15:00", "duration_minutes": 7 },
+        { "date": "2026-08-18", "departure": "16:00", "duration_minutes": 7 },
+        { "date": "2026-08-19", "departure": "05:00", "duration_minutes": 5 },
+        { "date": "2026-08-19", "departure": "06:00", "duration_minutes": 5 },
+        { "date": "2026-08-19", "departure": "07:00", "duration_minutes": 6 },
+        { "date": "2026-08-19", "departure": "08:00", "duration_minutes": 7 },
+        { "date": "2026-08-19", "departure": "09:00", "duration_minutes": 7 },
+        { "date": "2026-08-19", "departure": "12:00", "duration_minutes": 7 },
+        { "date": "2026-08-19", "departure": "14:00", "duration_minutes": 7 },
+        { "date": "2026-08-19", "departure": "15:00", "duration_minutes": 7 },
+        { "date": "2026-08-19", "departure": "16:00", "duration_minutes": 7 },
+        { "date": "2026-08-20", "departure": "05:00", "duration_minutes": 5 },
+        { "date": "2026-08-20", "departure": "06:00", "duration_minutes": 5 },
+        { "date": "2026-08-20", "departure": "07:00", "duration_minutes": 6 },
+        { "date": "2026-08-20", "departure": "08:00", "duration_minutes": 7 },
+        { "date": "2026-08-20", "departure": "09:00", "duration_minutes": 7 },
+        { "date": "2026-08-20", "departure": "12:00", "duration_minutes": 7 },
+        { "date": "2026-08-20", "departure": "14:00", "duration_minutes": 7 },
+        { "date": "2026-08-20", "departure": "15:00", "duration_minutes": 7 },
+        { "date": "2026-08-20", "departure": "16:00", "duration_minutes": 7 },
+        { "date": "2026-08-21", "departure": "14:00", "duration_minutes": 7 }
+      ],
+      "summary": {
+        "minimum_minutes": 5,
+        "maximum_minutes": 8,
+        "typical_minutes": 7,
+        "observed_peak": "Monday at 15:00"
+      }
+    },
+    {
+      "approach_id": "approach_a_turnpike_nb",
+      "origin_coordinate": [
+        -74.1824480609753,
+        40.6636843947186
+      ],
+      "distance_km": 4.0,
+      "observations": [
+        { "date": "2026-08-21", "departure": "14:00", "duration_minutes": 7 }
+      ],
+      "summary": {
+        "minimum_minutes": 7,
+        "maximum_minutes": 7,
+        "typical_minutes": null,
+        "note": "Single spot-check only; do not treat as a weekday distribution."
+      }
+    }
+  ],
+  "appointment_risk_interpretation": {
+    "travel_only_threshold": "A truck entering either approach fewer than 8 minutes before its appointment can miss under the observed typical traffic; every measured route requires at least 5 minutes.",
+    "recommended_normal_lead": "20 minutes before the appointment from the approach origin.",
+    "recommended_peak_or_incident_lead": "30 minutes before the appointment from the approach origin during 07:00-09:00 and 14:00-16:00, or when live incidents/closures are displayed.",
+    "regular_gate_cutoff": "16:00 Monday-Friday for empties, dry loads, and reefer loads.",
+    "oog_gate_cutoff": "15:30 Monday-Friday; OOG is outside the scoped standard-load analysis.",
+    "latest_observed_travel_only_departure_for_1600_cutoff": "15:52 using the observed eight-minute maximum; this has no gate-queue allowance and is not an operational recommendation."
+  },
+  "limitations": [
+    "Esri time-dependent traffic estimates do not include queueing or processing time inside the terminal gate.",
+    "Historical traffic is not a guarantee against crashes, closures, construction, weather, or abnormal port surges.",
+    "Driving Time was used only as the traffic impedance on an independently evaluated truck corridor; it does not itself establish truck legality.",
+    "The northbound approach has one completed time-dependent spot-check and requires the same expanded weekday sampling before comparative claims are made."
+  ]
+}

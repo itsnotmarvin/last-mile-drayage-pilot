@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1-rule-to-physical",
+  "schema_version": "1.2-rule-to-corridor-approach-physical",
   "description": "Verified links between physical edges or gate nodes and regulatory rules, jurisdictions, or raw NJOGIS jurisdiction categories.",
   "status": "canonical",
   "vehicle_profile_id": "scoped_80000lb_5axle_nonhaz_inbound_apm",
@@ -7,10 +7,16 @@
     "path_a_exit13a_to_apm",
     "path_b_us1_9_to_apm"
   ],
+  "approach_ids": [
+    "approach_a_turnpike_sb",
+    "approach_a_turnpike_nb",
+    "approach_b_us1_9_sb",
+    "approach_b_us1_9_nb"
+  ],
   "edges": [
     {
-      "edge_id": "couple_a_category",
-      "from_node": "edge_a_exit13a_connector",
+      "edge_id": "couple_a_sb_category",
+      "from_node": "edge_a_sb_exit13a_to_all_merge",
       "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
       "to_node": "road_authority_category_highway_authority",
       "source_ids": [
@@ -19,8 +25,8 @@
       "applicability_status": "verified_raw_attribute"
     },
     {
-      "edge_id": "couple_b_us1_category",
-      "from_node": "edge_b_us1_south",
+      "edge_id": "couple_b_sb_state_category",
+      "from_node": "edge_b_sb_us1_nj81_to_north_ave",
       "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
       "to_node": "road_authority_category_state",
       "source_ids": [
@@ -29,8 +35,8 @@
       "applicability_status": "verified_raw_attribute"
     },
     {
-      "edge_id": "couple_b_north_category",
-      "from_node": "edge_b_north_avenue_to_merge",
+      "edge_id": "couple_b_nb_north_category",
+      "from_node": "edge_b_nb_north_ave_to_b_merge",
       "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
       "to_node": "road_authority_category_county",
       "source_ids": [
@@ -115,10 +121,10 @@
       "compliance_status": "not_a_compliance_claim"
     },
     {
-      "edge_id": "couple_nj_access_network_cr624_b_north_avenue_to_merge",
+      "edge_id": "couple_nj_access_network_cr624_b_nb_north_ave_to_b_merge",
       "from_node": "reg_nj_access_network_600_series",
       "relationship": "ROUTE_NUMBER_NOT_LISTED_IN_APPENDIX_C",
-      "to_node": "edge_b_north_avenue_to_merge",
+      "to_node": "edge_b_nb_north_ave_to_b_merge",
       "source_ids": [
         "njac_16_32_truck_access_current_2023",
         "njogis_road_centerlines_2026_07_26"
@@ -338,8 +344,8 @@
       "compliance_status": "not_a_compliance_claim"
     },
     {
-      "edge_id": "couple_a_exit13a_connector_elizabeth",
-      "from_node": "edge_a_exit13a_connector",
+      "edge_id": "couple_a_sb_exit13a_to_all_merge_elizabeth",
+      "from_node": "edge_a_sb_exit13a_to_all_merge",
       "relationship": "LOCATED_WITHIN",
       "to_node": "jurisdiction_elizabeth",
       "source_ids": [
@@ -349,8 +355,8 @@
       "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
     },
     {
-      "edge_id": "couple_a_exit13a_connector_union",
-      "from_node": "edge_a_exit13a_connector",
+      "edge_id": "couple_a_sb_exit13a_to_all_merge_union",
+      "from_node": "edge_a_sb_exit13a_to_all_merge",
       "relationship": "LOCATED_WITHIN",
       "to_node": "jurisdiction_union_county",
       "source_ids": [
@@ -360,10 +366,10 @@
       "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
     },
     {
-      "edge_id": "couple_nj_tandem_gross_bridge_a_exit13a_connector",
+      "edge_id": "couple_nj_tandem_gross_bridge_a_sb_exit13a_to_all_merge",
       "from_node": "reg_nj_tandem_gross_bridge",
       "relationship": "GOVERNS",
-      "to_node": "edge_a_exit13a_connector",
+      "to_node": "edge_a_sb_exit13a_to_all_merge",
       "source_ids": [
         "nj_size_weight_guidebook",
         "njogis_road_centerlines_2026_07_26"
@@ -372,8 +378,8 @@
       "compliance_status": "not_a_compliance_claim"
     },
     {
-      "edge_id": "couple_b_us1_south_elizabeth",
-      "from_node": "edge_b_us1_south",
+      "edge_id": "couple_b_sb_us1_nj81_to_north_ave_elizabeth",
+      "from_node": "edge_b_sb_us1_nj81_to_north_ave",
       "relationship": "LOCATED_WITHIN",
       "to_node": "jurisdiction_elizabeth",
       "source_ids": [
@@ -383,8 +389,8 @@
       "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
     },
     {
-      "edge_id": "couple_b_us1_south_union",
-      "from_node": "edge_b_us1_south",
+      "edge_id": "couple_b_sb_us1_nj81_to_north_ave_union",
+      "from_node": "edge_b_sb_us1_nj81_to_north_ave",
       "relationship": "LOCATED_WITHIN",
       "to_node": "jurisdiction_union_county",
       "source_ids": [
@@ -394,10 +400,10 @@
       "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
     },
     {
-      "edge_id": "couple_nj_tandem_gross_bridge_b_us1_south",
+      "edge_id": "couple_nj_tandem_gross_bridge_b_sb_us1_nj81_to_north_ave",
       "from_node": "reg_nj_tandem_gross_bridge",
       "relationship": "GOVERNS",
-      "to_node": "edge_b_us1_south",
+      "to_node": "edge_b_sb_us1_nj81_to_north_ave",
       "source_ids": [
         "nj_size_weight_guidebook",
         "njogis_road_centerlines_2026_07_26"
@@ -406,8 +412,8 @@
       "compliance_status": "not_a_compliance_claim"
     },
     {
-      "edge_id": "couple_b_north_avenue_to_merge_elizabeth",
-      "from_node": "edge_b_north_avenue_to_merge",
+      "edge_id": "couple_b_nb_north_ave_to_b_merge_elizabeth",
+      "from_node": "edge_b_nb_north_ave_to_b_merge",
       "relationship": "LOCATED_WITHIN",
       "to_node": "jurisdiction_elizabeth",
       "source_ids": [
@@ -417,8 +423,8 @@
       "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
     },
     {
-      "edge_id": "couple_b_north_avenue_to_merge_union",
-      "from_node": "edge_b_north_avenue_to_merge",
+      "edge_id": "couple_b_nb_north_ave_to_b_merge_union",
+      "from_node": "edge_b_nb_north_ave_to_b_merge",
       "relationship": "LOCATED_WITHIN",
       "to_node": "jurisdiction_union_county",
       "source_ids": [
@@ -428,10 +434,10 @@
       "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
     },
     {
-      "edge_id": "couple_nj_tandem_gross_bridge_b_north_avenue_to_merge",
+      "edge_id": "couple_nj_tandem_gross_bridge_b_nb_north_ave_to_b_merge",
       "from_node": "reg_nj_tandem_gross_bridge",
       "relationship": "GOVERNS",
-      "to_node": "edge_b_north_avenue_to_merge",
+      "to_node": "edge_b_nb_north_ave_to_b_merge",
       "source_ids": [
         "nj_size_weight_guidebook",
         "njogis_road_centerlines_2026_07_26"
@@ -542,10 +548,10 @@
       "compliance_status": "not_a_compliance_claim"
     },
     {
-      "edge_id": "couple_nj_noninterstate_single_b_us1_south",
+      "edge_id": "couple_nj_noninterstate_single_b_sb_us1_nj81_to_north_ave",
       "from_node": "reg_nj_noninterstate_single_axle",
       "relationship": "GOVERNS",
-      "to_node": "edge_b_us1_south",
+      "to_node": "edge_b_sb_us1_nj81_to_north_ave",
       "source_ids": [
         "nj_size_weight_guidebook",
         "njogis_road_centerlines_2026_07_26"
@@ -554,10 +560,10 @@
       "compliance_status": "not_a_compliance_claim"
     },
     {
-      "edge_id": "couple_nj_noninterstate_single_b_north_avenue_to_merge",
+      "edge_id": "couple_nj_noninterstate_single_b_nb_north_ave_to_b_merge",
       "from_node": "reg_nj_noninterstate_single_axle",
       "relationship": "GOVERNS",
-      "to_node": "edge_b_north_avenue_to_merge",
+      "to_node": "edge_b_nb_north_ave_to_b_merge",
       "source_ids": [
         "nj_size_weight_guidebook",
         "njogis_road_centerlines_2026_07_26"
@@ -600,7 +606,246 @@
       ],
       "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
       "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_a_nb_turnpike_category",
+      "from_node": "edge_a_nb_turnpike_exit",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_highway_authority",
+      "source_ids": ["njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_a_nb_turnpike_elizabeth",
+      "from_node": "edge_a_nb_turnpike_exit",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_municipal_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_a_nb_turnpike_union",
+      "from_node": "edge_a_nb_turnpike_exit",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_county_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_a_nb_turnpike",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_nb_turnpike_exit",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_a_nb_state_category",
+      "from_node": "edge_a_nb_state_ramps_to_north_ave",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_state",
+      "source_ids": ["njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_a_nb_state_elizabeth",
+      "from_node": "edge_a_nb_state_ramps_to_north_ave",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_municipal_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_a_nb_state_union",
+      "from_node": "edge_a_nb_state_ramps_to_north_ave",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_county_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_a_nb_state",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_nb_state_ramps_to_north_ave",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_a_nb_state",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_nb_state_ramps_to_north_ave",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_b_nb_ramp_category",
+      "from_node": "edge_b_nb_us1_to_north_ave",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_state",
+      "source_ids": ["njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_b_nb_ramp_elizabeth",
+      "from_node": "edge_b_nb_us1_to_north_ave",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_municipal_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_b_nb_ramp_union",
+      "from_node": "edge_b_nb_us1_to_north_ave",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_county_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_b_nb_ramp",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_nb_us1_to_north_ave",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_b_nb_ramp",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_nb_us1_to_north_ave",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_b_shared_north_category",
+      "from_node": "edge_b_shared_north_ave_to_a_nb_merge",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_county",
+      "source_ids": ["njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_nj_access_network_cr624_b_shared_north",
+      "from_node": "reg_nj_access_network_600_series",
+      "relationship": "ROUTE_NUMBER_NOT_LISTED_IN_APPENDIX_C",
+      "to_node": "edge_b_shared_north_ave_to_a_nb_merge",
+      "source_ids": ["njac_16_32_truck_access_current_2023", "njogis_road_centerlines_2026_07_26"],
+      "road_segment_match": {"matched_standard_route_identifier": "20000624__", "matched_shield_type_raw": "COR", "matched_shield_number_raw": "624", "comparison_result": "624_not_present"},
+      "applicability_status": "confirmed_segment_classification_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_b_shared_north_elizabeth",
+      "from_node": "edge_b_shared_north_ave_to_a_nb_merge",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_municipal_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_b_shared_north_union",
+      "from_node": "edge_b_shared_north_ave_to_a_nb_merge",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_county_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_b_shared_north",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_shared_north_ave_to_a_nb_merge",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_b_shared_north",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_b_shared_north_ave_to_a_nb_merge",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_ab_shared_north_category",
+      "from_node": "edge_ab_shared_north_ave_to_all_merge",
+      "relationship": "HAS_NJOGIS_JURISDICTION_CATEGORY",
+      "to_node": "road_authority_category_county",
+      "source_ids": ["njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "verified_raw_attribute"
+    },
+    {
+      "edge_id": "couple_nj_access_network_cr624_ab_shared_north",
+      "from_node": "reg_nj_access_network_600_series",
+      "relationship": "ROUTE_NUMBER_NOT_LISTED_IN_APPENDIX_C",
+      "to_node": "edge_ab_shared_north_ave_to_all_merge",
+      "source_ids": ["njac_16_32_truck_access_current_2023", "njogis_road_centerlines_2026_07_26"],
+      "road_segment_match": {"matched_standard_route_identifier": "20000624__", "matched_shield_type_raw": "COR", "matched_shield_number_raw": "624", "comparison_result": "624_not_present"},
+      "applicability_status": "confirmed_segment_classification_only",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_ab_shared_north_elizabeth",
+      "from_node": "edge_ab_shared_north_ave_to_all_merge",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_elizabeth",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_municipal_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_ab_shared_north_union",
+      "from_node": "edge_ab_shared_north_ave_to_all_merge",
+      "relationship": "LOCATED_WITHIN",
+      "to_node": "jurisdiction_union_county",
+      "source_ids": ["njogis_road_centerlines_2026_07_26", "njogis_county_boundaries_2026_07_26"],
+      "applicability_status": "mechanical_geometry_test_all_vertices_inside_boundary"
+    },
+    {
+      "edge_id": "couple_nj_tandem_gross_bridge_ab_shared_north",
+      "from_node": "reg_nj_tandem_gross_bridge",
+      "relationship": "GOVERNS",
+      "to_node": "edge_ab_shared_north_ave_to_all_merge",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_nj_noninterstate_single_ab_shared_north",
+      "from_node": "reg_nj_noninterstate_single_axle",
+      "relationship": "GOVERNS",
+      "to_node": "edge_ab_shared_north_ave_to_all_merge",
+      "source_ids": ["nj_size_weight_guidebook", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable_on_non_interstate_new_jersey_edge",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_federal_interstate_weight_a_sb_turnpike_access",
+      "from_node": "reg_federal_interstate_weight",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_sb_exit13a_to_all_merge",
+      "source_ids": ["ecfr_23_cfr_658_17_2026_07_29", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable_to_interstate_and_reasonable_access_segment",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "edge_id": "couple_federal_interstate_weight_a_nb_turnpike_access",
+      "from_node": "reg_federal_interstate_weight",
+      "relationship": "GOVERNS",
+      "to_node": "edge_a_nb_turnpike_exit",
+      "source_ids": ["ecfr_23_cfr_658_17_2026_07_29", "njogis_road_centerlines_2026_07_26"],
+      "applicability_status": "confirmed_applicable_to_interstate_and_reasonable_access_segment",
+      "compliance_status": "not_a_compliance_claim"
     }
   ],
-  "edge_count": 44
+  "edge_count": 72
 }

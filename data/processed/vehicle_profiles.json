@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0-scoped-profile",
+  "schema_version": "1.1-corridor-approach-scoped-profile",
   "status": "canonical_project_scope",
   "canonical_profile_id": "scoped_80000lb_5axle_nonhaz_inbound_apm",
   "profiles": [
@@ -13,6 +13,7 @@
         "axle_count": 5,
         "cargo_hazardous": false,
         "movement_direction": "inbound",
+        "outbound_movement_in_scope": false,
         "destination": "APM_Terminals_Elizabeth_gate"
       },
       "classifications": {
@@ -20,6 +21,12 @@
         "path_ids": [
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb",
+          "approach_b_us1_9_sb",
+          "approach_b_us1_9_nb"
         ]
       }
     }

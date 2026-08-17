@@ -8,7 +8,7 @@ Regulatory `source_text` values are verbatim transcriptions from the cited sourc
 
 ## data/metadata.json
 
-Canonical registry for retained source evidence. Some sources support the broader study without producing a node or edge in the static visual.
+Canonical registry for retained source evidence. Some sources support the broader study without producing a node or edge in the static visual. Dated route-observation records are evidence of what a third-party routing service displayed; unless explicitly stated otherwise, they are not truck-route approvals.
 
 | Field | Meaning |
 |---|---|
@@ -22,19 +22,22 @@ Canonical registry for retained source evidence. Some sources support the broade
 
 ## data/processed/physical_nodes.geojson
 
-Seven canonical route nodes: the two route starts, the Route 1 & 9/North Avenue turn, the shared merge, two shared intersections, and the observed APM entrance coordinate.
+Twelve canonical route nodes: four directional access starts, an authority-to-state ramp transition, one ramp-to-North-Avenue join, three successive approach merges, two shared street intersections, and the observed APM entrance coordinate.
 
-Each feature contains `node_id`, `node_type`, `name`, `path_ids`, `incident_edge_ids`, source references, and the coordinate method.
+Each feature contains `node_id`, `node_type`, `name`, `path_ids`, `approach_ids`, `incident_edge_ids`, source references, and the coordinate method. Path IDs identify corridor families; approach IDs identify the directional inbound traversals that use the node.
 
 ## data/processed/physical_edges.json
 
-Six ordered, directed roadway corridors.
+Eleven directed roadway edges assembled into two corridor-level route families and four directional inbound approaches. A path is the stable corridor choice; an approach is a direction-specific traversal from its access node to the shared inbound entrance.
 
 | Field | Meaning |
 |---|---|
-| paths | Paths A and B with ordered edge IDs and verbatim APM directions. |
+| paths | Path A and Path B corridor families and the approach IDs belonging to each. |
+| approaches | Four directional inbound traversals with an origin, destination, verification status, and ordered edge IDs. |
 | edges | Canonical roadway corridors. |
 | from_node / to_node | Directed physical topology. |
+| path_ids / approach_ids | Corridor families and directional traversals that use the node or edge. |
+| sequence_by_approach | One-based position of the edge within each applicable approach. |
 | official_feature_ids | NJOGIS road-centerline features used by the corridor. |
 | official_list_names | Exact `LST_PNAME` name variants from the archived NJOGIS features. |
 | official_sri_ids | Exact NJOGIS Standard Route Identifiers (`SRI`) used by the corridor. |
@@ -43,9 +46,15 @@ Six ordered, directed roadway corridors.
 | jurisdiction_code_raw | Unchanged NJOGIS `JURISDICTN` value. |
 | official_nhs_designations | Federal National Highway System status for the edge from the archived current FHWA shapefile extract: raw code, FHWA's official code meaning, and the deterministic match basis. Edges absent from the FHWA data carry no designation record. |
 | geometry_reference | Archived source path, endpoints, and topology method. |
-| sequence_source_id | APM source supporting street order. |
+| sequence_source_ids | Sources supporting the approach's ordered traversal. A Google Maps observation corroborates ordinary routing only and is not truck-specific evidence. |
 
 `FT` means travel from the source feature start node to end node, `B` means travel in both directions, and `TF` means travel from end node to start node, exactly as decoded by the NJOGIS layer schema.
+
+## ArcGIS display GeoJSON
+
+`apm_drayage_nodes.geojson` and `apm_drayage_edges.geojson` are derived physical display layers. Edge geometry is assembled from the ordered official NJOGIS features and clipped to the observed APM entrance where the final official centerline continues beyond the scoped gate.
+
+`apm_regulatory_nodes.geojson` contains every nonphysical endpoint referenced by a coupling. Its coordinates form a deterministic diagram layout and are not real-world locations. `apm_regulatory_couplings.geojson` draws each canonical coupling from the relevant physical node or roadway midpoint to that diagram endpoint.
 
 ## data/processed/vehicle_profiles.json
 
@@ -78,6 +87,8 @@ Relationships within the regulatory layer, including authority-to-rule, rule-to-
 ## data/processed/coupling_edges.json
 
 Links rules and jurisdictions to physical corridors, the observed APM entrance node, or the scoped vehicle.
+
+In this project, a physical edge means a directed piece of roadway between two canonical physical nodes. Regulatory edges relate rules, authorities, credentials, and operating systems to one another. Coupling edges connect those regulatory or jurisdictional facts to a physical road edge, entrance node, or vehicle profile. A law or policy therefore does not determine whether two physical road segments connect; it is linked separately to the road segment it governs or classifies.
 
 | Relationship | Meaning |
 |---|---|

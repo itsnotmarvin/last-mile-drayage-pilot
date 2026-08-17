@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "name": "APM drayage inbound node display layer",
+  "schema_version": "2.0-derived-from-canonical-physical-nodes",
+  "feature_count": 12,
+  "derived_from": "data/processed/physical_nodes.geojson",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.1775120831099, 40.6708416045937]},
+      "properties": {"node_id": "node_a_sb_turnpike_exit13a", "name": "NJ TURNPIKE SB EXIT 13A", "node_type": "route_access_node", "paths": "Path A — southbound approach", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.1824480609753, 40.6636843947186]},
+      "properties": {"node_id": "node_a_nb_turnpike_exit13a", "name": "NJ TURNPIKE NB EXIT 13A", "node_type": "route_access_node", "paths": "Path A — northbound approach (candidate)", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.1793983127283, 40.6674594445013]},
+      "properties": {"node_id": "node_a_nb_turnpike_state_ramp_transition", "name": "TURNPIKE / STATE RAMP TRANSITION", "node_type": "jurisdiction_transition_node", "paths": "Path A — northbound approach", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.1931087468226, 40.6828636728236]},
+      "properties": {"node_id": "node_b_sb_us1_9_exit", "name": "US 1&9 SB EXIT TO NJ-81 SB", "node_type": "route_access_node", "paths": "Path B — southbound approach", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.198094260763, 40.6762518194506]},
+      "properties": {"node_id": "node_b_nb_us1_9_north_ave_exit", "name": "US 1&9 NB RIGHT-HAND EXIT", "node_type": "route_access_node", "paths": "Path B — northbound approach (candidate)", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.1962709814885, 40.6770550680897]},
+      "properties": {"node_id": "node_b_nb_north_ave_join", "name": "US 1&9 NB RAMP JOINS NORTH AVE E", "node_type": "corridor_join_node", "paths": "Path B — northbound approach", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.1878546482209, 40.673664180394]},
+      "properties": {"node_id": "node_b_approaches_merge_north_ave", "name": "PATH B APPROACHES MERGE", "node_type": "approach_merge_node", "paths": "Path B — both inbound approaches", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.18179779279, 40.6710852588052]},
+      "properties": {"node_id": "node_a_nb_joins_north_ave", "name": "PATH A NB JOINS NORTH AVE", "node_type": "approach_merge_node", "paths": "Path A northbound + Path B inbound", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.1785517799026, 40.6699210980933]},
+      "properties": {"node_id": "node_all_approaches_merge_north_ave", "name": "ALL APPROACHES MERGE", "node_type": "approach_merge_node", "paths": "Path A + Path B — all inbound approaches", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.166443767583, 40.6652301701734]},
+      "properties": {"node_id": "node_north_avenue_mclester", "name": "NORTH AVE E / MCLESTER ST", "node_type": "road_intersection", "paths": "Path A + Path B — all inbound approaches", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.160114111665, 40.674167142869]},
+      "properties": {"node_id": "node_mclester_tripoli", "name": "MCLESTER ST / TRIPOLI ST", "node_type": "road_intersection", "paths": "Path A + Path B — all inbound approaches", "rule_count": 0, "rules": ""}
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-74.1583229, 40.6734498]},
+      "properties": {"node_id": "node_apm_inbound_gate", "name": "OBSERVED APM INBOUND ENTRANCE", "node_type": "terminal_gate_node", "paths": "Path A + Path B — all inbound approaches", "rule_count": 8, "rules": "[GOVERNS_UNESCORTED_SECURE_ACCESS_AT] 33 CFR 101.514 — TWIC Requirement; [GOVERNS_PORT_ENTRY_MOVEMENT_AT] SUBRULE 34-046: MOVEMENT OF OVERWEIGHT OR OVER DIMENSIONAL CARGO ON MARINE TERMINAL HIGHWAYS; [GOVERNS_PORT_ENTRY_MOVEMENT_AT] SUBRULE 34-290: STATE LEGISLATION — Rules and Regulations Governing Traffic on Highways in Port Authority Air and Marine Terminals; [GOVERNS_ENTRY_AT] SUBRULE 34-1100: REGISTRATION IN DRAYAGE TRUCK REGISTRY (DTR); [GOVERNS_ENTRY_AT] SeaLink®; TWIC and SeaLink®; [GOVERNS_ENTRY_AT] Radio-Frequency Identification (RFID); [GOVERNS_GATE_MOVE_AT] ALL GATE MOVES AT APMT REQUIRE AN APPOINTMENT; [GOVERNS_ACCESS_AT] Mandatory Trucker Training"}
+    }
+  ]
+}
