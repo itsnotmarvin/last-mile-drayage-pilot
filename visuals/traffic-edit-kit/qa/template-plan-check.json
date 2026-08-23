@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-08-20T20:05:52.301Z",
+  "workspace": "/Users/marbin/Desktop/last-mile-drayage-pilot/.tmp_traffic_update",
+  "mapPath": "/Users/marbin/Desktop/last-mile-drayage-pilot/.tmp_traffic_update/template-frame-map.json",
+  "inspectPath": "/Users/marbin/Desktop/last-mile-drayage-pilot/.tmp_traffic_update/template-inspect/template-inspect.ndjson",
+  "sourceSlideCount": 1,
+  "issueCount": 0,
+  "issues": []
+}

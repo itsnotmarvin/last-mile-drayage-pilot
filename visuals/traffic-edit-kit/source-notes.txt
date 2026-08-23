@@ -1,0 +1,5 @@
+[Sources]
+- New Jersey Department of Transportation, Traffic Counts Data, dataset c74r-6c8d, 2018 records for stations 3-3-024 and 182001: https://data.nj.gov/Transportation/Traffic-Counts-Data/c74r-6c8d
+- data/raw/observations/njdot_route_624_station_aadt_2018_2026_08_20.json
+- data/processed/physical_nodes.geojson and data/processed/physical_edges.json for the complete approach-merge node and station relationship.
+

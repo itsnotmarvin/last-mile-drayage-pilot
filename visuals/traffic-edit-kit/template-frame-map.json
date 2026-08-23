@@ -1,0 +1,19 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "verified drayage corridor evidence map",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "sourceElementId": "sh/4bq1wzmp",
+          "action": "rewrite",
+          "reason": "Correct the traffic station's relationship to the complete approach merge."
+        }
+      ]
+    }
+  ],
+  "omittedSourceSlides": []
+}
+

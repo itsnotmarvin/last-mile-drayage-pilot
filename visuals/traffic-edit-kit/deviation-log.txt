@@ -1,0 +1,2 @@
+Slide 1: rewrote only sensor-note (sh/4bq1wzmp). The original wording implied that station 182001 measured traffic across the complete merge; the replacement says the historical comparison nearly doubles approaching the merge. No layout or style deviation.
+

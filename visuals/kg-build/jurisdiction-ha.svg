@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#2E7FCC"/></marker></defs>
+  <path d="M134 43C153 36 172 26 190 10" fill="none" stroke="#2E7FCC" stroke-width="1.8" marker-end="url(#a)"/>
+  <rect x="8" y="30" width="126" height="26" rx="6" fill="#fff" stroke="#2E7FCC" stroke-width="1.4"/>
+  <rect x="8" y="30" width="30" height="26" rx="6" fill="#2E7FCC"/><text x="23" y="47" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#fff">HA</text>
+  <text x="46" y="47" font-family="Arial" font-size="10.5" font-weight="700" fill="#202020">Highway Authority</text>
+</svg>

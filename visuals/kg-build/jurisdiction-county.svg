@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="115" viewBox="0 0 110 115">
+  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#32B893"/></marker></defs>
+  <path d="M51 31C59 54 68 80 80 105" fill="none" stroke="#32B893" stroke-width="1.8" marker-end="url(#a)"/>
+  <rect x="7" y="5" width="91" height="26" rx="6" fill="#fff" stroke="#32B893" stroke-width="1.4"/>
+  <rect x="7" y="5" width="28" height="26" rx="6" fill="#32B893"/><text x="21" y="22" text-anchor="middle" font-family="Arial" font-size="10" font-weight="700" fill="#fff">C</text>
+  <text x="43" y="22" font-family="Arial" font-size="10.5" font-weight="700" fill="#202020">County</text>
+</svg>

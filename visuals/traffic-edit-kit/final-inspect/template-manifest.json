@@ -1,0 +1,56 @@
+{
+  "sourcePptx": "/Users/marbin/Desktop/last-mile-drayage-pilot/drayage_kg_final2-fixed-editable-google-route-match-traffic-corrected.pptx",
+  "workspace": "/Users/marbin/Desktop/last-mile-drayage-pilot/.tmp_traffic_update",
+  "outDir": "/Users/marbin/Desktop/last-mile-drayage-pilot/.tmp_traffic_update/final-inspect",
+  "generatedAt": "2026-08-20T20:10:27.032Z",
+  "slideCount": 1,
+  "slideArtifacts": [
+    {
+      "slide": 1,
+      "previewPath": "/Users/marbin/Desktop/last-mile-drayage-pilot/.tmp_traffic_update/final-inspect/source-slides/source-slide-01.png",
+      "previewRelativePath": "final-inspect/source-slides/source-slide-01.png",
+      "layoutPath": "/Users/marbin/Desktop/last-mile-drayage-pilot/.tmp_traffic_update/final-inspect/layouts/source-slide-01.layout.json",
+      "layoutRelativePath": "final-inspect/layouts/source-slide-01.layout.json"
+    }
+  ],
+  "inspectPath": "/Users/marbin/Desktop/last-mile-drayage-pilot/.tmp_traffic_update/final-inspect/template-inspect.ndjson",
+  "inspectRelativePath": "final-inspect/template-inspect.ndjson",
+  "inspectTruncated": true,
+  "inspectMetadata": {
+    "revision": "qbuc7z",
+    "target": {
+      "id": "pr/kcuqes"
+    },
+    "kind": {
+      "requested": "slide,textbox,shape,image,table,chart",
+      "tokens": [
+        "slide",
+        "textbox",
+        "shape",
+        "image",
+        "table",
+        "chart"
+      ]
+    },
+    "include": {
+      "tokens": []
+    },
+    "exclude": {
+      "tokens": []
+    },
+    "notices": []
+  },
+  "extractedMedia": [],
+  "fonts": [
+    "+mj-lt",
+    "+mn-lt",
+    "Calibri",
+    "Calibri Light"
+  ],
+  "packageParts": {
+    "mediaCount": 0,
+    "slideXmlCount": 1,
+    "chartCount": 0,
+    "tableSlideCount": 0
+  }
+}

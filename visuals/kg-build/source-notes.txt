@@ -1,0 +1,6 @@
+Route-matched editable Canva knowledge graph
+
+- User reference: Google Maps screenshot of 395 Dowd Avenue to APM Terminals, supplied 2026-08-20.
+- Geometry source: data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson.
+- Ordered route: data/processed/physical_edges.json, approach_a_turnpike_nb.
+- The route is projected from the ordered official centerline feature sequence; no basemap image is embedded.
