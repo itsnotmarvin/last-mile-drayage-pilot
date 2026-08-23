@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.5060, 40.3120]
+      },
+      "properties": {
+        "node_id": "origin_exit8a_cranbury",
+        "name": "EXIT 8A CRANBURY / S. BRUNSWICK DC CLUSTER",
+        "node_type": "trip_origin_node",
+        "paths": "Path A — NJ Turnpike southbound to Exit 13A",
+        "serves_approach_node": "node_a_nb_joins_north_ave",
+        "distance_km_freeflow": 55.4,
+        "freeflow_minutes": 48.5,
+        "origin_class": "warehouse_distribution_cluster",
+        "selection_basis": "Largest warehouse and distribution cluster feeding Port Newark/Elizabeth; selected on freight-planning grounds prior to any traffic measurement.",
+        "evidence_status": "representative",
+        "rule_count": 0,
+        "rules": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.2200, 40.6200]
+      },
+      "properties": {
+        "node_id": "origin_linden_tremley",
+        "name": "LINDEN / TREMLEY POINT INDUSTRIAL",
+        "node_type": "trip_origin_node",
+        "paths": "Path B — US 1&9 northbound approach",
+        "serves_approach_node": "node_b_nb_us1_9_north_ave_exit",
+        "distance_km_freeflow": 17.5,
+        "freeflow_minutes": 18.4,
+        "origin_class": "local_industrial",
+        "selection_basis": "Representative near-port industrial origin on the US 1&9 northbound corridor.",
+        "evidence_status": "representative",
+        "rule_count": 0,
+        "rules": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.1200, 40.7500]
+      },
+      "properties": {
+        "node_id": "origin_kearny_meadowlands",
+        "name": "KEARNY / MEADOWLANDS",
+        "node_type": "trip_origin_node",
+        "paths": "Path C — US 1&9 southbound / NJ-81 approach",
+        "serves_approach_node": "node_b_sb_us1_9_exit",
+        "distance_km_freeflow": 12.9,
+        "freeflow_minutes": 13.8,
+        "origin_class": "regional_logistics",
+        "selection_basis": "Representative northern origin approaching the corridor from US 1&9 southbound.",
+        "evidence_status": "representative",
+        "rule_count": 0,
+        "rules": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.1250, 40.7050]
+      },
+      "properties": {
+        "node_id": "origin_pnd_delancey_empty_depot",
+        "name": "PND EMPTY DEPOT — 921 DELANCEY ST",
+        "node_type": "trip_origin_node",
+        "paths": "Local — empty return / repositioning move",
+        "serves_approach_node": "node_b_sb_us1_9_exit",
+        "distance_km_freeflow": 8.0,
+        "freeflow_minutes": 13.9,
+        "origin_class": "empty_container_depot",
+        "selection_basis": "Named in APM Terminals Elizabeth hours-of-operation document as the designated empty depot; documented terminal facility rather than a representative choice.",
+        "evidence_status": "confirmed",
+        "source_document": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
+        "rule_count": 0,
+        "rules": ""
+      }
+    }
+  ]
+}
