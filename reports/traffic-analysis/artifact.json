@@ -1,0 +1,326 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "North Avenue inbound traffic evidence",
+    "description": "Historical station counts, a 2024 upstream update, and corridor operations evidence near APM Terminals Elizabeth.",
+    "generatedAt": "2026-08-20T20:35:00-04:00",
+    "sources": [
+      {
+        "id": "njdot-counts",
+        "label": "NJDOT Traffic Counts Data — 2018 Route 624 station extract",
+        "path": "data/raw/observations/njdot_route_624_station_aadt_2018_2026_08_20.json",
+        "href": "https://data.nj.gov/Transportation/Traffic-Counts-Data/c74r-6c8d",
+        "query": {
+          "engine": "Socrata Open Data API",
+          "url": "https://data.nj.gov/resource/c74r-6c8d.json",
+          "query": "$select=*&$where=si_station_num in ('3-3-024','182001') AND count_year='2018-01-01T00:00:00.000'&$order=si_station_num,ev_aadt_tot&$limit=100",
+          "sql": "SELECT * FROM c74r-6c8d WHERE si_station_num IN ('3-3-024', '182001') AND count_year = '2018-01-01T00:00:00.000' ORDER BY si_station_num, ev_aadt_tot LIMIT 100",
+          "description": "All count-year 2018 records for stations 3-3-024 and 182001 on standard route identifier 20000624__.",
+          "executed_at": "2026-08-20T14:05:00-04:00",
+          "filters": [
+            "si_station_num in ('3-3-024','182001')",
+            "count_year = 2018"
+          ],
+          "metric_definitions": [
+            "AADT: annual average daily traffic, both directions",
+            "Upstream baseline: median across nine duplicate 2018 major-station records"
+          ]
+        }
+      },
+      {
+        "id": "njdot-recent-upstream",
+        "label": "Processed NJDOT upstream station evidence — station 3-3-024, 2020–2024",
+        "path": "data/processed/traffic_analysis.json",
+        "href": "https://www.nj.gov/transportation/refdata/roadway/trafficreport.shtm",
+        "query": {
+          "engine": "SQLite",
+          "description": "Combines the official 2018 upstream median, Socrata 2020–2022 extract, and selected station 3-3-024 rows from NJDOT's official 2024 annual AADT CSV.",
+          "sql": "WITH upstream(count_year, aadt_total, eastbound, westbound, method) AS (VALUES (2020, 12872, 7850, 5021, 'Classification 48hrs'), (2021, 15095, 8830, 6264, 'major'), (2022, 15368, 9222, 6145, 'major'), (2024, 14472, 8342, 6130, 'permanent')), baseline AS (SELECT 15460 AS median_2018, 15368 AS aadt_2022) SELECT count_year, aadt_total, eastbound, westbound, method, median_2018, aadt_total - median_2018 AS difference_vs_2018, ROUND(100.0 * (aadt_total - median_2018) / median_2018, 1) AS percent_vs_2018, CASE WHEN count_year = 2024 THEN aadt_total - aadt_2022 END AS difference_vs_2022, CASE WHEN count_year = 2024 THEN ROUND(100.0 * (aadt_total - aadt_2022) / aadt_2022, 1) END AS percent_vs_2022 FROM upstream CROSS JOIN baseline ORDER BY count_year;",
+          "executed_at": "2026-08-20T20:35:00-04:00",
+          "tables_used": [
+            "data/raw/observations/njdot_route_624_station_aadt_2018_2026_08_20.json",
+            "data/raw/observations/njdot_route_624_station_3-3-024_aadt_2020_2022_2026_08_20.json",
+            "data/raw/observations/njdot_traffic_count_2024_station_3-3-024_2026_08_20.json"
+          ],
+          "filters": [
+            "si_station_num = '3-3-024'",
+            "count_year in 2020, 2021, 2022, 2024"
+          ],
+          "metric_definitions": [
+            "AADT: annual average daily traffic, both directions",
+            "Latest-baseline comparison: 2024 AADT minus the median across nine 2018 records at the same station"
+          ]
+        }
+      },
+      {
+        "id": "njdot-2024-upstream",
+        "label": "NJDOT 2024 annual AADT file — upstream station 3-3-024",
+        "path": "data/raw/observations/njdot_traffic_count_2024_station_3-3-024_2026_08_20.json",
+        "href": "https://www.nj.gov/transportation/refdata/roadway/mdb/TrafficCount2024DataSetwithAADTs.csv"
+      },
+      {
+        "id": "elizabeth-corridor-study",
+        "label": "City of Elizabeth — Kapkowski Road Corridor Improvements Concept Development Report (August 2022)",
+        "href": "https://www.elizabethnj.org/DocumentCenter/View/5308/01_Kapkowski-Rd-Corridor-Improvements-Final-CD-Rept-0822"
+      },
+      {
+        "id": "union-county-study",
+        "label": "Union County Truck Mobility Study Final Report (June 2021)",
+        "href": "https://ucnj.org/wp-content/uploads/2024/07/Union-County-Truck-Mobility-Study-Final-Report_Compressed.pdf"
+      },
+      {
+        "id": "fhwa-crosscheck",
+        "label": "FHWA NHS 2025 release — Union County route extract with 2020 HPMS attributes",
+        "path": "data/raw/gis/official/fhwa_nhs_2025_union_study_extract_2026_08_07.geojson",
+        "href": "https://www.fhwa.dot.gov/planning/national_highway_system/nhs_maps/"
+      }
+    ],
+    "cards": [
+      {
+        "id": "funnel-ratio",
+        "description": "2018 near-merge volume relative to the upstream Path B baseline",
+        "dataset": "headline",
+        "sourceId": "njdot-counts",
+        "metrics": [
+          {"label": "Volume multiplier", "field": "volume_ratio", "format": "number"}
+        ]
+      },
+      {
+        "id": "volume-increase",
+        "description": "2018 increase from the robust upstream median to immediately before the complete merge",
+        "dataset": "headline",
+        "sourceId": "njdot-counts",
+        "metrics": [
+          {"label": "AADT increase", "field": "increase_percent", "format": "percent", "signed": true}
+        ]
+      },
+      {
+        "id": "eastbound-share",
+        "description": "Share of station 182001 traffic traveling east toward the terminal corridor",
+        "dataset": "headline",
+        "sourceId": "njdot-counts",
+        "metrics": [
+          {"label": "Eastbound share", "field": "eastbound_share", "format": "percent"}
+        ]
+      }
+    ],
+    "charts": [
+      {
+        "id": "station-aadt",
+        "title": "2018 annual average daily traffic by station role",
+        "subtitle": "Historical same-year comparison; station 182001 is immediately upstream of the complete approach merge.",
+        "type": "bar",
+        "dataset": "station_comparison",
+        "sourceId": "njdot-counts",
+        "encodings": {
+          "x": {
+            "field": "location",
+            "type": "nominal",
+            "label": "Station role"
+          },
+          "y": {
+            "field": "aadt_total",
+            "type": "quantitative",
+            "aggregate": "none",
+            "format": "number",
+            "label": "Total AADT",
+            "unit": "vehicles/day"
+          }
+        },
+        "xAxisTitle": "Station role",
+        "yAxisTitle": "Vehicles per day",
+        "valueFormat": "number",
+        "unit": "vehicles/day",
+        "layout": "full",
+        "maxRows": 10
+      }
+    ],
+    "tables": [
+      {
+        "id": "direction-table",
+        "title": "Directional station comparison",
+        "subtitle": "Same NJDOT route identifier and 2018 count year; collection types and station roles differ.",
+        "dataset": "station_comparison",
+        "sourceId": "njdot-counts",
+        "layout": "full",
+        "density": "spacious",
+        "defaultSort": {"field": "aadt_total", "direction": "asc"},
+        "columns": [
+          {"field": "location", "label": "Station role", "type": "text"},
+          {"field": "station", "label": "Station", "type": "text"},
+          {"field": "aadt_total", "label": "Total AADT", "format": "number"},
+          {"field": "eastbound", "label": "Eastbound", "format": "number"},
+          {"field": "westbound", "label": "Westbound", "format": "number"},
+          {"field": "method", "label": "Method", "type": "text"}
+        ]
+      },
+      {
+        "id": "recent-upstream-table",
+        "title": "Latest published AADT at upstream station 3-3-024",
+        "subtitle": "The 2024 count is 6.4% below the station's 2018 median; it does not update station 182001.",
+        "dataset": "recent_upstream",
+        "sourceId": "njdot-recent-upstream",
+        "layout": "full",
+        "density": "spacious",
+        "defaultSort": {"field": "count_year", "direction": "desc"},
+        "columns": [
+          {"field": "count_year", "label": "Count year", "type": "number"},
+          {"field": "aadt_total", "label": "Total AADT", "format": "number"},
+          {"field": "eastbound", "label": "Eastbound", "format": "number"},
+          {"field": "westbound", "label": "Westbound", "format": "number"},
+          {"field": "method", "label": "Method", "type": "text"}
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "executive-summary",
+        "type": "markdown",
+        "layout": "full",
+        "body": "# North Avenue inbound traffic evidence\n\n## Executive Summary\n\n- **The historical concentration finding remains material.** In 2018, AADT rose from an upstream median of **15,460 vehicles per day** to **29,973** at station 182001 immediately before the complete approach merge—a **1.94×** increase.\n- **The upstream evidence is now current through 2024.** NJDOT's 2024 annual file reports **14,472** at station 3-3-024, **6.4% below** the 2018 upstream median. The file contains no station 182001 row, so it does not measure the current near-merge or full merged flow.\n- **Later engineering evidence identifies peak-period operational stress.** A City of Elizabeth study using seven-day and turning-movement counts collected in 2020 found LOS E movements at North Avenue/Dowd Avenue and North Avenue/Kapkowski Road–IKEA Drive. The shared North Avenue-to-McLester corridor should therefore be the pilot's primary monitoring zone, while a new downstream screenline count is required for today's full-merge volume."
+      },
+      {
+        "id": "headline-metrics",
+        "type": "metric-strip",
+        "layout": "full",
+        "cardIds": ["funnel-ratio", "volume-increase", "eastbound-share"]
+      },
+      {
+        "id": "finding-one",
+        "type": "markdown",
+        "layout": "full",
+        "sourceId": "njdot-counts",
+        "body": "## 2018 counts show traffic concentrating toward the shared corridor\n\nThe two stations share NJDOT route identifier `20000624__` and count year 2018. Station 3-3-024 is upstream on the Path B North Avenue approach. Station 182001 is within roughly 65 meters of—and immediately upstream of—the graph's complete approach merge. The **93.9%** increase therefore demonstrates concentration approaching the common corridor, not a direct count after every approach has joined. Monitoring only the separate approaches would miss this shared exposure."
+      },
+      {
+        "id": "station-chart-block",
+        "type": "chart",
+        "layout": "full",
+        "chartId": "station-aadt"
+      },
+      {
+        "id": "direction-narrative",
+        "type": "markdown",
+        "layout": "full",
+        "sourceId": "njdot-counts",
+        "body": "### Directional evidence\n\nThe historical pattern appears in both directions: eastbound volume rises **94.5%** and westbound volume rises **89.6%**. Eastbound—the inbound movement toward the terminal corridor—accounts for **58.1%** of traffic at station 182001. This strengthens the concentration interpretation while still falling short of a delay or reliability measurement."
+      },
+      {
+        "id": "direction-table-block",
+        "type": "table",
+        "layout": "full",
+        "tableId": "direction-table"
+      },
+      {
+        "id": "latest-upstream",
+        "type": "markdown",
+        "layout": "full",
+        "sourceId": "njdot-recent-upstream",
+        "body": "## The 2024 upstream count refreshes the approach context\n\nNJDOT reported **15,095 vehicles per day** at upstream station 3-3-024 in 2021, **15,368** in 2022, and **14,472** in the 2024 annual file. The 2024 value is **988 vehicles per day, or 6.4%, below** the 2018 upstream median and 5.8% below 2022. It refreshes the approach context but does not update station 182001 or measure traffic after every approach has joined."
+      },
+      {
+        "id": "recent-upstream-table-block",
+        "type": "table",
+        "layout": "full",
+        "tableId": "recent-upstream-table"
+      },
+      {
+        "id": "operations-crosscheck",
+        "type": "markdown",
+        "layout": "full",
+        "sourceId": "elizabeth-corridor-study",
+        "body": "## Later engineering work identifies peak-period stress\n\nThe City of Elizabeth's 2022 corridor report used seven continuous days of automatic counts at seven locations plus 12 manual turning-movement counts collected October 19–26, 2020. It identified LOS E movements at North Avenue/Dowd Avenue during weekday peaks and at North Avenue/Kapkowski Road–IKEA Drive during PM and Saturday peaks. Because collection occurred during the COVID-19 pandemic, the engineers compared the counts with 2018 pre-pandemic data and applied time-period adjustment factors. The result is credible operational corroboration, but it should not be described as an unmodified 2020 count or as today's condition."
+      },
+      {
+        "id": "county-context",
+        "type": "markdown",
+        "layout": "full",
+        "sourceId": "union-county-study",
+        "body": "## Countywide context confirms the segment's importance\n\nThe 2021 Union County Truck Mobility Study lists CR 624 from Earhart Drive to the New Jersey Turnpike overpass at **29,973 AADT**, the highest county-roadway value in its inventory. That independently confirms the station's corridor significance and location, although it relies on the same 2018 count rather than a newer measurement."
+      },
+      {
+        "id": "crosscheck",
+        "type": "markdown",
+        "layout": "full",
+        "sourceId": "fhwa-crosscheck",
+        "body": "## Independent cross-check\n\nFHWA's 2020 HPMS attributes show North Avenue AADT increasing from **14,960** on the western segment to **21,434** downstream, a **43.3% increase**. This independently supports increasing volume along the corridor. It does not validate the exact 93.9% NJDOT magnitude because the years, locations, and collection methods differ."
+      },
+      {
+        "id": "next-steps",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## Recommended next steps\n\n1. Search NJDOT's current Traffic Viewer and Transportation Data Management System manually for station 182001 and Route 624 milepoint 1.75.\n2. Establish a downstream screenline immediately after the last approach joins and before McLester/Tripoli or another access point changes the flow.\n3. Collect seven consecutive nonholiday days in 15-minute intervals, including direction, vehicle class, truck share, and speed.\n4. Pair the downstream counter with approach counters and merge video to reconcile contributing flows, lane changes, and queues.\n5. Record weather, construction, incidents, terminal-gate hours, and appointment volume; measure terminal queue and service time separately.\n6. Calculate merged AADT, peak-hour volume, approach contributions, median, p80, p95, buffer time, and planning-time index only after repeated observations exist."
+      },
+      {
+        "id": "caveats",
+        "type": "markdown",
+        "layout": "full",
+        "body": "## Caveats and open questions\n\n- The **1.94×** comparison is a same-year 2018 historical comparison, not a current traffic estimate.\n- Station 182001 is immediately upstream of the complete approach merge and is not a true post-merge counter.\n- The official 2024 annual file contains upstream station 3-3-024 but no station 182001 row. NJDOT's current interactive system still requires a manual station search because automated access was blocked during this review.\n- AADT is an annualized daily-volume estimate, not an hourly congestion or speed measure.\n- The upstream station has nine duplicate 2018 records with unexplained variation; the median limits outlier influence.\n- Station types differ: major/permanent station upstream and a 48-hour volume station near the merge.\n- Local access and other ramps may contribute volume between stations, so the increase cannot be assigned exclusively to Path A.\n- The NJDOT station records do not identify trucks separately or contain terminal-gate queue data.\n- The City of Elizabeth's 2020 counts were adjusted against 2018 data because of pandemic-era travel conditions.\n\nThe unresolved question is how present-day full-merge truck volume, roadway travel time, and gate delay vary by weekday terminal-serving period."
+      }
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-08-20T20:35:00-04:00",
+    "status": "ready",
+    "datasets": {
+      "headline": [
+        {
+          "volume_ratio": 1.939,
+          "increase_percent": 0.939,
+          "eastbound_share": 0.581
+        }
+      ],
+      "station_comparison": [
+        {
+          "location": "Upstream Path B approach",
+          "station": "3-3-024",
+          "aadt_total": 15460,
+          "eastbound": 8949,
+          "westbound": 6628,
+          "method": "Median (n=9)"
+        },
+        {
+          "location": "Immediately pre-merge",
+          "station": "182001",
+          "aadt_total": 29973,
+          "eastbound": 17403,
+          "westbound": 12570,
+          "method": "48-hour count"
+        }
+      ],
+      "recent_upstream": [
+        {
+          "count_year": 2020,
+          "aadt_total": 12872,
+          "eastbound": 7850,
+          "westbound": 5021,
+          "method": "Classification 48hrs"
+        },
+        {
+          "count_year": 2021,
+          "aadt_total": 15095,
+          "eastbound": 8830,
+          "westbound": 6264,
+          "method": "major"
+        },
+        {
+          "count_year": 2022,
+          "aadt_total": 15368,
+          "eastbound": 9222,
+          "westbound": 6145,
+          "method": "major"
+        },
+        {
+          "count_year": 2024,
+          "aadt_total": 14472,
+          "eastbound": 8342,
+          "westbound": 6130,
+          "method": "permanent"
+        }
+      ]
+    }
+  }
+}

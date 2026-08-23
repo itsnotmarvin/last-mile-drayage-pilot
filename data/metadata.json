@@ -1,10 +1,82 @@
 {
   "schema_version": "2.0-canonical-source-registry",
   "project": "Last-Mile Drayage Coupled-Network Pilot — APM Terminals Elizabeth",
-  "last_updated": "2026-08-07",
+  "last_updated": "2026-08-20",
   "status": "canonical_evidence_source_registry",
-  "source_count": 23,
+  "source_count": 28,
   "sources": [
+    {
+      "source_id": "njdot_traffic_counts_c74r_6c8d_route624_2018",
+      "title": "NJDOT Traffic Counts Data — County Route 624 stations 3-3-024 and 182001, count year 2018",
+      "publisher": "New Jersey Department of Transportation via NJOIT Open Data Center",
+      "source_type": "official_open_data_api_extract",
+      "count_year": 2018,
+      "retrieval_date": "2026-08-20",
+      "url": "https://data.nj.gov/Transportation/Traffic-Counts-Data/c74r-6c8d",
+      "archived_files": [
+        {
+          "role": "api_query_extract",
+          "path": "data/raw/observations/njdot_route_624_station_aadt_2018_2026_08_20.json",
+          "sha256": "b08628f105c17fe2a0b64bdd945fcac12d957b4d4ba02ce379c2bb326a142769"
+        }
+      ],
+      "extract_note": "Query retains all 2018 records for stations 3-3-024 and 182001 on standard route identifier 20000624__. The processed analysis uses the median of duplicate upstream major-station records and the single downstream 48-hour station record."
+    },
+    {
+      "source_id": "njdot_traffic_counts_c74r_6c8d_station_3_3_024_2020_2022",
+      "title": "NJDOT Traffic Counts Data — County Route 624 upstream station 3-3-024, count years 2020–2022",
+      "publisher": "New Jersey Department of Transportation via NJOIT Open Data Center",
+      "source_type": "official_open_data_api_extract",
+      "count_years": [2020, 2021, 2022],
+      "retrieval_date": "2026-08-20",
+      "url": "https://data.nj.gov/Transportation/Traffic-Counts-Data/c74r-6c8d",
+      "archived_files": [
+        {
+          "role": "api_query_extract",
+          "path": "data/raw/observations/njdot_route_624_station_3-3-024_aadt_2020_2022_2026_08_20.json",
+          "sha256": "f019f11a6ca8a3de45c323d8bd4428cca9a2a84a5bf5711b447c918e67aa714f"
+        }
+      ],
+      "extract_note": "Query retains the published 2020, 2021, and 2022 records for upstream station 3-3-024. The 2022 AADT of 15,368 is 0.6 percent below the station's 2018 median of 15,460."
+    },
+    {
+      "source_id": "njdot_traffic_count_2024_station_3_3_024",
+      "title": "NJDOT 2024 Traffic Count dataset with AADTs — County Route 624 upstream station 3-3-024",
+      "publisher": "New Jersey Department of Transportation",
+      "source_type": "official_annual_csv_extract",
+      "count_year": 2024,
+      "retrieval_date": "2026-08-20",
+      "url": "https://www.nj.gov/transportation/refdata/roadway/mdb/TrafficCount2024DataSetwithAADTs.csv",
+      "archived_files": [
+        {
+          "role": "selected_csv_rows_as_json",
+          "path": "data/raw/observations/njdot_traffic_count_2024_station_3-3-024_2026_08_20.json",
+          "sha256": "407149ba22b1e586a966bf103720662fca49050e4c726dd4bab3896d33de9ae9"
+        }
+      ],
+      "extract_note": "The 2024 permanent-station AADT is 14,472 total, 8,342 eastbound, and 6,130 westbound. An exact Location ID search found no station 182001 row in the 2024 annual file; that absence does not rule out a newer report in NJDOT's current Traffic Viewer or Transportation Data Management System."
+    },
+    {
+      "source_id": "elizabeth_kapkowski_corridor_concept_report_2022",
+      "title": "Kapkowski Road Corridor Improvements Project Concept Development Report",
+      "publisher": "City of Elizabeth Department of Engineering",
+      "source_type": "official_city_engineering_report",
+      "publication_date": "2022-08-02",
+      "traffic_collection_dates": "2020-10-19 through 2020-10-26",
+      "retrieval_date": "2026-08-20",
+      "url": "https://www.elizabethnj.org/DocumentCenter/View/5308/01_Kapkowski-Rd-Corridor-Improvements-Final-CD-Rept-0822",
+      "extract_note": "The report used seven continuous seven-day ATR counts and 12 turning-movement counts. It identified LOS E movements at North Avenue/Dowd Avenue and North Avenue/Kapkowski Road–IKEA Drive. Pandemic-era observations were compared with 2018 pre-pandemic counts and adjusted by time period."
+    },
+    {
+      "source_id": "union_county_truck_mobility_study_2021",
+      "title": "Union County Truck Mobility Study Final Report",
+      "publisher": "Union County",
+      "source_type": "official_county_transportation_study",
+      "publication_date": "2021-06-01",
+      "retrieval_date": "2026-08-20",
+      "url": "https://ucnj.org/wp-content/uploads/2024/07/Union-County-Truck-Mobility-Study-Final-Report_Compressed.pdf",
+      "extract_note": "The study lists CR 624 from Earhart Drive to the New Jersey Turnpike overpass at 29,973 AADT, the highest county-roadway value in its inventory, using the 2018 count."
+    },
     {
       "source_id": "apm_directions",
       "title": "APM Terminals Elizabeth Contact and Directions",

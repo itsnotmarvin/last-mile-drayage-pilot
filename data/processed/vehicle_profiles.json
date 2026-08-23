@@ -20,7 +20,12 @@
         "path_ids": [
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
-        ]
+        ],
+        "path_a_approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "path_a_approach_scope_note": "The northbound approach is a centerline-connected candidate, not operator-published or truck-route verification."
       },
       "properties_not_supplied": {
         "fields": [

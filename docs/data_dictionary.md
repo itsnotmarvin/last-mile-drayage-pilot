@@ -22,17 +22,18 @@ Canonical registry for retained source evidence. Some sources support the broade
 
 ## data/processed/physical_nodes.geojson
 
-Seven canonical route nodes: the two route starts, the Route 1 & 9/North Avenue turn, the shared merge, two shared intersections, and the observed APM entrance coordinate.
+Ten canonical route nodes: the original route starts and intersections, plus the northbound Exit 13A start, authority-to-state ramp transition, and North Avenue approach merge.
 
 Each feature contains `node_id`, `node_type`, `name`, `path_ids`, `incident_edge_ids`, source references, and the coordinate method.
 
 ## data/processed/physical_edges.json
 
-Six ordered, directed roadway corridors.
+Nine ordered, directed roadway corridors. Path A has a default operator-published southbound approach and a candidate northbound approach assembled from directed official centerlines.
 
 | Field | Meaning |
 |---|---|
 | paths | Paths A and B with ordered edge IDs and verbatim APM directions. |
+| approaches | Direction-specific Path A realizations, verification status, and ordered edge IDs. The northbound approach is explicitly marked as not truck-route verified. |
 | edges | Canonical roadway corridors. |
 | from_node / to_node | Directed physical topology. |
 | official_feature_ids | NJOGIS road-centerline features used by the corridor. |
@@ -94,3 +95,19 @@ Links rules and jurisdictions to physical corridors, the observed APM entrance n
 
 Road-specific couplings include a `road_segment_match` object. It records the official name variants, SRI or shield number, matched feature IDs, and any source-stated intersection offsets used for the deterministic join. Derived coordinates identify the matched extent and state their calculation method; they are not transcribed source text.
 Every coupling edge lists its supporting source IDs and source-supported applicability status. Compliance is not inferred.
+
+## data/processed/traffic_analysis.json
+
+Source-triangulated traffic evidence for the inbound North Avenue corridor. The file separates the historical same-year station comparison from later corroborating evidence so publication date, count year, location, and method are not conflated.
+
+| Field | Meaning |
+|---|---|
+| station_comparison | 2018 NJDOT comparison between upstream station 3-3-024 and station 182001 immediately before the complete approach merge. |
+| latest_upstream_corroboration | Published 2020–2022 records plus the 2024 annual-file record at station 3-3-024, with comparisons to the 2018 upstream median and 2022 value. |
+| current_public_data_check | Result of checking the official 2024 annual AADT file for stations 3-3-024 and 182001, with the boundary that NJDOT's current interactive system still requires manual review. |
+| corridor_operations_cross_check | City of Elizabeth seven-day and turning-movement count program, LOS findings, and pandemic-adjustment qualification. |
+| county_context_cross_check | Union County's identification of the 29,973-AADT CR 624 segment as the highest-volume county roadway in its inventory. |
+| secondary_cross_check | FHWA HPMS segment comparison, retained as directional evidence rather than an exact station validation. |
+| decision | Supported monitoring implication and explicit statement that a path ranking is not yet supported. |
+| limitations | Location, year, method, truck-classification, and gate-delay constraints that bound the findings. |
+| next_collection | Measurements required to produce current truck-specific reliability and path-ranking metrics. |
