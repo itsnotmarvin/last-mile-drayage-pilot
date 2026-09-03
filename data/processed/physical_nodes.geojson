@@ -1,10 +1,10 @@
 {
   "type": "FeatureCollection",
   "name": "APM Terminals Elizabeth",
-  "schema_version": "1.0-verified-route-nodes",
-  "status": "canonical_verified_physical_graph",
+  "schema_version": "1.1-verified-route-nodes-with-approaches",
+  "status": "canonical_verified_physical_graph_with_candidate_directional_approach",
   "coordinate_crs": "EPSG:4326",
-  "feature_count": 7,
+  "feature_count": 10,
   "source_ids": [
     "apm_directions",
     "njogis_road_centerlines_2026_07_26",
@@ -27,6 +27,9 @@
         "path_ids": [
           "path_a_exit13a_to_apm"
         ],
+        "approach_ids": [
+          "approach_a_turnpike_sb"
+        ],
         "incident_edge_ids": [
           "edge_a_exit13a_connector"
         ],
@@ -37,6 +40,107 @@
         "source_feature_ids": [
           354508,
           40708
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1824480609753,
+          40.6636843947186
+        ]
+      },
+      "properties": {
+        "node_id": "node_a_nb_turnpike_exit13a",
+        "node_type": "route_access_node",
+        "name": "NJ Turnpike northbound Exit 13A ramp start",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_a_nb_turnpike_exit"
+        ],
+        "source_ids": [
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          82726,
+          593
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1793983127283,
+          40.6674594445013
+        ]
+      },
+      "properties": {
+        "node_id": "node_a_nb_turnpike_state_ramp_transition",
+        "node_type": "jurisdiction_transition_node",
+        "name": "Turnpike authority ramp transitions to state ramp system",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_a_nb_turnpike_exit",
+          "edge_a_nb_state_ramps_to_north_ave"
+        ],
+        "source_ids": [
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          366856,
+          198235
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.18179779279,
+          40.6710852588052
+        ]
+      },
+      "properties": {
+        "node_id": "node_a_nb_joins_north_ave",
+        "node_type": "approach_merge_node",
+        "name": "Turnpike northbound approach joins the North Avenue corridor",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_a_nb_state_ramps_to_north_ave",
+          "edge_ab_shared_north_ave_to_all_merge"
+        ],
+        "source_ids": [
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          222590,
+          372772
         ],
         "coordinate_method": "exact_endpoint_equality",
         "source_trace_complete": true
@@ -122,8 +226,13 @@
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
         ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
         "incident_edge_ids": [
           "edge_a_exit13a_connector",
+          "edge_ab_shared_north_ave_to_all_merge",
           "edge_b_north_avenue_to_merge",
           "edge_shared_north_avenue"
         ],
@@ -156,6 +265,10 @@
         "path_ids": [
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
         ],
         "incident_edge_ids": [
           "edge_shared_north_avenue",
@@ -190,6 +303,10 @@
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
         ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
         "incident_edge_ids": [
           "edge_shared_mclester",
           "edge_shared_tripoli_gate"
@@ -222,6 +339,10 @@
         "path_ids": [
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
         ],
         "incident_edge_ids": [
           "edge_shared_tripoli_gate"

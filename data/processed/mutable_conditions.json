@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0-observed-mutable-conditions",
+  "description": "Timestamped operational and permitting conditions observed on mutable official pages. These records are excluded from the verified graph and must be rechecked before operational use.",
+  "status": "retained_observations_not_continuing_currentness_claims",
+  "source_id": "njpass_home_2026_08_24",
+  "observed_at": "2026-08-24T00:01:51-04:00",
+  "must_recheck_before_any_operational_use": true,
+  "graph_eligibility": "exclude_mutable_not_for_verified_visual",
+  "coupling_eligibility": "prohibited",
+  "conditions": [
+    {
+      "condition_id": "njpass_port_st_oversize_restrictions_2026_08_03",
+      "label": "Port St. Oversize Load Restrictions",
+      "source_locator": "Archived NJPASS home HTML, Bulletin panel",
+      "source_text": "Effective August 3, 2026, a section of Port St. will be reduced to one lane in both directions between Brewster Rd. and Marlin St. until further notice. In this section of Port St., lanes will be reduced to 11 feet wide and all oversize loads heading eastbound on Port St. MUST utilize the Corbin St. ramp. All oversize loads heading westbound on Port St. MUST follow the Marlin St. / Kellogg St. detour or utilize Outer Port St. until further notice. All oversize loads MUST exit through the south via North Ave. Please call the Port Authority Police Department (PAPD) at (973) 578-2180 to request an escort for any oversize loads travelling through the port.",
+      "source_text_verbatim": true,
+      "source_stated_effective_from": "2026-08-03",
+      "source_stated_duration_text": "until further notice",
+      "spatial_scope": "Port Street between Brewster Road and Marlin Street and the source-stated port exit movements",
+      "vehicle_scope": "oversize loads",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "condition_id": "njpass_state_routes_only_system_scope",
+      "label": "SUPERLOAD system route-authority scope",
+      "source_locator": "Archived NJPASS home HTML, Bulletin panel",
+      "source_text": "Welcome to the SUPERLOAD online permitting system. This site issues permits for oversize / overweight vehicles along State Routes Only.",
+      "source_text_verbatim": true,
+      "spatial_scope": "New Jersey State routes",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "condition_id": "njpass_connecting_local_routes_application_comments",
+      "label": "Connecting county or local route information in single-permit requests",
+      "source_locator": "Archived NJPASS home HTML, Bulletin panel",
+      "source_text": "For any single permit request that utilize county/local route segments to connect between State routes, the permit request should identify the connecting routes(county/local) in comment area when sent for review. Requests without this information will be returned/denied.",
+      "source_text_verbatim": true,
+      "spatial_scope": "County or local route segments connecting State routes in a single permit request",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "condition_id": "njpass_nonstate_permit_authorities",
+      "label": "County, local, and toll-road permit authorities",
+      "source_locator": "Archived NJPASS home HTML, Bulletin panel",
+      "source_text": "Permit requests for County, Local or Toll roads are handled through those respective agencies.",
+      "source_text_verbatim": true,
+      "spatial_scope": "County, local, and toll roads",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim",
+      "compliance_status": "not_a_compliance_claim"
+    },
+    {
+      "condition_id": "njpass_route_survey_threshold",
+      "label": "NJPASS route-survey attachment threshold",
+      "source_locator": "Archived NJPASS home HTML, Bulletin panel under ROUTE SURVEY REQUIREMENTS",
+      "source_text": "Route survey is required when the overall width exceeds 16' or height exceeds 14' 6''. Survey must be attached within your application.",
+      "source_text_verbatim": true,
+      "vehicle_scope": "Overall width above 16 feet or height above 14 feet 6 inches",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim",
+      "compliance_status": "not_a_compliance_claim"
+    }
+  ],
+  "condition_count": 5
+}

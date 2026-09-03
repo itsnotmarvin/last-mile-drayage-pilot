@@ -1,0 +1,53 @@
+[
+  {
+    "si_station_num": "3-3-024",
+    "si_sri": "20000624__",
+    "si_mp": "0.78",
+    "si_lat": "40.6765971",
+    "si_lon": "-74.19514719",
+    "county_code": "20",
+    "muni_code": "2004",
+    "county_descr": "Union",
+    "muni": "Elizabeth City",
+    "ev_aadt_tot": "12872",
+    "ev_aadt_dir1": "7850",
+    "ev_aadt_dir2": "5021",
+    "count_year": "2020-01-01T00:00:00.000",
+    "station_desc": "Classification 48hrs",
+    "direction": "East/West"
+  },
+  {
+    "si_station_num": "3-3-024",
+    "si_sri": "20000624__",
+    "si_mp": "0.79",
+    "si_lat": "40.676541285",
+    "si_lon": "-74.19499668",
+    "county_code": "20",
+    "muni_code": "2004",
+    "county_descr": "Union",
+    "muni": "Elizabeth City",
+    "ev_aadt_tot": "15095",
+    "ev_aadt_dir1": "8830",
+    "ev_aadt_dir2": "6264",
+    "count_year": "2021-01-01T00:00:00.000",
+    "station_desc": "major",
+    "direction": "East/West"
+  },
+  {
+    "si_station_num": "3-3-024",
+    "si_sri": "20000624__",
+    "si_mp": "0.79",
+    "si_lat": "40.676541285",
+    "si_lon": "-74.19499668",
+    "county_code": "20",
+    "muni_code": "2004",
+    "county_descr": "Union",
+    "muni": "Elizabeth City",
+    "ev_aadt_tot": "15368",
+    "ev_aadt_dir1": "9222",
+    "ev_aadt_dir2": "6145",
+    "count_year": "2022-01-01T00:00:00.000",
+    "station_desc": "major",
+    "direction": "East/West"
+  }
+]

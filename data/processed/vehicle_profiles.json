@@ -20,22 +20,38 @@
         "path_ids": [
           "path_a_exit13a_to_apm",
           "path_b_us1_9_to_apm"
-        ]
+        ],
+        "path_a_approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "path_a_approach_scope_note": "The northbound approach is a centerline-connected candidate, not operator-published or truck-route verification."
       },
       "properties_not_supplied": {
         "fields": [
+          "axle_weights_lbs",
+          "axle_group_weights_lbs",
+          "axle_spacings_inches",
           "width_inches",
           "height_inches",
+          "overall_length_feet",
           "semitrailer_length_feet",
-          "engine_model_year"
+          "engine_model_year",
+          "fuel_powertrain_type",
+          "dtr_verification_status",
+          "load_divisibility_status",
+          "container_seal_status",
+          "permit_credential_status",
+          "trip_date_time"
         ],
-        "note": "These properties were never project-supplied for the scoped movement. Rules that key on them cannot be evaluated for this profile until the facts are supplied."
+        "note": "These properties were never project-supplied for the scoped movement. An 80,000-pound gross weight and five-axle count do not establish axle, bridge-formula, dimensional, permit, fuel-type, or trip-specific compliance. Rules that key on these facts cannot be evaluated for this profile until the facts are supplied."
       }
     },
     {
       "profile_id": "representative_older_engine_drayage",
       "fact_basis": "representative_profile_defined_for_rule_matching",
       "definition_note": "Defined per the project brief as groundwork for rule-to-profile matching; property values are chosen from thresholds in extracted rules, not observed from a real vehicle.",
+      "applicability_scope_note": "Applicability statuses in regulatory_nodes.json are classifications for the canonical scoped profile. The interactions below are threshold matches for this defined representative profile only and are not compliance findings.",
       "defined_facts": {
         "vehicle_use": "container_drayage",
         "configuration": "standard_five_axle_tractor_semitrailer",
@@ -66,6 +82,7 @@
       "profile_id": "representative_osow_ocean_container",
       "fact_basis": "representative_profile_defined_for_rule_matching",
       "definition_note": "Defined per the project brief as groundwork for rule-to-profile matching; property values are chosen from thresholds in extracted rules, not observed from a real vehicle.",
+      "applicability_scope_note": "Applicability statuses in regulatory_nodes.json are classifications for the canonical scoped profile. The interactions below are threshold matches for this defined representative profile only and are not compliance findings.",
       "defined_facts": {
         "vehicle_use": "container_drayage_sealed_ocean_container",
         "configuration": "standard_five_axle_tractor_semitrailer",

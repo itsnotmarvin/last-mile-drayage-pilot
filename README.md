@@ -9,7 +9,7 @@ The scoped movement is a standard five-axle tractor-semitrailer at 80,000 pounds
 
 ## Repository role
 
-The repository stores evidence and structured data. The coupled knowledge-graph files are one representation of selected records; they are not the entire project. The Friday static visual is produced from the verified data but is not stored here.
+The repository stores evidence and structured data. The coupled knowledge-graph files are one representation of selected records; they are not the entire project. The current verified visual is `visuals/last_mile_regulation_map.png`, generated from the processed files; its road geometry reproduces the approved reference graphic (`visuals/reference/`) and is schematic, not georeferenced.
 
 `main` contains only retained evidence, provenance, minimal documentation, and structured records suitable for reuse. Draft extraction, alternate scenarios, exploratory GIS work, and unresolved research are kept on `fable-audit-review`.
 
@@ -25,7 +25,16 @@ The repository stores evidence and structured data. The coupled knowledge-graph 
 - `data/processed/regulatory_nodes.json` — exact sourced regulatory and operational clauses.
 - `data/processed/regulatory_edges.json` — relationships within the regulatory layer.
 - `data/processed/coupling_edges.json` — relationships connecting rules and jurisdictions to the scoped vehicle and physical network.
+- `data/processed/mutable_conditions.json` — timestamped observations from mutable official pages, isolated from couplings and verified visuals.
+- `data/processed/traffic_analysis.json` — NJDOT station comparison, upstream corroboration, corridor operations evidence, limitations, and next-collection requirements.
+- `data/raw/observations/` — archived NJDOT traffic-count observations cited by the source registry.
 - `docs/data_dictionary.md` — field definitions and relationship meanings.
+
+## Visual
+
+- `visuals/last_mile_regulation_map.png` / `.svg` — "Where does regulation concentrate on the last mile?": the coupled rules drawn on the inbound road network, with jurisdiction coverage bands under each road, rules in force at each corridor point, and a roster of the coupled records grouped by governing authority or operator. Every count is computed from `data/processed/`.
+- `visuals/last_mile_reference_lines.json` — the road-line geometry the map draws (slide pixels): exact shape coordinates from the editable reference pptx plus curves traced from its export.
+- `visuals/reference/` — the approved reference graphic (PNG and editable pptx) and the line-check images comparing the rendered roads with it.
 
 ## Evidence standard
 

@@ -40,6 +40,17 @@
       ]
     },
     {
+      "entity_id": "authority_njmvc",
+      "name": "New Jersey Motor Vehicle Commission",
+      "entity_type": "authority",
+      "source_ids": [
+        "njac_13_18_osow_portal_copy_2026_08_24",
+        "njpass_home_2026_08_24",
+        "nj_size_weight_guidebook"
+      ],
+      "scope_note": "N.J.A.C. 13:18 is a Motor Vehicle Commission rule; NJDOT administers the current SUPERLOAD permitting system on the Commission's behalf."
+    },
+    {
       "entity_id": "authority_elizabeth_city",
       "name": "City of Elizabeth",
       "entity_type": "authority",
@@ -229,5 +240,5 @@
       ]
     }
   ],
-  "entity_count": 23
+  "entity_count": 26
 }
