@@ -1,5 +1,13 @@
 # Last-Mile Drayage Pilot
 
+## Knowledge graph PNG
+
+The `knowledge-graph` branch holds the current graph presentation. Start with
+[the full-size PNG](visuals/knowledge-graph.png) and its
+[reading guide and scope](docs/knowledge-graph.md).
+
+![Connected drayage knowledge graph](visuals/knowledge-graph.png)
+
 This repository is the verified evidence base for a multi-jurisdictional study of inbound truck access to APM Terminals Elizabeth. It preserves authoritative physical-network, jurisdictional, regulatory, and terminal-operational data with source provenance.
 
 The scoped movement is a standard five-axle tractor-semitrailer at 80,000 pounds, carrying nonhazardous cargo inbound to the APM terminal gate. The processed corridor routes are:
