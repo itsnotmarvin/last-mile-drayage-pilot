@@ -1,8 +1,0 @@
-Source deck: drayage_kg_final2-fixed-editable-google-route-match.pptx
-Slide count: 1
-Reusable pattern: one dense 1280 x 800 editable evidence infographic.
-Typography: preserve the source slide's Calibri/Calibri Light theme and the sensor note's 10 pt grey body treatment.
-Layout: preserve all route geometry, rule boxes, graph labels, footer, and source deck hierarchy.
-Edit scope: rewrite only the inherited sensor-note textbox so the station is described as immediately upstream of the complete merge.
-Insertion contract: no new slide, shape, chart, image, or overlay.
-

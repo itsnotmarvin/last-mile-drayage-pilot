@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="150" height="70" viewBox="0 0 150 70">
-  <defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#0B9719"/></marker></defs>
-  <path d="M67 40C48 27 30 16 6 5" fill="none" stroke="#0B9719" stroke-width="1.8" marker-end="url(#a)"/>
-  <rect x="33" y="38" width="111" height="26" rx="6" fill="#fff" stroke="#0B9719" stroke-width="1.4"/>
-  <rect x="33" y="38" width="36" height="26" rx="6" fill="#0B9719"/><text x="51" y="55" text-anchor="middle" font-family="Arial" font-size="9.5" font-weight="700" fill="#fff">APM</text>
-  <text x="77" y="55" font-family="Arial" font-size="10.5" font-weight="700" fill="#202020">Terminal</text>
-</svg>
