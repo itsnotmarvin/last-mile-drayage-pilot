@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0-canonical-source-registry",
   "project": "Last-Mile Drayage Coupled-Network Pilot — APM Terminals Elizabeth",
-  "last_updated": "2026-08-20",
+  "last_updated": "2026-08-24",
   "status": "canonical_evidence_source_registry",
-  "source_count": 28,
+  "source_count": 33,
   "sources": [
     {
       "source_id": "njdot_traffic_counts_c74r_6c8d_route624_2018",
@@ -11,7 +11,7 @@
       "publisher": "New Jersey Department of Transportation via NJOIT Open Data Center",
       "source_type": "official_open_data_api_extract",
       "count_year": 2018,
-      "retrieval_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
       "url": "https://data.nj.gov/Transportation/Traffic-Counts-Data/c74r-6c8d",
       "archived_files": [
         {
@@ -28,7 +28,7 @@
       "publisher": "New Jersey Department of Transportation via NJOIT Open Data Center",
       "source_type": "official_open_data_api_extract",
       "count_years": [2020, 2021, 2022],
-      "retrieval_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
       "url": "https://data.nj.gov/Transportation/Traffic-Counts-Data/c74r-6c8d",
       "archived_files": [
         {
@@ -45,7 +45,7 @@
       "publisher": "New Jersey Department of Transportation",
       "source_type": "official_annual_csv_extract",
       "count_year": 2024,
-      "retrieval_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
       "url": "https://www.nj.gov/transportation/refdata/roadway/mdb/TrafficCount2024DataSetwithAADTs.csv",
       "archived_files": [
         {
@@ -63,7 +63,7 @@
       "source_type": "official_city_engineering_report",
       "publication_date": "2022-08-02",
       "traffic_collection_dates": "2020-10-19 through 2020-10-26",
-      "retrieval_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
       "url": "https://www.elizabethnj.org/DocumentCenter/View/5308/01_Kapkowski-Rd-Corridor-Improvements-Final-CD-Rept-0822",
       "extract_note": "The report used seven continuous seven-day ATR counts and 12 turning-movement counts. It identified LOS E movements at North Avenue/Dowd Avenue and North Avenue/Kapkowski Road–IKEA Drive. Pandemic-era observations were compared with 2018 pre-pandemic counts and adjusted by time period."
     },
@@ -73,7 +73,7 @@
       "publisher": "Union County",
       "source_type": "official_county_transportation_study",
       "publication_date": "2021-06-01",
-      "retrieval_date": "2026-08-20",
+      "accessed_date": "2026-08-20",
       "url": "https://ucnj.org/wp-content/uploads/2024/07/Union-County-Truck-Mobility-Study-Final-Report_Compressed.pdf",
       "extract_note": "The study lists CR 624 from Earhart Drive to the New Jersey Turnpike overpass at 29,973 AADT, the highest county-roadway value in its inventory, using the 2018 count."
     },
@@ -131,7 +131,7 @@
       "publisher": "New Jersey Office of GIS",
       "source_type": "official_gis",
       "publication_date": "2026-05-20",
-      "retrieval_date": "2026-07-26",
+      "accessed_date": "2026-07-26",
       "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/Tran_road/FeatureServer/0",
       "archived_files": [
         {
@@ -157,7 +157,7 @@
       "publisher": "New Jersey Office of GIS",
       "source_type": "official_gis",
       "publication_date": "2026-02-05",
-      "retrieval_date": "2026-07-26",
+      "accessed_date": "2026-07-26",
       "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Municipal_Boundaries_3424/FeatureServer/0",
       "archived_files": [
         {
@@ -183,7 +183,7 @@
       "publisher": "New Jersey Office of GIS",
       "source_type": "official_gis",
       "publication_date": "2025-04-10",
-      "retrieval_date": "2026-07-26",
+      "accessed_date": "2026-07-26",
       "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Counties_3424/FeatureServer/0",
       "archived_files": [
         {
@@ -310,8 +310,8 @@
       "title": "NJ Commercial Vehicle Size and Weight Guidebook",
       "publisher": "New Jersey Department of Transportation",
       "source_type": "official_operational_guide",
-      "publication_date": "2024",
-      "retrieval_date": "2026-06-25",
+      "publication_date": "2024-01",
+      "accessed_date": "2026-06-25",
       "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
       "archived_files": [
         {
@@ -319,7 +319,56 @@
           "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
           "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
         }
-      ]
+      ],
+      "source_stated_limitation": "Information contained in this guidebook regarding the fees/permits listed and the various laws and regulations governing commercial motor vehicle operations in New Jersey are subject to change without notice. This guidebook is produced solely as a convenience to the public and the State assumes no warranty or representation given or the use of any of the material provided or for unintentional omissions, errors, or misprints which appear in this guidebook.",
+      "currentness_check": {
+        "checked_at": "2026-08-24T00:01:51-04:00",
+        "status": "official_portal_still_serves_byte_identical_document",
+        "evidence_source_id": "njpass_home_2026_08_24",
+        "live_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+        "verification_basis": "The NJPASS portal still links the January 2024 guidebook and the live PDF bytes match the retained archive.",
+        "verification_limit": "This proves what the official portal served at the check time; it does not convert the convenience guide into the official code of record or prove that no governing rule changed."
+      }
+    },
+    {
+      "source_id": "njpass_home_2026_08_24",
+      "title": "NJPASS SUPERLOAD home page and bulletin",
+      "publisher": "New Jersey Department of Transportation",
+      "source_type": "official_mutable_permit_portal_snapshot",
+      "accessed_date": "2026-08-24",
+      "observed_at": "2026-08-24T00:01:51-04:00",
+      "url": "https://nj.gotpermits.com/njpass/",
+      "archived_files": [
+        {
+          "role": "page_snapshot_html",
+          "path": "data/raw/documents/state/njpass_home_snapshot_2026_08_24.html",
+          "sha256": "ed89d6688dd3290bb9c10cc24fa57b87edc57ecd597f5f9ad67505c4e9fcfc75"
+        }
+      ],
+      "use_limit": "The snapshot establishes portal content observed at the recorded time only. Mutable bulletins require rechecking before operational use and do not establish continuing validity."
+    },
+    {
+      "source_id": "njac_13_18_osow_portal_copy_2026_08_24",
+      "title": "N.J.A.C. 13:18, Subchapter 1 — Permits for Overdimensional or Overweight Vehicles",
+      "publisher": "New Jersey Motor Vehicle Commission; hosted by the New Jersey Department of Transportation NJPASS system",
+      "source_type": "official_rule_copy_served_by_current_permit_portal",
+      "document_creation_date": "2010-08-03",
+      "accessed_date": "2026-08-24",
+      "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/current-rule.pdf",
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/state/njac_13_18_current_snapshot_2026_08_24.pdf",
+          "sha256": "64af8bc4878c5d9add64c3dcc8216d12c5deb1879fb549479b3d553fdb1ef6c5"
+        }
+      ],
+      "currentness_check": {
+        "checked_at": "2026-08-24T00:01:51-04:00",
+        "status": "official_permit_portal_still_serves_copy_code_of_record_not_compared",
+        "evidence_source_id": "njpass_home_2026_08_24",
+        "verification_basis": "The current NJPASS reference-material section links this copy as the OS/OW rules under N.J.A.C. 13:18.",
+        "verification_limit": "The PDF metadata dates to 2010 and the official New Jersey Administrative Code was not independently archived and compared; present legal force beyond the exact hosted text remains unverified."
+      }
     },
     {
       "source_id": "nj_large_truck_map",
@@ -327,7 +376,7 @@
       "publisher": "New Jersey Department of Transportation",
       "source_type": "official_operational_map",
       "publication_date": "2024-01-22",
-      "retrieval_date": "2026-06-25",
+      "accessed_date": "2026-06-25",
       "url": "https://www.nj.gov/transportation/freight/trucking/pdf/largetruckmap.pdf",
       "archived_files": [
         {
@@ -353,6 +402,54 @@
           "role": "document_pdf",
           "path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
           "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+        }
+      ],
+      "currentness_check": {
+        "checked_at": "2026-08-24T00:01:51-04:00",
+        "status": "partial_official_sources_checked_code_of_record_not_compared",
+        "evidence_source_ids": [
+          "njdot_truck_routing_regulations_2026_08_24",
+          "njac_16_32_readoption_njr_2023_01_03"
+        ],
+        "live_sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03",
+        "verification_basis": "The NJDOT Current Regulations page still links this byte-identical courtesy copy; the retained New Jersey Register adoption states readoption on 2022-11-30, amendments effective 2023-01-03, and expiration on 2029-11-30.",
+        "verification_limit": "The official LexisNexis New Jersey Administrative Code was not archived and compared, so the repository does not assert that no later amendment or superseding action exists."
+      }
+    },
+    {
+      "source_id": "njdot_truck_routing_regulations_2026_08_24",
+      "title": "NJDOT Truck Routing Regulations page",
+      "publisher": "New Jersey Department of Transportation",
+      "source_type": "official_rule_landing_page_snapshot",
+      "accessed_date": "2026-08-24",
+      "observed_at": "2026-08-24T00:01:51-04:00",
+      "url": "https://www.nj.gov/transportation/freight/trucking/routing_regulations.shtm",
+      "archived_files": [
+        {
+          "role": "page_snapshot_html",
+          "path": "data/raw/documents/state/njdot_truck_routing_regulations_snapshot_2026_08_24.html",
+          "sha256": "f50a005ad5c244e4caa1cc41c96adc14f85825117590f55f5fed448baf286777"
+        }
+      ],
+      "use_limit": "The page identifies NJDOT's courtesy copy and 2023 adoption materials; it also states that the official LexisNexis code governs."
+    },
+    {
+      "source_id": "njac_16_32_readoption_njr_2023_01_03",
+      "title": "Truck Access — Readoption with Amendments, N.J.A.C. 16:32 (55 N.J.R. 72(a))",
+      "publisher": "New Jersey Department of Transportation / New Jersey Register",
+      "source_type": "official_register_adoption_pdf",
+      "adopted_date": "2022-11-29",
+      "filed_date": "2022-11-30",
+      "readoption_effective_date": "2022-11-30",
+      "amendments_effective_date": "2023-01-03",
+      "expiration_date": "2029-11-30",
+      "accessed_date": "2026-08-24",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/R.2023%20d.002%20(55%20N.J.R.%2072(a)).pdf",
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/state/njac_16_32_readoption_amendments_njr_2023_01_03.pdf",
+          "sha256": "676c8bb3b6e04a01772168fa84f452d6b73f31626515593469948d256cb65094"
         }
       ]
     },
@@ -384,20 +481,54 @@
       "wayback_url": "https://web.archive.org/web/20260807144548/https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI_10.16.050AN80000POOVVEZOLITRAF"
     },
     {
+      "source_id": "panynj_facilities_map_2020",
+      "title": "Port Authority Facilities Locator — Port Newark/Elizabeth and Doremus Avenue Overweight Corridor",
+      "publisher": "Port Authority of New York and New Jersey",
+      "source_type": "official_operational_map",
+      "publication_date": "2020-01",
+      "pdf_creation_date": "2020-03-30",
+      "accessed_date": "2026-08-24",
+      "url": "https://www.panynj.gov/content/dam/port/customer-library-pdfs/facilities-map.pdf",
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/port_authority/panynj_facilities_map_2020.pdf",
+          "sha256": "1b8de1b6a83ba331c9515ce8e5e13d0bb6fa0851c1f5b2a07abcbc8b41ffa71d"
+        }
+      ],
+      "permitted_use": "geometry_reference_only",
+      "use_limit": "The map may support only its source-stated highlighted corridor geometry. Its 2020 date does not establish current geometry, and its 128,000-pound statement is not promoted because PA-10 Subrule 34-046 supplies newer primary text."
+    },
+    {
       "source_id": "panynj_marine_terminal_tariff",
       "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
       "publisher": "Port Authority of New York and New Jersey",
       "source_type": "official_primary_tariff",
       "effective_date": "2026-05-01",
-      "retrieval_date": "2026-06-25",
-      "url": "https://www.panynj.gov/port/en/our-port/tariffs.html",
+      "accessed_date": "2026-06-25",
+      "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+      "document_url": "https://www.panynj.gov/content/dam/port/doing-business-pdfs/Port%20Authority%20Marine%20Terminal%20Tariff%20FMC%20Schedule%20No.%20PA%2010%20(Effective%20May%201%20,2026).pdf",
+      "previous_url": "https://www.panynj.gov/port/en/our-port/tariffs.html",
       "archived_files": [
         {
           "role": "document_pdf",
           "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
           "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+        },
+        {
+          "role": "current_landing_page_snapshot_html",
+          "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+          "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
         }
-      ]
+      ],
+      "currentness_check": {
+        "checked_at": "2026-08-24T00:01:51-04:00",
+        "status": "official_document_url_still_serves_byte_identical_tariff",
+        "live_sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a",
+        "verification_basis": "The current official PA-10 document URL served bytes matching the retained May 1, 2026 tariff.",
+        "verification_limit": "This is a point-in-time retrieval check and does not resolve the internal interpretation of Subrule 34-1140."
+      },
+      "url_change_note": "The previous landing page returned HTTP 404 on 2026-08-24; the current official landing page is retained above."
     },
     {
       "source_id": "panynj_truckers_guide",
@@ -405,7 +536,7 @@
       "publisher": "Port Authority of New York and New Jersey",
       "source_type": "official_operational_guide",
       "publication_date": "2025-08",
-      "retrieval_date": "2026-06-25",
+      "accessed_date": "2026-06-25",
       "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
       "archived_files": [
         {
@@ -453,7 +584,7 @@
       "publisher": "Federal Highway Administration, U.S. Department of Transportation",
       "source_type": "official_gis",
       "publication_date": "2025-08-08",
-      "retrieval_date": "2026-08-07",
+      "accessed_date": "2026-08-07",
       "url": "https://www.fhwa.dot.gov/planning/national_highway_system/nhs_maps/nhs_2025-08-08.zip",
       "archived_files": [
         {
@@ -476,7 +607,7 @@
       "publisher": "Union County Board of County Commissioners",
       "source_type": "official_county_code_pdf",
       "codified_through": "January 2026 edition",
-      "retrieval_date": "2026-08-07",
+      "accessed_date": "2026-08-07",
       "url": "https://ucnj.org/commissioners/wp-content/uploads/sites/29/2026/04/2026-Laws-of-Union-County.pdf",
       "archived_files": [
         {
@@ -493,7 +624,7 @@
       "publisher": "New Jersey Turnpike Authority / New Jersey Register",
       "source_type": "official_register_notice_pdf",
       "publication_date": "2024-03-04",
-      "retrieval_date": "2026-08-07",
+      "accessed_date": "2026-08-07",
       "url": "https://www.njta.gov/document/new-jersey-turnpike-authority-rules-re-adoption-with-amendments/",
       "archived_files": [
         {
@@ -509,7 +640,7 @@
       "title": "N.J.A.C. 19:9-1.9 — Limitations on use of Roadway (Cornell LII codification snapshot)",
       "publisher": "Cornell Law School Legal Information Institute (codification mirror)",
       "source_type": "authoritative_but_unofficial_codification_snapshot",
-      "retrieval_date": "2026-08-07",
+      "accessed_date": "2026-08-07",
       "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-19-9-1-9",
       "archived_files": [
         {

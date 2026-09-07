@@ -9,9 +9,9 @@ The scoped movement is a standard five-axle tractor-semitrailer at 80,000 pounds
 
 ## Repository role
 
-The repository stores evidence and structured data. The coupled knowledge-graph files are one representation of selected records; they are not the entire project. The current static visual is stored as `visuals/drayage_kg_final.png` and reflects the Path A approach status recorded in the processed graph.
+The repository stores evidence and structured data. The coupled knowledge-graph files are one representation of selected records; they are not the entire project. The current verified visual is `visuals/last_mile_regulation_map.png`, generated from the processed files; its road geometry reproduces the approved reference graphic (`visuals/reference/`) and is schematic, not georeferenced.
 
-`main` contains only retained evidence, provenance, minimal documentation, and structured records suitable for reuse. Draft extraction, alternate scenarios, exploratory GIS work, and unresolved research are kept on `fable-audit-review`.
+`main` contains retained evidence, provenance, minimal validation tooling, and structured records suitable for reuse. Draft extraction, alternate scenarios, exploratory GIS work, and interpretive unresolved research are kept on `fable-audit-review`. A verbatim source clause may remain on `main` with an inert conflict notice only when it is explicitly excluded from couplings, compliance conclusions, and verified visuals.
 
 ## Data layout
 
@@ -26,14 +26,15 @@ The repository stores evidence and structured data. The coupled knowledge-graph 
 - `data/processed/regulatory_nodes.json` — exact sourced regulatory and operational clauses.
 - `data/processed/regulatory_edges.json` — relationships within the regulatory layer.
 - `data/processed/coupling_edges.json` — relationships connecting rules and jurisdictions to the scoped vehicle and physical network.
+- `data/processed/mutable_conditions.json` — timestamped official-page observations that must be rechecked before operational use and cannot enter the verified graph.
 - `data/processed/traffic_analysis.json` — historical station comparison, newer upstream corroboration, corridor operations evidence, limitations, and next-collection requirements.
 - `docs/data_dictionary.md` — field definitions and relationship meanings.
-- `docs/traffic_analysis.md` and `reports/traffic-analysis/report.html` — reader-facing traffic findings and the portable evidence report.
-- `visuals/drayage_kg_final.png` — static knowledge-graph infographic generated from the processed graph counts and Path A approach geometry.
-- `visuals/drayage_kg_final2-fixed.png` — prior render of the static infographic, retained for comparison.
-- `visuals/editable/` — editable PPTX renders of the knowledge graph with their `.inspect.ndjson` slide inventories.
-- `visuals/kg-build/` — build kit for the editable visuals: layouts, jurisdiction SVGs, render outputs, and source notes.
-- `visuals/traffic-edit-kit/` — before/after kit for the traffic-corrected slide: template audit, edit script, deviation log, and QA renders.
+- `visuals/last_mile_regulation_map.png` / `.svg` — "Where does regulation concentrate on the last mile?": the coupled rules drawn on the inbound road network, with jurisdiction coverage bands under each road, rules in force at each corridor point, and a roster grouped by governing authority or operator. Every count is computed from `data/processed/`.
+- `visuals/last_mile_reference_lines.json` — the road-line geometry the map draws (slide pixels): exact shape coordinates from the editable reference pptx plus curves traced from its export.
+- `visuals/reference/` — the approved reference graphic (PNG and editable pptx) and the line-check images comparing the rendered roads with it.
+- `tools/validate_records.py` — narrow repository exception for validating source hashes, record counts, references, unresolved-record isolation, mutable-condition isolation, and visual eligibility.
+- `experiments/elizabeth-pilot/` — invalidated CLI-based protocol-development pilot retained for provenance; it used the wrong model surface and cannot support the canonical browser-application finding.
+- `experiments/elizabeth-browser-pilot/` — canonical Chrome consumer-application pilot using the frozen prompt and rubric with fresh, temporary, private, or signed-out AI sessions; six responses are preserved, independently scored, and adjudicated, while one application was unavailable.
 
 ## Evidence standard
 
@@ -43,6 +44,19 @@ The repository stores evidence and structured data. The coupled knowledge-graph 
 - A source may support the broader evidence base without appearing in the final graph visual.
 - A map or operational page is used only for the type of fact it actually establishes.
 - Unsupported or unresolved claims are not presented as verified data.
+- Publication, effective, accessed, observed, expiration, and currentness-check dates retain separate meanings.
+- A current portal serving an older document proves only what the portal served at the check time; it does not silently update the document's publication date or authority level.
+- Mutable bulletins are retained as dated observations, not continuing-validity claims.
+
+## Validation
+
+Run the retention checks from the repository root:
+
+```bash
+python3 tools/validate_records.py
+```
+
+The validator uses only the Python standard library. It checks every retained archive hash, source and node reference, declared record count, negative permit determination, unresolved-record coupling and visual exclusion, mutable-condition isolation, and the visual manifest.
 
 ## Scope limits
 

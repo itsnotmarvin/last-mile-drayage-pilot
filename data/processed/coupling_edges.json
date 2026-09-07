@@ -239,17 +239,6 @@
       "compliance_status": "not_a_compliance_claim"
     },
     {
-      "edge_id": "couple_terminal_weight_gate",
-      "from_node": "reg_panynj_terminal_weight_dimensions",
-      "relationship": "GOVERNS_PORT_ENTRY_MOVEMENT_AT",
-      "to_node": "node_apm_inbound_gate",
-      "source_ids": [
-        "panynj_marine_terminal_tariff"
-      ],
-      "applicability_status": "confirmed_applicable",
-      "compliance_status": "not_a_compliance_claim"
-    },
-    {
       "edge_id": "couple_terminal_traffic_gate",
       "from_node": "reg_panynj_terminal_traffic",
       "relationship": "GOVERNS_PORT_ENTRY_MOVEMENT_AT",
@@ -1401,5 +1390,5 @@
       "compliance_status": "not_a_compliance_claim"
     }
   ],
-  "edge_count": 102
+  "edge_count": 101
 }

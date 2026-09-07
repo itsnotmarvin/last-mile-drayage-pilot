@@ -123,6 +123,34 @@
       "source_id": "panynj_marine_terminal_tariff"
     },
     {
+      "edge_id": "regedge_panynj_drayage_deadline_34_1140",
+      "from_node": "authority_panynj",
+      "relationship": "ISSUES",
+      "to_node": "reg_panynj_drayage_truck_deadline_34_1140",
+      "source_id": "panynj_marine_terminal_tariff"
+    },
+    {
+      "edge_id": "regedge_njmvc_osow_permit_requirement_13_18",
+      "from_node": "authority_njmvc",
+      "relationship": "ISSUES",
+      "to_node": "reg_nj_osow_permit_requirement_13_18_portal_copy",
+      "source_id": "njac_13_18_osow_portal_copy_2026_08_24"
+    },
+    {
+      "edge_id": "regedge_njmvc_single_trip_route_review_13_18",
+      "from_node": "authority_njmvc",
+      "relationship": "ISSUES",
+      "to_node": "reg_nj_single_trip_route_review_13_18_portal_copy",
+      "source_id": "njac_13_18_osow_portal_copy_2026_08_24"
+    },
+    {
+      "edge_id": "regedge_njmvc_toll_approval_13_18",
+      "from_node": "authority_njmvc",
+      "relationship": "ISSUES",
+      "to_node": "reg_nj_toll_authority_approval_13_18_portal_copy",
+      "source_id": "njac_13_18_osow_portal_copy_2026_08_24"
+    },
+    {
       "edge_id": "regedge_dtr_registration",
       "from_node": "reg_panynj_dtr",
       "relationship": "REQUIRES",
@@ -207,5 +235,5 @@
       "source_id": "panynj_truckers_guide"
     }
   ],
-  "edge_count": 29
+  "edge_count": 33
 }

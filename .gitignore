@@ -2,3 +2,9 @@
 __pycache__/
 *.pyc
 node_modules
+
+# experiment runtime scratch
+.venv/
+*.egg-info/
+*.pid
+**/collectors/*_status.json
