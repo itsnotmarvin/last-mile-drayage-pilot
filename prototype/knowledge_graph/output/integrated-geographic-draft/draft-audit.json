@@ -1,0 +1,606 @@
+{
+  "nodes": 114,
+  "relationships": 281,
+  "geographic_locations": 10,
+  "geographic_segments": 9,
+  "projection": "Local equirectangular; north up; same metre scale in x/y",
+  "positions": {
+    "authority_fmcsa": [
+      800,
+      800.0
+    ],
+    "credential_cdl": [
+      800,
+      570.0
+    ],
+    "ecfr_49_cfr_383_2026_07_29": [
+      800,
+      685.0
+    ],
+    "reg_federal_cdl": [
+      800,
+      340.0
+    ],
+    "reg_federal_group_a_cmv": [
+      800,
+      455.0
+    ],
+    "scoped_80000lb_5axle_nonhaz_inbound_apm": [
+      420,
+      340.0
+    ],
+    "representative_older_engine_drayage": [
+      420,
+      432.0
+    ],
+    "representative_osow_ocean_container": [
+      420,
+      524.0
+    ],
+    "authority_fhwa": [
+      420,
+      800.0
+    ],
+    "reg_federal_interstate_weight": [
+      420,
+      616.0
+    ],
+    "ecfr_23_cfr_658_17_2026_07_29": [
+      420,
+      708.0
+    ],
+    "path_a_exit13a_to_apm": [
+      1810,
+      1270
+    ],
+    "approach_a_turnpike_sb": [
+      2190,
+      1270
+    ],
+    "approach_a_turnpike_nb": [
+      2570,
+      1270
+    ],
+    "node_path_a_turnpike_sb_exit13a": [
+      2011.6810882440595,
+      720.8289238362547
+    ],
+    "edge_a_exit13a_connector": [
+      1995.5196399997544,
+      738.4736559753835
+    ],
+    "node_a_nb_turnpike_exit13a": [
+      1864.0218355047436,
+      1003.1235344371928
+    ],
+    "edge_a_nb_turnpike_exit": [
+      1918.6483676273103,
+      932.0242737084313
+    ],
+    "node_a_nb_turnpike_state_ramp_transition": [
+      1955.2547298726522,
+      854.2280532365415
+    ],
+    "edge_a_nb_state_ramps_to_north_ave": [
+      1903.1053810359542,
+      768.4853233728426
+    ],
+    "node_a_nb_joins_north_ave": [
+      1883.4745390910605,
+      711.2187165125843
+    ],
+    "edge_ab_shared_north_ave_to_all_merge": [
+      1932.2396384644462,
+      733.7305033308746
+    ],
+    "path_b_us1_9_to_apm": [
+      1430,
+      1270
+    ],
+    "node_path_b_us1_south_access": [
+      1515.392757686353,
+      360.21433901489183
+    ],
+    "edge_b_us1_south": [
+      1469.536942371502,
+      410.86703556616936
+    ],
+    "node_path_b_north_avenue_entry": [
+      1423.44097575507,
+      461.31153199367634
+    ],
+    "edge_b_north_avenue_to_merge": [
+      1706.475297475532,
+      612.5036652087581
+    ],
+    "node_paths_merge_north_avenue": [
+      1980.5786692964925,
+      757.1355333419531
+    ],
+    "edge_shared_north_avenue": [
+      2160.546616739908,
+      853.2274037397877
+    ],
+    "node_north_avenue_mclester": [
+      2342.7885697509546,
+      942.1550721865603
+    ],
+    "edge_shared_mclester": [
+      2436.443632806307,
+      771.5586904193875
+    ],
+    "node_mclester_tripoli": [
+      2532.1395531704893,
+      589.6630716606235
+    ],
+    "edge_shared_tripoli_gate": [
+      2558.945584690573,
+      603.7830604123781
+    ],
+    "apm_directions": [
+      1510,
+      1400
+    ],
+    "google_maps_route_observation_2026_07_31": [
+      2015,
+      1400
+    ],
+    "njogis_road_centerlines_2026_07_26": [
+      2520,
+      1400
+    ],
+    "node_apm_inbound_gate": [
+      2585.7234595741934,
+      617.9565029566111
+    ],
+    "facility_apm_elizabeth": [
+      3730,
+      330.0
+    ],
+    "operator_apm_terminals": [
+      3435,
+      1266.0
+    ],
+    "authority_panynj": [
+      3730,
+      476.25
+    ],
+    "authority_uscg": [
+      3140,
+      1500.0
+    ],
+    "credential_twic": [
+      3140,
+      330.0
+    ],
+    "credential_sealink": [
+      3140,
+      420.0
+    ],
+    "credential_rfid": [
+      3140,
+      510.0
+    ],
+    "registration_dtr": [
+      3140,
+      600.0
+    ],
+    "system_termpoint": [
+      3435,
+      330.0
+    ],
+    "training_apm_safety_induction": [
+      3140,
+      690.0
+    ],
+    "apm_appointment_system": [
+      3435,
+      564.0
+    ],
+    "apm_hours_ops": [
+      3435,
+      798.0
+    ],
+    "panynj_marine_terminal_tariff": [
+      3730,
+      1500.0
+    ],
+    "panynj_truck_info": [
+      3730,
+      1207.5
+    ],
+    "panynj_truckers_guide": [
+      3730,
+      1353.75
+    ],
+    "porttruckpass_tips": [
+      3435,
+      1500.0
+    ],
+    "ecfr_twic_1572": [
+      3140,
+      1320.0
+    ],
+    "ecfr_33_cfr_101_514_2026_07_29": [
+      3140,
+      1410.0
+    ],
+    "jurisdiction_panynj_terminal": [
+      3730,
+      622.5
+    ],
+    "reg_apm_appointment": [
+      3435,
+      1032.0
+    ],
+    "reg_apm_safety_induction": [
+      3140,
+      780.0
+    ],
+    "reg_federal_twic": [
+      3140,
+      870.0
+    ],
+    "reg_panynj_dtr": [
+      3140,
+      960.0
+    ],
+    "reg_panynj_dtr_engine": [
+      3140,
+      1050.0
+    ],
+    "reg_panynj_drayage_truck_deadline_34_1140": [
+      3730,
+      1061.25
+    ],
+    "reg_panynj_rfid": [
+      3140,
+      1230.0
+    ],
+    "reg_panynj_sealink_twic": [
+      3140,
+      1140.0
+    ],
+    "reg_panynj_terminal_traffic": [
+      3730,
+      768.75
+    ],
+    "reg_panynj_terminal_weight_dimensions": [
+      3730,
+      915.0
+    ],
+    "authority_njmvc": [
+      430,
+      2320.0
+    ],
+    "njac_13_18_osow_portal_copy_2026_08_24": [
+      430,
+      2246.6666666666665
+    ],
+    "njpass_home_2026_08_24": [
+      820,
+      1880.0
+    ],
+    "reg_nj_ocean_container_permit": [
+      430,
+      2026.6666666666667
+    ],
+    "reg_nj_single_trip_osow_permit": [
+      430,
+      1953.3333333333333
+    ],
+    "reg_nj_osow_permit_requirement_13_18_portal_copy": [
+      430,
+      1880.0
+    ],
+    "reg_nj_single_trip_route_review_13_18_portal_copy": [
+      430,
+      2100.0
+    ],
+    "reg_nj_toll_authority_approval_13_18_portal_copy": [
+      430,
+      2173.3333333333335
+    ],
+    "njpass_connecting_local_routes_application_comments": [
+      820,
+      1968.0
+    ],
+    "njpass_nonstate_permit_authorities": [
+      820,
+      2056.0
+    ],
+    "njpass_port_st_oversize_restrictions_2026_08_03": [
+      820,
+      2144.0
+    ],
+    "njpass_route_survey_threshold": [
+      820,
+      2232.0
+    ],
+    "njpass_state_routes_only_system_scope": [
+      820,
+      2320.0
+    ],
+    "authority_elizabeth_city": [
+      2065,
+      1880.0
+    ],
+    "authority_njdot": [
+      1510,
+      1880.0
+    ],
+    "authority_njta": [
+      1880,
+      1880.0
+    ],
+    "authority_union_county": [
+      1880,
+      2360.0
+    ],
+    "elizabeth_code_10_16_050_2025_11_11": [
+      2065,
+      2600.0
+    ],
+    "jurisdiction_elizabeth": [
+      2250,
+      2060.0
+    ],
+    "jurisdiction_new_jersey": [
+      2250,
+      1880.0
+    ],
+    "jurisdiction_union_county": [
+      2250,
+      1970.0
+    ],
+    "nj_large_truck_map": [
+      1695,
+      2060.0
+    ],
+    "nj_size_weight_guidebook": [
+      1695,
+      1880.0
+    ],
+    "njac_16_32_readoption_njr_2023_01_03": [
+      1695,
+      2420.0
+    ],
+    "njac_16_32_truck_access_current_2023": [
+      1695,
+      2240.0
+    ],
+    "njac_19_9_1_9_cornell_2026_08_07": [
+      1880,
+      2120.0
+    ],
+    "njdot_truck_routing_regulations_2026_08_24": [
+      1695,
+      2600.0
+    ],
+    "njogis_county_boundaries_2026_07_26": [
+      2250,
+      2510.0
+    ],
+    "njogis_municipal_boundaries_2026_07_26": [
+      2250,
+      2600.0
+    ],
+    "njta_rules_readoption_2024": [
+      1880,
+      2240.0
+    ],
+    "reg_elizabeth_five_ton_limit_streets": [
+      2065,
+      2060.0
+    ],
+    "reg_elizabeth_four_ton_limit_streets": [
+      2065,
+      2240.0
+    ],
+    "reg_elizabeth_north_avenue_east_zone": [
+      2065,
+      2420.0
+    ],
+    "reg_nj_access_network_600_series": [
+      1510,
+      2420.0
+    ],
+    "reg_nj_height_limit": [
+      1510,
+      1970.0
+    ],
+    "reg_nj_noninterstate_single_axle": [
+      1510,
+      2240.0
+    ],
+    "reg_nj_semitrailer_length": [
+      1510,
+      2150.0
+    ],
+    "reg_nj_tandem_gross_bridge": [
+      1510,
+      2330.0
+    ],
+    "reg_nj_terminal_access_102_inch_standard_truck": [
+      1510,
+      2510.0
+    ],
+    "reg_nj_truck_access_local_rule_preservation": [
+      1510,
+      2600.0
+    ],
+    "reg_nj_width_limit": [
+      1510,
+      2060.0
+    ],
+    "reg_njta_roadway_use_limitations": [
+      1880,
+      2000.0
+    ],
+    "reg_union_county_truck_routes_reserved": [
+      1880,
+      2480.0
+    ],
+    "road_authority_category_county": [
+      2250,
+      2240.0
+    ],
+    "road_authority_category_highway_authority": [
+      2250,
+      2420.0
+    ],
+    "road_authority_category_municipal": [
+      2250,
+      2330.0
+    ],
+    "road_authority_category_state": [
+      2250,
+      2150.0
+    ],
+    "union_county_laws_2026": [
+      1880,
+      2600.0
+    ],
+    "historical_north_avenue_traffic_analysis": [
+      3430,
+      2100
+    ],
+    "njdot_traffic_counts_c74r_6c8d_route624_2018": [
+      3150,
+      1900
+    ],
+    "njdot_traffic_counts_c74r_6c8d_station_3_3_024_2020_2022": [
+      3150,
+      2100
+    ],
+    "njdot_traffic_count_2024_station_3_3_024": [
+      3150,
+      2300
+    ],
+    "elizabeth_kapkowski_corridor_concept_report_2022": [
+      3710,
+      1900
+    ],
+    "union_county_truck_mobility_study_2021": [
+      3710,
+      2100
+    ],
+    "fhwa_nhs_shapefile_2025_08_08": [
+      3710,
+      2300
+    ]
+  },
+  "geographic_ids": [
+    "edge_a_exit13a_connector",
+    "edge_a_nb_state_ramps_to_north_ave",
+    "edge_a_nb_turnpike_exit",
+    "edge_ab_shared_north_ave_to_all_merge",
+    "edge_b_north_avenue_to_merge",
+    "edge_b_us1_south",
+    "edge_shared_mclester",
+    "edge_shared_north_avenue",
+    "edge_shared_tripoli_gate",
+    "node_a_nb_joins_north_ave",
+    "node_a_nb_turnpike_exit13a",
+    "node_a_nb_turnpike_state_ramp_transition",
+    "node_apm_inbound_gate",
+    "node_mclester_tripoli",
+    "node_north_avenue_mclester",
+    "node_path_a_turnpike_sb_exit13a",
+    "node_path_b_north_avenue_entry",
+    "node_path_b_us1_south_access",
+    "node_paths_merge_north_avenue"
+  ],
+  "label_positions": {
+    "node_path_b_north_avenue_entry": [
+      1423.44097575507,
+      506.31153199367634
+    ],
+    "edge_b_us1_south": [
+      1469.536942371502,
+      310.86703556616936
+    ],
+    "node_path_b_us1_south_access": [
+      1515.392757686353,
+      260.21433901489183
+    ],
+    "edge_b_north_avenue_to_merge": [
+      1706.475297475532,
+      567.5036652087581
+    ],
+    "node_a_nb_turnpike_exit13a": [
+      1864.0218355047436,
+      1048.1235344371928
+    ],
+    "node_a_nb_joins_north_ave": [
+      1883.4745390910605,
+      666.2187165125843
+    ],
+    "edge_a_nb_state_ramps_to_north_ave": [
+      1903.1053810359542,
+      813.4853233728426
+    ],
+    "edge_a_nb_turnpike_exit": [
+      1918.6483676273103,
+      887.0242737084313
+    ],
+    "edge_ab_shared_north_ave_to_all_merge": [
+      1932.2396384644462,
+      598.7305033308746
+    ],
+    "node_a_nb_turnpike_state_ramp_transition": [
+      2025.965407991307,
+      924.9387313551963
+    ],
+    "node_paths_merge_north_avenue": [
+      2115.5786692964925,
+      757.1355333419531
+    ],
+    "edge_a_exit13a_connector": [
+      2090.9790554599385,
+      643.0142405151996
+    ],
+    "node_path_a_turnpike_sb_exit13a": [
+      2061.178562927118,
+      671.3314491531964
+    ],
+    "edge_shared_north_avenue": [
+      2160.546616739908,
+      808.2274037397877
+    ],
+    "node_north_avenue_mclester": [
+      2342.7885697509546,
+      897.1550721865603
+    ],
+    "edge_shared_mclester": [
+      2436.443632806307,
+      726.5586904193875
+    ],
+    "node_mclester_tripoli": [
+      2532.1395531704893,
+      544.6630716606235
+    ],
+    "edge_shared_tripoli_gate": [
+      2558.945584690573,
+      673.7830604123781
+    ],
+    "node_apm_inbound_gate": [
+      2585.7234595741934,
+      482.9565029566111
+    ]
+  },
+  "hidden_nodes": [
+    "apm_directions",
+    "approach_a_turnpike_nb",
+    "approach_a_turnpike_sb",
+    "google_maps_route_observation_2026_07_31",
+    "njogis_road_centerlines_2026_07_26",
+    "path_a_exit13a_to_apm",
+    "path_b_us1_9_to_apm"
+  ],
+  "hidden_relationships": 64,
+  "archive_nodes": 121,
+  "archive_relationships": 345,
+  "graph_records_changed": false,
+  "canonical_png_replaced": false
+}

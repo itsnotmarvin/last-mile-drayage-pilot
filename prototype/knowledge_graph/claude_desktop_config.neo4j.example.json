@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "drayage-kg-prototype": {
+      "command": "/absolute/path/to/prototype/knowledge_graph/.venv-neo4j/bin/python",
+      "args": ["/absolute/path/to/prototype/knowledge_graph/run_neo4j_mcp.py", "--audit"],
+      "env": {
+        "NEO4J_CREDENTIALS_FILE": "/path/outside/repository/neo4j.env",
+        "DRAYAGE_NEO4J_REVISION": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c"
+      }
+    }
+  }
+}

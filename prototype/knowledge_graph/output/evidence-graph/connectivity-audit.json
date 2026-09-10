@@ -1,0 +1,2105 @@
+{
+  "before_isolated_count": 34,
+  "after_isolated_count": 1,
+  "isolated_nodes": [
+    "panynj_facilities_map_2020"
+  ],
+  "weak_component_sizes": [
+    121,
+    1
+  ],
+  "unresolved_references": [],
+  "records": [
+    {
+      "node": "apm_appointment_system",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:57b7c3d8e909b4cb8bde5f3a",
+          "from": "operator_apm_terminals",
+          "to": "apm_appointment_system",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/7/source_ids/3",
+                "value": "apm_appointment_system"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:1fbaa5985744631d02d032a8",
+          "from": "facility_apm_elizabeth",
+          "to": "apm_appointment_system",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/3",
+                "value": "apm_appointment_system"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:249ae71296b6a6b355057683",
+          "from": "system_termpoint",
+          "to": "apm_appointment_system",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/22/source_ids/1",
+                "value": "apm_appointment_system"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "apm_directions",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:56ae76f103a1cf60492f832c",
+          "from": "operator_apm_terminals",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/7/source_ids/1",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:57aa73b0da4302a15ac4bb04",
+          "from": "facility_apm_elizabeth",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:abab83b13d6a933d898613e6",
+          "from": "node_path_a_turnpike_sb_exit13a",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/0/properties/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:a98795e706ae80a55bf37ac6",
+          "from": "node_path_b_us1_south_access",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/4/properties/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:48750ff36e01b2d37e65979b",
+          "from": "node_path_b_north_avenue_entry",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/5/properties/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:3b52aa764506800689f42962",
+          "from": "node_paths_merge_north_avenue",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/6/properties/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:174f2e432903a414195fbd1f",
+          "from": "node_north_avenue_mclester",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/7/properties/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:3317368da107fb7b8b869d88",
+          "from": "node_mclester_tripoli",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/8/properties/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:b7bdbab13e097fbaa06c9cda",
+          "from": "node_apm_inbound_gate",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/9/properties/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:4c5fe9f96b3dba314c191735",
+          "from": "edge_a_exit13a_connector",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/0/sequence_source_id",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:cba71701e9fcb406aabd7f38",
+          "from": "edge_b_us1_south",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/4/sequence_source_id",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:c82ee883112ceeb83760c498",
+          "from": "edge_b_north_avenue_to_merge",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/5/sequence_source_id",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:e7c7a72e7bc966ae13daf17a",
+          "from": "edge_shared_north_avenue",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/6/sequence_source_id",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:ffc9d80b39555e875217cab8",
+          "from": "edge_shared_mclester",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/7/sequence_source_id",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:3c2fbd780e71b87b0fdf329c",
+          "from": "edge_shared_tripoli_gate",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/8/sequence_source_id",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:46d5e2917affc1d83270b423",
+          "from": "path_a_exit13a_to_apm",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/paths/0/sequence_source_id",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:cb690e3528fe63e70c76ccdb",
+          "from": "path_b_us1_9_to_apm",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/paths/1/sequence_source_id",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:7efef1579aba029abb79c1ac",
+          "from": "approach_a_turnpike_sb",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/approaches/0/sequence_source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "apm_hours_ops",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:be58857800ac573480fbf994",
+          "from": "operator_apm_terminals",
+          "to": "apm_hours_ops",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/7/source_ids/2",
+                "value": "apm_hours_ops"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:cc66863dd149b7f43a93de4a",
+          "from": "facility_apm_elizabeth",
+          "to": "apm_hours_ops",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/2",
+                "value": "apm_hours_ops"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "authority_njta",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:f457ed09e999ab64cabe68a9",
+          "from": "authority_njta",
+          "to": "njta_rules_readoption_2024",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/25/source_ids/0",
+                "value": "njta_rules_readoption_2024"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:992e069a65e61752825ee746",
+          "from": "authority_njta",
+          "to": "njac_19_9_1_9_cornell_2026_08_07",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/25/source_ids/1",
+                "value": "njac_19_9_1_9_cornell_2026_08_07"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:3a4572d393cde79bbcabcba3",
+          "from": "reg_njta_roadway_use_limitations",
+          "to": "authority_njta",
+          "relationship": "ATTRIBUTED_TO_AUTHORITY",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/regulatory_nodes.json",
+                "pointer": "/rules/30/authority_entity_id",
+                "value": "authority_njta"
+              }
+            ],
+            "meaning": "The retained clause names this authority or operator.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "authority_union_county",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:13c2f4556be9ba3d3c885651",
+          "from": "authority_union_county",
+          "to": "union_county_laws_2026",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/24/source_ids/0",
+                "value": "union_county_laws_2026"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:ab14b7826b6a6669802dc5d5",
+          "from": "reg_union_county_truck_routes_reserved",
+          "to": "authority_union_county",
+          "relationship": "ATTRIBUTED_TO_AUTHORITY",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/regulatory_nodes.json",
+                "pointer": "/rules/29/authority_entity_id",
+                "value": "authority_union_county"
+              }
+            ],
+            "meaning": "The retained clause names this authority or operator.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "ecfr_twic_1572",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:a32d2cfe429cf95ba4fd37b6",
+          "from": "credential_twic",
+          "to": "ecfr_twic_1572",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/18/source_ids/1",
+                "value": "ecfr_twic_1572"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "elizabeth_kapkowski_corridor_concept_report_2022",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:0f82ac43494b2872ef6bebb5",
+          "from": "historical_north_avenue_traffic_analysis",
+          "to": "elizabeth_kapkowski_corridor_concept_report_2022",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/traffic_analysis.json",
+                "pointer": "/corroborating_source_ids/2",
+                "value": "elizabeth_kapkowski_corridor_concept_report_2022"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "facility_apm_elizabeth",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:57aa73b0da4302a15ac4bb04",
+          "from": "facility_apm_elizabeth",
+          "to": "apm_directions",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/0",
+                "value": "apm_directions"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:9bacdd34c909376655e2d682",
+          "from": "facility_apm_elizabeth",
+          "to": "panynj_truckers_guide",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/1",
+                "value": "panynj_truckers_guide"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:cc66863dd149b7f43a93de4a",
+          "from": "facility_apm_elizabeth",
+          "to": "apm_hours_ops",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/2",
+                "value": "apm_hours_ops"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:1fbaa5985744631d02d032a8",
+          "from": "facility_apm_elizabeth",
+          "to": "apm_appointment_system",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/3",
+                "value": "apm_appointment_system"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:3af0861f0eec9d7177b0005f",
+          "from": "facility_apm_elizabeth",
+          "to": "panynj_truck_info",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/4",
+                "value": "panynj_truck_info"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:577c0367661c9ff461307678",
+          "from": "node_apm_inbound_gate",
+          "to": "facility_apm_elizabeth",
+          "relationship": "GATE_OF_TERMINAL",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/9/properties/terminal_entity_id",
+                "value": "facility_apm_elizabeth"
+              }
+            ],
+            "meaning": "The retained gate record explicitly identifies this terminal.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "fhwa_nhs_shapefile_2025_08_08",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:ecfbff494ff1734fd5eb9069",
+          "from": "edge_b_north_avenue_to_merge",
+          "to": "fhwa_nhs_shapefile_2025_08_08",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/5/official_nhs_designations/fhwa_nhs_2025/source_id",
+                "value": "fhwa_nhs_shapefile_2025_08_08"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:86800038689be156fae43cd9",
+          "from": "edge_shared_north_avenue",
+          "to": "fhwa_nhs_shapefile_2025_08_08",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/6/official_nhs_designations/fhwa_nhs_2025/source_id",
+                "value": "fhwa_nhs_shapefile_2025_08_08"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:a2d6f83748a11395f2c803c6",
+          "from": "edge_shared_mclester",
+          "to": "fhwa_nhs_shapefile_2025_08_08",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/7/official_nhs_designations/fhwa_nhs_2025/source_id",
+                "value": "fhwa_nhs_shapefile_2025_08_08"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:b0bb07f0ec074c70c3df4ae4",
+          "from": "historical_north_avenue_traffic_analysis",
+          "to": "fhwa_nhs_shapefile_2025_08_08",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/traffic_analysis.json",
+                "pointer": "/corroborating_source_ids/4",
+                "value": "fhwa_nhs_shapefile_2025_08_08"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "google_maps_route_observation_2026_07_31",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:6adbf0418bb2298e778d363a",
+          "from": "node_apm_inbound_gate",
+          "to": "google_maps_route_observation_2026_07_31",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/9/properties/source_ids/1",
+                "value": "google_maps_route_observation_2026_07_31"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:cd6cc7a9477e07e04b15f73a",
+          "from": "edge_shared_tripoli_gate",
+          "to": "google_maps_route_observation_2026_07_31",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/8/gate_observation_source_id",
+                "value": "google_maps_route_observation_2026_07_31"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "jurisdiction_new_jersey",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:e8c5ede1990624bf29242ed5",
+          "from": "jurisdiction_new_jersey",
+          "to": "njogis_municipal_boundaries_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/8/source_ids/0",
+                "value": "njogis_municipal_boundaries_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:09681f97de86a379247afce6",
+          "from": "jurisdiction_new_jersey",
+          "to": "njogis_county_boundaries_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/8/source_ids/1",
+                "value": "njogis_county_boundaries_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "jurisdiction_panynj_terminal",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:8233804e83f431dcf0074a2c",
+          "from": "jurisdiction_panynj_terminal",
+          "to": "panynj_marine_terminal_tariff",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/11/source_ids/0",
+                "value": "panynj_marine_terminal_tariff"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "nj_large_truck_map",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:e97749b42eca99d5b075769e",
+          "from": "authority_njdot",
+          "to": "nj_large_truck_map",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/3/source_ids/1",
+                "value": "nj_large_truck_map"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njac_16_32_readoption_njr_2023_01_03",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:e3eed7be08073a8a98f613ac",
+          "from": "njac_16_32_truck_access_current_2023",
+          "to": "njac_16_32_readoption_njr_2023_01_03",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/metadata.json",
+                "pointer": "/sources/20/currentness_check/evidence_source_ids/1",
+                "value": "njac_16_32_readoption_njr_2023_01_03"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njdot_traffic_count_2024_station_3_3_024",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:6af16705e07eccc16df2b7e5",
+          "from": "historical_north_avenue_traffic_analysis",
+          "to": "njdot_traffic_count_2024_station_3_3_024",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/traffic_analysis.json",
+                "pointer": "/corroborating_source_ids/1",
+                "value": "njdot_traffic_count_2024_station_3_3_024"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njdot_traffic_counts_c74r_6c8d_route624_2018",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:788c0b14565af7f19afd1c6c",
+          "from": "historical_north_avenue_traffic_analysis",
+          "to": "njdot_traffic_counts_c74r_6c8d_route624_2018",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/traffic_analysis.json",
+                "pointer": "/primary_source_id",
+                "value": "njdot_traffic_counts_c74r_6c8d_route624_2018"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njdot_traffic_counts_c74r_6c8d_station_3_3_024_2020_2022",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:a13e8a0283b727a91c3b4caa",
+          "from": "historical_north_avenue_traffic_analysis",
+          "to": "njdot_traffic_counts_c74r_6c8d_station_3_3_024_2020_2022",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/traffic_analysis.json",
+                "pointer": "/corroborating_source_ids/0",
+                "value": "njdot_traffic_counts_c74r_6c8d_station_3_3_024_2020_2022"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njdot_truck_routing_regulations_2026_08_24",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:d6e2857c3cc5e2bddfea9b65",
+          "from": "njac_16_32_truck_access_current_2023",
+          "to": "njdot_truck_routing_regulations_2026_08_24",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/metadata.json",
+                "pointer": "/sources/20/currentness_check/evidence_source_ids/0",
+                "value": "njdot_truck_routing_regulations_2026_08_24"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njogis_county_boundaries_2026_07_26",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:09681f97de86a379247afce6",
+          "from": "jurisdiction_new_jersey",
+          "to": "njogis_county_boundaries_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/8/source_ids/1",
+                "value": "njogis_county_boundaries_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:588cd6c4f7681bf5bf0af0ec",
+          "from": "jurisdiction_union_county",
+          "to": "njogis_county_boundaries_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/9/source_ids/0",
+                "value": "njogis_county_boundaries_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njogis_municipal_boundaries_2026_07_26",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:e8c5ede1990624bf29242ed5",
+          "from": "jurisdiction_new_jersey",
+          "to": "njogis_municipal_boundaries_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/8/source_ids/0",
+                "value": "njogis_municipal_boundaries_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:67f3e38954a1fb7b1765ce7b",
+          "from": "jurisdiction_elizabeth",
+          "to": "njogis_municipal_boundaries_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/10/source_ids/0",
+                "value": "njogis_municipal_boundaries_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njogis_road_centerlines_2026_07_26",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:acab38c959b6dd52a837b26e",
+          "from": "authority_njdot",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/3/source_ids/3",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:cc357a8163473af6d33f124b",
+          "from": "road_authority_category_highway_authority",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/13/source_ids/0",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:80a085865392e2551ab35327",
+          "from": "road_authority_category_state",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/14/source_ids/0",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:552ec9b2253e972b365dccb3",
+          "from": "road_authority_category_county",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/15/source_ids/0",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:07781c84f13291dd27458f2d",
+          "from": "road_authority_category_municipal",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/16/source_ids/0",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:7905fbacf106e8ce8be720ec",
+          "from": "node_path_a_turnpike_sb_exit13a",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/0/properties/source_ids/1",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:b56416c8647e0982da29fce8",
+          "from": "node_a_nb_turnpike_exit13a",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/1/properties/source_ids/0",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:bbbc84b423185722f800f715",
+          "from": "node_a_nb_turnpike_state_ramp_transition",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/2/properties/source_ids/0",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:5be40edb9337925817296841",
+          "from": "node_a_nb_joins_north_ave",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/3/properties/source_ids/0",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:5bf3d4355bcac5acdab0d731",
+          "from": "node_path_b_us1_south_access",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/4/properties/source_ids/1",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:0e61ea1282b9e52fbcb4f5d7",
+          "from": "node_path_b_north_avenue_entry",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/5/properties/source_ids/1",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:97ae9fd2c773c35145fe6b65",
+          "from": "node_paths_merge_north_avenue",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/6/properties/source_ids/1",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:d4a7157f7928a78d05bad25f",
+          "from": "node_north_avenue_mclester",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/7/properties/source_ids/1",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:e62933c0a36758a329989f65",
+          "from": "node_mclester_tripoli",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_nodes.geojson",
+                "pointer": "/features/8/properties/source_ids/1",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:ad86823200751b2af11425b5",
+          "from": "edge_a_exit13a_connector",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/0/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:0570b72b08b06504ee37932a",
+          "from": "edge_a_nb_turnpike_exit",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/1/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:db548d70f5a08357bbc0f25f",
+          "from": "edge_a_nb_state_ramps_to_north_ave",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/2/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:5b0e7d2876d43753e17ce7c2",
+          "from": "edge_ab_shared_north_ave_to_all_merge",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/3/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:819769a6671e2fe6685ca270",
+          "from": "edge_b_us1_south",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/4/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:9da86254660345e6c2bd7ed0",
+          "from": "edge_b_north_avenue_to_merge",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/5/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:653bf7da2717cfed63c2d248",
+          "from": "edge_shared_north_avenue",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/6/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:7941ac9cbf85d4cc8970aaed",
+          "from": "edge_shared_mclester",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/7/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:62504b54c76be4a1386ffd24",
+          "from": "edge_shared_tripoli_gate",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/edges/8/geometry_source_id",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:a0ef548c71e820d5c8cd1497",
+          "from": "approach_a_turnpike_sb",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/approaches/0/sequence_source_ids/1",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:1034b21c5b6a5de84e689996",
+          "from": "approach_a_turnpike_nb",
+          "to": "njogis_road_centerlines_2026_07_26",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/physical_edges.json",
+                "pointer": "/approaches/1/sequence_source_ids/0",
+                "value": "njogis_road_centerlines_2026_07_26"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njpass_connecting_local_routes_application_comments",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:d48fb45ab334a380864911ab",
+          "from": "njpass_connecting_local_routes_application_comments",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njpass_home_2026_08_24",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:a8cce906b3f5bc5035817790",
+          "from": "authority_njmvc",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/4/source_ids/1",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:43268eb6e27b6f74a5bcbf05",
+          "from": "njpass_port_st_oversize_restrictions_2026_08_03",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:6fc3d293f44390d5697b111d",
+          "from": "njpass_state_routes_only_system_scope",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:d48fb45ab334a380864911ab",
+          "from": "njpass_connecting_local_routes_application_comments",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:4258f046bcf245b791e953c4",
+          "from": "njpass_nonstate_permit_authorities",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:61e46ae4609f35cd225e14da",
+          "from": "njpass_route_survey_threshold",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njpass_nonstate_permit_authorities",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:4258f046bcf245b791e953c4",
+          "from": "njpass_nonstate_permit_authorities",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njpass_port_st_oversize_restrictions_2026_08_03",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:43268eb6e27b6f74a5bcbf05",
+          "from": "njpass_port_st_oversize_restrictions_2026_08_03",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njpass_route_survey_threshold",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:61e46ae4609f35cd225e14da",
+          "from": "njpass_route_survey_threshold",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njpass_state_routes_only_system_scope",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:6fc3d293f44390d5697b111d",
+          "from": "njpass_state_routes_only_system_scope",
+          "to": "njpass_home_2026_08_24",
+          "relationship": "OBSERVED_IN_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/mutable_conditions.json",
+                "pointer": "/source_id",
+                "value": "njpass_home_2026_08_24"
+              }
+            ],
+            "meaning": "The quarantined observation comes from this dated archived source; no restriction is activated.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "njta_rules_readoption_2024",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:f457ed09e999ab64cabe68a9",
+          "from": "authority_njta",
+          "to": "njta_rules_readoption_2024",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/25/source_ids/0",
+                "value": "njta_rules_readoption_2024"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "panynj_facilities_map_2020",
+      "connected": false,
+      "relationships": [],
+      "remaining_gap": "No explicit reference in the imported records links this source to a graph subject. Its geometry-only use limit does not identify a modeled corridor; no edge was guessed."
+    },
+    {
+      "node": "panynj_truck_info",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:1d9b161ce27318cb4b30c81e",
+          "from": "authority_panynj",
+          "to": "panynj_truck_info",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/6/source_ids/2",
+                "value": "panynj_truck_info"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:3af0861f0eec9d7177b0005f",
+          "from": "facility_apm_elizabeth",
+          "to": "panynj_truck_info",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/12/source_ids/4",
+                "value": "panynj_truck_info"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "porttruckpass_tips",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:e11296a38ddf6638842bbb19",
+          "from": "credential_rfid",
+          "to": "porttruckpass_tips",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/20/source_ids/1",
+                "value": "porttruckpass_tips"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:bce231481503638b6e652426",
+          "from": "registration_dtr",
+          "to": "porttruckpass_tips",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/entity_nodes.json",
+                "pointer": "/entities/21/source_ids/2",
+                "value": "porttruckpass_tips"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "representative_older_engine_drayage",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:89c2f89a8ff40deeb725db9d",
+          "from": "representative_older_engine_drayage",
+          "to": "reg_panynj_dtr_engine",
+          "relationship": "HAS_RECORDED_RULE_INTERACTION",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/vehicle_profiles.json",
+                "pointer": "/profiles/1/rule_interactions/0/rule_id",
+                "value": "reg_panynj_dtr_engine"
+              }
+            ],
+            "meaning": "The representative profile records a rule interaction; not a compliance result.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:ffd17c403e774cfec3ff619f",
+          "from": "representative_older_engine_drayage",
+          "to": "reg_panynj_dtr",
+          "relationship": "HAS_RECORDED_RULE_INTERACTION",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/vehicle_profiles.json",
+                "pointer": "/profiles/1/rule_interactions/1/rule_id",
+                "value": "reg_panynj_dtr"
+              }
+            ],
+            "meaning": "The representative profile records a rule interaction; not a compliance result.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "representative_osow_ocean_container",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:89fd494d8a1a23114af79680",
+          "from": "representative_osow_ocean_container",
+          "to": "reg_nj_tandem_gross_bridge",
+          "relationship": "HAS_RECORDED_RULE_INTERACTION",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/vehicle_profiles.json",
+                "pointer": "/profiles/2/rule_interactions/0/rule_id",
+                "value": "reg_nj_tandem_gross_bridge"
+              }
+            ],
+            "meaning": "The representative profile records a rule interaction; not a compliance result.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:5e45f184fe60da892249f4ca",
+          "from": "representative_osow_ocean_container",
+          "to": "reg_nj_ocean_container_permit",
+          "relationship": "HAS_RECORDED_RULE_INTERACTION",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/vehicle_profiles.json",
+                "pointer": "/profiles/2/rule_interactions/1/rule_id",
+                "value": "reg_nj_ocean_container_permit"
+              }
+            ],
+            "meaning": "The representative profile records a rule interaction; not a compliance result.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:a0b2358f555e90a77dd0b1ae",
+          "from": "representative_osow_ocean_container",
+          "to": "reg_nj_single_trip_osow_permit",
+          "relationship": "HAS_RECORDED_RULE_INTERACTION",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/vehicle_profiles.json",
+                "pointer": "/profiles/2/rule_interactions/2/rule_id",
+                "value": "reg_nj_single_trip_osow_permit"
+              }
+            ],
+            "meaning": "The representative profile records a rule interaction; not a compliance result.",
+            "operational_use": false
+          }
+        },
+        {
+          "id": "reference:7a837889eaf5a95647ad7c8a",
+          "from": "representative_osow_ocean_container",
+          "to": "reg_panynj_terminal_weight_dimensions",
+          "relationship": "HAS_RECORDED_RULE_INTERACTION",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/vehicle_profiles.json",
+                "pointer": "/profiles/2/rule_interactions/3/rule_id",
+                "value": "reg_panynj_terminal_weight_dimensions"
+              }
+            ],
+            "meaning": "The representative profile records a rule interaction; not a compliance result.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    },
+    {
+      "node": "union_county_truck_mobility_study_2021",
+      "connected": true,
+      "relationships": [
+        {
+          "id": "reference:f634c819f198c8673a4790fd",
+          "from": "historical_north_avenue_traffic_analysis",
+          "to": "union_county_truck_mobility_study_2021",
+          "relationship": "CITES_SOURCE",
+          "record": {
+            "layer": "explicit_archive_references",
+            "evidence": [
+              {
+                "input": "data/processed/traffic_analysis.json",
+                "pointer": "/corroborating_source_ids/3",
+                "value": "union_county_truck_mobility_study_2021"
+              }
+            ],
+            "meaning": "The retained record explicitly cites this source; not independent verification.",
+            "operational_use": false
+          }
+        }
+      ],
+      "remaining_gap": null
+    }
+  ]
+}

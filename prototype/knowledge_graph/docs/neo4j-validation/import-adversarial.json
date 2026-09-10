@@ -1,0 +1,11 @@
+{
+  "idempotent_reimport": "passed",
+  "failed_import_rollback": "passed",
+  "rollback_probe_remaining_records": 0,
+  "original_release_intact": true,
+  "wave4_unchanged": {
+    "nodes": 824,
+    "relationships": 1872,
+    "fingerprint": "0ea5ad1493ba8bd70991d84b69dbd4eb4b32cd919fe2ad6e953d1f369280df67"
+  }
+}

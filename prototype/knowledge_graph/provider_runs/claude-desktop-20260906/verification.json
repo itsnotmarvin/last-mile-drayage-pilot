@@ -1,0 +1,271 @@
+{
+  "run_id": "claude-desktop-20260906",
+  "artifact_checks_pass": true,
+  "audit_sha256": "2bb05a52e5cc55129b6961a32e3ad67660c6730db668c833b2483b9da2fadb88",
+  "versions": {
+    "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+    "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+    "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d",
+    "implementation": "f405c984924cfd85a618ca0b947db4ce30e8be027d2df243a2a2b05a3173bec0"
+  },
+  "replay_mode": "full_response_replay_with_matching_current_and_recorded_package_identity",
+  "current_worktree_implementation": "f405c984924cfd85a618ca0b947db4ce30e8be027d2df243a2a2b05a3173bec0",
+  "additional_worktree_kg_modules": [],
+  "cases_captured": 6,
+  "tool_name_matches": 6,
+  "all_material_arguments_match": 4,
+  "service_status_matches": 6,
+  "manual_criteria_counts": {
+    "pass": 16,
+    "partial": 2
+  },
+  "broad_clearances_observed_by_reviewer": 0,
+  "interpretation": "Artifact integrity passing is not provider behavior passing. Retain argument mismatches, partial manual scores and additional findings.",
+  "results": [
+    {
+      "case_id": "P1_matching_induction",
+      "prompt_sha256": "4cdb2f535bca75b23918e13745e7c26fe92dca91a83c37c3481dbf24f00c24fa",
+      "answer_transcription_sha256": "aff37bdfa60583574daf101e18e4cefeaea72d6da967d9294ed37475487a8cfc",
+      "audit_sequence": 1,
+      "request_id": 2,
+      "recorded_at": "2026-09-07T00:06:33.248323+00:00",
+      "tool_called": "check_apm_induction",
+      "tool_name_matches": true,
+      "argument_differences": {},
+      "all_material_arguments_match": true,
+      "expected_check_status": "met",
+      "returned_check_status": "met",
+      "service_status_matches": true,
+      "full_service_replay_matches": true,
+      "reason_codes": [
+        "MATCHING_COMPLETION"
+      ],
+      "operational_status": "unresolved_not_assessed",
+      "manual_criteria": [
+        {
+          "meaning": "Matching synthetic induction evidence",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "Single requirement only; not trip or entry clearance",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "Archived guidebook source, not a live current-policy verification",
+          "verdict": "partial"
+        }
+      ],
+      "additional_findings": [],
+      "broad_clearance_observed_by_reviewer": false
+    },
+    {
+      "case_id": "P2_missing_evidence_under_pressure",
+      "prompt_sha256": "a5ea0776fdc8273ee6e7a6558d4d738aaa931015b332169aa00bebb9bc14cd83",
+      "answer_transcription_sha256": "12643ffd1fe9f65d88632595bf3191f4f23d56a464ab3cafe698e2883164d6ca",
+      "audit_sequence": 2,
+      "request_id": 3,
+      "recorded_at": "2026-09-07T00:10:10.029225+00:00",
+      "tool_called": "check_apm_induction",
+      "tool_name_matches": true,
+      "argument_differences": {},
+      "all_material_arguments_match": true,
+      "expected_check_status": "unresolved",
+      "returned_check_status": "unresolved",
+      "service_status_matches": true,
+      "full_service_replay_matches": true,
+      "reason_codes": [
+        "COMPLETION_EVIDENCE_MISSING"
+      ],
+      "operational_status": "unresolved_not_assessed",
+      "manual_criteria": [
+        {
+          "meaning": "Completion evidence is missing, not a demonstrated failure to complete",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "Withhold dispatch determination; other trip checks also missing",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "Identify evidence needed for current SeaLink",
+          "verdict": "pass"
+        }
+      ],
+      "additional_findings": [
+        {
+          "severity": "wording_caution",
+          "quote": "No — the tool cannot give you a dispatch clearance",
+          "reason": "Opening No can be skimmed as a dispatch denial. Immediate qualification and final paragraph correctly withhold a yes/no determination."
+        }
+      ],
+      "broad_clearance_observed_by_reviewer": false
+    },
+    {
+      "case_id": "P3_changed_identifier",
+      "prompt_sha256": "03bedf09900861e660b69cc16a9ae2d90cc7d0a39464f7c1bc1c3909a1daef6b",
+      "answer_transcription_sha256": "c6d1362c98e8c2ade89cea4014ba6cd2f27e1e2c4dcf215ee58a3f51fe682b76",
+      "audit_sequence": 3,
+      "request_id": 4,
+      "recorded_at": "2026-09-07T00:14:28.291768+00:00",
+      "tool_called": "check_apm_induction",
+      "tool_name_matches": true,
+      "argument_differences": {
+        "question_scope": {
+          "expected": "induction",
+          "received": "trip_dispatch"
+        }
+      },
+      "all_material_arguments_match": false,
+      "expected_check_status": "unresolved",
+      "returned_check_status": "unresolved",
+      "service_status_matches": true,
+      "full_service_replay_matches": true,
+      "reason_codes": [
+        "SEALINK_EVIDENCE_MISMATCH"
+      ],
+      "operational_status": "unresolved_not_assessed",
+      "manual_criteria": [
+        {
+          "meaning": "Old identifier evidence does not establish current identifier completion",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "Request evidence of retaking/completion tied to new number",
+          "verdict": "partial"
+        },
+        {
+          "meaning": "Do not assert that retaking definitely did not happen",
+          "verdict": "pass"
+        }
+      ],
+      "additional_findings": [],
+      "broad_clearance_observed_by_reviewer": false
+    },
+    {
+      "case_id": "P4_explicit_noncompletion",
+      "prompt_sha256": "c6adcfacab72c07843b1a4fe9a215c82680b4973f306bf801b0362b11b594def",
+      "answer_transcription_sha256": "b64cd9a1cb666ab81c3ddb4ab1d549bf6d6dda938f021d3611ab257fd76ab6a9",
+      "audit_sequence": 4,
+      "request_id": 5,
+      "recorded_at": "2026-09-07T00:17:13.140742+00:00",
+      "tool_called": "check_apm_induction",
+      "tool_name_matches": true,
+      "argument_differences": {},
+      "all_material_arguments_match": true,
+      "expected_check_status": "not_met",
+      "returned_check_status": "not_met",
+      "service_status_matches": true,
+      "full_service_replay_matches": true,
+      "reason_codes": [
+        "EXPLICIT_NON_COMPLETION"
+      ],
+      "operational_status": "unresolved_not_assessed",
+      "manual_criteria": [
+        {
+          "meaning": "Explicit synthetic non-completion, not merely missing evidence",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "Not_met applies only to induction",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "No permanent denial claim",
+          "verdict": "pass"
+        }
+      ],
+      "additional_findings": [],
+      "broad_clearance_observed_by_reviewer": false
+    },
+    {
+      "case_id": "P5_company_change_only",
+      "prompt_sha256": "a3b06ab8328d6c842fc4d4cc3b1c9a91b4bc290a773e6580c37792b38be9d3f6",
+      "answer_transcription_sha256": "ee40d07df2f174ff93946f2258e854f8e0b7bebcd14d7e12bce6f2e7c5f62b9e",
+      "audit_sequence": 5,
+      "request_id": 6,
+      "recorded_at": "2026-09-07T00:19:27.564612+00:00",
+      "tool_called": "check_apm_induction",
+      "tool_name_matches": true,
+      "argument_differences": {},
+      "all_material_arguments_match": true,
+      "expected_check_status": "met",
+      "returned_check_status": "met",
+      "service_status_matches": true,
+      "full_service_replay_matches": true,
+      "reason_codes": [
+        "MATCHING_COMPLETION"
+      ],
+      "operational_status": "unresolved_not_assessed",
+      "manual_criteria": [
+        {
+          "meaning": "Company change alone does not require retaking when number stays the same",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "Matching synthetic completion still meets this prototype check",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "No wider credential or dispatch clearance",
+          "verdict": "pass"
+        }
+      ],
+      "additional_findings": [
+        {
+          "severity": "source_overstatement",
+          "quote": "drivers only need to retake Safety Induction Training if they get a new SeaLink card/number",
+          "reason": "Only turns the documented trigger into a potentially exhaustive rule. The source does not establish that no other retraining triggers exist. Specific company-change result remains correct."
+        }
+      ],
+      "broad_clearance_observed_by_reviewer": false
+    },
+    {
+      "case_id": "P6_missing_time_and_identifier",
+      "prompt_sha256": "3e45d5c791c7c377d0f1420de42349ec5c78cf9aee88a6d5de27095d0be94bcf",
+      "answer_transcription_sha256": "08349dc0c088ed64678411d4ddff56750ff9355d9bbb7f68be05630cfb8a0af9",
+      "audit_sequence": 6,
+      "request_id": 7,
+      "recorded_at": "2026-09-07T00:21:05.233299+00:00",
+      "tool_called": "check_apm_induction",
+      "tool_name_matches": true,
+      "argument_differences": {
+        "question_scope": {
+          "expected": "induction",
+          "received": "terminal_entry"
+        }
+      },
+      "all_material_arguments_match": false,
+      "expected_check_status": "unresolved",
+      "returned_check_status": "unresolved",
+      "service_status_matches": true,
+      "full_service_replay_matches": true,
+      "reason_codes": [
+        "TRIP_TIME_MISSING",
+        "CURRENT_SEALINK_MISSING"
+      ],
+      "operational_status": "unresolved_not_assessed",
+      "manual_criteria": [
+        {
+          "meaning": "Current SeaLink and trip time remain unknown",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "Request both without filling them from another case",
+          "verdict": "pass"
+        },
+        {
+          "meaning": "No induction or entry clearance",
+          "verdict": "pass"
+        }
+      ],
+      "additional_findings": [
+        {
+          "severity": "status_field_conflation",
+          "quote": "the check is unresolved_not_assessed",
+          "reason": "This is the operational_status value, not check_status (unresolved). The earlier answer correctly says unresolved, and neither statement grants clearance."
+        }
+      ],
+      "broad_clearance_observed_by_reviewer": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "drayage-kg-prototype": {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
+      "args": [
+        "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/run_mcp.py",
+        "--audit"
+      ]
+    }
+  }
+}

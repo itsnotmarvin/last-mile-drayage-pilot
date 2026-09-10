@@ -1,0 +1,32 @@
+{
+  "engine": "NetworkX 3.6.1 in-memory MultiDiGraph; not a database server",
+  "evidence_version": "d22986451a4812542ad4ed998219b8347b4ed5829f537157fd44d721647060df",
+  "node_count": 121,
+  "edge_count": 345,
+  "node_kinds": {
+    "source_document": 32,
+    "route_approach": 2,
+    "authority": 9,
+    "credential": 4,
+    "road_segment": 9,
+    "terminal": 1,
+    "historical_traffic_analysis": 1,
+    "jurisdiction": 3,
+    "facility_jurisdiction": 1,
+    "mutable_observation": 5,
+    "physical_location": 10,
+    "terminal_operator": 1,
+    "route_family": 2,
+    "source_clause": 31,
+    "registration": 1,
+    "project_profile_not_live_vehicle": 3,
+    "njogis_jurisdiction_domain_value": 4,
+    "operational_system": 1,
+    "training": 1
+  },
+  "operational_use": false,
+  "base_evidence_version": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+  "graph_scope": "archive_with_explicit_references_and_retained_historical_analysis",
+  "isolated_node_count": 0,
+  "checking_service_uses_this_enrichment": false
+}

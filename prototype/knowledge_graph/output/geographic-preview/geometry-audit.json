@@ -1,0 +1,13 @@
+{
+  "location_nodes": 10,
+  "road_segments": 9,
+  "geometry_basis": "Archived NJOGIS centerlines, July 26 2026; gate observation July 31 2026",
+  "projection": "Local equirectangular, standard parallel 40.672 degrees north",
+  "graph_records_changed": false,
+  "source_sha256": {
+    "data/processed/physical_nodes.geojson": "440f2396b222e7fc489513be287a712c29770a483427ee4d92cff4357a5e71d5",
+    "data/processed/physical_edges.json": "1c653c3828dce81aab75e8b534f1bf34785f0df0b4131f63f459f1e287d95c83",
+    "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson": "9a7b56932b93e793d782f64cf2266f97c2e5913f29688b246796f25c4d38120d"
+  },
+  "gate_centerline_offset_metres": 0.17029127618259143
+}

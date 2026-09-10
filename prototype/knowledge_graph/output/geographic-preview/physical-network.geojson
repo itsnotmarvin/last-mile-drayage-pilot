@@ -1,0 +1,2015 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1775120831099,
+          40.6708416045937
+        ]
+      },
+      "properties": {
+        "node_id": "node_path_a_turnpike_sb_exit13a",
+        "node_type": "route_access_node",
+        "name": "FR NJ TURNPIKE SB TO NJ 81 NB",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb"
+        ],
+        "incident_edge_ids": [
+          "edge_a_exit13a_connector"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          354508,
+          40708
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1824480609753,
+          40.6636843947186
+        ]
+      },
+      "properties": {
+        "node_id": "node_a_nb_turnpike_exit13a",
+        "node_type": "route_access_node",
+        "name": "NJ Turnpike northbound Exit 13A ramp start",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_a_nb_turnpike_exit"
+        ],
+        "source_ids": [
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          82726,
+          593
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1793983127283,
+          40.6674594445013
+        ]
+      },
+      "properties": {
+        "node_id": "node_a_nb_turnpike_state_ramp_transition",
+        "node_type": "jurisdiction_transition_node",
+        "name": "Turnpike authority ramp transitions to state ramp system",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_a_nb_turnpike_exit",
+          "edge_a_nb_state_ramps_to_north_ave"
+        ],
+        "source_ids": [
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          366856,
+          198235
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.18179779279,
+          40.6710852588052
+        ]
+      },
+      "properties": {
+        "node_id": "node_a_nb_joins_north_ave",
+        "node_type": "approach_merge_node",
+        "name": "Turnpike northbound approach joins the North Avenue corridor",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_a_nb_state_ramps_to_north_ave",
+          "edge_ab_shared_north_ave_to_all_merge"
+        ],
+        "source_ids": [
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          222590,
+          372772
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1941020913149,
+          40.6799845147686
+        ]
+      },
+      "properties": {
+        "node_id": "node_path_b_us1_south_access",
+        "node_type": "route_access_node",
+        "name": "US Highway 1 Express",
+        "path_ids": [
+          "path_b_us1_9_to_apm"
+        ],
+        "incident_edge_ids": [
+          "edge_b_us1_south"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          313407,
+          301684
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.197175870654,
+          40.6774213279391
+        ]
+      },
+      "properties": {
+        "node_id": "node_path_b_north_avenue_entry",
+        "node_type": "route_turn_node",
+        "name": "US Highway 1 Express / North Avenue East",
+        "path_ids": [
+          "path_b_us1_9_to_apm"
+        ],
+        "incident_edge_ids": [
+          "edge_b_us1_south",
+          "edge_b_north_avenue_to_merge"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          301684,
+          21853
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1785517799026,
+          40.6699210980933
+        ]
+      },
+      "properties": {
+        "node_id": "node_paths_merge_north_avenue",
+        "node_type": "path_merge_node",
+        "name": "North Avenue East / North Avenue",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_a_exit13a_connector",
+          "edge_ab_shared_north_ave_to_all_merge",
+          "edge_b_north_avenue_to_merge",
+          "edge_shared_north_avenue"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          248025,
+          350133,
+          375671
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.166443767583,
+          40.6652301701734
+        ]
+      },
+      "properties": {
+        "node_id": "node_north_avenue_mclester",
+        "node_type": "road_intersection",
+        "name": "North Avenue East / McLester Street",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_shared_north_avenue",
+          "edge_shared_mclester"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          144184,
+          433606
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.160114111665,
+          40.674167142869
+        ]
+      },
+      "properties": {
+        "node_id": "node_mclester_tripoli",
+        "node_type": "road_intersection",
+        "name": "McLester Street / Tripoli Street",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_shared_mclester",
+          "edge_shared_tripoli_gate"
+        ],
+        "source_ids": [
+          "apm_directions",
+          "njogis_road_centerlines_2026_07_26"
+        ],
+        "source_feature_ids": [
+          320648,
+          374024
+        ],
+        "coordinate_method": "exact_endpoint_equality",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1583229,
+          40.6734498
+        ]
+      },
+      "properties": {
+        "node_id": "node_apm_inbound_gate",
+        "node_type": "terminal_gate_node",
+        "name": "APM Terminals Elizabeth",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "incident_edge_ids": [
+          "edge_shared_tripoli_gate"
+        ],
+        "terminal_entity_id": "facility_apm_elizabeth",
+        "operator_entity_id": "operator_apm_terminals",
+        "source_ids": [
+          "apm_directions",
+          "google_maps_route_observation_2026_07_31"
+        ],
+        "coordinate_method": "google_maps_route_step_coordinate_observation",
+        "observation_date": "2026-07-31",
+        "observed_route_step_text": [
+          "Turn right",
+          "Continue onto Tripoli St",
+          "Destination will be on the right"
+        ],
+        "observation_url": "https://www.google.com/maps/@40.6734498,-74.1583229,3a,75y,107.83h,90t/data=!3m4!1e1!3m2!1s9gAJHVMjoN_Uk4hVTOP76A!2e0",
+        "source_trace_complete": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1775120831099,
+            40.6708416045937
+          ],
+          [
+            -74.1782089719935,
+            40.6702645366374
+          ],
+          [
+            -74.1784359659888,
+            40.6700371101516
+          ],
+          [
+            -74.1785517799026,
+            40.6699210980933
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_a_exit13a_connector",
+        "edge_type": "directed_roadway_corridor",
+        "name": "FR NJ TURNPIKE SB TO NJ 81 NB",
+        "from_node": "node_path_a_turnpike_sb_exit13a",
+        "to_node": "node_paths_merge_north_avenue",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb"
+        ],
+        "sequence_by_path": {
+          "path_a_exit13a_to_apm": 1
+        },
+        "official_feature_ids": [
+          40708,
+          248025
+        ],
+        "official_feature_name": "FR NJ TURNPIKE SB TO NJ 81 NB",
+        "official_list_names": [
+          "FR NJ TURNPIKE SB TO NJ 81 NB"
+        ],
+        "official_sri_ids": [
+          "00000095__X105660"
+        ],
+        "official_shield_types_raw": [
+          "N"
+        ],
+        "official_shield_numbers_raw": [],
+        "official_oneway_raw": [
+          "FT"
+        ],
+        "jurisdiction_code_raw": "HA",
+        "jurisdiction_label": "Highway Authority",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "sequence_source_id": "apm_directions",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.1775120831099,
+            40.6708416045937
+          ],
+          "end_coordinate": [
+            -74.1785517799026,
+            40.6699210980933
+          ],
+          "endpoint_match_feature_ids": [
+            [
+              40708,
+              248025
+            ],
+            [
+              248025,
+              375671
+            ]
+          ]
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1824480609753,
+            40.6636843947186
+          ],
+          [
+            -74.1823658209462,
+            40.6637859890486
+          ],
+          [
+            -74.1820235286823,
+            40.6641984783755
+          ],
+          [
+            -74.1819043325951,
+            40.6643466570159
+          ],
+          [
+            -74.1818570430791,
+            40.6643982709495
+          ],
+          [
+            -74.181835157144,
+            40.664422174825
+          ],
+          [
+            -74.1817660141532,
+            40.6644831164015
+          ],
+          [
+            -74.1816470296117,
+            40.6645788657756
+          ],
+          [
+            -74.1815281289611,
+            40.6646571552429
+          ],
+          [
+            -74.1813708966977,
+            40.664752798832
+          ],
+          [
+            -74.1811753275148,
+            40.6648745502432
+          ],
+          [
+            -74.1810679023285,
+            40.6649499619649
+          ],
+          [
+            -74.1809872814034,
+            40.6650138091354
+          ],
+          [
+            -74.180906640338,
+            40.6650892947003
+          ],
+          [
+            -74.1808336129001,
+            40.6651705930379
+          ],
+          [
+            -74.1807566739203,
+            40.6652635748579
+          ],
+          [
+            -74.1806834933294,
+            40.6653769071618
+          ],
+          [
+            -74.1806217913732,
+            40.6654873901343
+          ],
+          [
+            -74.1805830843435,
+            40.6655833595072
+          ],
+          [
+            -74.1805597408359,
+            40.6656706418145
+          ],
+          [
+            -74.1805554254913,
+            40.6657667342328
+          ],
+          [
+            -74.1805589072065,
+            40.6658453620926
+          ],
+          [
+            -74.1805702254412,
+            40.6658910711386
+          ],
+          [
+            -74.1805776528397,
+            40.6659210944072
+          ],
+          [
+            -74.1806040892537,
+            40.6659939669595
+          ],
+          [
+            -74.1806381745923,
+            40.6660581302057
+          ],
+          [
+            -74.1806668784061,
+            40.6660943066996
+          ],
+          [
+            -74.1805984619162,
+            40.666168481239
+          ],
+          [
+            -74.1803196519102,
+            40.6664708727663
+          ],
+          [
+            -74.1801965851932,
+            40.6666051758657
+          ],
+          [
+            -74.1796178279486,
+            40.6672250223279
+          ],
+          [
+            -74.1795101878355,
+            40.6673399729761
+          ],
+          [
+            -74.1793983127283,
+            40.6674594445013
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_a_nb_turnpike_exit",
+        "edge_type": "directed_roadway_corridor",
+        "name": "NJ Turnpike northbound Exit 13A authority ramps",
+        "from_node": "node_a_nb_turnpike_exit13a",
+        "to_node": "node_a_nb_turnpike_state_ramp_transition",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "sequence_by_approach": {
+          "approach_a_turnpike_nb": 1
+        },
+        "official_feature_ids": [
+          593,
+          202013,
+          253552,
+          394565,
+          366856
+        ],
+        "official_feature_names": [
+          "FR NJ TURNPIKE NB TO NJ 81 NB",
+          "NEW JERSEY TPKE"
+        ],
+        "official_sri_ids": [
+          "00000095__A105590",
+          "00000095__"
+        ],
+        "official_shield_types_raw": [
+          "N",
+          "TPK"
+        ],
+        "official_shield_numbers_raw": [],
+        "official_oneway_raw": [
+          "FT"
+        ],
+        "jurisdiction_code_raw": "HA",
+        "jurisdiction_label": "Highway Authority",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.1824480609753,
+            40.6636843947186
+          ],
+          "end_coordinate": [
+            -74.1793983127283,
+            40.6674594445013
+          ],
+          "topology_method": "ordered_exact_endpoint_equality"
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1793983127283,
+            40.6674594445013
+          ],
+          [
+            -74.1794461159988,
+            40.6675120896236
+          ],
+          [
+            -74.1795314990025,
+            40.6676067558307
+          ],
+          [
+            -74.1796071286622,
+            40.6676904156505
+          ],
+          [
+            -74.1796675986982,
+            40.6677556133169
+          ],
+          [
+            -74.1796943177737,
+            40.6677844284049
+          ],
+          [
+            -74.1797733027675,
+            40.6678677119631
+          ],
+          [
+            -74.1797908081554,
+            40.6678861526385
+          ],
+          [
+            -74.1798531504433,
+            40.6679516850188
+          ],
+          [
+            -74.1798948315398,
+            40.6679956113442
+          ],
+          [
+            -74.1799309167977,
+            40.6680336484058
+          ],
+          [
+            -74.1800163203051,
+            40.6681243066177
+          ],
+          [
+            -74.1800990667698,
+            40.6682126518586
+          ],
+          [
+            -74.1801063482608,
+            40.6682204955756
+          ],
+          [
+            -74.1801779376625,
+            40.6682975000678
+          ],
+          [
+            -74.1802205121865,
+            40.668343157907
+          ],
+          [
+            -74.1802554461995,
+            40.6683806152906
+          ],
+          [
+            -74.1803411348542,
+            40.6684721800546
+          ],
+          [
+            -74.1804233859216,
+            40.66855893142
+          ],
+          [
+            -74.1805011174072,
+            40.6686408114636
+          ],
+          [
+            -74.1805822861381,
+            40.6687279172584
+          ],
+          [
+            -74.1806613807148,
+            40.668818942089
+          ],
+          [
+            -74.1807353432722,
+            40.6689124779665
+          ],
+          [
+            -74.1808053161449,
+            40.669011547782
+          ],
+          [
+            -74.1808681721668,
+            40.6691133978602
+          ],
+          [
+            -74.1809194616196,
+            40.6692066241825
+          ],
+          [
+            -74.1809679030991,
+            40.6692998426117
+          ],
+          [
+            -74.181016735711,
+            40.6693941599353
+          ],
+          [
+            -74.181065966001,
+            40.6694884513173
+          ],
+          [
+            -74.1811157685204,
+            40.6695835674087
+          ],
+          [
+            -74.1811653885243,
+            40.6696792863776
+          ],
+          [
+            -74.1812130731743,
+            40.6697723657154
+          ],
+          [
+            -74.1812608625991,
+            40.669866570175
+          ],
+          [
+            -74.1813091886303,
+            40.6699613803994
+          ],
+          [
+            -74.1813122568357,
+            40.6699673382537
+          ],
+          [
+            -74.1813581260526,
+            40.6700567407568
+          ],
+          [
+            -74.1814083251247,
+            40.6701522144468
+          ],
+          [
+            -74.1814611436254,
+            40.6702500567218
+          ],
+          [
+            -74.1815145777163,
+            40.6703475710484
+          ],
+          [
+            -74.1815688814158,
+            40.6704440718664
+          ],
+          [
+            -74.181631656685,
+            40.6705482547466
+          ],
+          [
+            -74.1816988522515,
+            40.6706482223447
+          ],
+          [
+            -74.1817731247461,
+            40.6707457111333
+          ],
+          [
+            -74.1818543801307,
+            40.6708381135934
+          ],
+          [
+            -74.1819360187811,
+            40.67091810944
+          ],
+          [
+            -74.1820348692705,
+            40.6710024899322
+          ],
+          [
+            -74.1821415308004,
+            40.6710822528347
+          ],
+          [
+            -74.1822521515629,
+            40.6711555205757
+          ],
+          [
+            -74.1823700386391,
+            40.6712248005149
+          ],
+          [
+            -74.1824808049686,
+            40.6712829428055
+          ],
+          [
+            -74.1824945457963,
+            40.6712894316117
+          ],
+          [
+            -74.1824334078644,
+            40.6712727653278
+          ],
+          [
+            -74.1822391740126,
+            40.6712085186826
+          ],
+          [
+            -74.182058465512,
+            40.671158089084
+          ],
+          [
+            -74.18179779279,
+            40.6710852588052
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_a_nb_state_ramps_to_north_ave",
+        "edge_type": "directed_roadway_corridor",
+        "name": "Exit 13A state ramp system to North Avenue",
+        "from_node": "node_a_nb_turnpike_state_ramp_transition",
+        "to_node": "node_a_nb_joins_north_ave",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "sequence_by_approach": {
+          "approach_a_turnpike_nb": 2
+        },
+        "official_feature_ids": [
+          198235,
+          316085,
+          52367,
+          32868,
+          84767,
+          72452,
+          305854,
+          326201,
+          97634,
+          222590
+        ],
+        "official_feature_names": [
+          "FR PRIVATE RD TO RAMP Y200020",
+          "FR RT 81 NB TO NORTH AVE"
+        ],
+        "official_sri_ids": [
+          "00000081__Y300020",
+          "00000081__A100020"
+        ],
+        "official_shield_types_raw": [
+          "N"
+        ],
+        "official_shield_numbers_raw": [],
+        "official_oneway_raw": [
+          "FT"
+        ],
+        "jurisdiction_code_raw": "S",
+        "jurisdiction_label": "State",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.1793983127283,
+            40.6674594445013
+          ],
+          "end_coordinate": [
+            -74.18179779279,
+            40.6710852588052
+          ],
+          "topology_method": "ordered_exact_endpoint_equality"
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.18179779279,
+            40.6710852588052
+          ],
+          [
+            -74.1813074727939,
+            40.6709135862392
+          ],
+          [
+            -74.1807485425308,
+            40.6707178892424
+          ],
+          [
+            -74.1802754232595,
+            40.6705522326463
+          ],
+          [
+            -74.1801332260287,
+            40.6705024434237
+          ],
+          [
+            -74.1793584307254,
+            40.6702238686748
+          ],
+          [
+            -74.1789647853761,
+            40.6700798121953
+          ],
+          [
+            -74.1785517799026,
+            40.6699210980933
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_ab_shared_north_ave_to_all_merge",
+        "edge_type": "directed_roadway_corridor",
+        "name": "North Avenue from Turnpike northbound merge to all-approach merge",
+        "from_node": "node_a_nb_joins_north_ave",
+        "to_node": "node_paths_merge_north_avenue",
+        "path_ids": [
+          "path_a_exit13a_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_nb"
+        ],
+        "sequence_by_approach": {
+          "approach_a_turnpike_nb": 3
+        },
+        "official_feature_ids": [
+          372772,
+          363113,
+          355826,
+          350133
+        ],
+        "official_feature_names": [
+          "North Avenue"
+        ],
+        "official_list_names": [
+          "NORTH AVE"
+        ],
+        "official_sri_ids": [
+          "20000624__"
+        ],
+        "official_shield_types_raw": [
+          "COR"
+        ],
+        "official_shield_numbers_raw": [
+          "624"
+        ],
+        "official_oneway_raw": [
+          "FT"
+        ],
+        "jurisdiction_code_raw": "C",
+        "jurisdiction_label": "County",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.18179779279,
+            40.6710852588052
+          ],
+          "end_coordinate": [
+            -74.1785517799026,
+            40.6699210980933
+          ],
+          "topology_method": "ordered_exact_endpoint_equality"
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1941020913149,
+            40.6799845147686
+          ],
+          [
+            -74.1943612789308,
+            40.6797506826067
+          ],
+          [
+            -74.1947830747447,
+            40.6794049882509
+          ],
+          [
+            -74.1948658000007,
+            40.6793371862306
+          ],
+          [
+            -74.1952005573373,
+            40.6790591467533
+          ],
+          [
+            -74.1956579236126,
+            40.6786813176997
+          ],
+          [
+            -74.1961718683929,
+            40.6782535117819
+          ],
+          [
+            -74.1967659610562,
+            40.6777615426043
+          ],
+          [
+            -74.1969261616101,
+            40.6776332761542
+          ],
+          [
+            -74.197095961757,
+            40.6774870811537
+          ],
+          [
+            -74.197175870654,
+            40.6774213279391
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_b_us1_south",
+        "edge_type": "directed_roadway_corridor",
+        "name": "US Highway 1 Express",
+        "from_node": "node_path_b_us1_south_access",
+        "to_node": "node_path_b_north_avenue_entry",
+        "path_ids": [
+          "path_b_us1_9_to_apm"
+        ],
+        "sequence_by_path": {
+          "path_b_us1_9_to_apm": 1
+        },
+        "official_feature_ids": [
+          301684
+        ],
+        "official_feature_name": "US Highway 1 Express",
+        "official_list_names": [
+          "US HWY 1 EXP"
+        ],
+        "official_sri_ids": [
+          "00000001ES"
+        ],
+        "official_shield_types_raw": [
+          "USR"
+        ],
+        "official_shield_numbers_raw": [
+          "1"
+        ],
+        "official_oneway_raw": [
+          "FT"
+        ],
+        "jurisdiction_code_raw": "S",
+        "jurisdiction_label": "State",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "sequence_source_id": "apm_directions",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.1941020913149,
+            40.6799845147686
+          ],
+          "end_coordinate": [
+            -74.197175870654,
+            40.6774213279391
+          ]
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.197175870654,
+            40.6774213279391
+          ],
+          [
+            -74.1969742954901,
+            40.6773390514012
+          ],
+          [
+            -74.1965513573411,
+            40.6771664371068
+          ],
+          [
+            -74.1965392216709,
+            40.6771614852206
+          ],
+          [
+            -74.1962709814885,
+            40.6770550680897
+          ],
+          [
+            -74.196174465366,
+            40.6770167835154
+          ],
+          [
+            -74.195789461161,
+            40.6768640632817
+          ],
+          [
+            -74.1946897983096,
+            40.6764227221962
+          ],
+          [
+            -74.1932027210996,
+            40.675827827505
+          ],
+          [
+            -74.1931916906239,
+            40.6758223873745
+          ],
+          [
+            -74.1930642478524,
+            40.6757595234218
+          ],
+          [
+            -74.1929060119474,
+            40.6756814698224
+          ],
+          [
+            -74.1927766234355,
+            40.6756176637494
+          ],
+          [
+            -74.192765535196,
+            40.6756121955057
+          ],
+          [
+            -74.1921846648413,
+            40.6753985663778
+          ],
+          [
+            -74.1915907315534,
+            40.6751801505538
+          ],
+          [
+            -74.1912432377241,
+            40.6750394717207
+          ],
+          [
+            -74.1912320096083,
+            40.6750348846454
+          ],
+          [
+            -74.1905598405149,
+            40.6747627809787
+          ],
+          [
+            -74.1904732184652,
+            40.67472812596
+          ],
+          [
+            -74.1903405338391,
+            40.6746750651137
+          ],
+          [
+            -74.1902599547556,
+            40.6746428415578
+          ],
+          [
+            -74.189922589591,
+            40.6745036962238
+          ],
+          [
+            -74.1897818853396,
+            40.674446423593
+          ],
+          [
+            -74.1894040635799,
+            40.6742926359108
+          ],
+          [
+            -74.1891626434249,
+            40.6741983685726
+          ],
+          [
+            -74.1890353935267,
+            40.6741486819041
+          ],
+          [
+            -74.1885418275893,
+            40.6739519594861
+          ],
+          [
+            -74.1883589890233,
+            40.6738742151277
+          ],
+          [
+            -74.1881357638203,
+            40.6737792985802
+          ],
+          [
+            -74.1878546482209,
+            40.673664180394
+          ],
+          [
+            -74.1875549713582,
+            40.6735013297762
+          ],
+          [
+            -74.1873926722212,
+            40.6734055553553
+          ],
+          [
+            -74.1872491791704,
+            40.6733051097848
+          ],
+          [
+            -74.1871698280496,
+            40.6732353079348
+          ],
+          [
+            -74.1870372274477,
+            40.6731186681478
+          ],
+          [
+            -74.1868358341613,
+            40.6729298861684
+          ],
+          [
+            -74.1868128763373,
+            40.6729083661323
+          ],
+          [
+            -74.1864703258701,
+            40.672540479475
+          ],
+          [
+            -74.1863353347145,
+            40.6723913314157
+          ],
+          [
+            -74.1863146615773,
+            40.672368490897
+          ],
+          [
+            -74.1862399792148,
+            40.6722872544172
+          ],
+          [
+            -74.1861984858682,
+            40.6722479969431
+          ],
+          [
+            -74.1861344521399,
+            40.6721873501022
+          ],
+          [
+            -74.1861339858025,
+            40.6721869093402
+          ],
+          [
+            -74.1859782246155,
+            40.6720434970738
+          ],
+          [
+            -74.1858159838927,
+            40.671928697137
+          ],
+          [
+            -74.1856286484913,
+            40.6718376279872
+          ],
+          [
+            -74.1854899261214,
+            40.6717743890087
+          ],
+          [
+            -74.1854287674727,
+            40.6717465243539
+          ],
+          [
+            -74.1852287879763,
+            40.6716840241623
+          ],
+          [
+            -74.1851798814554,
+            40.6716727179432
+          ],
+          [
+            -74.1850411931759,
+            40.6716406069653
+          ],
+          [
+            -74.1849091187234,
+            40.6716207026328
+          ],
+          [
+            -74.1848160240261,
+            40.6716066684196
+          ],
+          [
+            -74.1843468268882,
+            40.671562481058
+          ],
+          [
+            -74.1839025911733,
+            40.6715231369268
+          ],
+          [
+            -74.1833144813403,
+            40.6714738717915
+          ],
+          [
+            -74.1831888296338,
+            40.6714603936004
+          ],
+          [
+            -74.1829953974677,
+            40.6714396441576
+          ],
+          [
+            -74.1827702301885,
+            40.6714056737091
+          ],
+          [
+            -74.1827478569206,
+            40.671402207958
+          ],
+          [
+            -74.1826138765173,
+            40.6713813888561
+          ],
+          [
+            -74.1824701237628,
+            40.6713381159046
+          ],
+          [
+            -74.1824511066697,
+            40.6713308119487
+          ],
+          [
+            -74.1822282846219,
+            40.6712452162131
+          ],
+          [
+            -74.1819578150327,
+            40.6711413137401
+          ],
+          [
+            -74.18179779279,
+            40.6710852588052
+          ],
+          [
+            -74.1813074727939,
+            40.6709135862392
+          ],
+          [
+            -74.1807485425308,
+            40.6707178892424
+          ],
+          [
+            -74.1802754232595,
+            40.6705522326463
+          ],
+          [
+            -74.1801332260287,
+            40.6705024434237
+          ],
+          [
+            -74.1793584307254,
+            40.6702238686748
+          ],
+          [
+            -74.1789647853761,
+            40.6700798121953
+          ],
+          [
+            -74.1785517799026,
+            40.6699210980933
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_b_north_avenue_to_merge",
+        "edge_type": "directed_roadway_corridor",
+        "name": "North Avenue East",
+        "from_node": "node_path_b_north_avenue_entry",
+        "to_node": "node_paths_merge_north_avenue",
+        "path_ids": [
+          "path_b_us1_9_to_apm"
+        ],
+        "sequence_by_path": {
+          "path_b_us1_9_to_apm": 2
+        },
+        "official_feature_ids": [
+          21853,
+          36098,
+          275508,
+          38315,
+          149567,
+          397476,
+          379364,
+          377733,
+          352874,
+          362442,
+          362068,
+          392458,
+          356932,
+          355367,
+          395878,
+          392976,
+          393144,
+          356943,
+          372772,
+          363113,
+          355826,
+          350133
+        ],
+        "official_feature_names": [
+          "North Avenue East",
+          "North Avenue"
+        ],
+        "official_list_names": [
+          "NORTH AVE E",
+          "NORTH AVE"
+        ],
+        "official_sri_ids": [
+          "20000624__"
+        ],
+        "official_shield_types_raw": [
+          "COR"
+        ],
+        "official_shield_numbers_raw": [
+          "624"
+        ],
+        "official_oneway_raw": [
+          "B",
+          "FT"
+        ],
+        "jurisdiction_code_raw": "C",
+        "official_nhs_designations": {
+          "fhwa_nhs_2025": {
+            "source_id": "fhwa_nhs_shapefile_2025_08_08",
+            "nhs_code_raw": 7,
+            "nhs_code_official_meaning": "Other NHS",
+            "nhs_code_meaning_source": "Attribute domain in the archived FHWA shapefile metadata",
+            "status_raw": 1,
+            "matched_routeid": "20041769__",
+            "matched_signed_route_raw": "C624",
+            "matched_local_name_raw": "North Av",
+            "matched_milepost_range": [
+              0.66,
+              2.51
+            ],
+            "match_basis": "SIGN1 'C624' and LNAME 'North Av' in Union County (STFIPS 34, CTFIPS 39) in the archived extract"
+          }
+        },
+        "jurisdiction_label": "County",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "sequence_source_id": "apm_directions",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.197175870654,
+            40.6774213279391
+          ],
+          "end_coordinate": [
+            -74.1785517799026,
+            40.6699210980933
+          ],
+          "topology_method": "exact_endpoint_equality"
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.1785517799026,
+            40.6699210980933
+          ],
+          [
+            -74.1785274542702,
+            40.6699117793721
+          ],
+          [
+            -74.178457540688,
+            40.6698836128614
+          ],
+          [
+            -74.1781349255739,
+            40.6697536971712
+          ],
+          [
+            -74.1780665953983,
+            40.6697261652596
+          ],
+          [
+            -74.1778865785188,
+            40.6696536887863
+          ],
+          [
+            -74.1774869640528,
+            40.6694927287979
+          ],
+          [
+            -74.1772474704325,
+            40.6693962579189
+          ],
+          [
+            -74.1772406342264,
+            40.6693934937708
+          ],
+          [
+            -74.1760613786787,
+            40.6689174349257
+          ],
+          [
+            -74.1760162656619,
+            40.6688992233342
+          ],
+          [
+            -74.1757036593824,
+            40.6687763581316
+          ],
+          [
+            -74.1754727833123,
+            40.668685614892
+          ],
+          [
+            -74.1752291707069,
+            40.6685848458725
+          ],
+          [
+            -74.174855767982,
+            40.6684926863455
+          ],
+          [
+            -74.1737612005276,
+            40.6679945308579
+          ],
+          [
+            -74.1737550543339,
+            40.6679919737901
+          ],
+          [
+            -74.172561962061,
+            40.6674954909037
+          ],
+          [
+            -74.1717222701328,
+            40.6671530684444
+          ],
+          [
+            -74.1715959390677,
+            40.6671015504172
+          ],
+          [
+            -74.1709379347075,
+            40.6668332154653
+          ],
+          [
+            -74.1696948795675,
+            40.6663387975991
+          ],
+          [
+            -74.1684954651828,
+            40.6658873963939
+          ],
+          [
+            -74.1679523546066,
+            40.6656813294382
+          ],
+          [
+            -74.1675484724287,
+            40.6655183747118
+          ],
+          [
+            -74.1674761584181,
+            40.6654891048977
+          ],
+          [
+            -74.1671075733825,
+            40.6653399115299
+          ],
+          [
+            -74.166892171055,
+            40.6652545507033
+          ],
+          [
+            -74.1668113702354,
+            40.6652286512654
+          ],
+          [
+            -74.1667204130683,
+            40.665207828881
+          ],
+          [
+            -74.16663610768,
+            40.665205032304
+          ],
+          [
+            -74.1665382824409,
+            40.6652098832765
+          ],
+          [
+            -74.166443767583,
+            40.6652301701734
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_shared_north_avenue",
+        "edge_type": "directed_roadway_corridor",
+        "name": "North Avenue",
+        "from_node": "node_paths_merge_north_avenue",
+        "to_node": "node_north_avenue_mclester",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "sequence_by_path": {
+          "path_a_exit13a_to_apm": 2,
+          "path_b_us1_9_to_apm": 3
+        },
+        "official_feature_ids": [
+          375671,
+          359216,
+          397787,
+          361290,
+          364408,
+          394080,
+          363572,
+          243281,
+          144184
+        ],
+        "official_feature_names": [
+          "North Avenue",
+          "North Avenue East"
+        ],
+        "official_list_names": [
+          "NORTH AVE",
+          "NORTH AVE E"
+        ],
+        "official_sri_ids": [
+          "20000624__"
+        ],
+        "official_shield_types_raw": [
+          "COR"
+        ],
+        "official_shield_numbers_raw": [
+          "624"
+        ],
+        "official_oneway_raw": [
+          "FT",
+          "B"
+        ],
+        "jurisdiction_code_raw": "C",
+        "official_nhs_designations": {
+          "fhwa_nhs_2025": {
+            "source_id": "fhwa_nhs_shapefile_2025_08_08",
+            "nhs_code_raw": 7,
+            "nhs_code_official_meaning": "Other NHS",
+            "nhs_code_meaning_source": "Attribute domain in the archived FHWA shapefile metadata",
+            "status_raw": 1,
+            "matched_routeid": "20041769__",
+            "matched_signed_route_raw": "C624",
+            "matched_local_name_raw": "North Av",
+            "matched_milepost_range": [
+              0.66,
+              2.51
+            ],
+            "match_basis": "SIGN1 'C624' and LNAME 'North Av' in Union County (STFIPS 34, CTFIPS 39) in the archived extract"
+          }
+        },
+        "jurisdiction_label": "County",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "sequence_source_id": "apm_directions",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.1785517799026,
+            40.6699210980933
+          ],
+          "end_coordinate": [
+            -74.166443767583,
+            40.6652301701734
+          ],
+          "topology_method": "exact_endpoint_equality"
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.166443767583,
+            40.6652301701734
+          ],
+          [
+            -74.1662740562298,
+            40.6652249399189
+          ],
+          [
+            -74.165987098313,
+            40.665275278906
+          ],
+          [
+            -74.1655112414577,
+            40.6654751638694
+          ],
+          [
+            -74.1652272439478,
+            40.665829109394
+          ],
+          [
+            -74.1650445031308,
+            40.6665381155899
+          ],
+          [
+            -74.1649308004517,
+            40.6668789091467
+          ],
+          [
+            -74.1647716149778,
+            40.6673560191768
+          ],
+          [
+            -74.1646605507746,
+            40.6676207442969
+          ],
+          [
+            -74.1640968424256,
+            40.6684245911011
+          ],
+          [
+            -74.1636739905838,
+            40.6690275650707
+          ],
+          [
+            -74.1630560652468,
+            40.6699312435046
+          ],
+          [
+            -74.1624601018882,
+            40.6707840832975
+          ],
+          [
+            -74.1620158099305,
+            40.6714198593432
+          ],
+          [
+            -74.1614005761472,
+            40.6723209021117
+          ],
+          [
+            -74.1612591186381,
+            40.6725280671182
+          ],
+          [
+            -74.1609361685821,
+            40.6729883907835
+          ],
+          [
+            -74.1602314145613,
+            40.6739929036273
+          ],
+          [
+            -74.160114111665,
+            40.674167142869
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_shared_mclester",
+        "edge_type": "directed_roadway_corridor",
+        "name": "McLester Street",
+        "from_node": "node_north_avenue_mclester",
+        "to_node": "node_mclester_tripoli",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "sequence_by_path": {
+          "path_a_exit13a_to_apm": 3,
+          "path_b_us1_9_to_apm": 4
+        },
+        "official_feature_ids": [
+          433606,
+          219821,
+          253519,
+          320648
+        ],
+        "official_feature_name": "McLester Street",
+        "official_list_names": [
+          "MCLESTER ST"
+        ],
+        "official_sri_ids": [
+          "200413892_"
+        ],
+        "official_shield_types_raw": [
+          "N"
+        ],
+        "official_shield_numbers_raw": [],
+        "official_oneway_raw": [
+          "B"
+        ],
+        "jurisdiction_code_raw": "M",
+        "official_nhs_designations": {
+          "fhwa_nhs_2025": {
+            "source_id": "fhwa_nhs_shapefile_2025_08_08",
+            "segments": [
+              {
+                "milepost_range": [
+                  0.0,
+                  1.0
+                ],
+                "nhs_code_raw": 7,
+                "nhs_code_official_meaning": "Other NHS"
+              },
+              {
+                "milepost_range": [
+                  1.0,
+                  1.47
+                ],
+                "nhs_code_raw": 10,
+                "nhs_code_official_meaning": "Principal arterial added to the NHS under MAP-21"
+              }
+            ],
+            "nhs_code_meaning_source": "Attribute domain in the archived FHWA shapefile metadata",
+            "status_raw": 1,
+            "matched_routeid": "200413892_",
+            "match_basis": "ROUTEID in the archived extract equals this edge's NJOGIS SRI 200413892_; Union County (STFIPS 34, CTFIPS 39)"
+          }
+        },
+        "jurisdiction_label": "Municipal",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "sequence_source_id": "apm_directions",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.166443767583,
+            40.6652301701734
+          ],
+          "end_coordinate": [
+            -74.160114111665,
+            40.674167142869
+          ],
+          "topology_method": "exact_endpoint_equality"
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.160114111665,
+            40.674167142869
+          ],
+          [
+            -74.1598961389648,
+            40.6740800602963
+          ],
+          [
+            -74.15832195896377,
+            40.673451154979496
+          ]
+        ]
+      },
+      "properties": {
+        "edge_id": "edge_shared_tripoli_gate",
+        "edge_type": "directed_roadway_corridor",
+        "name": "Tripoli Street",
+        "from_node": "node_mclester_tripoli",
+        "to_node": "node_apm_inbound_gate",
+        "path_ids": [
+          "path_a_exit13a_to_apm",
+          "path_b_us1_9_to_apm"
+        ],
+        "approach_ids": [
+          "approach_a_turnpike_sb",
+          "approach_a_turnpike_nb"
+        ],
+        "sequence_by_path": {
+          "path_a_exit13a_to_apm": 4,
+          "path_b_us1_9_to_apm": 5
+        },
+        "official_feature_ids": [
+          374024
+        ],
+        "official_feature_name": "Tripoli Street",
+        "official_list_names": [
+          "TRIPOLI ST"
+        ],
+        "official_sri_ids": [
+          "20041004__"
+        ],
+        "official_shield_types_raw": [
+          "N"
+        ],
+        "official_shield_numbers_raw": [],
+        "official_oneway_raw": [
+          "B"
+        ],
+        "jurisdiction_code_raw": "M",
+        "jurisdiction_label": "Municipal",
+        "geometry_source_id": "njogis_road_centerlines_2026_07_26",
+        "sequence_source_id": "apm_directions",
+        "gate_observation_source_id": "google_maps_route_observation_2026_07_31",
+        "geometry_reference": {
+          "local_path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "start_coordinate": [
+            -74.160114111665,
+            40.674167142869
+          ],
+          "end_coordinate": [
+            -74.1583229,
+            40.6734498
+          ],
+          "official_centerline_feature_id": 374024,
+          "official_feature_coverage": "partial_feature_from_mclester_intersection_to_observed_gate_coordinate",
+          "gate_coordinate_distance_from_official_centerline_meters": 0.17,
+          "distance_calculation": "nearest_point_equirectangular_projection",
+          "google_maps_observation": {
+            "observation_date": "2026-07-31",
+            "route_step_text": [
+              "Turn right",
+              "Continue onto Tripoli St",
+              "Destination will be on the right"
+            ]
+          }
+        },
+        "source_trace_complete": true,
+        "coupling_status": "ready",
+        "gate_centerline_offset_metres": 0.17029127618259143
+      }
+    }
+  ]
+}

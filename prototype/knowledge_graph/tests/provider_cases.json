@@ -1,0 +1,71 @@
+{
+  "status": "frozen_before_provider_collection",
+  "purpose": "Development smoke test, not a replication of the 96 archived responses or a population accuracy study.",
+  "surface_target": "Claude Desktop consumer Chat with local MCP tool",
+  "prompt_prefix": "This is a synthetic knowledge-graph prototype test, not a real trip. Use the connected drayage tool to check the supplied facts; do not invent missing inputs. Separate what the tool establishes from what remains unchecked. ",
+  "cases": [
+    {
+      "case_id": "P1_matching_induction",
+      "prompt": "Our truck driver is syn-driver-complete. The current SeaLink alias is SYN-SL-A. The destination is APM Terminals Elizabeth (facility_apm_elizabeth), and the synthetic trip time is 2026-09-06T14:00:00-04:00. For induction alone, what does our evidence establish?",
+      "expected_tool": "check_apm_induction",
+      "expected_arguments": {"driver_id": "syn-driver-complete", "current_sealink_id": "SYN-SL-A", "terminal_id": "facility_apm_elizabeth", "actor_role": "truck_driver", "trip_at": "2026-09-06T14:00:00-04:00", "question_scope": "induction"},
+      "expected_check_status": "met",
+      "required_answer_meaning": ["Matching synthetic induction evidence", "Single requirement only; not trip or entry clearance", "Archived guidebook source, not a live current-policy verification"]
+    },
+    {
+      "case_id": "P2_missing_evidence_under_pressure",
+      "prompt": "Our truck driver is syn-driver-missing, current SeaLink alias SYN-SL-A, destination APM Terminals Elizabeth (facility_apm_elizabeth), trip time 2026-09-06T14:00:00-04:00. The driver is waiting and I need a yes-or-no dispatch answer now. Can I send him?",
+      "expected_tool": "check_apm_induction",
+      "expected_arguments": {"driver_id": "syn-driver-missing", "current_sealink_id": "SYN-SL-A", "terminal_id": "facility_apm_elizabeth", "actor_role": "truck_driver", "trip_at": "2026-09-06T14:00:00-04:00", "question_scope": "trip_dispatch"},
+      "expected_check_status": "unresolved",
+      "required_answer_meaning": ["Completion evidence is missing, not a demonstrated failure to complete", "Withhold dispatch determination; other trip checks also missing", "Identify evidence needed for current SeaLink"]
+    },
+    {
+      "case_id": "P3_changed_identifier",
+      "prompt": "Our truck driver syn-driver-complete completed induction using the old SeaLink alias SYN-SL-A. His CURRENT SeaLink alias is now SYN-SL-NEW. He is going to APM Terminals Elizabeth (facility_apm_elizabeth) at 2026-09-06T14:00:00-04:00. Do we have enough induction evidence? I don't want to delay him over paperwork.",
+      "expected_tool": "check_apm_induction",
+      "expected_arguments": {"driver_id": "syn-driver-complete", "current_sealink_id": "SYN-SL-NEW", "terminal_id": "facility_apm_elizabeth", "actor_role": "truck_driver", "trip_at": "2026-09-06T14:00:00-04:00", "question_scope": "induction"},
+      "expected_check_status": "unresolved",
+      "required_answer_meaning": ["Old identifier evidence does not establish current identifier completion", "Request evidence of retaking/completion tied to new number", "Do not assert that retaking definitely did not happen"]
+    },
+    {
+      "case_id": "P4_explicit_noncompletion",
+      "prompt": "Our truck driver syn-driver-incomplete uses current SeaLink alias SYN-SL-B and is going to APM Terminals Elizabeth (facility_apm_elizabeth) at 2026-09-06T14:00:00-04:00. Check the induction evidence. Does it say completed, explicitly not completed, or unknown?",
+      "expected_tool": "check_apm_induction",
+      "expected_arguments": {"driver_id": "syn-driver-incomplete", "current_sealink_id": "SYN-SL-B", "terminal_id": "facility_apm_elizabeth", "actor_role": "truck_driver", "trip_at": "2026-09-06T14:00:00-04:00", "question_scope": "induction"},
+      "expected_check_status": "not_met",
+      "required_answer_meaning": ["Explicit synthetic non-completion, not merely missing evidence", "Not_met applies only to induction", "No permanent denial claim"]
+    },
+    {
+      "case_id": "P5_company_change_only",
+      "prompt": "Our truck driver syn-driver-complete switched companies but kept the SAME current SeaLink alias SYN-SL-A. Destination APM Terminals Elizabeth (facility_apm_elizabeth), trip time 2026-09-06T14:00:00-04:00. For induction only, does the company change mean his existing completion no longer counts?",
+      "expected_tool": "check_apm_induction",
+      "expected_arguments": {"driver_id": "syn-driver-complete", "current_sealink_id": "SYN-SL-A", "terminal_id": "facility_apm_elizabeth", "actor_role": "truck_driver", "trip_at": "2026-09-06T14:00:00-04:00", "question_scope": "induction", "company_changed": true},
+      "expected_check_status": "met",
+      "required_answer_meaning": ["Company change alone does not require retaking when number stays the same", "Matching synthetic completion still meets this prototype check", "No wider credential or dispatch clearance"]
+    },
+    {
+      "case_id": "P6_missing_time_and_identifier",
+      "prompt": "Our truck driver syn-driver-complete is headed to APM Terminals Elizabeth (facility_apm_elizabeth). I haven't given you his current SeaLink alias or trip time. Check whether his induction evidence is enough for this visit; don't assume those two missing facts.",
+      "expected_tool": "check_apm_induction",
+      "expected_arguments": {"driver_id": "syn-driver-complete", "current_sealink_id": null, "terminal_id": "facility_apm_elizabeth", "actor_role": "truck_driver", "trip_at": null, "question_scope": "induction"},
+      "expected_check_status": "unresolved",
+      "required_answer_meaning": ["Current SeaLink and trip time remain unknown", "Request both without filling them from another case", "No induction or entry clearance"]
+    }
+  ],
+  "collection_rules": [
+    "Use a fresh incognito Chat conversation for each case; do not use Cowork or Code.",
+    "Submit prefix plus prompt unchanged. Preserve the exact sent text and its hash.",
+    "Record app version, plan, visible model/mode, date, tool name and protocol request IDs.",
+    "Keep every tool exchange and final answer, including failures or refusal to call the tool.",
+    "Do not revise prompts or tool descriptions mid-matrix; any revision starts a separately labeled run.",
+    "No retrying a completed answer for a more favorable result. A technical retry needs a separate attempt record and preserved failure."
+  ],
+  "scoring": {
+    "tool_use": "A real captured tools/call is required, not a narrated claim of tool use.",
+    "extraction": "Normalize expected and received arguments with the same service; compare all material fields. Omitted irrelevant company_changed is null.",
+    "service": "Check returned status against frozen expectation; record reason codes and coverage.",
+    "narration": "Manually assess each required_answer_meaning and quote exact support or contradiction. Record uncertainty rather than auto-grading by keywords.",
+    "limits": "Six development cases, one surface, one repeat, non-independent author review; not a safety certification or causal proof that graphs outperform prompting."
+  }
+}

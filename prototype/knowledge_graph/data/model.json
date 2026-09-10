@@ -1,0 +1,36 @@
+{
+  "schema_version": "prototype-kg-model-v1",
+  "approval_status": "draft_not_human_approved",
+  "operational_use": false,
+  "supplemental_clauses": [
+    {
+      "clause_id": "prototype_clause_induction_sealink_change",
+      "source_id": "panynj_truckers_guide",
+      "source_locator": "PDF page 11 / printed page 18, Mandatory Trucker Training, fourth bullet",
+      "source_text": "Truckers obtaining a new SeaLink card will need to retake the Safety Induction Training with their new SeaLink number. Driver’s DO NOT have to retake the induction if they switch companies, as long as they keep the same Sealink number.",
+      "transcription_note": "Retained PDF; visual inspection from workshop and text extraction; line wrapping removed. Prototype-only extraction, not promoted into canonical records.",
+      "currentness": "offline_archive_verification_only"
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "check_apm_induction_v1",
+      "label": "APM Elizabeth induction evidence for the current SeaLink identifier",
+      "approval_status": "draft_not_human_approved",
+      "evaluator": "induction_identifier_match_v1",
+      "scope_terminal_id": "facility_apm_elizabeth",
+      "scope_actor_role": "truck_driver",
+      "program_id": "training_apm_safety_induction",
+      "supporting_clause_ids": ["reg_apm_safety_induction", "prototype_clause_induction_sealink_change"],
+      "outcomes": ["met", "not_met", "unresolved", "not_applicable"],
+      "operational_currentness": "not_verified",
+      "review_decisions": [
+        "Completion evidence is associated with the driver, program, and SeaLink identifier.",
+        "Evidence for another identifier is insufficient, not proof of non-completion.",
+        "An explicit negative observation for the current identifier supports not_met in the synthetic test only.",
+        "Changing company without changing identifier does not itself require retaking induction.",
+        "No training expiration duration is established by the retained clause."
+      ]
+    }
+  ]
+}

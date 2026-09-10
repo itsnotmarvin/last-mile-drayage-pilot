@@ -1,0 +1,492 @@
+{
+  "topology_key": "538987d0b05e739e48e769acb8d78f17c745660a0ee7f6c04ccae28b41997ac7",
+  "engine": "Graphviz sfdp",
+  "engine_version": "sfdp - graphviz version 15.1.0 (20260618.0150)",
+  "authoring_options": "overlap=prism, sep=+24, start=17, K=1.4, repulsiveforce=2, pack=36",
+  "positions": {
+    "apm_appointment_system": [
+      2931.6,
+      85.2
+    ],
+    "apm_directions": [
+      3288.6,
+      34.2
+    ],
+    "apm_hours_ops": [
+      1860.6,
+      952.2
+    ],
+    "approach_a_turnpike_nb": [
+      1547.4,
+      1219.6
+    ],
+    "approach_a_turnpike_sb": [
+      1766.2,
+      1455.3
+    ],
+    "authority_elizabeth_city": [
+      1718.2,
+      2201.9
+    ],
+    "authority_fhwa": [
+      75.86,
+      1601.0
+    ],
+    "authority_fmcsa": [
+      3392.8,
+      1622.5
+    ],
+    "authority_njdot": [
+      1197.6,
+      809.17
+    ],
+    "authority_njmvc": [
+      2892.8,
+      2530.2
+    ],
+    "authority_njta": [
+      2064.6,
+      2074.2
+    ],
+    "authority_panynj": [
+      2715.3,
+      1177.1
+    ],
+    "authority_union_county": [
+      1860.6,
+      697.2
+    ],
+    "authority_uscg": [
+      2208.8,
+      719.3
+    ],
+    "credential_cdl": [
+      3415.2,
+      1327.6
+    ],
+    "credential_rfid": [
+      2753.9,
+      1665.0
+    ],
+    "credential_sealink": [
+      2221.0,
+      1174.1
+    ],
+    "credential_twic": [
+      2439.6,
+      1024.9
+    ],
+    "ecfr_23_cfr_658_17_2026_07_29": [
+      75.6,
+      1369.7
+    ],
+    "ecfr_33_cfr_101_514_2026_07_29": [
+      2410.6,
+      719.67
+    ],
+    "ecfr_49_cfr_383_2026_07_29": [
+      3269.8,
+      1739.6
+    ],
+    "ecfr_twic_1572": [
+      1146.6,
+      2227.2
+    ],
+    "edge_a_exit13a_connector": [
+      872.23,
+      1644.2
+    ],
+    "edge_a_nb_state_ramps_to_north_ave": [
+      989.16,
+      1058.4
+    ],
+    "edge_a_nb_turnpike_exit": [
+      698.46,
+      1394.0
+    ],
+    "edge_ab_shared_north_ave_to_all_merge": [
+      1300.8,
+      1536.5
+    ],
+    "edge_b_north_avenue_to_merge": [
+      1164.1,
+      1657.2
+    ],
+    "edge_b_us1_south": [
+      790.16,
+      1184.8
+    ],
+    "edge_shared_mclester": [
+      1623.7,
+      1336.2
+    ],
+    "edge_shared_north_avenue": [
+      1385.4,
+      1653.0
+    ],
+    "edge_shared_tripoli_gate": [
+      1823.0,
+      1310.3
+    ],
+    "elizabeth_code_10_16_050_2025_11_11": [
+      1735.9,
+      1858.0
+    ],
+    "elizabeth_kapkowski_corridor_concept_report_2022": [
+      2727.6,
+      595.2
+    ],
+    "facility_apm_elizabeth": [
+      2217.6,
+      544.2
+    ],
+    "fhwa_nhs_shapefile_2025_08_08": [
+      1860.6,
+      442.2
+    ],
+    "google_maps_route_observation_2026_07_31": [
+      2013.6,
+      2482.2
+    ],
+    "jurisdiction_elizabeth": [
+      1189.2,
+      1292.9
+    ],
+    "jurisdiction_new_jersey": [
+      1656.6,
+      2482.2
+    ],
+    "jurisdiction_panynj_terminal": [
+      1299.6,
+      2482.2
+    ],
+    "jurisdiction_union_county": [
+      989.84,
+      1292.0
+    ],
+    "nj_large_truck_map": [
+      942.6,
+      2482.2
+    ],
+    "nj_size_weight_guidebook": [
+      1236.1,
+      925.65
+    ],
+    "njac_13_18_osow_portal_copy_2026_08_24": [
+      2892.8,
+      2016.2
+    ],
+    "njac_16_32_readoption_njr_2023_01_03": [
+      2421.6,
+      2533.2
+    ],
+    "njac_16_32_truck_access_current_2023": [
+      1234.6,
+      692.68
+    ],
+    "njac_19_9_1_9_cornell_2026_08_07": [
+      638.18,
+      2137.2
+    ],
+    "njdot_traffic_count_2024_station_3_3_024": [
+      789.6,
+      391.2
+    ],
+    "njdot_traffic_counts_c74r_6c8d_route624_2018": [
+      2574.6,
+      340.2
+    ],
+    "njdot_traffic_counts_c74r_6c8d_station_3_3_024_2020_2022": [
+      2931.6,
+      340.2
+    ],
+    "njdot_truck_routing_regulations_2026_08_24": [
+      738.6,
+      748.2
+    ],
+    "njogis_county_boundaries_2026_07_26": [
+      2217.6,
+      289.2
+    ],
+    "njogis_municipal_boundaries_2026_07_26": [
+      1146.6,
+      289.2
+    ],
+    "njogis_road_centerlines_2026_07_26": [
+      1503.6,
+      289.2
+    ],
+    "njpass_connecting_local_routes_application_comments": [
+      3084.6,
+      595.2
+    ],
+    "njpass_home_2026_08_24": [
+      1860.6,
+      187.2
+    ],
+    "njpass_nonstate_permit_authorities": [
+      2064.6,
+      2737.2
+    ],
+    "njpass_port_st_oversize_restrictions_2026_08_03": [
+      1707.6,
+      2737.2
+    ],
+    "njpass_route_survey_threshold": [
+      1350.6,
+      2737.2
+    ],
+    "njpass_state_routes_only_system_scope": [
+      993.6,
+      2737.2
+    ],
+    "njta_rules_readoption_2024": [
+      636.6,
+      2737.2
+    ],
+    "node_a_nb_joins_north_ave": [
+      1348.1,
+      1175.1
+    ],
+    "node_a_nb_turnpike_exit13a": [
+      499.16,
+      1364.1
+    ],
+    "node_a_nb_turnpike_state_ramp_transition": [
+      788.53,
+      1056.7
+    ],
+    "node_apm_inbound_gate": [
+      2221.6,
+      1401.7
+    ],
+    "node_mclester_tripoli": [
+      1867.9,
+      1142.1
+    ],
+    "node_north_avenue_mclester": [
+      1602.7,
+      1739.6
+    ],
+    "node_path_a_turnpike_sb_exit13a": [
+      437.42,
+      1884.4
+    ],
+    "node_path_b_north_avenue_entry": [
+      824.05,
+      1760.7
+    ],
+    "node_path_b_us1_south_access": [
+      588.36,
+      1077.4
+    ],
+    "node_paths_merge_north_avenue": [
+      981.61,
+      1877.1
+    ],
+    "operator_apm_terminals": [
+      2447.9,
+      1815.1
+    ],
+    "panynj_facilities_map_2020": [
+      585.6,
+      2482.2
+    ],
+    "panynj_marine_terminal_tariff": [
+      2811.6,
+      1060.6
+    ],
+    "panynj_truck_info": [
+      3084.6,
+      2788.2
+    ],
+    "panynj_truckers_guide": [
+      2420.9,
+      1469.3
+    ],
+    "path_a_exit13a_to_apm": [
+      1588.7,
+      1575.9
+    ],
+    "path_b_us1_9_to_apm": [
+      1424.4,
+      1420.0
+    ],
+    "porttruckpass_tips": [
+      2727.6,
+      2788.2
+    ],
+    "reg_apm_appointment": [
+      2385.0,
+      1698.7
+    ],
+    "reg_apm_safety_induction": [
+      2207.7,
+      1582.2
+    ],
+    "reg_elizabeth_five_ton_limit_streets": [
+      1519.2,
+      1858.4
+    ],
+    "reg_elizabeth_four_ton_limit_streets": [
+      1798.7,
+      1620.1
+    ],
+    "reg_elizabeth_north_avenue_east_zone": [
+      1627.5,
+      1976.7
+    ],
+    "reg_federal_cdl": [
+      3249.6,
+      1504.5
+    ],
+    "reg_federal_group_a_cmv": [
+      3162.6,
+      1622.4
+    ],
+    "reg_federal_interstate_weight": [
+      294.07,
+      1479.1
+    ],
+    "reg_federal_twic": [
+      2237.2,
+      949.07
+    ],
+    "reg_nj_access_network_600_series": [
+      1436.7,
+      987.91
+    ],
+    "reg_nj_height_limit": [
+      897.82,
+      1408.8
+    ],
+    "reg_nj_noninterstate_single_axle": [
+      1235.4,
+      1058.6
+    ],
+    "reg_nj_ocean_container_permit": [
+      1455.2,
+      747.95
+    ],
+    "reg_nj_osow_permit_requirement_13_18_portal_copy": [
+      3368.4,
+      2576.5
+    ],
+    "reg_nj_semitrailer_length": [
+      1225.1,
+      1412.9
+    ],
+    "reg_nj_single_trip_osow_permit": [
+      1543.8,
+      867.78
+    ],
+    "reg_nj_single_trip_route_review_13_18_portal_copy": [
+      2370.6,
+      2273.5
+    ],
+    "reg_nj_tandem_gross_bridge": [
+      1075.2,
+      1175.4
+    ],
+    "reg_nj_terminal_access_102_inch_standard_truck": [
+      1237.6,
+      544.2
+    ],
+    "reg_nj_toll_authority_approval_13_18_portal_copy": [
+      3370.7,
+      1972.2
+    ],
+    "reg_nj_truck_access_local_rule_preservation": [
+      1034.9,
+      595.67
+    ],
+    "reg_nj_width_limit": [
+      1025.8,
+      1527.8
+    ],
+    "reg_njta_roadway_use_limitations": [
+      636.7,
+      1877.1
+    ],
+    "reg_panynj_drayage_truck_deadline_34_1140": [
+      2926.1,
+      944.06
+    ],
+    "reg_panynj_dtr": [
+      2643.0,
+      1326.8
+    ],
+    "reg_panynj_dtr_engine": [
+      2997.5,
+      1179.0
+    ],
+    "reg_panynj_rfid": [
+      2629.4,
+      1446.4
+    ],
+    "reg_panynj_sealink_twic": [
+      2420.8,
+      1300.1
+    ],
+    "reg_panynj_terminal_traffic": [
+      2515.9,
+      1183.6
+    ],
+    "reg_panynj_terminal_weight_dimensions": [
+      2726.6,
+      895.07
+    ],
+    "reg_union_county_truck_routes_reserved": [
+      1398.8,
+      1979.4
+    ],
+    "registration_dtr": [
+      2842.3,
+      1360.8
+    ],
+    "representative_older_engine_drayage": [
+      534.6,
+      136.2
+    ],
+    "representative_osow_ocean_container": [
+      2574.6,
+      85.2
+    ],
+    "road_authority_category_county": [
+      1190.5,
+      1941.8
+    ],
+    "road_authority_category_highway_authority": [
+      544.26,
+      1607.7
+    ],
+    "road_authority_category_municipal": [
+      2022.3,
+      1290.6
+    ],
+    "road_authority_category_state": [
+      813.94,
+      919.38
+    ],
+    "scoped_80000lb_5axle_nonhaz_inbound_apm": [
+      2967.4,
+      1489.3
+    ],
+    "system_termpoint": [
+      2369.7,
+      1993.1
+    ],
+    "training_apm_safety_induction": [
+      2166.3,
+      1837.0
+    ],
+    "union_county_laws_2026": [
+      1423.0,
+      2095.8
+    ],
+    "union_county_truck_mobility_study_2021": [
+      2217.6,
+      34.2
+    ]
+  }
+}

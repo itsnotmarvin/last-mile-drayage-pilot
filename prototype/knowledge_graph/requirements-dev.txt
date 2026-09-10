@@ -1,0 +1,2 @@
+-r requirements-neo4j.txt
+networkx==3.6.1

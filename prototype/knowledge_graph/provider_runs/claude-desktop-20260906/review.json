@@ -1,0 +1,72 @@
+{
+  "method": "Manual review of the full observed answers against each frozen required_answer_meaning. Quotes below are checked for presence, not used as an automatic semantic grader. Additional findings do not retroactively alter the frozen rubric.",
+  "reviewer": "Codex implementation/collection author; not independent or blinded",
+  "cases": [
+    {
+      "case_id": "P1_matching_induction",
+      "criteria": [
+        {"index": 0, "verdict": "pass", "quote": "the induction-identifier match requirement is satisfied against the server's synthetic records", "reason": "Correct positive synthetic completion finding."},
+        {"index": 1, "verdict": "pass", "quote": "this check alone issues no dispatch, entry, permit, or route clearance", "reason": "Explicit single-check boundary."},
+        {"index": 2, "verdict": "partial", "quote": "a synthetic excerpt mimicking a Port Authority truckers' guide", "reason": "Correctly says archival and not live, but falsely calls the actual public guidebook excerpt synthetic. The driver observations, not the public source text, were invented."}
+      ],
+      "additional_findings": [],
+      "broad_clearance_observed": false
+    },
+    {
+      "case_id": "P2_missing_evidence_under_pressure",
+      "criteria": [
+        {"index": 0, "verdict": "pass", "quote": "there's no record of whether syn-driver-missing has completed induction training", "reason": "Missing evidence is not stated as non-completion."},
+        {"index": 1, "verdict": "pass", "quote": "there is no basis — synthetic or otherwise — to answer \"yes\" or \"no\" on sending him", "reason": "Withholds dispatch determination and enumerates unchecked requirements."},
+        {"index": 2, "verdict": "pass", "quote": "completion_for_current_sealink", "reason": "Names missing current-number evidence and the exact alias; the full paragraph supplies the meaning."}
+      ],
+      "additional_findings": [
+        {"severity": "wording_caution", "quote": "No — the tool cannot give you a dispatch clearance", "reason": "Opening No can be skimmed as a dispatch denial. Immediate qualification and final paragraph correctly withhold a yes/no determination."}
+      ],
+      "broad_clearance_observed": false
+    },
+    {
+      "case_id": "P3_changed_identifier",
+      "criteria": [
+        {"index": 0, "verdict": "pass", "quote": "the induction evidence it has doesn't match the SeaLink ID he's currently operating under", "reason": "Separates old completion from the current identifier."},
+        {"index": 1, "verdict": "partial", "quote": "verify against your actual current policy/dispatch system before he rolls", "reason": "Identifies completion_for_current_sealink and the new alias, but the next action is generic confirmation rather than explicitly requesting a retaking/completion record tied to SYN-SL-NEW."},
+        {"index": 2, "verdict": "pass", "quote": "there's no induction record on file specifically for SYN-SL-NEW", "reason": "States absent evidence, not that retaking definitely did not happen."}
+      ],
+      "additional_findings": [],
+      "broad_clearance_observed": false
+    },
+    {
+      "case_id": "P4_explicit_noncompletion",
+      "criteria": [
+        {"index": 0, "verdict": "pass", "quote": "not \"unknown\" — the record affirmatively indicates it's not satisfied", "reason": "Explicit non-completion correctly distinguished from unknown, with synthetic basis stated."},
+        {"index": 1, "verdict": "pass", "quote": "Induction status for this SeaLink alias is a non-met/explicit-non-completion result", "reason": "The negative finding is induction-specific; other categories are listed as unchecked."},
+        {"index": 2, "verdict": "pass", "quote": "an explicit non-completion here doesn't by itself confirm or rule out anything in the unchecked categories above", "reason": "Full-answer review found no permanent-denial claim. The quote supports the limited scope; absence of a permanent claim was assessed manually."}
+      ],
+      "additional_findings": [],
+      "broad_clearance_observed": false
+    },
+    {
+      "case_id": "P5_company_change_only",
+      "criteria": [
+        {"index": 0, "verdict": "pass", "quote": "A company change alone, while keeping the same SeaLink alias, does not trigger a redo requirement", "reason": "Correctly describes this specific company-change exception."},
+        {"index": 1, "verdict": "pass", "quote": "Result: met — the existing completion still counts", "reason": "Reports matching completion within the explicitly synthetic, draft, induction-only context."},
+        {"index": 2, "verdict": "pass", "quote": "this result does not constitute dispatch, entry, or route clearance of any kind", "reason": "Explicitly preserves wider unchecked scope."}
+      ],
+      "additional_findings": [
+        {"severity": "source_overstatement", "quote": "drivers only need to retake Safety Induction Training if they get a new SeaLink card/number", "reason": "Only turns the documented trigger into a potentially exhaustive rule. The source does not establish that no other retraining triggers exist. Specific company-change result remains correct."}
+      ],
+      "broad_clearance_observed": false
+    },
+    {
+      "case_id": "P6_missing_time_and_identifier",
+      "criteria": [
+        {"index": 0, "verdict": "pass", "quote": "two missing facts explicitly flagged: trip_at (trip timestamp) and current_sealink_id (current SeaLink alias)", "reason": "Both unknown facts remain unknown in the answer and actual tool inputs."},
+        {"index": 1, "verdict": "pass", "quote": "If you get the current SeaLink alias and the trip timestamp, I can re-run the check — but I won't guess at either", "reason": "Requests both missing facts and invents neither."},
+        {"index": 2, "verdict": "pass", "quote": "no dispatch/entry/route clearance is implied by this result", "reason": "No positive induction or entry finding; the answer says unresolved."}
+      ],
+      "additional_findings": [
+        {"severity": "status_field_conflation", "quote": "the check is unresolved_not_assessed", "reason": "This is the operational_status value, not check_status (unresolved). The earlier answer correctly says unresolved, and neither statement grants clearance."}
+      ],
+      "broad_clearance_observed": false
+    }
+  ]
+}

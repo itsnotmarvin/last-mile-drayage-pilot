@@ -1,0 +1,24 @@
+{
+  "fixture_version": "synthetic-evidence-v1",
+  "synthetic_only": true,
+  "notice": "Invented test records. These are not real drivers, identifiers, verification results, or policy-currentness determinations.",
+  "drivers": [
+    {"driver_id": "syn-driver-complete", "lookup_status": "available"},
+    {"driver_id": "syn-driver-missing", "lookup_status": "available"},
+    {"driver_id": "syn-driver-incomplete", "lookup_status": "available"},
+    {"driver_id": "syn-driver-conflict", "lookup_status": "available"},
+    {"driver_id": "syn-driver-stale", "lookup_status": "available"},
+    {"driver_id": "syn-driver-outage", "lookup_status": "unavailable"},
+    {"driver_id": "syn-driver-future", "lookup_status": "available"},
+    {"driver_id": "syn-driver-unverified", "lookup_status": "available"}
+  ],
+  "observations": [
+    {"observation_id": "syn-observation-complete", "driver_id": "syn-driver-complete", "sealink_id": "SYN-SL-A", "program_id": "training_apm_safety_induction", "completed": true, "observed_at": "2026-09-06T12:00:00-04:00", "verification": "synthetic_confirmed", "assessment_date": "2026-09-06"},
+    {"observation_id": "syn-observation-incomplete", "driver_id": "syn-driver-incomplete", "sealink_id": "SYN-SL-B", "program_id": "training_apm_safety_induction", "completed": false, "observed_at": "2026-09-06T12:00:00-04:00", "verification": "synthetic_confirmed", "assessment_date": "2026-09-06"},
+    {"observation_id": "syn-observation-conflict-yes", "driver_id": "syn-driver-conflict", "sealink_id": "SYN-SL-C", "program_id": "training_apm_safety_induction", "completed": true, "observed_at": "2026-09-06T11:00:00-04:00", "verification": "synthetic_confirmed", "assessment_date": "2026-09-06"},
+    {"observation_id": "syn-observation-conflict-no", "driver_id": "syn-driver-conflict", "sealink_id": "SYN-SL-C", "program_id": "training_apm_safety_induction", "completed": false, "observed_at": "2026-09-06T12:00:00-04:00", "verification": "synthetic_confirmed", "assessment_date": "2026-09-06"},
+    {"observation_id": "syn-observation-stale", "driver_id": "syn-driver-stale", "sealink_id": "SYN-SL-D", "program_id": "training_apm_safety_induction", "completed": true, "observed_at": "2026-08-06T12:00:00-04:00", "verification": "stale", "assessment_date": "2026-08-06"},
+    {"observation_id": "syn-observation-future", "driver_id": "syn-driver-future", "sealink_id": "SYN-SL-E", "program_id": "training_apm_safety_induction", "completed": true, "observed_at": "2026-09-07T12:00:00-04:00", "verification": "synthetic_confirmed", "assessment_date": "2026-09-07"},
+    {"observation_id": "syn-observation-unverified", "driver_id": "syn-driver-unverified", "sealink_id": "SYN-SL-F", "program_id": "training_apm_safety_induction", "completed": true, "observed_at": "2026-09-06T12:00:00-04:00", "verification": "unverified", "assessment_date": "2026-09-06"}
+  ]
+}

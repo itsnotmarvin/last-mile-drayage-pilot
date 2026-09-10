@@ -1,0 +1,140 @@
+<div id="drayage-entire-graph">
+  <h2>__GRAPH_TITLE__</h2>
+  <div class="text-small">Connected graph · choose a topic to understand its role · select a node to explain its relationships</div>
+  <div class="topic-nav" data-role="topics" aria-label="Explore by topic"></div>
+  <p class="topic-explanation" data-role="topic-explanation" aria-live="polite">Start with the vehicle and driver, follow the inbound roads, then inspect terminal entry. The lower topics explain permits, road rules and historical traffic evidence.</p>
+  <div class="viz-controls">
+    <span class="text-small">__NODE_COUNT__ nodes · __EDGE_COUNT__ directed relationships · __ISOLATE_COUNT__ unconnected</span>
+    <button class="btn" type="button" data-action="fit">Fit entire graph</button>
+    <button class="btn" type="button" data-action="in" aria-label="Zoom in">Zoom +</button>
+    <button class="btn" type="button" data-action="out" aria-label="Zoom out">Zoom −</button>
+    <button class="btn" type="button" data-action="read">Readable size</button>
+    <label class="form-check"><input class="form-check-input" type="checkbox" data-action="labels">All relationship labels</label>
+  </div>
+  <div class="graph-legend" aria-label="Node colors"><span style="--swatch:#b8a2e1">Sources</span><span style="--swatch:#58b5dd">Rules</span><span style="--swatch:#53c5b0">Authorities &amp; places</span><span style="--swatch:#8ba5ed">Roads &amp; routes</span><span style="--swatch:#e4a7d9">Credentials &amp; profiles</span><span style="--swatch:#f1a071">Dated observations &amp; analysis</span></div>
+  <div class="full-canvas" aria-label="Whole graph; drag to pan and select a node for evidence">__FULL_SVG__</div>
+  <div class="viz-controls"><label class="form-label">Select any record<select class="form-select" data-role="record"><option value="">All records</option></select></label></div>
+  <div data-role="selection" aria-live="polite" class="text-small">All records in this view are shown. Added source links identify citations, not legal permissions. Select a node to inspect its evidence and relationships.</div>
+  <div data-role="record-explanation"></div>
+  <div data-role="connections" class="connection-list"></div>
+  <details data-role="details" hidden><summary>Full evidence and relationship records</summary><pre data-role="raw"></pre></details>
+  <details><summary>Every relationship (__EDGE_COUNT__)</summary><ol data-role="all-edges"></ol></details>
+  <script type="application/json" data-role="data">__GRAPH_DATA__</script>
+  <style>
+    #drayage-entire-graph .full-canvas{width:100%;height:780px;overflow:hidden;touch-action:none;cursor:grab;position:relative}
+    #drayage-entire-graph .full-canvas>svg{display:block;width:100%;height:100%;background:transparent}
+    #drayage-entire-graph [data-role=record]{max-width:100%}
+    #drayage-entire-graph [data-role=raw]{white-space:pre-wrap;overflow-wrap:anywhere}
+    #drayage-entire-graph [data-role=selection]{overflow-wrap:anywhere;margin:12px 0}
+    #drayage-entire-graph .node{cursor:pointer}
+    #drayage-entire-graph .topic-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:12px 0}
+    #drayage-entire-graph .topic-nav button{text-align:left;margin:0;white-space:normal}
+    #drayage-entire-graph .topic-nav button[aria-pressed=true]{background:#e8eef4;border-color:#60788c}
+    #drayage-entire-graph .topic-explanation{max-width:90ch;line-height:1.6;color:#465564}
+    #drayage-entire-graph .connection-list{display:grid;gap:5px;grid-template-columns:repeat(2,minmax(0,1fr))}
+    #drayage-entire-graph .connection-list button{text-align:left;white-space:normal;overflow-wrap:anywhere}
+    @media(max-width:650px){#drayage-entire-graph .topic-nav,#drayage-entire-graph .connection-list{grid-template-columns:1fr}}
+    #drayage-entire-graph .context-dim{opacity:.09}
+    #drayage-entire-graph .graph-legend{display:flex;gap:16px;flex-wrap:wrap;margin:10px 0;font-size:12px;color:#465564}
+    #drayage-entire-graph .graph-legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--swatch);margin-right:5px}
+    @media(max-width:500px){#drayage-entire-graph .full-canvas{height:650px}}
+  </style>
+  <script>
+  (()=>{
+    const root=document.getElementById('drayage-entire-graph');
+    const svg=root.querySelector('svg'),canvas=root.querySelector('.full-canvas');
+    const data=JSON.parse(root.querySelector('[data-role=data]').textContent);
+    const nodes=new Map(data.nodes.map(n=>[n.id,n]));
+    const topics=data.presentation?.topics||[];
+    const topicNote=root.querySelector('[data-role=topic-explanation]');
+    const overviewNote='Start with vehicle and driver facts, follow the inbound roads, then inspect terminal entry. The lower topics explain permits, road rules and historical traffic. Placement is for navigation; arrows retain their recorded meanings.';
+    const meanings={CITES_SOURCE:'cites source',CONTAINS_CLAUSE:'contains clause',ATTRIBUTED_TO_AUTHORITY:'attributes this clause to',HAS_RECORDED_RULE_INTERACTION:'records an example interaction with',OBSERVED_IN_SOURCE:'was observed in archived source',GATE_OF_TERMINAL:'is a gate of',RECORDED_OPERATOR:'names operator',HAS_ORDERED_SEGMENT:'contains ordered segment',STARTS_AT:'starts at',ENDS_AT:'ends at',LOCATED_WITHIN:'is recorded within',GOVERNS:'is recorded as governing',ISSUES:'issues',REQUIRES:'requires',PUBLISHES:'publishes',APPLIES_TO:'has recorded applicability to',HAS_NJOGIS_JURISDICTION_CATEGORY:'has mapped road category',STREET_NOT_LISTED_IN_RESTRICTION_TABLE:'has no street listing in this table for',ROUTE_NUMBER_NOT_LISTED_IN_APPENDIX_C:'has no route-number listing in Appendix C for',TRUCK_ROUTE_SCHEDULE_RESERVED:'has a reserved truck-route schedule for',USES:'uses',CLASSIFIES:'classifies',GOVERNS_ENTRY_AT:'addresses entry at',GOVERNS_GATE_MOVE_AT:'addresses gate moves at',GOVERNS_ACCESS_AT:'addresses access at',OVERLAPS_PART_OF:'overlaps part of',GOVERNS_PORT_ENTRY_MOVEMENT_AT:'addresses port-entry movement at',GOVERNS_UNESCORTED_SECURE_ACCESS_AT:'addresses unescorted secure access at',ENACTS:'enacts',CONDITIONS_REGISTRATION_IN:'places conditions on registration in',DEFINES_SCOPE_FOR:'defines the scope for'};
+    if(!topics.length)topicNote.hidden=true;
+    topics.forEach(topic=>{
+      const button=document.createElement('button');button.type='button';button.className='btn';button.textContent=topic.title;button.dataset.topic=topic.id;button.setAttribute('aria-pressed','false');
+      button.onclick=()=>focusTopic(topic);root.querySelector('[data-role=topics]').append(button);
+    });
+    const box=svg.getAttribute('viewBox').split(' ').map(Number),world={w:box[2],h:box[3]};
+    let scale=1,panX=0,panY=0,drag=null;
+    const select=root.querySelector('[data-role=record]');
+    data.edges.forEach(e=>{const item=document.createElement('li');item.textContent=`${nodes.get(e.source).label} → ${e.relationship} → ${nodes.get(e.target).label}`;root.querySelector('[data-role=all-edges]').append(item);});
+    data.nodes.forEach(n=>{const option=document.createElement('option');option.value=n.id;option.textContent=n.label;select.append(option);});
+    function update(){const w=canvas.clientWidth,h=canvas.clientHeight;svg.setAttribute('viewBox',`${panX} ${panY} ${w/scale} ${h/scale}`);}
+    function fit(){const w=canvas.clientWidth,h=canvas.clientHeight;scale=Math.min(w/world.w,h/world.h);panX=(world.w-w/scale)/2;panY=(world.h-h/scale)/2;update();}
+    function zoom(multiplier,atX=canvas.clientWidth/2,atY=canvas.clientHeight/2){const cx=panX+atX/scale,cy=panY+atY/scale;scale=Math.min(4,Math.max(.05,scale*multiplier));panX=cx-atX/scale;panY=cy-atY/scale;update();}
+    function choose(id,center=false){
+      root.querySelectorAll('.selected').forEach(e=>e.classList.remove('selected'));
+      root.querySelectorAll('.context-dim').forEach(e=>e.classList.remove('context-dim'));
+      select.value=id;
+      root.querySelector('[data-role=connections]').replaceChildren();
+      root.querySelector('[data-role=record-explanation]').replaceChildren();
+      root.querySelectorAll('[data-topic]').forEach(b=>b.setAttribute('aria-pressed','false'));
+      topicNote.textContent=overviewNote;
+      const node=nodes.get(id),detail=root.querySelector('[data-role=details]');
+      if(!node){root.querySelector('[data-role=selection]').textContent='All records in this view are shown.';detail.hidden=true;return;}
+      const explanation=root.querySelector('[data-role=record-explanation]');
+      if(Array.isArray(node.record.ordered_edge_ids)){
+        const title=document.createElement('p');title.textContent='Recorded road segments, in travel order:';explanation.append(title);
+        const sequence=document.createElement('ol');
+        node.record.ordered_edge_ids.forEach(segment=>{
+          if(!nodes.has(segment))return;
+          const item=document.createElement('li'),button=document.createElement('button');button.type='button';button.className='btn';button.textContent=nodes.get(segment).label;button.onclick=()=>choose(segment,true);item.append(button);sequence.append(item);
+        });explanation.append(sequence);
+      }
+      if(node.record.source_text){
+        const quote=document.createElement('details'),summary=document.createElement('summary'),text=document.createElement('blockquote');
+        summary.textContent='Read the retained source wording';text.textContent=Array.isArray(node.record.source_text)?node.record.source_text.join('\n'):node.record.source_text;
+        quote.append(summary,text);explanation.append(quote);
+      }
+      const related=data.edges.filter(e=>e.source===id||e.target===id);
+      const topic=topics.find(t=>t.nodes.includes(id));
+      if(topic)topicNote.textContent=topic.description;
+      related.forEach(edge=>{
+        const other=edge.source===id?edge.target:edge.source;
+        const button=document.createElement('button');button.type='button';button.className='btn';
+        const verb=meanings[edge.relationship]||edge.relationship.toLowerCase().replaceAll('_',' ');
+        button.textContent=`${nodes.get(edge.source).label} — ${verb}${edge.record.sequence?' '+edge.record.sequence:''} → ${nodes.get(edge.target).label}`;
+        button.title=edge.relationship;button.onclick=()=>choose(other,true);
+        root.querySelector('[data-role=connections]').append(button);
+      });
+      const peers=new Set([id,...related.flatMap(e=>[e.source,e.target])]);
+      root.querySelectorAll('[data-node-id]').forEach(e=>e.classList.toggle('context-dim',!peers.has(e.dataset.nodeId)));
+      root.querySelectorAll('[data-edge-id],[data-edge-label]').forEach(e=>e.classList.toggle('context-dim',e.dataset.source!==id&&e.dataset.target!==id));
+      const nodeMark=[...root.querySelectorAll('[data-node-id]')].find(e=>e.dataset.nodeId===id);nodeMark.classList.add('selected');
+      root.querySelectorAll('[data-edge-id],[data-edge-label]').forEach(e=>{if(e.dataset.source===id||e.dataset.target===id)e.classList.add('selected');});
+      root.querySelector('[data-role=selection]').textContent=`${node.label} · ${node.kind.replaceAll('_',' ')} · ${related.length} relationships${node.layer==='quarantined_observation'?' · Dated observation, quarantined; not a current restriction.':''}`;
+      root.querySelector('[data-role=raw]').textContent=JSON.stringify({node,relationships:related},null,2);detail.hidden=false;
+      if(center){scale=1;panX=Number(nodeMark.dataset.x)-canvas.clientWidth/2;panY=Number(nodeMark.dataset.y)-canvas.clientHeight/2;update();}
+    }
+    function focusTopic(topic){
+      choose('');
+      root.querySelectorAll('[data-topic]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.topic===topic.id)));
+      topicNote.textContent=topic.description;
+      const members=new Set(topic.nodes);
+      root.querySelectorAll('[data-node-id]').forEach(e=>e.classList.toggle('context-dim',!members.has(e.dataset.nodeId)));
+      root.querySelectorAll('[data-edge-id],[data-edge-label]').forEach(e=>e.classList.toggle('context-dim',!members.has(e.dataset.source)&&!members.has(e.dataset.target)));
+      const region=[...root.querySelectorAll('[data-topic-id]')].find(e=>e.dataset.topicId===topic.id);
+      if(region){
+        const w=Number(region.dataset.width),h=Number(region.dataset.height);
+        scale=Math.min(canvas.clientWidth/w,canvas.clientHeight/h);
+        panX=Number(region.dataset.x)-(canvas.clientWidth/scale-w)/2;
+        panY=Number(region.dataset.y)-(canvas.clientHeight/scale-h)/2;update();
+      }
+      root.querySelector('[data-role=selection]').textContent=`${topic.title} · ${topic.nodes.length} records. Select a node to see exactly how it connects.`;
+    }
+    root.querySelector('[data-action=fit]').onclick=()=>{choose('');fit();};
+    root.querySelector('[data-action=in]').onclick=()=>zoom(1.6);
+    root.querySelector('[data-action=out]').onclick=()=>zoom(1/1.6);
+    root.querySelector('[data-action=read]').onclick=()=>zoom(1/scale);
+    root.querySelector('[data-action=labels]').onchange=e=>svg.classList.toggle('all-edge-labels',e.target.checked);
+    svg.addEventListener('wheel',e=>{e.preventDefault();const bounds=canvas.getBoundingClientRect();zoom(e.deltaY<0?1.12:1/1.12,e.clientX-bounds.left,e.clientY-bounds.top);},{passive:false});
+    select.onchange=()=>choose(select.value,Boolean(select.value));
+    svg.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,px:panX,py:panY,target:e.target.closest('[data-node-id]'),moved:false};svg.setPointerCapture(e.pointerId);});
+    svg.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>4)drag.moved=true;panX=drag.px-dx/scale;panY=drag.py-dy/scale;update();});
+    svg.addEventListener('pointerup',()=>{if(drag&&!drag.moved&&drag.target)choose(drag.target.dataset.nodeId);drag=null;});
+    svg.addEventListener('pointercancel',()=>{drag=null;});
+    svg.addEventListener('keydown',e=>{const node=e.target.closest('[data-node-id]');if(node&&['Enter',' '].includes(e.key)){e.preventDefault();choose(node.dataset.nodeId,true);}});
+    new ResizeObserver(fit).observe(canvas);fit();
+  })();
+  </script>
+</div>

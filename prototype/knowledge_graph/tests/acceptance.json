@@ -1,0 +1,29 @@
+{
+  "status": "frozen_prototype_expectations_before_evaluator_implementation",
+  "human_policy_approval": false,
+  "default_input": {"terminal_id": "facility_apm_elizabeth", "actor_role": "truck_driver", "driver_id": "syn-driver-complete", "current_sealink_id": "SYN-SL-A", "trip_at": "2026-09-06T14:00:00-04:00", "question_scope": "induction"},
+  "cases": [
+    {"case_id": "matching_completion", "changes": {}, "expected": "met", "required_reasons": ["MATCHING_COMPLETION"]},
+    {"case_id": "missing_completion", "changes": {"driver_id": "syn-driver-missing"}, "expected": "unresolved", "required_reasons": ["COMPLETION_EVIDENCE_MISSING"]},
+    {"case_id": "explicit_incomplete", "changes": {"driver_id": "syn-driver-incomplete", "current_sealink_id": "SYN-SL-B"}, "expected": "not_met", "required_reasons": ["EXPLICIT_NON_COMPLETION"]},
+    {"case_id": "new_sealink_old_evidence", "changes": {"current_sealink_id": "SYN-SL-NEW"}, "expected": "unresolved", "required_reasons": ["SEALINK_EVIDENCE_MISMATCH"]},
+    {"case_id": "company_change_same_number", "changes": {"company_changed": true}, "expected": "met", "required_reasons": ["MATCHING_COMPLETION"]},
+    {"case_id": "conflicting_records", "changes": {"driver_id": "syn-driver-conflict", "current_sealink_id": "SYN-SL-C"}, "expected": "unresolved", "required_reasons": ["CONFLICTING_COMPLETION_EVIDENCE"]},
+    {"case_id": "stale_record", "changes": {"driver_id": "syn-driver-stale", "current_sealink_id": "SYN-SL-D"}, "expected": "unresolved", "required_reasons": ["EVIDENCE_NOT_CURRENT_FOR_FIXTURE"]},
+    {"case_id": "checker_outage", "changes": {"driver_id": "syn-driver-outage"}, "expected": "unresolved", "required_reasons": ["EVIDENCE_SERVICE_UNAVAILABLE"]},
+    {"case_id": "future_record", "changes": {"driver_id": "syn-driver-future", "current_sealink_id": "SYN-SL-E"}, "expected": "unresolved", "required_reasons": ["EVIDENCE_FROM_FUTURE"]},
+    {"case_id": "unverified_claim", "changes": {"driver_id": "syn-driver-unverified", "current_sealink_id": "SYN-SL-F"}, "expected": "unresolved", "required_reasons": ["EVIDENCE_UNVERIFIED"]},
+    {"case_id": "unknown_role", "changes": {"actor_role": null}, "expected": "unresolved", "required_reasons": ["APPLICABILITY_FACT_MISSING"]},
+    {"case_id": "unknown_destination", "changes": {"terminal_id": null}, "expected": "unresolved", "required_reasons": ["APPLICABILITY_FACT_MISSING"]},
+    {"case_id": "different_destination", "changes": {"terminal_id": "synthetic_other_terminal"}, "expected": "not_applicable", "required_reasons": ["OUTSIDE_CHECK_SCOPE"]},
+    {"case_id": "non_truck_driver", "changes": {"actor_role": "other"}, "expected": "not_applicable", "required_reasons": ["OUTSIDE_CHECK_SCOPE"]},
+    {"case_id": "missing_trip_time", "changes": {"trip_at": null}, "expected": "unresolved", "required_reasons": ["TRIP_TIME_MISSING"]},
+    {"case_id": "missing_sealink", "changes": {"current_sealink_id": null}, "expected": "unresolved", "required_reasons": ["CURRENT_SEALINK_MISSING"]},
+    {"case_id": "missing_driver", "changes": {"driver_id": null}, "expected": "unresolved", "required_reasons": ["DRIVER_ID_MISSING"]},
+    {"case_id": "unknown_synthetic_driver", "changes": {"driver_id": "syn-driver-unknown"}, "expected": "unresolved", "required_reasons": ["DRIVER_NOT_IN_SYNTHETIC_REGISTRY"]},
+    {"case_id": "later_trip_not_covered_by_snapshot", "changes": {"trip_at": "2026-09-07T14:00:00-04:00"}, "expected": "unresolved", "required_reasons": ["EVIDENCE_NOT_CURRENT_FOR_FIXTURE"]},
+    {"case_id": "entry_question_with_induction_met", "changes": {"question_scope": "terminal_entry"}, "expected": "met", "expected_requested_scope": "unresolved", "required_reasons": ["MATCHING_COMPLETION"]},
+    {"case_id": "dispatch_question_with_induction_met", "changes": {"question_scope": "trip_dispatch"}, "expected": "met", "expected_requested_scope": "unresolved", "required_reasons": ["MATCHING_COMPLETION"]},
+    {"case_id": "port_street_not_answered_by_induction", "changes": {"question_scope": "route"}, "expected": "met", "expected_requested_scope": "unresolved", "required_reasons": ["MATCHING_COMPLETION"]}
+  ]
+}

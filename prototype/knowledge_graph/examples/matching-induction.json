@@ -1,0 +1,8 @@
+{
+  "terminal_id": "facility_apm_elizabeth",
+  "actor_role": "truck_driver",
+  "driver_id": "syn-driver-complete",
+  "current_sealink_id": "SYN-SL-A",
+  "trip_at": "2026-09-06T14:00:00-04:00",
+  "question_scope": "induction"
+}

@@ -1,0 +1,46 @@
+{
+  "surface": "Claude Desktop incognito Chat",
+  "model_label": "Sonnet 5 Medium",
+  "prompt_file": "claude-prompt.txt",
+  "prompt_sha256": "10f48bfff3be48ff913e60e2531b39f7834df6bf3b4ac8c7ba93d28e548689c9",
+  "expected_tools": [
+    "get_drayage_graph_context",
+    "check_apm_induction",
+    "check_apm_induction"
+  ],
+  "expected_statuses": {
+    "Case A": {
+      "check_status": "met",
+      "requested_scope_status": "met",
+      "operational_status": "unresolved_not_assessed"
+    },
+    "Case B": {
+      "check_status": "unresolved",
+      "requested_scope_status": "unresolved",
+      "operational_status": "unresolved_not_assessed",
+      "required_reason": "SEALINK_EVIDENCE_MISMATCH"
+    }
+  },
+  "attempt": 1,
+  "grading": "implementation author; not independent",
+  "implementation": "25e1b4363066e788e35bc4fccf2f964069029b0b5a60a0ced7295ffbc03c89f8",
+  "revision": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "tool_call_count": 3,
+  "all_supplied_arguments_preserved": true,
+  "expected_statuses_observed": true,
+  "collection_window_utc": [
+    "2026-09-10T03:31:55.424115+00:00",
+    "2026-09-10T03:32:04.118629+00:00"
+  ],
+  "attribution": "Native Claude tool cards, visible final answer, matching arguments and timestamped local MCP audit",
+  "limitations": [
+    "One explicitly tool-directed conversation; not spontaneous tool discovery",
+    "Two synthetic induction cases; not operational validation",
+    "Manual narration review by implementation author, not an independent grader"
+  ],
+  "artifact_sha256": {
+    "claude-prompt.txt": "10f48bfff3be48ff913e60e2531b39f7834df6bf3b4ac8c7ba93d28e548689c9",
+    "claude-response.md": "f660c018ccfee452078184c327adcd85edcc20dcb6613ec6782716a5defea0e1",
+    "claude-tool-audit.jsonl": "1d8167e6e7b107a2c4917b1abc08ac075062c0d0b0fc8154dc97cd289ef429f9"
+  }
+}

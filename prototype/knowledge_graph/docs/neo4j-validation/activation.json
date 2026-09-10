@@ -1,0 +1,11 @@
+{
+  "local_validation": "passed",
+  "revision": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "nodes": 144,
+  "relationships": 228,
+  "dataset": "last-mile-drayage-pilot",
+  "exact_graph_comparison": "passed",
+  "created": false,
+  "activated": true,
+  "verified_at_utc": "2026-09-10T03:29:25.132848+00:00"
+}

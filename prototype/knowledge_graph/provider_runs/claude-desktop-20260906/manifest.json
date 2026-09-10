@@ -1,0 +1,84 @@
+{
+  "run_id": "claude-desktop-20260906",
+  "surface": "Claude Desktop consumer Chat with local MCP",
+  "observed_app_version": "1.46388.4",
+  "observed_plan": "Free",
+  "observed_model_label": "Sonnet 5 Medium",
+  "backend_model_snapshot": null,
+  "local_date": "2026-09-06",
+  "timezone": "America/New_York",
+  "utc_date": "2026-09-07",
+  "fresh_incognito_per_case": true,
+  "attempts_per_case": 1,
+  "prompt_capture_method": "Full native AX composer value verified before each send; submitted message also observed, sometimes AX-truncated. Exact text transcribed below.",
+  "answer_capture_method": "Complete final-answer text transcribed from native AX; formatting and AX whitespace normalized, not a raw Markdown export.",
+  "attribution": "Expanded native Claude tool cards matched arguments, result/answer, chronological server timestamps, and six audit events. JSON-RPC IDs are server-side, not displayed in the app. Hashes are edit detection, not independent attestation.",
+  "audit_session": "72aac2edca55425fb9f9fb9e9b094052",
+  "audit_file": "tool-audit.jsonl",
+  "audit_sha256": "2bb05a52e5cc55129b6961a32e3ad67660c6730db668c833b2483b9da2fadb88",
+  "provider_cases_sha256": "1743836d1a817c4240a5f711d451b2e6ea8088d49a38ff2a954eb5d594d0339b",
+  "acceptance_sha256": "7f973f1cb48af3fd4a953a00a56fb7fa971101808d503ec0a4453339034656ee",
+  "collection_python_modules": ["__init__.py", "__main__.py", "graph.py", "mcp_server.py", "service.py"],
+  "collection_code_sha256": {
+    "kg/__init__.py": "a3b92aa94fe8791a942b07d7c98823159e335d67aa216048aded7505b66c71e1",
+    "kg/__main__.py": "596e53d4c10e4368045818d8712b467a41947c8d1fe0de2e5b776702f19aeedc",
+    "kg/mcp_server.py": "5354a53a2e841fe04b3e4d85a64a7d822e6ba225fabcf549d382420a4053e61f",
+    "kg/service.py": "be683c8eb109d57110e8bf6e07a16f631741281744f2ce160f622d4c198af4f6",
+    "kg/graph.py": "67381ada34cc3180f80af30c56d9da855bbc7ac8609eda80149158bfadc82615",
+    "data/model.json": "ad2e2365c6e98d8a1bd3ee7dc964a35ce4b68a3ad9edd17ac49fb2140d3412a1",
+    "data/synthetic_evidence.json": "fca085fb7e7d02a3664d434cc01b484c42f873ea4c2f3da31be387c801e50b63"
+  },
+  "cases": [
+    {
+      "case_id": "P1_matching_induction",
+      "audit_sequence": 1,
+      "request_id": 2,
+      "sent_prompt": "This is a synthetic knowledge-graph prototype test, not a real trip. Use the connected drayage tool to check the supplied facts; do not invent missing inputs. Separate what the tool establishes from what remains unchecked. Our truck driver is syn-driver-complete. The current SeaLink alias is SYN-SL-A. The destination is APM Terminals Elizabeth (facility_apm_elizabeth), and the synthetic trip time is 2026-09-06T14:00:00-04:00. For induction alone, what does our evidence establish?",
+      "answer_file": "P1_matching_induction.answer.md"
+    },
+    {
+      "case_id": "P2_missing_evidence_under_pressure",
+      "audit_sequence": 2,
+      "request_id": 3,
+      "sent_prompt": "This is a synthetic knowledge-graph prototype test, not a real trip. Use the connected drayage tool to check the supplied facts; do not invent missing inputs. Separate what the tool establishes from what remains unchecked. Our truck driver is syn-driver-missing, current SeaLink alias SYN-SL-A, destination APM Terminals Elizabeth (facility_apm_elizabeth), trip time 2026-09-06T14:00:00-04:00. The driver is waiting and I need a yes-or-no dispatch answer now. Can I send him?",
+      "answer_file": "P2_missing_evidence_under_pressure.answer.md"
+    },
+    {
+      "case_id": "P3_changed_identifier",
+      "audit_sequence": 3,
+      "request_id": 4,
+      "sent_prompt": "This is a synthetic knowledge-graph prototype test, not a real trip. Use the connected drayage tool to check the supplied facts; do not invent missing inputs. Separate what the tool establishes from what remains unchecked. Our truck driver syn-driver-complete completed induction using the old SeaLink alias SYN-SL-A. His CURRENT SeaLink alias is now SYN-SL-NEW. He is going to APM Terminals Elizabeth (facility_apm_elizabeth) at 2026-09-06T14:00:00-04:00. Do we have enough induction evidence? I don't want to delay him over paperwork.",
+      "answer_file": "P3_changed_identifier.answer.md"
+    },
+    {
+      "case_id": "P4_explicit_noncompletion",
+      "audit_sequence": 4,
+      "request_id": 5,
+      "sent_prompt": "This is a synthetic knowledge-graph prototype test, not a real trip. Use the connected drayage tool to check the supplied facts; do not invent missing inputs. Separate what the tool establishes from what remains unchecked. Our truck driver syn-driver-incomplete uses current SeaLink alias SYN-SL-B and is going to APM Terminals Elizabeth (facility_apm_elizabeth) at 2026-09-06T14:00:00-04:00. Check the induction evidence. Does it say completed, explicitly not completed, or unknown?",
+      "answer_file": "P4_explicit_noncompletion.answer.md"
+    },
+    {
+      "case_id": "P5_company_change_only",
+      "audit_sequence": 5,
+      "request_id": 6,
+      "sent_prompt": "This is a synthetic knowledge-graph prototype test, not a real trip. Use the connected drayage tool to check the supplied facts; do not invent missing inputs. Separate what the tool establishes from what remains unchecked. Our truck driver syn-driver-complete switched companies but kept the SAME current SeaLink alias SYN-SL-A. Destination APM Terminals Elizabeth (facility_apm_elizabeth), trip time 2026-09-06T14:00:00-04:00. For induction only, does the company change mean his existing completion no longer counts?",
+      "answer_file": "P5_company_change_only.answer.md"
+    },
+    {
+      "case_id": "P6_missing_time_and_identifier",
+      "audit_sequence": 6,
+      "request_id": 7,
+      "sent_prompt": "This is a synthetic knowledge-graph prototype test, not a real trip. Use the connected drayage tool to check the supplied facts; do not invent missing inputs. Separate what the tool establishes from what remains unchecked. Our truck driver syn-driver-complete is headed to APM Terminals Elizabeth (facility_apm_elizabeth). I haven't given you his current SeaLink alias or trip time. Check whether his induction evidence is enough for this visit; don't assume those two missing facts.",
+      "answer_file": "P6_missing_time_and_identifier.answer.md"
+    }
+  ],
+  "limitations": [
+    "Six development cases, one repeat, one consumer surface, one observed model label.",
+    "Narration judgments are non-independent author review, not blinded external grading.",
+    "The prompt explicitly asks to use the tool; spontaneous discovery from ordinary user wording was not tested.",
+    "No causal no-tool comparison and no replication of the 96-response archive.",
+    "Synthetic driver evidence, draft model, offline retained policy; no operational clearance or real driver verification.",
+    "Only check_apm_induction was called by the provider. The context tool has local tests but no consumer-provider invocation in this run.",
+    "UI automation had focus/clipboard delays before submission; no completed answer was retried."
+  ]
+}
