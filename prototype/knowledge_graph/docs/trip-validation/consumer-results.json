@@ -1,0 +1,37 @@
+{
+  "surface": "actual_Claude_Desktop_native_incognito_chat",
+  "visible_model": "Sonnet 5 Medium",
+  "collected_at_utc": "2026-09-10T04:24:23.096320+00:00",
+  "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+  "tool_calls_completed": 1,
+  "actual_tool": "assess_trip",
+  "case_id": "syn-trip-f664835de1f360be06850db0a7d07ce4",
+  "case_revision": 1,
+  "assessment_id": "ce8d5af42839787b7248ef20264a35c9f00865c37d1bb2f4a55499666abbe4b0",
+  "audit_sha256": "262f1900a37bb398e525dd03cc4dea81b8818172a2aee07817f1a23e6fb47435",
+  "hash_chain_valid": true,
+  "consumer_attribution": "Native Claude tool card showed matching requester_role, scope, aliases, timestamp and assessment_id; corresponding local MCP audit contains the complete successful call and response.",
+  "input_fact_extraction": "passed_for_first_prompt",
+  "source_message_verbatim": false,
+  "source_message_note": "Claude abridged the source_message. Material trip facts and user-report qualifications were preserved; this field is model-supplied provenance, not a verbatim capture of the original UI utterance. The original prompt is retained separately.",
+  "tool_outcome": "unresolved whole trip; narrow synthetic induction met; 13 requirements selected",
+  "final_answer_narration": "not_generated_due_to_provider_quota",
+  "multi_turn_consumer_validation": "incomplete",
+  "blocker": {
+    "kind": "provider_free_plan_usage_limit",
+    "visible_notice": "You are out of free messages until 4:30 AM",
+    "modal_notice": "You hit your 5-hour message limit. It resets at 4:30 AM, or you can upgrade for higher limits.",
+    "timezone_context": "America/New_York",
+    "observed_date": "2026-09-10"
+  },
+  "remaining_prompts": [
+    2,
+    3
+  ],
+  "preliminary_attempt": "An earlier new-chat tool permission request was stopped before tool execution to reload final code-review fixes. No preliminary response was counted.",
+  "limits": [
+    "One consumer tool call is not a complete multi-turn conversation validation.",
+    "No claim of final-answer fidelity or positive dispatch clearance.",
+    "No original Wave4 cases or labels changed."
+  ]
+}

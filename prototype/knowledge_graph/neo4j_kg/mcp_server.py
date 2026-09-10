@@ -1,4 +1,4 @@
-"""Read-only Neo4j MCP stdio server; no listener, shell tool, or caller-supplied Cypher.
+"""Neo4j evidence and synthetic local trip MCP; no arbitrary database queries.
 
 Implements the 2025-11-25 lifecycle/tools subset. This is not a complete MCP SDK
 or a hosted connector. Tool protocol transcripts contain synthetic records only.
@@ -14,6 +14,7 @@ import sys
 import uuid
 
 from .service import CheckingService, InputError, ROOT, normalize
+from .trip_tools import INSTRUCTIONS, TRIP_TOOLS
 
 
 PROTOCOL_VERSION = "2025-11-25"
@@ -39,14 +40,14 @@ INPUT_SCHEMA = {
 }
 TOOLS = [
     {"name": "check_apm_induction", "title": "Check synthetic APM induction evidence",
-     "description": "Use for the synthetic APM Elizabeth driver-induction experiment. Query the server-owned knowledge graph and completion evidence using the user's supplied facts. Missing facts must stay null. The caller cannot supply completion evidence. Returns a single-requirement result, sources, missing facts, and separate unchecked trip coverage. No real driver verification or dispatch clearance. Use when asked whether the synthetic driver has induction, can enter, can dispatch, or can use a route; broader questions will retain a coverage gap.",
+     "description": "Legacy single-call synthetic APM induction check, retained for regression replay. For ordinary driver or dispatcher trip conversations, use assess_trip and update_trip_facts so the same assignment and corrections are retained. This tool queries server-owned synthetic completion evidence from the user's supplied facts. Missing facts stay null and callers cannot supply evidence. Returns one induction finding and unchecked trip coverage, never real verification or dispatch clearance.",
      "inputSchema": INPUT_SCHEMA, "annotations": ANNOTATIONS},
     {"name": "get_drayage_graph_context", "title": "Inspect retained drayage graph evidence",
      "description": "Read public archived evidence, the prototype induction definition, graph counts, route directions, Port Street observation limits, or unimplemented coverage. This is not a live policy or routing check. No arbitrary file or database query access.",
      "inputSchema": {"type": "object", "additionalProperties": False,
                      "properties": {"topic": {"type": "string", "enum": ["summary", "induction", "route_directions", "port_street", "coverage"]}},
                      "required": ["topic"]}, "annotations": ANNOTATIONS},
-]
+] + TRIP_TOOLS
 
 
 def encode(value):
@@ -69,8 +70,9 @@ def strict_loads(raw):
 
 
 class Session:
-    def __init__(self, service=None, audit_path: Path | None = None):
+    def __init__(self, service=None, audit_path: Path | None = None, trip_service=None):
         self.service = service or CheckingService()
+        self.trip_service = trip_service
         self.state = "new"
         self.audit_path = audit_path
         self.sequence = 0
@@ -116,8 +118,8 @@ class Session:
                 return error(-32602, "initialize requires protocolVersion, capabilities and clientInfo")
             self.state = "initializing"
             result = {"protocolVersion": PROTOCOL_VERSION, "capabilities": {"tools": {"listChanged": False}},
-                      "serverInfo": {"name": "drayage-neo4j", "version": "0.2.0"},
-                      "instructions": "Synthetic, draft, single-requirement experiment only. Preserve missing facts, source limits and unchecked trip coverage. Never issue dispatch or entry clearance."}
+                      "serverInfo": {"name": "drayage-neo4j", "version": "0.3.0"},
+                      "instructions": INSTRUCTIONS}
         elif method == "ping":
             result = {}
         elif self.state != "ready":
@@ -137,10 +139,19 @@ class Session:
                 if name == "check_apm_induction":
                     validated = normalize(args)
                     payload = self.service.check(args)
-                else:
+                elif name == "get_drayage_graph_context":
                     if not isinstance(args, dict) or set(args) != {"topic"} or not isinstance(args["topic"], str):
                         raise InputError("Expected only a topic string")
                     payload = self.service.context(args["topic"])
+                    validated = args.copy()
+                else:
+                    if self.trip_service is None:
+                        from .assessment import TripService
+                        self.trip_service = TripService(self.service.store)
+                    operation = {"assess_trip": self.trip_service.assess,
+                                 "update_trip_facts": self.trip_service.update,
+                                 "get_requirement_evidence": self.trip_service.evidence}[name]
+                    payload = operation(args)
                     validated = args.copy()
                 result = {"content": [{"type": "text", "text": encode(payload)}],
                           "structuredContent": payload, "isError": False}

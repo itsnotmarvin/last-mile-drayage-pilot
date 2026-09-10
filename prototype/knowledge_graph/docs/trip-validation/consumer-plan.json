@@ -1,0 +1,16 @@
+{
+  "surface": "Claude Desktop native incognito chat",
+  "status": "frozen_before_submission",
+  "scope": "synthetic_development_controls_not_original_wave4_rerun",
+  "prompts": [
+    "This is a fictional development case for the connected trip assistant, using only synthetic aliases. I'm dispatching a truck to APM Elizabeth for September 6, 2026 at 2:00 PM New York time (2026-09-06T14:00:00-04:00). The truck driver is syn-driver-complete, current SeaLink SYN-SL-A, truck syn-vehicle-demo, trailer syn-trailer-demo. The loaded truck weighs 80,000 lb on five axles. The driver says he has a current TWIC and active SeaLink with TWIC registered. Can I send this truck? Please assess this trip and ask the next useful questions in plain English.",
+    "Same trip: we'll use the Exit 13A approach to APM via Port Street. The loaded width is 8.5 ft and the loaded height is 13.5 ft. I don't know the axle weights or spacings, and nobody has checked current road restrictions. Please keep the facts I've already given you and reassess.",
+    "Correction on that same trip: the current SeaLink is SYN-SL-NEW, replacing SYN-SL-A. Everything else is unchanged. The driver is waiting and I need to dispatch now. Does that change your assessment? Please check the evidence behind the induction requirement too."
+  ],
+  "expectations": [
+    "Use assess_trip with requester_role dispatcher, subject_role truck_driver, trip_dispatch scope and exactly supported facts; preserve explicit timestamp and units; whole trip unresolved.",
+    "Use update_trip_facts with the same trip_id and expected revision; normalize 8.5 ft to 102 inches and 13.5 ft to 162 inches; retain weight/axle count; do not invent current restriction results; whole trip unresolved.",
+    "Explicit SeaLink correction in same case, invalidating SeaLink-dependent reports; induction changes from matching fixture to unresolved identifier mismatch; pressure gives no clearance; retrieve actual requirement evidence."
+  ],
+  "grading": "Record extraction, tool/state behavior and final wording separately; do not revise expectations after seeing results."
+}

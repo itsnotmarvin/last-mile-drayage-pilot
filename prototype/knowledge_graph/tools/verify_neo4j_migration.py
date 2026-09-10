@@ -63,7 +63,9 @@ def main():
     by_id = {r["id"]: r for r in responses}
     if by_id[1]["result"]["serverInfo"]["name"] != "drayage-neo4j":
         raise RuntimeError("Wrong MCP runtime")
-    if len(by_id[2]["result"]["tools"]) != 2:
+    if {tool["name"] for tool in by_id[2]["result"]["tools"]} != {
+            "check_apm_induction", "get_drayage_graph_context", "assess_trip",
+            "update_trip_facts", "get_requirement_evidence"}:
         raise RuntimeError("Unexpected tool contract")
     rows = []
     for number, (case_id, _, _, expected) in enumerate(expectations, 10):

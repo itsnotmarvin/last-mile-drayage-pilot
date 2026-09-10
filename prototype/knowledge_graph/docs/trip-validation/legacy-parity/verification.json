@@ -1,0 +1,119 @@
+{
+  "surface": "local_stdio_integration_not_consumer_app",
+  "verified_at_utc": "2026-09-10T04:20:09.353956+00:00",
+  "revision": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+  "networkx_installed": false,
+  "check_cases": 22,
+  "context_topics": 5,
+  "comparisons": [
+    {
+      "case_id": "matching_completion",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "missing_completion",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "explicit_incomplete",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "new_sealink_old_evidence",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "company_change_same_number",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "conflicting_records",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "stale_record",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "checker_outage",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "future_record",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "unverified_claim",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "unknown_role",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "unknown_destination",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "different_destination",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "non_truck_driver",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "missing_trip_time",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "missing_sealink",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "missing_driver",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "unknown_synthetic_driver",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "later_trip_not_covered_by_snapshot",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "entry_question_with_induction_met",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "dispatch_question_with_induction_met",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "port_street_not_answered_by_induction",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "summary",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "induction",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "route_directions",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "port_street",
+      "full_substantive_comparison": "passed"
+    },
+    {
+      "case_id": "coverage",
+      "full_substantive_comparison": "passed"
+    }
+  ]
+}

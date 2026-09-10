@@ -191,3 +191,34 @@ complete. The historical `kg/` and original Claude capture remain byte-identical
 
 See [migration details](docs/neo4j-migration.md) and
 [validation evidence](docs/neo4j-validation/README.md).
+
+## 2026-09-10: saved driver and dispatcher trip workflow
+
+- Added three versioned MCP tools: `assess_trip`, `update_trip_facts`, and
+  `get_requirement_evidence`, alongside the two preserved legacy tools.
+- Added typed synthetic trip facts with explicit units, separate requester and
+  subject roles, user-report provenance, and conservative unknown scope.
+- Added private local SQLite case state with revision checks, idempotent writes,
+  conflict history, bounded corrections, and assignment-dependent invalidation.
+  Old request-key replays retain their receipt while assessing the latest case.
+- Added 13 source-backed requirement entries across the six study families and
+  at most three follow-up questions/actions. Only induction executes a synthetic
+  evidence check. Reports, currentness gaps, conflicting source interpretations,
+  and unimplemented evaluations stay explicit.
+- Neo4j remains the graph runtime; NetworkX is absent from its isolated Python
+  environment. No historical `kg/` behavior, original provider capture, parent
+  evidence, or Wave4 data was changed.
+- Final verification: 200/200 unit tests; independent adversarial review;
+  33 live new-tool calls; 22 frozen legacy check comparisons and five legacy
+  context comparisons. All final captures use runtime fingerprint
+  `fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019`.
+- Actual Claude Desktop incognito/Sonnet 5 Medium completed one new assessment
+  tool call from an ordinary dispatcher prompt. Its extracted trip facts matched
+  the expected facts; the result retained broad unresolved coverage and a narrow
+  synthetic induction match. The app then hit its free-plan limit until 4:30 AM,
+  preventing final narration and the remaining two conversation turns.
+  Multi-turn consumer validation is explicitly incomplete; no upgrade was made.
+- See `docs/trip-workflow.md` for implementation and boundaries, and
+  `docs/trip-validation/README.md` for exact evidence, artifacts, and remaining
+  consumer validation. Operational verification integrations and real-user
+  deployment remain future work.

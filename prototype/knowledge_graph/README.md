@@ -1,5 +1,15 @@
 # Drayage knowledge-graph prototype
 
+## Driver and dispatcher trip workflow
+
+The current MCP also supports a saved synthetic trip conversation: `assess_trip`,
+`update_trip_facts`, and `get_requirement_evidence`. It keeps reported facts and
+corrections, selects requirements across the six study families, rechecks the
+assignment against Neo4j, and asks up to three focused follow-up questions.
+Read the [workflow and code guide](docs/trip-workflow.md). Only induction has an
+executable synthetic evaluator; the other families expose evidence needs and
+unimplemented coverage explicitly.
+
 ## Current MCP: Neo4j
 
 The current MCP runtime is `run_neo4j_mcp.py`, backed by a pinned Neo4j evidence
@@ -11,8 +21,8 @@ local tests, 27 live stdio comparisons, and three actual Claude Desktop calls.
 
 The `kg/` package and `run_mcp.py` below are preserved historical NetworkX
 fixtures used by the original provider capture, tests, and offline exports.
-They are not the Neo4j runtime. The two existing MCP tools and synthetic
-single-requirement scope are preserved; whole-repository retrieval is separate work.
+They are not the Neo4j runtime. The two existing MCP tool contracts are preserved
+alongside the three new trip tools; whole-repository retrieval is separate work.
 
 ## Explore the entire populated graph
 

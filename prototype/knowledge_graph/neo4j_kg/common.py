@@ -15,6 +15,10 @@ class ArchiveError(ValueError):
     """Missing, changed, or inconsistent evidence; never an evaluation outcome."""
 
 
+class EvidenceUnavailable(RuntimeError):
+    """An evidence provider failed; distinct from a programming defect."""
+
+
 def encode(value):
     return json.dumps(value, sort_keys=True, separators=(",", ":"),
                       ensure_ascii=False, allow_nan=False)

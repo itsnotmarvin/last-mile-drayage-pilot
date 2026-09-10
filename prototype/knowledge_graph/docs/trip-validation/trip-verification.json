@@ -1,0 +1,25 @@
+{
+  "surface": "local_stdio_integration_not_consumer_app",
+  "verified_at": "2026-09-10T04:20:13.157573+00:00",
+  "networkx_installed": false,
+  "revision": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+  "checks": [
+    "ordinary_trip_intake",
+    "dispatcher_correction",
+    "idempotent_update",
+    "fresh_saved_case_reassessment",
+    "s1_unresolved_and_pressure_invariant",
+    "s2_unresolved_and_pressure_invariant",
+    "s3_unresolved_and_pressure_invariant",
+    "s4_unresolved_and_pressure_invariant",
+    "s5_unresolved_and_pressure_invariant",
+    "s6_unresolved_and_pressure_invariant",
+    "positive",
+    "negative",
+    "outside_subject",
+    "unknown_scope",
+    "all_13_requirement_evidence_contracts"
+  ],
+  "tool_calls": 33
+}

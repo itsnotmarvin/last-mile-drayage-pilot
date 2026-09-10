@@ -5,16 +5,36 @@ import copy
 import json
 from collections import Counter
 
-from .common import ArchiveError, DATASET, encode, validate_release, verify_files
+from .common import ArchiveError, EvidenceUnavailable, DATASET, encode, validate_release, verify_files
+
+
+def decode_record(raw):
+    """Malformed provider records are integrity failures, not callback defects."""
+    try:
+        record = json.loads(raw)
+    except (ValueError, TypeError, RecursionError) as exc:
+        raise ArchiveError("Invalid evidence record encoding") from exc
+    if not isinstance(record, dict):
+        raise ArchiveError("Evidence record must be an object")
+    return record
 
 
 def read_release(tx, revision):
+    try:
+        return _read_release(tx, revision)
+    except ArchiveError:
+        raise
+    except (ValueError, KeyError, TypeError, IndexError, RecursionError) as exc:
+        raise ArchiveError("Malformed evidence release") from exc
+
+
+def _read_release(tx, revision):
     rows = list(tx.run(
         "MATCH (r:DrayageRelease {dataset:$dataset, revision:$revision}) "
         "RETURN r.manifest_json AS manifest", dataset=DATASET, revision=revision))
     if len(rows) != 1:
         raise ArchiveError("Validated Neo4j evidence release is unavailable")
-    release = json.loads(rows[0]["manifest"])
+    release = decode_record(rows[0]["manifest"])
     release["nodes"] = [dict(row["node"]) for row in tx.run(
         "MATCH (n:DrayageRecord {dataset:$dataset, revision:$revision}) "
         "RETURN n{.id,.kind,.layer,.archive,.ordinal,.record_json} AS node ORDER BY n.ordinal",
@@ -50,7 +70,7 @@ class GraphReader:
                 raise ArchiveError("Nonunique graph record")
             self._nodes[node_id] = None if not rows else {
                 "kind": rows[0]["kind"], "layer": rows[0]["layer"],
-                "archive": rows[0]["archive"], "record": json.loads(rows[0]["record"])}
+                "archive": rows[0]["archive"], "record": decode_record(rows[0]["record"])}
         result = self._nodes[node_id]
         if result is None and required:
             raise ArchiveError("Required graph record is unavailable")
@@ -71,7 +91,7 @@ class GraphReader:
             **self.params, id=node_id, relationship=relationship)]
 
     def records_by_kind(self, kinds, archive_only=True):
-        return [json.loads(row["record"]) for row in self.tx.run(
+        return [decode_record(row["record"]) for row in self.tx.run(
             "MATCH (n:DrayageRecord {dataset:$dataset, revision:$revision}) "
             "WHERE n.kind IN $kinds AND (NOT $archive_only OR n.archive=true) "
             "RETURN n.record_json AS record ORDER BY n.ordinal",
@@ -112,6 +132,7 @@ class Neo4jStore:
 
     def read(self, operation):
         from neo4j import READ_ACCESS, unit_of_work
+        from neo4j.exceptions import DriverError, Neo4jError
 
         @unit_of_work(timeout=30)
         def invoke(tx):
@@ -121,8 +142,11 @@ class Neo4jStore:
             verify_files(release)
             return operation(GraphReader(tx, release))
 
-        with self.driver.session(database=self.database, default_access_mode=READ_ACCESS) as session:
-            return session.execute_read(invoke)
+        try:
+            with self.driver.session(database=self.database, default_access_mode=READ_ACCESS) as session:
+                return session.execute_read(invoke)
+        except (DriverError, Neo4jError) as exc:
+            raise EvidenceUnavailable("Neo4j evidence provider unavailable") from exc
 
     def close(self):
         self.driver.close()
