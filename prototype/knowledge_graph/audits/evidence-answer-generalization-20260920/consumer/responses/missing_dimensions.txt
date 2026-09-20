@@ -1,0 +1,18 @@
+**The supplied evidence does not establish that this truck can make this move to APM.** This is an incomplete assessment, not a finding that the trip is illegal. The truck comparisons below remain useful; none is permission to proceed.
+
+**What you reported.** Additional reported context, not independently verified or fully structured: "Driver prerequisites are reported satisfied." These reports are retained without treating them as independent verification.
+
+**Reported approach:** US 1/9 and the North Avenue approach; the final local streets have not been selected. Exact route membership and restrictions still require confirmation.
+
+**Stored candidate route:** US Highway 1 Express → North Avenue East → North Avenue → McLester Street → Tripoli Street. This is not confirmation that you selected every street, a legal designation, or measured clearance.
+
+**Route access still needs an answer when dimensions are missing.** [N.J.A.C. 16:32 — Truck Access, PDF page 3, N.J.A.C. 16:32-1.4(a)(3); PDF page 9, Appendix C; PDF pages 3-4, N.J.A.C. 16:32-1.5(a)(2); PDF page 2, N.J.A.C. 16:32-1.2(e)](https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf): Appendix C identifies listed county roads in the access network. The separate terminal-access provision concerns a **102-inch-wide standard truck**, **unrestricted local roadways**, necessary terminal access and the **direct route**. Absence from the network list alone establishes neither permission nor prohibition. Obtain the missing loaded dimensions and confirm the actual road sequence, vehicle category, direct terminal access and current local restrictions; a stored route cannot establish those conditions.
+
+**Roads and gate at arrival.** Fetched 2026-09-20T02:45:26.663270+00:00; fetch time is not the effective date or verification. [APM status update](https://www.apmterminals.com/en/port-elizabeth/practical-information/news-and-alerts/2026/Port-Status-Update): schedule heading "Short-Term Vessel Schedule 9/18/26"; separate unverified closure excerpt "APM Terminals Elizabeth will be closed Mon. 9/7 in observance of Labor Day.". The heading does not date that closure or establish arrival-time conditions. [APM row closures](https://www2.apmterminals.com/en/port-elizabeth/practical-information/row-closures): effective time not stated; terminal rows are not public-road closures. [APM gate/turn times](https://www2.apmterminals.com/en/port-elizabeth/e-tools/truck-turn-times): no verified gate-open finding for arrival.
+
+Road/gate conditions and remaining axle, permit, credential and transaction requirements are unresolved. Missing facts do not mean absent credentials or permits.
+
+**Next checks:**
+- Supply any missing loaded dimensions; confirm the actual route, direct terminal access and current restrictions with the responsible road authorities.
+
+These next checks are not an exhaustive release checklist. All unresolved authority, physical-access and terminal requirements remain open. Archived sources do not establish current conditions. Synthetic assessment using retained sources; not a promise of latest policy. No operational permission is issued.

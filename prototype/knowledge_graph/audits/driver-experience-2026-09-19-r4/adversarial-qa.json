@@ -1,0 +1,10 @@
+{
+  "result": "passed",
+  "checks": [
+    "Nested caller verification injection rejected",
+    "Stale revision rejected with no mutation",
+    "Height contradicting exact source message rejected with no mutation",
+    "Missing credential reports remain unresolved, never positive reports"
+  ],
+  "limits": "Prototype QA, not human-approved policy; no graph or fixture changes."
+}

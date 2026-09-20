@@ -1,0 +1,5 @@
+{
+  "started_at": "2026-09-19T21:21:40.547476+00:00",
+  "surface": "Claude Desktop, existing drayage-kg-prototype connector",
+  "activation": "Menu Quit Claude; observed isRunning=false before reopening."
+}

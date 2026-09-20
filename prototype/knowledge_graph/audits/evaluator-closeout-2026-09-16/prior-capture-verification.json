@@ -1,0 +1,15 @@
+{
+  "capture": "audits/eleven-evaluators-final-2026-09-15",
+  "verification": {
+    "status": "matches_current_runtime",
+    "graph_release_binding": "passed",
+    "artifact_integrity": "passed",
+    "missing_runtime_paths": [],
+    "changed_runtime_paths": [],
+    "removed_runtime_paths": [],
+    "limits": "Hash equality establishes artifact/implementation binding; it does not authenticate reviewers or prove test adequacy."
+  },
+  "assessment_count": 34,
+  "schema_validation": "passed",
+  "new_live_run": false
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "file": ".runtime/mcp-session-4aa48c009794456cbe5b6df985983145.jsonl",
+    "baseline_offset": 0,
+    "event_hash": "09243271f4502f08ab2720a482d37a4c4485328569b939fe6007f805e8e6cd84",
+    "sequence": 1
+  },
+  {
+    "file": ".runtime/mcp-session-4aa48c009794456cbe5b6df985983145.jsonl",
+    "baseline_offset": 0,
+    "event_hash": "498d657422b6ec4f484f778df4985aac4f054a9ce5fcb333ccb97126aead8dcc",
+    "sequence": 2
+  }
+]

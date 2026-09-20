@@ -1,0 +1,77 @@
+Window: "Claude", App: Claude.
+0 standard window Claude, Secondary Actions: Raise
+	1 container Claude
+		2 container
+			3 HTML content file:///Applications/Claude.app/Contents/Resources/app.asar/.vite/renderer/main_window/index.html
+			4 HTML content New chat - Claude, URL: claude.ai/new
+				5 container
+					6 container
+						7 container Sidebar
+							8 splitter Description: Resize sidebar, Value: 242
+							9 button Hide sidebar
+							10 button (disabled) Back
+							11 button (disabled) Forward
+							12 Mode
+								13 radio button Description: Chat and Cowork, Value: 1
+								14 radio button Description: Code, Value: 0
+							15 container
+								16 button New
+								17 button Projects
+								18 button Artifacts
+								19 button Customize
+								20 button Chats and tasks
+								21 button View all
+								22 button Search
+								23 pop up button Filter and group recents
+								24 container
+									25 pop up button ma ma Free
+										26 image ma
+										27 text ma
+										28 text Free
+									29 link Description: Get apps and extensions, Value: claude.ai/downloads
+						30 container
+							31 container Primary pane
+								32 button Use incognito
+								33 container
+									34 container
+										35 text Free plan
+										36 link Description: Upgrade, Value: claude.ai/upgrade
+									37 text Afternoon, ma
+									38 container
+										39 container
+											40 container
+												41 text entry area (settable) Description: Write your prompt to Claude, Value: 
+
+											42 pop up button Add files, connectors, and more
+											43 Surface
+												44 radio button Chat, Value: 1
+												45 radio button Cowork, Value: 0
+											46 pop up button Model: Sonnet 5 Medium
+												47 text Sonnet 5
+												48 text Medium
+											49 container
+												50 button Dictate
+												51 container Use voice mode
+													52 button Use voice mode
+													53 pop up button Microphone
+									54 content list Prompt categories
+										55 button Write
+										56 button Learn
+										57 button Code
+										58 button Life stuff
+										59 button Claude’s choice
+					60 container
+						61 container Notifications
+	62 close button
+	63 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	64 minimize button
+65 menu bar
+	66 Claude
+	67 File
+	68 Edit
+	69 View
+	70 Go
+	71 Window
+	72 Help
+
+The focused UI element is 4 HTML content New chat - Claude, URL: claude.ai/new

@@ -1,0 +1,33 @@
+**No. Don't dispatch on the saved bulletin and the NJ permit alone.** You'd be sending a 12-foot-wide load through a section with 11-foot lanes on an August 24 snapshot. The permit, escort and terminal approval each need confirming, and none of them can be answered from what's in front of me. The assessment tool I ran also found nothing that establishes permission to dispatch.
+
+**Why it's a no**
+
+- **The Port Street bulletin is a dated snapshot.** The [NJPASS bulletin](https://nj.gotpermits.com/njpass/) I have was observed August 24 and says the restrictions run "until further notice." That's a starting point, not confirmation for your travel date. The 12-foot width is also wider than the 11-foot lanes it describes, so the detour and escort instructions are what get you through that stretch.
+- **The route-survey rule applies to you.** The same bulletin says a survey is required when height exceeds 14'6" and must be attached to the application. At 14'7" you're one inch over. If the survey wasn't attached, the permit may not be valid as issued.
+- **The permit may not cover Port Street.** The bulletin says NJPASS issues permits for State Routes only. Any county or local connecting segments must be identified in the application, and permits for county, local or toll roads come through those agencies. Whether Port Street is on your permit, or needs separate authorization, isn't something I can tell. Local restrictions also aren't overridden by the state truck-access rules ([N.J.A.C. 16:32-1.2(e)](https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf), PDF p. 2).
+- **The terminal approval is a hard requirement.** Under the [Port Authority marine terminal tariff](https://www.panynj.gov/port/en/doing-business/tariffs.html) (Subrule 34-046, PDF p. 16), vehicles over 11 feet wide are over-dimensional and need approval from the Office of the Manager, Marine Terminals. At 12 feet you're over that line. Your 14'7" height is under the tariff's 16'3" trigger, but width alone triggers it. You haven't confirmed the approval, and you didn't name the terminal.
+- **The escort is a request, not a plan.** The bulletin says to call PAPD to request an escort for oversize loads. Having read that instruction isn't the same as having an escort booked.
+
+**The route, as far as I can give it**
+
+I can't give you a confirmed route. I don't have your permit's route listing, your origin, or the terminal. For the state-route portions, the driver follows the routing printed on the issued permit. For the Port Street section (Brewster Road to Marlin Street), the archived bulletin says:
+
+- Eastbound oversize loads must use the Corbin St. ramp.
+- Westbound oversize loads must take the Marlin St./Kellogg St. detour or Outer Port St.
+- All oversize loads must exit south via North Ave.
+- PAPD escort by request, at (973) 578-2180 per the bulletin.
+
+Treat that as the plan to verify, not clearance to run.
+
+**What turns this into a yes**
+
+These are the only checks that are actually necessary:
+
+1. Open the live NJPASS bulletin and confirm the Port Street notice, escort instruction and survey rule are still posted.
+2. Check your issued permit for the listed route, the travel dates, and that the survey was attached.
+3. Get the terminal's over-dimensional approval for a 12-foot-wide load.
+4. Call PAPD and book the escort.
+
+Also, today is September 19, 2026, so September 2 has already passed. If you meant a different date, tell me. A single-trip permit is valid only for its listed dates, roughly a five-day window per the [NJ size and weight guidebook](https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf) (PDF p. 40, sec. 3.1), so the permit dates matter here too.
+
+I can pull the live NJPASS page now to check item 1 if you'd like. Tell the driver to hold in the meantime.

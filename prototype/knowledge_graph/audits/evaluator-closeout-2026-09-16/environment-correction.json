@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-09-16T15:49:54.950627+00:00",
+  "historical_capture": "audits/eleven-evaluators-final-2026-09-15",
+  "historical_recorded_networkx_present_in_runtime": true,
+  "correction": "The September 15 final stdio capture ran in a Python environment with NetworkX installed. Its README statement that NetworkX was absent is incorrect. Presence does not establish use as a graph backend.",
+  "basis": "summary.json records true; verify_requirement_evaluators.py launches stdio with sys.executable.",
+  "isolated_environment_probe": {
+    "python": "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/.venv-neo4j/bin/python",
+    "networkx_present": false,
+    "neo4j_present": true
+  },
+  "isolated_live_capture": "not_rerun_in_this_closeout",
+  "limits": "The local isolated-environment probe does not retroactively prove the September 15 capture used that environment or identify the currently running app process."
+}

@@ -1,0 +1,1 @@
+Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in. Everything else is unchanged. Does that settle it?

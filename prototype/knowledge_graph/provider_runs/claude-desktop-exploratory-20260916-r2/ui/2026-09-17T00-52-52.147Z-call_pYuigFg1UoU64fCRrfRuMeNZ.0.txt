@@ -1,0 +1,59 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 6-9, 11-30, 44-88, 90, 95-99, 103-106, 121-124, 126-165, 167-169
+~			4 HTML content New chat - Claude, URL: claude.ai/new
++					120 container
++						121 container Sidebar
++							122 splitter Description: Resize sidebar, Value: 242
++							123 button Hide sidebar
++							124 button Back
++							125 button (disabled) Forward
++							126 Mode
++								127 radio button Description: Chat and Cowork, Value: 1
++								128 radio button Description: Code, Value: 0
++							129 container
++								130 button New
++								131 button Projects
++								132 button Artifacts
++								133 button Customize
++								134 button Chats and tasks
++								135 button View all
++								136 button Search
++								137 pop up button Filter and group recents
++								138 container
++									139 pop up button ma ma Free
++										140 image ma
++										141 text ma
++										142 text Free
++									143 link Description: Get apps and extensions, Value: claude.ai/downloads
++						144 container
++							145 container Primary pane
++								146 button Use incognito
++								147 container
++									148 container
++										149 text Free plan
++										150 link Description: Upgrade, Value: claude.ai/upgrade
++									151 text ma returns!
++									152 container
++										153 container
++											154 container
++												155 text entry area (settable) Description: Write your prompt to Claude, Value: 
+
++											156 pop up button Add files, connectors, and more
++											157 Surface
++												158 radio button Chat, Value: 1
++												159 radio button Cowork, Value: 0
++											160 pop up button Model: Sonnet 5 Medium
++												161 text Sonnet 5
++												162 text Medium
++											163 container
++												164 button Dictate
++												165 container Use voice mode
++													166 button Use voice mode
++													167 pop up button Microphone
++									168 content list Prompt categories
++										169 button Write
++										170 button Learn
++										171 button Code
++										172 button Life stuff
++										173 button Claude’s choice
+The focused UI element is 155 text entry area (settable) Description: Write your prompt to Claude, Value: 

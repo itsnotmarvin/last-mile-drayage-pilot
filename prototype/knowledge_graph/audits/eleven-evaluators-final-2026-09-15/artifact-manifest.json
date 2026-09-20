@@ -1,0 +1,49 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "README.md": {
+      "bytes": 3761,
+      "sha256": "9db726786da3b9ae0e815f9d690cce1235de82001f9e7a3914dbae905cfa7468"
+    },
+    "assessments.json": {
+      "bytes": 6280250,
+      "sha256": "9c19648afe86073122968ff5708c44980ea296f3af40cc61246fc86aa1a6f92d"
+    },
+    "http-transcript.json": {
+      "bytes": 1863494,
+      "sha256": "17ca95ffde3406c50856f1d828fe63880ea23298cf35604e3070c32ff1c6489d"
+    },
+    "mcp-transcript.json": {
+      "bytes": 10548449,
+      "sha256": "2593066f28b5c9c4f0024b927f7271748614512013974254a030314acaefa9a5"
+    },
+    "operator-fixture-events-stdio.json": {
+      "bytes": 183432,
+      "sha256": "9bc48c6b877e11cc68a4976c7f9839d146978ae4d72e347994f7f0e47d456089"
+    },
+    "operator-fixture-events.json": {
+      "bytes": 212016,
+      "sha256": "dcb83c0b63758d6b09c11a45a7e667d0f9ca4d8f44712c6654a84164c17ab6e4"
+    },
+    "sample-trip-report.html": {
+      "bytes": 75845,
+      "sha256": "8cfd89241ddf5bc06ba2c2dbb31e793635edf2cf8d76878e93156d21d075c182"
+    },
+    "stdio-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "summary.json": {
+      "bytes": 5803,
+      "sha256": "443e7d142917a06caa4e012060c56b95a7b18b6fb12101a239fcaa1a6f35d550"
+    },
+    "tools.json": {
+      "bytes": 598518,
+      "sha256": "2d1642850a14960e1a410426f9171e96f20244e847c993b04904ae08240071e9"
+    },
+    "transaction-evidence.json": {
+      "bytes": 4437,
+      "sha256": "27a89eaa1e4fd3a59ae836c90d3003407ac9112cda3c23f6ef35c33533a19660"
+    }
+  }
+}

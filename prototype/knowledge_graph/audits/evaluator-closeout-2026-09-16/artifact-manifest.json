@@ -1,0 +1,97 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    "README.md": {
+      "bytes": 3856,
+      "sha256": "13abdf04f6b016493ca0075a724a5084753586096159ef26c9c05a1342818114"
+    },
+    "browser/README.md": {
+      "bytes": 1670,
+      "sha256": "63025e2579d91ba5458cb97e38b6a8c0e49a4ed5ada206c9733512023d1a3131"
+    },
+    "browser/app-check-5.png": {
+      "bytes": 211662,
+      "sha256": "0a8b5db719a10a336cacb6685c54b919841ba29fbc480add3f5cd4a7048c23ae"
+    },
+    "browser/app-check-6.png": {
+      "bytes": 302064,
+      "sha256": "6b1440652b4a8eaf5238fb658de17af915cc18e1e5e5cb3b44e2c567448eefd2"
+    },
+    "browser/app-check-7.png": {
+      "bytes": 170597,
+      "sha256": "6975686147aa127dc7679ff1c0b877ff7eccda3973bdf53cc0355f734f4235b0"
+    },
+    "browser/app-check-8.png": {
+      "bytes": 284665,
+      "sha256": "4978001354cfe9a45387c4493a94ad78e67a081710187a9e51442abd428f899a"
+    },
+    "browser/original-browser-note.md": {
+      "bytes": 1755,
+      "sha256": "b2e5c3472d7333bfe6699bdd2d64cba9f1d8040c446e5d0b94e9712aac8cca8b"
+    },
+    "browser/provenance.json": {
+      "bytes": 2051,
+      "sha256": "2b48ae492f5a248d67c84f313e1896e21a66a0f1c2cd2ed3c4a12eb4015c1e9d"
+    },
+    "environment-correction.json": {
+      "bytes": 956,
+      "sha256": "caa45f226647c9c103b950df50c5d574030b645d86083aa38dc66353bf83f3d5"
+    },
+    "prior-artifacts.json": {
+      "bytes": 27291,
+      "sha256": "f3e15df51d98a546b3020aec6ce045d6d6d876e3fc3b12ced08c024bbedb0b06"
+    },
+    "prior-capture-verification.json": {
+      "bytes": 519,
+      "sha256": "98a2cbae95bfd67dffa6c3ee6209de54220c165f264d7d453394c52486189dbf"
+    },
+    "reviewed-files/PROGRESS.md": {
+      "bytes": 34030,
+      "sha256": "9121ffd3b13aa914f58baec8a69abc0dad95de28d147495ad028a3a629b106b9"
+    },
+    "reviewed-files/README.md": {
+      "bytes": 10224,
+      "sha256": "0d41ac545859c5cb10c1b313145e786c99e2f7a4c16e539d5b6e7c9fa40ce4b1"
+    },
+    "reviewed-files/docs/integrated-trip-workspace.md": {
+      "bytes": 14044,
+      "sha256": "77515385c2104afedd4a8385208438f2ccfa6acc96337a46ca5ee5b5fa435b7a"
+    },
+    "reviewed-files/docs/production-readiness.md": {
+      "bytes": 10061,
+      "sha256": "69134f3a710823054d8e1811a496237f1cdcec9144a30cb270be63ba9a28ae30"
+    },
+    "reviewed-files/docs/release-engineering.md": {
+      "bytes": 11181,
+      "sha256": "e5bab4d9f1f3e561f1b65bc3308a8a0761d8fbbdf77aef735d34d1cec41f6c4d"
+    },
+    "reviewed-files/docs/release-readiness-2026-09-16.json": {
+      "bytes": 9412,
+      "sha256": "0f671564a24b3e82881e35d1e8541a5c821ae3dcbb090093f78359eb2a3b12cc"
+    },
+    "reviewed-files/docs/requirement-evaluators.md": {
+      "bytes": 6631,
+      "sha256": "1eec6919d2dec7b071c7b9fd70e24707bfabeb18e3c3d56275af361ce9b0f54f"
+    },
+    "reviewed-files/docs/trip-workflow.md": {
+      "bytes": 9427,
+      "sha256": "61145b62783d1bc081f0f5ea2f86032e22fd8ca792ac060eced35cfd0a405083"
+    },
+    "reviewed-files/tests/test_source_supplements.py": {
+      "bytes": 7804,
+      "sha256": "9d4b1ef1c426463f7b628224a530af0c0d9cd2f4974d55794920bd5ff33c93a1"
+    },
+    "runtime-before.json": {
+      "bytes": 4446,
+      "sha256": "cc3b6948e5a0223ac1a2f5a7765387673e47d34e7233b7f3b0e9896135a39788"
+    },
+    "summary.json": {
+      "bytes": 6483,
+      "sha256": "3ba77f61a0b405c2c335484f3ed171e371e186b1274b02db7f6a7b245a959f67"
+    },
+    "tests.txt": {
+      "bytes": 61122,
+      "sha256": "47cf9ba73ec3d4f5871211af0f7059f7e6dfc10fc849b4c1a03ee6521f0b1f3d"
+    }
+  }
+}

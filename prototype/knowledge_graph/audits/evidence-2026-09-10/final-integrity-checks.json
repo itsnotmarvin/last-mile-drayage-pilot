@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-11T00:10:36.376288+00:00",
+  "release_and_archived_bytes_verified": true,
+  "runtime_unchanged_since_live_capture": true,
+  "casebook_hash_verified": true,
+  "direct_event_chain_and_exact_transcript_responses_verified": 49,
+  "historical_kg_git_diff_empty": true,
+  "git_diff_check_passed": true,
+  "report_links_resolve": true,
+  "unit_tests_passed": 209,
+  "scope": "Read-only artifact checks after final report; no live graph mutation or source correction"
+}

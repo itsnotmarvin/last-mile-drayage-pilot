@@ -1,0 +1,56 @@
+{
+  "runtime_files_matching_baseline": 45,
+  "plan_hash_matches": true,
+  "event_hashes_and_chain_valid": true,
+  "event_count": 5,
+  "schema_valid_assessments": 4,
+  "tool_error_count": 1,
+  "tool_error": "request_key was already used with different write arguments",
+  "rows": [
+    {
+      "role": "driver",
+      "revision": 1,
+      "trip_id": "syn-trip-27b6ad2e98abbe8a0b7d17828925da41",
+      "assessment_id": "608a89113f0700c157e061460647a34ee04a4a7d8c94959479591f0703b30ce1",
+      "height": 175,
+      "scope_status": "unresolved",
+      "event_sequence": 2,
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "source_message_preserved_verbatim": false
+    },
+    {
+      "role": "driver",
+      "revision": 2,
+      "trip_id": "syn-trip-27b6ad2e98abbe8a0b7d17828925da41",
+      "assessment_id": "861f626628dcff4c48657aa2ce7b2ed4e6b39d078edaa176ebab03fade812b1f",
+      "height": 162,
+      "scope_status": "unresolved",
+      "event_sequence": 3,
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "source_message_preserved_verbatim": false
+    },
+    {
+      "role": "dispatcher",
+      "revision": 1,
+      "trip_id": "syn-trip-d6e1a312caeba41f034b4aa408fb4559",
+      "assessment_id": "932335cb92bb0820285d9e18ba386b76ee429c98d4444ce237bef2e22adccda5",
+      "height": 175,
+      "scope_status": "unresolved",
+      "event_sequence": 4,
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "source_message_preserved_verbatim": false
+    },
+    {
+      "role": "dispatcher",
+      "revision": 2,
+      "trip_id": "syn-trip-d6e1a312caeba41f034b4aa408fb4559",
+      "assessment_id": "1cf95a51421e073e9f77c2e7ac938b1fb4e7a994733c27b15f433eb1913882c2",
+      "height": 162,
+      "scope_status": "unresolved",
+      "event_sequence": 5,
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "source_message_preserved_verbatim": false
+    }
+  ],
+  "verification_limit": "Mechanical checks only; does not grade prose or prove authority verification, legal correctness, or production readiness."
+}

@@ -1,0 +1,55 @@
+test_conflicting_authority_observations_stay_unresolved (test_conditions_graph_binding.ConditionsBindingTests.test_conflicting_authority_observations_stay_unresolved) ... ok
+test_current_conditions_satisfy_only_this_requirement (test_conditions_graph_binding.ConditionsBindingTests.test_current_conditions_satisfy_only_this_requirement) ... ok
+test_incomplete_or_reordered_route_receipt_cannot_cover_named_route (test_conditions_graph_binding.ConditionsBindingTests.test_incomplete_or_reordered_route_receipt_cannot_cover_named_route) ... 
+  test_incomplete_or_reordered_route_receipt_cannot_cover_named_route (test_conditions_graph_binding.ConditionsBindingTests.test_incomplete_or_reordered_route_receipt_cannot_cover_named_route) (label='subset') ... FAIL
+  test_incomplete_or_reordered_route_receipt_cannot_cover_named_route (test_conditions_graph_binding.ConditionsBindingTests.test_incomplete_or_reordered_route_receipt_cannot_cover_named_route) (label='reversed') ... FAIL
+  test_incomplete_or_reordered_route_receipt_cannot_cover_named_route (test_conditions_graph_binding.ConditionsBindingTests.test_incomplete_or_reordered_route_receipt_cannot_cover_named_route) (label='duplicate') ... FAIL
+test_model_surfaces_cannot_mint_receipts (test_conditions_graph_binding.ConditionsBindingTests.test_model_surfaces_cannot_mint_receipts) ... ok
+test_optional_provenance_fields_validate_and_admit (test_conditions_graph_binding.ConditionsBindingTests.test_optional_provenance_fields_validate_and_admit) ... ok
+test_scoping_is_pure_and_recomputes_identity (test_conditions_graph_binding.ConditionsBindingTests.test_scoping_is_pure_and_recomputes_identity) ... ok
+test_stale_window_stays_unresolved (test_conditions_graph_binding.ConditionsBindingTests.test_stale_window_stays_unresolved) ... ok
+test_unknown_edge_shape_is_not_membership (test_conditions_graph_binding.ConditionsBindingTests.test_unknown_edge_shape_is_not_membership) ... ok
+test_verified_closure_holds_without_any_clearance (test_conditions_graph_binding.ConditionsBindingTests.test_verified_closure_holds_without_any_clearance) ... ok
+test_wrong_route_rejected_on_binding (test_conditions_graph_binding.ConditionsBindingTests.test_wrong_route_rejected_on_binding) ... ok
+test_wrong_segment_rejected_before_evaluation (test_conditions_graph_binding.ConditionsBindingTests.test_wrong_segment_rejected_before_evaluation) ... ok
+
+======================================================================
+FAIL: test_incomplete_or_reordered_route_receipt_cannot_cover_named_route (test_conditions_graph_binding.ConditionsBindingTests.test_incomplete_or_reordered_route_receipt_cannot_cover_named_route) (label='subset')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_conditions_graph_binding.py", line 114, in test_incomplete_or_reordered_route_receipt_cannot_cover_named_route
+    self.assertEqual([], scoped["evidence"].get("route", []))
+AssertionError: Lists differ: [] != [{'schema_version': 'drayage-verification-[1131 chars]}]}}]
+
+Second list contains 1 additional elements.
+First extra element 0:
+{'schema_version': 'drayage-verification-v1', 'mode': 'synthetic_only', 'id': 'syn-verification-route-a', 'kind': 'route', 'provider_id': 'syn-provider-route', 'authority_role': 'road_authority', 'graph_release': 'f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c', 'trip_id': 'syn-trip-3ab66be5861bb0d457f432642480f372', 'trip_revision': 1, 'case_sha256': '0455e8184bd712b01a12b8fae03b6cfb77927f874951fa49853289b76e1ed071', 'observed_at': '2026-09-13T12:00:00-04:00', 'valid_from': '2026-09-13T12:00:00-04:00', 'valid_until': '2026-09-13T16:00:00-04:00', 'payload': {'vehicle_id': 'syn-vehicle-eval', 'trailer_id': 'syn-trailer-eval', 'load_id': 'syn-load-eval', 'route_id': 'path_a_exit13a_to_apm', 'route_description': 'Synthetic Interstate segment to APM', 'terminal_id': 'facility_apm_elizabeth', 'complete_sequence_verified': True, 'exception_claimed': False, 'segments': [{'segment_id': 'edge_a_exit13a_connector', 'authority': 'nj_state', 'weight_regime': 'federal_interstate', 'dimension_regime': 'nj_102_network', 'local_direct_terminal_access_verified': False, 'long_semitrailer_access_verified': False, 'access': 'permitted', 'posted_limits': {}}]}}
+
+Diff is 1576 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_incomplete_or_reordered_route_receipt_cannot_cover_named_route (test_conditions_graph_binding.ConditionsBindingTests.test_incomplete_or_reordered_route_receipt_cannot_cover_named_route) (label='reversed')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_conditions_graph_binding.py", line 114, in test_incomplete_or_reordered_route_receipt_cannot_cover_named_route
+    self.assertEqual([], scoped["evidence"].get("route", []))
+AssertionError: Lists differ: [] != [{'schema_version': 'drayage-verification-[1970 chars]}]}}]
+
+Second list contains 1 additional elements.
+First extra element 0:
+{'schema_version': 'drayage-verification-v1', 'mode': 'synthetic_only', 'id': 'syn-verification-route-a', 'kind': 'route', 'provider_id': 'syn-provider-route', 'authority_role': 'road_authority', 'graph_release': 'f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c', 'trip_id': 'syn-trip-3ab66be5861bb0d457f432642480f372', 'trip_revision': 1, 'case_sha256': '0455e8184bd712b01a12b8fae03b6cfb77927f874951fa49853289b76e1ed071', 'observed_at': '2026-09-13T12:00:00-04:00', 'valid_from': '2026-09-13T12:00:00-04:00', 'valid_until': '2026-09-13T16:00:00-04:00', 'payload': {'vehicle_id': 'syn-vehicle-eval', 'trailer_id': 'syn-trailer-eval', 'load_id': 'syn-load-eval', 'route_id': 'path_a_exit13a_to_apm', 'route_description': 'Synthetic Interstate segment to APM', 'terminal_id': 'facility_apm_elizabeth', 'complete_sequence_verified': True, 'exception_claimed': False, 'segments': [{'segment_id': 'edge_shared_tripoli_gate', 'authority': 'nj_state', 'weight_regime': 'federal_interstate', 'dimension_regime': 'nj_102_network', 'local_direct_terminal_access_verified': False, 'long_semitrailer_access_verified': False, 'access': 'permitted', 'posted_limits': {}}, {'segment_id': 'edge_shared_mclester', 'authority': 'nj_state', 'weight_regime': 'federal_interstate', 'dimension_regime': 'nj_102_network', 'local_direct_terminal_access_verified': False, 'long_semitrailer_access_verified': False, 'access': 'permitted', 'posted_limits': {}}, {'segment_id': 'edge_shared_north_avenue', 'authority': 'nj_state', 'weight_regime': 'federal_interstate', 'dimension_regime': 'nj_102_network', 'local_direct_terminal_access_verified': False, 'long_semitrailer_access_verified': False, 'access': 'permitted', 'posted_limits': {}}, {'segment_id': 'edge_a_exit13a_connector', 'authority': 'nj_state', 'weight_regime': 'federal_interstate', 'dimension_regime': 'nj_102_network', 'local_direct_terminal_access_verified': False, 'long_semitrailer_access_verified': False, 'access': 'permitted', 'posted_limits': {}}]}}
+
+Diff is 3132 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_incomplete_or_reordered_route_receipt_cannot_cover_named_route (test_conditions_graph_binding.ConditionsBindingTests.test_incomplete_or_reordered_route_receipt_cannot_cover_named_route) (label='duplicate')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_conditions_graph_binding.py", line 115, in test_incomplete_or_reordered_route_receipt_cannot_cover_named_route
+    self.assertIn("VERIFICATION_ROUTE_SEQUENCE_MISMATCH",
+AssertionError: 'VERIFICATION_ROUTE_SEQUENCE_MISMATCH' not found in ['INVALID_VERIFICATION_RECEIPT']
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.015s
+
+FAILED (failures=3)

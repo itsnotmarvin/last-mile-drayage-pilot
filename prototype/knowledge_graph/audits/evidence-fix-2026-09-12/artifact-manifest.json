@@ -1,0 +1,70 @@
+{
+  "algorithm": "sha256",
+  "scope": "All files in this fix audit directory excluding this manifest; original audit remains unchanged.",
+  "files": {
+    "README.md": {
+      "sha256": "8923f2d19d8409b69ec57134344c9576c398a6afaad44b65c73c557c3402d7b7",
+      "bytes": 7549
+    },
+    "bundle-verification.json": {
+      "sha256": "30a107f3c8c56087e8cf60581efe9ec4bea5c9967fb61bb7823f096eb20f9db8",
+      "bytes": 10671
+    },
+    "casebook.json": {
+      "sha256": "605ac47b32d9838fd81831704f8efb1e6766f8a8299ef1db9ea90c8f78f08a7e",
+      "bytes": 82846
+    },
+    "casebook.sha256": {
+      "sha256": "31f1b2b9cf98021f4eb12f0d782520ea1c98b14f30e07fe15d0c8d43a67a817a",
+      "bytes": 65
+    },
+    "checkpoint-tests.txt": {
+      "sha256": "33d2801513cd80e173265fb59b406e37c6129be7614f3fe1635b04f0177fb6f8",
+      "bytes": 30081
+    },
+    "direct-mcp-audit.jsonl": {
+      "sha256": "65ec76b68c9c9742a924c0e2e7d6b4ca1745a6e43b6fb7e7164593eedd267fae",
+      "bytes": 6375854
+    },
+    "direct-partial-results.json": {
+      "sha256": "759d45c70fd3625ea87cef3752b98f496610d00521fecf3169e040c825a468df",
+      "bytes": 522721
+    },
+    "direct-results.json": {
+      "sha256": "c18b022ae628c5c563c7de5b1da64019ae813b53a9243a7c41bd44c2ce2dff8e",
+      "bytes": 23744
+    },
+    "direct-run.log": {
+      "sha256": "e502460920fb076ecc9198a4457c1c83eb0ab4b15991ff066d7b33d75c5c03dc",
+      "bytes": 24288
+    },
+    "direct-stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "direct-stdio-transcript.json": {
+      "sha256": "ad14123d383a41f8b9e8d7decef30e3b234750d5d5c9ea269033be9d0cb5fd5b",
+      "bytes": 5672483
+    },
+    "requirement-evidence.json": {
+      "sha256": "8ce3f893c666629e67d383d139fa81fd338625dfeaeb8fb3b2d26dd267ec8ced",
+      "bytes": 94990
+    },
+    "runtime-files.json": {
+      "sha256": "c4bf2830ec6770d585ae0e7c8df4d7b1f9a5f88721c1d520c5d85760eb2fabd3",
+      "bytes": 1436
+    },
+    "tools.json": {
+      "sha256": "039b35e8d6db6d2f7db71faf77ba7242508068f10dd11a413db25ea3899afa25",
+      "bytes": 228805
+    },
+    "unit-tests.txt": {
+      "sha256": "eb6c5870a6d054564b7b91d3a1153a4eca22a5a6580923d48152ba44eb88d569",
+      "bytes": 31452
+    },
+    "verify_bundle.py": {
+      "sha256": "2c06e678232f868ef87bdaa2342d9efcc50d803cee4cfbabd3dbeb71e3a29280",
+      "bytes": 5882
+    }
+  }
+}

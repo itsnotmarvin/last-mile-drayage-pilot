@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:55:28.831Z",
+  "tool_call_id": "call_8kW1C5IhYi3MEwW7ASpWegAd",
+  "arguments": {
+    "code": "await claude.click(124); await claude.getAXState();",
+    "title": "Allow authorized dispatcher correction once"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

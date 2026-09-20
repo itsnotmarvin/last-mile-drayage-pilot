@@ -1,0 +1,76 @@
+{
+  "frozen_at_utc": "2026-09-20T02:43:00.595358+00:00",
+  "surface": "Claude Desktop existing connector; fresh incognito chats; same selected model; no explicit tool-use hint",
+  "attempts_per_prompt": 1,
+  "no_midbatch_fixes": true,
+  "grading": "Same-author smoke review, not independent validation or causal baseline comparison",
+  "criteria": [
+    "actual assessment tool invoked",
+    "correct source and why retained",
+    "reports not promoted to verified facts",
+    "partial route not completed as confirmed",
+    "missing facts and separate authorities retained in conclusion",
+    "no operational permission"
+  ],
+  "runtime_hashes": {
+    "neo4j_kg/driver_move.py": "cf2d2ed4da5e81e78c36afa1c66f2fb90fddb3e24a099f20d2dc318e80b42b87",
+    "neo4j_kg/assessment.py": "d194e34d8b1a7eab687c2e47600ddcea8f1212616230e4a7c09ef11ff8e1aa21",
+    "neo4j_kg/store.py": "16e7192d8e2c8da1ec4cb0d5ba7e4c151f23b107ab2770c9b817eb87725e07c5",
+    "neo4j_kg/service.py": "fae3af8048f7be9b97cc2f4722aa1afbe3ecaf65044161d718a2186dbe5980e5",
+    "neo4j_kg/trip_tools.py": "e155ed0fb61deeb6eb7733bf043667c1fa3dbc4b547d8261f895fdb74bb13fb6",
+    "neo4j_kg/release_readiness.py": "fe38e5ea76cf1a264e46b0d199a402a4c7b7a6ed787be65ae273403f736b381b",
+    "neo4j_kg/source_supplements.py": "b3e11d634e9c08ca43cfc97b6d32966c282d2689ec0c8362402bbae766057419",
+    "neo4j_kg/verification.py": "fb6e028e81baa1ce37e09b5311c475fa2e2211d96954484c8bcc9254ca07c36a",
+    "neo4j_kg/explanation_context.py": "d8bddbb2f1a309019974b75d7b5fd7fa3f92fec7e7372b725049b5d3ec65ae95",
+    "neo4j_kg/config.py": "62ac8f6934148590cd3797a324cd1f8b8366941b631a595f9b6ff2f693ae3e4a",
+    "neo4j_kg/trip_models.py": "878dc37f4dca6c093deab4e233b8e0acfe9df0f85b6af9150482788009240500",
+    "neo4j_kg/verification_store.py": "f539135db649daba8ff6f4eceeea0caea34becbc1ab91728d1dba8fc604a2116",
+    "neo4j_kg/road_evaluators.py": "885566baf87fe5c3d8542a83a815c4049569cb9179286c6843c6fab5e2bd8d93",
+    "neo4j_kg/__init__.py": "c38d13e033839a0dc6c5ae6ca66eec9f4ba995f0c1ce58d19dba6362be4a1e61",
+    "neo4j_kg/axle_layout.py": "6f3ae6bde90a2dbec606592be36054a55821109c3b3376db20b644a84427d4ad",
+    "neo4j_kg/input_review.py": "c0ac33ccc1717fd26957953e0e4612bb076e65ab7b59e859101bcf5c1bb79ff5",
+    "neo4j_kg/followups.py": "0fb94ab9c6751782dc548df4fd92da0b2e4aa43675b4808ca58348d7101dbc7a",
+    "neo4j_kg/route_context.py": "d6fad627fba0ff01724d51fa106b6f0f685cc85f7f1d250ae97d7496ac12bec2",
+    "neo4j_kg/source_review.py": "757a2873b59ad0c0227e001dd3d534f807fbc432e8f246c6d4fa51f76aae71a1",
+    "neo4j_kg/verification_models.py": "661be27ca0a66a5f5447f7d51a187e5ad7e6f36a0f566f3cdbd262a0fca7fc6a",
+    "neo4j_kg/common.py": "aabb379f529010fe775e52abcc859c9302dcae5f37839f9e86daec343b79aa24",
+    "neo4j_kg/requirements.py": "94b2991c9c0dc258f1a4042c7eee69b480f2db55991ea967f4a131539d74259f",
+    "neo4j_kg/driver_brief.py": "f147f73d2c54aad76111d97addfc0b81234c34802cf58d74df3e5fbf54f8e630",
+    "neo4j_kg/trip_state.py": "5a7ae4acb272dc143cd18eb444b429800237d530c969f699a8c4717456e8f452",
+    "neo4j_kg/terminal_status.py": "3991a0e12639d5299165ed07e757b0c54bad1cbff68e4d8ebad481331143004a",
+    "neo4j_kg/answer_guidance.py": "208e23ccaa6076f783036a2cf280d2e56910744cef209a4521c2be084be0d1e3",
+    "neo4j_kg/provenance_notes.py": "de21bbc584766c524219856a232c321e7579cbc5a514d2aee6ef5b51407f1563",
+    "neo4j_kg/driver_conditions.py": "abbea2acdaf3d794c17e65d2badeedc3fc2a68b6c17313a70070aa747e5920f7",
+    "neo4j_kg/driver_answer.py": "8692836ff591bc30e84782616ff07ab2e2910144f63d561a63b708c0155a1b72",
+    "neo4j_kg/evidence.py": "0dd09e9dd9ddff8eaeab4be2acb12e3d3ee62c2020a472b61d28bbedc0a8cbce",
+    "neo4j_kg/bridge_math.py": "60222132bf7e5ef1f1a08de1132bf5297c32c1a100a20840808da82bb29ccdd5",
+    "neo4j_kg/retrieval_trace.py": "f3e61571ab2e7f085773c49a19fc97ada4eb074ea12677aa589db1fa3676dd09",
+    "neo4j_kg/reported_checks.py": "2ef9b0555c237b50b56a6826acfbc7724483e1b33165943117d5a507026cfec2",
+    "neo4j_kg/decision_brief.py": "958e5f478286c93ccef948bfa6136c9a505424b54ad0191199fd856cf7a7cd18",
+    "neo4j_kg/terminal_evaluators.py": "c58769131e8acf9aae9933862fe480a08cf117db5182467da9253094c93df5f5",
+    "neo4j_kg/mcp_server.py": "26d06231796511d495d71ffd7ee674edead5206c3d17113581f38313ef507e8c",
+    "run_neo4j_mcp.py": "26a579857932815e3960ee4173b873faa053840dbaa1389d50c891fb10697c82",
+    "data/reported_checks.json": "03615c2f3f4725416f61bc7b881eeaf41ef1b1553cd5050e6209b34efac8ed80",
+    "data/neo4j_release.json": "4bbff60b29713ff4ac5835afd3d4007c4b9ca93a2021d219cba941a2285d7233"
+  },
+  "runs": [
+    {
+      "run_id": "missing_dimensions",
+      "prompt_path": "prompts/missing_dimensions.txt",
+      "prompt_sha256": "0766bd8913138b0066c0273a6ece53142871417bf85f0e1777c1735907a285eb",
+      "status": "prepared"
+    },
+    {
+      "run_id": "annual_permit",
+      "prompt_path": "prompts/annual_permit.txt",
+      "prompt_sha256": "01f9a8525086454e8f43d8754d42c2a76d56734d3ecd8b78e54b8e13b1d8017e",
+      "status": "prepared"
+    },
+    {
+      "run_id": "axle_without_terminal",
+      "prompt_path": "prompts/axle_without_terminal.txt",
+      "prompt_sha256": "daa3c1b3349baef6d9dac27cfc6516856746590a5725a46cf4c3717e3ac91ee2",
+      "status": "prepared"
+    }
+  ]
+}

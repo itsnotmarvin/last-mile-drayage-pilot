@@ -1,0 +1,121 @@
+{
+  "method": "Agent visual spot-checks of 10 rendered archived PDF pages, plus triage of legal-section locators. Not independent human or legal review.",
+  "archive_edited": false,
+  "reviewed_pages_directory": "source-review/",
+  "entries": [
+    {
+      "clause_id": "reg_nj_truck_access_local_rule_preservation",
+      "judgment": "screen_false_negative",
+      "detail": "Passage visually present in right column, paragraph (e), including preservation of State, municipal and county restrictions. OCR/column order prevents contiguous normalized match.",
+      "reviewed_rendered_pages": [
+        "njac_16_32_truck_access_current_2023-p2.png"
+      ]
+    },
+    {
+      "clause_id": "reg_nj_access_network_600_series",
+      "judgment": "screen_false_negative",
+      "detail": "Quoted item 3 is visually present at bottom of left column on PDF page 3. Appendix C contents were not independently reviewed.",
+      "reviewed_rendered_pages": [
+        "njac_16_32_truck_access_current_2023-p3.png"
+      ]
+    },
+    {
+      "clause_id": "reg_nj_terminal_access_102_inch_standard_truck",
+      "judgment": "screen_false_negative",
+      "detail": "Item 2 and subitems i/ii are visually present on PDF page 4; stated range 3-4 includes the passage.",
+      "reviewed_rendered_pages": [
+        "njac_16_32_truck_access_current_2023-p3.png",
+        "njac_16_32_truck_access_current_2023-p4.png"
+      ]
+    },
+    {
+      "clause_id": "reg_panynj_sealink_twic",
+      "judgment": "screen_false_negative",
+      "detail": "Quoted text visually present in separate columns on PDF page 4 (printed pages 4-5). Layout extraction interleaves columns.",
+      "reviewed_rendered_pages": [
+        "panynj_truckers_resource_guidebook-p4.png"
+      ]
+    },
+    {
+      "clause_id": "reg_panynj_rfid",
+      "judgment": "screen_false_negative",
+      "detail": "Quoted text visually present in separate columns on PDF page 4 (printed pages 4-5). Layout extraction interleaves columns.",
+      "reviewed_rendered_pages": [
+        "panynj_truckers_resource_guidebook-p4.png"
+      ]
+    },
+    {
+      "clause_id": "reg_apm_appointment",
+      "judgment": "screen_false_negative",
+      "detail": "Quoted appointment, mandatory training and new-SeaLink/same-company distinction visually present in left column on PDF page 11, printed page 18.",
+      "reviewed_rendered_pages": [
+        "panynj_truckers_resource_guidebook-p11.png"
+      ]
+    },
+    {
+      "clause_id": "reg_apm_safety_induction",
+      "judgment": "screen_false_negative",
+      "detail": "Quoted appointment, mandatory training and new-SeaLink/same-company distinction visually present in left column on PDF page 11, printed page 18.",
+      "reviewed_rendered_pages": [
+        "panynj_truckers_resource_guidebook-p11.png"
+      ]
+    },
+    {
+      "clause_id": "prototype_clause_induction_sealink_change",
+      "judgment": "screen_false_negative",
+      "detail": "Quoted appointment, mandatory training and new-SeaLink/same-company distinction visually present in left column on PDF page 11, printed page 18.",
+      "reviewed_rendered_pages": [
+        "panynj_truckers_resource_guidebook-p11.png"
+      ]
+    },
+    {
+      "clause_id": "reg_nj_single_trip_route_review_13_18_portal_copy",
+      "judgment": "confirmed_incomplete_page_locator",
+      "detail": "Stored locator says PDF pages 3-4. Enumerated items (b)(3) and (b)(4) are on page 2; remaining retained items and (d)/(e) are on page 3. A proposed locator is PDF pages 2-3, same code section. No source or graph edit made.",
+      "reviewed_rendered_pages": [
+        "njac_13_18_current_snapshot_2026_08_24-p2.png",
+        "njac_13_18_current_snapshot_2026_08_24-p3.png",
+        "njac_13_18_current_snapshot_2026_08_24-p4.png"
+      ]
+    },
+    {
+      "clause_id": "reg_nj_ocean_container_permit",
+      "judgment": "confirmed_table_linearization_labeled_verbatim",
+      "detail": "The table labels and values match: gross 90,000 lbs, tandem 38,000 lbs, tri-axle 56,400 lbs. The stored sentence adds a colon, semicolons and terminal punctuation to a three-column table, while source_text_verbatim=true. This is an accurate table transcription in substance, not a literal continuous quotation. Surrounding qualifications remain relevant; these numbers alone do not establish eligibility.",
+      "reviewed_rendered_pages": [
+        "nj_size_weight_guidebook_2024-p43.png"
+      ]
+    },
+    {
+      "clause_id": "reg_panynj_terminal_weight_dimensions",
+      "judgment": "confirmed_retained_passage_exists",
+      "detail": "Tariff Subrule 34-046 is visibly present on PDF page 16: containerized gross weight cap with manufacturer limits, and over-dimensional approval clause. This supports the retrieval-gap finding; no current-trip applicability or legal clearance was evaluated.",
+      "reviewed_rendered_pages": [
+        "panynj_marine_terminal_tariff_pa10_effective_2026_05_01-p16.png"
+      ]
+    },
+    {
+      "clause_id": "reg_elizabeth_north_avenue_east_zone",
+      "judgment": "section_locator_requires_separate_review",
+      "detail": "Normalized quote strings occur somewhere in the PDF, but the locator names a municipal section rather than a PDF page. The page-number screen cannot adjudicate it. Street-table structure and legal-section fidelity were not visually reviewed.",
+      "reviewed_rendered_pages": []
+    },
+    {
+      "clause_id": "reg_elizabeth_four_ton_limit_streets",
+      "judgment": "section_locator_requires_separate_review",
+      "detail": "Normalized quote strings occur somewhere in the PDF, but the locator names a municipal section rather than a PDF page. The page-number screen cannot adjudicate it. Street-table structure and legal-section fidelity were not visually reviewed.",
+      "reviewed_rendered_pages": []
+    },
+    {
+      "clause_id": "reg_elizabeth_five_ton_limit_streets",
+      "judgment": "section_locator_requires_separate_review",
+      "detail": "Normalized quote strings occur somewhere in the PDF, but the locator names a municipal section rather than a PDF page. The page-number screen cannot adjudicate it. Street-table structure and legal-section fidelity were not visually reviewed.",
+      "reviewed_rendered_pages": []
+    }
+  ],
+  "remaining_limits": [
+    "27 PDF clauses were text-screened, not all visually adjudicated",
+    "Municipal table structure and non-PDF source quotations need separate review",
+    "No live source freshness checks or whole-repository semantic ingestion test"
+  ]
+}

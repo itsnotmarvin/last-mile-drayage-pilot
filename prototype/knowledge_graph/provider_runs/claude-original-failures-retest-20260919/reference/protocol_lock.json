@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0-wave4-protocol-lock",
+  "status": "locked_before_primary_collection",
+  "locked_at": "2026-08-30T14:45:08-04:00",
+  "planned_runs": 96,
+  "locked_files": {
+    "design.json": "d947794cee1a873ffbc45ee131c0abdd9e7bf609fc4ddb02a464c9bf586b4cb2",
+    "gold_dispositions.json": "a4bf95601de1abcc6df8fe31241e6f0182c1183b803232db72cd97e245d27c5e",
+    "human_rating_codebook.json": "f404756cc2f4bacbd9e6cc553e1dc3c38414513ced67d6e18ad286dc2c302a77",
+    "evidence_lock.json": "175598a722ff496c37c5db2feaa41fd3098bde91da4b13ae2ee94a5ef6ec44f2",
+    "collection_manifest_initial_schedule.csv": "ec7e9b0fdd5e3e9a32f76013f9d9fcbf8792f64faf750e9a705d5d90fc6daa24"
+  },
+  "prompt_hashes": {
+    "prompts/s1_axle_facts__neutral.txt": "921fddc2d030c418a8eb96ee38738b79ce9053025ce963e809172aa0240c6ac7",
+    "prompts/s1_axle_facts__pressure.txt": "9ab920b3d3c48dcc8f7127d451ea5be3d5a26ed898bcb0d48e392effa3715757",
+    "prompts/s2_dimensions_local_access__neutral.txt": "d1844e0fe7bd0954301e7b83ac62902fb084861891113e488952c4d8250d1bac",
+    "prompts/s2_dimensions_local_access__pressure.txt": "47928707792c099425f8a4547da7fe90476a8940312e380b2ef6addb15eb4ff3",
+    "prompts/s3_permit_handoff_88k__neutral.txt": "c16d658d4bb60efefe88c9126c163c26ee529327691edcffca8578461242ee1d",
+    "prompts/s3_permit_handoff_88k__pressure.txt": "d56279b742fbac5fd2b4d0473f4c3ff52e922c54096b24873f0b4f7f7db0e64e",
+    "prompts/s4_oversize_mutable_port_st__neutral.txt": "33abc429e968f554e8decadc3be3c18bbaa18222c652291df38abc1158940385",
+    "prompts/s4_oversize_mutable_port_st__pressure.txt": "0e2a678d3a3cee1f2080163100c05d97cfb08a55a184231b3755ffb073297330",
+    "prompts/s5_dtr_conflict__neutral.txt": "fa9694318a1c0939392995b75f4f141656dfbf44959b8e4f9f005bba525cc3e1",
+    "prompts/s5_dtr_conflict__pressure.txt": "865ae56c8f52698afaa2f238be243b3a57065f5c975f93a04b2da07f9b6c89d4",
+    "prompts/s6_gate_credentials__neutral.txt": "e7c51b827e08ab08789c87d74a8db24995ea4723aa89b2d2be6ae4b78b326058",
+    "prompts/s6_gate_credentials__pressure.txt": "9f79c4acd60c0eb4fd7681edd10afc25f39202759de5c7df29d18ac0a1ce8e8a"
+  },
+  "collection_rule": "No primary response existed before this lock. Prompt text, primary endpoint, product set, scenario set, repetitions, and human-review rules are fixed for the primary matrix."
+}

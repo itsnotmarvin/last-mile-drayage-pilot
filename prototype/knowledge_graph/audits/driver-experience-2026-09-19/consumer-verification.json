@@ -1,0 +1,106 @@
+{
+  "connector_evidence_validation": "passed",
+  "consumer_presentation_acceptance": "not_passed_see_consumer_review",
+  "conversation_url": "https://claude.ai/chat/f2016f85-08cc-4081-bac0-e61032d2452f",
+  "runtime_files_verified": 34,
+  "provider_attribution": "Native Claude Desktop UI observed all four requests/results; generic MCP audit alone does not identify the provider.",
+  "turns": [
+    {
+      "turn": 1,
+      "method": "assess_trip",
+      "recorded_at": "2026-09-19T20:32:07.848068+00:00",
+      "trip_id": "syn-trip-c6a06702c84eb52c5dc59b9122f11425",
+      "revision": 1,
+      "scope": "trip_dispatch",
+      "height_inches": 175,
+      "route_id": "path_a_exit13a_to_apm",
+      "segments": [
+        "edge_a_exit13a_connector",
+        "edge_shared_north_avenue",
+        "edge_shared_mclester",
+        "edge_shared_tripoli_gate"
+      ],
+      "source_count": 26,
+      "terminal_page_count": 3,
+      "terminal_currentness": "unknown_for_this_trip",
+      "full_json_parity": true,
+      "event_hash_verified": true,
+      "prepared_answer_reproduced": true,
+      "source_message_omitted_prompt_suffix": " Use our connected drayage assessment and explain what the supplied evidence means for my trip, with sources I can inspect.",
+      "operational_permission": "not_issued"
+    },
+    {
+      "turn": 2,
+      "method": "update_trip_facts",
+      "recorded_at": "2026-09-19T20:35:55.080230+00:00",
+      "trip_id": "syn-trip-c6a06702c84eb52c5dc59b9122f11425",
+      "revision": 2,
+      "scope": "trip_dispatch",
+      "height_inches": 162,
+      "route_id": "path_a_exit13a_to_apm",
+      "segments": [
+        "edge_a_exit13a_connector",
+        "edge_shared_north_avenue",
+        "edge_shared_mclester",
+        "edge_shared_tripoli_gate"
+      ],
+      "source_count": 26,
+      "terminal_page_count": 3,
+      "terminal_currentness": "unknown_for_this_trip",
+      "full_json_parity": true,
+      "event_hash_verified": true,
+      "prepared_answer_reproduced": true,
+      "source_message_omitted_prompt_suffix": "",
+      "operational_permission": "not_issued"
+    },
+    {
+      "turn": 3,
+      "method": "assess_trip",
+      "recorded_at": "2026-09-19T20:37:49.715208+00:00",
+      "trip_id": "syn-trip-c6a06702c84eb52c5dc59b9122f11425",
+      "revision": 2,
+      "scope": "trip_dispatch",
+      "height_inches": 162,
+      "route_id": "path_a_exit13a_to_apm",
+      "segments": [
+        "edge_a_exit13a_connector",
+        "edge_shared_north_avenue",
+        "edge_shared_mclester",
+        "edge_shared_tripoli_gate"
+      ],
+      "source_count": 26,
+      "terminal_page_count": 3,
+      "terminal_currentness": "unknown_for_this_trip",
+      "full_json_parity": true,
+      "event_hash_verified": true,
+      "prepared_answer_reproduced": true,
+      "source_message_omitted_prompt_suffix": null,
+      "operational_permission": "not_issued"
+    },
+    {
+      "turn": 4,
+      "method": "assess_trip",
+      "recorded_at": "2026-09-19T20:39:23.854302+00:00",
+      "trip_id": "syn-trip-5add3c9ac4b4f64d817bcc51da0113ec",
+      "revision": 1,
+      "scope": "route",
+      "height_inches": 162,
+      "route_id": "path_b_us1_9_to_apm",
+      "segments": [
+        "edge_b_us1_south",
+        "edge_b_north_avenue_to_merge",
+        "edge_shared_north_avenue",
+        "edge_shared_mclester",
+        "edge_shared_tripoli_gate"
+      ],
+      "source_count": 18,
+      "terminal_page_count": 3,
+      "terminal_currentness": "unknown_for_this_trip",
+      "full_json_parity": true,
+      "event_hash_verified": true,
+      "prepared_answer_reproduced": true,
+      "source_message_omitted_prompt_suffix": " Use the connected drayage assessment and explain why using the supplied sources.",
+      "operational_permission": "not_issued"
+    }
+  ]
+}

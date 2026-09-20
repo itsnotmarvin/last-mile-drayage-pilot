@@ -1,0 +1,17 @@
+I'll pull the actual permit language and Port Authority/terminal requirements before giving you a dispatch answer — this isn't something to guess on with an 88,000 lb load.Here's the straight answer, based on the actual NJDOT regulation and Port Authority precedent I just checked.
+
+**Turnpike and state routes: YES, the permit covers you — dispatch this leg now.**
+
+Your weights are legal for this permit. N.J.A.C. 13:18‑1.2(c) caps the annual ocean-borne container permit at 90,000 lbs gross and 38,000 lbs per tandem axle. You're at 88,000 lbs total with 38,000/38,000 on the tandems — right at the ceiling but compliant, not over. The permit's job is exactly this: authorizing that weight on NJ state highways, including the Turnpike and state routes, without a single-trip permit, as long as the driver carries the **original** permit document (not a copy) and doesn't cross any structure NJDOT has flagged as restricted on the permit itself. Have the driver check that structure list before rolling — that's a 30-second glance at the paper, not a phone call.
+
+**Port Authority-controlled roads/terminal property: not automatically covered — this is the one thing to nail down.**
+
+This is not a formality I'm inventing to be cautious — there's a documented precedent for exactly this gap. Trucks crossing the Goethals Bridge (a PA-controlled crossing) need the NJDOT annual permit *plus* a separate coterminous approval letter from the Port Authority itself, obtained in advance by email to PA, because the state permit's authority stops at the edge of PA jurisdiction. APM Terminals Elizabeth sits on Port Authority leased land, so the same jurisdictional split applies: NJDOT's permit doesn't reach onto PA/terminal property.
+
+In practice, this doesn't mean a multi-agency scramble tonight. For terminal drayage specifically, PA and the terminal handle overweight/overwidth containers through their existing gate and appointment system, not a separate case-by-case road permit — but that requires the load to actually be flagged as overweight in their system and the driver to have current SeaLink/gate credentials. If that hasn't been confirmed, it's one call: **APM Terminals / PA Truck Service Center, 908‑354‑4044** — ask them to confirm the overweight container is flagged for today's appointment and that there's no additional PA authorization needed for this move. That's the single check I'd do before the driver rolls onto terminal property, not a chain of calls.
+
+**Local roads (North Avenue, county connectors): almost certainly fine, minor caveat.**
+
+The City of Elizabeth does have a 4-ton truck exclusion ordinance on certain city streets, but it explicitly exempts trucks making pickup or delivery on that street — which port drayage to a terminal on the route qualifies for. This isn't a real risk for a standard container move on a normal port-access route; I wouldn't hold the truck for it.
+
+**Dispatch decision:** Send the driver now on the Turnpike/state route legs — permit's good. Make the one call to APM's Truck Service Center to confirm the overweight flag/PA authorization before the truck reaches terminal-controlled roads. That's the only outstanding item, not a reason to hold at the yard.

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import copy
+from contextlib import contextmanager
 from datetime import datetime, timezone
 import hashlib
 import hmac
@@ -36,7 +37,7 @@ INVALIDATION_RULES = {
         "sealink_registered_reported", "induction_reported",
     )),
     "vehicle_id": frozenset((
-        "gross_weight", "axle_weights", "axle_spacings", "axle_count", "width",
+        "gross_weight", "axle_weights", "axle_spacings", "axle_count", "axle_layout", "width",
         "height", "overall_length", "semitrailer_length", "dtr_reported",
         "rfid_reported", "engine_model_year", "permit_type",
         "permit_route_reported", "turnpike_approval_reported",
@@ -45,7 +46,7 @@ INVALIDATION_RULES = {
         "transaction_release_reported",
     )),
     "trailer_id": frozenset((
-        "gross_weight", "axle_weights", "axle_spacings", "axle_count", "width",
+        "gross_weight", "axle_weights", "axle_spacings", "axle_count", "axle_layout", "width",
         "height", "overall_length", "semitrailer_length", "container_sealed",
         "load_divisible", "cargo_hazardous", "permit_type",
         "permit_route_reported", "turnpike_approval_reported",
@@ -78,6 +79,10 @@ INVALIDATION_RULES = {
     )),
 }
 
+
+INVALIDATION_RULES["load_id"] = frozenset(("gross_weight", "axle_layout", "axle_weights", "axle_spacings", "width", "height", "overall_length", "semitrailer_length", "container_sealed", "load_divisible", "cargo_hazardous", "permit_type", "permit_route_reported", "turnpike_approval_reported", "local_approval_reported", "port_approval_reported", "terminal_approval_reported", "transaction_release_reported", "appointment_reported"))
+for _move_field in ("move_id", "move_type"):
+    INVALIDATION_RULES[_move_field] = frozenset(("transaction_release_reported", "appointment_reported"))
 
 class TripStateError(InputError):
     """Base class for caller-correctable trip-state errors."""
@@ -209,6 +214,31 @@ class TripStore:
         connection.execute("PRAGMA synchronous = FULL")
         return connection
 
+    @contextmanager
+    def _transaction(self, supplied=None, *, write=False):
+        """Join a trusted application's transaction or own a standalone operation.
+
+        Supplied connections are never committed, rolled back, or closed here.
+        MCP argument validation does not expose this internal integration point.
+        """
+        if supplied is not None and not supplied.in_transaction:
+            raise InputError('A supplied connection must have an active transaction')
+        connection = supplied if supplied is not None else self._connect()
+        owned = supplied is None
+        try:
+            if owned and write:
+                connection.execute('BEGIN IMMEDIATE')
+            yield connection
+            if owned and write:
+                connection.commit()
+        except BaseException:
+            if owned and write:
+                connection.rollback()
+            raise
+        finally:
+            if owned:
+                connection.close()
+
     def _initialize(self) -> None:
         connection = self._connect()
         try:
@@ -264,7 +294,7 @@ class TripStore:
 
     def create(
             self, requester_role: str, question_scope: str, facts: dict,
-            source_message: str, request_key: str,
+            source_message: str, request_key: str, *, _connection=None,
     ) -> dict:
         _validate_role(requester_role)
         _validate_scope(question_scope)
@@ -279,12 +309,9 @@ class TripStore:
         })
         event_at = next(iter(normalized.values()))["recorded_at"] if normalized else _utc_now()
 
-        connection = self._connect()
-        try:
-            connection.execute("BEGIN IMMEDIATE")
+        with self._transaction(_connection, write=True) as connection:
             previous = self._existing_request(connection, request_key, request_fingerprint)
             if previous is not None:
-                connection.commit()
                 return previous
 
             trip_id = _new_trip_id()
@@ -293,6 +320,7 @@ class TripStore:
                 "operation": "create",
                 "requester_role": requester_role,
                 "question_scope": question_scope,
+                "source_message": source_message,
                 "reported_facts": copy.deepcopy(normalized),
                 "invalidated_fields": [],
                 "conflicted_fields": [],
@@ -305,6 +333,7 @@ class TripStore:
                 "revision": 1,
                 "requester_role": requester_role,
                 "question_scope": question_scope,
+                "source_message": source_message,
                 "facts": copy.deepcopy(normalized),
                 "history": history,
                 "invalidated_fields": [],
@@ -317,18 +346,12 @@ class TripStore:
                 (trip_id, 1, encoded),
             )
             self._save_request(connection, request_key, request_fingerprint, encoded)
-            connection.commit()
             return _decode(encoded)
-        except BaseException:
-            connection.rollback()
-            raise
-        finally:
-            connection.close()
 
     def update(
             self, trip_id: str, expected_revision: int, requester_role: str,
             question_scope: str, facts: dict, source_message: str, request_key: str,
-            replace_conflicts: bool = False,
+            replace_conflicts: bool = False, *, _connection=None,
     ) -> dict:
         _validate_trip_id(trip_id)
         _validate_revision(expected_revision)
@@ -350,12 +373,9 @@ class TripStore:
         })
         event_at = next(iter(normalized.values()))["recorded_at"] if normalized else _utc_now()
 
-        connection = self._connect()
-        try:
-            connection.execute("BEGIN IMMEDIATE")
+        with self._transaction(_connection, write=True) as connection:
             previous = self._existing_request(connection, request_key, request_fingerprint)
             if previous is not None:
-                connection.commit()
                 return previous
 
             row = connection.execute(
@@ -477,6 +497,7 @@ class TripStore:
                 "operation": "update",
                 "requester_role": requester_role,
                 "question_scope": question_scope,
+                "source_message": source_message,
                 "reported_facts": copy.deepcopy(normalized),
                 "invalidated_fields": sorted(event_invalidated),
                 "conflicted_fields": sorted(event_conflicted),
@@ -489,6 +510,7 @@ class TripStore:
                 "revision": next_revision,
                 "requester_role": requester_role,
                 "question_scope": question_scope,
+                "source_message": source_message,
                 "facts": current_facts,
                 "history": history,
                 "invalidated_fields": sorted(invalidated),
@@ -506,23 +528,14 @@ class TripStore:
             if cursor.rowcount != 1:
                 raise RevisionConflict(f"Revision changed while updating {trip_id}")
             self._save_request(connection, request_key, request_fingerprint, encoded)
-            connection.commit()
             return _decode(encoded)
-        except BaseException:
-            connection.rollback()
-            raise
-        finally:
-            connection.close()
 
-    def get(self, trip_id: str) -> dict:
+    def get(self, trip_id: str, *, _connection=None) -> dict:
         _validate_trip_id(trip_id)
-        connection = self._connect()
-        try:
+        with self._transaction(_connection) as connection:
             row = connection.execute(
                 "SELECT snapshot_json FROM trips WHERE trip_id = ?", (trip_id,),
             ).fetchone()
             if row is None:
                 raise TripNotFound(f"Synthetic trip not found: {trip_id}")
             return _decode(row["snapshot_json"])
-        finally:
-            connection.close()

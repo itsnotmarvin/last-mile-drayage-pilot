@@ -1,0 +1,58 @@
+{
+  "at": "2026-09-13T13:00:26.073419+00:00",
+  "local_tests": {
+    "passed": 273,
+    "log": "local-tests.txt"
+  },
+  "offline_schema_validation": {
+    "stdio_assessments": 20,
+    "http_assessments": 2,
+    "status": "passed"
+  },
+  "runtime_files_matching_capture": 31,
+  "historical_audit_manifests": [
+    {
+      "manifest": "audits/evidence-2026-09-10/artifact-manifest.json",
+      "files_verified": 89
+    },
+    {
+      "manifest": "audits/evidence-fix-2026-09-12/artifact-manifest.json",
+      "files_verified": 16
+    },
+    {
+      "manifest": "audits/input-review-final-2026-09-12/artifact-manifest.json",
+      "files_verified": 11
+    },
+    {
+      "manifest": "audits/integrated-app-final-2026-09-12/artifact-manifest.json",
+      "files_verified": 7
+    }
+  ],
+  "historical_kg_git_diff": "empty",
+  "git_diff_check": "passed",
+  "neo4j_environment_networkx": "absent",
+  "private_synthetic_keys_in_capture": "absent",
+  "browser_acceptance": "unverified_prior_ERR_BLOCKED_BY_CLIENT",
+  "new_model_experiment": "not_run",
+  "new_proposal_bridge": "not_attached",
+  "production_readiness": "blocked",
+  "adversarial_review": {
+    "at_or_below_never_clears": "passed",
+    "ambiguous_axles_no_bridge_calculation": "passed",
+    "engine_year_no_eligibility": "passed",
+    "source_changes_or_outage_suppress": "passed",
+    "missing_and_conflicting_reports_not_compared": "passed",
+    "scope_and_role_boundaries": "passed"
+  },
+  "review_basis": "Local boundary/negative tests, final live captures, and source/diff inspection; no independent human policy approval.",
+  "documentation_sha256": {
+    "README.md": "b122990449414b34ca4e42db544c22ecdf16105a1ea29bbd8bca44695ed0883e",
+    "PROGRESS.md": "ffeed9977e1318869a6b7445d7e429274e79444c9b084767cab2b8027f923f28",
+    "docs/reported-fact-checks.md": "7b1d9b3401979a7d1b03383c758526cbc295acd124bd73de2ada3ebadcecc4a3",
+    "docs/reported-check-review-matrix.md": "b0a74159f67dbc27b6987d9ddcc85ecec3ec7bde44dd2257f4762047461e6a9e",
+    "docs/integrated-trip-workspace.md": "d25475bc615e45e7c11e2970cae6b691c549a87282b80f652d607336a434479d",
+    "docs/production-readiness.md": "2031a7adad2a060d0f4dfcbd93d0bdb86fd3b037fb69315c64b27f9e4ce3b434"
+  },
+  "new_test_source_sha256": "94c55e65e2a6270a7b91f643c395c251c4a0892439e5ef41009d7f3bcd015592",
+  "javascript_syntax": "passed"
+}

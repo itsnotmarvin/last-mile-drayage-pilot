@@ -1,0 +1,9 @@
+missing unresolved
+open met
+closed not_met
+stale unresolved
+wrong_segment unresolved
+conflict unresolved
+partial_route unresolved
+reversed_route unresolved
+PASS: eight live cases; terminal fetch: available

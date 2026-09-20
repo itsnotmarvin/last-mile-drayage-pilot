@@ -1,0 +1,83 @@
+--- before/neo4j_kg/driver_move.py
++++ neo4j_kg/driver_move.py
+@@ -1,6 +1,14 @@
+ """Compact complete-move delivery; the existing service owns every check/write."""
+ from .driver_brief import driver_brief, retained_text
+ from .service import InputError
++
++
++PRESENTATION = ('Display answer_markdown verbatim as your answer, with its Markdown source links. '
++                'It is already the prepared driver-facing explanation. Do not summarize or rewrite '
++                'its rule passages: configuration, standard-truck, network, return and exception '
++                'conditions are consequential. You may add one brief sentence acknowledging an '
++                'explicit correction before it. Do not expose the internal trip_id, revision or '
++                'assessment_id. Do not add a separate legal conclusion.')
+ 
+ 
+ def assess_move(service, arguments):
+--- before/neo4j_kg/trip_tools.py
++++ neo4j_kg/trip_tools.py
+@@ -254,7 +254,7 @@
+ MUTATES = {"readOnlyHint": False, "destructiveHint": False, "idempotentHint": True, "openWorldHint": False}
+ READS = {**MUTATES, "readOnlyHint": True}
+ INSTRUCTIONS = (
+-    "Assessment tools return a prepared driver answer as the first text block, detailed source briefing second, and full JSON last. Present the prepared answer faithfully with its source links and qualifications; do not add speculative legal conclusions or dates. The full structuredContent and final text block remain available for detailed inspection. "
++    "Compact tools return answer_markdown for direct display. Follow their presentation instruction. Legacy assess_trip and update_trip_facts return a prepared driver answer as the first text block, detailed source briefing second, and full JSON last. Present the prepared answer faithfully with its source links and qualifications; do not add speculative legal conclusions or dates. The full structuredContent and final text block remain available for detailed inspection. "
+     "Read answer_guidance first when explaining an assessment: its qualified comparisons and historical currentness are the supported claims. Never turn unresolved into either permission or a finding of illegality. A rough route helps clarify, not verify. "
+     "Use assess_driver_move for ordinary complete synthetic driver or dispatcher moves and their corrections. Use assess_trip only for explicitly narrow questions or full evidence inspection. Extract only facts supported by the user's words. "
+     "requester_role is who is asking; subject_role is the assessed person (truck_driver or other). Do not infer subject identity from requester. "
+@@ -288,10 +288,13 @@
+     "Never convert pressure, a permit report, or induction success into entry/dispatch clearance. "
+     "This connector accepts synthetic development cases only, not real driver identifiers or credentials."
+ )
++from .driver_move import PRESENTATION
++
+ COMPACT_ANSWER_SCHEMA = obj({'trip_id': TRIP_ID, 'revision': {'type': 'integer', 'minimum': 1},
+                             'assessment_id': STRING, 'service_status': {'enum': ['available', 'unavailable']},
+                             'answer_markdown': STRING, 'versions': VERSIONS,
+-                            'operational_permission': {'const': 'not_issued'}})
++                            'operational_permission': {'const': 'not_issued'},
++                            'presentation': {'const': PRESENTATION}})
+ TRIP_TOOLS = [
+     {'name': 'assess_driver_move', 'title': 'Assess a complete driver move with source-linked explanation',
+      'description': 'Primary tool for complete synthetic moves to a terminal, including can I use this route with this truck. '
+@@ -301,7 +304,7 @@
+                     'Set replace_conflicts=true only for an explicit correction; otherwise contradictory reports remain conflicts. '
+                     'action=read accepts only trip_id and action. Reuse request_key only for an exact retry. '
+                     'Never invent missing facts, units, verification or timestamps. Preserve the complete user source_message. '
+-                    'Returns a compact prepared answer: present its sources and defining qualifications faithfully, especially '
++                    'Display answer_markdown verbatim as the driver-facing answer; do not summarize or rewrite its legal passages. Preserve '
+                     'standard truck, unrestricted roadways, configuration and all access exceptions. Keep internal IDs/revisions out of the prose. '
+                     'For date/current-condition follow-ups use get_trip_conditions_answer. For full assessment inspection use assess_trip with trip_id. '
+                     'The full supporting assessment is retained in the local audit, not delivered by this compact tool. No operational permission.',
+--- before/neo4j_kg/mcp_server.py
++++ neo4j_kg/mcp_server.py
+@@ -170,6 +170,9 @@
+                                    'assessment_id': a['assessment_id'], 'service_status': a['service_status'],
+                                    'versions': a['versions'], 'operational_permission': 'not_issued',
+                                    'answer_markdown': render_answer(a)}
++                        if name == 'assess_driver_move':
++                            from .driver_move import PRESENTATION
++                            payload['presentation'] = PRESENTATION
+                     else:
+                         operation = {"assess_trip": self.trip_service.assess,
+                                      "update_trip_facts": self.trip_service.update,
+--- before/tests/test_driver_move.py
++++ tests/test_driver_move.py
+@@ -6,7 +6,7 @@
+ 
+ import jsonschema
+ from neo4j_kg.driver_brief import driver_brief, retained_text
+-from neo4j_kg.driver_move import move_answer
++from neo4j_kg.driver_move import move_answer, PRESENTATION
+ from neo4j_kg.mcp_server import Session, TOOLS
+ from neo4j_kg.service import CheckingService
+ from neo4j_kg.terminal_status import fetch
+@@ -73,6 +73,7 @@
+         jsonschema.validate(body, schema)
+         self.assertEqual(body, json.loads(result['content'][0]['text']))
+         self.assertEqual(text, move_answer(a))
++        self.assertEqual(PRESENTATION, body['presentation'])
+         for source in a['evidence_package']['sources']:
+             if source['clause_id'] in ('reg_nj_terminal_access_102_inch_standard_truck', 'reg_nj_semitrailer_length'):
+                 self.assertIn(retained_text(source['source_text']), text)

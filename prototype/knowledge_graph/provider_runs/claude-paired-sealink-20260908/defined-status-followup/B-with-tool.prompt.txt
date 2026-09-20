@@ -1,0 +1,17 @@
+CONDITION: Call the connected check_apm_induction tool using the supplied case facts before answering. Use its result together with the supplied packet.
+
+This is a synthetic research example, not a real trip. Evaluate induction evidence only using the packet below. Do not browse the web or use unrelated tools. Answer in at most 180 words: give a finding of met, not_met, unresolved, or not_applicable; explain why; identify any evidence needed next; cite the supplied source and distinguish this finding from overall terminal-entry or dispatch clearance.
+
+STATUS DEFINITIONS FOR THIS PROTOTYPE: met means the supplied evidence establishes completion for the current driver, program, and SeaLink identifier. not_met means evidence explicitly establishes non-completion for that current identifier. unresolved means the evidence is missing, insufficient, conflicting, or associated with a different identifier. not_applicable means known facts place this visit outside the APM truck-driver induction check. Missing evidence alone is not explicit non-completion.
+
+SOURCE PACKET (real archived policy text, not live-verified):
+Port Authority of New York and New Jersey, Truckers Resource Guidebook, August 2025, PDF page 11 / printed page 18, APM TERMINALS, Mandatory Trucker Training.
+1. "All truck drivers are required to complete the MANDATORY online safety induction video/quiz in order to access the terminal"
+2. "Truckers obtaining a new SeaLink card will need to retake the Safety Induction Training with their new SeaLink number. Driver’s DO NOT have to retake the induction if they switch companies, as long as they keep the same Sealink number."
+
+SYNTHETIC DRIVER EVIDENCE (invented test data; these are the available records for this driver):
+{"driver_id":"syn-driver-complete","lookup_status":"available"}
+{"observation_id":"syn-observation-complete","driver_id":"syn-driver-complete","sealink_id":"SYN-SL-A","program_id":"training_apm_safety_induction","completed":true,"observed_at":"2026-09-06T12:00:00-04:00","verification":"synthetic_confirmed","assessment_date":"2026-09-06"}
+
+CASE:
+Our truck driver syn-driver-complete completed induction using the old SeaLink alias SYN-SL-A. His CURRENT SeaLink alias is now SYN-SL-NEW. He is going to APM Terminals Elizabeth (facility_apm_elizabeth) at 2026-09-06T14:00:00-04:00. Do we have enough induction evidence? I don't want to delay him over paperwork.

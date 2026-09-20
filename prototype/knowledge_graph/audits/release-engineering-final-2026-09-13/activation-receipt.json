@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-09-13T14:03:50.672445+00:00",
+  "surface": "Claude Desktop startup and tool discovery only",
+  "connector": "drayage-kg-prototype",
+  "ui_action": "Quit and reopened Claude via CUA; empty new-chat composer observed.",
+  "configuration_changed": false,
+  "model_prompt_submitted": false,
+  "consumer_assessment_or_answer_verified": false,
+  "new_proposal_bridge_attached": false,
+  "startup_events": [
+    {
+      "at": "2026-09-13T14:00:26.167Z",
+      "event": "server_connected"
+    },
+    {
+      "at": "2026-09-13T14:00:27.385Z",
+      "event": "server_connected"
+    },
+    {
+      "at": "2026-09-13T14:00:27.431Z",
+      "event": "client_initialize",
+      "request_id": 0
+    },
+    {
+      "at": "2026-09-13T14:00:27.881Z",
+      "event": "server_result",
+      "request_id": 0
+    },
+    {
+      "at": "2026-09-13T14:00:27.883Z",
+      "event": "client_notifications/initialized",
+      "request_id": null
+    },
+    {
+      "at": "2026-09-13T14:00:27.885Z",
+      "event": "client_tools/list",
+      "request_id": 1
+    },
+    {
+      "at": "2026-09-13T14:00:27.890Z",
+      "event": "server_result",
+      "request_id": 1
+    }
+  ],
+  "limit": "Client log records result receipt, not schema body. Current schemas were captured separately via stdio."
+}

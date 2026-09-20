@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:50:12.088Z",
+  "tool_call_id": "call_Igs7k6UiDqVVxGmOgvku5AR6",
+  "arguments": {
+    "code": "await claude.getAXState({disableDiffing:true});",
+    "title": "Capture full driver answer text"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

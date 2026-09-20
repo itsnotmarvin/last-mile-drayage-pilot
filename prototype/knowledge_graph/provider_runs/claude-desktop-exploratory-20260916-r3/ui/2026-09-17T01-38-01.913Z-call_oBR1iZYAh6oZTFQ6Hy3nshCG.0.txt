@@ -1,0 +1,61 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++			15 HTML content New chat - Claude, URL: claude.ai/new
++				16 container
++					17 container
++						18 container Sidebar
++							19 splitter Description: Resize sidebar, Value: 242
++							20 button Hide sidebar
++							21 button (disabled) Back
++							22 button (disabled) Forward
++							23 Mode
++								24 radio button Description: Chat and Cowork, Value: 1
++								25 radio button Description: Code, Value: 0
++							26 container
++								27 button New
++								28 button Projects
++								29 button Artifacts
++								30 button Customize
++								31 button Chats and tasks
++								32 button View all
++								33 button Search
++								34 pop up button Filter and group recents
++								35 container
++									36 pop up button ma ma Free
++										37 image ma
++										38 text ma
++										39 text Free
++									40 link Description: Get apps and extensions, Value: claude.ai/downloads
++						41 container
++							42 container Primary pane
++								43 button Use incognito
++								44 container
++									45 container
++										46 text Free plan
++										47 link Description: Upgrade, Value: claude.ai/upgrade
++									48 text ma returns!
++									49 container
++										50 container
++											51 container
++												52 text entry area (settable) Description: Write your prompt to Claude, Value: 
+
++											53 pop up button Add files, connectors, and more
++											54 Surface
++												55 radio button Chat, Value: 1
++												56 radio button Cowork, Value: 0
++											57 pop up button Model: Sonnet 5 Medium
++												58 text Sonnet 5
++												59 text Medium
++											60 container
++												61 button Dictate
++												62 container Use voice mode
++													63 button Use voice mode
++													64 pop up button Microphone
++									65 content list Prompt categories
++										66 button Write
++										67 button Learn
++										68 button Code
++										69 button Life stuff
++										70 button Claude’s choice
++					71 container
++						72 container Notifications
+The focused UI element is 15 HTML content New chat - Claude, URL: claude.ai/new

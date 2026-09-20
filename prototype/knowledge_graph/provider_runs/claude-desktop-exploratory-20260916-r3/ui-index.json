@@ -1,0 +1,70 @@
+[
+  {
+    "title": "Prepare existing connector regression test",
+    "metadata": "ui/2026-09-17T01-37-05.310Z-call_5A50KzSWGYsM3SvLa6P27vid.json"
+  },
+  {
+    "title": "Restart existing Claude connector to load revised runtime",
+    "metadata": "ui/2026-09-17T01-37-12.381Z-call_QGwRyS5Vh1ujugKUjeebvosq.json"
+  },
+  {
+    "title": "Open Claude with refreshed existing connector",
+    "metadata": "ui/2026-09-17T01-37-37.145Z-call_x9WmXW47OYLEg2W4Qg5wMm9R.json"
+  },
+  {
+    "title": "Find incognito control for post-change test",
+    "metadata": "ui/2026-09-17T01-38-01.913Z-call_oBR1iZYAh6oZTFQ6Hy3nshCG.json"
+  },
+  {
+    "title": "Start post-change driver conversation",
+    "metadata": "ui/2026-09-17T01-38-12.457Z-call_UnAvzjYSCFOTAIaMdPsf7ATR.json"
+  },
+  {
+    "title": "Submit unchanged driver prompt, r3",
+    "metadata": "ui/2026-09-17T01-38-22.027Z-call_0IYVErdbnfZJP0a99lxNoEjv.json"
+  },
+  {
+    "title": "Observe r3 driver result",
+    "metadata": "ui/2026-09-17T01-38-45.454Z-call_l3nmjoIveZmrZjBrQ0ySSj95.json"
+  },
+  {
+    "title": "Inspect unexpected r3 tool activity",
+    "metadata": "ui/2026-09-17T01-39-47.905Z-call_WxnjTsSmyyKygxQSHJbjGOWn.json"
+  },
+  {
+    "title": "Refresh Claude after external UI change",
+    "metadata": "ui/2026-09-17T01-40-01.000Z-call_XdEsTVKnCrV72wtCliQWsKe0.json"
+  },
+  {
+    "title": "Inspect r3 driver tool attribution and command",
+    "metadata": "ui/2026-09-17T01-40-11.188Z-call_4TeflauxszuseK46krlyzwsZ.json"
+  },
+  {
+    "title": "Bind r3 driver answer to assessment ID",
+    "metadata": "ui/2026-09-17T01-40-18.883Z-call_G8i39SY9R7NrDD2HNsluV5vu.json"
+  },
+  {
+    "title": "Record how Claude handled oversized tool result",
+    "metadata": "ui/2026-09-17T01-40-34.179Z-call_aQBkWDCA8Cf5mi1QVTLXs5tt.json"
+  },
+  {
+    "title": "Refresh r3 tool-panel state",
+    "metadata": "ui/2026-09-17T01-40-41.310Z-call_BW1NfRZDKh0FYXiyGCClrJqh.json"
+  },
+  {
+    "title": "Capture oversized-result extraction command",
+    "metadata": "ui/2026-09-17T01-40-49.731Z-call_w6XfqbjiHXIfXU3ZNGj5VOhq.json"
+  },
+  {
+    "title": "Submit unchanged driver correction, r3",
+    "metadata": "ui/2026-09-17T01-41-11.701Z-call_744Ei2ABq1tI4YBnoqvYtoL5.json"
+  },
+  {
+    "title": "Observe r3 driver correction",
+    "metadata": "ui/2026-09-17T01-41-37.229Z-call_PfoFIy4SMpc071m9Uql5EI7k.json"
+  },
+  {
+    "title": "Capture r3 driver correction answer",
+    "metadata": "ui/2026-09-17T01-42-09.806Z-call_x3F1mQ8RUNn0z7ls1iFh0dAD.json"
+  }
+]

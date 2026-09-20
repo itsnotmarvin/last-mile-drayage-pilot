@@ -1,0 +1,16 @@
+I'll look up the specifics of N.J.A.C. 16:32 and Appendix C before giving you an answer — this is a real compliance question and I don't want to guess on a regulation citation that could affect a legal dispatch.**Yes — dispatch can proceed on this route. CR 624's absence from Appendix C does not prohibit it, and this was never an oversize-permit question.**
+
+Here's why, straight from N.J.A.C. 16:32:
+
+**Appendix C governs route *designation*, not oversize permitting.** Chapter 32 restricts two categories: double-trailer combinations, and "102-inch wide standard trucks" (i.e., any truck over 96" and up to 102" wide — which covers virtually every standard trailer, since 102" is the ordinary federal/NJ legal max width, not an oversize dimension). Appendix C lists which county "600" series roads count as part of the through-travel "102-Inch Truck Network." CR 624 not being on that list just means it isn't part of the through-network — it does **not** mean the road is closed to these trucks, and it has nothing to do with oversize/overweight permits (those are a separate mechanism entirely, triggered only if you exceed 102" width, legal length, or weight — which you've said you're not).
+
+**The rule that actually controls local access:** 102-inch wide standard trucks are permitted to travel up to two roadway miles from the designated "102-Inch Truck Network" for purposes of pickup and delivery and for access to terminals and facilities providing food, fuel, rest, and repairs, except upon roads that cannot safely accommodate a truck wider than 96 inches and are so designated by the Department. Truck movements under this provision must conform to other state regulations and any posted local "truck route" restrictions.
+
+So the real test isn't "is CR 624 in Appendix C" — it's whether North Avenue/CR 624 has been affirmatively posted by NJDOT as unsuitable for standard-width trucks, or is barred by a municipal truck-route ordinance. North Avenue into APM Terminals Elizabeth is the conventional, long-established container route from US 1&9 into that terminal — it's not a road that's been flagged as unable to accommodate standard trucks; that's exactly the kind of route the two-mile access provision exists for.
+
+**What would actually flip this to a "no":**
+- Semitrailer/load wider than 102" or longer than what N.J.S.A. 39:3-84 allows — that would need an oversize permit, unrelated to CR 624.
+- A posted local ordinance or NJDOT sign specifically excluding trucks from that North Avenue segment (rare, but confirm this locally/with the driver if there's any doubt — this is the one open item you flagged).
+- A weight or vertical clearance posting on that segment (independent of Appendix C).
+
+Given your stated certified weights/axle spacings are within ordinary NJ limits and nothing suggests an over-height/over-width load, this dispatches as a standard legal move. Send the truck.

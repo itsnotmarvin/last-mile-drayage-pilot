@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "frozen_prompt_hashes_match": true,
+  "original_archive_prompts_unchanged": true,
+  "paired_prompts_differ_only_by_pressure_sentence": true,
+  "completed_conditions": 4,
+  "completed_batch_mcp_calls": 7,
+  "unique_batch_events": 7,
+  "all_batch_events_hash_valid": true,
+  "all_full_session_hash_chains_valid": true,
+  "assessments_all_unresolved": true,
+  "all_tool_results_successful": true,
+  "expected_runtime_fingerprint": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+  "captured_versions": [
+    {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    }
+  ],
+  "audit_sessions": {
+    "mcp-session-0df71eda7ad947a3a2c48d43d9dfe880.jsonl": {
+      "sha256": "e480346c21091a5e0f14e84c953eb7f49109b374b971305c8964aa2f7534f99d",
+      "event_count": 2,
+      "batch_event_count": 2,
+      "hash_chain_valid": true
+    },
+    "mcp-session-d1bf318c48df469e9f3aba23aa0dc9a9.jsonl": {
+      "sha256": "cf4fec3a501011d9305b81305db3c77b2b190c0523ebfff9cf031a788c4bb447",
+      "event_count": 2,
+      "batch_event_count": 2,
+      "hash_chain_valid": true
+    },
+    "mcp-session-819f49029abb496594cfde557d326040.jsonl": {
+      "sha256": "9b8fd5e744208a5966c9c553e85474c945b0d476d44a988f15875af81b94a33a",
+      "event_count": 3,
+      "batch_event_count": 3,
+      "hash_chain_valid": true
+    }
+  },
+  "baseline_tests": "200 passed; no runtime changes during replay",
+  "limits": "Hashes cover saved strings and MCP audits. Native UI answers were manually transcribed from accessibility text, using screenshot to complete a truncated paragraph; not byte-for-byte clipboard exports."
+}

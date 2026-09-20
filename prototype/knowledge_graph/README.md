@@ -1,14 +1,111 @@
 # Drayage knowledge-graph prototype
 
+The local driver experience now retains relevant rule explanations when trip
+facts are missing, distinguishes permit authorities, preserves unstructured
+reports, and labels stored routes as candidates. **473 local tests pass.**
+The predeclared development cases finish at **11/12**; the unsupported-terminal
+case remains a documented coverage failure. See [how to use it](docs/driver-experience.md)
+and [what changed](docs/evidence-answer-generalization.md).
+
+An earlier four-interaction Claude walkthrough passed, but the subsequent
+original-failure retest produced **0/8 full connected-experience passes**.
+That narrower walkthrough did not establish general consumer reliability.
+The current three-prompt Claude smoke batch invoked the assessment in all three
+cases and retained useful source explanations; Claude still omitted the supplied
+trip date in the permit answer. A final targeted access-rule regression is
+recorded separately. These are same-author observations, not independent grading
+or a controlled causal estimate of the MCP's benefit.
+Read the [current audit](audits/evidence-answer-generalization-20260920/README.md)
+and [current state](CURRENT_STATE.md). 511NJ and the separate browser/app bridge
+are not gates for this local version. Public operational readiness is not claimed.
+
+The underlying engineering checkpoint has eleven bounded requirement evaluators plus the
+existing synthetic induction check. Operator-owned synthetic receipts supply the
+measurements, credentials, permits and conditions; user reports cannot verify
+these facts. Missing or conflicting evidence remains unresolved. Production
+remains blocked and operational permission is never issued.
+
+**442 local tests passed** at the earlier September 19 core checkpoint. The installed
+Claude Desktop connector passed a two-turn named-route acceptance check:
+four ordered Path A segments, terminal-source currentness kept unknown,
+175→162-inch correction on the same saved trip, and no permission issued.
+Eight fresh live-Neo4j operator-condition cases and the ten-check graph
+validation also passed. See [current state](CURRENT_STATE.md) and the
+[September 19 closeout](audits/core-closeout-2026-09-19/README.md).
+
+The [confirmed-assessment explanation bridge](docs/confirmed-advice-bridge.md)
+adds qualified answer guidance and a separately authorized read of the latest
+user-confirmed assessment. Its live HTTP/stdio capture is complete; actual Claude
+use of this new app bridge remains unverified. The preserved paired Claude run
+found archived-currentness narration failures. No production acceptance is claimed.
+
+The [September 16 closeout](audits/evaluator-closeout-2026-09-16/README.md)
+corrects the capture-environment claim, preserves the existing browser screenshots,
+adds eight source-delivery regression tests and reconciles current documentation.
+The [September 15 live audit](audits/eleven-evaluators-final-2026-09-15/README.md)
+contains 28 stdio and six HTTP assessments against the pinned Neo4j release.
+Its recorded environment had NetworkX installed; the audit README's claim of
+NetworkX absence is incorrect. The isolated `.venv-neo4j` environment remains
+NetworkX-free. Presence in the capture environment does not establish runtime
+use of NetworkX as the graph store.
+
+The preserved browser images support a synthetic driver walkthrough through
+Describe, Review and Assess. They lack an original runtime binding and complete
+action transcript; full client acceptance remains open. See the
+[evaluator contract](docs/requirement-evaluators.md) and
+[current production gates](docs/production-readiness.md).
+
+The earlier [individual axle intake and release review](docs/release-engineering.md)
+adds explicit per-axle measurements, count/gross reconciliation, source-change
+impact reports and verification-capture binding to code and graph release.
+At the September 13 checkpoint, **300 local tests passed**, with 27 live Neo4j/MCP assessments, one rejected
+inconsistent request and two confirmed application HTTP assessments. See the
+[final engineering audit](audits/release-engineering-final-2026-09-13/README.md).
+At that checkpoint, browser acceptance was unverified. Production remains blocked.
+
+The earlier [source-bound reported-fact checks](docs/reported-fact-checks.md)
+explain numerical differences and reported prerequisite problems, then prioritize
+specific resolution actions. The catalog has 23 draft checks tied to 19 clauses;
+these do not expand the legal evaluator coverage beyond synthetic induction.
+At that checkpoint, **273 local tests passed**, with 20 live Neo4j/MCP assessments across ten matching
+driver/dispatcher pairs. See the [final September 13 audit](audits/reported-checks-final-2026-09-13/README.md).
+
+Separate implementation: the [integrated driver and dispatcher workspace](docs/integrated-trip-workspace.md)
+captures original statements, requires user review of proposed facts, enforces
+local conversation access, and displays fresh Neo4j assessments and citations.
+It includes a restricted MCP proposal bridge with an optional confirmed-assessment read and verified local backup
+and restore. This is a local synthetic application; browser and actual client/model
+acceptance remain incomplete. The [production release requirements](docs/production-readiness.md)
+remain open; stakeholder presentation is deferred at the user's request.
+
+The earlier [input consistency and controlled reports](docs/input-review.md)
+remain underneath this application and in the existing Neo4j connector.
+
+The [September 12 evidence fix](audits/evidence-fix-2026-09-12/README.md)
+repairs the two missing clause mappings identified in the
+[September 10 audit](audits/evidence-2026-09-10/README.md). Trip assessments now
+include supporting passages, requirement links, separate dated route observations,
+and source-extraction review notes. At that checkpoint, 216 local tests passed; all 24 fresh live
+Neo4j/MCP broad assessments deliver their expected passages. Claude answer
+validation remains incomplete. Historical counts below describe earlier checkpoints.
+
+The updated runtime has also been
+[loaded by Claude Desktop](docs/evidence-fix-activation-2026-09-12.json): the
+connector is enabled and startup/tool discovery succeeded. No new model response
+was collected during activation.
+
 ## Driver and dispatcher trip workflow
 
-The current MCP also supports a saved synthetic trip conversation: `assess_trip`,
-`update_trip_facts`, and `get_requirement_evidence`. It keeps reported facts and
+The current MCP uses `assess_driver_move` for complete synthetic moves and
+corrections, and `get_trip_conditions_answer` for dated-condition follow-ups.
+`assess_trip`, `update_trip_facts`, and `get_requirement_evidence` retain full
+assessment and focused evidence inspection. It keeps reported facts and
 corrections, selects requirements across the six study families, rechecks the
 assignment against Neo4j, and asks up to three focused follow-up questions.
-Read the [workflow and code guide](docs/trip-workflow.md). Only induction has an
-executable synthetic evaluator; the other families expose evidence needs and
-unimplemented coverage explicitly.
+Read the [workflow and code guide](docs/trip-workflow.md). Eleven additional
+bounded evaluators execute when matching operator verification records are
+available. Their exact scopes and remaining gaps are documented in the
+[evaluator contract](docs/requirement-evaluators.md).
 
 ## Current MCP: Neo4j
 
@@ -22,7 +119,7 @@ local tests, 27 live stdio comparisons, and three actual Claude Desktop calls.
 The `kg/` package and `run_mcp.py` below are preserved historical NetworkX
 fixtures used by the original provider capture, tests, and offline exports.
 They are not the Neo4j runtime. The two existing MCP tool contracts are preserved
-alongside the three new trip tools; whole-repository retrieval is separate work.
+alongside five trip-workflow tools; whole-repository retrieval is separate work.
 
 ## Explore the entire populated graph
 

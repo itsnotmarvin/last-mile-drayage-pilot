@@ -1,0 +1,5 @@
+{
+  "note": "verify_requirement_evaluators.py saves operator-fixture-events.json twice (after stdio and after HTTP) with O_EXCL, so a fresh full run always fails at the second save after all assertions passed. On-disk operator-fixture-events.json is stdio-only; HTTP operator seed/revoke receipts were observed in-run but not persisted. assessments.json/summary.json completed manually from the captured transcripts; driver/dispatcher semantic equality re-asserted here.",
+  "tool": "tools/verify_requirement_evaluators.py",
+  "run": "2026-09-15 live Neo4j + local app 127.0.0.1:8765"
+}

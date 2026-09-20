@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-09-19T21:00:22.023977+00:00",
+  "surface": "Claude Desktop Sonnet 5 Medium, existing drayage-kg-prototype connector",
+  "session_change": "User supplied an available Claude session after the prior account reached its message limit. No account changes performed by the agent.",
+  "activation": "Quit through Claude menu; observed isRunning=false, then reopened. Final payload parity must prove the repaired formatter is loaded.",
+  "protocol": "protocol.json",
+  "excluded_attempt": "activation-attempt-audit.json"
+}

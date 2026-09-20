@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Trip facts were not saved. Clarify inconsistent extraction. height: DIMENSION_TEXT_MISMATCH. The extracted measurement differs from the labeled source measurement; preserve both feet and inches."
+    }
+  ],
+  "isError": true
+}

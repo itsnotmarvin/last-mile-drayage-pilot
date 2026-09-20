@@ -1,6 +1,16 @@
 # A graph that can explain what is still missing
 
+Current application integration: [driver and dispatcher workspace](integrated-trip-workspace.md).
+It adds original-statement capture, explicit review, local identities/sharing and
+controlled results above the existing trip/Neo4j service. Historical limitations
+below describe their original checkpoint unless explicitly updated.
+
 Status: prototype design, September 6, 2026. Not user-approved operational policy.
+
+Historical design record: the current runtime uses Neo4j and separate SQLite
+trip cases. See [the migration](neo4j-migration.md) and
+[current driver/dispatcher workflow](trip-workflow.md) for the implemented
+storage, evidence-package contract, and remaining multi-user boundaries.
 
 The first question is narrow: what does the supplied evidence establish about
 this driver's APM Elizabeth induction? The broader questions about dispatch,

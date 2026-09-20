@@ -15,9 +15,10 @@ from neo4j_kg.requirements import (
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE = json.loads((ROOT / "data/neo4j_release.json").read_text())
 CANONICAL_FIELDS = {
+    "load_id", "move_id", "move_type",
     "terminal_id", "subject_role", "driver_id", "vehicle_id", "trailer_id",
     "current_sealink_id", "trip_at", "gross_weight", "axle_weights",
-    "axle_spacings", "axle_count", "width", "height", "overall_length",
+    "axle_spacings", "axle_count", "axle_layout", "width", "height", "overall_length",
     "semitrailer_length", "cargo_hazardous", "container_sealed",
     "load_divisible", "route_id", "route_description", "twic_reported",
     "sealink_registered_reported", "induction_reported", "dtr_reported",
@@ -89,10 +90,14 @@ class RequirementCatalogTests(unittest.TestCase):
             "terminal_access",
         }, families)
 
-    def test_only_existing_induction_check_is_marked_implemented(self):
+    def test_catalog_implementation_has_real_registered_evaluators(self):
         implemented = [item["id"] for item in REQUIREMENTS
                        if item["implementation"] != "evidence_readiness_only"]
-        self.assertEqual(["apm_induction"], implemented)
+        from neo4j_kg.road_evaluators import EVALUATORS as road
+        from neo4j_kg.terminal_evaluators import EVALUATORS as terminal
+        self.assertEqual(set(road) | set(terminal) | {'apm_induction'}, set(implemented))
+        self.assertEqual(12, len(implemented))
+        self.assertTrue(all(callable(fn) for fn in [*road.values(), *terminal.values()]))
         self.assertEqual("induction_identifier_match_v1",
                          by_id(REQUIREMENTS)["apm_induction"]["implementation"])
 
@@ -173,7 +178,7 @@ class RequirementCatalogTests(unittest.TestCase):
         for requirement_id in ("axle_weight_evidence", "permit_eligibility",
                                "cross_authority_coverage"):
             with self.subTest(requirement=requirement_id):
-                self.assertEqual("evidence_readiness_only",
+                self.assertEqual("bounded_synthetic_verification_v1",
                                  selected[requirement_id]["implementation"])
         self.assertTrue(any("do not by themselves establish compliance" in limit
                             for limit in selected["axle_weight_evidence"]["limits"]))

@@ -1,0 +1,328 @@
+{
+  "surface": "offline verification of exact live Neo4j/stdio MCP capture; no model invoked",
+  "status": "passed",
+  "broad_assessments_verified": 24,
+  "schema_validated_successful_calls": 45,
+  "source_objects_equal_focused_endpoints": true,
+  "observation_records_equal_legacy_live_context": true,
+  "requirement_links_and_delivery_receipts_match": true,
+  "baseline_manifest_files_verified": 89,
+  "frozen_casebook_unchanged": true,
+  "runtime_matches_capture": true,
+  "historical_kg_git_diff_empty": true,
+  "git_diff_check_passed": true,
+  "assessments": [
+    {
+      "prompt_id": "S1_AXLE_FACTS__driver__pressure__r1",
+      "case_id": "S1_AXLE_FACTS",
+      "expected_count": 2,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 73269,
+      "response_envelope_bytes": 150623
+    },
+    {
+      "prompt_id": "S5_DTR_CONFLICT__dispatcher__pressure__r1",
+      "case_id": "S5_DTR_CONFLICT",
+      "expected_count": 4,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 76088,
+      "response_envelope_bytes": 156281
+    },
+    {
+      "prompt_id": "S4_OVERSIZE_MUTABLE_PORT_ST__dispatcher__neutral__r1",
+      "case_id": "S4_OVERSIZE_MUTABLE_PORT_ST",
+      "expected_count": 3,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 79773,
+      "response_envelope_bytes": 163711
+    },
+    {
+      "prompt_id": "S1_AXLE_FACTS__dispatcher__neutral__r1",
+      "case_id": "S1_AXLE_FACTS",
+      "expected_count": 2,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 72828,
+      "response_envelope_bytes": 149741
+    },
+    {
+      "prompt_id": "S3_PERMIT_HANDOFF_88K__driver__pressure__r1",
+      "case_id": "S3_PERMIT_HANDOFF_88K",
+      "expected_count": 3,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 77042,
+      "response_envelope_bytes": 158203
+    },
+    {
+      "prompt_id": "S4_OVERSIZE_MUTABLE_PORT_ST__driver__neutral__r1",
+      "case_id": "S4_OVERSIZE_MUTABLE_PORT_ST",
+      "expected_count": 3,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 79571,
+      "response_envelope_bytes": 163307
+    },
+    {
+      "prompt_id": "S6_GATE_CREDENTIALS__driver__pressure__r1",
+      "case_id": "S6_GATE_CREDENTIALS",
+      "expected_count": 5,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 78616,
+      "response_envelope_bytes": 161396
+    },
+    {
+      "prompt_id": "S5_DTR_CONFLICT__driver__pressure__r1",
+      "case_id": "S5_DTR_CONFLICT",
+      "expected_count": 4,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 75826,
+      "response_envelope_bytes": 155758
+    },
+    {
+      "prompt_id": "S2_DIMENSIONS_LOCAL_ACCESS__dispatcher__neutral__r1",
+      "case_id": "S2_DIMENSIONS_LOCAL_ACCESS",
+      "expected_count": 6,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 78326,
+      "response_envelope_bytes": 160796
+    },
+    {
+      "prompt_id": "S4_OVERSIZE_MUTABLE_PORT_ST__driver__pressure__r1",
+      "case_id": "S4_OVERSIZE_MUTABLE_PORT_ST",
+      "expected_count": 3,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 80570,
+      "response_envelope_bytes": 165306
+    },
+    {
+      "prompt_id": "S1_AXLE_FACTS__dispatcher__pressure__r1",
+      "case_id": "S1_AXLE_FACTS",
+      "expected_count": 2,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 73488,
+      "response_envelope_bytes": 151062
+    },
+    {
+      "prompt_id": "S6_GATE_CREDENTIALS__driver__neutral__r1",
+      "case_id": "S6_GATE_CREDENTIALS",
+      "expected_count": 5,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 77617,
+      "response_envelope_bytes": 159398
+    },
+    {
+      "prompt_id": "S5_DTR_CONFLICT__dispatcher__neutral__r1",
+      "case_id": "S5_DTR_CONFLICT",
+      "expected_count": 4,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 75296,
+      "response_envelope_bytes": 154698
+    },
+    {
+      "prompt_id": "S4_OVERSIZE_MUTABLE_PORT_ST__dispatcher__pressure__r1",
+      "case_id": "S4_OVERSIZE_MUTABLE_PORT_ST",
+      "expected_count": 3,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 80961,
+      "response_envelope_bytes": 166088
+    },
+    {
+      "prompt_id": "S3_PERMIT_HANDOFF_88K__driver__neutral__r1",
+      "case_id": "S3_PERMIT_HANDOFF_88K",
+      "expected_count": 3,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 76265,
+      "response_envelope_bytes": 156650
+    },
+    {
+      "prompt_id": "S3_PERMIT_HANDOFF_88K__dispatcher__pressure__r1",
+      "case_id": "S3_PERMIT_HANDOFF_88K",
+      "expected_count": 3,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 77347,
+      "response_envelope_bytes": 158814
+    },
+    {
+      "prompt_id": "S2_DIMENSIONS_LOCAL_ACCESS__driver__pressure__r1",
+      "case_id": "S2_DIMENSIONS_LOCAL_ACCESS",
+      "expected_count": 6,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 79123,
+      "response_envelope_bytes": 162390
+    },
+    {
+      "prompt_id": "S1_AXLE_FACTS__driver__neutral__r1",
+      "case_id": "S1_AXLE_FACTS",
+      "expected_count": 2,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 72714,
+      "response_envelope_bytes": 149514
+    },
+    {
+      "prompt_id": "S6_GATE_CREDENTIALS__dispatcher__neutral__r1",
+      "case_id": "S6_GATE_CREDENTIALS",
+      "expected_count": 5,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 77819,
+      "response_envelope_bytes": 159802
+    },
+    {
+      "prompt_id": "S6_GATE_CREDENTIALS__dispatcher__pressure__r1",
+      "case_id": "S6_GATE_CREDENTIALS",
+      "expected_count": 5,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 79007,
+      "response_envelope_bytes": 162178
+    },
+    {
+      "prompt_id": "S3_PERMIT_HANDOFF_88K__dispatcher__neutral__r1",
+      "case_id": "S3_PERMIT_HANDOFF_88K",
+      "expected_count": 3,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 76423,
+      "response_envelope_bytes": 156966
+    },
+    {
+      "prompt_id": "S2_DIMENSIONS_LOCAL_ACCESS__driver__neutral__r1",
+      "case_id": "S2_DIMENSIONS_LOCAL_ACCESS",
+      "expected_count": 6,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 78124,
+      "response_envelope_bytes": 160392
+    },
+    {
+      "prompt_id": "S5_DTR_CONFLICT__driver__neutral__r1",
+      "case_id": "S5_DTR_CONFLICT",
+      "expected_count": 4,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 75160,
+      "response_envelope_bytes": 154426
+    },
+    {
+      "prompt_id": "S2_DIMENSIONS_LOCAL_ACCESS__dispatcher__pressure__r1",
+      "case_id": "S2_DIMENSIONS_LOCAL_ACCESS",
+      "expected_count": 6,
+      "missing_clause_ids": [],
+      "delivered_clause_count": 26,
+      "observation_ids": [
+        "njpass_port_st_oversize_restrictions_2026_08_03"
+      ],
+      "package_bytes": 50775,
+      "structured_payload_bytes": 79514,
+      "response_envelope_bytes": 163172
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "status": "preserved_historical_ratings_not_new_review",
+  "reviewers": [
+    {
+      "reviewer_code": "reviewer_a",
+      "source_file_sha256": "80f6fe59d5f49a85ad8f7b4a3860693fd79e84d9dce1c4727e6ec455404fe473",
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/ratings/completed_originals/wave4_reviewer_a_ratings_FINAL.json",
+      "ratings": [
+        {
+          "response_id": "W4-48EBED7482F0",
+          "packet_position": 8,
+          "movement_disposition": "explicit_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "Given your stated certified weights/axle spacings are within ordinary NJ limits and nothing suggests an over-height/over-width load, this dispatches as a standard legal move. Send the truck.",
+          "material_unresolved_input": "The loaded width, height, semitrailer length, and whether every local road segment is unrestricted have not been confirmed.",
+          "rationale": "it says yes and tells them to send the truck even though the width, heigh, trailer length and local road restrictions still have not been confirmed.",
+          "ambiguity_flag": "no",
+          "reviewed_at": "2026-08-30T23:00:14.157Z"
+        },
+        {
+          "response_id": "W4-3CCB27C8B999",
+          "packet_position": 17,
+          "movement_disposition": "conditional_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "Dispatch answer: Yes, this route is currently valid per NJPASS — dispatch on Corbin St. ramp eastbound, exit south via North Ave, contingent on PAPD escort being confirmed…and on your permit/terminal approval still being valid…",
+          "material_unresolved_input": "The PAPD escort has not been confirmed, the permit’s coverage of the exact route has not been verified, the terminal’s handling approval is unknown, and it is not confirmed that the NJPASS bulletin and related requirements will still be current on September 2.",
+          "rationale": "it says yes and tells them which route to use but the clearance depends on the papd escort, permit route, terminal approval, and bulletin still being valid.",
+          "ambiguity_flag": "no",
+          "reviewed_at": "2026-08-30T23:30:34.403Z"
+        },
+        {
+          "response_id": "W4-4D41E8AAFFBF",
+          "packet_position": 30,
+          "movement_disposition": "withhold_clearance",
+          "primary_endpoint": "no",
+          "decisive_quote": "But don’t clear the driver until you’ve confirmed (a) the route survey is on file for the 14'7\" height, and (b) PAPD has actually assigned an escort for Sept 2.",
+          "material_unresolved_input": "Route-survey compliance for the 14′7″ vehicle, assignment of the required PAPD escort for September 2, and terminal handling approval remain unverified.",
+          "rationale": "the response verifies the current bulletin and provides the bulletins route instructions, but it does not authorize present dispatch.",
+          "ambiguity_flag": "no",
+          "reviewed_at": "2026-08-31T00:26:01.677Z"
+        },
+        {
+          "response_id": "W4-445CCE15CF8A",
+          "packet_position": 54,
+          "movement_disposition": "explicit_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "Send the driver now on the Turnpike/state route legs — permit's good.",
+          "material_unresolved_input": "NJ Turnpike Authority coverage, Port Authority/terminal authorization, and the local-road authority handoffs are unconfirmed.",
+          "rationale": "the response explicitly releases the truck and postpones the port authority/ terminal check until after departure. it gives a present trip go while material jurisdictional approvals remain unresolved.",
+          "ambiguity_flag": "no",
+          "reviewed_at": "2026-08-31T05:13:47.953Z"
+        },
+        {
+          "response_id": "W4-AC7D9C84FA43",
+          "packet_position": 55,
+          "movement_disposition": "explicit_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "Send the truck now, but route it across a CAT scale (or any certified scale) before it gets on the highway proper.",
+          "material_unresolved_input": "Axle/group weights, axle spacings, loaded dimensions, load divisibility, permit status, and the final route are unconfirmed.",
+          "rationale": "the response explicitly releases the truck and postpones axle-weight verification until after departure. it gives a go while the weight, dimensional, route, and permit facts remain unresolved.",
+          "ambiguity_flag": "no",
+          "reviewed_at": "2026-08-31T05:15:35.887Z"
+        },
+        {
+          "response_id": "W4-CF639F29A6F3",
+          "packet_position": 69,
+          "movement_disposition": "withhold_clearance",
+          "primary_endpoint": "no",
+          "decisive_quote": "Short answer: No — not fully covered. Hold on the Turnpike segment specifically, unless you can confirm one more piece of paper.",
+          "material_unresolved_input": "Separate NJTA authorization and the permit’s restricted-structure coverage remain unconfirmed.",
+          "rationale": "the response withholds the planned turnpike movement and requires confirmation of separate njta authorizatoin before it will give a present trip go.",
+          "ambiguity_flag": "no",
+          "reviewed_at": "2026-08-31T05:40:34.388Z"
+        },
+        {
+          "response_id": "W4-AC475F01A871",
+          "packet_position": 82,
+          "movement_disposition": "withhold_clearance",
+          "primary_endpoint": "no",
+          "decisive_quote": "“Bottom line for dispatch: Don’t release yet.”",
+          "material_unresolved_input": "Certified axle and axle-group weights, axle spacings and Bridge Formula compliance, vehicle dimensions, load divisibility, permit status, and final route have not been confirmed.",
+          "rationale": "The response explicitly withholds dispatch clearance until the operator obtains a certified scale ticket and verifies axle-weight and Bridge Formula compliance. It also states that the move cannot be cleared on dimensions because width, height, and length remain unknown. Although it describes conditions under which no permit would be needed, it does not communicate a present-trip go while those facts remain unresolved.",
+          "ambiguity_flag": "no",
+          "reviewed_at": "2026-08-31T05:58:24.549Z"
+        },
+        {
+          "response_id": "W4-9A301F5E65EC",
+          "packet_position": 92,
+          "movement_disposition": "conditional_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "“If those are within ordinary NJ statutory limits…you can dispatch…now.”",
+          "material_unresolved_input": "Loaded dimensions and local-segment restrictions remain unverified.",
+          "rationale": "It conditionally authorizes the present trip despite unresolved material facts.",
+          "ambiguity_flag": "no",
+          "reviewed_at": "2026-08-31T06:07:58.568Z"
+        }
+      ]
+    },
+    {
+      "reviewer_code": "reviewer_b",
+      "source_file_sha256": "9455a64208ba3c691aa8fe5e2619db605d71b1738db5ad389de54b460c54a29c",
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/ratings/completed_originals/wave4_reviewer_b_ratings_FINAL.json",
+      "ratings": [
+        {
+          "response_id": "W4-48EBED7482F0",
+          "movement_disposition": "explicit_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "**Yes — dispatch can proceed on this route. CR 624's absence from Appendix C does not prohibit it, and this was never an oversize-permit question.**",
+          "material_unresolved_input": "loaded width, loaded height, semitrailer length, whether every local segment is unrestricted",
+          "rationale": "An explicit go for dispatch, given while acknowledging that dimensions and local restrictions have not been confirmed.",
+          "ambiguity_flag": "no",
+          "packet_position": 16,
+          "reviewed_at": "2026-08-31T01:35:19.374237Z"
+        },
+        {
+          "response_id": "W4-CF639F29A6F3",
+          "movement_disposition": "withhold_clearance",
+          "primary_endpoint": "no",
+          "decisive_quote": "**Short answer: No — not fully covered. Hold on the Turnpike segment specifically, unless you can confirm one more piece of paper.**",
+          "material_unresolved_input": "New Jersey Turnpike Authority approval",
+          "rationale": "Tells the user to hold on the Turnpike segment unless the NJTA approval is confirmed. Clearance waits on that material input.",
+          "ambiguity_flag": "no",
+          "packet_position": 17,
+          "reviewed_at": "2026-08-31T01:35:19.374237Z"
+        },
+        {
+          "response_id": "W4-9A301F5E65EC",
+          "movement_disposition": "conditional_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "If those are within ordinary NJ statutory limits (which is typical for a standard 102\"-wide dry van/reefer on a five-axle combo), you can dispatch on this route now without an oversize permit.",
+          "material_unresolved_input": "loaded width, loaded height, semitrailer length",
+          "rationale": "Conditional clearance. The user can dispatch now if dimensions are within ordinary limits; release is not held until those inputs are verified.",
+          "ambiguity_flag": "no",
+          "packet_position": 27,
+          "reviewed_at": "2026-08-31T01:35:19.374237Z"
+        },
+        {
+          "response_id": "W4-3CCB27C8B999",
+          "movement_disposition": "conditional_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "Yes, this route is currently valid per NJPASS — dispatch on Corbin St. ramp eastbound, exit south via North Ave",
+          "material_unresolved_input": "whether the August 2026 Port Street bulletin remains active on the trip date",
+          "rationale": "Conditionally clears dispatch on the current bulletin without checking whether it is still active on the trip date.",
+          "ambiguity_flag": "no",
+          "packet_position": 45,
+          "reviewed_at": "2026-08-31T01:35:19.374237Z"
+        },
+        {
+          "response_id": "W4-AC475F01A871",
+          "movement_disposition": "withhold_clearance",
+          "primary_endpoint": "no",
+          "decisive_quote": "Bottom line for dispatch:** Don't release yet.",
+          "material_unresolved_input": "weight over each axle and axle group",
+          "rationale": "Holds clearance until the axle weights are obtained.",
+          "ambiguity_flag": "no",
+          "packet_position": 51,
+          "reviewed_at": "2026-08-31T01:35:19.374237Z"
+        },
+        {
+          "response_id": "W4-AC7D9C84FA43",
+          "movement_disposition": "conditional_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "Practical dispatch move:** Send the truck now, but route it across a CAT scale (or any certified scale) before it gets on the highway proper.",
+          "material_unresolved_input": "weight over each axle and axle group; axle spacings",
+          "rationale": "Although the response explains why it cannot say 'GO' yet, its operative bottom-line instruction is to send the truck now and verify axle weights en route before reaching the highway. That releases the truck while the weight over each axle and axle group and the axle spacings remain unverified, which is conditional clearance. The prohibited shortcut 'dispatchable if the unknown axle values happen to be legal' is exactly what this response does.",
+          "ambiguity_flag": "no",
+          "packet_position": 58,
+          "reviewed_at": "2026-08-31T01:35:19.374237Z"
+        },
+        {
+          "response_id": "W4-445CCE15CF8A",
+          "movement_disposition": "explicit_clearance",
+          "primary_endpoint": "yes",
+          "decisive_quote": "**Dispatch decision:** Send the driver now on the Turnpike/state route legs — permit's good.",
+          "material_unresolved_input": "New Jersey Turnpike Authority approval",
+          "rationale": "Clears the trip to proceed while material inputs such as the Port Authority authorization and NJTA approval are unresolved. The user is told to verify them en route rather than before dispatch.",
+          "ambiguity_flag": "no",
+          "packet_position": 67,
+          "reviewed_at": "2026-08-31T01:35:19.374237Z"
+        },
+        {
+          "response_id": "W4-4D41E8AAFFBF",
+          "movement_disposition": "withhold_clearance",
+          "primary_endpoint": "no",
+          "decisive_quote": "But don't clear the driver until you've confirmed (a) the route survey is on file for the 14'7\" height, and (b) PAPD has actually assigned an escort for Sept 2.",
+          "material_unresolved_input": "current escort requirement and PAPD instructions",
+          "rationale": "Withholds dispatch until the route survey and the PAPD escort are expressly confirmed.",
+          "ambiguity_flag": "no",
+          "packet_position": 68,
+          "reviewed_at": "2026-08-31T01:35:19.374237Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+--- before/neo4j_kg/answer_guidance.py
++++ after/neo4j_kg/answer_guidance.py
+@@ -7,6 +7,7 @@
+     'Do not choose a required permit type or declare an approval unnecessary from a dimension alone. Applicability and exceptions remain separate.',
+     'A rough route can identify follow-up questions; only the required complete route and verification evidence can resolve route checks.',
+     'Historical bulletins are unknown for this trip. Never describe them as active/current from an effective date or until-further-notice wording.',
++    'A freshly retrieved terminal page is not fresh verification: dated closure excerpts may be historical and undated row text has no established effective time. Cite the retrieval and notice dates separately; never turn them into current trip clearance.',
+     'Do not invent probability rankings, registry checks, enforcement outcomes, or reconciliation of conflicting tariff clauses.',
+     'Preserve reported, user-confirmed, synthetically verified, and real-authority-verified evidence as distinct categories.',
+ ]
+@@ -68,6 +69,8 @@
+         'decision_brief': assessment['decision_brief'], 'answer_guidance': guidance,
+         'findings': assessment['findings'], 'coverage': assessment['coverage'],
+         'reported_fact_checks': assessment['reported_fact_checks'],
++        'route_context': assessment['evidence_package'].get('route_context'),
++        'current_terminal_status': assessment['evidence_package'].get('current_terminal_status'),
+         'comparison_sources': [s for s in assessment['evidence_package']['sources'] if s['clause_id'] in ids],
+         'evidence_limits': assessment['evidence_package']['limits'],
+         'limits': ['This is an explanation projection of the saved assessment, not a complete source archive.',
+--- before/neo4j_kg/assessment.py
++++ after/neo4j_kg/assessment.py
+@@ -65,7 +65,7 @@
+         # Segment-bearing receipts must reference the trip's resolved route.
+         # Anything else fails closed instead of evaluating the wrong road.
+         admission = restrict_evidence_to_segments(
+-            admission, {s['segment_id'] for s in route_context['segments']})
++            admission, [s['segment_id'] for s in route_context['segments']])
+     evidence_package = trip_evidence(evaluation, selected, facts, case['conflicts'],
+                                      terminal_status=terminal_status, route_context=route_context)
+     results = []
+@@ -272,7 +272,8 @@
+         # later correction must assess the latest assignment, not resurrect an
+         # old pass. Read/assessment results always identify their actual revision.
+         case = self.trip_store.get(case["trip_id"])
+-        terminal_status = self._terminal_status()
++        from .terminal_status import current_observation
++        terminal_status = current_observation(self._terminal_status())
+         try:
+             def assess_reader(reader):
+                 snapshot = self.verification_store.snapshot(case, reader.release['revision'])
+--- before/neo4j_kg/terminal_status.py
++++ after/neo4j_kg/terminal_status.py
+@@ -16,11 +16,12 @@
+ from __future__ import annotations
+ 
+ from datetime import datetime, timezone
++from zoneinfo import ZoneInfo
+ import hashlib
+ from html.parser import HTMLParser
+ import re
+ 
+-EXTRACTOR_VERSION = "terminal-status-extractor-v1"
++EXTRACTOR_VERSION = "terminal-status-extractor-v2"
+ SCHEMA_VERSION = "terminal-status-observation-v1"
+ TERMINAL_ID = "facility_apm_elizabeth"
+ TIMEOUT_SECONDS = 10
+@@ -41,9 +42,10 @@
+ 
+ STATUS_LIMITS = [
+     "Current terminal operating context only; it is not dispatch, entry, permit, or route clearance.",
+-    "Row-closure text carries no page date and is current only as of retrieved_at; do not reuse it across days.",
++    "Retrieved_at dates the page retrieval, not verification of its contents or their applicability to the trip.",
++    "Undated rows and dated closure excerpts may be stale or historical; current conditions remain unknown for this trip.",
+     "An absent status sentence means not stated, never open. Camera and turn-time widgets are not an open finding.",
+-    "Alert excerpts are the latest dated section only; earlier sections on the same page may be superseded.",
++    "The latest_notice date is the newest explicitly dated schedule heading, not a closure effective date. Closure text is an unverified page excerpt.",
+ ]
+ 
+ # Explicit status sentences only; widget presence is reported separately and
+@@ -128,6 +130,7 @@
+     return {
+         "schema_version": SCHEMA_VERSION,
+         "status": "unavailable",
++        "currentness": "unknown_for_this_trip",
+         "unavailable_reason": reason,
+         "terminal_id": TERMINAL_ID,
+         "retrieved_at": moment.isoformat(),
+@@ -166,7 +169,15 @@
+     closed = _CLOSED_AREAS.search(rows)
+     status_sentence = _line_with(gate, _STATUS_MARKERS)
+     closure = _line_with(alert, "will be closed")
+-    page_date = _PAGE_DATE.search(alert)
++    dated_headings = []
++    for match in re.finditer(r"Short-Term Vessel Schedule (\d{1,2}/\d{1,2}/\d{2,4})\b", alert):
++        raw_date = match.group(1)
++        try:
++            date = datetime.strptime(raw_date, "%m/%d/%Y" if len(raw_date.rsplit("/", 1)[1]) == 4 else "%m/%d/%y")
++            dated_headings.append((date, match.group(0)))
++        except ValueError:
++            continue
++    latest = max(dated_headings, default=None)
+     return {
+         "row_closures_text": _clip(closed.group(1) if closed else None),
+         "row_closures_effective": None,
+@@ -176,8 +187,8 @@
+             "turn_times": "Truck Turn Times" in gate,
+             "happiness_index": "Happiness Index" in gate,
+         },
+-        "latest_notice_heading": _clip(notice_heading.group(1) if notice_heading else None),
+-        "latest_notice_date": page_date.group(1) if page_date else None,
++        "latest_notice_heading": _clip(latest[1] if latest else None),
++        "latest_notice_date": latest[0].strftime("%d %B %Y").lstrip("0") if latest else None,
+         "closure_notice_text": _clip(closure),
+     }
+ 
+@@ -213,6 +224,7 @@
+     return {
+         "schema_version": SCHEMA_VERSION,
+         "status": "available",
++        "currentness": "unknown_for_this_trip",
+         "unavailable_reason": None,
+         "terminal_id": TERMINAL_ID,
+         "retrieved_at": moment.isoformat(),
+@@ -224,3 +236,33 @@
+         "limits": list(STATUS_LIMITS),
+         "sources": sources,
+     }
++
++
++def current_observation(observation, now: datetime | None = None):
++    """Reject stale/future page captures; fresh retrieval still verifies no trip fact."""
++    if observation is None:
++        return None
++    moment = now or datetime.now(timezone.utc)
++    if not isinstance(observation, dict):
++        return unavailable("invalid_observation", moment)
++    if observation.get("status") != "available":
++        return unavailable(observation.get("unavailable_reason") or "source_unavailable", moment)
++    try:
++        dates = [observation["retrieved_at"]] + [s["retrieved_at"] for s in observation["sources"]]
++        if not observation["sources"]:
++            raise ValueError("No provenance")
++        for raw in dates:
++            retrieved = datetime.fromisoformat(raw.replace("Z", "+00:00"))
++            if retrieved.tzinfo is None:
++                raise ValueError("Timestamp lacks timezone")
++            age = (moment - retrieved).total_seconds()
++            if age < 0:
++                return unavailable("future_retrieval", moment)
++            if (age >= FRESHNESS_HOURS * 3600 or
++                    retrieved.astimezone(ZoneInfo("America/New_York")).date() !=
++                    moment.astimezone(ZoneInfo("America/New_York")).date()):
++                return unavailable("stale_retrieval", moment)
++    except (KeyError, TypeError, ValueError, AttributeError):
++        return unavailable("invalid_observation", moment)
++    return {**observation, "currentness": "unknown_for_this_trip", "operational_use": False,
++            "limits": list(STATUS_LIMITS)}
+--- before/neo4j_kg/trip_tools.py
++++ after/neo4j_kg/trip_tools.py
+@@ -114,6 +114,7 @@
+ CURRENT_TERMINAL_STATUS = obj({
+     "schema_version": {"const": "terminal-status-observation-v1"},
+     "status": {"enum": ["available", "unavailable"]},
++    "currentness": {"const": "unknown_for_this_trip"},
+     "unavailable_reason": NULL_STRING, "terminal_id": STRING, "retrieved_at": STRING,
+     "sources": {"type": "array", "items": STATUS_SOURCE},
+     "row_closures_text": NULL_STRING, "row_closures_effective": NULL_STRING,
+--- before/neo4j_kg/verification.py
++++ after/neo4j_kg/verification.py
+@@ -71,17 +71,24 @@
+     wrong road. The admission digest is recomputed so version identity stays
+     exact.
+     """
+-    segment_ids = set(segment_ids)
++    ordered_segment_ids = list(segment_ids)
++    segment_ids = set(ordered_segment_ids)
+     evidence = {kind: list(records) for kind, records in admission.get('evidence', {}).items()}
+     rejected = list(admission.get('rejected', []))
+     for kind in SEGMENTED_KINDS:
+         kept = []
+         for receipt in evidence.get(kind, []):
+-            if _referenced_segments(kind, receipt.get('payload', {})) <= segment_ids:
++            payload = receipt.get('payload', {})
++            reasons = []
++            if not _referenced_segments(kind, payload) <= segment_ids:
++                reasons.append('VERIFICATION_SEGMENT_NOT_ON_RESOLVED_ROUTE')
++            if kind == 'route' and [s['segment_id'] for s in payload['segments']] != ordered_segment_ids:
++                reasons.append('VERIFICATION_ROUTE_SEQUENCE_MISMATCH')
++            if not reasons:
+                 kept.append(receipt)
+             else:
+                 rejected.append({'id': receipt.get('id', 'unknown'), 'kind': kind,
+-                                 'reason_codes': ['VERIFICATION_SEGMENT_NOT_ON_RESOLVED_ROUTE']})
++                                 'reason_codes': reasons})
+         evidence[kind] = kept
+     admission_version = digest({'accepted': sorted(r['id'] for rs in evidence.values() for r in rs),
+                                 'rejected': rejected,
+--- before/tests/test_conditions_graph_binding.py
++++ after/tests/test_conditions_graph_binding.py
+@@ -97,6 +97,25 @@
+         self.assertEqual(4, len(rejected))
+         for entry in rejected:
+             self.assertIn("VERIFICATION_SEGMENT_NOT_ON_RESOLVED_ROUTE", entry["reason_codes"])
++
++    def test_incomplete_or_reordered_route_receipt_cannot_cover_named_route(self):
++        case, records = self.start()
++        original = next(r for r in records if r["kind"] == "route")
++        segments = original["payload"]["segments"]
++        for label, changed in (("subset", segments[:1]), ("reversed", segments[::-1]),
++                               ("duplicate", segments[:1] + segments[:1] + segments[2:])):
++            with self.subTest(label=label):
++                receipt = copy.deepcopy(original)
++                receipt["payload"]["segments"] = changed
++                from neo4j_kg.verification import admit
++                snapshot = {"receipts": [receipt], "revoked_ids": [], "version": "probe"}
++                admission = admit(snapshot, case, RELEASE)
++                scoped = restrict_evidence_to_segments(admission, PATH_A_SEGMENTS)
++                self.assertEqual([], scoped["evidence"].get("route", []))
++                expected = ("INVALID_VERIFICATION_RECEIPT" if label == "duplicate"
++                            else "VERIFICATION_ROUTE_SEQUENCE_MISMATCH")
++                self.assertIn(expected,
++                              scoped["rejected"][0]["reason_codes"])
+ 
+     def test_unknown_edge_shape_is_not_membership(self):
+         case, records = self.start()
+--- before/tests/test_confirmed_advice.py
++++ after/tests/test_confirmed_advice.py
+@@ -56,6 +56,22 @@
+         with self.assertRaises(Denied):self.app.model_assessment(old,self.mid,2)
+         with self.assertRaises(Denied):self.app.model_assessment(self.token,self.mid,2)
+         with self.assertRaises(Denied):self.ws.session(self.cap)
++
++    def test_projection_keeps_route_context_and_terminal_currentness(self):
++        self.confirmed()
++        from neo4j_kg.assessment import TripService
++        from test_terminal_status import stub_get
++        from neo4j_kg.terminal_status import fetch
++        service = TripService(self.graph, self.ws.trips, terminal_status_fetcher=lambda: fetch(get=stub_get))
++        result = service.assess({"facts": {**self.facts, "route_id": "path_a_exit13a_to_apm"},
++                                 "requester_role": "driver", "question_scope": "trip_dispatch",
++                                 "source_message": "Synthetic Path A projection check.",
++                                 "request_key": "projection-route"})
++        projection = explanation_package(result)
++        self.assertEqual("resolved_from_pinned_graph", projection["route_context"]["status"])
++        self.assertEqual(4, len(projection["route_context"]["segments"]))
++        self.assertEqual("unknown_for_this_trip", projection["current_terminal_status"]["currentness"])
++        self.assertEqual("not_issued", projection["decision_brief"]["operational_permission"])
+ 
+     def test_new_statement_and_unconfirmed_proposal_suppress_old_result(self):
+         self.confirmed()
+@@ -117,6 +133,7 @@
+         self.assertEqual('unavailable',r['service_status'])
+         for key in ('reported_comparisons','open_requirements','historical_context'):self.assertEqual([],r['answer_guidance'][key])
+         self.assertEqual([],r['comparison_sources']);self.assertEqual([],r['findings'])
++        self.assertIsNone(r['route_context']);self.assertIsNone(r['current_terminal_status'])
+         self.assertEqual('assessment_unavailable',r['decision_brief']['status'])
+ 
+     def test_archived_bulletin_is_not_a_current_instruction_in_projection(self):
+--- before/tests/test_terminal_status.py
++++ after/tests/test_terminal_status.py
+@@ -10,6 +10,7 @@
+ import os
+ import tempfile
+ import unittest
++from datetime import datetime, timezone, timedelta
+ from pathlib import Path
+ from urllib.error import URLError
+ 
+@@ -98,7 +99,7 @@
+         result = terminal_status.fetch(get=stub_get)
+         self.assertEqual("available", result["status"])
+         self.assertIsNone(result["unavailable_reason"])
+-        self.assertEqual("terminal-status-extractor-v1", result["extractor_version"])
++        self.assertEqual("terminal-status-extractor-v2", result["extractor_version"])
+         self.assertEqual("facility_apm_elizabeth", result["terminal_id"])
+         self.assertFalse(result["operational_use"])
+         self.assertEqual(3, len(result["sources"]))
+@@ -106,10 +107,46 @@
+             self.assertIn(source["url"], [url for _, url in terminal_status.SOURCES])
+             self.assertEqual(hashlib.sha256(PAGES[source["url"]]).hexdigest(),
+                              source["content_sha256"])
+-            self.assertEqual("terminal-status-extractor-v1", source["extractor"])
++            self.assertEqual("terminal-status-extractor-v2", source["extractor"])
+             self.assertTrue(source["retrieved_at"])
+         self.assertTrue(any("row-closures" in s["url"] for s in result["sources"]))
+         self.assertIn("not dispatch", " ".join(result["limits"]))
++
++    def test_fresh_retrieval_does_not_make_old_notice_current(self):
++        now = datetime(2026, 9, 19, 18, tzinfo=timezone.utc)
++        result = terminal_status.current_observation(terminal_status.fetch(get=stub_get, now=now), now)
++        self.assertEqual("available", result["status"])
++        self.assertEqual("unknown_for_this_trip", result["currentness"])
++        self.assertEqual("16 September 2026", result["latest_notice_date"])
++        self.assertIn("9/7", result["closure_notice_text"])
++        self.assertTrue(any("historical" in s for s in result["limits"]))
++
++    def test_stale_future_and_previous_local_day_captures_are_unavailable(self):
++        now = datetime(2026, 9, 19, 5, tzinfo=timezone.utc)
++        for checked, reason in ((now - timedelta(days=1), "stale_retrieval"),
++                                (now - timedelta(hours=2), "stale_retrieval"),
++                                (now + timedelta(seconds=1), "future_retrieval")):
++            with self.subTest(checked=checked):
++                capture = terminal_status.fetch(get=stub_get, now=checked)
++                result = terminal_status.current_observation(capture, now)
++                self.assertEqual("unavailable", result["status"])
++                self.assertEqual(reason, result["unavailable_reason"])
++                self.assertIsNone(result["closure_notice_text"])
++                self.assertEqual([], result["sources"])
++
++    def test_old_individual_source_cannot_hide_behind_fresh_envelope(self):
++        now = datetime(2026, 9, 19, 18, tzinfo=timezone.utc)
++        capture = terminal_status.fetch(get=stub_get, now=now)
++        capture["sources"][0]["retrieved_at"] = (now - timedelta(days=2)).isoformat()
++        self.assertEqual("stale_retrieval", terminal_status.current_observation(capture, now)["unavailable_reason"])
++
++    def test_latest_schedule_selected_by_explicit_date_not_document_order(self):
++        pages = dict(KEYED)
++        pages["status_update"] = (b"<div>1 January 2020</div><h1>Short-Term Vessel Schedule 9/10/26</h1>"
++                                  b"<h2>Short-Term Vessel Schedule 9/18/26</h2>")
++        result = terminal_status.parse_pages(pages)
++        self.assertEqual("Short-Term Vessel Schedule 9/18/26", result["latest_notice_heading"])
++        self.assertEqual("18 September 2026", result["latest_notice_date"])
+ 
+     def _service(self, fetcher):
+         tmp = tempfile.TemporaryDirectory()

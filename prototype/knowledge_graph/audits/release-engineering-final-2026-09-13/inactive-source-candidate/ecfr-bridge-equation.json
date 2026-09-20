@@ -1,0 +1,19 @@
+{
+  "schema_version": "source-candidate-v1",
+  "status": "draft_not_human_approved",
+  "runtime_activated": false,
+  "retrieved_at": "2026-09-13T13:38:24.717486+00:00",
+  "source_page": "https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-658/section-658.17",
+  "observed_through": "Chrome via CUA; paragraph (e) image visually inspected",
+  "asset_url": "https://img.federalregister.gov/EC14OC91.012/EC14OC91.012_original_size.png",
+  "sha256": "641599047eae05466864b8f05c42d2bf1445a234639d22358982fd8de28b9af8",
+  "page_displayed_current_through": "2026-09-10",
+  "title_last_amended": "2026-09-01",
+  "date_limit": "These are Title 23 page labels, not a claim that section 658.17 changed on that date.",
+  "draft_transcription": "W = 500 * (L*N/(N-1) + 12*N + 36)",
+  "remaining_review": [
+    "Confirm variable definitions, rounding and all relevant exceptions in complete retained source material.",
+    "Review jurisdiction, grandfathering and permit applicability.",
+    "Bind reviewed extraction to a new evidence release before any runtime legal evaluator."
+  ]
+}

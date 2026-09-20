@@ -1,0 +1,14 @@
+**Short answer: Yes — CR 624's absence from Appendix C, by itself, does not prohibit this route or trigger an oversize permit requirement.** But that's not quite the right question. Here's the actual legal chain:
+
+**1. Appendix C only matters for a narrow category of vehicle.**
+N.J.A.C. 16:32 governs *double-trailer truck combinations* and *"102-inch wide standard trucks"* (defined as any truck **wider than 96", up to 102"**). Appendix C lists which county "600-series" roads count as part of the **New Jersey Access Network** for those vehicles. A road's absence from Appendix C doesn't ban it — it just means that road isn't part of the Access Network tier; it falls into the third tier, **"local unrestricted roadways."**
+
+**2. Local unrestricted roadways are explicitly usable for terminal access.**
+Under 16:32-1.5(a)(2)(i), a covered truck may use local unrestricted roadways "as necessary to access a terminal," provided it's the direct route and the truck returns to the network as applicable. The only roadways this chapter affirmatively bars (absent sole access) are those listed in **Appendices A and B** — not Appendix C. So CR 624 not being in Appendix C puts it in the "generally fine for direct terminal access" bucket, not a prohibited bucket.
+
+**3. This chapter is about route designation, not permit issuance.**
+Whether you need an *oversize permit* at all depends on whether your **actual loaded width, height, and semitrailer length exceed New Jersey's statutory limits** (generally 102" width, 13'6" height, and the statutory semitrailer length cap under N.J.S.A. 39:3-84) — not on Appendix C. If your dimensions are within those ordinary limits, no oversize permit is required for this move regardless of CR 624's Appendix C status. If they exceed those limits, you need a permit anyway, and the permit itself will dictate the approved route — again independent of Appendix C.
+
+**Bottom line for dispatch:** CR 624's Appendix C absence is not a red light. The real gating question is the one you flagged as unknown — loaded width/height/trailer length. If those are within ordinary NJ statutory limits (which is typical for a standard 102"-wide dry van/reefer on a five-axle combo), you can dispatch on this route now without an oversize permit. If any of those three dimensions exceeds the statutory threshold, you need a permit regardless of what Appendix C says, and the route would then be fixed by the permit conditions.
+
+That's a spec-sheet or driver-radio check, not a multi-agency call — worth doing before wheels roll, but it's the only real open variable.

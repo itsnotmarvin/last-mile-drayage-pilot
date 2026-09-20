@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T01:40:11.188Z",
+  "tool_call_id": "call_4TeflauxszuseK46krlyzwsZ",
+  "arguments": {
+    "code": "await claude.click(115); await claude.getAXState();",
+    "title": "Inspect r3 driver tool attribution and command"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

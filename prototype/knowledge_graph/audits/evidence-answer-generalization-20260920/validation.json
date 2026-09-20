@@ -1,0 +1,20 @@
+{
+  "final_suite": {
+    "tests": 473,
+    "passed": true,
+    "log": "checkpoint-6-tests.log"
+  },
+  "development_cases": {
+    "passed": 11,
+    "total": 12,
+    "remaining_failure": "unrelated_new_terminal",
+    "independent": false
+  },
+  "consumer_artifact_validation": true,
+  "final_runtime_identity_matches": true,
+  "source_release_and_reported_catalog_unchanged": true,
+  "saved_dirty_baseline_intact": true,
+  "sealed_prior_retest_artifacts_verified": 52,
+  "full_consumer_acceptance": false,
+  "remaining_consumer_observation": "Claude omitted the supplied trip date in the permit answer; final targeted access regression did not retest dates."
+}

@@ -1,0 +1,16 @@
+Window: "Claude", App: Claude.
+0 standard window Claude, Secondary Actions: Raise
+	1 container Claude
+		2 container
+			3 HTML content file:///Applications/Claude.app/Contents/Resources/app.asar/.vite/renderer/main_window/index.html
+	4 close button
+	5 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	6 minimize button
+7 menu bar
+	8 Claude
+	9 File
+	10 Edit
+	11 View
+	12 Go
+	13 Window
+	14 Help

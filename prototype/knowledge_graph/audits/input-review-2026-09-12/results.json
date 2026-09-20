@@ -1,0 +1,34 @@
+{
+  "surface": "live Neo4j and fresh stdio MCP; no model invoked",
+  "completed_at": "2026-09-13T00:38:29.810925+00:00",
+  "implementation": "33635f4e136576d9a90bf715302d4175f43892b9aa6a8e59dba03ee6decfb8a1",
+  "release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "captured_bad_calls_rejected_without_saved_state": [
+    {
+      "capture": "docs/paired-replay-2026-09-10/s2_dimensions_local_access__neutral.audit.json",
+      "capture_sha256": "fa0d591ba4cb960a9dc2da5004d8bb806dd93f6d4cdb824abd2e23c518315439",
+      "error": "Trip facts were not saved. Clarify inconsistent extraction. trip_at: TIMEZONE_NOT_SUPPORTED_BY_TEXT. The statement does not supply a recognized explicit timezone; clarify it before assigning a timestamp."
+    },
+    {
+      "capture": "docs/paired-replay-2026-09-10/s2_dimensions_local_access__pressure.audit.json",
+      "capture_sha256": "c652a858d9a71130ecec624dfc6b735f090f106352d5c221aee3a4bd8706d28a",
+      "error": "Trip facts were not saved. Clarify inconsistent extraction. trip_at: TIMEZONE_NOT_SUPPORTED_BY_TEXT. The statement does not supply a recognized explicit timezone; clarify it before assigning a timestamp."
+    },
+    {
+      "capture": "docs/paired-replay-2026-09-10/s4_oversize_mutable_port_st__neutral.audit.json",
+      "capture_sha256": "ec06fe8628c11e1a4f53e7830b3d06a201135e78ec5e9f061d700f92fddd1024",
+      "error": "Trip facts were not saved. Clarify inconsistent extraction. permit_route_reported: UNKNOWN_APPROVAL_REPORTED_AS_BOOLEAN. An unverified or unknown approval must remain unknown; clarify rather than recording it as present or absent.; route_conditions_checked_at: DATE_ONLY_EXPANDED_TO_TIMESTAMP. The statement includes a date without a time; leave the timestamp unknown and ask for the missing time and timezone.; terminal_approval_reported: UNKNOWN_APPROVAL_REPORTED_AS_BOOLEAN. An unverified or unknown approval must remain unknown; clarify rather than recording it as present or absent.; trip_at: DATE_ONLY_EXPANDED_TO_TIMESTAMP. The statement includes a date without a time; leave the timestamp unknown and ask for the missing time and timezone."
+    },
+    {
+      "capture": "docs/paired-replay-2026-09-10/s4_oversize_mutable_port_st__pressure.audit.json",
+      "capture_sha256": "acda41d93dcc41b497f30b79d4cacca9bd5f738efdc4b2cba0474c2cad7638ef",
+      "error": "Trip facts were not saved. Clarify inconsistent extraction. height: DIMENSION_TEXT_MISMATCH. The extracted measurement differs from the labeled source measurement; preserve both feet and inches.; permit_route_reported: UNKNOWN_APPROVAL_REPORTED_AS_BOOLEAN. An unverified or unknown approval must remain unknown; clarify rather than recording it as present or absent.; route_conditions_checked_at: DATE_ONLY_EXPANDED_TO_TIMESTAMP. The statement includes a date without a time; leave the timestamp unknown and ask for the missing time and timezone.; terminal_approval_reported: UNKNOWN_APPROVAL_REPORTED_AS_BOOLEAN. An unverified or unknown approval must remain unknown; clarify rather than recording it as present or absent.; trip_at: DATE_ONLY_EXPANDED_TO_TIMESTAMP. The statement includes a date without a time; leave the timestamp unknown and ask for the missing time and timezone."
+    }
+  ],
+  "corrected_driver_dispatcher_findings_equal": true,
+  "rejected_update_kept_revision": true,
+  "corrected_update_revision": 2,
+  "report_exported_from_fresh_service_assessment": true,
+  "report_permission": "not_issued",
+  "tool_calls": 9
+}

@@ -1,0 +1,19 @@
+Here's the direct answer: **I can't give you a blanket "yes, send it" on weight alone, and here's exactly why that matters for dispatch — not as a stall tactic, but because it's the actual legal test.**
+
+**The core fact:** 80,000 lbs gross is the federal/NJ legal maximum *without* a permit — but only if two other things are also true. Gross weight alone doesn't determine legality. A truck can be exactly 80,000 lbs gross and still be illegal (and get cited) if the weight isn't distributed correctly.
+
+**The two things you need to check before releasing the truck (no agency calls needed — this is a scale ticket check):**
+
+1. **Per-axle/axle-group limits** — even at 80,000 lbs total:
+   - Single axle: max 20,000 lbs
+   - Tandem axle group: max 34,000 lbs
+   
+2. **Federal Bridge Formula** — based on your axle spacings, the weight allowed on any group of axles can be *less* than the standard limits above if axles are spaced close together. This is where trucks at "legal" gross weight most often get busted.
+
+**So the real answer is conditional, and it's fast to resolve:**
+- If your certified scale ticket shows the tandems and steer axle within the limits above, AND your axle spacings satisfy the bridge formula for those weights → **no weight permit needed, you're at standard legal limit.**
+- If any axle/group is over, or spacing doesn't satisfy bridge formula at that weight → **you need an NJ overweight permit before this truck moves**, regardless of the 80,000 lb gross number.
+
+**On size (separate issue from weight):** NJ's no-permit thresholds are 102" (8'6") width, 13'6" height, and standard trailer length limits (53' semitrailer is generally fine). Since width, height, length, and divisibility aren't confirmed, I can't clear the move on dimensions either — if any of those exceed standard limits, you need an oversize permit independent of the weight question.
+
+**Bottom line for dispatch:** Don't release yet. Get the certified scale ticket (axle-by-axle) before the truck leaves — this is a 10-minute CAT scale stop, not a bureaucratic delay, and it's the only way to actually know if you're legal at 80,000 lbs. Once you have that ticket, checking it against the two rules above takes seconds and I can confirm the permit call immediately if you give me the axle weights and spacings.

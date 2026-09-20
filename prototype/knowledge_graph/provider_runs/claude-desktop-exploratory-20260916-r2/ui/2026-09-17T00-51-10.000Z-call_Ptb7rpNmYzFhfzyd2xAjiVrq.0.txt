@@ -1,0 +1,3 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 89, 91-94
+The focused UI element is 4 HTML content New chat - Claude, URL: claude.ai/new?incognito=

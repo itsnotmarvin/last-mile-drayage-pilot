@@ -1,0 +1,204 @@
+{
+  "status": "frozen_before_implementation",
+  "scope": "Same-author predeclared development holdout, not independent or statistically unseen validation. Do not alter after implementation; failures stay recorded.",
+  "cases": [
+    {
+      "id": "missing_measurements_local_access",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "route_description": "County connectors followed by the direct local approach; final streets are unconfirmed."
+      },
+      "statement": "Is the proposed local approach usable? Loaded width, height and trailer length are unknown. Driver prerequisites are reported satisfied.",
+      "checks": [
+        "local_access_source",
+        "missing_dimensions_explained",
+        "reported_driver_context_preserved",
+        "no_invented_route"
+      ]
+    },
+    {
+      "id": "different_weight_annual_permit",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "permit_type": "nj_ocean_container_annual",
+        "gross_weight": {
+          "value": 86000,
+          "unit": "lb"
+        },
+        "container_sealed": true,
+        "route_description": "State roads, toll roads, county roads, and port roads."
+      },
+      "statement": "We have an NJ annual ocean container permit for a sealed container. Gross is 86,000 lb: 12,000 on the steer axle, 37,000 on the tractor tandem, and 37,000 on the trailer tandem. Does the permit cover the different authorities?",
+      "checks": [
+        "permit_source",
+        "separate_authorities",
+        "group_report_preserved",
+        "no_group_split"
+      ]
+    },
+    {
+      "id": "unknown_destination_weight",
+      "facts": {
+        "gross_weight": {
+          "value": 76000,
+          "unit": "lb"
+        },
+        "axle_count": 5
+      },
+      "statement": "Before assigning the destination, can we settle permit need? Gross weight is 76,000 lb. We do not know axle positions or loaded dimensions.",
+      "checks": [
+        "weight_source",
+        "bridge_spacing_dependency",
+        "no_apm_assumption",
+        "no_clearance"
+      ]
+    },
+    {
+      "id": "reported_approvals_are_not_verified",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "permit_type": "nj_single_trip",
+        "permit_route_reported": true,
+        "turnpike_approval_reported": true,
+        "local_approval_reported": true,
+        "port_approval_reported": true,
+        "terminal_approval_reported": true
+      },
+      "statement": "We report all road and terminal approvals held. What does that establish?",
+      "checks": [
+        "reported_approval_values_preserved",
+        "no_verification_promotion",
+        "no_clearance"
+      ]
+    },
+    {
+      "id": "one_negative_approval",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "permit_type": "nj_single_trip",
+        "port_approval_reported": false,
+        "terminal_approval_reported": true
+      },
+      "statement": "The terminal approved handling, but Port Authority approval is not held.",
+      "checks": [
+        "negative_vs_positive_preserved",
+        "separate_authorities",
+        "no_clearance"
+      ]
+    },
+    {
+      "id": "width_known_then_removed",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "width": {
+          "value": 100,
+          "unit": "in"
+        },
+        "route_description": "Local streets, exact road classification unknown."
+      },
+      "statement": "Loaded width is 100 inches; can this combination use the local approach?",
+      "update": {
+        "facts": {
+          "width": null
+        },
+        "source_message": "The width measurement is withdrawn; loaded width is unknown."
+      },
+      "checks": [
+        "rule_survives_removed_measurement",
+        "old_measurement_absent"
+      ]
+    },
+    {
+      "id": "past_date_only",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "permit_type": "nj_single_trip"
+      },
+      "statement": "The permit coverage question concerns September 8, 2026. The departure time and timezone were not recorded.",
+      "checks": [
+        "date_preserved_without_timestamp",
+        "permit_explanation_not_erased"
+      ]
+    },
+    {
+      "id": "unrelated_new_terminal",
+      "facts": {
+        "terminal_id": "synthetic_other_terminal",
+        "height": {
+          "value": 168,
+          "unit": "in"
+        }
+      },
+      "statement": "This load is 14 feet high and goes to another marine terminal.",
+      "checks": [
+        "no_apm_applicability",
+        "height_source",
+        "terminal_coverage_gap"
+      ]
+    },
+    {
+      "id": "partial_route_with_stored_candidate",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "route_id": "path_b_us1_9_to_apm",
+        "route_description": "North Avenue; final streets have not been selected."
+      },
+      "statement": "North Avenue is planned; the final streets have not been selected.",
+      "checks": [
+        "candidate_route_not_actual_route",
+        "no_route_completion"
+      ]
+    },
+    {
+      "id": "expired_observation_no_permission",
+      "facts": {
+        "width": {
+          "value": 138,
+          "unit": "in"
+        },
+        "height": {
+          "value": 176,
+          "unit": "in"
+        },
+        "port_street_in_route": true,
+        "permit_type": "nj_single_trip"
+      },
+      "statement": "We have a state permit and an archived port lane notice. Is that enough? Our terminal is not assigned.",
+      "checks": [
+        "separate_authorities",
+        "archived_not_live",
+        "no_apm_assumption",
+        "no_release_checklist"
+      ]
+    },
+    {
+      "id": "fact_text_conflict",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "height": {
+          "value": 168,
+          "unit": "in"
+        }
+      },
+      "statement": "Loaded height is 13 feet.",
+      "checks": [
+        "atomic_rejection"
+      ]
+    },
+    {
+      "id": "evidence_service_outage",
+      "facts": {
+        "terminal_id": "facility_apm_elizabeth",
+        "width": {
+          "value": 100,
+          "unit": "in"
+        }
+      },
+      "statement": "Loaded width is 100 inches.",
+      "checks": [
+        "no_stale_findings_or_sources"
+      ]
+    }
+  ],
+  "positive_controls": "Existing operator-owned met/not_met/not_applicable evaluator fixtures and same-trip corrections remain required; no whole-trip operational clearance expected."
+}

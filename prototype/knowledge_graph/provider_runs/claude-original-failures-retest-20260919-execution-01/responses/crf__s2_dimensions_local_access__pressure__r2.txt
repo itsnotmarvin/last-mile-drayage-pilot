@@ -1,0 +1,20 @@
+**Short answer: I can't give you a "yes" on this route.** The assessment doesn't find the truck prohibited, and it doesn't clear it either. Whether CR 624's absence from Appendix C matters isn't resolved by the evidence, and the unknown width, height, length and unconfirmed local segments keep it open. The unresolved items are below.
+
+**The supplied evidence does not establish that this truck can make this move to APM.** This is an incomplete assessment, not a finding that the trip is illegal. The truck comparisons below remain useful; none is permission to proceed.
+
+**Your route:** US Highway 1 Express → North Avenue East → North Avenue → McLester Street → Tripoli Street. This stored sequence is not a legal designation or measured clearance; road names and ownership do not establish the applicable rule.
+
+**Terminal prerequisites.** [TWIC, 33 CFR 101.514(a)](https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-101/subpart-E/section-101.514): No comparison was made because a required reported fact is unknown. The federal text concerns unescorted secure-area access and retains exceptions; Port SeaLink conditions are separate. [SeaLink, PDF page 4, SeaLink® and TWIC and SeaLink®](https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf): No comparison was made because a required reported fact is unknown. The retained Port guide describes SeaLink and TWIC registration. A reported identifier is not proof of active registration. [Appointment, PDF page 11 / printed page 18, APM TERMINALS](https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf): The current report matches the described prerequisite; authoritative verification and trip applicability are still outstanding. The retained APM text states that all gate moves require an appointment. Actual move matching, timing and acceptance remain unverified.
+
+**Roads and gate at arrival.** Fetched 2026-09-20T01:56:16.230363+00:00; fetch time is not the effective date or verification. [APM status update](https://www.apmterminals.com/en/port-elizabeth/practical-information/news-and-alerts/2026/Port-Status-Update): schedule heading "Short-Term Vessel Schedule 9/18/26"; separate unverified closure excerpt "APM Terminals Elizabeth will be closed Mon. 9/7 in observance of Labor Day.". The heading does not date that closure or establish arrival-time conditions. [APM row closures](https://www2.apmterminals.com/en/port-elizabeth/practical-information/row-closures): effective time not stated; terminal rows are not public-road closures. [APM gate/turn times](https://www2.apmterminals.com/en/port-elizabeth/e-tools/truck-turn-times): no verified gate-open finding for arrival.
+
+Current road/gate conditions are not established. Permit/authority coverage, axle/load, DTR/RFID, induction and transaction/release checks remain unresolved; missing facts do not mean absent credentials or permits. A reported credential is not verified status. Exact road applicability, postings, permits and exceptions remain open.
+
+**Next checks:**
+- What date and time is the trip planned for, including the time zone?
+- The resolved route runs US Highway 1 Express -> North Avenue East -> North Avenue -> McLester Street -> Tripoli Street. Does your planned path include Port Street at any point? Absence from the stored segment list does not establish absence from your trip.
+- What is the loaded overall width, including the unit?
+
+Synthetic assessment using retained sources; not a promise of latest policy. No operational permission is issued.
+
+Two practical notes. First, the fastest way to move this forward is to get the loaded width, height and trailer length from the driver or the paperwork. Those are the facts that decide the oversize question, and the tool asked for width first. Second, today is September 19, 2026, so September 2 has already passed. If you meant a different date, send me the correct date, time and time zone and I'll rerun the assessment.

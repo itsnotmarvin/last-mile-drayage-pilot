@@ -1,0 +1,9 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++												170 container
++													171 text Request
++													172 container (showing 0-100 of 205 items)
++														173 text { " request_key " : "syn-req-apm-elizabeth-20260916-001" , " source_message " : "Synthetic experiment only; these are invented trip details, not an actual dispatch. Can I take my truck to APM Elizabeth? Planned entry is September 17, 2026 at 9:00 AM America/New_York. The loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or the exact road sequence. Explain the issues that actually matter and what information would change your answer." , " requester_role " : "driver" , " question_scope " : "trip_dispatch" , " facts " : { " terminal_id " : "facility_apm_elizabeth" , " trip_at " : "2026-09-17T09:00:00-04:00" , " height " : { " value " : 175 , " unit " : "in" }, " width " : {
++													174 text Response
++													175 container
++														176 text Tool result too large for context, stored at /mnt/user-data/tool_results/mcp__drayage-kg-prototype__assess_trip_toolu_ 013 fJx 4 sj 8 LAy 3 S 3 xCCCbpYS.json. Use grep to search for specific content or head/tail to read portions.
+The focused UI element is 164 button Assess a synthetic driver or dispatcher trip

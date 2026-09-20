@@ -1,0 +1,14 @@
+Here's the dispatch-usable answer, straight from the requirement text:
+
+CR 624's absence from Appendix C does not, by itself, prohibit the route or require an oversize permit. That's a common misreading of the rule, and I'd push back on it as a basis for holding the truck.
+
+Why: Appendix C to N.J.A.C. 16:32 is the list of county "600" series roads that make up part of New Jersey's Access Network — roads where wide trucks (up to 102") are affirmatively pre-approved. A road not on that list isn't banned; it's simply not part of that specific pre-approved network. Non-listed local roads like CR 624 fall instead under the separate "local unrestricted roadway" rule (N.J.A.C. 16:32-1.5(a)(2)): a 102-inch-wide standard truck may use local unrestricted roadways to access a terminal, provided it's by the direct route — which is exactly what you've described (final approach, direct to APM Elizabeth). So the Appendix C omission is not a controlling fact for prohibition.
+
+What actually controls, and what's still open:
+
+1. Vehicle qualifies as a "standard truck." The rule's permission is expressly limited to ≤102" width, ≤13'6" height, and (for length) a semitrailer ≤53', with anything over 48' restricted to National Network/direct-route-to-terminal use. You don't yet have loaded width, height, or trailer length recorded — for a typical container chassis these are almost always within those limits, but they're formally unconfirmed.
+2. CR 624 must actually be "unrestricted" right now. N.J.A.C. 16:32-1.2(e) preserves the authority of local ordinances and county resolutions to post their own truck-route bans independent of the state's network/appendix system. Appendix C silence says nothing about whether a municipality or county has posted a local restriction on that segment today. You've flagged this as unconfirmed.
+
+Bottom line for dispatch: If this is a standard container chassis (the near-universal case for this kind of move) and no one has flagged an actual posted restriction on North Avenue / CR 624 / the local streets in question, you can dispatch without an OS/OW permit — the Appendix C point is not a blocker. The only things that could actually stop this trip are (a) the load turning out to be oversize on width/height/length, or (b) an actual posted local truck-route ban on one of those segments — neither of which you have evidence of, you just haven't formally closed the loop on them.
+
+(Note: this comes from a synthetic development tool — archived regulatory text, not a live legal or routing verification.)

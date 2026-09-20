@@ -1,0 +1,23 @@
+{
+  "result": "consumer_presentation_not_passed",
+  "artifacts": {
+    "baseline.json": "50ce51ab668584887847f4b6b54d9b2158ebc5b5f1f5c58f3a7d83e1e41b2c7e",
+    "before/CURRENT_STATE.md": "431fa792073e67d9eb4984bc6fb27c381fdba7afafed78d3499bb41894eb620a",
+    "before/PROGRESS.md": "c490ede95c83c13872acade0378ec3639d256f953f2d31ec751945192dcf2085",
+    "before/README.md": "2b381c3f66014526c2b459e62588e4bc0b9db23aca0befaf736a0e2d37d5e9ca",
+    "before/docs/driver-experience.md": "ca39e08558e517ee022af16bc343dfc477bab06e5aebc7c058fa6f6b9fb868ac",
+    "before/neo4j_kg/mcp_server.py": "62658576a0feb59407ddcb3dbf1101e103d9a57041782799c5f8a613f703fd1b",
+    "before/neo4j_kg/trip_tools.py": "01b56c4e0dd1d6054fe163f79f372f2057b194c722fa0e87edf25f06c2f652eb",
+    "before/tests/test_conditions_graph_binding.py": "17635c6d3511f71eb4700dfeac08516c3c5ce3259b555e2fe88a926ea1dfb689",
+    "before/tests/test_driver_conditions.py": "66e4621e3243dc9fce71ce97e15517a8d6829e6ed4fe79dd88b8ba41ece24e28",
+    "before/tests/test_trip_assessment.py": "314fc2df2e2bbbf90bb7060b5181804d63872a89591c659e7d3e5590b4fc06ef",
+    "capture-start.json": "a70bafbe015ce0f12ba1cec90b23d7375c1ba5fdfb9c2527a19b6b4bb94f7085",
+    "consumer-audit.json": "e7b209bec5cebfab227399b4456e70186317900dc9fec31fa45ffc6b682e405a",
+    "consumer-review.md": "95257aafd6821c2af016387f950704eb109231cf8dfb16cb0591daba8dab24a2",
+    "implementation.diff": "95e1b7f12a824d85fe860e9acc7250fba7f5e04ea157d62001c4127b8d8f9985",
+    "proposed-answer.md": "b1347970b36452d12444d755af5c7f6c6f30a6eeb966fcd2ff5e6c572178a305",
+    "protocol.json": "baa20e994bc7c88bb8b72b36b5c3daad569b8286ba44fd38dba6ee31b1448c89",
+    "tests.log": "aa578ef9f2b29fb3cd3bcd09428828a4d50b5cc2d123fa5a1c3731bb874f8119",
+    "verify_capture.py": "8c90d229061429a6e08d1e410d5b027b670e355e7be7f1d55d0042701b8076f7"
+  }
+}

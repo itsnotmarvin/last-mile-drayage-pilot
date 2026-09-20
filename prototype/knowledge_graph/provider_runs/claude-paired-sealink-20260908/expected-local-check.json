@@ -1,0 +1,101 @@
+{
+  "schema_version": "drayage-check-result-v1",
+  "mode": "synthetic_prototype_only",
+  "evaluation_id": "26064e743ab87a0080b3398b144aa6b9ead89907fdc21b237c78d0ceb4e6b83c",
+  "versions": {
+    "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+    "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+    "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d",
+    "implementation": "f405c984924cfd85a618ca0b947db4ce30e8be027d2df243a2a2b05a3173bec0"
+  },
+  "normalized_facts": {
+    "terminal_id": "facility_apm_elizabeth",
+    "actor_role": "truck_driver",
+    "driver_id": "syn-driver-complete",
+    "current_sealink_id": "SYN-SL-NEW",
+    "trip_at": "2026-09-06T18:00:00+00:00",
+    "question_scope": "induction",
+    "company_changed": null
+  },
+  "check_id": "check_apm_induction_v1",
+  "approval_status": "draft_not_human_approved",
+  "applicability": "applicable",
+  "check_status": "unresolved",
+  "reason_codes": [
+    "SEALINK_EVIDENCE_MISMATCH"
+  ],
+  "missing_facts": [
+    "completion_for_current_sealink"
+  ],
+  "evidence_ids": [
+    "syn-observation-complete"
+  ],
+  "evidence_basis": "server_owned_synthetic_records_not_live_driver_verification",
+  "requested_scope_status": "unresolved",
+  "operational_status": "unresolved_not_assessed",
+  "coverage": {
+    "evaluated": [
+      "APM_induction_identifier_match"
+    ],
+    "not_evaluated": [
+      "current_policy",
+      "CDL_and_other_driver_requirements",
+      "TWIC",
+      "SeaLink_validity_and_TWIC_registration",
+      "DTR_and_RFID",
+      "appointment_and_transaction",
+      "same_day_gate_status",
+      "vehicle_and_load",
+      "route_dimensions_and_axles",
+      "permits_and_cross_authority_coverage"
+    ],
+    "complete_trip_check": false
+  },
+  "sources": [
+    {
+      "clause_id": "prototype_clause_induction_sealink_change",
+      "source_id": "panynj_truckers_guide",
+      "publisher": "Port Authority of New York and New Jersey",
+      "title": "Truckers Resource Guidebook",
+      "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+      "locator": "PDF page 11 / printed page 18, Mandatory Trucker Training, fourth bullet",
+      "source_text": "Truckers obtaining a new SeaLink card will need to retake the Safety Induction Training with their new SeaLink number. Driver\u2019s DO NOT have to retake the induction if they switch companies, as long as they keep the same Sealink number.",
+      "publication_date": "2025-08",
+      "accessed_date": "2026-06-25",
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+          "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+        }
+      ],
+      "currentness": "archived_evidence_only_not_verified_for_this_trip",
+      "extraction_status": "prototype_not_promoted_to_canonical_archive"
+    },
+    {
+      "clause_id": "reg_apm_safety_induction",
+      "source_id": "panynj_truckers_guide",
+      "publisher": "Port Authority of New York and New Jersey",
+      "title": "Truckers Resource Guidebook",
+      "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+      "locator": "PDF page 11 / printed page 18, APM TERMINALS \u2014 Mandatory Trucker Training",
+      "source_text": "All truck drivers are required to complete the MANDATORY online safety induction video/quiz in order to access the terminal",
+      "publication_date": "2025-08",
+      "accessed_date": "2026-06-25",
+      "archived_files": [
+        {
+          "role": "document_pdf",
+          "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+          "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+        }
+      ],
+      "currentness": "archived_evidence_only_not_verified_for_this_trip"
+    }
+  ],
+  "limits": [
+    "No dispatch, entry, permit or route clearance is issued.",
+    "Archived policy has not been verified as current for this trip.",
+    "Synthetic evidence assessment dates are test controls, not a training expiry rule.",
+    "An out-of-scope check does not mean the person is exempt from other requirements."
+  ]
+}

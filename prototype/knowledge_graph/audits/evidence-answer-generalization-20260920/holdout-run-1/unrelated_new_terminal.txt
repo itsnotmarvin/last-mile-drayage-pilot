@@ -1,0 +1,16 @@
+**The supplied evidence does not establish that this truck can make this move.** This is an incomplete assessment, not a finding that the trip is illegal. The truck comparisons below remain useful; none is permission to proceed.
+
+The terminal is unspecified or outside the terminal-specific evidence coverage. APM requirements and gate observations are not assumed to apply.
+
+No supported stored route sequence resolved; exact roads remain to be established.
+
+**Roads and gate at arrival.** No usable current terminal-page observation is available.
+
+Road/gate conditions and remaining axle, permit, credential and transaction requirements are unresolved. Missing facts do not mean absent credentials or permits.
+
+**Next checks:**
+- Supply any missing loaded dimensions; confirm the actual route, direct terminal access and current restrictions with the responsible road authorities.
+- Obtain any missing individual axle weights and spacings; check the applicable axle, group, bridge and permit limits for the actual route.
+- Review the permit’s vehicle/load, dates and approved route; establish which separate road, Port Authority and terminal approvals apply, and verify them individually.
+
+These next checks are not an exhaustive release checklist. All unresolved authority, physical-access and terminal requirements remain open. Archived sources do not establish current conditions. Synthetic assessment using retained sources; not a promise of latest policy. No operational permission is issued.

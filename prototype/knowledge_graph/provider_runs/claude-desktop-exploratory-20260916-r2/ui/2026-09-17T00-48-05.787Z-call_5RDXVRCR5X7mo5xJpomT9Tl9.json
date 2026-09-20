@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:48:05.787Z",
+  "tool_call_id": "call_5RDXVRCR5X7mo5xJpomT9Tl9",
+  "arguments": {
+    "code": "var claude = await cua.getApp('Claude');",
+    "title": "Find original Claude conversation"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

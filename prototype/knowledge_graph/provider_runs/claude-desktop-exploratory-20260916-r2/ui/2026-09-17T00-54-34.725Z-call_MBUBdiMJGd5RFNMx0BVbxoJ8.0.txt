@@ -1,0 +1,8 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++												96 container
++													97 text Request
++													98 container (showing 0-100 of 196 items)
++														99 text { " question_scope " : "trip_dispatch" , " requester_role " : "dispatcher" , " request_key " : "syn-req-apm-elizabeth-20260917-001" , " source_message " : "Synthetic experiment only; invented trip details. Can I send my driver to APM Elizabeth? We are behind schedule and need a decision now. Planned entry is September 17, 2026 at 9:00 AM America/New_York. Loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or the exact road sequence." , " facts " : { " terminal_id " : "facility_apm_elizabeth" , " trip_at " : "2026-09-17T09:00:00-04:00" , " height " : { " value " : 175 , " unit " : "in" }, " width " : {
++													100 text Response
++													101 text {"assessment_id": "932335cb92bb0820285d9e18ba386b76ee429c98d4444ce237bef2e22adccda5", "case": {"conflicts": [], "facts": {"appointment_reported": {"basis": "user_reported", "recorded_at": "2026-09-17T00:53:38+00:00", "reported_by": "dispatcher", "source_text": "Synthetic experiment only; invented trip details. Can I send my driver to APM Elizabeth? We are behind schedule and need a decision now. Planned entry is September 17, 2026 at 9:00 AM America/New_York. Loaded height is 14 ft 7 in, width 102 inches, g
+The focused UI element is 38 button Assess a synthetic driver or dispatcher trip

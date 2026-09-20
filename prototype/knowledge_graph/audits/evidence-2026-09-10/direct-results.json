@@ -1,0 +1,627 @@
+{
+  "surface": "live Neo4j + isolated local stdio MCP; no Claude model invoked",
+  "completed_at": "2026-09-10T23:56:44.373614+00:00",
+  "casebook_sha256": "605ac47b32d9838fd81831704f8efb1e6766f8a8299ef1db9ea90c8f78f08a7e",
+  "release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "implementation": "af5ef39b06af4e3f46867b94927f34b0d5ab7c228e3cbe46911990d68487871a",
+  "direct_assessments": 24,
+  "tool_calls": 49,
+  "trace_hash_chain_verified": true,
+  "query_count": 451,
+  "case_results": [
+    {
+      "case_id": "S1_AXLE_FACTS",
+      "focus_requirements": [
+        "axle_weight_evidence",
+        "permit_eligibility"
+      ],
+      "focus_coverage": {
+        "expected": [
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_tandem_gross_bridge"
+        ],
+        "returned": [
+          "reg_federal_interstate_weight",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge"
+        ],
+        "missing": [],
+        "required_evidence_recall": 1.0,
+        "extra_clause_ids_not_automatically_errors": [
+          "reg_federal_interstate_weight",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_single_trip_route_review_13_18_portal_copy"
+        ]
+      },
+      "all_catalog_coverage": {
+        "expected": [
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_tandem_gross_bridge"
+        ],
+        "returned": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ],
+        "missing": [],
+        "required_evidence_recall": 1.0,
+        "extra_clause_ids_not_automatically_errors": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ]
+      },
+      "four_condition_invariance": true,
+      "all_unresolved": true
+    },
+    {
+      "case_id": "S2_DIMENSIONS_LOCAL_ACCESS",
+      "focus_requirements": [
+        "dimensions_and_route"
+      ],
+      "focus_coverage": {
+        "expected": [
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_semitrailer_length",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit"
+        ],
+        "returned": [
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_semitrailer_length",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit"
+        ],
+        "missing": [],
+        "required_evidence_recall": 1.0,
+        "extra_clause_ids_not_automatically_errors": []
+      },
+      "all_catalog_coverage": {
+        "expected": [
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_semitrailer_length",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit"
+        ],
+        "returned": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ],
+        "missing": [],
+        "required_evidence_recall": 1.0,
+        "extra_clause_ids_not_automatically_errors": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ]
+      },
+      "four_condition_invariance": true,
+      "all_unresolved": true
+    },
+    {
+      "case_id": "S3_PERMIT_HANDOFF_88K",
+      "focus_requirements": [
+        "permit_eligibility",
+        "cross_authority_coverage"
+      ],
+      "focus_coverage": {
+        "expected": [
+          "reg_nj_ocean_container_permit",
+          "reg_njta_roadway_use_limitations",
+          "reg_panynj_terminal_weight_dimensions"
+        ],
+        "returned": [
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_panynj_terminal_traffic"
+        ],
+        "missing": [
+          "reg_njta_roadway_use_limitations",
+          "reg_panynj_terminal_weight_dimensions"
+        ],
+        "required_evidence_recall": 0.3333333333333333,
+        "extra_clause_ids_not_automatically_errors": [
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_panynj_terminal_traffic"
+        ]
+      },
+      "all_catalog_coverage": {
+        "expected": [
+          "reg_nj_ocean_container_permit",
+          "reg_njta_roadway_use_limitations",
+          "reg_panynj_terminal_weight_dimensions"
+        ],
+        "returned": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ],
+        "missing": [
+          "reg_njta_roadway_use_limitations",
+          "reg_panynj_terminal_weight_dimensions"
+        ],
+        "required_evidence_recall": 0.3333333333333333,
+        "extra_clause_ids_not_automatically_errors": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ]
+      },
+      "four_condition_invariance": true,
+      "all_unresolved": true
+    },
+    {
+      "case_id": "S4_OVERSIZE_MUTABLE_PORT_ST",
+      "focus_requirements": [
+        "dimensions_and_route",
+        "current_route_conditions",
+        "cross_authority_coverage"
+      ],
+      "focus_coverage": {
+        "expected": [
+          "reg_nj_height_limit",
+          "reg_nj_width_limit",
+          "reg_panynj_terminal_weight_dimensions"
+        ],
+        "returned": [
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_semitrailer_length",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_terminal_traffic"
+        ],
+        "missing": [
+          "reg_panynj_terminal_weight_dimensions"
+        ],
+        "required_evidence_recall": 0.6666666666666666,
+        "extra_clause_ids_not_automatically_errors": [
+          "reg_nj_access_network_600_series",
+          "reg_nj_semitrailer_length",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_panynj_terminal_traffic"
+        ]
+      },
+      "all_catalog_coverage": {
+        "expected": [
+          "reg_nj_height_limit",
+          "reg_nj_width_limit",
+          "reg_panynj_terminal_weight_dimensions"
+        ],
+        "returned": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ],
+        "missing": [
+          "reg_panynj_terminal_weight_dimensions"
+        ],
+        "required_evidence_recall": 0.6666666666666666,
+        "extra_clause_ids_not_automatically_errors": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ]
+      },
+      "four_condition_invariance": true,
+      "all_unresolved": true
+    },
+    {
+      "case_id": "S5_DTR_CONFLICT",
+      "focus_requirements": [
+        "dtr_registration_and_rfid",
+        "dtr_engine_policy"
+      ],
+      "focus_coverage": {
+        "expected": [
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid"
+        ],
+        "returned": [
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid"
+        ],
+        "missing": [],
+        "required_evidence_recall": 1.0,
+        "extra_clause_ids_not_automatically_errors": []
+      },
+      "all_catalog_coverage": {
+        "expected": [
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid"
+        ],
+        "returned": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ],
+        "missing": [],
+        "required_evidence_recall": 1.0,
+        "extra_clause_ids_not_automatically_errors": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ]
+      },
+      "four_condition_invariance": true,
+      "all_unresolved": true
+    },
+    {
+      "case_id": "S6_GATE_CREDENTIALS",
+      "focus_requirements": [
+        "driver_twic",
+        "sealink_registration",
+        "apm_induction",
+        "apm_appointment",
+        "transaction_release"
+      ],
+      "focus_coverage": {
+        "expected": [
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_twic",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic"
+        ],
+        "returned": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_twic",
+          "reg_panynj_sealink_twic"
+        ],
+        "missing": [
+          "reg_panynj_rfid"
+        ],
+        "required_evidence_recall": 0.8,
+        "extra_clause_ids_not_automatically_errors": [
+          "prototype_clause_induction_sealink_change"
+        ]
+      },
+      "all_catalog_coverage": {
+        "expected": [
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_twic",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic"
+        ],
+        "returned": [
+          "prototype_clause_induction_sealink_change",
+          "reg_apm_appointment",
+          "reg_apm_safety_induction",
+          "reg_federal_interstate_weight",
+          "reg_federal_twic",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_rfid",
+          "reg_panynj_sealink_twic",
+          "reg_panynj_terminal_traffic"
+        ],
+        "missing": [],
+        "required_evidence_recall": 1.0,
+        "extra_clause_ids_not_automatically_errors": [
+          "prototype_clause_induction_sealink_change",
+          "reg_federal_interstate_weight",
+          "reg_nj_access_network_600_series",
+          "reg_nj_height_limit",
+          "reg_nj_noninterstate_single_axle",
+          "reg_nj_ocean_container_permit",
+          "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "reg_nj_semitrailer_length",
+          "reg_nj_single_trip_osow_permit",
+          "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "reg_nj_tandem_gross_bridge",
+          "reg_nj_terminal_access_102_inch_standard_truck",
+          "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "reg_nj_truck_access_local_rule_preservation",
+          "reg_nj_width_limit",
+          "reg_panynj_drayage_truck_deadline_34_1140",
+          "reg_panynj_dtr",
+          "reg_panynj_dtr_engine",
+          "reg_panynj_terminal_traffic"
+        ]
+      },
+      "four_condition_invariance": true,
+      "all_unresolved": true
+    }
+  ],
+  "evidence_field_mismatches": [],
+  "controls": [
+    {
+      "id": "positive",
+      "expected": "met",
+      "actual": "met",
+      "passed": true,
+      "request_id": 44
+    },
+    {
+      "id": "negative",
+      "expected": "not_met",
+      "actual": "not_met",
+      "passed": true,
+      "request_id": 45
+    },
+    {
+      "id": "missing",
+      "expected": "unresolved",
+      "actual": "unresolved",
+      "passed": true,
+      "request_id": 46
+    },
+    {
+      "id": "changed_identifier",
+      "expected": "unresolved",
+      "actual": "unresolved",
+      "passed": true,
+      "request_id": 47
+    },
+    {
+      "id": "other_subject",
+      "expected": "not_applicable",
+      "actual": "not_applicable",
+      "passed": true,
+      "request_id": 48
+    },
+    {
+      "id": "height_correction",
+      "passed": true,
+      "request_id": 50
+    },
+    {
+      "id": "driver_swap_invalidates_sealink",
+      "passed": true,
+      "request_id": 51
+    },
+    {
+      "id": "unknown_requirement_rejected",
+      "passed": true,
+      "request_id": 52
+    }
+  ],
+  "provider_status": "pending_desktop_control_unavailable",
+  "limitations": [
+    "No consumer-app model behavior measured in this run",
+    "Catalog-only evidence retrieval may omit retained graph clauses",
+    "Source passage equality to the pinned release is distinct from PDF extraction correctness",
+    "Draft expectations are not human policy approval"
+  ]
+}

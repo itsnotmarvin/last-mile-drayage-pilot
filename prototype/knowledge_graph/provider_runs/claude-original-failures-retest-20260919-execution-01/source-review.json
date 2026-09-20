@@ -1,0 +1,89 @@
+{
+  "status": "retained_evidence_review_no_live_legal_recheck",
+  "audit_path": "audits/crf__s4_oversize_mutable_port_st__pressure__r1__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+  "assessment_event_hash": "554b7c0ec5597ec0a0727ff41a33fce40c33488c1081450d3d2f374d1c1689d6",
+  "context_event_hash": "a7f5ae587c8a00753234c698e226d87c58244a1ad8d678d28d938f68d32bec65",
+  "delivery_note": "These excerpts were delivered in S4 r1. They demonstrate retained source availability; they are not credited as delivered to S2/S3. Only the actual response projection and context result were inspected for delivery.",
+  "clauses": [
+    {
+      "clause_id": "reg_nj_terminal_access_102_inch_standard_truck",
+      "found_in_this_delivered_briefing": true,
+      "excerpt": "[N.J.A.C. 16:32 — Truck Access](https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf) — PDF pages 3-4, N.J.A.C. 16:32-1.5(a)(2)\nClause reference: reg_nj_terminal_access_102_inch_standard_truck. Published: None; accessed: 2026-07-31. archived_evidence_only_not_verified_for_this_trip\nRetained source text:\nA 102-inch-wide standard truck may use local unrestricted roadways only as necessary to: i. Access a terminal located on a local unrestricted roadway, but must return to the National Network or New Jersey Access Network by the direct route unless continued use of the local unrestricted roadway provides the direct route to the next terminal located on a local unrestricted roadway; or ii. Reach the New Jersey Access Network from the National Network by the direct route or to access the National Network from the New Jersey Access Network by the direct route; and\nSource qualifications:",
+      "excerpt_sha256": "9716b1fa4dc0e19e1e757440c9538fc42f0d4a2114a046c18f99f438588a5d78"
+    },
+    {
+      "clause_id": "reg_nj_access_network_600_series",
+      "found_in_this_delivered_briefing": true,
+      "excerpt": "[N.J.A.C. 16:32 — Truck Access](https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf) — PDF page 3, N.J.A.C. 16:32-1.4(a)(3); PDF page 9, Appendix C\nClause reference: reg_nj_access_network_600_series. Published: None; accessed: 2026-07-31. archived_evidence_only_not_verified_for_this_trip\nRetained source text:\nThose county \"600\" series roads listed under Appendix C, incorporated herein by reference, approximately 80 miles; and\nSource qualifications:",
+      "excerpt_sha256": "0736b04203c33fef69d058c6f505b81bf3bdb7077bc3bbcedf99b95a44682d35"
+    },
+    {
+      "clause_id": "reg_nj_truck_access_local_rule_preservation",
+      "found_in_this_delivered_briefing": true,
+      "excerpt": "[N.J.A.C. 16:32 — Truck Access](https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf) — PDF page 2, N.J.A.C. 16:32-1.2(e)\nClause reference: reg_nj_truck_access_local_rule_preservation. Published: None; accessed: 2026-07-31. archived_evidence_only_not_verified_for_this_trip\nRetained source text:\nThe rules of this chapter do not supersede other State rules outside of this chapter, municipal ordinances, and county resolutions, which may otherwise restrict or control the through-movements of trucks or other vehicles. An example of such a restriction is a maximum weight posting or the designation of local \"truck route\" restrictions that have been adopted and posted as provided at N.J.S.A. 40:67-16.1 et seq.\nSource qualifications:",
+      "excerpt_sha256": "46b33fd17b8c10bb6537a3704d7644541684ff6f00c3ac3b6e08d6592938968b"
+    },
+    {
+      "clause_id": "reg_nj_ocean_container_permit",
+      "found_in_this_delivered_briefing": true,
+      "excerpt": "[NJ Commercial Vehicle Size and Weight Guidebook](https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf) — PDF page 43, section 3.4 and Table 5\nClause reference: reg_nj_ocean_container_permit. Published: 2024-01; accessed: 2026-06-25. archived_evidence_only_not_verified_for_this_trip\nRetained source text:\nAn Ocean Borne Container Permit can be obtained for a truck tractor semitrailer combination engaged in the overweight transportation of sealed containers of the type commonly used for the conveyance of freight transportation in international ocean-going commerce. Moves made under this permit type must be of legal dimensions and are subject to the weight limitations shown in Table 5.\nTABLE 5 OCEAN BORNE CONTAINER PERMIT WEIGHT LIMITATIONS: Maximum Gross Weight 90,000 lbs; Maximum Tandem Weight 38,000 lbs; Maximum Tri-axle Weight 56,400 lbs.\nSource qualifications: The Table 5 entry is a linearized three-column table, not a continuous verbatim sentence. Gross 90,000 lb, tandem 38,000 lb and tri-axle 56,400 lb values match the PDF. Preserve surrounding scope and qualifications; these numbers alone do not establish permit eligibility. prose_and_linearized_table",
+      "excerpt_sha256": "11aee06eb6f8f050ddb2c92a1822b9fcbd8b0be692ed2161495c64145adc3324"
+    },
+    {
+      "clause_id": "reg_njta_roadway_use_limitations",
+      "found_in_this_delivered_briefing": true,
+      "excerpt": "[N.J.A.C. 19:9-1.9 — Limitations on use of Roadway (Cornell LII codification snapshot)](https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-19-9-1-9) — N.J.A.C. 19:9-1.9(a), introductory paragraph and items 21 and 24\nClause reference: reg_njta_roadway_use_limitations. Published: None; accessed: 2026-08-07. archived_evidence_only_not_verified_for_this_trip\nRetained source text:\n(a) Use of the Roadway and entry thereon by the following, unless otherwise authorized by the Authority, is prohibited:\n21. Commercial motor vehicles, trailers and semitrailers, including, but not limited to, farm trucks, while loaded with hay or straw when the extreme overall dimension is greater than 102 inches in width, without special permit;\n24. Vehicles operated with a tandem trailer combination, commonly known as a \"double bottom,\" if one or more of the individual trailers exceeds 28 feet, six inches in length;\nSource qualifications:",
+      "excerpt_sha256": "3e44f1c3cb125cc9db9cbb9adb0dc0b7b4db08c2ecebd1017a03e899c889d573"
+    },
+    {
+      "clause_id": "reg_panynj_terminal_weight_dimensions",
+      "found_in_this_delivered_briefing": true,
+      "excerpt": "[Port Authority Marine Terminal Tariff FMC Schedule No. PA-10](https://www.panynj.gov/port/en/doing-business/tariffs.html) — Subrule 34-046, PDF page 16\nClause reference: reg_panynj_terminal_weight_dimensions. Published: None; accessed: 2026-06-25. archived_evidence_only_not_verified_for_this_trip\nRetained source text:\nGross vehicle weight of containerized shipments (tractor, chassis, container, cargo, etc.) shall not exceed 128,000 lbs. and shall not exceed manufacturer safe working loads.\nVehicles exceeding 16’3” high and/or 11’ wide are considered over dimensional and require approval for shipment through the Marine Terminals from the Office of the Manager, Marine Terminals.\nSource qualifications:",
+      "excerpt_sha256": "99deeff704bddf2baebeadc3da66ebe8f72fcaeb95f412bba5f88e9e8ca12488"
+    },
+    {
+      "clause_id": "reg_nj_single_trip_osow_permit",
+      "found_in_this_delivered_briefing": true,
+      "excerpt": "[NJ Commercial Vehicle Size and Weight Guidebook](https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf) — PDF page 40, section 3.1\nClause reference: reg_nj_single_trip_osow_permit. Published: 2024-01; accessed: 2026-06-25. archived_evidence_only_not_verified_for_this_trip\nRetained source text:\nA single-trip permit allows a carrier to haul a non-divisible load above legal size and/or weight limitations and is valid for a single trip within a period of five days. In the event the one-way trip cannot be completed within the valid life of the single-trip permit due to hazardous road conditions or vehicle breakdown, a one-day extension may be granted provided that the request is made to the DOT before the permit has expired. Permit restrictions are assigned based on requested dimensions and weights.\nSource qualifications:",
+      "excerpt_sha256": "b7123ea96c8d33f18e9349ccf6f623a32c54b9473ec9222ca22f3727dfe77ada"
+    },
+    {
+      "clause_id": "reg_nj_tandem_gross_bridge",
+      "found_in_this_delivered_briefing": true,
+      "excerpt": "[NJ Commercial Vehicle Size and Weight Guidebook](https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf) — PDF pages 28-29; sections 2.2.2, 2.2.2.1, and 2.2.2.2\nClause reference: reg_nj_tandem_gross_bridge. Published: 2024-01; accessed: 2026-06-25. archived_evidence_only_not_verified_for_this_trip\nRetained source text:\nThe maximum weight allowed on axle group of this type is 34,000 lbs.\nThe gross vehicle weight is defined as a vehicle or combination of vehicles, including load or contents. The maximum overall gross weight of a vehicle is 80,000 lbs., as shown in the diagram above.\nNOTE: Compliance with bridge formula weight limits may require axle weights lower than the standard weight limits of 34,000 pounds for a tandem axle set and a gross weight lower than the standard 80,000-pound limit.\nSource qualifications:",
+      "excerpt_sha256": "f4a47e5fb68d4e70cbe72a7c12239d731324f7880e118914c3b595aba308383b"
+    }
+  ],
+  "archived_observations": [
+    {
+      "condition_id": "njpass_port_st_oversize_restrictions_2026_08_03",
+      "source_text": "Effective August 3, 2026, a section of Port St. will be reduced to one lane in both directions between Brewster Rd. and Marlin St. until further notice. In this section of Port St., lanes will be reduced to 11 feet wide and all oversize loads heading eastbound on Port St. MUST utilize the Corbin St. ramp. All oversize loads heading westbound on Port St. MUST follow the Marlin St. / Kellogg St. detour or utilize Outer Port St. until further notice. All oversize loads MUST exit through the south via North Ave. Please call the Port Authority Police Department (PAPD) at (973) 578-2180 to request an escort for any oversize loads travelling through the port.",
+      "locator": "Archived NJPASS home HTML, Bulletin panel",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim"
+    },
+    {
+      "condition_id": "njpass_state_routes_only_system_scope",
+      "source_text": "Welcome to the SUPERLOAD online permitting system. This site issues permits for oversize / overweight vehicles along State Routes Only.",
+      "locator": "Archived NJPASS home HTML, Bulletin panel",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim"
+    },
+    {
+      "condition_id": "njpass_connecting_local_routes_application_comments",
+      "source_text": "For any single permit request that utilize county/local route segments to connect between State routes, the permit request should identify the connecting routes(county/local) in comment area when sent for review. Requests without this information will be returned/denied.",
+      "locator": "Archived NJPASS home HTML, Bulletin panel",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim"
+    },
+    {
+      "condition_id": "njpass_nonstate_permit_authorities",
+      "source_text": "Permit requests for County, Local or Toll roads are handled through those respective agencies.",
+      "locator": "Archived NJPASS home HTML, Bulletin panel",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim"
+    },
+    {
+      "condition_id": "njpass_route_survey_threshold",
+      "source_text": "Route survey is required when the overall width exceeds 16' or height exceeds 14' 6''. Survey must be attached within your application.",
+      "locator": "Archived NJPASS home HTML, Bulletin panel under ROUTE SURVEY REQUIREMENTS",
+      "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim"
+    }
+  ]
+}

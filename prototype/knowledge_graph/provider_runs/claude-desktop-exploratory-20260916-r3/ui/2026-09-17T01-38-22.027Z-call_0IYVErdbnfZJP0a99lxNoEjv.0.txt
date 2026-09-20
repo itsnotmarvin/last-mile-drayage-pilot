@@ -1,0 +1,31 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 78-94
+~							77 text Claude is responding
++							78 container Chat messages
++								79 text Use the up and down arrow keys to move between messages.
++								80 container
++									81 container Message 1 of 2
++										82 heading You said: Synthetic experiment only; these are invented trip details, not an actual dispatch., Value: 2
++											83 text You said: Synthetic experiment only; these are invented trip details, not an actual dispatch.
++										84 text Synthetic experiment only; these are invented trip details, not an actual dispatch. Can I take my truck to APM Elizabeth? Planned entry is September 17, 2026 at 9:00 AM America/New_York. The loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or the exact road sequence. Explain the issues that actually matter and what information would change your answer.
++										85 button Show message actions for You said: Synthetic experiment only; these are invented trip details, not an actual dispatch.
++									86 container Currently streaming message
++										87 text Cogitating
++										88 text Cogitating
++							89 button Quick answer
++							90 container
++								91 container
++									92 container
++										93 container
++											94 text entry area (settable) Description: Write your prompt to Claude, Value: 
+
++										95 pop up button Add files, connectors, and more
++										96 button Stop response
++										97 container Dictate
++											98 button Dictate
++											99 pop up button Microphone
++									100 text Incognito chats aren’t saved to history or used to train models.
++									101 pop up button Model: Sonnet 5 Medium
++										102 text Sonnet 5
++										103 text Medium
+The focused UI element is 94 text entry area (settable) Description: Write your prompt to Claude, Value: 

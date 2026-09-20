@@ -13,6 +13,7 @@ import math
 import re
 
 from .service import InputError, timestamp
+from .axle_layout import INPUT_SCHEMA as AXLE_LAYOUT_SCHEMA, normalize_layout
 
 
 REPORTER_ROLES = ("driver", "dispatcher", "other", "unknown")
@@ -20,6 +21,7 @@ SUBJECT_ROLES = ("truck_driver", "other")
 TERMINAL_IDS = ("facility_apm_elizabeth", "synthetic_other_terminal")
 ROUTE_IDS = ("path_a_exit13a_to_apm", "path_b_us1_9_to_apm", "other")
 PERMIT_TYPES = ("none", "nj_single_trip", "nj_ocean_container_annual", "other")
+MOVE_TYPES = ("import_pickup", "empty_pickup", "export_dropoff", "empty_return", "unknown")
 
 MAX_SOURCE_TEXT = 8_000
 MAX_ROUTE_DESCRIPTION = 2_000
@@ -30,6 +32,8 @@ KG_TO_LB = Decimal("2.2046226218487757")
 FT_TO_INCH = Decimal("12")
 
 _ID_PATTERNS = {
+    "load_id": re.compile(r"syn-load-[a-z0-9](?:[a-z0-9-]{0,38}[a-z0-9])?\Z"),
+    "move_id": re.compile(r"syn-move-[a-z0-9](?:[a-z0-9-]{0,38}[a-z0-9])?\Z"),
     "driver_id": re.compile(r"syn-driver-[a-z-]{1,40}\Z"),
     "vehicle_id": re.compile(r"syn-vehicle-[a-z0-9](?:[a-z0-9-]{0,38}[a-z0-9])?\Z"),
     "trailer_id": re.compile(r"syn-trailer-[a-z0-9](?:[a-z0-9-]{0,38}[a-z0-9])?\Z"),
@@ -52,9 +56,10 @@ _BOOLEAN_FIELDS = frozenset((
 _TIMESTAMP_FIELDS = frozenset(("trip_at", "route_conditions_checked_at"))
 
 FACT_FIELDS = (
+    "load_id", "move_id", "move_type",
     "terminal_id", "subject_role", "driver_id", "vehicle_id", "trailer_id",
     "current_sealink_id", "trip_at", "gross_weight", "axle_weights",
-    "axle_spacings", "axle_count", "width", "height", "overall_length",
+    "axle_spacings", "axle_count", "axle_layout", "width", "height", "overall_length",
     "semitrailer_length", "cargo_hazardous", "container_sealed", "load_divisible",
     "route_id", "route_description", "twic_reported",
     "sealink_registered_reported", "induction_reported", "dtr_reported",
@@ -112,6 +117,7 @@ FACTS_SCHEMA = {
             "maxItems": MAX_AXLES,
         }),
         "axle_count": _nullable({"type": "integer", "minimum": 1, "maximum": MAX_AXLES}),
+        "axle_layout": _nullable(AXLE_LAYOUT_SCHEMA),
         "width": _nullable(_DIMENSION_SCHEMA),
         "height": _nullable(_DIMENSION_SCHEMA),
         "overall_length": _nullable(_DIMENSION_SCHEMA),
@@ -151,6 +157,10 @@ FACTS_SCHEMA = {
     "additionalProperties": False,
 }
 
+
+for _identity in ("load_id", "move_id"):
+    FACTS_SCHEMA["properties"][_identity] = _nullable({"type": "string", "pattern": "^" + _ID_PATTERNS[_identity].pattern.replace("\\Z", "$")})
+FACTS_SCHEMA["properties"]["move_type"] = _nullable({"type": "string", "enum": list(MOVE_TYPES)})
 
 def _utc_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
@@ -233,6 +243,8 @@ def _synthetic_id(value, field: str) -> str:
             "driver_id": "syn-driver-*",
             "vehicle_id": "syn-vehicle-*",
             "trailer_id": "syn-trailer-*",
+            "load_id": "syn-load-*",
+            "move_id": "syn-move-*",
             "current_sealink_id": "SYN-SL-*",
         }[field]
         raise InputError(
@@ -244,6 +256,8 @@ def _synthetic_id(value, field: str) -> str:
 def _normalize_value(field: str, value) -> tuple[object, str | None]:
     if value is None:
         return None, None
+    if field == 'axle_layout':
+        return normalize_layout(value, _quantity)
     if field in _WEIGHT_FIELDS:
         if field in _ARRAY_QUANTITY_FIELDS:
             return _quantity_array(value, field, weight=True)
@@ -273,6 +287,8 @@ def _normalize_value(field: str, value) -> tuple[object, str | None]:
         return _enum(value, field, ROUTE_IDS), None
     if field == "permit_type":
         return _enum(value, field, PERMIT_TYPES), None
+    if field == "move_type":
+        return _enum(value, field, MOVE_TYPES), None
     if field == "route_description":
         if (not isinstance(value, str) or not value.strip()
                 or len(value) > MAX_ROUTE_DESCRIPTION or "\x00" in value):
@@ -326,4 +342,6 @@ def normalize_facts(facts: dict, reported_by: str, source_message: str) -> dict:
             "source_text": source_message,
             "recorded_at": recorded_at,
         }
+    from .input_review import reject_inconsistent_facts
+    reject_inconsistent_facts(normalized)
     return normalized

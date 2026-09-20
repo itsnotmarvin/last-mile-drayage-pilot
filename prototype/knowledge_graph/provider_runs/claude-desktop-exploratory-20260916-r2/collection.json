@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-09-17T00:48:37.249505+00:00",
+  "run": "r2",
+  "reason": "Original incognito chat unavailable on resumption; new-chat screen observed. Separate attempt; original remains incomplete.",
+  "prior_run": "provider_runs/claude-desktop-exploratory-20260916",
+  "surface": "Claude Desktop consumer Chat",
+  "observed_model_label": "Sonnet 5 Medium",
+  "scope": "Public archived sources and synthetic trips; no real authority verification; direct MCP, not app confirmation path",
+  "runtime_files_verified": 45,
+  "collection_complete": true,
+  "planned_answers_collected": 4,
+  "mcp_events": 5,
+  "tool_errors_retained": 1,
+  "finished_collection_at": "2026-09-17T00:56:15Z",
+  "changes_during_collection": "No runtime behavior edits; original run preserved separately.",
+  "answer_capture_limit": "Accessibility observations plus screenshots and streaming text, not raw conversation export.",
+  "final_advice_fidelity": "failed_archived_currentness; ambiguous_dispatch_wording_observed; not_an_explicit_go_instruction"
+}

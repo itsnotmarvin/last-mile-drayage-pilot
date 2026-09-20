@@ -1,0 +1,74 @@
+{
+  "algorithm": "sha256",
+  "scope": "Intermediate capture files, excluding this manifest.",
+  "files": {
+    "README.md": {
+      "sha256": "c266c4d7ef22cd4cc9fc3e2db6493991b3220c9e4d1fb2a5dc66aede77ed31a8",
+      "bytes": 662
+    },
+    "axle-http-transcript.json": {
+      "sha256": "3a661aa0e20754563a2739c793f5b6de04824b914d41766cf3bc25666dda6567",
+      "bytes": 320775
+    },
+    "axle-mcp-transcript.json": {
+      "sha256": "5a7b10ac7da3f3ba9431745bfe413b063d60cc3da6847ba96c7b40b4c4701b8c",
+      "bytes": 1939890
+    },
+    "reported-checks/cases.json": {
+      "sha256": "02d787d319aa94c02626029f27d6c7ef0cc88eab4ea6161e6ada5f1a9d0c893b",
+      "bytes": 2445
+    },
+    "reported-checks/comparison-results.json": {
+      "sha256": "b2207e1a1a3edb723c3fadad820a1878ee0dcea1c3f553dcf90725d1f26043ec",
+      "bytes": 7559
+    },
+    "reported-checks/mcp-transcript.json": {
+      "sha256": "4b759bc2a45283d3d28cae59759b2e435581edea25a52efb4da4147dbb47e2c3",
+      "bytes": 5351048
+    },
+    "reported-checks/mixed-height-report.html": {
+      "sha256": "6e1dfe4ebaa295707a9bdec5ee9b93e4da05c6f296f5dedbf6a6c1a75b5b36d8",
+      "bytes": 46319
+    },
+    "reported-checks/reported-check-catalog.json": {
+      "sha256": "03615c2f3f4725416f61bc7b881eeaf41ef1b1553cd5050e6209b34efac8ed80",
+      "bytes": 22476
+    },
+    "reported-checks/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "reported-checks/summary.json": {
+      "sha256": "534c2b755b65ae3351a6c97c9bc88112c2e12096d3daf067dc00128517e7fc28",
+      "bytes": 3689
+    },
+    "reported-checks/tools.json": {
+      "sha256": "8394d09b848410bdbfd2e780d7c0ce76fd5e241d25e8871a2e995e3555aa1e25",
+      "bytes": 400365
+    },
+    "source-inventory.json": {
+      "sha256": "cc6e68c6259a6622df21f55b77b82d6f0d55fc37f77d9dade6a8eed7022b7c1c",
+      "bytes": 41698
+    },
+    "source-review-packet.json": {
+      "sha256": "1f38627868024658147b65eefa59ba2b104052bfdb2b8bffb61b685246ac9297",
+      "bytes": 136173
+    },
+    "stdio-stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "summary.json": {
+      "sha256": "7ae6c4e941889fa54374df4059f1b1947be5a9c76e8b8fc9831175218fcc6f02",
+      "bytes": 4509
+    },
+    "tools.json": {
+      "sha256": "8394d09b848410bdbfd2e780d7c0ce76fd5e241d25e8871a2e995e3555aa1e25",
+      "bytes": 400365
+    },
+    "unchanged-release-comparison.json": {
+      "sha256": "b5494624c45fefd9501f13e4e39c4bfd21976ced5ad11bcd3878e8cad9772320",
+      "bytes": 967
+    }
+  }
+}

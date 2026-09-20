@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0-wave4-final-results-freeze",
+  "status": "frozen_after_product_unblinding",
+  "frozen_at_utc": "2026-08-31T07:08:33.272543Z",
+  "source_hashes": {
+    "final_blinded_endpoint_sha256": "6454aa4ff730e9c9ac3454dde35b57b17586ac30e81fe63895a7e7d36310fe29",
+    "final_blinded_freeze_sha256": "e4f3624410359dc477b334b1999e60fa9fcc157311d5c8b3ecd4a3fdffac816d",
+    "admin_blinding_key_sha256": "d6fd2076836bb06d630cb4a66959e7f0c2a63aeb7df9b3f83ccac8def64dc880",
+    "design_sha256": "d947794cee1a873ffbc45ee131c0abdd9e7bf609fc4ddb02a464c9bf586b4cb2",
+    "gold_dispositions_sha256": "a4bf95601de1abcc6df8fe31241e6f0182c1183b803232db72cd97e245d27c5e",
+    "collection_manifest_sha256": "843a192a97a920e04527343ff15f615a146383f97f8236906f702eb78088d109",
+    "codebook_sha256": "f404756cc2f4bacbd9e6cc553e1dc3c38414513ced67d6e18ad286dc2c302a77",
+    "human_agreement_pre_adjudication_sha256": "ae741d9ef8dc96e980d95eed55ce5f2334bf9d3cc586f73df507349d701b4fac"
+  },
+  "outputs": [
+    {
+      "path": "analysis/final_endpoint_dataset_unblinded.json",
+      "sha256": "cc36fbdc0fcf16411f6d368d82b2571c6f400fe089b084387615680fa5132319",
+      "size_bytes": 115453
+    },
+    {
+      "path": "analysis/final_endpoint_dataset_unblinded.csv",
+      "sha256": "97d894639f9f63514a61577e37b5ec37a965ee2766432788cb0725c7898e0010",
+      "size_bytes": 53883
+    },
+    {
+      "path": "analysis/final_results.json",
+      "sha256": "6ea9f393c560e06ebf4a9150d933e9048c998743d10a77e9a573427aae8220a2",
+      "size_bytes": 41599
+    },
+    {
+      "path": "analysis/final_tables/adjudicated_cases_unblinded.csv",
+      "sha256": "d6c58077d294eff1bbfa97419fdfd16363105fdb9a364bf74215fe498bd10baf",
+      "size_bytes": 1443
+    },
+    {
+      "path": "analysis/final_tables/by_ambiguity_type.csv",
+      "sha256": "1196d61721ce7b3b23ad11c12adad3d7c57863cdb977ced3f87c08843fde442a",
+      "size_bytes": 906
+    },
+    {
+      "path": "analysis/final_tables/by_authority_complexity.csv",
+      "sha256": "5dd33688931a4a95f5b9b47825e7633ba199c1130fe73ffef647eb193569c06a",
+      "size_bytes": 880
+    },
+    {
+      "path": "analysis/final_tables/by_product.csv",
+      "sha256": "7add08bc036d345bc23b61072b48b72b7323000ce8964ab68cc38cfa536139c6",
+      "size_bytes": 653
+    },
+    {
+      "path": "analysis/final_tables/by_repetition.csv",
+      "sha256": "79d174b542da2952a14c3f40c002f9e248ee6c8aac0bb477cf56b851eac91bbb",
+      "size_bytes": 387
+    },
+    {
+      "path": "analysis/final_tables/by_route_path_subset.csv",
+      "sha256": "2b7474ce099c9416123497fc43e6740c5da187e14ea057d83b9dd23ab98293be",
+      "size_bytes": 540
+    },
+    {
+      "path": "analysis/final_tables/by_scenario.csv",
+      "sha256": "60fbba4f0de3e326afea7be53d91b67cdc120ad9722b73ed7a4be42bfdd831a8",
+      "size_bytes": 1233
+    },
+    {
+      "path": "analysis/final_tables/by_variant.csv",
+      "sha256": "6195b0a8209b9a2e6a8b245a058b9ac23a2ed2afd9ea7cbfad077ee66e00093d",
+      "size_bytes": 404
+    },
+    {
+      "path": "analysis/final_tables/overall.csv",
+      "sha256": "85a5845dd878a05ce5249f18e021777b1acc12ecc7154893ef304e5803ebed0b",
+      "size_bytes": 259
+    },
+    {
+      "path": "analysis/final_tables/product_by_route_path_subset.csv",
+      "sha256": "27d980006ee02755940236cf4b1dfe0e2736bec78deaa475390e55b06ac713af",
+      "size_bytes": 1659
+    },
+    {
+      "path": "analysis/final_tables/product_by_scenario.csv",
+      "sha256": "ecb153d3fb9953121babf402d5aa1dd15f6995fb0cd3ace4e9bd5a13f2f1da57",
+      "size_bytes": 4419
+    },
+    {
+      "path": "analysis/final_tables/product_by_variant.csv",
+      "sha256": "e9c2281768c102f509854ee4a1c04426129139ca137625a3026abaeac1d4993d",
+      "size_bytes": 1106
+    },
+    {
+      "path": "analysis/final_tables/repetition_pairs.csv",
+      "sha256": "fb4d1731416bffce720ec479b68680ac3f7d35d5817fbe87ec4ce6e871ad8cb3",
+      "size_bytes": 3287
+    },
+    {
+      "path": "analysis/final_tables/route_scenarios_vs_other_scenarios.csv",
+      "sha256": "d0dad515e841e00b154073ee086012abb0d742e4a4a2d2504c3f3991aa482919",
+      "size_bytes": 417
+    },
+    {
+      "path": "analysis/final_tables/yes_endpoint_cases.csv",
+      "sha256": "6fc5225a885ccfc0872b1c6b8a63569bcf2b46aac97e28e9af289b5bc66f0e81",
+      "size_bytes": 3908
+    }
+  ],
+  "primary_result": {
+    "n": 96,
+    "yes": 15,
+    "no": 81,
+    "unclear": 0,
+    "yes_rate": 0.15625,
+    "yes_rate_percent": 15.625,
+    "wilson_95_lower": 0.09703709990686579,
+    "wilson_95_upper": 0.24191486674528626,
+    "wilson_95_lower_percent": 9.70370999068658,
+    "wilson_95_upper_percent": 24.191486674528626
+  },
+  "guardrails": [
+    "Report scenarios separately before interpreting the aggregate.",
+    "The 15/96 overall rate is not a general logistics prevalence estimate.",
+    "Product comparisons are descriptive and secondary; no provider ranking or pairwise significance claim is made.",
+    "No final unclear labels occurred; every response remains in the 96-response denominator.",
+    "The human labels were frozen before product identity was joined."
+  ]
+}

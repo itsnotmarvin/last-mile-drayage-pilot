@@ -1,0 +1,7 @@
+{
+  "captured_at_utc": "2026-09-20T01:53:15.596913+00:00",
+  "response_sha256": "dd526c7216537ec80a3401c138026233fe2cb29ed7d9c78e755619d7e05f01c5",
+  "response_bytes": 2811,
+  "audit_records": [],
+  "note": "Events are time-window candidates; validate prompt/session attribution before scoring."
+}

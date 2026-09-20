@@ -1,0 +1,47 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 120, 125, 130-134, 136-139
++							127 text Claude finished the response
++										128 toolbar Message actions
++											129 text just now
++											130 button Retry
++											131 button Edit
++											132 button Copy
+~									126 container Message 4 of 4
++										133 container
++											134 heading Claude responded: No — that correction removes one concern but doesn't settle the trip., Value: 2
++												135 text Claude responded: No — that correction removes one concern but doesn't settle the trip.
++											136 container Update trip facts and reassess the assignment
++												137 text Update trip facts and reassess the assignment
++												138 button Update trip facts and reassess the assignment
++											139 text Update trip facts and reassess the assignment
++											140 container
++												141 text No — that correction removes one concern but doesn't settle the trip.
++												142 text What the height fix changes:
++												143 text 13'6" (162 in) now sits exactly at NJ's standard "on all highways" baseline. It's no longer flagged as over-limit. Good news, but "at the limit" isn't the same as "cleared" — and it does put you exactly at the width baseline (102 in) and exactly at the gross weight baseline (80,000 lb) simultaneously. Three numbers all sitting right at their ceilings, with no margin, is the profile most likely to run into trouble somewhere else in the chain (bridge formula, a stricter local segment, a terminal-specific rule
++												144 text Still unresolved — nothing here changed:
++												145 content list
++													146 container
++														147 AXListMarker • 
++														148 text Axle weights and spacing  — still unknown. At exactly 80,000 lb gross, this is the one that matters most now: the bridge formula can require  less  than 80,000 lb depending on how that weight is distributed across your axles, and without axle data there's no way to check it.
++													149 container
++														150 AXListMarker • 
++														151 text Exact route  — still unknown. This affects which width rule applies (102 in vs the stricter 96 in category on some roads), toll authority approval, and whether you'd hit the active Port Street lane restriction/detour near APM Elizabeth.
++													152 container
++														153 AXListMarker • 
++														154 text Permit type/eligibility, DTR/RFID, engine model year  — all still open.
++													155 container
++														156 AXListMarker • 
++														157 text TWIC, SeaLink, appointment  — still only self-reported, not verified against the actual registries.
++												158 text So the correction cleared one line item but the overall status is unchanged: 
++												159 text not cleared, not resolved.
++												160 text  The tool's own read is the same as before — the axle weights and the route are the two pieces of information that would actually move this from "unresolved" toward a real answer.
++										161 toolbar Message actions
++											162 button Copy
++											163 button Read aloud
++											164 button Retry
++											165 text just now
++							166 button Scroll to bottom
++										167 container Dictate
++											168 button Dictate
++											169 pop up button Microphone
+The focused UI element is 4 HTML content New chat - Claude, URL: claude.ai/new?incognito=

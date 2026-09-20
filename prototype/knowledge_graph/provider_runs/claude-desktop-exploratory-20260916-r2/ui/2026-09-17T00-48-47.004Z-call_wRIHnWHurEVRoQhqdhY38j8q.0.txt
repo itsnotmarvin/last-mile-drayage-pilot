@@ -1,0 +1,27 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 6-59
+~			4 HTML content New chat - Claude, URL: claude.ai/new?incognito=
++					73 text Incognito chat
++					74 button Exit incognito
++					75 container
++						76 container
++							77 container
++								78 text Free plan
++								79 link Description: Upgrade, Value: claude.ai/upgrade
++							80 text You’re incognito
++							81 container
++								82 container
++									83 container
++										84 text entry area (settable) Description: Write your prompt to Claude, Value: 
+
++									85 pop up button Add files, connectors, and more
++									86 pop up button Model: Sonnet 5 Medium
++										87 text Sonnet 5
++										88 text Medium
++									89 container Dictate
++										90 button Dictate
++										91 pop up button Microphone
++							92 text Incognito chats aren’t saved to history or used to train models.
++							93 link Description: Learn more, Value: privacy.anthropic.com/en/articles/10023580-is-my-data-used-for-model-training
++							94 text  about how your data is used.
+The focused UI element is 84 text entry area (settable) Description: Write your prompt to Claude, Value: 

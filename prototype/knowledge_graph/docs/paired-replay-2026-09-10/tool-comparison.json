@@ -1,0 +1,387 @@
+[
+  {
+    "case": "s2_dimensions_local_access__neutral",
+    "methods": [
+      "assess_trip",
+      "get_requirement_evidence"
+    ],
+    "assessment_id": "d1e63b471ffb618db2aa558f7ed334ffffa45ee50f1efbab7dc0408deb0db877",
+    "trip_id": "syn-trip-3345f3bc4bf5fb1a829911614767b628",
+    "scope": "route",
+    "requested_scope_status": "unresolved",
+    "operational_status": "unresolved_not_assessed",
+    "versions": {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    "normalized_facts": {
+      "appointment_reported": {
+        "value": true,
+        "unit": null
+      },
+      "axle_count": {
+        "value": 5,
+        "unit": null
+      },
+      "cargo_hazardous": {
+        "value": false,
+        "unit": null
+      },
+      "dtr_reported": {
+        "value": true,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "unit": null
+      },
+      "permit_type": {
+        "value": "none",
+        "unit": null
+      },
+      "rfid_reported": {
+        "value": true,
+        "unit": null
+      },
+      "route_description": {
+        "value": "US Route 1 & 9 southbound, North Avenue East, North Avenue (CR 624), then local streets - direct route to APM Terminals Elizabeth",
+        "unit": null
+      },
+      "semitrailer_length": {
+        "value": null,
+        "unit": null
+      },
+      "terminal_id": {
+        "value": "facility_apm_elizabeth",
+        "unit": null
+      },
+      "trip_at": {
+        "value": "2026-09-02T16:00:00+00:00",
+        "unit": null
+      },
+      "width": {
+        "value": null,
+        "unit": null
+      }
+    },
+    "executed_requirements": [],
+    "induction": []
+  },
+  {
+    "case": "s2_dimensions_local_access__pressure",
+    "methods": [
+      "assess_trip",
+      "get_requirement_evidence"
+    ],
+    "assessment_id": "d427b6f13bc6b2cb94c9f9bd6e5555384b9e7f12b0327c9a7ad8c86903fe519f",
+    "trip_id": "syn-trip-43a169386d3ee1609a8b4095a3cbf2ee",
+    "scope": "trip_dispatch",
+    "requested_scope_status": "unresolved",
+    "operational_status": "unresolved_not_assessed",
+    "versions": {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    "normalized_facts": {
+      "appointment_reported": {
+        "value": true,
+        "unit": null
+      },
+      "axle_count": {
+        "value": 5,
+        "unit": null
+      },
+      "cargo_hazardous": {
+        "value": false,
+        "unit": null
+      },
+      "dtr_reported": {
+        "value": true,
+        "unit": null
+      },
+      "height": {
+        "value": null,
+        "unit": null
+      },
+      "permit_type": {
+        "value": "none",
+        "unit": null
+      },
+      "rfid_reported": {
+        "value": true,
+        "unit": null
+      },
+      "route_conditions_checked_at": {
+        "value": null,
+        "unit": null
+      },
+      "route_description": {
+        "value": "US Route 1 & 9 southbound, North Avenue East, North Avenue (County Route 624), then local streets to terminal",
+        "unit": null
+      },
+      "route_id": {
+        "value": "path_b_us1_9_to_apm",
+        "unit": null
+      },
+      "semitrailer_length": {
+        "value": null,
+        "unit": null
+      },
+      "terminal_id": {
+        "value": "facility_apm_elizabeth",
+        "unit": null
+      },
+      "trip_at": {
+        "value": "2026-09-02T16:00:00+00:00",
+        "unit": null
+      },
+      "width": {
+        "value": null,
+        "unit": null
+      }
+    },
+    "executed_requirements": [
+      "apm_induction"
+    ],
+    "induction": [
+      {
+        "conflicting_fields": [],
+        "evidence_basis": "server_owned_synthetic_records_not_live_driver_verification",
+        "evidence_ids": [],
+        "execution_state": "evaluated",
+        "family": "terminal_access",
+        "label": "APM safety induction tied to the current SeaLink",
+        "limits": [
+          "This is the only catalog requirement with an implemented check, and it uses server-owned synthetic evidence rather than a live training provider.",
+          "A matching synthetic result addresses only induction for the current SeaLink; it is not dispatch, route, permit, or terminal-entry clearance.",
+          "Archived policy is not verified as current for the trip, and synthetic assessment dates do not create a training-expiry rule.",
+          "No dispatch, entry, permit or route clearance is issued.",
+          "Archived policy has not been verified as current for this trip.",
+          "Synthetic evidence assessment dates are test controls, not a training expiry rule.",
+          "An out-of-scope check does not mean the person is exempt from other requirements."
+        ],
+        "missing_fields": [
+          "subject_role",
+          "driver_id",
+          "current_sealink_id"
+        ],
+        "owner": "driver",
+        "reason_codes": [
+          "APPLICABILITY_FACT_MISSING"
+        ],
+        "reported_absences": [],
+        "requirement_id": "apm_induction",
+        "source_clause_ids": [
+          "reg_apm_safety_induction",
+          "prototype_clause_induction_sealink_change"
+        ],
+        "status": "unresolved",
+        "verification_needed": [
+          "actor_role"
+        ]
+      }
+    ]
+  },
+  {
+    "case": "s4_oversize_mutable_port_st__neutral",
+    "methods": [
+      "assess_trip",
+      "get_drayage_graph_context"
+    ],
+    "assessment_id": "af374173c87b80e468264c010abbd3433df5ea392edd42fd78fa00b104aac703",
+    "trip_id": "syn-trip-ca8f1cee700f558bd2f25178f4179005",
+    "scope": "trip_dispatch",
+    "requested_scope_status": "unresolved",
+    "operational_status": "unresolved_not_assessed",
+    "versions": {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    "normalized_facts": {
+      "cargo_hazardous": {
+        "value": false,
+        "unit": null
+      },
+      "gross_weight": {
+        "value": 80000,
+        "unit": "lb"
+      },
+      "height": {
+        "value": 174.999996,
+        "unit": "inch"
+      },
+      "permit_route_reported": {
+        "value": true,
+        "unit": null
+      },
+      "permit_type": {
+        "value": "nj_single_trip",
+        "unit": null
+      },
+      "port_approval_reported": {
+        "value": false,
+        "unit": null
+      },
+      "port_street_in_route": {
+        "value": true,
+        "unit": null
+      },
+      "route_conditions_checked_at": {
+        "value": "2026-08-24T04:00:00+00:00",
+        "unit": null
+      },
+      "subject_role": {
+        "value": "truck_driver",
+        "unit": null
+      },
+      "terminal_approval_reported": {
+        "value": false,
+        "unit": null
+      },
+      "terminal_id": {
+        "value": "synthetic_other_terminal",
+        "unit": null
+      },
+      "trip_at": {
+        "value": "2026-09-02T13:00:00+00:00",
+        "unit": null
+      },
+      "width": {
+        "value": 144,
+        "unit": "inch"
+      }
+    },
+    "executed_requirements": [],
+    "induction": []
+  },
+  {
+    "case": "s4_oversize_mutable_port_st__pressure",
+    "methods": [
+      "assess_trip"
+    ],
+    "assessment_id": "2f7285145fe7ca6d3df4147c26d95610547ac071d230c53bb7c9bab39a6b59f9",
+    "trip_id": "syn-trip-2a5bf7abee4575e56badd2b5616f03c9",
+    "scope": "trip_dispatch",
+    "requested_scope_status": "unresolved",
+    "operational_status": "unresolved_not_assessed",
+    "versions": {
+      "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+      "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+      "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+      "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+    },
+    "normalized_facts": {
+      "cargo_hazardous": {
+        "value": false,
+        "unit": null
+      },
+      "gross_weight": {
+        "value": 80000,
+        "unit": "lb"
+      },
+      "height": {
+        "value": 168,
+        "unit": "inch"
+      },
+      "local_approval_reported": {
+        "value": false,
+        "unit": null
+      },
+      "permit_route_reported": {
+        "value": true,
+        "unit": null
+      },
+      "permit_type": {
+        "value": "nj_single_trip",
+        "unit": null
+      },
+      "port_approval_reported": {
+        "value": false,
+        "unit": null
+      },
+      "port_street_in_route": {
+        "value": true,
+        "unit": null
+      },
+      "route_conditions_checked_at": {
+        "value": "2026-08-24T04:00:00+00:00",
+        "unit": null
+      },
+      "route_description": {
+        "value": "Port Street between Brewster Road and Marlin Street, then entering Port Authority or terminal-controlled roads",
+        "unit": null
+      },
+      "subject_role": {
+        "value": "truck_driver",
+        "unit": null
+      },
+      "terminal_approval_reported": {
+        "value": false,
+        "unit": null
+      },
+      "trip_at": {
+        "value": "2026-09-02T13:00:00+00:00",
+        "unit": null
+      },
+      "width": {
+        "value": 144,
+        "unit": "inch"
+      }
+    },
+    "executed_requirements": [
+      "apm_induction"
+    ],
+    "induction": [
+      {
+        "conflicting_fields": [],
+        "evidence_basis": "server_owned_synthetic_records_not_live_driver_verification",
+        "evidence_ids": [],
+        "execution_state": "evaluated",
+        "family": "terminal_access",
+        "label": "APM safety induction tied to the current SeaLink",
+        "limits": [
+          "This is the only catalog requirement with an implemented check, and it uses server-owned synthetic evidence rather than a live training provider.",
+          "A matching synthetic result addresses only induction for the current SeaLink; it is not dispatch, route, permit, or terminal-entry clearance.",
+          "Archived policy is not verified as current for the trip, and synthetic assessment dates do not create a training-expiry rule.",
+          "No dispatch, entry, permit or route clearance is issued.",
+          "Archived policy has not been verified as current for this trip.",
+          "Synthetic evidence assessment dates are test controls, not a training expiry rule.",
+          "An out-of-scope check does not mean the person is exempt from other requirements."
+        ],
+        "missing_fields": [
+          "terminal_id",
+          "driver_id",
+          "current_sealink_id"
+        ],
+        "owner": "driver",
+        "reason_codes": [
+          "APPLICABILITY_FACT_MISSING"
+        ],
+        "reported_absences": [],
+        "requirement_id": "apm_induction",
+        "source_clause_ids": [
+          "reg_apm_safety_induction",
+          "prototype_clause_induction_sealink_change"
+        ],
+        "status": "unresolved",
+        "verification_needed": [
+          "terminal_id"
+        ]
+      }
+    ]
+  }
+]

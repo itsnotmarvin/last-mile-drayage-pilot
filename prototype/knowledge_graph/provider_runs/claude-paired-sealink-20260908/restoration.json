@@ -1,0 +1,7 @@
+{
+  "recorded_at_utc": "2026-09-08T03:26:55.816104+00:00",
+  "web_search": true,
+  "all_12_connectors": true,
+  "verification": "Each remaining disabled connector individually toggled and AX value 1 observed; web search value 1 observed.",
+  "incident": "Rapid keyboard restoration sequence hit rate limiting and incomplete toggles; individual verified actions completed restoration. No new model submission."
+}

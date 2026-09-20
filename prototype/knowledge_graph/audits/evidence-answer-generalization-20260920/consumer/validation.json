@@ -1,0 +1,63 @@
+{
+  "artifact_integrity_passed": true,
+  "runtime_hashes_match_final": true,
+  "runs": [
+    {
+      "run_id": "missing_dimensions",
+      "checks_passed": true,
+      "calls": [
+        {
+          "method": "assess_driver_move",
+          "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd",
+          "assessment_id": "0c4bc8105e8dbe0ffe817f7e6b0445abdfa1eaccd557d852ec6461d075ca9ce0",
+          "raw_final_equals_prepared": false,
+          "prepared_characters": 3147,
+          "final_bytes": 3157
+        }
+      ]
+    },
+    {
+      "run_id": "annual_permit",
+      "checks_passed": true,
+      "calls": [
+        {
+          "method": "assess_driver_move",
+          "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd",
+          "assessment_id": "ae87b05f01bb4d610d52347d51a40cf0a12d0a16b15bdb3d4072c914133ab4cf",
+          "raw_final_equals_prepared": false,
+          "prepared_characters": 7212,
+          "final_bytes": 6609
+        }
+      ]
+    },
+    {
+      "run_id": "axle_without_terminal",
+      "checks_passed": true,
+      "calls": [
+        {
+          "method": "assess_driver_move",
+          "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd",
+          "assessment_id": "9e278bf7e9ffacb961f1adb75877feb2c15991da976f3060f72807c92aa36557",
+          "raw_final_equals_prepared": false,
+          "prepared_characters": 3721,
+          "final_bytes": 3826
+        }
+      ]
+    },
+    {
+      "run_id": "final_missing_dimensions",
+      "checks_passed": true,
+      "calls": [
+        {
+          "method": "assess_driver_move",
+          "implementation": "2119d669ea51edaf12253e8d9a2adf5ea4c3a18f73bbe5c98cf8c9c88576254a",
+          "assessment_id": "c6eff7e354ab657db518a9675c4dd2ee763f0ca232848451f8720be081ee1746",
+          "raw_final_equals_prepared": false,
+          "prepared_characters": 3402,
+          "final_bytes": 3582
+        }
+      ]
+    }
+  ],
+  "limit": "Artifact integrity and schema checks do not establish prose quality, independent grading, or causal benefit."
+}

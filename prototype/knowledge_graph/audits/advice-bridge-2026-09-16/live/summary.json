@@ -1,0 +1,66 @@
+{
+  "surface": "non-model live Neo4j + HTTP + stdio integration",
+  "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "results": [
+    {
+      "role": "driver",
+      "first_assessment": {
+        "assessment_id": "8c49b0910aaf596f42092bb84050b7c08792854f6339384093eb9e54f5011f29",
+        "conversation_id": "conversation-5f287e4f682d2eed1c9283b3e8fa5882",
+        "conversation_version": 2,
+        "message_id": "message-e901aea57cfe31f2637d864192f0bad7",
+        "trip_id": "syn-trip-8a95b7ca5ff3b0532963abaa2ebeaddd",
+        "trip_revision": 1
+      },
+      "corrected_assessment": {
+        "assessment_id": "294c13ace1704696f08fea51460cd9bd4f8d6d96cfc691c03db9530ace8f526b",
+        "conversation_id": "conversation-5f287e4f682d2eed1c9283b3e8fa5882",
+        "conversation_version": 4,
+        "message_id": "message-f30d2a4c462ba84fd4d45481b2f856ce",
+        "trip_id": "syn-trip-8a95b7ca5ff3b0532963abaa2ebeaddd",
+        "trip_revision": 2
+      },
+      "pending_read_rejected": true,
+      "original_messages_preserved": true,
+      "scope_status": "unresolved"
+    },
+    {
+      "role": "dispatcher",
+      "first_assessment": {
+        "assessment_id": "775f48bf109d7fa427b115d25ab56bae935528027b8da7e69246296c4e6dffbe",
+        "conversation_id": "conversation-ced76931b37a2b147c01926c3de73136",
+        "conversation_version": 2,
+        "message_id": "message-26cbf75b4d8070d894fa39ac1409dfc2",
+        "trip_id": "syn-trip-0ec4d1113f96109877a7bc71c47be950",
+        "trip_revision": 1
+      },
+      "corrected_assessment": {
+        "assessment_id": "ac23c4b00b585f5a70756af4e0b7653f14dfe4d6065979d66819e93f1936f480",
+        "conversation_id": "conversation-ced76931b37a2b147c01926c3de73136",
+        "conversation_version": 4,
+        "message_id": "message-20bd71f4c57d0bc704f0e5fd1cd3b6c7",
+        "trip_id": "syn-trip-0ec4d1113f96109877a7bc71c47be950",
+        "trip_revision": 2
+      },
+      "pending_read_rejected": true,
+      "original_messages_preserved": true,
+      "scope_status": "unresolved"
+    }
+  ],
+  "runtime_unchanged": true,
+  "database_integrity": {
+    "sqlite": "ok",
+    "schema": 1,
+    "statements": 4,
+    "events": 22,
+    "conversations": 2,
+    "audit_head": "18e21cebe235d4c3ad3bb8404661d43318bdafecfcd72069adec9fbac70bf66b",
+    "limits": "Hashes detect inconsistency, not forgery by an actor able to rewrite the database."
+  },
+  "python": "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/.venv-neo4j/bin/python",
+  "networkx_present": false,
+  "limits": [
+    "No browser or Claude advice collected by this harness.",
+    "Confirmation actions are scripted synthetic user actions, not human domain approval."
+  ]
+}

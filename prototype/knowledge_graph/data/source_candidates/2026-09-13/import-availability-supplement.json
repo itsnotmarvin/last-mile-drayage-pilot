@@ -1,0 +1,32 @@
+{
+  "schema_version": "drayage-draft-source-supplement-v1",
+  "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "approval_status": "draft_not_human_approved",
+  "operational_use": false,
+  "entries": [
+    {
+      "id": "draft_import_no_holds",
+      "requirement_ids": [
+        "transaction_release"
+      ],
+      "source_id": "panynj_truckers_guide",
+      "source_file_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+      "source_file_sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1",
+      "locator": "PDF page 9 / printed page 15",
+      "source_text": "DO ensure there are no holds on the container (freight, customer, demurrage, customs, etc) prior to picking up an import load.",
+      "interpretation_boundary": "Draft support for checking the five named hold categories before an import pickup. The source's 'etc' does not establish that those fields exhaust every possible hold, a same-day gate release, gate acceptance, or permission to enter."
+    },
+    {
+      "id": "draft_import_available",
+      "requirement_ids": [
+        "transaction_release"
+      ],
+      "source_id": "panynj_truckers_guide",
+      "source_file_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+      "source_file_sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1",
+      "locator": "PDF page 10 / printed page 16",
+      "source_text": "Do not arrive at terminal without checking container status first and ensuring the container is fully available.",
+      "interpretation_boundary": "Draft support for checking container availability before an import pickup. It does not define a terminal-system status, freshness rule, other move types, gate acceptance, or permission to enter."
+    }
+  ]
+}

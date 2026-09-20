@@ -1,0 +1,17 @@
+{
+  "collected_at_utc": "2026-09-10T12:52:53.645043+00:00",
+  "surface": "Claude Desktop native incognito",
+  "visible_model": "Sonnet 5 Medium",
+  "case": "s2_dimensions_local_access__neutral",
+  "status": "incomplete_due_to_provider_quota",
+  "completed_tool_calls": 1,
+  "final_answer": null,
+  "notice": "You hit your 5-hour message limit. It resets at 1:50 PM, or you can upgrade for higher limits.",
+  "interpretation": "Cannot grade present-trip clearance without final narration.",
+  "unsupported_input_findings": [
+    "trip_at has invented 09:00:00 time; prompt supplies date only",
+    "port_street_in_route=true is unsupported by the named route",
+    "permit_type=none is inferred rather than explicitly reported"
+  ],
+  "user_steering": "User reported signing in through a new account. Restart complete four-case batch under that account; keep this interrupted attempt separate."
+}

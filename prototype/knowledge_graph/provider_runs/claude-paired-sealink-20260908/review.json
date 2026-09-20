@@ -1,0 +1,66 @@
+{
+  "reviewer": "Non-independent author; no blinded grader",
+  "conclusion": "No established core no-tool failure. Narrow unsupported-alternative difference in follow-up; similar error in initial tool arm.",
+  "answers": [
+    {
+      "pair": "initial",
+      "condition": "A-no-tool",
+      "status_label": "Finding: not_met",
+      "status_assessment": "ambiguous_without_definitions",
+      "identifier_binding": "pass",
+      "missing_evidence": "pass",
+      "epistemic_boundary": "pass_in_prose",
+      "coverage": "pass",
+      "source_fidelity": "pass",
+      "word_count_whitespace": 168,
+      "within_180_words": true,
+      "tool_arguments": "not_applicable",
+      "tool_result": "not_applicable"
+    },
+    {
+      "pair": "initial",
+      "condition": "B-with-tool",
+      "status_label": "Finding: unresolved",
+      "status_assessment": "pass",
+      "identifier_binding": "pass",
+      "missing_evidence": "pass_with_unsupported_alternative",
+      "epistemic_boundary": "pass_in_prose",
+      "coverage": "pass",
+      "source_fidelity": "unsupported_alternative",
+      "word_count_whitespace": 175,
+      "within_180_words": true,
+      "tool_arguments": "unsupported_company_changed_false",
+      "tool_result": "pass"
+    },
+    {
+      "pair": "defined-status-followup",
+      "condition": "A-no-tool",
+      "status_label": "Finding: unresolved",
+      "status_assessment": "pass",
+      "identifier_binding": "pass",
+      "missing_evidence": "pass_with_unsupported_alternative",
+      "epistemic_boundary": "pass_in_prose",
+      "coverage": "pass",
+      "source_fidelity": "unsupported_alternative",
+      "word_count_whitespace": 187,
+      "within_180_words": false,
+      "tool_arguments": "not_applicable",
+      "tool_result": "not_applicable"
+    },
+    {
+      "pair": "defined-status-followup",
+      "condition": "B-with-tool",
+      "status_label": "Finding: unresolved",
+      "status_assessment": "pass",
+      "identifier_binding": "pass",
+      "missing_evidence": "pass",
+      "epistemic_boundary": "pass_in_prose",
+      "coverage": "pass",
+      "source_fidelity": "pass",
+      "word_count_whitespace": 201,
+      "within_180_words": false,
+      "tool_arguments": "pass",
+      "tool_result": "pass"
+    }
+  ]
+}

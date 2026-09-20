@@ -1,0 +1,28 @@
+{
+  "backup": {
+    "sqlite": "ok",
+    "schema": 1,
+    "statements": 6,
+    "events": 41,
+    "conversations": 4,
+    "audit_head": "009a8070197daf681c80d3e8970f11af477d86757e1b21bc9811d60acd6d688b",
+    "limits": "Hashes detect inconsistency, not forgery by an actor able to rewrite the database.",
+    "sha256": "8976113a8bfbc1110b6be3b1c8b45cf674fc48f81357fc36c1a6ede8b871197c"
+  },
+  "restored": {
+    "sqlite": "ok",
+    "schema": 1,
+    "statements": 6,
+    "events": 42,
+    "conversations": 4,
+    "audit_head": "a22f47f7598c25c05b08d3845e725f4c4a20b1f19806c29f29900ce9c40054cb",
+    "limits": "Hashes detect inconsistency, not forgery by an actor able to rewrite the database."
+  },
+  "cleared_on_restore": {
+    "app_access": 0,
+    "app_sessions": 0,
+    "app_capabilities": 0,
+    "app_grants": 0
+  },
+  "surface": "local_synthetic_SQLite_recovery"
+}

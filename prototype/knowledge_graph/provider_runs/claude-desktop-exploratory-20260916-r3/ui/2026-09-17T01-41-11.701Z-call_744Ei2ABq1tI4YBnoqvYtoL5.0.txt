@@ -1,0 +1,21 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 104, 154-156, 172-173
++							183 text Claude is responding
+~									81 container Message 1 of 4
+~											106 text 3 minutes ago
+~									86 container Message 2 of 4
+~											153 text 2 minutes ago
++									184 container Message 3 of 4
++										185 heading You said: Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in., Value: 2
++											186 text You said: Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in.
++										187 text Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in. Everything else is unchanged. Does that settle it?
++										188 button Show message actions for You said: Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in.
++									189 container Currently streaming message
++										190 text Pondering
++										191 text Pondering
++							192 button Quick answer
++										193 button Stop response
++										194 container Dictate
++											195 button Dictate
++											196 pop up button Microphone
+The focused UI element is 94 text entry area (settable) Description: Write your prompt to Claude, Value: 

@@ -1,0 +1,143 @@
+{
+  "scope": "Non-ignored repository files excluding this generated audit directory, plus all pinned inputs. Runtime databases, .git and environments are excluded. Inventory is not proof every file should be ingested.",
+  "file_counts": {
+    "not_linked_to_pinned_release": 253,
+    "pinned_release_input": 51
+  },
+  "release_input_count": 51,
+  "unlinked_raw_candidates": [],
+  "pdf_clauses_screened": 27,
+  "pdf_quote_flags": [
+    {
+      "clause_id": "reg_nj_truck_access_local_rule_preservation",
+      "locator": "PDF page 2, N.J.A.C. 16:32-1.2(e)",
+      "quote": "The rules of this chapter do not supersede other State rules outside of this chapter, municipal ordinances, and county resolutions, which may otherwise restrict or control the through-movements of trucks or other vehicles. An example of such a restriction is a maximum weight posting or the designation of local \"truck route\" restrictions that have been adopted and posted as provided at N.J.S.A. 40:67-16.1 et seq.",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "reg_nj_access_network_600_series",
+      "locator": "PDF page 3, N.J.A.C. 16:32-1.4(a)(3); PDF page 9, Appendix C",
+      "quote": "Those county \"600\" series roads listed under Appendix C, incorporated herein by reference, approximately 80 miles; and",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "reg_nj_terminal_access_102_inch_standard_truck",
+      "locator": "PDF pages 3-4, N.J.A.C. 16:32-1.5(a)(2)",
+      "quote": "A 102-inch-wide standard truck may use local unrestricted roadways only as necessary to: i. Access a terminal located on a local unrestricted roadway, but must return to the National Network or New Jersey Access Network by the direct route unless continued use of the local unrestricted roadway provides the direct route to the next terminal located on a local unrestricted roadway; or ii. Reach the New Jersey Access Network from the National Network by the direct route or to access the National Network from the New Jersey Access Network by the direct route; and",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "reg_elizabeth_north_avenue_east_zone",
+      "locator": "Elizabeth Code of Ordinances 10.16.050, street table",
+      "quote": "Beginning at a point 440 feet east of the intersection of North Avenue East and Kapkowski Road and continuing east 520 feet to the vacated portion of North Avenue East and its connection to the Port Authority over weight vehicle zone.",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_elizabeth_north_avenue_east_zone",
+      "locator": "Elizabeth Code of Ordinances 10.16.050, street table",
+      "quote": "North Avenue East",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_panynj_sealink_twic",
+      "locator": "PDF page 4, SeaLink\u00ae and TWIC and SeaLink\u00ae",
+      "quote": "SeaLink\u00ae is mandatory for all truckers doing business at the Port of New York and New Jersey.",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "reg_panynj_sealink_twic",
+      "locator": "PDF page 4, SeaLink\u00ae and TWIC and SeaLink\u00ae",
+      "quote": "Anyone with SeaLink\u00ae identification must also have a TWIC. You must register your TWIC with the Port Authority at the Truck Service Center. (Registration is free.)",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "reg_panynj_rfid",
+      "locator": "PDF page 4, Radio-Frequency Identification (RFID)",
+      "quote": "All Class 8 drayage trucks seeking entry onto any Port of New York and New Jersey Marine Terminal must be registered in the Drayage Truck Registry (DTR) and have a valid RFID tag properly mounted on the vehicle.",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "reg_apm_appointment",
+      "locator": "PDF page 11 / printed page 18, APM TERMINALS",
+      "quote": "All appointments must be made on the TERMPoint website or APP.",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "reg_apm_safety_induction",
+      "locator": "PDF page 11 / printed page 18, APM TERMINALS \u2014 Mandatory Trucker Training",
+      "quote": "All truck drivers are required to complete the MANDATORY online safety induction video/quiz in order to access the terminal",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "reg_elizabeth_four_ton_limit_streets",
+      "locator": "Elizabeth Code of Ordinances 10.16.010, operative paragraph and street table (132 street entries)",
+      "quote": "Trucks over four (4) tons gross weight are excluded from the street or parts of street described, except for the pickup and delivery of materials on such street.",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_elizabeth_five_ton_limit_streets",
+      "locator": "Elizabeth Code of Ordinances 10.16.040, street table",
+      "quote": "(Prior code \u00a7 141-84)",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_elizabeth_five_ton_limit_streets",
+      "locator": "Elizabeth Code of Ordinances 10.16.040, street table",
+      "quote": "Westminster Avenue",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_elizabeth_five_ton_limit_streets",
+      "locator": "Elizabeth Code of Ordinances 10.16.040, street table",
+      "quote": "Wilder Street",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_elizabeth_five_ton_limit_streets",
+      "locator": "Elizabeth Code of Ordinances 10.16.040, street table",
+      "quote": "From North Broad Street to the City Line (Except for pick-up and deliveries)",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_elizabeth_five_ton_limit_streets",
+      "locator": "Elizabeth Code of Ordinances 10.16.040, street table",
+      "quote": "Name of Street",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_elizabeth_five_ton_limit_streets",
+      "locator": "Elizabeth Code of Ordinances 10.16.040, street table",
+      "quote": "Location",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_nj_single_trip_route_review_13_18_portal_copy",
+      "locator": "PDF pages 3-4, N.J.A.C. 13:18-1.5(b)(3)-(7), (d), and (e)",
+      "quote": "3. The vehicle height, length and width;",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_nj_single_trip_route_review_13_18_portal_copy",
+      "locator": "PDF pages 3-4, N.J.A.C. 13:18-1.5(b)(3)-(7), (d), and (e)",
+      "quote": "4. The axle configuration and weight over each axle;",
+      "found_elsewhere": true
+    },
+    {
+      "clause_id": "reg_nj_ocean_container_permit",
+      "locator": "PDF page 43, section 3.4 and Table 5",
+      "quote": "TABLE 5 OCEAN BORNE CONTAINER PERMIT WEIGHT LIMITATIONS: Maximum Gross Weight 90,000 lbs; Maximum Tandem Weight 38,000 lbs; Maximum Tri-axle Weight 56,400 lbs.",
+      "found_elsewhere": false
+    },
+    {
+      "clause_id": "prototype_clause_induction_sealink_change",
+      "locator": "PDF page 11 / printed page 18, Mandatory Trucker Training, fourth bullet",
+      "quote": "Truckers obtaining a new SeaLink card will need to retake the Safety Induction Training with their new SeaLink number. Driver\u2019s DO NOT have to retake the induction if they switch companies, as long as they keep the same Sealink number.",
+      "found_elsewhere": false
+    }
+  ],
+  "limits": [
+    "Normalized text search is a triage screen, not legal/scope validation",
+    "Non-PDF quotations require separate source review",
+    "Human review is needed for table interpretation and unresolved text mismatches"
+  ]
+}

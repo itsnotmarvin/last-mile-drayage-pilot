@@ -1,0 +1,6 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 166, 170-176
+~											19 text 4 minutes ago
+~											88 text 3 minutes ago
+~											129 text 1 minute ago
+The focused UI element is 138 button Update trip facts and reassess the assignment

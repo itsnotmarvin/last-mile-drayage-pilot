@@ -1,0 +1,140 @@
+{
+  "schema_version": "drayage-draft-source-supplement-v1",
+  "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "approval_status": "draft_not_human_approved",
+  "operational_use": false,
+  "entries": [
+    {
+      "id": "draft_nj_bridge_equation",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 28, section 2.2.2, displayed equation",
+      "source_text": "The Federal Bridge Formula is: W = 500[(L*N/(N-1)) + 12*N + 36]",
+      "interpretation_boundary": "The draft evaluator uses this normalized equation transcription with exact rational arithmetic. It does not select a result from Table 1. When the equation lands exactly halfway between two 500-pound values, weights at or below the lower value pass, weights above the upper value fail, and weights in that band remain unresolved."
+    },
+    {
+      "id": "draft_nj_bridge_w_definition",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 28, section 2.2.2, definition of W",
+      "source_text": "W = The overall gross weight on any group of two or more consecutive axles to the nearest 500 pounds.",
+      "interpretation_boundary": "W is treated as a limit for every eligible consecutive subgroup. The quoted text does not state how to resolve an exact 250-pound midpoint, so the evaluator preserves that uncertainty."
+    },
+    {
+      "id": "draft_nj_bridge_l_definition",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 28, section 2.2.2, definition of L",
+      "source_text": "L = The distance in feet between the outer axles of any group of two or more consecutive axles; and",
+      "interpretation_boundary": "The draft evaluator converts the exact reported center positions from inches to feet. It does not round L to a whole foot or use an integer table row."
+    },
+    {
+      "id": "draft_nj_bridge_n_definition",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 28, section 2.2.2, definition of N",
+      "source_text": "N = The number of axles in the group under consideration.",
+      "interpretation_boundary": "N counts the normalized individual axle rows in the consecutive subgroup. Axles less than 40 inches apart require an aggregation rule that this evaluator does not implement, so such a layout remains unresolved."
+    },
+    {
+      "id": "draft_nj_bridge_group_coverage",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 28, section 2.2.2, paragraph after variable definitions",
+      "source_text": "This formula is used to determine the maximum weight allowed on all multi-axle groups including tandem axle, tri-axle quads, etc. as well as the inner-bridge and overall gross vehicle weight.",
+      "interpretation_boundary": "The draft evaluator checks every consecutive subgroup of two or more eligible axle rows, including inner groups and the complete layout. A gross-only comparison cannot satisfy these subgroup checks."
+    },
+    {
+      "id": "draft_nj_single_axle_definition",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 27, section 2.2.1",
+      "source_text": "A single axle is defined as an individual axle whose axle center is spaced more than 96’’ from the center of the next axle, as shown in the diagram above. A group of axles whose axle centers are spaced less than 40’’ apart also are considered a single axle for purposes of weight allowance. The maximum weight allowed on a signle axle is 22,400 lbs.",
+      "interpretation_boundary": "The 22,400-pound comparison is used only for an isolated axle in the New Jersey non-Interstate regime. The existing federal source supplies the separate 20,000-pound Interstate limit. This evaluator does not aggregate centers less than 40 inches apart and returns unresolved for that case."
+    },
+    {
+      "id": "draft_nj_tandem_limit",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 29, section 2.2.2.1",
+      "source_text": "A tandem axle is defined as consecutive axles of a vehicle or combination of vehicles where the difference between axle centers is 40’’ or more, but no more than 96’’ apart, as shown in the diagram above. The maximum weight allowed on axle group of this type is 34,000 lbs.",
+      "interpretation_boundary": "For exactly two consecutive axles, the draft evaluator treats 40 and 96 inches as inclusive and applies the 34,000-pound cap. Three or more axle centers within a 96-inch cluster remain unresolved because this passage does not define whether the cap covers the whole cluster or only a two-axle set. The bridge formula remains a separate check and can produce a lower limit."
+    },
+    {
+      "id": "draft_nj_gross_limit",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 29, section 2.2.2.2",
+      "source_text": "The gross vehicle weight is defined as a vehicle or combination of vehicles, including load or contents. The maximum overall gross weight of a vehicle is 80,000 lbs., as shown in the diagram above.",
+      "interpretation_boundary": "The 80,000-pound cap applies to the sum of all normalized axle weights in the Interstate calculation. It does not replace tandem or bridge-subgroup checks."
+    },
+    {
+      "id": "draft_nj_bridge_may_lower_caps",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 29, note after section 2.2.2.2",
+      "source_text": "NOTE: Compliance with bridge formula weight limits may require axle weights lower than the standard weight limits of 34,000 pounds for a tandem axle set and a gross weight lower than the standard 80,000-pound limit.",
+      "interpretation_boundary": "Passing the tandem and gross caps does not establish a bridge-formula pass. Every eligible consecutive subgroup still needs its equation comparison."
+    },
+    {
+      "id": "draft_nj_two_tandem_exception",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 30, paragraph continuing the Table 1 description",
+      "source_text": "except that in addition to the weights specified in that Table, two consecutive sets of tandem axles may carry a gross weight of 34,000 pounds each if the overall distance between the first and last axles of the consecutive sets of tandem axles is 36 feet or more. The gross weight of each set of tandem axles shall not exceed 34,000 pounds and the combined gross weight of the two consecutive sets of tandem axles shall not exceed 68,000 pounds.",
+      "interpretation_boundary": "The exception is limited to four consecutive axles that form two tandem pairs and span at least 36 feet from the first center to the last. Each pair keeps its 34,000-pound cap and the four-axle group keeps a 68,000-pound combined cap. No other vehicle or load exception is inferred."
+    },
+    {
+      "id": "draft_nj_bridge_interstate_scope",
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "source_id": "nj_size_weight_guidebook",
+      "source_file_path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+      "source_file_sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70",
+      "locator": "PDF page 30, final paragraph before Table 1",
+      "source_text": "These weight limitations apply on any highway in New Jersey which designated as part of the National Interstate System, as provided at 23 U.S.C. 103(c).",
+      "interpretation_boundary": "This supplement does not establish complete group, tandem, gross or bridge-formula limits for New Jersey non-Interstate segments. A non-Interstate result therefore cannot be met; only the separately scoped 22,400-pound isolated single-axle comparison can produce a definite finding."
+    }
+  ]
+}

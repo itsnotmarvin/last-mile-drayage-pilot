@@ -1,0 +1,23 @@
+{
+  "schema_version": "drayage-first-release-scope-v1",
+  "approval_status": "draft_not_human_approved",
+  "purpose": "Proposed first production scope for driver and dispatcher trip assistance; requires independent completeness review.",
+  "candidate_terminal_ids": ["facility_apm_elizabeth"],
+  "candidate_study_route_ids": ["path_a_exit13a_to_apm", "path_b_us1_9_to_apm"],
+  "route_boundary": "Study route identities are context only; the exact road sequence, legal classification and responsible authorities require verification for the move.",
+  "users": ["driver", "dispatcher"],
+  "candidate_vehicle_and_cargo_scope": "Reported tractor/semitrailer drayage moves involving APM Elizabeth, including the six existing study families. Exact vehicle, cargo and exception boundaries await domain review.",
+  "required_families": ["shared_trip_context", "axle_weight", "dimensions_route", "permit_coverage", "current_route_conditions", "dtr", "terminal_access"],
+  "required_requirement_ids": ["trip_context", "axle_weight_evidence", "dimensions_and_route", "permit_eligibility", "cross_authority_coverage", "current_route_conditions", "dtr_registration_and_rfid", "dtr_engine_policy", "driver_twic", "sealink_registration", "apm_induction", "apm_appointment", "transaction_release"],
+  "excluded_promises": ["Statewide or all-terminal coverage", "Automatic truck routing", "Unverified live gate/registry status", "A legal compliance or dispatch clearance based solely on reported facts", "General hazmat/CDL/carrier/HOS compliance outside the catalog"],
+  "accountable_owners": {"product_scope": null, "domain_review": null, "source_change_review": null, "security": null, "service_operation": null, "release_decision": null},
+  "external_acceptance_required": [
+    {"id": "scope_approval", "owner_role": "product and domain reviewers", "deliverable": "Approve explicit terminals, roads, vehicle/cargo types, supported decisions, exclusions and escalation responsibilities."},
+    {"id": "rule_approval", "owner_role": "qualified domain reviewers", "deliverable": "Review and accept complete rules, exceptions, authority conflicts and requirement-to-source mappings for the first scope."},
+    {"id": "verification_access", "owner_role": "data owners and integration operators", "deliverable": "Provide authorized credential, registry, appointment, permit and condition integrations, or accepted human-verification procedures."},
+    {"id": "client_acceptance", "owner_role": "independent acceptance reviewers", "deliverable": "Capture and score the actual released browser/MCP/model workflow, including corrections, pressure, missing facts and outages."},
+    {"id": "production_identity_security", "owner_role": "identity and security owners", "deliverable": "Select the production identity/hosting boundary and complete threat, privacy, retention and security reviews."},
+    {"id": "operations_acceptance", "owner_role": "service operator", "deliverable": "Approve load/cost targets, monitoring, RPO/RTO, restore drills, incident response and on-call ownership."},
+    {"id": "release_approval", "owner_role": "accountable release owner", "deliverable": "Record a release decision against a specific implementation, source release and accepted evidence; no agent-assigned grade substitutes."}
+  ]
+}

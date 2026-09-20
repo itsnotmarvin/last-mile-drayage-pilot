@@ -1,0 +1,253 @@
+{
+  "validation": "pinned-release-validation",
+  "revision": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "dataset": "last-mile-drayage-pilot",
+  "database": "neo4j",
+  "snapshot_path": "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/data/neo4j_release.json",
+  "snapshot_sha256": "4bbff60b29713ff4ac5835afd3d4007c4b9ca93a2021d219cba941a2285d7233",
+  "script_sha256": "a616d36765468effc95f6ae7837ae641ceb171c745546933f889cc0ffb38ffa8",
+  "queries_sha256": "b5a2e1b2ba8e1e20e03864c558c213a682e2c5863730c10a2db28e2a9deaa212",
+  "started_at_utc": "2026-09-18T01:43:36.537522+00:00",
+  "finished_at_utc": "2026-09-18T01:43:58.926006+00:00",
+  "overall": "PASS",
+  "first_failure": null,
+  "expected": {
+    "nodes": 144,
+    "edges": 228,
+    "routes": 4,
+    "segments": 9
+  },
+  "checks": [
+    {
+      "id": "C1",
+      "name": "release identity + counts + snapshot equality",
+      "status": "PASS",
+      "detail": "1 release, 144 nodes / 228 edges, live body identical to snapshot, revision digest valid.",
+      "evidence": {
+        "nodes": 144,
+        "edges": 228,
+        "active_revision_observed": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c"
+      }
+    },
+    {
+      "id": "C2",
+      "name": "routes + ordered segments + connectivity",
+      "status": "PASS",
+      "detail": "4 routes with exact 1..N sequences; every chain link and STARTS_AT/ENDS_AT endpoint verified.",
+      "evidence": {
+        "routes": {
+          "path_a_exit13a_to_apm": [
+            "edge_a_exit13a_connector",
+            "edge_shared_north_avenue",
+            "edge_shared_mclester",
+            "edge_shared_tripoli_gate"
+          ],
+          "path_b_us1_9_to_apm": [
+            "edge_b_us1_south",
+            "edge_b_north_avenue_to_merge",
+            "edge_shared_north_avenue",
+            "edge_shared_mclester",
+            "edge_shared_tripoli_gate"
+          ],
+          "approach_a_turnpike_sb": [
+            "edge_a_exit13a_connector",
+            "edge_shared_north_avenue",
+            "edge_shared_mclester",
+            "edge_shared_tripoli_gate"
+          ],
+          "approach_a_turnpike_nb": [
+            "edge_a_nb_turnpike_exit",
+            "edge_a_nb_state_ramps_to_north_ave",
+            "edge_ab_shared_north_ave_to_all_merge",
+            "edge_shared_north_avenue",
+            "edge_shared_mclester",
+            "edge_shared_tripoli_gate"
+          ]
+        }
+      }
+    },
+    {
+      "id": "C3",
+      "name": "segment ownership/control/jurisdiction context",
+      "status": "PASS",
+      "detail": "All 9 segments carry LOCATED_WITHIN jurisdictions, NJOGIS categories, and >=1 clause-governance edge.",
+      "evidence": {
+        "edge_a_exit13a_connector": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_highway_authority"
+          ],
+          "governing_clauses": 5
+        },
+        "edge_a_nb_turnpike_exit": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_highway_authority"
+          ],
+          "governing_clauses": 6
+        },
+        "edge_a_nb_state_ramps_to_north_ave": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_state"
+          ],
+          "governing_clauses": 5
+        },
+        "edge_ab_shared_north_ave_to_all_merge": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_county"
+          ],
+          "governing_clauses": 9
+        },
+        "edge_b_us1_south": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_state"
+          ],
+          "governing_clauses": 5
+        },
+        "edge_b_north_avenue_to_merge": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_county"
+          ],
+          "governing_clauses": 9
+        },
+        "edge_shared_north_avenue": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_county"
+          ],
+          "governing_clauses": 10
+        },
+        "edge_shared_mclester": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_municipal"
+          ],
+          "governing_clauses": 7
+        },
+        "edge_shared_tripoli_gate": {
+          "located_within": [
+            "jurisdiction_elizabeth",
+            "jurisdiction_union_county"
+          ],
+          "njogis_categories": [
+            "road_authority_category_municipal"
+          ],
+          "governing_clauses": 7
+        }
+      }
+    },
+    {
+      "id": "C4",
+      "name": "requirement/rule applicability paths",
+      "status": "PASS",
+      "detail": "Governance originates only from source_clause; induction check keeps 1 terminal + 1 program + 2 supporting clauses; all 26 catalog clauses resolve; transaction_release gap stays explicit."
+    },
+    {
+      "id": "C5",
+      "name": "requirement/clause -> source provenance",
+      "status": "PASS",
+      "detail": "All 32 source clauses have exactly one source_document parent and a resolvable source_id; edge endpoints already proven in C1."
+    },
+    {
+      "id": "C6",
+      "name": "mutable observations distinguishable",
+      "status": "PASS",
+      "detail": "5 quarantined_observation nodes with resolvable archived sources; none participates in clause/applicability edges.",
+      "evidence": {
+        "observations": [
+          "njpass_connecting_local_routes_application_comments",
+          "njpass_nonstate_permit_authorities",
+          "njpass_port_st_oversize_restrictions_2026_08_03",
+          "njpass_route_survey_threshold",
+          "njpass_state_routes_only_system_scope"
+        ]
+      }
+    },
+    {
+      "id": "C7",
+      "name": "unresolved/missing explicit",
+      "status": "PASS",
+      "detail": "No operational_use=true record; check stays draft_not_human_approved + not_verified; transaction_release gap explicit (C4); live unresolved behavior proven end-to-end in C8."
+    },
+    {
+      "id": "C8",
+      "name": "MCP evaluator bounded patterns",
+      "status": "PASS",
+      "detail": "Real Evaluation.check/context/requirement_evidence paths return expected fields: unresolved probe explicit, summary 121/202 Neo4j, 4 routes, 5 observations, 13 requirement packages with citations; transaction_release keeps zero archived sources (explicit gap).",
+      "evidence": {
+        "requirement_evidence_status": {
+          "trip_context": "archived_only",
+          "axle_weight_evidence": "prototype_extraction_only",
+          "dimensions_and_route": "archived_only",
+          "permit_eligibility": "archived_only",
+          "cross_authority_coverage": "archived_only",
+          "current_route_conditions": "archived_only",
+          "dtr_registration_and_rfid": "archived_only",
+          "dtr_engine_policy": "archived_only",
+          "driver_twic": "archived_only",
+          "sealink_registration": "archived_only",
+          "apm_induction": "archived_only",
+          "apm_appointment": "archived_only",
+          "transaction_release": "prototype_extraction_only"
+        }
+      }
+    },
+    {
+      "id": "C9",
+      "name": "wave-4 isolation",
+      "status": "PASS",
+      "detail": "No dual-labeled nodes, no cross-graph edges; drayage releases: 1; Wave-4 observed intact (824 nodes / 1872 rels).",
+      "evidence": {
+        "wave4_nodes_observed": 824,
+        "wave4_edges_observed": 1872,
+        "drayage_releases": [
+          {
+            "dataset": "last-mile-drayage-pilot",
+            "revision": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "C10",
+      "name": "pinned hashes + fingerprint",
+      "status": "PASS",
+      "detail": "Revision digest recomputed; all 51 pinned source hashes match local bytes; live manifest+graph already proven identical to snapshot in C1.",
+      "evidence": {
+        "file_hashes_verified": 51,
+        "evidence_version": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "model_version": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence_version": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    }
+  ],
+  "write_guarantee": "MATCH-only Cypher via READ_ACCESS execute_read; no execute_write, no import, no TripStore writes."
+}

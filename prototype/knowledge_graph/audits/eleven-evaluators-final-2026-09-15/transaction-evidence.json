@@ -1,0 +1,74 @@
+{
+  "approval_status": "draft_not_human_approved",
+  "catalog_version": "7dd7f879e3b30dd4a2a6df4fcac85afc11b893a7014cad57b1a598a0dbc076be",
+  "draft_supplements": [
+    {
+      "accessed_date": "2026-06-25",
+      "approval_status": "draft_not_human_approved",
+      "archive_graph_membership": false,
+      "extraction_status": "prototype_extraction_only",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "id": "draft_import_no_holds",
+      "interpretation_boundary": "Draft support for checking the five named hold categories before an import pickup. The source's 'etc' does not establish that those fields exhaust every possible hold, a same-day gate release, gate acceptance, or permission to enter.",
+      "locator": "PDF page 9 / printed page 15",
+      "operational_use": false,
+      "publication_date": "2025-08",
+      "publisher": "Port Authority of New York and New Jersey",
+      "requirement_ids": [
+        "transaction_release"
+      ],
+      "source_file_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+      "source_file_sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1",
+      "source_id": "panynj_truckers_guide",
+      "source_text": "DO ensure there are no holds on the container (freight, customer, demurrage, customs, etc) prior to picking up an import load.",
+      "supplement_sha256": "ed881f15e22d0ca458b27c14361c35caf2a3f3c61f61a0f427b3c75d57000fa1",
+      "title": "Truckers Resource Guidebook",
+      "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf"
+    },
+    {
+      "accessed_date": "2026-06-25",
+      "approval_status": "draft_not_human_approved",
+      "archive_graph_membership": false,
+      "extraction_status": "prototype_extraction_only",
+      "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "id": "draft_import_available",
+      "interpretation_boundary": "Draft support for checking container availability before an import pickup. It does not define a terminal-system status, freshness rule, other move types, gate acceptance, or permission to enter.",
+      "locator": "PDF page 10 / printed page 16",
+      "operational_use": false,
+      "publication_date": "2025-08",
+      "publisher": "Port Authority of New York and New Jersey",
+      "requirement_ids": [
+        "transaction_release"
+      ],
+      "source_file_path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+      "source_file_sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1",
+      "source_id": "panynj_truckers_guide",
+      "source_text": "Do not arrive at terminal without checking container status first and ensuring the container is fully available.",
+      "supplement_sha256": "ed881f15e22d0ca458b27c14361c35caf2a3f3c61f61a0f427b3c75d57000fa1",
+      "title": "Truckers Resource Guidebook",
+      "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf"
+    }
+  ],
+  "evidence_status": "prototype_extraction_only",
+  "family": "terminal_access",
+  "implementation": "bounded_synthetic_verification_v1",
+  "label": "Import-pickup availability and transaction scope",
+  "limits": [
+    "The pinned graph contains no generic transaction/gate-release clause. Draft graph-linked guide extractions support only pre-arrival import-pickup availability.",
+    "No live terminal transaction, gate, cargo-release, or admission integration is implemented. Reported release status cannot establish entry.",
+    "Implemented draft predicates require operator-owned synthetic receipts; no authenticated real authority integration or operational permission is provided."
+  ],
+  "mode": "synthetic_prototype_only",
+  "observations": [],
+  "operational_use": false,
+  "requirement_id": "transaction_release",
+  "schema_version": "drayage-requirement-evidence-v1",
+  "sources": [],
+  "versions": {
+    "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+    "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+    "implementation": "9e6d64cf165985cccb07476d04683923d70d5ff6f506fe1fcf4a5feb1cb44f2c",
+    "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+    "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+  }
+}

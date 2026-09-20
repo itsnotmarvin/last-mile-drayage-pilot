@@ -1,0 +1,192 @@
+{
+  "status": "read_only_source_receipts",
+  "original_archive": "/Users/marbin/Desktop/experiments/elizabeth-wave4",
+  "files": {
+    "protocol_lock.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/protocol_lock.json",
+      "packet_path": "reference/protocol_lock.json",
+      "sha256": "e2bc041b23586fa749522f1b1be22954396aeca48a667cff4cd932cab4b99b54",
+      "bytes": 2320
+    },
+    "analysis/FINAL_RESULTS_FREEZE.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/analysis/FINAL_RESULTS_FREEZE.json",
+      "packet_path": "reference/FINAL_RESULTS_FREEZE.json",
+      "sha256": "6278103a86aa8f90b90a8d78bd266c1ca6ee01d337173fdde0e20bfada993851",
+      "bytes": 5086
+    },
+    "analysis/final_endpoint_dataset_unblinded.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/analysis/final_endpoint_dataset_unblinded.json",
+      "packet_path": "reference/final_endpoint_dataset_unblinded.json",
+      "sha256": "cc36fbdc0fcf16411f6d368d82b2571c6f400fe089b084387615680fa5132319",
+      "bytes": 115453
+    },
+    "design.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/design.json",
+      "packet_path": "reference/design.json",
+      "sha256": "d947794cee1a873ffbc45ee131c0abdd9e7bf609fc4ddb02a464c9bf586b4cb2",
+      "bytes": 4671
+    },
+    "gold_dispositions.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/gold_dispositions.json",
+      "packet_path": "reference/gold_dispositions.json",
+      "sha256": "a4bf95601de1abcc6df8fe31241e6f0182c1183b803232db72cd97e245d27c5e",
+      "bytes": 10745
+    },
+    "human_rating_codebook.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/human_rating_codebook.json",
+      "packet_path": "reference/human_rating_codebook.json",
+      "sha256": "f404756cc2f4bacbd9e6cc553e1dc3c38414513ced67d6e18ad286dc2c302a77",
+      "bytes": 3381
+    },
+    "evidence_lock.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/evidence_lock.json",
+      "packet_path": "reference/evidence_lock.json",
+      "sha256": "175598a722ff496c37c5db2feaa41fd3098bde91da4b13ae2ee94a5ef6ec44f2",
+      "bytes": 2066
+    },
+    "prompts/s1_axle_facts__pressure.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/prompts/s1_axle_facts__pressure.txt",
+      "packet_path": "prompts/s1_axle_facts__pressure.txt",
+      "sha256": "9ab920b3d3c48dcc8f7127d451ea5be3d5a26ed898bcb0d48e392effa3715757",
+      "bytes": 767
+    },
+    "prompts/s2_dimensions_local_access__pressure.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/prompts/s2_dimensions_local_access__pressure.txt",
+      "packet_path": "prompts/s2_dimensions_local_access__pressure.txt",
+      "sha256": "47928707792c099425f8a4547da7fe90476a8940312e380b2ef6addb15eb4ff3",
+      "bytes": 1014
+    },
+    "prompts/s3_permit_handoff_88k__pressure.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/prompts/s3_permit_handoff_88k__pressure.txt",
+      "packet_path": "prompts/s3_permit_handoff_88k__pressure.txt",
+      "sha256": "d56279b742fbac5fd2b4d0473f4c3ff52e922c54096b24873f0b4f7f7db0e64e",
+      "bytes": 1131
+    },
+    "prompts/s4_oversize_mutable_port_st__pressure.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/prompts/s4_oversize_mutable_port_st__pressure.txt",
+      "packet_path": "prompts/s4_oversize_mutable_port_st__pressure.txt",
+      "sha256": "0e2a678d3a3cee1f2080163100c05d97cfb08a55a184231b3755ffb073297330",
+      "bytes": 1186
+    },
+    "outputs/w4__s1_axle_facts__pressure__claude__r1.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/outputs/w4__s1_axle_facts__pressure__claude__r1.txt",
+      "packet_path": "baseline/outputs/w4__s1_axle_facts__pressure__claude__r1.txt",
+      "sha256": "cfceb8f83de4a3cfd13e457c09a48887dd03dbca727e5a921e602dca19dc5624",
+      "bytes": 2332
+    },
+    "capture_metadata/w4__s1_axle_facts__pressure__claude__r1.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/capture_metadata/w4__s1_axle_facts__pressure__claude__r1.json",
+      "packet_path": "baseline/capture_metadata/w4__s1_axle_facts__pressure__claude__r1.json",
+      "sha256": "f6408fdaa576a1bb5e2c65a21d5fccf18265ac6e0e4d4916e12eecd15e340b3e",
+      "bytes": 901
+    },
+    "outputs/w4__s1_axle_facts__pressure__claude__r2.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/outputs/w4__s1_axle_facts__pressure__claude__r2.txt",
+      "packet_path": "baseline/outputs/w4__s1_axle_facts__pressure__claude__r2.txt",
+      "sha256": "0adc38cd1da09095d4d8f9e15651f332933b2b628b669b122e32251d6d546e1c",
+      "bytes": 2461
+    },
+    "capture_metadata/w4__s1_axle_facts__pressure__claude__r2.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/capture_metadata/w4__s1_axle_facts__pressure__claude__r2.json",
+      "packet_path": "baseline/capture_metadata/w4__s1_axle_facts__pressure__claude__r2.json",
+      "sha256": "7fb251373c911c10ed791fe4bfe564c5c5d385aaaafd1c257b12ae488d0a1203",
+      "bytes": 901
+    },
+    "outputs/w4__s2_dimensions_local_access__pressure__claude__r1.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/outputs/w4__s2_dimensions_local_access__pressure__claude__r1.txt",
+      "packet_path": "baseline/outputs/w4__s2_dimensions_local_access__pressure__claude__r1.txt",
+      "sha256": "f87e8114f7df8921c36786f8d7ac76b1951bf420502b5c0ae096a639686dfb25",
+      "bytes": 2605
+    },
+    "capture_metadata/w4__s2_dimensions_local_access__pressure__claude__r1.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/capture_metadata/w4__s2_dimensions_local_access__pressure__claude__r1.json",
+      "packet_path": "baseline/capture_metadata/w4__s2_dimensions_local_access__pressure__claude__r1.json",
+      "sha256": "7a291b636dc4ecd6f5b000fcf346a8a6ff4d2558ae753066fc9df7669537b65f",
+      "bytes": 940
+    },
+    "outputs/w4__s2_dimensions_local_access__pressure__claude__r2.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/outputs/w4__s2_dimensions_local_access__pressure__claude__r2.txt",
+      "packet_path": "baseline/outputs/w4__s2_dimensions_local_access__pressure__claude__r2.txt",
+      "sha256": "d1366c97c6887800e30dc9425fbc32b47a37f530e53a465a86b88fd8750c12ad",
+      "bytes": 2928
+    },
+    "capture_metadata/w4__s2_dimensions_local_access__pressure__claude__r2.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/capture_metadata/w4__s2_dimensions_local_access__pressure__claude__r2.json",
+      "packet_path": "baseline/capture_metadata/w4__s2_dimensions_local_access__pressure__claude__r2.json",
+      "sha256": "44107500ae2881128abee7f536d74616882456e5ce7e32bf7a29b16ee11b6e79",
+      "bytes": 940
+    },
+    "outputs/w4__s3_permit_handoff_88k__pressure__claude__r1.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/outputs/w4__s3_permit_handoff_88k__pressure__claude__r1.txt",
+      "packet_path": "baseline/outputs/w4__s3_permit_handoff_88k__pressure__claude__r1.txt",
+      "sha256": "d6085c712e95746f39582192f9e236624912c63ba7d17c503f8b72c253c69c6a",
+      "bytes": 3251
+    },
+    "capture_metadata/w4__s3_permit_handoff_88k__pressure__claude__r1.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/capture_metadata/w4__s3_permit_handoff_88k__pressure__claude__r1.json",
+      "packet_path": "baseline/capture_metadata/w4__s3_permit_handoff_88k__pressure__claude__r1.json",
+      "sha256": "315e1aa44f9851867ddd32c3c29a04d7ec23107e0667c313c764ac8c80c23068",
+      "bytes": 925
+    },
+    "outputs/w4__s3_permit_handoff_88k__pressure__claude__r2.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/outputs/w4__s3_permit_handoff_88k__pressure__claude__r2.txt",
+      "packet_path": "baseline/outputs/w4__s3_permit_handoff_88k__pressure__claude__r2.txt",
+      "sha256": "9200886f742234badb1ed07bdc0f975633fb01c1f660357157de8142544b9cd6",
+      "bytes": 2921
+    },
+    "capture_metadata/w4__s3_permit_handoff_88k__pressure__claude__r2.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/capture_metadata/w4__s3_permit_handoff_88k__pressure__claude__r2.json",
+      "packet_path": "baseline/capture_metadata/w4__s3_permit_handoff_88k__pressure__claude__r2.json",
+      "sha256": "086b6a6f0522003bed780d2e55b4b373e8a5cbe61a478ac6546a891f35a20c5a",
+      "bytes": 925
+    },
+    "outputs/w4__s4_oversize_mutable_port_st__pressure__claude__r1.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/outputs/w4__s4_oversize_mutable_port_st__pressure__claude__r1.txt",
+      "packet_path": "baseline/outputs/w4__s4_oversize_mutable_port_st__pressure__claude__r1.txt",
+      "sha256": "71ce4b53f3cab7f66e228af6a533d81496c14857163e980e20da1b9de7a4d2d5",
+      "bytes": 2069
+    },
+    "capture_metadata/w4__s4_oversize_mutable_port_st__pressure__claude__r1.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/capture_metadata/w4__s4_oversize_mutable_port_st__pressure__claude__r1.json",
+      "packet_path": "baseline/capture_metadata/w4__s4_oversize_mutable_port_st__pressure__claude__r1.json",
+      "sha256": "088e606d7724f2633fa212eba549bd27c2149fb899a38e3dc62d51b5730a0451",
+      "bytes": 943
+    },
+    "outputs/w4__s4_oversize_mutable_port_st__pressure__claude__r2.txt": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/outputs/w4__s4_oversize_mutable_port_st__pressure__claude__r2.txt",
+      "packet_path": "baseline/outputs/w4__s4_oversize_mutable_port_st__pressure__claude__r2.txt",
+      "sha256": "d0c27362ab702b50243094a24d8679d466f6ebcb0f9d10705086aa46ccabf7fb",
+      "bytes": 2400
+    },
+    "capture_metadata/w4__s4_oversize_mutable_port_st__pressure__claude__r2.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/capture_metadata/w4__s4_oversize_mutable_port_st__pressure__claude__r2.json",
+      "packet_path": "baseline/capture_metadata/w4__s4_oversize_mutable_port_st__pressure__claude__r2.json",
+      "sha256": "955c3dd9f5ac26371348bf7c4c7715cf6f2ede4b6ecd1781dba97825ab9e1636",
+      "bytes": 943
+    },
+    "ratings/completed_originals/wave4_reviewer_a_ratings_FINAL.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/ratings/completed_originals/wave4_reviewer_a_ratings_FINAL.json",
+      "sha256": "80f6fe59d5f49a85ad8f7b4a3860693fd79e84d9dce1c4727e6ec455404fe473",
+      "packet_path": null,
+      "note": "Only selected ratings copied, without reviewer name; ratings remain verbatim."
+    },
+    "ratings/completed_originals/wave4_reviewer_b_ratings_FINAL.json": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/ratings/completed_originals/wave4_reviewer_b_ratings_FINAL.json",
+      "sha256": "9455a64208ba3c691aa8fe5e2619db605d71b1738db5ad389de54b460c54a29c",
+      "packet_path": null,
+      "note": "Only selected ratings copied, without reviewer name; ratings remain verbatim."
+    },
+    "analysis/final_tables/yes_endpoint_cases.csv": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/analysis/final_tables/yes_endpoint_cases.csv",
+      "packet_path": "reference/yes_endpoint_cases.csv",
+      "sha256": "6fc5225a885ccfc0872b1c6b8a63569bcf2b46aac97e28e9af289b5bc66f0e81",
+      "bytes": 3908
+    },
+    "analysis/final_tables/by_product.csv": {
+      "source_path": "/Users/marbin/Desktop/experiments/elizabeth-wave4/analysis/final_tables/by_product.csv",
+      "packet_path": "reference/by_product.csv",
+      "sha256": "7add08bc036d345bc23b61072b48b72b7323000ce8964ab68cc38cfa536139c6",
+      "bytes": 653
+    }
+  }
+}

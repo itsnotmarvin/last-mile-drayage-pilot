@@ -1,0 +1,18 @@
+Here's the dispatch answer, straight from the assessment:
+
+No — do not dispatch on the saved bulletin alone.
+
+The system flags the August 24 NJPASS bulletin as a quarantined, dated observation, not proof of current conditions. It explicitly must be rechecked before operational use — an 11-day-old snapshot of lane width, detours, the North Avenue exit requirement, and a PAPD escort order is not something you can treat as still in effect on September 2 without confirming it.
+
+Separately, your NJ single-trip permit only covers the listed state-route portions. It does not by itself establish approval for Port Authority or terminal-controlled roads — that's a distinct, unconfirmed gap (you've also reported no port or terminal approval on file).
+
+What's actually blocking dispatch, in order of weight:
+
+1. Current Port Street conditions — the escort requirement and lane/detour posting need to be reconfirmed as of Sept 2, not assumed from Aug 24.
+2. Port Authority / terminal handling approval for the Port Street segment — separate from your state permit.
+
+What does not need re-checking right now: your weight, width, and height are within the general nonhazardous/permit-covered profile as reported — that part isn't the blocker.
+
+Practical path: this is one call, not several — contact the current PAPD/Port Street duty desk (or NJPASS current bulletin, if it's been updated since Aug 24) to confirm the escort and lane requirement are still active for Sept 2, and get real-time terminal handling clearance for that segment. Until you have that, hold the driver rather than dispatch on the old bulletin — an escort order that's still active but not arranged, or a detour that's changed, is the kind of thing that stops a rig cold on Port Street with an oversize load and no clearance.
+
+I can't issue that current-conditions confirmation myself — this connector only holds archived/reported data, not a live feed — so that one call is the genuine bottleneck here, not red tape for its own sake.

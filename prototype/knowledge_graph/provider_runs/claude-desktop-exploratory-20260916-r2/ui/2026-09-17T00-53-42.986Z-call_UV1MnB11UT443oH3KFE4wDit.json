@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:53:42.986Z",
+  "tool_call_id": "call_UV1MnB11UT443oH3KFE4wDit",
+  "arguments": {
+    "code": "await claude.getAXState();",
+    "title": "Observe dispatcher tool use"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

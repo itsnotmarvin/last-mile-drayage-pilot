@@ -138,7 +138,10 @@ class Neo4jStore:
         def invoke(tx):
             # Validate fresh database content and source bytes before every answer.
             # There is no cached successful result or fallback to the old backend.
-            release = read_release(tx, self.revision)
+            from .retrieval_trace import TracedTransaction, phase
+            tx = TracedTransaction(tx)
+            with phase("release_validation"):
+                release = read_release(tx, self.revision)
             verify_files(release)
             return operation(GraphReader(tx, release))
 

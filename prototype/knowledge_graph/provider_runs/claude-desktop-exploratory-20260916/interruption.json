@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-09-17T00:48:37.250106+00:00",
+  "status": "incomplete",
+  "initial_driver_assessment_id": "1d3fbad37354ea6476a211e2736d19bf9c1afdb70d48cfd5c2786f7220e5c43e",
+  "final_advice": "not captured; original incognito conversation unavailable on resumption",
+  "remaining_turns": "not collected",
+  "followup_run": "provider_runs/claude-desktop-exploratory-20260916-r2"
+}

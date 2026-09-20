@@ -1,0 +1,15 @@
+{
+  "algorithm": "sha256",
+  "scope": "Local evidence integrity; not independent attestation",
+  "files": {
+    "baseline.json": "9b06c4064b2fb3a49eceef5954fa4f5928c0a4c701c68c82247b661966208d37",
+    "collection.json": "2a90107992a5c30734bf2a95be55aabf4649a14b501b0c274b774611e4ded6a1",
+    "dimensions_dispatcher.followup.txt": "e170779b36c44f03802087005b8585ebc8db7784cc2f78a60a22aab36b70133f",
+    "dimensions_dispatcher.prompt.txt": "4d4382d066dc56be19cd1569b7497e680080ec6f02a7a7a72abc82ac82802105",
+    "dimensions_driver.followup.txt": "e170779b36c44f03802087005b8585ebc8db7784cc2f78a60a22aab36b70133f",
+    "dimensions_driver.prompt.txt": "83abe44bf4dec18500820271097cb2f6e77b4c9dc6d773c6baf1e1f00ac635cf",
+    "driver-initial.mcp-event.json": "e99ebcadfee7a4c79c9488e5da93345490ed0174d7f71eaa56a7f3e6daae4111",
+    "interruption.json": "dc69a65ebe47c49cdfa9ada2ec55e144c652fec6c13629ec02410951774c296d",
+    "plan.json": "b24157e2585304828b1b7396b8e73d7d2422231aa0ba89893fac838b8ae29be4"
+  }
+}

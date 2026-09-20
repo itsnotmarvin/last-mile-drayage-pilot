@@ -1,0 +1,10 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++												177 container
++													178 text bash
++													179 container
++														180 text cat /mnt/user-data/tool_results/mcp__drayage-kg-prototype__assess_trip_toolu_013fJx4sj8LAy3S3xCCCbpYS.json  |  python3 -m json.tool  |  head -300
++													181 text Output
++													182 text [
+    {
+        "text": "{\"answer_guidance\": {\"assessment_id\": \"ee89adef4a26028052ad0bc971e7d884cf57888d7f9371dc9b3568545fa997e7\", \"boundaries\": [\"Use the scoped result, not schedule pressure, to explain this assessment. No operational permission is issued.\", \"Unresolved is neither permission to proceed nor a finding that the trip is illegal. Do not say nothing prevents dispatch.\", \"Reported values above a retained reference are comparisons, not established violations; values at or below it are
+The focused UI element is 167 button Ran a command

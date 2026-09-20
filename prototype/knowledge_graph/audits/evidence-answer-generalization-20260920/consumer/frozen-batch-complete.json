@@ -1,0 +1,6 @@
+{
+  "runtime_unchanged_through_batch": true,
+  "completed_runs": 3,
+  "model": "Sonnet 5 Medium",
+  "note": "Review found date omission in final permit answer; no midbatch code changes or retries."
+}

@@ -1,0 +1,16 @@
+Here's what the tool returned, and what it means for dispatch.
+
+Direct answer: CR 624's absence from Appendix C does not by itself prohibit the route — but that's not the same as "cleared to go."
+
+Appendix C lists the county "600‑series" roads that are formally designated as part of the state's truck Access Network. CR 624 not appearing there just means it isn't on that designated network — it says nothing about whether it's legally usable. The governing rule the tool surfaced (N.J.A.C. 16:32‑1.5(a)(2)) allows a 102-inch-wide standard truck to leave the National Network/Access Network and use local unrestricted roadways to reach a terminal, provided it's the direct (shortest) route. A road's absence from Appendix C or any other listed network "establishes neither permission nor prohibition" — the tool is explicit on this point. So CR 624 doesn't need to be in Appendix C for this trip to be lawful; what matters is whether it's currently posted/restricted and whether the truck qualifies as that "standard truck."
+
+Why this isn't a clean go-ahead yet:
+
+1. The 102-inch standard-truck rule is conditional, and you haven't confirmed the load qualifies. You don't yet have loaded width, loaded height, or semitrailer length. If width exceeds 102 in., height exceeds 13'6", or the semitrailer exceeds 53 ft (or 48–53 ft off the National Network for non-terminal-access reasons), you're outside this exemption and into oversize-permit territory.
+2. "Unrestricted" is a live, checkable fact, not an assumption. You've flagged that you haven't confirmed every local segment is currently unrestricted — that's required. A municipal ordinance or county resolution can restrict a road independent of Appendix C (N.J.A.C. 16:32‑1.2(e) preserves local truck-route restrictions).
+3. This has to be the direct route. The exemption only covers reaching the terminal by the shortest-distance path off the network — confirm this alignment actually is that.
+4. Separately, weight/axle-spacing compliance and any cross-authority (Turnpike/Port Authority/terminal) approvals weren't verified here — you noted those as otherwise satisfied, but the tool couldn't independently confirm them.
+
+Bottom line for dispatch: Don't treat "CR 624 isn't in Appendix C" as a red flag — it isn't one. But don't clear this route until you have (a) loaded width/height/semitrailer length confirming it qualifies as a 102-in. standard vehicle under this rule, and (b) current confirmation that CR 624 and the local streets are unrestricted. If both check out, no oversize permit is needed for this route on dimensional/route-network grounds. If either fails, you're into oversize/permit territory regardless of Appendix C.
+
+Note: this connector is a synthetic development prototype — its findings are archived-evidence based, not a live legal or dispatch clearance, and don't substitute for current NJDOT/local verification.

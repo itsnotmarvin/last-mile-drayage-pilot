@@ -1,0 +1,50 @@
+{
+  "algorithm": "sha256",
+  "scope": "All files in final input-review audit directory excluding this manifest.",
+  "files": {
+    "README.md": {
+      "sha256": "dc2e3a171b9d066dc7b037e956ff00a9827821bdaac5c994d93f852871c77995",
+      "bytes": 4301
+    },
+    "artifact-checks.json": {
+      "sha256": "377c4f0b810a63798032fd2ae6d130139a5e7abc981d96fad497c1905ef42562",
+      "bytes": 242
+    },
+    "controlled-trip-report.html": {
+      "sha256": "0f51e09e4edb7278e90bcd58dce0f7da077efdc184f48c407840857d5d0c1b5b",
+      "bytes": 32491
+    },
+    "desktop-activation.json": {
+      "sha256": "bd86f9fe39da8f6171ed05f46b3a19896a3cb36510eb3cdb2bd83d7796f46db2",
+      "bytes": 1150
+    },
+    "representative-assessment.json": {
+      "sha256": "59bae590a4fe7409d7300459c94de3aa92ad51fff742ba84e43746ccc3623e50",
+      "bytes": 85591
+    },
+    "results.json": {
+      "sha256": "a76482bcd38e36c35c8db76b563e229d319264a71a3b62d2c555816a082c7fd7",
+      "bytes": 3192
+    },
+    "runtime-files.json": {
+      "sha256": "3eaa4113d2e73653bb05ba861dd0d4607a9befe52b8e74d27648f4c8113857de",
+      "bytes": 1634
+    },
+    "stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "stdio-transcript.json": {
+      "sha256": "da030be09fdb5cdfdac778500e332e321174316f440efa21c0e75e94d2270e9b",
+      "bytes": 1001794
+    },
+    "tools.json": {
+      "sha256": "2f7caca54ceccda0acf9c1dc19b9dbd2f6e73e16e30bc9113fad2bc5cf58bed0",
+      "bytes": 238159
+    },
+    "unit-tests.txt": {
+      "sha256": "670462544b8a17f610b4245e4128cbf4b141524fbd8e6871a7106be734abf2d5",
+      "bytes": 33692
+    }
+  }
+}

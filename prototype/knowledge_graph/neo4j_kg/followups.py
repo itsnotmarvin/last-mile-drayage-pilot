@@ -23,6 +23,7 @@ _FIELD_PRIORITY = (
     "route_conditions_checked_at",
     "overall_length",
     "gross_weight",
+    "axle_layout",
     "axle_weights",
     "axle_spacings",
     "axle_count",
@@ -54,6 +55,7 @@ _PRIORITY = {field: position for position, field in enumerate(_FIELD_PRIORITY)}
 
 _VERIFICATION_QUESTIONS = {
     "gross_weight": "Verify the reported loaded gross weight from a current scale or authoritative load record.",
+    "axle_layout": "Verify each individual axle weight and its position from the first axle against the assigned equipment and a current scale record. Group totals cannot substitute.",
     "axle_weights": "Verify the reported axle and axle-group weights from a current scale or authoritative load record.",
     "axle_spacings": "Verify the reported axle spacings for the assigned equipment.",
     "width": "Verify the reported loaded width from a current measurement or authoritative load record.",
@@ -75,7 +77,7 @@ _VERIFICATION_QUESTIONS = {
     "sealink_registered_reported": "Verify the current SeaLink and its TWIC registration through an authorized Port Authority source.",
     "induction_reported": "Verify induction for this driver and current SeaLink through the implemented synthetic check or an authorized source.",
     "appointment_reported": "Verify the appointment for this exact gate move through an authorized terminal source.",
-    "transaction_release_reported": "Verify the same-day transaction release and gate state directly with the terminal before entry.",
+    "transaction_release_reported": "Verify this exact move’s container availability and holds directly with the terminal; the implemented predicate covers import pickups only.",
 }
 
 
@@ -110,7 +112,65 @@ def _add_candidate(candidates: dict, *, field: str, requirement: dict,
         candidate["owner"] = "authority"
 
 
-def build_followups(case: dict, findings: list[dict]) -> list[dict]:
+def _segment_path(route_context) -> str | None:
+    """Human-readable ordered segment names for a resolved graph route."""
+    if not isinstance(route_context, dict):
+        return None
+    if route_context.get("status") != "resolved_from_pinned_graph":
+        return None
+    segments = route_context.get("segments")
+    if not isinstance(segments, list) or not segments:
+        return None
+    names = []
+    for segment in segments:
+        if not isinstance(segment, dict) or not isinstance(segment.get("segment_id"), str):
+            return None
+        names.append(segment.get("name") or segment["segment_id"])
+    return " -> ".join(names)
+
+
+def _apply_route_context(missing: dict, route_context) -> None:
+    """Ground route questions in resolved topology without resolving anything.
+
+    Missing-field membership, kinds, owners, and ordering are untouched, so
+    binding, receipt, evaluator, and status semantics cannot change. Only the
+    human-facing question/reason wording becomes segment-specific. Port Street
+    membership still requires an explicit report; absence from the stored
+    segment list never establishes absence from the trip.
+    """
+    path = _segment_path(route_context)
+    if path is None:
+        return
+    route_id = route_context.get("route_id")
+    if "route_description" in missing:
+        missing["route_description"] = {
+            **missing["route_description"],
+            "question": (
+                f"The pinned graph resolves {route_id} as {path}. "
+                "Confirm this is the exact route you intend to travel, with no deviations. "
+                "The stored sequence is candidate structure and is not verified for this trip."
+            ),
+            "reason": (
+                "The route topology is resolved from the pinned graph release; "
+                "the reported travel order still needs explicit confirmation for this trip."
+            ),
+        }
+    if "port_street_in_route" in missing:
+        missing["port_street_in_route"] = {
+            **missing["port_street_in_route"],
+            "question": (
+                f"The stored candidate route runs {path}; its membership in your trip is unconfirmed. Does your planned path include "
+                "Port Street at any point? Absence from the stored segment list "
+                "does not establish absence from your trip."
+            ),
+            "reason": (
+                "Port Street membership needs an explicit report for this trip; "
+                "it cannot be inferred from the stored route topology."
+            ),
+        }
+
+
+def build_followups(case: dict, findings: list[dict], route_context=None) -> list[dict]:
     """Return at most three relevant fact, conflict, or verification actions.
 
     Known values are never asked for again as missing facts.  User-reported
@@ -188,6 +248,13 @@ def build_followups(case: dict, findings: list[dict]) -> list[dict]:
                 reason=reason,
             )
 
+        if (requirement_id != 'apm_induction' and 'operator_verification_resolution' in finding.get('verification_needed', [])
+                and not finding.get('missing_fields') and not finding.get('conflicting_fields')):
+            _add_candidate(verification, field=requirement_id+'_verification', requirement=requirement,
+                kind='evidence_resolution',
+                question='Resolve the missing, rejected, conflicting or incomplete operator-owned evidence for '+requirement['label'].lower()+', then reassess this saved trip.',
+                reason='Repeating a report cannot replace a missing authority record or resolve a source-policy gap. This prototype uses synthetic adapters.')
+
         # The implemented induction evaluator can have every user-supplied fact
         # and still lack usable server-owned synthetic evidence (missing,
         # mismatched, stale, conflicting, future-dated, or unavailable).  Those
@@ -222,6 +289,7 @@ def build_followups(case: dict, findings: list[dict]) -> list[dict]:
             )
 
     ordered = []
+    _apply_route_context(missing, route_context)
     for bucket in (conflicts, missing, verification):
         ordered.extend(bucket[field] for field in sorted(bucket, key=_rank))
     return ordered[:MAX_FOLLOWUPS]

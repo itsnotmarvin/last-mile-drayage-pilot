@@ -1,0 +1,57 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 77, 85, 96-99, 104-108
++							104 text Claude finished the response
++										105 toolbar Message actions
++											106 text 1 minute ago
++											107 button Retry
++											108 button Edit
++											109 button Copy
+~									86 container Message 2 of 2
++										110 container
++											111 heading Value: 2, Claude responded: Here's what actually matters in your numbers, based on New Jersey roadway limits, Port Authority terminal rules, and what's still unverified.
++												112 text Claude responded: Here's what actually matters in your numbers, based on New Jersey roadway limits, Port Authority terminal rules, and what's still unverified.
++											113 container
++												114 text Loaded tools, ran a command, used drayage-kg-prototype integration
++												115 button Loaded tools, ran a command, used drayage-kg-prototype integration
++											116 text Loaded tools, ran a command, used drayage-kg-prototype integration
++											117 container
++												118 text Here's what actually matters in your numbers, based on New Jersey roadway limits, Port Authority terminal rules, and what's still unverified.
++												119 text The one number that stands out: height
++												120 text Your loaded height of 14'7" (175 in) is 13 inches over New Jersey's general statewide truck height limit of 13'6" (162 in), which applies on NJ highways "except as otherwise identified." That's the biggest single flag here. It doesn't automatically mean the trip is illegal — some routes or configurations have separate rules — but it does mean you likely need either a confirmed exception or an oversize/overweight permit covering height, and someone needs to verify that before you run this load. For contrast, APM Elizabeth's own terminal tariff only calls a vehicle "over dimensional" above 16'3", so you're well under the terminal's threshold. But the terminal threshold is a separate, narrower rule about marine-terminal handling — it doesn't override the roadway limit you'd be driving under to get there.
++												121 text Width is right on a boundary
++												122 text 102 inches matches NJ's standard truck width limit for the National Network and NJ Access Network routes. But there's a separate, more restrictive 96-inch limit that applies on certain other roads where local safety rules have been posted — and 102 inches is 6 inches over that. Whether this matters depends entirely on your exact route: if any segment isn't on the National Network or Access Network, or is a posted local restriction, width becomes a live issue. This is exactly why "I don't know the exact road
++												123 text Weight is at the legal ceiling, but axle distribution is unknown
++												124 text 80,000 lb sits exactly at both the federal Interstate limit and NJ's standard gross limit — not over, but with zero margin. The catch: gross weight alone never establishes compliance. The Federal Bridge Formula can require a lower limit depending on your axle spacing, and NJ also caps individual/tandem axle groups (22,400 lb single axle, 34,000 lb tandem) separately from the gross number. Since you don't know your axle weights, this whole area is unresolved — a truck can be at 80,000 lb gross and still be o
++												125 text Credentials and appointment: reported, not verified
++												126 text TWIC, SeaLink registration, and the appointment are all things you say you have, but none of it is something I (or any system without a live registry connection) can confirm from a stated claim. Two other things travel with these that are easy to miss:
++												127 content list
++													128 container
++														129 AXListMarker • 
++														130 text APM's mandatory safety induction is tied to your  specific  SeaLink number — if you ever changed SeaLink cards, you need to redo induction, even though switching companies alone doesn't require it.
++													131 container
++														132 AXListMarker • 
++														133 text Drayage trucks also need current DTR (registry) status and, if Class 8, a valid RFID tag — separate from TWIC/SeaLink.
++												134 text What would actually change my answer
++												135 content list
++													136 container
++														137 AXListMarker 1. 
++														138 text The exact route  — this is the single biggest missing piece. It determines whether the width issue applies, whether you cross any toll roads/Turnpike/Parkway needing separate approval, and whether a current NJDOT bulletin restricting Port Street to one lane (in effect since August 2026, requiring specific ramps and possibly a police escort for oversize loads) affects you. That bulletin is archived/unverified for your trip date, so it needs a live check either way.
++													139 container
++														140 AXListMarker 2. 
++														141 text Individual axle weights and spacing  — needed to actually check bridge-formula and per-axle compliance, not just the gross number.
++													142 container
++														143 AXListMarker 3. 
++														144 text Whether you already hold an oversize/overweight permit  — given the height, this is likely required, and if you have one, its terms (route, dates, weight/axle restrictions) become the controlling document.
++													145 container
++														146 AXListMarker 4. 
++														147 text Confirmation of TWIC, SeaLink, DTR/RFID, and the appointment through the actual systems  (Port Authority credential records, TERMPoint) rather than as self-reported.
++												148 text Bottom line: height is the thing I'd chase down first — it's a real gap versus the general limit, not a boundary case. Width and weight are "it depends on exact route/axle facts," and the credential side is administratively fine-sounding but formally unverified. None of this establishes that the trip is fine to run or that it's prohibited — it just tells you where the actual open questions are.
++										149 toolbar Message actions
++											150 button Copy
++											151 button Read aloud
++											152 button Retry
++											153 text just now
++										154 container Dictate
++											155 button Dictate
++											156 pop up button Microphone
+The focused UI element is 15 HTML content New chat - Claude, URL: claude.ai/new?incognito=

@@ -1,0 +1,32 @@
+[
+  {
+    "file": ".runtime/mcp-session-089998870d1d46798af02694c26de68b.jsonl",
+    "baseline_offset": 0,
+    "event_hash": "4c15eaaa3e99c65a926a24852107d0c4b7856ee08446c8d16e5beae575a9b0f4",
+    "sequence": 1
+  },
+  {
+    "file": ".runtime/mcp-session-089998870d1d46798af02694c26de68b.jsonl",
+    "baseline_offset": 0,
+    "event_hash": "d5305045d218991e95da7bca5b370d19f1232fca9402331e0d85022b8f2205c3",
+    "sequence": 2
+  },
+  {
+    "file": ".runtime/mcp-session-089998870d1d46798af02694c26de68b.jsonl",
+    "baseline_offset": 0,
+    "event_hash": "903941bbc3bf568557d89fa60fc6f3ea821e97cbc944bd459d8ba9396d532a79",
+    "sequence": 3
+  },
+  {
+    "file": ".runtime/mcp-session-089998870d1d46798af02694c26de68b.jsonl",
+    "baseline_offset": 0,
+    "event_hash": "0d26d4cc79c5931e3e380e01ef19db2a8318459ab5843bfb6fc5542efbf84200",
+    "sequence": 4
+  },
+  {
+    "file": ".runtime/mcp-session-089998870d1d46798af02694c26de68b.jsonl",
+    "baseline_offset": 0,
+    "event_hash": "138d30472fd09e83b6bdaad2a23eb652cfd1c9054cebeb9983d47b69dd8dad43",
+    "sequence": 5
+  }
+]

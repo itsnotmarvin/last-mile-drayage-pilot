@@ -1,0 +1,22 @@
+**Decision: No, don't dispatch on the saved bulletin plus your NJ permit.** I can't give you a route the driver can safely run, because nothing I could check establishes one.
+
+**Your date has already passed.** Today is September 19, 2026, so September 2 is behind us. If the move is really today or later, the permit dates and everything below need re-checking against the actual travel date. The bulletin is also 26 days old.
+
+**What I can tell you about this load:**
+
+- **Height is a problem on its face.** 14 ft 7 in is 175 inches. The archived NJPASS bulletin (observed Aug 24, "Route Survey Requirements" panel, [NJPASS home](https://nj.gotpermits.com/njpass/)) says a route survey is required when height exceeds 14' 6", and the survey must be attached to the application. You're 1 inch over. Your 12-foot width is under the bulletin's 16-foot survey trigger, but the height alone hits it. Check whether your permit application included a survey. I can't tell from what you've told me.
+- **Your permit may not cover Port Street.** The bulletin says NJPASS issues permits for state routes only, and that county, local, and toll roads are handled by those agencies. Any county or local connector between state routes had to be identified in the permit request's comment area, or the request would be returned. Whether Port Street between Brewster Rd and Marlin St is on your permit is not established. Look at the approved route on the permit itself.
+- **Terminal approval is likely required.** The Port Authority tariff ([PA-10, Subrule 34-046, PDF p. 16](https://www.panynj.gov/port/en/doing-business/tariffs.html)) treats vehicles over 11 ft wide or 16'3" high as over-dimensional. They need approval from the Office of the Manager, Marine Terminals. Your 12-foot width is over that line. Your height is under it. You haven't confirmed you have this approval.
+- **The Port Street instructions are dated and unconfirmed.** The bulletin says that effective Aug 3, Port St. between Brewster and Marlin was reduced to 11-foot lanes "until further notice". Oversize eastbound loads must use the Corbin St. ramp, and westbound loads must use the Marlin/Kellogg detour or Outer Port St. All oversize loads must exit south via North Ave., and PAPD escorts are requested at (973) 578-2180. None of that is verified for your travel date.
+- **Weight and axles are fine as far as you've said.** 80,000 lb is at, not over, the standard limit ([NJ Size and Weight Guidebook, §2.2.2](https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf)). That guidebook also notes the bridge formula can require less. I have no individual axle weights or spacings to check.
+
+**Exact route:** I can't give you one. I don't know your terminal, your direction of travel, or what your permit lists. If you're eastbound on Port St. and the Aug 24 instructions still hold, the Corbin St. ramp is the stated path. The same goes for exiting south via North Ave. under a PAPD escort. Treat that as what the bulletin said on Aug 24, not as a dispatch route.
+
+**What it takes to say yes.** This isn't a round of agency calls, just three checks:
+1. Read your permit: does its approved route and dimension list include 14'7" and the Port Street segment, and was a route survey attached?
+2. Call PAPD at (973) 578-2180. They arrange the escort and can tell you whether the Port Street instructions are still in force.
+3. Confirm you have the terminal's over-dimensional approval, since you're over 11 ft wide.
+
+If the permit covers Port Street and 14'7", and PAPD and the terminal confirm, you'd have what you need to release the driver.
+
+If you tell me which terminal and which direction the driver is coming from, I can narrow this further.

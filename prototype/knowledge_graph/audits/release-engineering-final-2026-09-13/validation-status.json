@@ -1,0 +1,58 @@
+{
+  "at": "2026-09-13T14:03:51.016475+00:00",
+  "unit_tests_passed": 300,
+  "schema_valid_assessments": 29,
+  "runtime_file_count": 36,
+  "runtime_hashes_unchanged": true,
+  "source_bytes": "passed",
+  "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "graph_records": 144,
+  "graph_relationships": 228,
+  "historical_manifest_checks": [
+    {
+      "capture": "audits/evidence-2026-09-10",
+      "artifacts_verified": 89,
+      "status": "intact"
+    },
+    {
+      "capture": "audits/evidence-fix-2026-09-12",
+      "artifacts_verified": 16,
+      "status": "intact"
+    },
+    {
+      "capture": "audits/input-review-final-2026-09-12",
+      "artifacts_verified": 11,
+      "status": "intact"
+    },
+    {
+      "capture": "audits/integrated-app-final-2026-09-12",
+      "artifacts_verified": 7,
+      "status": "intact"
+    },
+    {
+      "capture": "audits/release-engineering-2026-09-13",
+      "artifacts_verified": 17,
+      "status": "intact"
+    },
+    {
+      "capture": "audits/reported-checks-final-2026-09-13",
+      "artifacts_verified": 15,
+      "status": "intact"
+    }
+  ],
+  "historical_artifacts_verified": 155,
+  "historical_kg_diff": "unchanged",
+  "node_syntax": "passed",
+  "git_diff_check": "passed",
+  "local_application_database": {
+    "sqlite": "ok",
+    "schema": 1,
+    "statements": 12,
+    "events": 71,
+    "conversations": 10,
+    "audit_head": "e2c84a2725d5a677d542d034dd2f886af43e6ecd15eec51b8f00d6ce45a9e53d",
+    "limits": "Hashes detect inconsistency, not forgery by an actor able to rewrite the database."
+  },
+  "source_candidate": "retained_inactive",
+  "production_ready": false
+}

@@ -55,7 +55,7 @@ def main():
         if result.get("isError"):
             raise RuntimeError("Tool failed: " + name)
         body = result["structuredContent"]
-        assert body == json.loads(result["content"][0]["text"])
+        assert body == json.loads(result["content"][-1]["text"])
         if name != "get_requirement_evidence":
             assert body["service_status"] == "available", "Trip assessment unavailable"
             assert body["operational_status"] == "unresolved_not_assessed"

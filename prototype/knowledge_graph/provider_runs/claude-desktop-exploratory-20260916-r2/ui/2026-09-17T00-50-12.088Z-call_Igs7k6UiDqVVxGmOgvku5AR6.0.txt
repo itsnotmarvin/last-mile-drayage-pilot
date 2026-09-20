@@ -1,0 +1,124 @@
+Window: "Claude", App: Claude.
+0 standard window Claude, Secondary Actions: Raise
+	1 container Claude
+		2 container
+			3 HTML content file:///Applications/Claude.app/Contents/Resources/app.asar/.vite/renderer/main_window/index.html
+			4 HTML content New chat - Claude, URL: claude.ai/new?incognito=
+				5 container
+					6 text Incognito chat
+					7 button Exit incognito
+					8 container
+						9 container
+							10 text Claude finished the response
+							11 container Chat messages
+								12 text Use the up and down arrow keys to move between messages.
+								13 container
+									14 container Message 1 of 2
+										15 heading You said: Synthetic experiment only; these are invented trip details, not an actual dispatch., Value: 2
+											16 text You said: Synthetic experiment only; these are invented trip details, not an actual dispatch.
+										17 text Synthetic experiment only; these are invented trip details, not an actual dispatch. Can I take my truck to APM Elizabeth? Planned entry is September 17, 2026 at 9:00 AM America/New_York. The loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or the exact road sequence. Explain the issues that actually matter and what information would change your answer.
+										18 toolbar Message actions
+											19 text just now
+											20 button Retry
+											21 button Edit
+											22 button Copy
+									23 container Message 2 of 2
+										24 container
+											25 heading Value: 2, Claude responded: This is a synthetic-only assessment from a prototype tool — not a legal ruling and not real dispatch clearance.
+												26 text Claude responded: This is a synthetic-only assessment from a prototype tool — not a legal ruling and not real dispatch clearance.
+											27 container
+												28 text Used drayage-kg-prototype integration, loaded tools
+												29 button Used drayage-kg-prototype integration, loaded tools
+											30 text Used drayage-kg-prototype integration, loaded tools
+											31 container
+												32 container drayage APM Elizabeth induction trip assessment
+													33 container
+														34 text Searched available tools drayage APM Elizabeth induction trip assessment
+													35 button Searched available tools drayage APM Elizabeth induction trip assessment
+												36 container Assess a synthetic driver or dispatcher trip
+													37 text Assess a synthetic driver or dispatcher trip
+													38 text Failed
+													39 button Assess a synthetic driver or dispatcher trip Failed
+												40 container Assess a synthetic driver or dispatcher trip
+													41 text Assess a synthetic driver or dispatcher trip
+													42 button Assess a synthetic driver or dispatcher trip
+												43 text Drafting a clear height-clearance disclaimer for the prototype tool.
+											44 container
+												45 text This is a synthetic-only assessment from a prototype tool — not a legal ruling and not real dispatch clearance. Here's what actually stands out.
+												46 text The one number that matters most: height.
+												47 text Your reported 14'7" (175 in) loaded height is 
+												48 text above
+												49 text  the archived NJ baseline of 13'6" (162 in) for a commercial vehicle "on all highways, except as otherwise identified." That's a 13-inch overage. This is the actual red flag in your numbers — everything else is either fine or unresolved, but this one is flagged "attention required." If that height is real, you likely need an oversize permit and route-specific clearance (or the height figure needs rechecking — it's an unusual load height for a container move, so it's worth double-checking whether you measure
+												50 text Width and gross weight are not problems by themselves, but aren't cleared either.
+												51 content list
+													52 container
+														53 AXListMarker • 
+														54 text 102 in width sits exactly at NJ's standard limit for the National Network/Access Routes (not the stricter 96 in category) — fine if your route stays on those roads, unresolved otherwise.
+													55 container
+														56 AXListMarker • 
+														57 text 80,000 lb gross sits exactly at both the federal Interstate cap and NJ's standard cap. That's not a violation, but it's also not a pass — the bridge formula can require  less  than 80,000 lb depending on axle spacing, and you don't have axle weights. A load at exactly the ceiling with unknown axle distribution is the case most likely to actually trip the bridge formula.
+												58 text Route is the biggest information gap.
+												59 text You said you don't know the exact road sequence, and that turns out to touch almost everything: which network the road belongs to (102 in vs 96 in width rule), whether you cross a toll authority (Turnpike/Parkway need separate approval), whether Port Street is part of your path (there's an active one-lane restriction near APM Elizabeth with mandatory detours/escort for oversize loads, in effect since August 2026), and which permit type — if any — applies.
+												60 text Credentials are reported, not verified.
+												61 text TWIC, SeaLink, and the appointment all check out as 
+												62 text reported
+												63 text , but this tool has no live connection to TSA, PortTruckPass, or TERMPoint — so none of it is confirmed against an actual registry. Also unknown/unaddressed: DTR registration, RFID tag, and engine model year (Port Authority has an engine-age cutoff for terminal entry).
+												64 text What would actually change the answer:
+												65 content list
+													66 container
+														67 AXListMarker 1. 
+														68 text Confirm the height — is 14'7" correct? If so, you almost certainly need an NJ single-trip oversize permit and a defined route before this move should happen.
+													69 container
+														70 AXListMarker 2. 
+														71 text Individual axle weights and spacings (not just gross) — needed to check the bridge formula and tandem/single-axle limits.
+													72 container
+														73 AXListMarker 3. 
+														74 text The exact planned route in and out of the terminal — needed to check Port Street conditions, toll authority approval, and width-network classification.
+													75 container
+														76 AXListMarker 4. 
+														77 text DTR/RFID status and engine model year for the truck.
+													78 container
+														79 AXListMarker 5. 
+														80 text Actual verification (not self-report) of TWIC, SeaLink registration, and the TERMPoint appointment for this specific move.
+												81 text Bottom line from the tool: 
+												82 text not cleared, not resolved
+												83 text  — height is the standout concern, and the missing axle/route data is what's blocking a real answer either way.
+										84 toolbar Message actions
+											85 button Copy
+											86 button Read aloud
+											87 button Retry
+											88 text just now
+							89 button Scroll to bottom
+							90 container
+								91 container
+									92 text Run this in the background with Cowork Cowork can work on complex tasks across drayage-kg-prototype without you watching. Send it off, come back to results.
+									93 link Description: Upgrade to try, Value: claude.ai/upgrade?feature=cowork&hide_free=true&returnTo=%2Ftask%2Fnew
+									94 button Dismiss
+								95 container
+									96 container
+										97 container
+											98 text entry area (settable) Description: Write your prompt to Claude, Value: 
+
+										99 pop up button Add files, connectors, and more
+										100 container Dictate
+											101 button Dictate
+											102 pop up button Microphone
+									103 text Incognito chats aren’t saved to history or used to train models.
+									104 pop up button Model: Sonnet 5 Medium
+										105 text Sonnet 5
+										106 text Medium
+					107 container
+						108 container Notifications
+	109 close button
+	110 full screen button Help: this button also has an action to zoom the window, Secondary Actions: zoom the window
+	111 minimize button
+112 menu bar
+	113 Claude
+	114 File
+	115 Edit
+	116 View
+	117 Go
+	118 Window
+	119 Help
+
+The focused UI element is 29 button Used drayage-kg-prototype integration, loaded tools

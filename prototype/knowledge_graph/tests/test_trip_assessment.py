@@ -116,7 +116,9 @@ class TripAssessmentTests(unittest.TestCase):
         result = self.create(BASE | {"driver_id": "syn-driver-missing", "induction_reported": True,
                                     "twic_reported": True, "permit_route_reported": True})
         self.assertEqual("unresolved", self.finding(result, "apm_induction")["status"])
-        self.assertEqual("not_implemented", self.finding(result, "driver_twic")["execution_state"])
+        self.assertEqual("verification_required", self.finding(result, "driver_twic")["execution_state"])
+        self.assertEqual("unresolved", self.finding(result, "driver_twic")["status"])
+        self.assertEqual([], self.finding(result, "driver_twic")["evidence_ids"])
         self.assertTrue(all(f["basis"] == "user_reported" for f in result["case"]["facts"].values()))
         for bad in ({"verification": "verified"}, {"induction_reported": {"value": True, "basis": "verified"}},
                     {"gross_weight": 80000}, {"driver_id": "a real driver"}):
@@ -214,7 +216,11 @@ class TripAssessmentTests(unittest.TestCase):
                 self.assertEqual(clause["source_text"], source["source_text"])
                 self.assertEqual(clause["source_locator"], source["locator"])
                 self.assertIn("not_verified", source["currentness"])
-        self.assertEqual("source_coverage_gap", self.service.evidence({"requirement_id": "transaction_release"})["evidence_status"])
+        transaction = self.service.evidence({"requirement_id": "transaction_release"})
+        self.assertEqual("prototype_extraction_only", transaction["evidence_status"])
+        self.assertEqual([], transaction['sources'])
+        self.assertEqual(2, len(transaction['draft_supplements']))
+        self.assertTrue(all(s['approval_status']=='draft_not_human_approved' for s in transaction['draft_supplements']))
 
     def test_public_catalog_mutation_cannot_change_versioned_evidence(self):
         before = self.service.evidence({"requirement_id": "trip_context"})
@@ -252,11 +258,11 @@ class TripAssessmentTests(unittest.TestCase):
         import jsonschema  # Existing development environment; never a runtime dependency.
         result = self.create()
         tools = {t["name"]: t for t in TOOLS}
-        self.assertEqual(5, len(tools))
-        for name in ("assess_trip", "update_trip_facts", "get_requirement_evidence"):
+        self.assertEqual(7, len(tools))
+        for name in ("assess_trip", "update_trip_facts", "get_requirement_evidence", "get_trip_conditions_answer", "assess_driver_move"):
             jsonschema.Draft202012Validator.check_schema(tools[name]["inputSchema"])
             jsonschema.Draft202012Validator.check_schema(tools[name]["outputSchema"])
-            self.assertEqual(name == "get_requirement_evidence", tools[name]["annotations"]["readOnlyHint"])
+            self.assertEqual(name in ("get_requirement_evidence", "get_trip_conditions_answer"), tools[name]["annotations"]["readOnlyHint"])
         jsonschema.validate(result, tools["assess_trip"]["outputSchema"])
         jsonschema.validate(self.update(result, {"twic_reported": True}), tools["update_trip_facts"]["outputSchema"])
         for requirement in REQUIREMENTS:
@@ -271,7 +277,8 @@ class TripAssessmentTests(unittest.TestCase):
             "name": "assess_trip", "arguments": {"facts": BASE, "source_message": "Synthetic trip", "request_key": "mcp"}}}
         result = session.handle(request)["result"]
         self.assertFalse(result["isError"])
-        self.assertEqual(result["structuredContent"], json.loads(result["content"][0]["text"]))
+        self.assertTrue(result['content'][0]['text'].startswith('DRIVER EVIDENCE BRIEFING'))
+        self.assertEqual(result["structuredContent"], json.loads(result["content"][-1]["text"]))
         request["params"]["arguments"]["facts"] = {"verification": "verified"}
         self.assertTrue(session.handle(request)["result"]["isError"])
 

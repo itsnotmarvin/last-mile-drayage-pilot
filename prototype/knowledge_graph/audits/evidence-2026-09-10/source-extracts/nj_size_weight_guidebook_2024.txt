@@ -1,0 +1,2190 @@
+JANUARY 2024
+                                  Commercial Vehicle Size and Weight Guidebook |
+
+
+
+
+DISCLAIMER
+
+Information contained in this guidebook regarding the fees/permits listed
+and the various laws and regulations governing commercial motor vehicle
+operations in New Jersey are subject to change without notice. This
+guidebook is produced solely as a convenience to the public and the State
+assumes no warranty or representation given or the use of any of the
+material provided or for unintentional omissions, errors, or misprints which
+appear in this guidebook.
+
+
+
+
+                                                                              1
+| New Jersey Department of Transportation
+
+
+
+CONTENTS
+List of Acronyms ..................................................................................... 5
+1 Introduction .......................................................................................... 8
+    1.1 About This Document ...................................................................... 8
+    1.2 Frequently Asked Questions (FAQ) ................................................ 8
+    1.3 Key Updates and Changes Since the 2017 Guidebook................ 11
+2 Legal Size and Weight Limits ........................................................... 12
+    2.1 Size Limitations ............................................................................. 12
+         2.1.1 Width—N.J.S.A. 39:3-84.a(1) .............................................. 13
+         2.1.2 Height—N.J.S.A. 39:3-84.a(2) ............................................. 14
+         2.1.3 Length .................................................................................. 15
+                  2.1.3.1 Truck—N.J.S.A. 39:3-84.a(3) ................................. 16
+                  2.1.3.2 Truck-Semitrailer Combinations—N.J.S.A. 39:3-
+                          84.a(3);(4) ............................................................... 17
+                  2.1.3.3 Truck-Trailer Combinations—N.J.S.A. 39:3-84.a(3)
+                            17
+                  2.1.3.4 Maxi-Cube Vehicles—23 CFR § 658.13(e)(4)........ 18
+                  2.1.3.5 Truck Tractor-Trailer/Semitrailer Combination—23
+                          CFR § 658.13(b)(3) ................................................ 19
+                  2.1.3.6 Trailers and Semitrailers—N.J.S.A. 39:3-84.a(4) ... 20
+                  2.1.3.7 Saddlemount and Saddlemount with Fullmount
+                          Combinations—N.J.S.A. 39:3-84a(5) ..................... 23
+                  2.1.3.8 Tandem Trailer Combinations—N.J.S.A. 39:3-
+                          84.a(6) .................................................................... 24
+         2.1.4 Vehicle Size Limit Exceptions.............................................. 24
+                  2.1.4.1 Automobile Transporters—N.J.A.C. 13:20-38;
+                          N.J.S.A. 39:3-84a(10) ............................................. 25
+                  2.1.4.2 House Type Trailers—N.J.S.A. 39:3-8 ................... 26
+                  2.1.4.3 Towaway Trailer Transporter Combination—49 CFR
+                          § 31111(a) .............................................................. 26
+    2.2 Weight Limitations ......................................................................... 27
+
+
+
+2
+                                                Commercial Vehicle Size and Weight Guidebook |
+
+
+
+        2.2.1 Single Axle—N.J.S.A. 39:3-84b(3) ...................................... 27
+        2.2.2 Groups of Two or More Axles—N.J.S.A. 39:3-84b(5) ......... 28
+                 2.2.2.1 Tandem Axles—N.J.S.A. 39:3-84b(2) .................... 29
+                 2.2.2.2 Gross Vehicle Weight—N.J.S.A. 39:3-84b(4) ........ 29
+        2.2.3 Special Weight Limit Provisions Detailed in the FAST Act .. 34
+                 2.2.3.1 Covered Heavy-Duty Tow and Recovery Vehicles—
+                         N.J.A.C. 13:18-1.2(e).............................................. 34
+                 2.2.3.2 Emergency Vehicles FAST Act—23 U.S.C. § 127(r)
+                          35
+                 2.2.3.3 Natural Gas Vehicles—N.J.A.C. 13:18-1.2(g) ........ 35
+3 Size and Weight Permit Types and Fees ......................................... 36
+  3.1 Single-Trip OS/OW Permit (5 Day) ............................................... 40
+  3.2 Code 23 Overdimensional Trailer Permit ...................................... 40
+  3.3 Code 23 Overweight/Overdimensional Route Specific Permit (30
+       day) .............................................................................................. 42
+  3.4 Ocean Borne Container Permit (Annual) ...................................... 43
+  3.5 Emergency Hauling Permits .......................................................... 44
+        3.5.1 Preplanned Non-Divisible Load Emergency Permit ............ 44
+        3.5.2 Unplanned Non-Divisible Load Emergency Move Permit ... 45
+        3.5.3 Unplanned Divisible Load Emergency Move Permit
+        (Federal Declared Emergency Only)............................................. 45
+4 How to Obtain a Permit ..................................................................... 46
+  4.1 Obtaining Route-Specific Permits ................................................. 46
+  4.2 Obtaining permits that are not route-specific ................................ 47
+5 How to Operate With a Permit .......................................................... 48
+  5.1 Permit Liability—N.J.A.C. 13:18-1.7(a); N.J.S.A. 39:3-84.4.......... 48
+  5.2 Insurance Requirements—N.J.A.C. 13:18-1.7(b) ......................... 48
+  5.3 Permit Conditions—N.J.A.C 13:18-1.9,10,11 ............................... 49
+        5.3.1 Oversize Permit Conditions – Time of Day ......................... 49
+        5.3.2 Oversize Permit Conditions – Holidays ............................... 50
+        5.3.3 Notifying Authorities of High Vehicles or Loads .................. 50
+        5.3.4 Overweight Permit Conditions ............................................. 50
+
+                                                                                                           3
+| New Jersey Department of Transportation
+
+
+    5.4 Overhang Limits—N.J.S.A. 39: 3-84 a(4)...................................... 51
+    5.5 Escort Requirements—N.J.A.C. 13:18-1.12 ................................. 51
+    5.6 Signage Requirements—N.J.A.C. 13:18-1.13 .............................. 53
+    5.7 Lamps and Reflective Devices—49 CFR §393:11; N.J.A.C. 13:18-
+         1.15 .............................................................................................. 54
+    5.8 Warning Flags—49 CFR § 393.87; N.J.A.C. 13:18-1.14; N.J.S.A.
+        39:3-61.4 ...................................................................................... 55
+6 Additional Commercial Vehicle Registration Information ............. 59
+    6.1 Code 23 Trailer Registration—N.J.S.A. 39:4-26 ........................... 60
+          6.1.1 Code 23 Trailer Specifications/Limitations .......................... 60
+          6.1.2 How to Apply for a Permit to Operate a Code 23
+          Overweight/Oversize Trailer .......................................................... 61
+    6.2 Code 41 Constructor Registration—N.J.S.A. 39:3-20b................. 61
+    6.3 Code 39 Solid Waste Registration—N.J.S.A. 39:3-20c ................ 62
+    6.4 Code 56 Contractor Equipment-In-Transit Registration—
+         N.J.S.A.39:4-30 ........................................................................... 63
+7 Other Commercial Vehicle Size and Weight Information
+     Resources.................................................................................... 66
+    7.1 Key Resources .............................................................................. 66
+    7.2 Other States, Jurisdictions, and Bi-State Authorities .................... 66
+
+
+
+
+4
+                                 Commercial Vehicle Size and Weight Guidebook |
+
+
+
+
+LIST OF ACRONYMS
+
+CFR        Code of Federal Regulations
+FAST Act   Fixing America’s Surface Transportation Act
+FHWA       Federal Highway Administration
+FMCSA      Federal Motor Carrier Safety Administration
+lbs.       Pounds (weight)
+mm         Millimeters
+N.J.A.C.   New Jersey Administrative Code
+NJDOT      New Jersey Department of Transportation
+NJMVC      New Jersey Motor Vehicle Commission
+N.J.S.A.   New Jersey Statutes Annotated
+OS/OW      oversize/overweight
+USC        United States Code
+
+
+
+
+                                                                             5
+               Commercial Vehicle Size and Weight Guidebook |
+
+
+
+
+This page is intentionally left blank.
+
+
+
+
+                                                           7
+| New Jersey Department of Transportation
+
+
+1     INTRODUCTION
+
+1.1     ABOUT THIS DOCUMENT
+This guidebook is intended to provide information on New Jersey’s
+commercial vehicle size and weight laws, as well as information on the
+permitting process for vehicles that exceed size and weight limitations
+outlined in state statute, in a simple, user-friendly format.
+This guidebook is not a substitute for state statute or regulation. For your
+convenience, the guidebook contains a number of references to sections of
+New Jersey Regulations and Statutes throughout the text. Please refer to
+these documents for legal guidance. The documents can be found at the
+following locations:
+
+•     The New Jersey DOT Permit Website: https://nj.gotpermits.com
+
+•     The New Jersey Office of Legislative Services:
+      https://www.njleg.state.nj.us/office-of-legislative-services.
+1.2     FREQUENTLY ASKED QUESTIONS (FAQ)
+This guidebook can be used to help answer some frequently-asked
+questions from the motor carrier community. These questions are listed
+below.
+What are the dimensional limitations for specific truck and truck-trailer
+configurations? There are limits to the width, height, and length of vehicles
+and loads operating in the State of New Jersey. Section 2.1 of this
+guidebook provides specific limits for common configurations and
+exceptions. A vehicle or vehicle combination exceeding these limits may
+apply for a permit.
+What weight limits apply in New Jersey? There are limits to the weight
+that can be carried on each axle. Detailed information on these weight limits
+is available in Section 2.2 of this guidebook. A vehicle or vehicle
+combination exceeding these limitations may apply for a permit.
+If I have an overdimensional or overweight load, how can I move that
+load in New Jersey? A vehicle combination exceeding the size and weight
+limits may apply for a permit. Available permit types and fees are specified
+in Section 3 of this guidebook.
+
+8
+                                  Commercial Vehicle Size and Weight Guidebook |
+
+
+
+What is the difference between a divisible load and a non-divisible
+load? In order to obtain an OS/OW permit, the vehicle, or load being carried
+must be “non-divisible.” A “non-divisible” load is a load that cannot be
+dismembered, dismantled or divided in such a manner, so that the weight
+and dimensional limitations are not exceeded. More information and
+examples of divisible and non-divisible loads are provided at the beginning
+of Section 3.
+What types of permits are available? There are four types of permits
+available for moving overdimensional and/or overweight loads in New
+Jersey. In addition, there are three types of emergency permits available
+under specific state and/or Federal state-of-emergency declarations.
+Section 3 lists and describes all of these permits.
+What permits are available during emergencies? When are emergency
+permits valid? There are three emergency permit types available under
+certain conditions. The three types are listed in Section 3.5’s Figure 1 and
+described in more detail in Section 3.5 of this guidebook.
+How do I obtain permits? The New Jersey Department of Transportation
+issues permits on behalf of the New Jersey Motor Vehicle Commission.
+More information about obtaining permits can be found in Section 4 of this
+guidebook and on NJDOT’s permits website, http://nj.gotpermits.com.
+Do I need special insurance in order to haul overdimensional or
+overweight loads? Yes. As described in Section 5.1 obtaining a permit
+does not serve as a defense against civil action for damages caused by a
+motor carrier. Also, there are insurance coverage thresholds that permit
+applicants must meet, which are detailed in Section 5.2 of this guidebook.
+Do I need to have an escort? As detailed in Section 5.5, operation under
+an OS/OW permit will require the accompaniment of escort vehicles when
+operating at night and/or when the permitted dimensions exceed certain
+thresholds. These requirements are stated on the permit.
+What safety apparatus (e.g., signs, flags, lights, etc.) are required?
+Sections 5.6, 5.7, and 5.8 of this guidebook provide detailed descriptions of
+requirements regarding signage, overhang load placement, warning flags,
+lamps and reflective devices.
+
+
+
+                                                                              9
+| New Jersey Department of Transportation
+
+
+Are there special vehicle registrations required for certain equipment
+types? Yes. The New Jersey Motor Vehicle Commission (MVC) has
+different registration requirements for various commercial vehicle
+operations. These requirements are outlined in various MVC Registration
+Codes. Additional information regarding regulations for common
+commercial vehicle codes is provided in Section 6 and all other registration
+codes and associated fees can be found on MVC’s website at:
+https://www.nj.gov/mvc/vehicles/commvehinfo.htm.
+If I’m moving a load that crosses state lines into another state, do I
+have to comply with the rules in that state? Where can I find more
+information about size and weight regulations in neighboring states?
+The New Jersey Department of Transportation (DOT) issues permits that
+are valid on state routes in New Jersey. New Jersey DOT does not issue
+permits on behalf of other states or bi-state authorities. Applicants must
+apply for permits in other states that cover trips to, from, or within those
+jurisdictions. Section 7 provides links to permitting information available from
+agencies in surrounding states and to the Federal Motor Carrier Safety
+Administration.
+Can I use a New Jersey permit on the New Jersey Turnpike, Garden
+State Parkway south of Exit 105, or Atlantic City Expressway? Permits
+may not be used on these facilities without the express approval of the
+tolling authority.
+Where can I find more information and answers to more questions
+about obtaining and operating with permits in New Jersey? Go to New
+Jersey DOT’s permitting website, http://nj.gotpermits.com.
+
+
+
+
+10
+                                    Commercial Vehicle Size and Weight Guidebook |
+
+
+
+1.3     KEY UPDATES AND CHANGES SINCE THE 2017 GUIDEBOOK
+This guidebook updates NJDOT’s guidance on size and weight limits and
+permitting in the State of New Jersey. This guidance differs from the
+previous guidebook, which was published in 2017, in the following ways:
+
+•     Federal law considers fluid milk to be a non-divisible load, and thus
+      eligible for overweight permits, as explained in Section 3;
+
+•     Federal law has updated size and weight limits for several vehicle
+      and combination types, including:
+          o   Vehicle and overhang lengths for stinger steered automobile
+              transporters;
+          o   Weight and allowable transport provisions for covered heavy
+              duty tow and recovery vehicles;
+          o   Weight limits for emergency vehicles; and
+          o   Weight limits for natural gas vehicles.
+
+•     This version of the guidebook provides new narrative text and a
+      summary table explaining the different types of emergency hauling
+      permits that are available, and the situations in which each can be used.
+
+•     This version of the guidebook includes revised text clarifying Code
+      23 trailer permit applicability/types.
+
+•     This version of the guidebook includes other minor edits to improve
+      clarity and readability.
+
+•     The companion Reference Guide was transformed from a tri-fold
+      brochure to a wall-sized map with guidance information.
+
+
+
+
+                                                                               11
+| New Jersey Department of Transportation
+
+
+2     LEGAL SIZE AND WEIGHT LIMITS
+
+Any vehicle, and vehicle combination, operating on any public road, street
+or highway or any public or quasi-public property within the State of New
+Jersey must operate within the size and weight limitations outlined in Title
+39 of the New Jersey Statutes, Motor Vehicles and Traffic Regulation,
+specifically N.J.S.A. 39:3-84—Vehicles, dimensional, weight limitations;
+routes, certain; prohibited. A vehicle or combination of vehicles
+transporting a load exceeding these dimensions in any respect
+requires a special permit for movement over on any public road,
+street or highway or any public or quasi-public property within the
+State of New Jersey.
+Further information on these permits can be found in Section 3 of this
+guidebook. The definitions for vehicle, and combinations of vehicles are
+as follows:
+
+•     A “vehicle” includes, but is not limited to, commercial motor vehicles,
+      trucks, truck tractors, tractors, and road tractors.
+
+•     A “combination of vehicles” includes, but is not limited to, vehicles as
+      heretofore designated, when those vehicles are the drawing or power
+      unit of a combination of vehicles and motor-drawn vehicles, such as,
+      but not limited to, trailers, semitrailers, or other vehicles.
+2.1     SIZE LIMITATIONS
+This section describes the maximum dimensional limits for width, height and
+length for any vehicle or combination of vehicles, including load or contents
+or any part or portion thereof, found or operated on any public road, street
+or highway or any public or quasi-public property in this State.
+
+
+
+
+12
+                                      Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.1.1    Width—N.J.S.A. 39:3-84.a(1)
+
+ Width         96 inches on routes that are not National Network or NJ
+               Access Routes
+
+               102 inches on National Network and NJ Access Routes
+
+
+
+
+Overall width is defined as the distance between the widest points of the
+vehicle or combination of vehicles, inclusive of the load. As the diagram
+above shows, the maximum width of a commercial vehicle traveling within
+the State of New Jersey is 102 inches (or 8 feet 6 inches). In some
+instances, rules and regulations may be promulgated for those public roads,
+streets or highways or public or quasi-public property in this State, where it
+is determined that the interests of public safety and welfare require the
+maximum outside width be no more than 96 inches.
+A complete list of route designations, including the 102-inch truck route
+network can be found on the New Jersey DOT website at
+https://www.state.nj.us/transportation/freight/trucking/pdf/largetruckmap.pdf.
+
+
+
+
+                                                                                 13
+| New Jersey Department of Transportation
+
+
+2.1.2     Height—N.J.S.A. 39:3-84.a(2)
+
+ Height        13 feet, 6 inches
+
+
+
+
+Overall height is defined as the distance from the ground to the highest point
+of the vehicle, inclusive of the load. The maximum height of any commercial
+vehicle or combination of vehicles, including load or contents of any part or
+portion thereof, traveling within the State of New Jersey is 13’-6” on all
+highways, except as otherwise identified, as shown in the height diagram
+above.
+
+
+
+
+14
+                                  Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.1.3    Length
+
+ Truck                               50 feet
+ Truck-Semitrailer Combinations      62 feet
+ Truck-Trailer Combinations          62 feet
+ Maxi-Cube Vehicles                  34 feet for each cargo box,
+                                     60 feet from front of first cargo box to
+                                     rear of second cargo box
+                                     65 feet overall combination vehicle
+ Trailers and Semitrailers           53 feet on National Network and
+                                     access routes
+                                     48 feet on other routes
+                                     41 feet kingpin to center of rear axle
+ Trailers with Non-Divisible         63 feet
+ Loads
+ Saddlemount and Saddlemount         75 feet on the National Network and
+ with Fullmount Combinations         reasonable access routes
+ Tandem Trailer Combinations         28 feet for each trailer in the
+                                     combination
+ Automobile Transporters             65 feet overall length, 3 feet front
+                                     overhang, 4 feet rear overhang
+ Stinger-Steered Automobile          80 feet overall length, 4 feet front
+ Transporters                        overhang, 6 feet rear overhang
+ House Type Trailers                 35 feet for a single unit
+                                     45 feet for a towing vehicle and
+                                     semi-trailer combination
+                                     50 feet for a towing vehicle and
+                                     trailer combination
+ Towaway Trailer Transporter         82 feet
+ Combination
+
+
+                                                                              15
+| New Jersey Department of Transportation
+
+
+Overall length is defined as the distance from the front of the vehicle to the
+back of the vehicle, inclusive of the load. The maximum length of a
+commercial vehicle traveling within the State of New Jersey varies by
+configuration type. A summary of maximum lengths is provided in the table
+on the previous page and in the Reference Guide that accompanies this
+guidebook. The Reference Guide is available at https://nj.gotpermits.com.
+2.1.3.1    Truck—N.J.S.A. 39:3-84.a(3)
+
+
+
+
+A truck is defined as a motor vehicle designed, used or maintained for the
+transportation of property. The maximum length of a truck, as shown in the
+diagram above, is:
+
+•    Vehicle Length = 40’ on all highways.
+
+•    Length = 50’ when transporting non-divisible loads such as poles,
+     piling, structural units, or other articles which cannot be dismembered,
+     divided, or dismantled.
+
+
+
+
+16
+                                  Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.1.3.2   Truck-Semitrailer Combinations—N.J.S.A. 39:3-84.a(3);(4)
+
+
+
+
+The maximum length for truck-semitrailer vehicle combination, as shown in the
+diagram above, is 62’ on all highways.
+2.1.3.3   Truck-Trailer Combinations—N.J.S.A. 39:3-84.a(3)
+
+
+
+
+The maximum length for truck-trailer vehicle combination, as shown in the
+diagram above, is 62’ on all highways.
+
+
+
+
+                                                                             17
+| New Jersey Department of Transportation
+
+
+2.1.3.4    Maxi-Cube Vehicles—23 CFR § 658.13(e)(4)
+
+
+
+
+Maxi-cube vehicles are combination vehicles consisting of a straight truck
+and a trailing unit, both of which are designed to carry cargo. The truck has
+a detachable or permanently mounted cargo box which may be loaded or
+unloaded through the trailing semitrailer or trailer.
+In order to qualify as a maxi-cube vehicle under 23 Code of Federal
+Regulations (CFR) 658.13(e)(4), neither cargo box may exceed 10.36 m (34
+feet) in length, excluding the drawbar or hitching device; the distance from
+the front of the first to the rear of the second cargo box may not exceed
+18.29 m (60 feet), including the space between them; and the overall length
+of the combination vehicle may not exceed 19.81 m (65 feet), including the
+space between the cargo boxes. These maximum lengths are shown in the
+diagram above.
+
+
+
+
+18
+                                  Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.1.3.5   Truck Tractor-Trailer/Semitrailer     Combination—23        CFR     §
+          658.13(b)(3)
+
+
+
+
+A truck tractor is defined as a motor vehicle designed and used primarily for
+drawing other vehicles and not constructed as to carry a load other than a
+part of the weight of the vehicle and load drawn.
+There is no maximum overall length for a truck tractor-trailer/semitrailer
+combination on highways in the State of New Jersey, as the diagram of a
+tractor-trailer/semitrailer above shows. However, there are maximum
+lengths for trailers and semitrailers, specified in Section 2.1.3.6.
+
+
+
+
+                                                                             19
+| New Jersey Department of Transportation
+
+
+2.1.3.6    Trailers and Semitrailers—N.J.S.A. 39:3-84.a(4)
+A trailer is defined as a vehicle with or without motive power, designed for
+carrying persons or property and for being drawn by a motor vehicle and so
+constructed that no part of its weight rests upon the towing vehicle. This
+definition does not include pole trailers.
+A semitrailer is defined as a vehicle with or without motive power, other than
+a pole trailer, designed for carrying persons or property and for being drawn
+by a motor vehicle and so constructed that some part of its weight and that
+its load rests upon or is carried by another vehicle.
+
+
+
+
+As the diagram above shows, the maximum length of a trailer/semitrailer or
+trailer combination is 48 feet overall when configured in the following
+combinations:
+
+•    Truck/trailer.
+
+•    Truck/semi-trailer.
+
+•    Trailer combination.
+
+
+
+
+20
+                                      Commercial Vehicle Size and Weight Guidebook |
+
+
+
+
+As the diagram above shows, the maximum length of a semitrailer shall not
+exceed 53 feet when operated as part of a combination of vehicles
+consisting of one motor-drawn vehicle and a drawing or power unit vehicle.
+Semitrailers greater than 48 feet in length but not more than 53 feet in
+length must be transported using the National Network unless seeking
+food, fuel, rest, repairs or to reach a terminal by the direct route (that is, the
+shortest travel distance). Upon completing each trip, the large truck should
+return to the National Network in a manner consistent with reaching its
+next terminal. Trips off of the National Network or the New Jersey Access
+Network onto all other local unrestricted roadways should only be for the
+purpose of accessing a terminal on those roadways, by the shortest
+distance.
+The National Network, and 102” Truck Route Network can be found on the
+New Jersey DOT website at:
+https://www.state.nj.us/transportation/freight/trucking/pdf/largetruckmap.pdf.
+
+
+
+
+                                                                                 21
+| New Jersey Department of Transportation
+
+
+For trailers that are greater than 48’, and up to 53’ in length, the distance
+between the kingpin and the center of the rear axle cannot exceed 41’,
+as shown in the diagram below.
+
+
+
+     1
+                                                                      2
+
+
+
+
+1
+     The kingpin of the trailer shall not be set back further than 3.5 feet
+     from the front of the semitrailer
+2
+     Measured from the center of the rear tandem axles to the rear of the
+     semitrailer shall not exceed 35% of the semitrailer’s wheelbase
+
+
+
+
+When transporting non-divisible loads such as poles, piling, structural
+units, or other articles which cannot be dismembered, divided, or
+dismantled, the maximum trailer length is 63’, as the diagram above
+shows.
+
+
+
+
+22
+                                      Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.1.3.7    Saddlemount and Saddlemount with Fullmount Combinations—
+           N.J.S.A. 39:3-84a(5)
+Saddlemount and saddlemount with fullmount combinations consist of a
+truck tractor towing other vehicles. The front axle of each towed vehicle is
+mounted on top of the frame of the vehicle in front. A fullmount is a vehicle
+mounted entirely on the frame of the first or last vehicle in the combination
+(the automobile in the two saddlemount diagrams below is fully mounted).
+States must allow the towing vehicle to pull at least three other vehicles
+and the combination to have a 22.86 m (75-foot) minimum overall length
+on the National Network and reasonable access routes. This
+configuration is shown in the “Three Saddlemount Combination” diagram
+below.
+The National Network, and 102” Truck Route Network can be found on the
+New Jersey DOT website at:
+https://www.state.nj.us/transportation/freight/trucking/pdf/largetruckmap.pdf.
+
+
+
+
+No combination of vehicles will exceed two drawn vehicles and a power unit
+in intrastate operation off of the National Network (two saddle mounts), as
+shown in the diagram below. (Also see N.J.S.A. 39:4-54)
+
+
+
+
+                                                                                 23
+| New Jersey Department of Transportation
+
+
+2.1.3.8    Tandem Trailer Combinations—N.J.S.A. 39:3-84.a(6)
+The maximum overall length of tandem trailers, which are the trailers in
+double-trailer truck combinations, shall not exceed 28 feet for each trailer in
+the combination, as the “Tandem Trailer” diagram below shows. This
+limitation does not apply to any vehicle or combination of vehicles designed,
+built and utilized solely to transport other motor vehicles. Tandem trailers
+may lawfully operate on routes designated by the Commissioner of
+Transportation. Those routes are shown on the New Jersey Large Truck
+Map, available at:
+https://www.state.nj.us/transportation/freight/trucking/pdf/largetruckmap.pdf.
+
+
+
+
+2.1.4     Vehicle Size Limit Exceptions
+There are some exceptions to the dimensional limitations set forth in New
+Jersey Statute. They are either outlined in the statutes themselves or in
+N.J.A.C. These exceptions are listed in the following three sub-sections.
+
+
+
+
+24
+                                    Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.1.4.1   Automobile Transporters—N.J.A.C. 13:20-38; N.J.S.A. 39:3-
+          84a(10)
+Automobile transporters are defined as any vehicle combination designed
+and used specifically for the transport of assembled (capable of being
+driven) highway vehicles. The two primary types are the “traditional
+automobile transporter” and the “stinger-steered combination.”
+
+
+
+
+                                        Traditional Automobile Transporter
+
+A traditional automobile transporter is defined as an automobile transporter
+wherein the fifth wheel hitch is located on the frame of the truck tractor over
+the rear axle(s) of said truck tractor. The maximum length for a traditional
+automobile transporter, as shown in the diagram above, is 65’ exclusive of
+the load (overhang is limited to 3’ in the front and 4’ in the rear).
+
+
+
+
+A stinger-steered combination is defined as an automobile transporter
+consisting of a truck tractor semitrailer wherein the fifth wheel hitch is located
+on a drop frame located behind and below the rearmost axle of the power
+unit. The maximum length for a stinger-steered automobile transporter, as
+specified in N.J.A.C. 13:18-1.2(i) and shown in the diagram above, is 80’
+exclusive of the load (overhang is limited to 4’ in the front and 6’ in the rear).
+
+                                                                               25
+| New Jersey Department of Transportation
+
+
+2.1.4.2    House Type Trailers—N.J.S.A. 39:3-8
+The maximum dimensions for a non-recreational private utility or house-type
+trailer are as follows:
+
+•    Width = 8’.
+
+•    Height = 13’-6”.
+
+•    Length = 35’ for a single unit.
+
+•    Length = 45’ overall for a towing vehicle-semitrailer combination.
+
+•    Length = 50’ overall for a towing vehicle-trailer combination.
+A house type trailer vehicle, or vehicle combination, exceeding these
+limitations may apply for a permit. Further information on oversize permits
+can be found in Section 3 of this guidebook.
+2.1.4.3    Towaway Trailer Transporter Combination—49 CFR § 31111(a)
+Section 5523 of the Fixing America’s Surface Transportation Act (FAST Act)
+amended 49 CFR § 31111(a) to include the term “towaway trailer
+transporter combination," which means a combination of vehicles consisting
+of:
+
+•    A trailer transporter towing unit (which means a power unit that is not
+     used to carry property when operating in a towaway trailer transporter
+     combination).
+
+•    Two (2) trailers or semitrailers with a total weight that does not exceed
+     26,000 pounds; and in which the trailers or semitrailers carry no
+     property and constitute inventory property of a manufacturer,
+     distributor, or dealer of such trailers or semitrailers.
+Federal law does not allow an overall length limitation of less than 82 feet
+on a towaway trailer transporter combination. [49 CFR § 31111(b)(1)(H)].
+N.J.A.C. 13:18-1.2(j) specifies that a permit is required if the length of such
+a combination exceeds 82 feet.
+
+
+
+
+26
+                                  Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.2     WEIGHT LIMITATIONS
+The maximum vehicle weights for vehicles, and combinations of vehicles,
+operating within the State of New Jersey are detailed in N.J.S.A. 39-3-84b.
+A vehicle, or vehicle combination, exceeding these limitations may apply for
+a permit. Further information on oversize permits can be found in Section 3
+of this guidebook.
+2.2.1    Single Axle—N.J.S.A. 39:3-84b(3)
+
+
+
+
+A single axle is defined as an individual axle whose axle center is spaced
+more than 96’’ from the center of the next axle, as shown in the diagram
+above. A group of axles whose axle centers are spaced less than 40’’ apart
+also are considered a single axle for purposes of weight allowance. The
+maximum weight allowed on a signle axle is 22,400 lbs.
+
+
+
+
+                                                                             27
+| New Jersey Department of Transportation
+
+
+2.2.2    Groups of Two or More Axles—N.J.S.A. 39:3-84b(5)
+The maximum weight allowed on groups of two or more axles is determined
+by the Federal Bridge Formula. This is done to ensure that they meet
+Federal weight limit requirements to prevent severe overstressing of
+highway bridges. The Federal Bridge Formula is:
+                                        𝑳𝑳𝑳𝑳
+                         𝑾𝑾 = 𝟓𝟓𝟓𝟓𝟓𝟓 �        + 𝟏𝟏𝟏𝟏𝑵𝑵 + 𝟑𝟑𝟑𝟑�
+                                      𝑵𝑵 − 𝟏𝟏
+
+Where:
+
+•    W = The overall gross weight on any group of two or more consecutive
+     axles to the nearest 500 pounds.
+
+•    L = The distance in feet between the outer axles of any group of two or
+     more consecutive axles; and
+
+•    N = The number of axles in the group under consideration.
+This formula is used to determine the maximum weight allowed on all multi-
+axle groups including tandem axle, tri-axle quads, etc. as well as the inner-
+bridge and overall gross vehicle weight.
+
+
+
+
+The inner-bridge is defined as the distance from the center of the second
+axle to the center of the last axle of a vehicle, or combination or vehicles, as
+shown in the diagram above. This is an often-overlooked axle group that is
+subject to weight limits as calculated using the Federal Bridge Formula.
+While the maximum weight allowed on a tandem axle group as well as the
+maximum overall gross vehicle weight is determined by the Federal
+Bridge Formula, they both have maximum values outlined in the law.
+
+28
+                                  Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.2.2.1   Tandem Axles—N.J.S.A. 39:3-84b(2)
+
+
+
+
+A tandem axle is defined as consecutive axles of a vehicle or combination
+of vehicles where the difference between axle centers is 40’’ or more, but
+no more than 96’’ apart, as shown in the diagram above. The maximum
+weight allowed on axle group of this type is 34,000 lbs.
+2.2.2.2   Gross Vehicle Weight—N.J.S.A. 39:3-84b(4)
+
+
+
+
+The gross vehicle weight is defined as a vehicle or combination of vehicles,
+including load or contents. The maximum overall gross weight of a vehicle
+is 80,000 lbs., as shown in the diagram above.
+NOTE: Compliance with bridge formula weight limits may require axle
+weights lower than the standard weight limits of 34,000 pounds for a tandem
+axle set and a gross weight lower than the standard 80,000-pound limit.
+Table 1 summarizes the weight allowances calculated by the Federal Bridge
+Formula as outlined in N.J.S.A. 39:3-84b(5). It shows the maximum gross
+weights of two or more consecutive axles of any vehicle or combination of
+vehicles, including the load or contents. Column L corresponds to the
+
+
+                                                                             29
+| New Jersey Department of Transportation
+
+
+respective distance, in feet, between the axle centers of the first and last
+axles among the consecutive axles under consideration; except that in
+addition to the weights specified in that Table, two consecutive sets of
+tandem axles may carry a gross weight of 34,000 pounds each if the overall
+distance between the first and last axles of the consecutive sets of tandem
+axles is 36 feet or more. The gross weight of each set of tandem axles shall
+not exceed 34,000 pounds and the combined gross weight of the two
+consecutive sets of tandem axles shall not exceed 68,000 pounds. The cells
+highlighted in colors correspond to the diagrams of vehicles and vehicle
+combinations that follow the table.
+These weight limitations apply on any highway in New Jersey which
+designated as part of the National Interstate System, as provided at 23
+U.S.C. 103(c).
+
+
+
+
+30
+                               Commercial Vehicle Size and Weight Guidebook |
+
+
+
+TABLE 1    FEDERAL BRIDGE FORMULA CHART
+
+L (feet)   2 Axles   3 Axles   4 Axles     5 Axles     6 Axles    7 Axles
+9          39,000    42,500
+10         40,000    43,500
+11                   44,000
+12                   45,000    50,000
+13                   45,500    50,500
+14                   46,500    51,500
+15                   47,000    52,000
+16                   48,000    52,500      58,000
+17                   48,500    53,500      58,500
+18                   49,500    54,000      59,000
+19                   50,000    54,500      60,000
+20                   51,000    55,500      60,500      66,000
+21                   51,500    56,000      61,000      66,500
+22                   52,500    56,500      61,500      67,000
+23                   53,000    57,500      62,500      68,000
+24                   54,000    58,000      63,000      68,500      74,000
+25                   54,500    58,500      63,500      69,000      74,500
+26                   55,500    59,500      64,000      69,500      75,000
+27                   56,000    60,000      65,000      70,000      75,500
+28                   57,000    60,500      65,500      71,000      76,500
+29                   57,500    61,500      66,000      71,500      77,000
+30                   58,500    62,000      66,500      72,000      77,500
+31                   59,000    62,500      67,500      72,500      78,000
+32                   60,000    63,500      68,000      73,000      78,500
+33                             64,000      68,500      74,000      79,000
+34                             64,500      69,000      74,500      80,000
+35                             65,500      70,000      75,000      80,500
+
+
+
+                                                                            31
+| New Jersey Department of Transportation
+
+
+
+ L (feet)     2 Axles     3 Axles     4 Axles   5 Axles   6 Axles   7 Axles
+ 36                                    66,000   70,500    75,500    81,000
+ 37                                    66,500   71,000    76,000    81,500
+ 38                                    67,500   71,500    77,000    82,000
+ 39                                    68,000   72,500    77,500    82,500
+ 40                                    68,500   73,000    78,000    83,500
+ 41                                    69,500   73,500    78,500    84,000
+ 42                                    70,000   74,000    79,000    84,500
+ 43                                    70,500   75,000    80,000    85,000
+ 44                                    71,500   75,500    80,500    85,500
+ 45                                    72,000   76,000    81,000    86,000
+ 46                                    72,500   76,500    81,500    87,000
+ 47                                    73,500   77,500    82,000    87,500
+ 48                                    74,000   78,000    83,000    88,000
+ 49                                    74,500   78,500    83,500    88,500
+ 50                                    75,500   79,000    84,000    89,000
+ 51                                    76,000   80,000    84,500    89,500
+ 52                                    76,500   80,500    85,000    90,500
+ 53                                    77,500   81,000    86,000    91,000
+ 54                                    78,000   81,500    86,500    91,500
+ 55                                    78,500   82,500    87,000    92,000
+ 56                                    79,500   83,000    87,500    92,500
+ 57                                    80,000   83,500    88,000    93,000
+ 58                                             84,000    89,000    94,000
+ 59                                             85,000    89,500    94,500
+ 60                                             85,500    90,000    95,000
+Note: Weights highlighted in gray exceed the Federal gross vehicle weight
+limit of 80,000 pounds on the Interstate System.
+
+
+
+
+32
+                                Commercial Vehicle Size and Weight Guidebook |
+
+
+
+Using the Federal Bridge Formula Chart in Table 1, the maximum allowable
+weight and axle spacing for common vehicle configurations include:
+
+
+
+
+                                                                           33
+| New Jersey Department of Transportation
+
+
+2.2.3     Special Weight Limit Provisions Detailed in the FAST Act
+The FAST Act of 2015 amended 23 U.S.C. § 127 with respect to the weight
+limits and other provisions for several vehicle and/or load types on the
+Interstate System, including covered heavy-duty tow and recovery vehicles,
+emergency vehicles, and vehicles fueled by natural gas. Details are
+provided as follows.
+2.2.3.1    Covered Heavy-Duty Tow and Recovery Vehicles—N.J.A.C.
+           13:18-1.2(e)
+The FAST Act defines a “Covered Heavy-Duty Tow and Recovery Vehicle"
+on the Interstate System as a vehicle that is transporting a disabled vehicle
+from the place where the vehicle became disabled to the nearest
+appropriate repair facility; and has a gross vehicle weight that is equal to or
+exceeds the gross vehicle weight of the disabled vehicle being transported.
+The weight limitations under 23 U.S.C. § 127 do not apply to a covered
+heavy-duty tow and recovery vehicle. [23 U.S.C. § 127(m)].
+Off of the Interstate System, N.J.S.A. 39:3-84(c) states that a heavy-duty
+tow truck, as defined in section 1 of P.L.1999, c.396 (C.39:3-84.6), is
+allowed, in combination with the towed unit or units, to exceed the axle,
+dimensional and maximum gross weight limits for tow trucks and towed unit
+combinations; except that the limit shall not exceed 150,000 pounds gross
+combined weight. This provision shall not affect the application of section 6
+of P.L.1950, c.142 (N.J.S.A.39:3-84.4) concerning driver liability for
+damages and does not provide an exemption to exceed the height and
+weight restrictions marked or posted on a bridge or overpass in the State.
+The vehicle combination may not travel on the public highways more than
+75 miles from the point where such disablement occurred. If the disablement
+occurred on a limited access highway, the distance to the nearest exit of
+such highway shall be added to the 75-mile limitation.
+A heavy-duty tow truck may not exceed 45 miles per hour when operating
+in combination with the towed unit or units at a combined weight more than
+80,000 pounds, or when one or more of its axles exceeds the limitations
+prescribed in Table 1, or the tow truck in combination with the towed unit
+exceeds maximum length and width standards as prescribed by law.
+
+
+
+34
+                                   Commercial Vehicle Size and Weight Guidebook |
+
+
+
+2.2.3.2   Emergency Vehicles FAST Act—23 U.S.C. § 127(r)
+On the Interstate system, a state shall not enforce against an emergency
+vehicle a vehicle weight limit (up to a maximum gross vehicle weight of
+86,000 pounds) of less than—24,000 pounds on a single steering axle;
+33,500 pounds on a single drive axle; 62,000 pounds on a tandem axle; or
+52,000 pounds on a tandem rear drive steer axle. An "emergency vehicle"
+means a vehicle designed to be used under emergency conditions: to
+transport personnel and equipment; and to support the suppression of fires
+and mitigation of other hazardous situations. [23 U.S.C. § 127(r)].
+2.2.3.3   Natural Gas Vehicles—N.J.A.C. 13:18-1.2(g)
+On the Interstate system, a vehicle, if operated by an engine fueled primarily
+by natural gas, may exceed any vehicle weight limit (up to a maximum gross
+vehicle weight of 82,000 pounds) under 23 U.S.C § 127, by an amount that
+is equal to the difference between: the weight of the vehicle attributable to
+the natural gas tank and fueling system carried by that vehicle; and the
+weight of a comparable diesel tank and fueling system. [23 U.S.C. § 127(s)].
+N.J.S.A. 39:3-84.1(d) has been updated to incorporate this provision.
+
+
+
+
+                                                                              35
+| New Jersey Department of Transportation
+
+
+3      SIZE AND WEIGHT PERMIT TYPES AND FEES
+
+TABLE 2         PERMIT FEES
+
+         Permit Type                                   Fee
+      Single-Trip OS/OW       $10 permit fee + $1 for every 1’ (or fraction thereof)
+     Permit - Oversize Fee    > 14’ in width + $1 for every 1’ (or fraction thereof)
+                               > 63’ in trailer/load length for non-house trailers or
+                                   >70’ in trailer/load length for house trailers
+                                                          +
+                                $12 transaction fee and 5% (of total fee) service
+                                                       charge
+     Single-Trip OS/OW         $10 permit fee + $5 for every 2,000 lbs. > legal
+     Permit - Overweight                 axle, or gross, weight limits
+             Fee                                      +
+                               $12 transaction fee and 5% (of total fee) service
+                                                    charge
+    Code 23 Trailer Permit      $0 permit fee + any applicable oversize and/or
+    and/or Code 23 Route-                       overweight fees
+       Specific Permit                                   +
+                                  $12 transaction fee and 5% service charge
+                                                         +
+                               Annual trailer registration fee of $209.50 must be
+                              paid to NJMVC (see Note 1 below and Section 6.1)
+    Ocean Borne Container                      $100 permit fee
+       Permit (annual)                                 +
+                                $12 transaction fee and 5% (of total permit fee)
+                                                service charge
+      Emergency Permits          $0. There are no fees for emergency permits.
+Note 1: Some equipment types require registration with New Jersey Motor Vehicle
+Commission (MVC), including Code 23 trailers as noted in the table above.
+Registration fees for Code 23 trailers and other common equipment types are
+listed in Section 6. A list of MVC registration fees is available on MVC’s website at
+https://www.nj.gov/mvc/vehicles/commfees.htm.
+
+Note 2: A vehicle owned or operated by the United States, the State, or any
+government or local subdivision shall be charged only the transaction fee of $12
+plus a service charge of 5% of the total permit fee.
+
+
+
+
+36
+                                   Commercial Vehicle Size and Weight Guidebook |
+
+
+
+Any vehicle or combination of vehicles found or operated on any public road,
+street or highway or any public or quasi-public property in this State must
+operate within the size and weight limitations outlined in Title 39 of New
+Jersey State Statute, specifically N.J.S.A. 39:3-84, which were summarized
+in Section 2 of this guidebook.
+Any vehicle or combination of vehicles exceeding the limitations for width,
+height, length, or weight found or operated on any public road, street or
+highway or any public or quasi-public property in this State shall require the
+carrier to obtain an oversize/overweight (OS/OW) permit. These permits
+allow for a carrier hauling non-divisible loads to temporarily exceed size and
+weight limitations outlined in N.J.S.A. 39:3-84. The permit must be in the
+possession of the operator of the vehicle for which the permit was issued
+N.J.S.A. 39:3-84d(1) or (2). The authority to issue these permits is outlined
+in the New Jersey Administrative Code (N.J.A.C. 13:18).
+New Jersey does not issue permits on behalf of the South Jersey
+Transportation Authority for the Atlantic City Expressway and the New
+Jersey Turnpike Authority for the New Jersey Turnpike and the Garden
+State Parkway. Links to more information regarding size and weight limits
+and necessary permitting from these and other agencies in and surrounding
+New Jersey are available in Section 7 of this document.
+Any person driving any vehicle subject to and in excess of statutory weight
+limitations and permit requirements upon any highway or highway structure,
+whether temporary or permanent, shall be liable for all damage which the
+highway or highway structure may sustain as a result of any such operation.
+Damage may be recovered in a civil action brought by the authorities in
+control of such highway or highway structure. The fact that the vehicle
+causing the damage was being operated within the authorized size and
+weight limitations or permitted by a special permit shall not be accepted as
+a defense (N.J.S.A. 39:3-84.4).
+In order to obtain an OS/OW permit, the vehicle, or load being carried must
+be “non-divisible.” A “non-divisible” load is a load that cannot be
+dismembered, dismantled or divided in such a manner, so that the weight
+and dimensional limitations prescribed in N.J.S.A. 39:3-84 are not
+exceeded. This provision is outlined in N.J.A.C. 13:18-1.9.
+
+
+
+                                                                              37
+| New Jersey Department of Transportation
+
+
+Table 3 contains some examples of both non-divisible and divisible loads.
+Section 1409 of Fixing America’s Surface Transportation (FAST) Act of
+2015 and N.J.A.C. 13:18-1.2(d) have defined fluid milk as a non-divisible
+load.
+
+TABLE 3        EXAMPLES OF NON-DIVISIBLE AND DIVISIBLE LOADS
+
+     Examples of Non-Divisible Loads        Examples of Divisible Loads
+         (Permitting Available)              (Permitting Not Available)
+      Construction Equipment, Mobile/          Sand, Gravel, Garbage,
+       Modular Homes, Wind Power               Mulch, Fuel, Stone, etc.
+      Components, Large Generators,
+              Fluid Milk, etc.
+
+
+Loads that do not meet these criteria and can be broken down into loads of
+smaller sizes or weights, are considered divisible, and are not eligible for
+transport under an oversize/overweight permit in the State of New Jersey. All
+divisible loads must be hauled at legal size and weight as defined in
+N.J.S.A. 39-3-84.
+The one exception to this requirement is for sealed containers of the type
+commonly used for the conveyance of freight transportation in international
+oceangoing commerce, bearing the seal of the United States Custom
+Service, the seal of another governmental agency or the seal of the shipper.
+This exception is outlined in N.J.A.C. 13:18-1.2(c).
+There are four (4) different types of OS/OW permits available for hauling loads
+above legal size and weight limits. They are as follows:
+1. Single-Trip OS/OW Permit (5 day): Used for the transport of any
+   non-divisible OS/OW load.
+2. Code 23 Overdimensional Trailer Permit (Lifetime): Used for the
+   movement of an empty trailer exceeding eight feet in width, but not
+   over ten feet in width in combination with vehicles exceeding fifty-five
+   feet in length but not more than seventy feet in overall length. This
+   permit is valid for the life of the trailer, as long as the Code 23
+   registration remains valid.
+
+
+
+
+38
+                                Commercial Vehicle Size and Weight Guidebook |
+
+
+
+3. Code 23 Overweight/Overdimensional Route Specific Permit (30
+   day): Traditionally used for the transport of heavy construction
+   equipment or machinery. No excess weight fees apply.
+4. Ocean Borne Container Permit (Annual): Used for the transport of
+   sealed ocean borne containerized cargo.
+In addition, there are three (3) emergency hauling permit types available
+under certain emergency conditions.
+5. Emergency Hauling Permits, including:
+    a. Preplanned Non-divisible Load Emergency Permit
+    b. Unplanned Non-divisible Load Emergency Move Permit
+    c. Unplanned Divisible Load Emergency Move Permit (Federal
+       Declared Emergency Only)
+More details about each of these permit types are provided in the
+remainder of Section 3.
+
+
+
+
+                                                                           39
+| New Jersey Department of Transportation
+
+
+3.1      SINGLE-TRIP OS/OW PERMIT (5 DAY)
+A single-trip permit allows a carrier to haul a non-divisible load above legal
+size and/or weight limitations and is valid for a single trip within a period of
+five days. In the event the one-way trip cannot be completed within the valid
+life of the single-trip permit due to hazardous road conditions or vehicle
+breakdown, a one-day extension may be granted provided that the request
+is made to the DOT before the permit has expired. Permit restrictions are
+assigned based on requested dimensions and weights. The cost of a single-
+trip permit is specified in N.J.A.C. 13:18-1.6 and outlined in Table 4.
+TABLE 4           OVERSIZE AND OVERWEIGHT FEE STRUCTURES
+
+        Oversize Fee1               Overweight Fee           Transaction Fee
+                $10                        $10                      $12
+                 +                           +                       +
+         $1 for every 1’         $5 for every 2,000 lbs. >   5% of total cost of
+     (or fraction thereof) >       legal axle, or gross,          permit
+           14’ in width                weight limits
+                 +
+         $1 for every 1’
+     (or fraction thereof) >
+    63’ in trailer/load length
+1
+     There is an additional fee of $1 for every 1’ (or fraction thereof) >70’ in
+     Overall length for House related moves.
+
+Note that vehicles that are oversize and overweight are charged the
+  oversize fee(s) and overweight fee(s) outlined in Table 3.
+
+3.2      CODE 23 OVERDIMENSIONAL TRAILER PERMIT
+N.J.S.A. 39:4-26 (Code 23) allows for the registration of trailers or
+semitrailers used for the transportation of road building machinery, vehicles,
+traction engines, rollers, structural units incapable of dismemberment or
+other apparatus or machinery of unusual size or weight over the highway.
+This registration is available from the New Jersey Motor Vehicle
+Commission for a fee of $209.50 per year. This fee and fees for other
+equipment registrations are listed on NJMVC’s website, at
+https://www.nj.gov/mvc/vehicles/commfees.htm.
+
+
+
+
+40
+                                    Commercial Vehicle Size and Weight Guidebook |
+
+
+
+Upon receiving a Code 23 Registration (more information on registration is
+available in Section 6.1 of this guidebook) the trailer is eligible to apply for a
+Code 23 Overdimensional Trailer Permit. This permit is to be used on the
+roadways of this state to move either an empty Code 23 registered trailer
+that exceeds the dimensional limits set forth under N.J.S.A. 39:3-84(a), OR
+a Code 23 oversize trailer with a load that does not exceed 80,000 lbs. GVW
+or any of the weight limitations specified under N.J.S.A. 39:3-84(b). This
+permit is trailer specific and is valid statewide. This permit type is subject to
+the following conditions/limitations:
+1. Trailer can exceed 8 feet in width, but not more than 10 feet in width.
+   The load shall not exceed the dimensional limits of the trailer (as
+   described in Section 2.1).
+2. Truck/trailer combination exceeding 55 feet in length, but not more
+   than 70 feet, in overall length.
+3. Combined vehicle and cargo weight shall not exceed 80,000 lbs GVW
+   or any other weight limitations specified under 39:3-84(b).
+4. This permit is valid for the life of the trailer or as long as the Code
+   23 registration remains valid.
+5. This permit may be also used to cover the overdimensional permit
+   requirements when used in conjunction with a Code 23
+   Overweight/Oversize Route Specific Permit, described in Section 3.3,
+   when the vehicle falls within the dimensional limits specified in
+   conditions #1 through #3 above.
+This Code 23 Overdimensional Trailer Permit is considered invalid if any of
+the above conditions are not met. If any of the above conditions are not met,
+the carrier must apply for a Code 23 Overweight/Overdimensional
+Route Permit, described in Section 3.3, for each one-way trip and pay any
+associated excess size fees.
+There is no base fee for this permit, however it is subject to the standard
+transaction fee of $12 and 5% service charge as detailed in N.J.A.C. 13:18-
+1.6.
+
+
+
+
+                                                                               41
+| New Jersey Department of Transportation
+
+
+3.3     CODE 23 OVERWEIGHT/OVERDIMENSIONAL ROUTE
+        SPECIFIC PERMIT (30 DAY)
+A Code 23 Overweight/Oversize Route Specific Permit is a special permit
+category that is used for the transport of heavy construction or road building
+machinery that exceeds the weight, or weight and size limits, specified under
+N.J.S.A 39:3-84. This permit is to be used to transport overweight and
+overdimensional road building machinery, construction related equipment
+or any apparatus/machinery of unusual size or weight along or across a
+public roadway. These permits are primarily used for overweight loads but
+may be used to cover loads that are both overweight and overdimensional.
+In order to obtain this permit, the trailer must have a valid Code 23
+registration. Operation under this permit is subject to the requirements set
+forth in N.J.S.A. 39:4-26 and is limited to the hauling of a single piece of
+equipment.
+The permit is route specific, is valid for 30 days, and is subject to the
+standard transaction fee of $12 and 5% service charge detailed in N.J.A.C.
+13:18-1.6. No excess weight fees apply.
+This permit type is subject to the following conditions and limitations:
+1. This permit to be used in conjunction with a Code 23 registered trailer
+   (more information on Code 23 registration is available in Section 6.1
+   of this guidebook).
+2. This permit type is only available for those trailers hauling heavy
+   equipment/machinery as specified under N.J.S.A. 39:4-26.
+3. This permit is to be used to transport heavy machinery/equipment
+   when the combined weight of the vehicle and load exceeds any of the
+   weight limits specified under 39:3-84. No excess weight fees apply.
+4. This permit may also be applied when the following overdimensional
+   conditions exist with a loaded Code 23 registered trailer. Excess size
+   fees shall apply in each of these cases:
+      a. When the combination vehicle exceeds the dimensional limits (10
+         feet in width and/or 70 feet in overall length) described under the
+         Code 23 Overdimensional Trailer Permit described in Section 3.2.
+
+
+
+42
+                                    Commercial Vehicle Size and Weight Guidebook |
+
+
+
+      b. When the carrier does NOT possess a Code 23 Overdimensional
+         Trailer Permit described in Section 3.2.
+      c.    When the load exceeds the confines of the Code 23 registered
+            trailer, including width and/or length overhang.
+5. These permits are valid for non-Divisible loads only.
+6. These permits are route specific.
+7. These permits are valid for each one-way trip.
+8. These permits are valid for a period of 30 days.
+3.4        OCEAN BORNE CONTAINER PERMIT (ANNUAL)
+An Ocean Borne Container Permit can be obtained for a truck tractor
+semitrailer combination engaged in the overweight transportation of sealed
+containers of the type commonly used for the conveyance of freight
+transportation in international ocean-going commerce. Moves made under
+this permit type must be of legal dimensions and are subject to the weight
+limitations shown in Table 5.
+TABLE 5         OCEAN BORNE CONTAINER PERMIT WEIGHT
+                LIMITATIONS
+
+ Maximum                          Maximum                      Maximum
+ Gross Weight                   Tandem Weight               Tri-axle Weight
+ 90,000 lbs                        38,000 lbs                 56,400 lbs
+
+
+Individual vehicle(s) shall conform with the axle weight limitations set forth
+in N.J.S.A. 39:3-84, where the per axle weight limitation does not exceed
+38,000 lbs. for one tandem axle unit only in a truck tractor/semitrailer
+combination and the maximum tire load limit in N.J.A.C. 13:18-1.10(a)2.
+Additionally, this permit is valid on the state highway network with the
+exception of those structures that are listed as restricted on the permit itself.
+Ocean borne container permits must have a raised State seal, be in the
+possession of the driver or operator of the vehicle and are valid for a period
+of 365 days and have a fee of $100 plus $12 transaction fee and 5% service
+charge.
+
+
+
+                                                                               43
+| New Jersey Department of Transportation
+
+
+3.5     EMERGENCY HAULING PERMITS
+Certain events and conditions may result in an emergency situation or a
+formal emergency declaration by either the State of New Jersey or the
+Federal Government. For carriers needing to haul OS/OW loads to respond
+to these situations there is a set of emergency permits available to expedite
+operations. These permits are separate from the standard permit process
+and are only valid under emergency circumstances.
+Figure 1, below, summarizes the three types of emergency hauling permits
+and the situations in which they are available.
+FIGURE 1       TYPES OF EMERGENCY HAULING PERMITS
+
+      Preplanned Non-          •Preparation for emergency situations
+       Divisible Load
+      Emergency Permit         •Non-Divisible Loads
+
+
+      Unplanned Non-           •Emergency declared by the Governor of
+       Divisible Load           New Jersey
+      Emergency Move
+           Permit              •Non-Divisible Loads
+
+
+  Unplanned Divisible •Emergency declared by the President of
+ Load Emergency Move the United States
+        Permit        •Includes Divisible Loads
+
+
+3.5.1    Preplanned Non-Divisible Load Emergency Permit
+A Pre-Planned Non-Divisible Load Emergency Move Permit is a permit that
+is issued to carriers in order to transport an oversize/overweight non-
+divisible load along the roadways of this state in preparation for emergency
+situations only. These carriers usually transport equipment or provide a
+service in response to major unforeseen event/accident (such as train
+derailment, roadway/bridge collapse, storm response or utility outage). This
+permit is non-route specific and provides access to the statewide highway
+system only during these emergency situations. The operator must avoid
+the list of restricted structures associated with the requested vehicle load
+configuration when selecting a route to and from the emergency.
+
+
+44
+                                   Commercial Vehicle Size and Weight Guidebook |
+
+
+
+The list of restricted structures is associated only with the requested vehicle
+load configuration and is only valid for the axle loads and spacing defined in
+this permit. This list must be attached to this permit and carried with the
+vehicle. Failure to avoid these structures will invalidate this permit. This
+permit is valid for a period of one year and is not valid on toll roads. Under
+non-emergency conditions, the carrier must obtain a route specific Single
+Trip Permit.
+3.5.2   Unplanned Non-Divisible Load Emergency Move Permit
+An Unplanned Non-Divisible Load Emergency Move Permit is a special
+emergency permit type that allows for the transport of oversize/overweight
+non-divisible loads along the roadways of this state during a “State
+Declared State of Emergency.” This blanket permit is non-route specific
+and is only made available during a “State Declared State of Emergency” to
+allow for the quick movement of equipment or machinery within the state in
+response to an emergency event.
+The operator must avoid the list of restricted structures associated with this
+permit when selecting a route to and from the emergency. The list of
+restricted structures is associated only with the requested vehicle load
+configuration and is only valid for the axle loads and spacing defined in this
+permit. This list must be attached to this permit and carried with the vehicle.
+Failure to avoid these structures will invalidate this permit. This permit is
+valid only for the period of emergency declaration. Under non-emergency
+conditions, the carrier must obtain a route specific Single Trip Permit.
+3.5.3   Unplanned Divisible Load Emergency Move Permit (Federal
+        Declared Emergency Only)
+An Unplanned Divisible Load Emergency Move Permit (Federal Declared
+Emergency Only) is a special emergency permit type that allows for the
+transport of oversize/overweight divisible loads along the roadways of this
+state during a “Presidential Declared State of Emergency.” This blanket
+permit is non-route specific and is only made available during a “Presidential
+Declared State of Emergency” to allow for the quick movement of equipment
+or machinery into, out of, through or within the State in response to an
+emergency event. This permit allows for the movement of
+overweight/oversize divisible loads such as food, fuel, and relief supplies in
+support of emergency relief efforts.
+
+                                                                              45
+| New Jersey Department of Transportation
+
+
+The operator must avoid the list of restricted structures associated with this
+permit when selecting a route to and from the emergency. The list of restricted
+structures is associated only with the requested vehicle load configuration and
+is only valid for the axle loads and spacing defined in this permit. This list must
+be attached to this permit and carried with the vehicle. Failure to avoid these
+structures will invalidate this permit. This permit is valid only for the period of
+the Presidential Declared Emergency. Under non-emergency conditions, the
+carrier must obtain a route specific Single Trip Permit.
+
+4     HOW TO OBTAIN A PERMIT
+
+The New Jersey Department of Transportation (NJDOT) issues size and
+weight permits on behalf of the New Jersey Motor Vehicle Commission
+(MVC) for all oversize vehicles. Carriers may apply for permits online 24
+hours a day, 7 days a week, by visiting the Department’s permit website.
+Permits also can be obtained through a registered permit service
+company.
+For inquiries regarding emergency permits, and all general permitting
+support, please contact the Trucking Services Permit Office at (609) 963-
+2085. Staff will be available to assist you between the hours of 8:00 a.m.
+and 4:00 p.m. Eastern, Monday through Friday. You may also email
+inquiries to Superload.Permits@dot.nj.gov.
+4.1     OBTAINING ROUTE-SPECIFIC PERMITS
+When applying for a route-specific permit, such as a single-trip permit or
+route-specific Code 23 permit, the following information may be required
+(more information is available in N.J.A.C. 13:18-1.5):
+
+•     Name, address, email address, and telephone number of the permit
+      applicant.
+
+•     Carrier name and USDOT # (if applicable).
+
+•     Truck and trailer information, including, but not limited to, vehicle
+      identification number, vehicle plate, make, model, year, and the type of
+      vehicle combination.
+
+•     Load description.
+
+•     Overall dimensions (length, width, height).
+
+46
+                                   Commercial Vehicle Size and Weight Guidebook |
+
+
+
+•     Axle configuration and weight on each axle.
+
+•     Overall gross weight.
+
+•     Requested dates of travel.
+
+•     Requested routes of travel, including locations of the entrance to and
+      exit from the New Jersey State Highway System, including, but not
+      limited to, the Interstate highways, the New Jersey Turnpike, the
+      Garden State Parkway south of Exit 105, and the Atlantic City
+      Expressway.
+
+•     The name of the insurance provider, policy number, and expiration date.
+Once a route-specific permit application has been submitted to NJDOT it
+will be reviewed for acceptability of the route being used in conjunction with
+the vehicle’s load and axle configuration. Applications for single-trip permits
+will be rejected where the vehicle’s load and axle configuration overstress
+the structures being crossed on the anticipated route of travel. Rejected
+applications will identify the structures on the proposed route being
+overstressed. Applicants can either modify the vehicle’s load, weight over
+each axle or axle spacing to lessen the load impact or choose an alternative
+route.
+4.2     OBTAINING PERMITS THAT ARE NOT ROUTE-SPECIFIC
+As described in Section 3, ocean borne container permits, Code 23 trailer
+permits, and all three Emergency Permit types are not route-specific
+permits. When applying for these permits, the following information may be
+required (more information regarding Ocean Borne Container permits is
+available in N.J.A.C. 13:18-1.5):
+
+•     The name, address and telephone number of the permit applicant.
+
+•     Carrier name and USDOT # (if applicable).
+
+•     The name of the applicant's insurance provider and policy number
+      required pursuant to 13:18-1.7(b).
+To obtain permits for county, municipal, or toll roads in New Jersey, or to
+obtain permits in neighboring states or on facilities maintained by bi-state
+authorities, see the links provided in Section 7.
+
+
+
+                                                                              47
+| New Jersey Department of Transportation
+
+
+5     HOW TO OPERATE WITH A PERMIT
+
+Once a motor carrier obtains a permit, there are a number of requirements
+and conditions that must be met in order to operate safely and lawfully.
+Some requirements are uniform across all permitted vehicles while others
+vary depending on the size and weight of the vehicle/load being hauled
+under the permit. These requirements and conditions are outlined in
+Section 13, Chapter 18, Subchapter 1 of the New Jersey Administrative
+Code. In addition to these requirements the Motor Vehicle Commission
+reserves the right to designate the routes of travel, speed limits, exact day
+and time of operation, or to impose any other restrictions which may be
+necessary to minimize traffic delays or safety hazards.
+5.1    PERMIT LIABILITY—N.J.A.C. 13:18-1.7(a); N.J.S.A. 39:3-84.4
+Any person driving any vehicle subject to and in excess of statutory weight
+limitations and permit requirements upon any highway or highway structure,
+whether temporary or permanent, shall be liable for all damage which the
+highway or highway structure may sustain as a result of any such operation.
+Damage may be recovered in a civil action brought by the authorities in
+control of such highway or highway structure. The fact that the vehicle
+causing the damage was being operated within the authorized size and
+weight limitations or permitted by a special permit shall not be accepted as
+a defense.
+5.2    INSURANCE REQUIREMENTS—N.J.A.C. 13:18-1.7(b)
+An application for a permit shall not be accepted unless the applicant
+provides proof of coverage by insurance in the following minimum limits:
+1. $100,000 for bodily injury or death to any one person in any one
+   occurrence.
+2. $300,000 for bodily injury or death to two or more persons in any one
+   occurrence.
+3. $100,000 for damage to or destruction of property in any one
+   occurrence.
+The insurance policy shall contain a provision that there will be 10-day prior
+notice to the Motor Vehicle Commission in the event of cancellation or
+
+48
+                                    Commercial Vehicle Size and Weight Guidebook |
+
+
+
+termination of the insurance. Proof of insurance coverage must be in the form
+of an insurance certificate. This certificate must contain the following
+information:
+1. Name and address of insured.
+2. Policy number.
+3. Policy expiration date.
+4. Automobile coverage (meeting the aforementioned minimums).
+5. Vehicles covered under policy described.
+6. Ten-day cancellation clause.
+7. Agent’s signature.
+The filing of an insurance certificate shall not be required in the case of an
+oversize permit issued for the operation of a private utility, or house type
+trailer or semitrailer. In such cases, the provision of the Security-
+Responsibility Law will apply. (N.J.S.A. 39:6-23 et seq.)
+5.3     PERMIT CONDITIONS—N.J.A.C 13:18-1.9,10,11
+5.3.1    Oversize Permit Conditions – Time of Day
+Operation under an oversize permit is limited to the daytime hours of sunrise
+to sunset on any highway where clear space available for use by passing
+traffic is less than 10’, including roadway and improved shoulder. Operation is
+prohibited when visibility is less than 500’, and hazardous road conditions are
+present. In addition, an oversize permit shall not be valid when the vehicle or
+vehicle combination cannot be operated safely at a maximum speed of 40
+miles per hour.
+Lighted lamps are required any time from one half-hour after sunset to a
+half-hour before sunrise; whenever rain, mist, snow or other precipitation or
+atmospheric moisture requires the use of windshield wipers by motorists;
+and during any time when, due to smoke, fog, unfavorable atmospheric
+conditions or for any other cause there is not sufficient light to render clearly
+discernible persons and vehicles on the highway at a distance of 500 feet
+ahead.
+
+
+
+
+                                                                               49
+| New Jersey Department of Transportation
+
+
+5.3.2    Oversize Permit Conditions – Holidays
+Operation under an oversize permit is prohibited on the following holidays:
+
+•    New Year’s Day;                        • Labor Day and the Friday before
+                                              Labor Day;
+•    Memorial Day and the Friday
+     before Memorial Day;                   • Thanksgiving Day and the
+                                              Wednesday before Thanksgiving
+•    Independence Day;
+                                              Day; and
+
+                                            • Christmas Day.
+If the holiday falls on a Sunday, the operation shall not be permitted on the
+following Monday. If the holiday falls on a Saturday, the operation shall not
+be permitted on the preceding Friday.
+5.3.3    Notifying Authorities of High Vehicles or Loads
+When a permitted vehicle and/or load is in excess of 14’ in height it is the
+responsibility of the permittee to notify all Public Utility Companies, N.J.
+Department of Transportation, County and Municipal Traffic Engineering
+Departments having control of overhead wires, cables, signal lights, and/or
+bridges which cross or extend over any of the highways along the permitted
+route before the move is made. This is outlined in N.J.S.A. 39:4-28. The
+permit shall be void for failure to make such notifications and/or to comply
+with the recommendations or request of any of the above offices.
+5.3.4    Overweight Permit Conditions
+Overweight permits issued to operate in excess of statutory weight limits, and
+of legal dimension, are authorized to travel 24 hours a day 7 days a week. An
+overweight permitted vehicle or vehicle combination shall be prohibited from
+operation when the load is incapable of being operated safely at a maximum
+speed of 40 miles per hour when lighted lamps are required (unless specific
+speed restrictions are otherwise noted on the permit). In addition, an
+overweight permit shall not be valid when visibility is less than 500’ or when
+hazardous road conditions are present. Overweight permits shall not be valid
+for the operation of a vehicle or combination of vehicles where the gross
+weight, including load, exceeds 800 pounds per inch of tire width on any or all
+wheels. Vehicles registered in the State of New Jersey and operating under a
+
+
+
+50
+                                     Commercial Vehicle Size and Weight Guidebook |
+
+
+
+permit authorizing travel in excess of legal weight limits, must be registered at
+the maximum registration weight permitted in State Statute.
+5.4    OVERHANG LIMITS—N.J.S.A. 39: 3-84 a(4)
+For trailers/semi-trailers, rear overhang, as measured from the center of the
+rear tandem axles to the rear of the semitrailer, shall not exceed 35% of the
+semitrailer’s wheelbase and the width of the semitrailer and the distance
+between the outside edges of the trailer tires shall be 102 inches.
+For all vehicles, as long as the vehicle and/or load complies with legal length
+limits detailed in Section 2.1.3, there is no maximum longitudinal load
+overhang limit.
+5.5    ESCORT REQUIREMENTS—N.J.A.C. 13:18-1.12
+Operation under an OS/OW permit will require the accompaniment of escort
+vehicles when the permitted dimensions exceed certain thresholds. These
+requirements are stated on the permit. Escorts are assigned to permits as
+shown in Table 6.
+TABLE 6        ESCORT REQUIREMENTS BY DIMENSION AND
+               LOCATION
+
+                               # Escorts on                 # Escorts on
+                            Highways with 4 or           Highways with Less
+                               More Lanes                   than 4 Lanes
+                              Escort Location               Escort Location
+ Dimension                   Front           Rear          Front          Rear
+ Width
+ Exceeds 14’                   0               1              1             0
+ Exceeds 16’                   1               1              1             1
+ Length
+ Exceeds 100’                  0               1              1             0
+ Exceeds 120’                  1               1              1             1
+Note: When 3 escort vehicles are required, such as when a vehicle and/or
+load exceeds 16’ in width or 120’ in length, 1 should be in front, 1 should be
+in the rear, and the third should be in the adjacent lane alongside the
+
+
+
+
+                                                                                 51
+| New Jersey Department of Transportation
+
+
+escorted vehicle on highways with 3 or more lanes, or in rear on highways
+with less than 3 lanes.
+When traveling during the nighttime hours of sunset to sunrise under a
+waiver, one additional escort vehicle must be added to the escorts listed in
+Table 6. If a vehicle and/or load is under the width and length dimensions
+shown in Table 6, then one escort vehicle is required when operating with a
+waiver during nighttime hours. When one escort vehicle is required, it shall
+be in the rear behind the escorted vehicle on highways with 4 or more traffic
+lanes, and in front of the escorted vehicle on highways with less than 4 traffic
+lanes.
+Front escort vehicles must maintain a distance of 200’ to 500’ from the front
+of the permitted vehicle(s). Rear escort vehicles must maintain a distance
+of 100’ to 250’ from the rear of the permitted vehicle(s).
+Only private escorts are assigned to permitted loads and there currently is no
+certification requirement or certification process in place. There are no
+limitations on the size or type of vehicle that can be used as an escort vehicle.
+Carriers are responsible for scheduling and paying for their own escorts for
+each move.
+
+
+
+
+52
+                                    Commercial Vehicle Size and Weight Guidebook |
+
+
+
+5.6     SIGNAGE REQUIREMENTS—N.J.A.C. 13:18-1.13
+As a condition of operation under an OS/OW permit either the permitted
+vehicle or escorts will be required to display a sign to alert the general
+motoring public of the size of the vehicle/load.
+The sign must meet the following requirements:
+1. Must be a minimum size of 6’ Wide x 12” High.
+2. Must have the term “WIDE LOAD or OVERSIZE LOAD”.
+3. Must have a yellow background with 10” High black letters.
+An example of a compliant sign is demonstrated in the diagram below.
+
+
+
+
+When no escorts are required for a permitted load the vehicle signs are to
+be displayed on the front and rear of the oversize vehicle combination.
+When one escort vehicle is required, signs are to be displayed:
+
+•     On the front of the escort vehicle when it is preceding the load, and on
+      the rear of the rearmost escorted combination; or
+
+•     On the rear of the escort vehicle when it is following the load, and the
+      front of the frontmost escorted combination.
+When two escorts are required, signs are to be displayed on the front of the
+escort vehicle preceding the load, and on the rear of the escort vehicle
+following the load.
+
+
+
+
+                                                                               53
+| New Jersey Department of Transportation
+
+
+5.7    LAMPS AND REFLECTIVE DEVICES—49 CFR §393:11;
+       N.J.A.C. 13:18-1.15
+Lamps and reflective devices help other drivers identify the edges of an
+OS/OW shipment. More information, including a complete list of regulations
+regarding lamps and reflective devices are found in Table 1 of 49 CFR §
+393.11.
+Vehicles transporting a load which extends more than 4 inches beyond the
+overall width of the vehicle shall have:
+1. An amber lamp at the front edge of the outermost extremity of the load,
+   visible from the front and side.
+2. A red lamp at the rearmost edge of the outermost portion of the load that
+   extends beyond the side of the vehicle, visible from the rear and side.
+3. If the load does not measure more than 3 feet from front to rear, it will be
+   marked with an amber lamp visible from the front, both sides, and rear. If
+   the projection is located at or near the rear of the vehicle, it shall be
+   marked by a red lamp visible from front, side, and rear.
+Motor vehicles carrying a load which projects more than 4 feet beyond the
+rear of the vehicle, or which have tailboards or tailgates extending more than
+4 feet beyond the body shall mark projections as followed during the hours
+when headlamps are required:
+1. One each side of the projecting load, one red side marker lamp, visible
+   from the side, located to indicate the maximum overhang.
+2. On the rear of the projecting load, two red lamps, visible from the rear,
+   one at each side of the load, and two red reflectors visible from the
+   rear, one at each side of the load located to indicate maximum width.
+N.J.A.C. 13:18-1.15 requires low beam headlamps and red tail lamps to be
+illuminated on all escort vehicles, the towing vehicle, and the towed
+vehicle throughout the duration of operation, as shown in the diagram on the
+following page.
+
+
+
+
+54
+                                   Commercial Vehicle Size and Weight Guidebook |
+
+
+
+
+5.8     WARNING FLAGS—49 CFR § 393.87; N.J.A.C. 13:18-1.14;
+        N.J.S.A. 39:3-61.4
+As a condition of operation under an OS/OW permit, warning flags are
+required to be displayed at the extremities of the vehicle/load as well as the
+escort vehicles. Warning flags must be red in color and a minimum of 18” x
+18” in size. Compliant displays include, but are not limited to, the following
+examples (signs and flags should not obstruct lamps, lights, or license
+plates):
+
+•     Warning flags shall be displayed on the two front corners of the
+      preceding escort vehicle, as shown in the diagram below.
+
+
+
+
+                                                                              55
+| New Jersey Department of Transportation
+
+
+•    Warning flags shall be displayed on the two rear corners of the
+     following escort vehicle, as shown in the diagram below.
+
+
+
+
+•    Warning flags shall be placed at the four corners of an oversized
+     vehicle, as shown in the diagram below.
+
+
+
+
+56
+                                 Commercial Vehicle Size and Weight Guidebook |
+
+
+
+•   When a vehicle, whether oversize or not, is transporting a load which
+    projects beyond the sides of the vehicle, the warning flags shall be
+    placed at the extremities of the load, rather than on the vehicle.
+    Examples of flag placement on different types of loads are provided in
+    the following three diagrams.
+
+
+
+
+                                                                            57
+| New Jersey Department of Transportation
+
+
+•    If the load projects only beyond the rear of the transporting vehicle,
+     two flags shall be placed on the two rear corners of the load, as shown
+     in the diagram below.
+
+
+
+
+•    If the projecting load is round or some other shape without
+     distinguishable corners, a warning flag shall be placed at the
+     outermost extremity of the load on each side and/or to the rear of the
+     vehicle. An example is shown in the diagram below.
+
+
+
+
+                                                                       .
+
+
+
+
+58
+                                  Commercial Vehicle Size and Weight Guidebook |
+
+
+
+
+6     ADDITIONAL COMMERCIAL VEHICLE
+      REGISTRATION INFORMATION
+
+MVC has different registration requirements for various commercial
+vehicle operations. These requirements are outlined in various MVC
+Registration Codes. A review of some commonly used codes by vehicles
+and combinations that operate oversize and/or overweight are listed in
+this section for quick reference. Additional information regarding
+regulations and all other registration codes and associated fees can be
+found on MVC’s website at:
+https://www.nj.gov/mvc/vehicles/commvehinfo.htm.
+Registration fees listed in Table 7 do not include any permit fees that
+may apply, as summarized in Section 3.
+TABLE 7       REGISTRATION FEES
+
+    Registration Type                      Registration Fee
+      Code 23 Trailer                      $209.50 per year
+    Code 41 Constructor    $974 per year for 21,000 lbs. + an extra $22.50 per
+                                      1,000 lbs. up to 70,000 lbs.
+    Code 39 Solid Waste      $101.50 up to 5,000 lbs. + an extra $11.50 per
+                                      1,000 lbs. up to 60,000 lbs.
+    Code 56 Contractor                    $135 per set of five
+    Equipment-in-Transit
+A complete list of NJ MVC commercial registration fees is available at
+https://www.state.nj.us/mvc/vehicles/commfees.htm.
+
+
+
+
+                                                                              59
+| New Jersey Department of Transportation
+
+
+6.1     CODE 23 TRAILER REGISTRATION—N.J.S.A. 39:4-26
+N.J.S.A. 39:4-26 allows for the registration of trailers or semitrailers used for
+the transportation of “road building machinery, vehicles, traction engines,
+rollers, structural units incapable of dismemberment, or other apparatus or
+machinery of unusual size or weight” along or across a public road or
+highway in New Jersey. To register a Code 23 trailer, please visit any local
+motor vehicle agency office, complete the registration form, provide a
+Certificate of Liability Insurance with a description of operations that includes
+a Code 23 trailer, and pay the associated registration fee of $209.50. This
+registration is trailer specific and is valid for a period of one year.
+6.1.1     Code 23 Trailer Specifications/Limitations
+When operating under this registration, the following specifications and
+limitations apply:
+
+•     Code 23 is restricted to transportation of one-piece (non-divisible) loads.
+      Exception: Additional registration under N.J.S.A. 39:3-20(d) code (19)
+      or (21), in conjunction with 39:4-26 (code 23) to transport more than one
+      article which does not exceed any limitations set forth in 39:3-84.
+
+•     Subject to OS/OW permitting requirements and limitations of N.J.S.A.
+      39:3-84 and N.J.A.C. 13:18.
+
+•     Weight restricted to 800 lbs. per inch in width of tire on all wheels
+      N.J.S.A. 39:4-27 and 39:3-82.
+
+•     Certificate of Liability Insurance required.
+
+•     Meet Minimum insurance coverage limits specified under 13:18-1.7(b).
+
+•     Subject to annual inspection provisions contained within the FMCSA
+      regulations 49 CFR parts 393 and 396 (if the trailer meets definition of
+      a commercial motor vehicle found under N.J.A.C. 13:60).
+Trailers or semitrailers registered under this provision are subject to the
+OS/OW permitting requirements of N.J.A.C. 13:18 when the vehicle
+combination exceeds any of the size or weight limits defined in N.J.S.A.
+39:3-84. Such trailers or semitrailers will be subject to overdimensional, and
+transaction fees specified under N.J.A.C. 13:18-1.6, but not subject to any
+excess weight fees, specified under N.J.A.C. 13:18-1.6(c).
+
+
+60
+                                    Commercial Vehicle Size and Weight Guidebook |
+
+
+
+6.1.2     How to Apply for a Permit to Operate a Code 23
+          Overweight/Oversize Trailer
+After registering your trailer, you may apply for an oversize and/or
+overweight vehicle permit. For more information on permitting requirements
+and limitations associated with Code 23 registered trailers, please visit
+Sections 3.2, 3.3, and 4 of this guidebook or the MVC website at:
+https://www.nj.gov/mvc/vehicles/overdimcode23.htm.
+6.2     CODE 41 CONSTRUCTOR REGISTRATION—N.J.S.A. 39:3-20b
+All vehicles with a gross weight between 41,000 and 70,000 pounds with
+satisfactory proof that the applicant is actually engaged in construction work
+or in the business of supplying material, transporting material, or using such
+registered vehicle for construction work may apply for a Code 41
+Constructor registration.
+Plates are regular commercial plates and begin with the prefix "X".
+Restrictions:
+
+•     Vehicles cannot operate on a highway at a speed greater than 45 miles
+      per hour when carrying a load under 50 percent of the registered gross
+      weight.
+
+•     Such commercial motor vehicle shall be operated in compliance with
+      the speed limitations of Title 39 of the Revised Statutes and shall not be
+      operated at a speed greater than 45 miles per hour when one or more
+      of its axles has a load which exceeds the limitations prescribed in
+      N.J.S.A.39:3-84, which are also described in Section 2.2 of this
+      guidebook.
+
+•     Vehicle cannot exceed 30 miles (air mile radius) when carrying a load
+      over 50 percent of the registered gross weight.
+
+•     The provisions of paragraph 5 of subsection b. of N.J.S.A.39:3-84
+      (maximum gross and axle weights) shall not apply; provided the vehicle
+      or combination of vehicles is operated within an area that is 30 miles or
+      less from the point established as a headquarters for the particular
+      construction operation.
+
+
+
+
+                                                                               61
+| New Jersey Department of Transportation
+
+
+Special conditions (dual registration):
+
+•     Any vehicle registered as a Code 41 Constructor may also be dually
+      registered as a Code 39 Solid Waste. The owner of the vehicle must
+      present a photocopy of the title and pay the full fee for Code 39 Solid
+      Waste.
+
+•     Proof of Business Engagement must be uploaded for online renewal.
+      If the vehicle is registered with a weight of 55,000 lbs. or more, you
+      must upload the Heavy Use Tax Form (2290)
+      (https://www.state.nj.us/mvc/pdf/commercial/60_Day-rule_DMV.pdf)
+      for online renewal.
+
+•     The owner will have two different sets of plates and two registrations for
+      the vehicle. Both sets of plates must be displayed on the vehicle and
+      both registrations must always be carried in the vehicle.
+6.3     CODE 39 SOLID WASTE REGISTRATION—N.J.S.A. 39:3-20c
+All vehicles engaged in solid waste disposal (trash collection) with the
+registration weight ceilings of:
+
+•     42,000 pounds for a two-axle vehicle
+
+•     60,000 pounds for:
+          o   Tandem three-axle vehicle
+          o   Four-axle vehicle
+          o   Four-axle truck tractor-trailer combination
+Plates: Regular commercial plates that begin with "X".
+Special conditions:
+
+•     Applicants must hold a "Certificate of Convenience and Necessity"
+      issued by the Board of Public Utility Commissioners.
+
+•     Any vehicle registered as Code 39 Solid Waste may also be dually
+      registered as Code 41 Constructor, but the owner of the vehicle must
+      present a photocopy of the title and pay the full fee for the Code 41
+      registration.
+
+
+
+
+62
+                                     Commercial Vehicle Size and Weight Guidebook |
+
+
+
+•     The applicant will have two different sets of plates and two registrations
+      for the vehicle. Both sets of plates must be displayed on the vehicle and
+      both registrations must be carried in the vehicle at all times.
+
+•     Vehicles registered as a Solid Waste Disposal Vehicle shall be limited
+      to the allowable gross weight as shown on the registration certificate.
+
+•     Certificate of Convenience and Necessity must be uploaded for online
+      renewal. If the vehicle is registered with a weight of 55,000 lbs. or more,
+      you must upload the Heavy Use Tax Form (2290) for online renewal.
+
+•     While operating, the provisions of paragraph 5 of subsection b. of
+      N.J.S.A. 39:3-84 (maximum gross and axle weights) shall not apply;
+      except when the vehicle or combination of vehicles registered as “solid
+      waste” is operated on any highway which is part of the National System
+      of Interstate and Defense Highways, as provided in 23 U.S.C. s.103.
+6.4     CODE 56 CONTRACTOR EQUIPMENT-IN-TRANSIT
+        REGISTRATION—N.J.S.A.39:4-30
+Any person, partnership or corporation may obtain general registration and
+plates with the word "temporary" or "in-transit" with regards to:
+
+•     Road building machinery
+
+•     Traction engines
+
+•     Rollers or other machinery of the kind owned or controlled by it.
+Plates:
+
+•     Plates used for Code 56 must display the words “CONTRACTOR
+      EQUIPMENT IN-TRANSIT.”
+
+•     Plates will be issued in bundles of five sets (10 plates) with hyphenated
+      numbers through five.
+
+•     Fee of $135.00 per set of five.
+Restrictions/Limitations:
+
+•     In-transit plates are to be used on vehicles/equipment such as:
+          o   Road-building machinery;
+          o   Backhoes;
+
+                                                                                63
+| New Jersey Department of Transportation
+
+
+         o    Front end loaders;
+         o    Well Drilling equipment (including any necessary attachments);
+         o    Cranes;
+         o    Arrow boards;
+         o    Chippers/Shredders;
+         o    Cement Mixers;
+         o    Compressors; or
+         o    Other self-propelled and towed pieces of equipment used in
+              moving to and from the locations of any type of construction.
+
+•    No load may be carried on or in any vehicle or piece of equipment
+     registered under Code 56 while moving to or from any construction site
+     or while moving upon any public roadway.
+
+•    Any vehicle towing a piece of equipment displaying a Code 56 plate
+     must be properly registered.
+
+•    Any vehicle with a Code 56 plate may not be used in combination with
+     another vehicle or piece of equipment displaying a Code 56 plate.
+
+•    Code 56 plates may not be used for snowplows.
+
+•    Code 56 plates shall be displayed on both the front and rear of each
+     vehicle or piece of equipment being transported as specified under
+     N.J.S.A. 39:3-33, except for trailers or towed equipment where only one
+     plate can be displayed.
+
+•    Any vehicle exceeding the size and/or weight limitations as prescribed
+     in N.J.S.A. 39:3-84 shall be required to obtain a special permit.
+Please see Section 3 of this guidebook or visit the NJDOT website for further
+information when a permit is required and Section 4 for instructions on how
+to apply for permits. For direct access to NJDOT’s Superload online
+permitting website go to:
+https://nj.gotpermits.com/njpass/.
+
+
+
+
+64
+                                Commercial Vehicle Size and Weight Guidebook |
+
+
+
+More information regarding insurance requirements, registration renewal,
+obtaining replacement plates, and acquiring duplicate registrations is
+available on the NJMVC website:
+https://www.state.nj.us/mvc/vehicles/commvehinfo.htm
+
+
+
+
+                                                                           65
+| New Jersey Department of Transportation
+
+
+7     OTHER COMMERCIAL VEHICLE SIZE AND WEIGHT
+      INFORMATION RESOURCES
+
+7.1    KEY RESOURCES
+Federal Motor Carrier Safety Administration:
+https://www.fmcsa.dot.gov/
+New Jersey Department of Transportation Superload Online
+Permitting System:
+https://nj.gotpermits.com
+
+New Jersey Motor Vehicle Commission (MVC) Commercial Vehicle
+Registration Information:
+https://www.state.nj.us/mvc/vehicles/commvehinfo.htm
+
+New Jersey State Police Transportation Safety Bureau
+Phone: (609) 452-2601
+
+
+7.2    OTHER STATES, JURISDICTIONS, AND BI-STATE
+       AUTHORITIES
+The guidance in this document applies promotes the safe movement of
+vehicles or combinations of vehicles exceeding the limitations for width,
+height, length, or weight found or operated on any public road, street or
+highway or any public or quasi-public property in New Jersey. Other
+requirements may apply on private toll facilities, bi-state facilities, and in
+jurisdictions outside New Jersey. Links to more information about operation
+in those jurisdictions are provided as follows:
+New Jersey Turnpike Authority (New Jersey Turnpike and Garden State
+Parkway):
+https://www.njta.com/contact-us
+
+South Jersey Transportation Authority (Atlantic City Expressway):
+https://www.sjta.com/acexpressway/rules.asp
+
+Port Authority of New York and New Jersey (including the George
+Washington Bridge, Goethals Bridge, Outerbridge Crossing, Lincoln
+Tunnel, and Holland Tunnel): https://www.panynj.gov/bridges-
+tunnels/en/trucker-resources.html
+
+
+66
+                                 Commercial Vehicle Size and Weight Guidebook |
+
+
+
+Delaware River Joint Toll Bridge Commission bridge load and size
+limits: https://www.drjtbc.org/bridge-limits/
+New York City Department of Transportation:
+https://www1.nyc.gov/html/dot/html/motorist/oversize.shtml
+New York State Department of Transportation:
+https://www.dot.ny.gov/nypermits
+Pennsylvania Department of Transportation:
+https://www.penndot.pa.gov/Doing-
+Business/Permits/HaulingInformation/Pages/default.aspx
+Pennsylvania Turnpike Commission:
+https://www.paturnpike.com/commercial/permits-restrictions
+Delaware Department of Transportation:
+https://deldot.gov/osow/application/
+Maryland State Highway Administration
+https://www.roads.maryland.gov/mdotsha/pages/cvo.aspx?did=ahps&Pa
+geId=23
+
+Connecticut Department of Transportation
+https://portal.ct.gov/DOT/Permits/Highways/Oversize-Overweight-
+Permits
+
+
+
+
+                                                                            67
+

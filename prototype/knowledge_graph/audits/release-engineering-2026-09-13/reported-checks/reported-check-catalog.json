@@ -1,0 +1,504 @@
+{
+  "schema_version": "drayage-reported-check-catalog-v1",
+  "approval_status": "draft_not_human_approved",
+  "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "source_bindings": {
+    "reg_apm_appointment": {
+      "source_id": "panynj_truckers_guide",
+      "locator": "PDF page 11 / printed page 18, APM TERMINALS",
+      "source_text_sha256": "fc107fd2b06e983cd83889f8780d6147a004a68404a96c03dd24923f533b6307"
+    },
+    "reg_federal_interstate_weight": {
+      "source_id": "ecfr_23_cfr_658_17_2026_07_29",
+      "locator": "23 CFR 658.17(a)-(e)",
+      "source_text_sha256": "3a45495c8f2f4cefb6ecd6ac82539ff7e87e77adfed5a881e82a73a5e4923b69"
+    },
+    "reg_federal_twic": {
+      "source_id": "ecfr_33_cfr_101_514_2026_07_29",
+      "locator": "33 CFR 101.514(a)",
+      "source_text_sha256": "142d7af6188b70c141a7079d548004f626dbc68d33fe77bead4b46b6155d89d6"
+    },
+    "reg_nj_height_limit": {
+      "source_id": "nj_size_weight_guidebook",
+      "locator": "PDF page 14, section 2.1.2",
+      "source_text_sha256": "1cea7c0e145ad01364ad871bfe5303395d62b3f248b83edd8a23cfd1fb5c3c5e"
+    },
+    "reg_nj_noninterstate_single_axle": {
+      "source_id": "nj_size_weight_guidebook",
+      "locator": "PDF page 27; section 2.2.1",
+      "source_text_sha256": "918f6550bfb174a4e20731ed24760c96961461d94fd0479d8bb2bf1df9b93905"
+    },
+    "reg_nj_ocean_container_permit": {
+      "source_id": "nj_size_weight_guidebook",
+      "locator": "PDF page 43, section 3.4 and Table 5",
+      "source_text_sha256": "b0397495670a61cef90db97b9dfb2cb31155858d84b3b7d8308cd4b9b0040403"
+    },
+    "reg_nj_semitrailer_length": {
+      "source_id": "nj_size_weight_guidebook",
+      "locator": "PDF page 21, section 2.1.3.6",
+      "source_text_sha256": "42fa933165995c46852bb177f902cea02e64bc762ae466e89f498315a6b4e726"
+    },
+    "reg_nj_single_trip_osow_permit": {
+      "source_id": "nj_size_weight_guidebook",
+      "locator": "PDF page 40, section 3.1",
+      "source_text_sha256": "9667afc3ad7e6fb2a43fa93b550b7b5b66c1573f744122331a18f6389cd6a8b6"
+    },
+    "reg_nj_tandem_gross_bridge": {
+      "source_id": "nj_size_weight_guidebook",
+      "locator": "PDF pages 28-29; sections 2.2.2, 2.2.2.1, and 2.2.2.2",
+      "source_text_sha256": "748c930f7707e1358bdf680cbbc46c937e798616cf3fc56baaa737e1fefba156"
+    },
+    "reg_nj_truck_access_local_rule_preservation": {
+      "source_id": "njac_16_32_truck_access_current_2023",
+      "locator": "PDF page 2, N.J.A.C. 16:32-1.2(e)",
+      "source_text_sha256": "f6122e4f37ea8e212567ebbf93597026d764ef6c7590f1712c41d30be5886175"
+    },
+    "reg_nj_width_limit": {
+      "source_id": "nj_size_weight_guidebook",
+      "locator": "PDF page 13, section 2.1.1",
+      "source_text_sha256": "a768e774c1d0c6ff7bd19ce4581440fa16af003169df8b87e2eb628be5fc6bd6"
+    },
+    "reg_njta_roadway_use_limitations": {
+      "source_id": "njac_19_9_1_9_cornell_2026_08_07",
+      "locator": "N.J.A.C. 19:9-1.9(a), introductory paragraph and items 21 and 24",
+      "source_text_sha256": "75f4c5678eea0f439acdac8630201e6849f2fb732da5090dddafba6cc4bbc3eb"
+    },
+    "reg_panynj_drayage_truck_deadline_34_1140": {
+      "source_id": "panynj_marine_terminal_tariff",
+      "locator": "Subrule 34-1140, PDF page 56",
+      "source_text_sha256": "a2feea21f75e48003882f2062aa9c20d0bb860b9565adfcddff5fc113c01d329"
+    },
+    "reg_panynj_dtr": {
+      "source_id": "panynj_marine_terminal_tariff",
+      "locator": "Subrule 34-1100, PDF page 55",
+      "source_text_sha256": "93081e323ddafa5fb0bb29e8e0bcf1e35ca095c2125619c3a5994fb047e011a4"
+    },
+    "reg_panynj_dtr_engine": {
+      "source_id": "panynj_marine_terminal_tariff",
+      "locator": "Subrule 34-1101, PDF page 56",
+      "source_text_sha256": "2a6aa13d40c8a3c9b78a901ffd9798bfe974b8ea3d45c31846d774ab1bfe220f"
+    },
+    "reg_panynj_rfid": {
+      "source_id": "panynj_truckers_guide",
+      "locator": "PDF page 4, Radio-Frequency Identification (RFID)",
+      "source_text_sha256": "fa4f0c7a421afdecf50412673170872b7426dc436f064c18f6c80839e2055d19"
+    },
+    "reg_panynj_sealink_twic": {
+      "source_id": "panynj_truckers_guide",
+      "locator": "PDF page 4, SeaLink® and TWIC and SeaLink®",
+      "source_text_sha256": "129b5b831e5d4c953db1dc1f24718e4201023b4393bdcea23d9fec046eaba13c"
+    },
+    "reg_panynj_terminal_traffic": {
+      "source_id": "panynj_marine_terminal_tariff",
+      "locator": "Subrule 34-290(3)-(5), PDF page 33",
+      "source_text_sha256": "3512203cfa06cf1da5543e094c78297065efd8a92ad47fb3f73312b2bf03c231"
+    },
+    "reg_panynj_terminal_weight_dimensions": {
+      "source_id": "panynj_marine_terminal_tariff",
+      "locator": "Subrule 34-046, PDF page 16",
+      "source_text_sha256": "842805852a144d807d29560ef174b3799d11af42314e77f6ced30684a11a640e"
+    }
+  },
+  "checks": [
+    {
+      "id": "nj_loaded_height",
+      "requirement_id": "dimensions_and_route",
+      "title": "Loaded height and the archived NJ baseline",
+      "fields": [
+        "height"
+      ],
+      "source_clause_ids": [
+        "reg_nj_height_limit"
+      ],
+      "context": "The retained NJ guide states 13 ft 6 in, including the load, except as otherwise identified. Exact roadway applicability, current postings, permit terms and exceptions have not been determined.",
+      "next_action": "Confirm the loaded height and resolve the exact route, applicable exceptions and oversize authorization with the carrier and road authorities.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 162,
+      "unit": "inch"
+    },
+    {
+      "id": "nj_width_102",
+      "requirement_id": "dimensions_and_route",
+      "title": "Loaded width and the 102-inch NJ baseline",
+      "fields": [
+        "width"
+      ],
+      "source_clause_ids": [
+        "reg_nj_width_limit"
+      ],
+      "context": "The retained guide describes 102 inches and a separate 96-inch road category. This comparison does not select either category for the trip. Exact roadway applicability, current postings, permit terms and exceptions have not been determined.",
+      "next_action": "Verify the loaded width, roadway network classification, local restrictions and any required oversize authorization.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 102,
+      "unit": "inch"
+    },
+    {
+      "id": "nj_width_96",
+      "requirement_id": "dimensions_and_route",
+      "title": "Loaded width and the separate 96-inch NJ baseline",
+      "fields": [
+        "width"
+      ],
+      "source_clause_ids": [
+        "reg_nj_width_limit"
+      ],
+      "context": "This is the guide’s separate 96-inch road category. The exact route may belong to another category; route names alone do not decide that. Exact roadway applicability, current postings, permit terms and exceptions have not been determined.",
+      "next_action": "Verify the loaded width, roadway network classification, local restrictions and any required oversize authorization.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 96,
+      "unit": "inch"
+    },
+    {
+      "id": "nj_semitrailer_53",
+      "requirement_id": "dimensions_and_route",
+      "title": "Semitrailer length and the archived 53-foot baseline",
+      "fields": [
+        "semitrailer_length"
+      ],
+      "source_clause_ids": [
+        "reg_nj_semitrailer_length"
+      ],
+      "context": "The retained 53-foot text concerns one motor-drawn semitrailer and its power unit. Configuration and exceptions are not evaluated. Exact roadway applicability, current postings, permit terms and exceptions have not been determined.",
+      "next_action": "Confirm the semitrailer configuration and length, route access rules and any separate authorization.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 636,
+      "unit": "inch"
+    },
+    {
+      "id": "nj_semitrailer_48_access",
+      "requirement_id": "dimensions_and_route",
+      "title": "Semitrailer length and the 48-foot access trigger",
+      "fields": [
+        "semitrailer_length"
+      ],
+      "source_clause_ids": [
+        "reg_nj_semitrailer_length"
+      ],
+      "context": "Exceeding 48 feet is an access-review trigger for the cited greater-than-48-through-53-foot category, not a general prohibition. Longer trailers still require separate review.",
+      "next_action": "Verify the applicable network and any qualifying direct terminal or service access; a listed route or shortest path is not itself access permission.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 576,
+      "unit": "inch"
+    },
+    {
+      "id": "federal_gross_80000",
+      "requirement_id": "axle_weight_evidence",
+      "title": "Gross weight and the archived federal baseline",
+      "fields": [
+        "gross_weight"
+      ],
+      "source_clause_ids": [
+        "reg_federal_interstate_weight"
+      ],
+      "context": "The cited 80,000-pound provision concerns Interstate highways and reasonable access, and expressly allows a lower bridge-formula limit. Jurisdiction, permits and exceptions are unresolved.",
+      "next_action": "Verify the roadway regime, individual axle and axle-group weights, spacings and applicable bridge/permit limits; gross weight alone cannot establish weight compliance.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 80000,
+      "unit": "lb"
+    },
+    {
+      "id": "nj_gross_80000",
+      "requirement_id": "axle_weight_evidence",
+      "title": "Gross weight and the archived NJ guide baseline",
+      "fields": [
+        "gross_weight"
+      ],
+      "source_clause_ids": [
+        "reg_nj_tandem_gross_bridge"
+      ],
+      "context": "The guide describes a standard 80,000-pound overall limit and warns that the bridge formula can require less. Exact applicability and exceptions are unresolved.",
+      "next_action": "Verify the roadway regime, individual axle and axle-group weights, spacings and applicable bridge/permit limits; gross weight alone cannot establish weight compliance.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 80000,
+      "unit": "lb"
+    },
+    {
+      "id": "ocean_permit_gross_90000",
+      "requirement_id": "permit_eligibility",
+      "title": "Reported ocean-container permit and its archived gross limit",
+      "fields": [
+        "gross_weight"
+      ],
+      "source_clause_ids": [
+        "reg_nj_ocean_container_permit"
+      ],
+      "context": "The retained Table 5 transcription states 90,000 pounds for the described sealed ocean-borne container permit. Legal dimensions, axle groups, ocean-container eligibility and permit validity are separate conditions.",
+      "next_action": "Resolve any gross-weight excess with the issuer and independently check sealed ocean-container eligibility, legal dimensions, axle groups and actual permit terms.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 90000,
+      "unit": "lb",
+      "when": {
+        "permit_type": "nj_ocean_container_annual"
+      }
+    },
+    {
+      "id": "terminal_height_195",
+      "requirement_id": "dimensions_and_route",
+      "title": "Height and the separate marine-terminal approval trigger",
+      "fields": [
+        "height"
+      ],
+      "source_clause_ids": [
+        "reg_panynj_terminal_weight_dimensions"
+      ],
+      "context": "The retained terminal tariff calls vehicles over 16 ft 3 in over dimensional. This separate terminal provision does not replace lower roadway limits or other gate requirements.",
+      "next_action": "Verify whether the terminal provision applies and obtain the relevant marine-terminal handling approval when required; separately resolve roadway height limits.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 195,
+      "unit": "inch"
+    },
+    {
+      "id": "terminal_width_132",
+      "requirement_id": "dimensions_and_route",
+      "title": "Width and the separate marine-terminal approval trigger",
+      "fields": [
+        "width"
+      ],
+      "source_clause_ids": [
+        "reg_panynj_terminal_weight_dimensions"
+      ],
+      "context": "The retained terminal tariff calls vehicles over 11 ft wide over dimensional. This separate terminal provision does not replace roadway limits.",
+      "next_action": "Verify whether the terminal provision applies and obtain the relevant marine-terminal handling approval when required; separately resolve roadway width limits.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 132,
+      "unit": "inch"
+    },
+    {
+      "id": "terminal_container_gross_128000",
+      "requirement_id": "dimensions_and_route",
+      "title": "Gross weight and the containerized-shipment terminal ceiling",
+      "fields": [
+        "gross_weight"
+      ],
+      "source_clause_ids": [
+        "reg_panynj_terminal_weight_dimensions"
+      ],
+      "context": "The 128,000-pound tariff ceiling is for containerized shipments and also requires manufacturer safe working loads. Container applicability and working-load ratings are not established by this comparison.",
+      "next_action": "Verify containerized-shipment applicability and manufacturer working loads with the terminal; resolve the separate roadway weight and permit requirements.",
+      "owner": "carrier",
+      "kind": "numeric",
+      "reference_value": 128000,
+      "unit": "lb"
+    },
+    {
+      "id": "ocean_container_seal",
+      "requirement_id": "permit_eligibility",
+      "title": "Sealed-container prerequisite in the reported permit category",
+      "fields": [
+        "container_sealed"
+      ],
+      "source_clause_ids": [
+        "reg_nj_ocean_container_permit"
+      ],
+      "context": "The cited permit description concerns sealed containers used in international ocean-going commerce. A sealed report alone does not establish ocean-borne eligibility.",
+      "next_action": "Resolve the reported seal status and verify container type, movement eligibility and permit terms with the issuer.",
+      "owner": "carrier",
+      "kind": "prerequisite",
+      "expected": true,
+      "when": {
+        "permit_type": "nj_ocean_container_annual"
+      }
+    },
+    {
+      "id": "single_trip_nondivisible",
+      "requirement_id": "permit_eligibility",
+      "title": "Load divisibility in the reported single-trip permit category",
+      "fields": [
+        "load_divisible"
+      ],
+      "source_clause_ids": [
+        "reg_nj_single_trip_osow_permit"
+      ],
+      "context": "The retained single-trip permit description concerns a non-divisible load. This check does not decide whether a different authorization or exception exists.",
+      "next_action": "Resolve the reported load divisibility with the permit issuer and verify that the actual authorization covers this truck, load, route and time.",
+      "owner": "carrier",
+      "kind": "prerequisite",
+      "expected": false,
+      "when": {
+        "permit_type": "nj_single_trip"
+      }
+    },
+    {
+      "id": "twic_report",
+      "requirement_id": "driver_twic",
+      "title": "Reported TWIC availability",
+      "fields": [
+        "twic_reported"
+      ],
+      "source_clause_ids": [
+        "reg_federal_twic",
+        "reg_panynj_sealink_twic"
+      ],
+      "context": "The federal text concerns unescorted secure-area access and retains exceptions; Port SeaLink conditions are separate.",
+      "next_action": "Resolve reported TWIC absence or uncertainty and verify the intended access and any applicable exception through an authorized source.",
+      "owner": "driver",
+      "kind": "prerequisite",
+      "expected": true
+    },
+    {
+      "id": "sealink_report",
+      "requirement_id": "sealink_registration",
+      "title": "Reported SeaLink and TWIC registration",
+      "fields": [
+        "sealink_registered_reported"
+      ],
+      "source_clause_ids": [
+        "reg_panynj_sealink_twic"
+      ],
+      "context": "The retained Port guide describes SeaLink and TWIC registration. A reported identifier is not proof of active registration.",
+      "next_action": "Resolve the reported registration status and verify the current driver/SeaLink/TWIC association with the Port Authority.",
+      "owner": "driver",
+      "kind": "prerequisite",
+      "expected": true
+    },
+    {
+      "id": "dtr_report",
+      "requirement_id": "dtr_registration_and_rfid",
+      "title": "Reported truck registration",
+      "fields": [
+        "dtr_reported"
+      ],
+      "source_clause_ids": [
+        "reg_panynj_dtr"
+      ],
+      "context": "The retained tariff concerns drayage trucks entering Port Authority terminals and registration before entry.",
+      "next_action": "Resolve the reported DTR status for the assigned truck through an authorized PortTruckPass/registry source.",
+      "owner": "carrier",
+      "kind": "prerequisite",
+      "expected": true
+    },
+    {
+      "id": "rfid_report",
+      "requirement_id": "dtr_registration_and_rfid",
+      "title": "Reported truck RFID",
+      "fields": [
+        "rfid_reported"
+      ],
+      "source_clause_ids": [
+        "reg_panynj_rfid"
+      ],
+      "context": "The retained guide concerns Class 8 drayage trucks and a valid, properly mounted tag. Applicability and tag validity remain unverified.",
+      "next_action": "Resolve the reported RFID status and verify tag validity, mounting and association with the assigned truck.",
+      "owner": "carrier",
+      "kind": "prerequisite",
+      "expected": true
+    },
+    {
+      "id": "appointment_report",
+      "requirement_id": "apm_appointment",
+      "title": "Reported APM gate appointment",
+      "fields": [
+        "appointment_reported"
+      ],
+      "source_clause_ids": [
+        "reg_apm_appointment"
+      ],
+      "context": "The retained APM text states that all gate moves require an appointment. Actual move matching, timing and acceptance remain unverified.",
+      "next_action": "Resolve the reported appointment status through TERMPoint or the terminal for this exact move.",
+      "owner": "dispatcher",
+      "kind": "prerequisite",
+      "expected": true
+    },
+    {
+      "id": "axle_and_bridge_gap",
+      "requirement_id": "axle_weight_evidence",
+      "title": "Axle and bridge calculation remains unexecuted",
+      "fields": [
+        "axle_weights",
+        "axle_spacings",
+        "axle_count"
+      ],
+      "source_clause_ids": [
+        "reg_federal_interstate_weight",
+        "reg_nj_noninterstate_single_axle",
+        "reg_nj_tandem_gross_bridge"
+      ],
+      "context": "The retained federal clause introduces the bridge formula but does not retain its equation or complete grouping/exception rules. Intake permits individual axle or axle-group reports, so array entries cannot safely be treated as individual axles.",
+      "next_action": "Obtain explicitly ordered individual axle loads, group membership and defined spacings; review a complete governing formula and exceptions before calculating axle/bridge eligibility.",
+      "owner": "carrier",
+      "kind": "manual"
+    },
+    {
+      "id": "cross_authority_gap",
+      "requirement_id": "cross_authority_coverage",
+      "title": "Separate roadway and terminal approvals remain unresolved",
+      "fields": [
+        "route_id",
+        "permit_type",
+        "permit_route_reported",
+        "turnpike_approval_reported",
+        "local_approval_reported",
+        "port_approval_reported",
+        "terminal_approval_reported"
+      ],
+      "source_clause_ids": [
+        "reg_njta_roadway_use_limitations",
+        "reg_panynj_terminal_weight_dimensions",
+        "reg_nj_truck_access_local_rule_preservation"
+      ],
+      "context": "A State permit report cannot settle which toll, local, port or terminal authorizations apply. The retained NJTA excerpt has specific vehicle/load cases, not a universal 102-inch permission rule.",
+      "next_action": "Map each actual route segment to its responsible authority and verify which separate approvals cover the vehicle, load and movement.",
+      "owner": "authority",
+      "kind": "manual"
+    },
+    {
+      "id": "current_conditions_gap",
+      "requirement_id": "current_route_conditions",
+      "title": "Current route conditions still need an authoritative check",
+      "fields": [
+        "port_street_in_route",
+        "route_conditions_checked_at",
+        "trip_at"
+      ],
+      "source_clause_ids": [
+        "reg_nj_truck_access_local_rule_preservation",
+        "reg_panynj_terminal_traffic"
+      ],
+      "context": "A reported check timestamp is not a verified condition result. The separate Port Street observation, if supplied, is archived operating context and cannot establish current restrictions.",
+      "next_action": "Verify current restrictions and operating conditions for the exact route and trip time with the responsible road authorities.",
+      "owner": "authority",
+      "kind": "manual"
+    },
+    {
+      "id": "dtr_interpretation_gap",
+      "requirement_id": "dtr_engine_policy",
+      "title": "Engine year alone cannot decide DTR or entry eligibility",
+      "fields": [
+        "engine_model_year",
+        "dtr_reported",
+        "trip_at"
+      ],
+      "source_clause_ids": [
+        "reg_panynj_dtr_engine",
+        "reg_panynj_drayage_truck_deadline_34_1140"
+      ],
+      "context": "The archive retains an unresolved tension between the DTR registration language and deadline clause. Engine model year is not an emissions certification or a verified active registry record.",
+      "next_action": "Obtain the truck’s authorized registry/emissions evidence and have the responsible authority resolve the retained tariff interpretation before an eligibility decision.",
+      "owner": "authority",
+      "kind": "manual"
+    },
+    {
+      "id": "transaction_source_gap",
+      "requirement_id": "transaction_release",
+      "title": "Transaction release has no retained governing clause",
+      "fields": [
+        "transaction_release_reported"
+      ],
+      "source_clause_ids": [],
+      "context": "The catalog has no retained clause establishing this transaction/gate-release requirement and no live release integration.",
+      "next_action": "Verify the actual transaction and gate state with the terminal, and obtain the governing requirement before implementing a release evaluator.",
+      "owner": "dispatcher",
+      "kind": "manual"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++												120 container
++													121 text Request
++													122 container (showing 9-109 of 196 items)
++														123 text , " source_message " : "Can I take my truck to APM Elizabeth? Planned entry is September 17, 2026 at 9:00 AM America/New_York. The loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or the exact road sequence." , " requester_role " : "driver" , " question_scope " : "trip_dispatch" , " facts " : { " terminal_id " : "facility_apm_elizabeth" , " trip_at " : "2026-09-17T09:00:00-04:00" , " height " : { " value " : 175 , " unit " : "in" }, " width " : { " value " : 102 ,
++													124 text Response
++													125 text {"assessment_id": "608a89113f0700c157e061460647a34ee04a4a7d8c94959479591f0703b30ce1", "case": {"conflicts": [], "facts": {"appointment_reported": {"basis": "user_reported", "recorded_at": "2026-09-17T00:49:24+00:00", "reported_by": "driver", "source_text": "Can I take my truck to APM Elizabeth? Planned entry is September 17, 2026 at 9:00 AM America/New_York. The loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or t
+The focused UI element is 42 button Assess a synthetic driver or dispatcher trip

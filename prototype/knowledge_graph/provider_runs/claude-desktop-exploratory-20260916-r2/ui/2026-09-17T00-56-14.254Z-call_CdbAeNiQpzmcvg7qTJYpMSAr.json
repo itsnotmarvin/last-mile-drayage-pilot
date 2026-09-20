@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:56:14.254Z",
+  "tool_call_id": "call_CdbAeNiQpzmcvg7qTJYpMSAr",
+  "arguments": {
+    "code": "await claude.click(114); await claude.scroll([680,340],'down',3); await claude.getAXStateAndScreenshot();",
+    "title": "Preserve dispatcher final advice visually"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

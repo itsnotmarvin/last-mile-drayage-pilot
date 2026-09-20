@@ -1,0 +1,136 @@
+[
+  [
+    "mixed_height",
+    {
+      "height": {
+        "value": 175,
+        "unit": "in"
+      }
+    },
+    {
+      "nj_loaded_height": "attention_required",
+      "terminal_height_195": "comparison_only"
+    }
+  ],
+  [
+    "height_boundary",
+    {
+      "height": {
+        "value": 162,
+        "unit": "in"
+      }
+    },
+    {
+      "nj_loaded_height": "comparison_only"
+    }
+  ],
+  [
+    "wide_ocean_container",
+    {
+      "width": {
+        "value": 144,
+        "unit": "in"
+      },
+      "permit_type": "nj_ocean_container_annual",
+      "gross_weight": {
+        "value": 90001,
+        "unit": "lb"
+      },
+      "container_sealed": true
+    },
+    {
+      "nj_width_102": "attention_required",
+      "terminal_width_132": "attention_required",
+      "ocean_permit_gross_90000": "attention_required",
+      "ocean_container_seal": "reported_unverified"
+    }
+  ],
+  [
+    "gross_and_axle_groups",
+    {
+      "gross_weight": {
+        "value": 80000,
+        "unit": "lb"
+      },
+      "axle_count": 5,
+      "axle_weights": [
+        {
+          "value": 12000,
+          "unit": "lb"
+        },
+        {
+          "value": 34000,
+          "unit": "lb"
+        },
+        {
+          "value": 34000,
+          "unit": "lb"
+        }
+      ]
+    },
+    {
+      "federal_gross_80000": "comparison_only",
+      "axle_and_bridge_gap": "manual_review_required"
+    }
+  ],
+  [
+    "gross_above_baseline",
+    {
+      "gross_weight": {
+        "value": 80001,
+        "unit": "lb"
+      }
+    },
+    {
+      "federal_gross_80000": "attention_required",
+      "terminal_container_gross_128000": "comparison_only"
+    }
+  ],
+  [
+    "single_trip_divisible",
+    {
+      "permit_type": "nj_single_trip",
+      "load_divisible": true
+    },
+    {
+      "single_trip_nondivisible": "attention_required"
+    }
+  ],
+  [
+    "old_engine_active_report",
+    {
+      "engine_model_year": 2007,
+      "dtr_reported": true
+    },
+    {
+      "dtr_interpretation_gap": "manual_review_required",
+      "dtr_report": "reported_unverified"
+    }
+  ],
+  [
+    "missing_appointment",
+    {
+      "appointment_reported": false
+    },
+    {
+      "appointment_report": "attention_required"
+    }
+  ],
+  [
+    "no_rfid",
+    {
+      "rfid_reported": false
+    },
+    {
+      "rfid_report": "attention_required"
+    }
+  ],
+  [
+    "all_unknown",
+    {},
+    {
+      "nj_loaded_height": "missing_facts",
+      "twic_report": "missing_facts"
+    }
+  ]
+]

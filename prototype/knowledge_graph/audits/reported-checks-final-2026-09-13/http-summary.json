@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-13T12:53:45.026913+00:00",
+  "surface": "local_http_live_neo4j_no_model_no_browser",
+  "origin": "http://127.0.0.1:8765",
+  "assessments": 2,
+  "recorded_http_requests": 6,
+  "separate_conversations": true,
+  "matching_role_checks": true,
+  "loaded_height_inches": 175,
+  "nj_reference_inches": 162,
+  "nj_difference_inches": 13,
+  "terminal_reference_inches": 195,
+  "terminal_difference_inches": -20,
+  "height_action_first": true,
+  "requested_scope_status": "unresolved",
+  "operational_permission": "not_issued",
+  "served_javascript_matches_verified_runtime": true,
+  "temporary_synthetic_access_renewals": [],
+  "runtime_hashes_match_final_stdio_capture": true
+}

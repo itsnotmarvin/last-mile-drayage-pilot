@@ -1,0 +1,23 @@
+I'll load the drayage assessment tools first so I can ground this in the retained evidence.**The supplied evidence does not establish that this truck can make this move.** This is an incomplete assessment, not a finding that the trip is illegal. The truck comparisons below remain useful, but none of them is permission to proceed.
+
+The terminal is unspecified or outside the terminal-specific evidence coverage. APM requirements and gate observations are not assumed to apply.
+
+**What you reported.** Axle count reported: 5. Axle weights reported: [11000, 34000, 34000] lb. Additional reported context, not independently verified or fully structured: "Gross weight is 79,000 lb on five axles, with a reported 11,000-lb steer axle, 34,000-lb tractor tandem and 34,000-lb trailer tandem." Additional reported context, not independently verified or fully structured: "Individual tandem axle weights and axle spacings are unknown." These reports are retained without treating them as independent verification.
+
+No supported stored route sequence resolved; exact roads remain to be established.
+
+**Axle and bridge checks remain separate.** [23 CFR 658.17 — Weight, 23 CFR 658.17(a)-(e)](https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-658/section-658.17); [NJ Commercial Vehicle Size and Weight Guidebook, PDF pages 28-29; sections 2.2.2, 2.2.2.1, and 2.2.2.2](https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf): obtain individual axle weights and spacings and establish the roadway regime and applicable permit limits. Gross weight, axle count and group totals cannot complete that check or establish release.
+
+**Route access still needs an answer when dimensions are missing.** [N.J.A.C. 16:32 — Truck Access, PDF page 3, N.J.A.C. 16:32-1.4(a)(3); PDF page 9, Appendix C; PDF pages 3-4, N.J.A.C. 16:32-1.5(a)(2); PDF page 2, N.J.A.C. 16:32-1.2(e)](https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf): Appendix C identifies listed county roads in the access network. The separate terminal-access provision concerns a **102-inch-wide standard truck**, **unrestricted local roadways**, necessary terminal access and the **direct route**. Absence from the network list alone establishes neither permission nor prohibition. Obtain the missing loaded dimensions and confirm the actual road sequence, vehicle category, direct terminal access and current local restrictions; a stored route cannot establish those conditions.
+
+**Gross weight.** Reported gross weight: 79000 lb, below the 80000 lb reference. [23 CFR 658.17, 23 CFR 658.17(a)-(e)](https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-658/section-658.17): The cited 80,000-pound provision concerns Interstate highways and reasonable access, and expressly allows a lower bridge-formula limit. Jurisdiction, permits and exceptions are unresolved. This comparison does not complete the axle/bridge assessment.
+
+**Roads and gate at arrival.** No usable current terminal-page observation is available.
+
+Road/gate conditions and remaining axle, permit, credential and transaction requirements are unresolved. Missing facts do not mean absent credentials or permits.
+
+**Next checks:**
+- Obtain any missing individual axle weights and spacings; check the applicable axle, group, bridge and permit limits for the actual route.
+- Supply any missing loaded dimensions; confirm the actual route, direct terminal access and current restrictions with the responsible road authorities.
+
+These next checks are not an exhaustive release checklist. All unresolved authority, physical-access and terminal requirements remain open. Archived sources do not establish current conditions. Synthetic assessment using retained sources; not a promise of latest policy. No operational permission is issued.

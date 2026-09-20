@@ -1,0 +1,940 @@
+--- r2-before/neo4j_kg/driver_answer.py
++++ neo4j_kg/driver_answer.py
+@@ -69,14 +69,18 @@
+         lines += list(dict.fromkeys(contexts))
+         if extra_clause in sources:
+             s = sources[extra_clause]
++            if extra_clause == 'reg_nj_terminal_access_102_inch_standard_truck':
++                lines.append('The access provision is specifically for a **102-inch-wide standard truck**, '
++                             '**unrestricted local roadways** and the **direct route**; '
++                             'those qualifications are not confirmed for this truck and route.')
+             lines.append('The retained access provision says: “' + retained_text(s['source_text']) + '” '
+                          'Whether your truck and route meet those conditions has not been established.')
+             cids.append(extra_clause)
+         refs = list(dict.fromkeys(cids))
+         if not all(cid in sources for cid in refs):
+             return  # Do not emit an unsupported comparison if a source binding is absent.
+-        paragraphs.append('**' + title + '** ' + ' '.join(lines) + '\n\nSources: '
+-                          + '; '.join(citation(cid) for cid in refs) + '.')
++        paragraphs.append('**' + title + '** ' + '; '.join(citation(cid) for cid in refs)
++                          + '. ' + ' '.join(lines))
+ 
+     group('Loaded height.', ['nj_loaded_height'])
+     group('Width and local access.', ['nj_width_102', 'nj_width_96'],
+--- r2-before/neo4j_kg/mcp_server.py
++++ neo4j_kg/mcp_server.py
+@@ -78,7 +78,7 @@
+         self.sequence = 0
+         self.previous_event_hash = None
+ 
+-    def audit(self, method, request_id, arguments, response):
++    def audit(self, method, request_id, arguments, response, evidence_assessment=None):
+         if self.audit_path is None:
+             return
+         from .common import digest
+@@ -88,6 +88,9 @@
+                  "request_id": request_id, "validated_arguments": arguments,
+                  "response": response, "previous_event_hash": self.previous_event_hash}
+         from .retrieval_trace import receipt
++        if evidence_assessment is not None:
++            event['evidence_assessment'] = evidence_assessment
++            event['evidence_assessment_note'] = 'Full supporting assessment retained locally; only the response projection was delivered to the consumer.'
+         event["retrieval_trace"] = receipt(response.get("result", {}).get("structuredContent", {}))
+         event["event_hash"] = digest(event)
+         self.previous_event_hash = event["event_hash"]
+@@ -139,6 +142,7 @@
+                 return error(-32602, "Unknown tool")
+             from .retrieval_trace import begin, finish
+             trace_token = begin(self.audit_path is not None)
++            evidence_assessment = None
+             try:
+                 if name == "check_apm_induction":
+                     validated = normalize(args)
+@@ -152,10 +156,28 @@
+                     if self.trip_service is None:
+                         from .assessment import TripService
+                         self.trip_service = TripService(self.service.store)
+-                    operation = {"assess_trip": self.trip_service.assess,
+-                                 "update_trip_facts": self.trip_service.update,
+-                                 "get_requirement_evidence": self.trip_service.evidence}[name]
+-                    payload = operation(args)
++                    if name in ('get_trip_conditions_answer', 'assess_driver_move'):
++                        if name == 'get_trip_conditions_answer':
++                            if not isinstance(args, dict) or set(args) != {'trip_id'}:
++                                raise InputError('Expected only a saved trip_id; this tool cannot change trip facts or scope')
++                            from .driver_conditions import conditions_answer as render_answer
++                            evidence_assessment = self.trip_service.assess(args)
++                        else:
++                            from .driver_move import assess_move, move_answer as render_answer
++                            evidence_assessment = assess_move(self.trip_service, args)
++                        a = evidence_assessment
++                        payload = {'trip_id': a['case']['trip_id'], 'revision': a['case']['revision'],
++                                   'assessment_id': a['assessment_id'], 'service_status': a['service_status'],
++                                   'versions': a['versions'], 'operational_permission': 'not_issued',
++                                   'answer_markdown': render_answer(a)}
++                        if name == 'assess_driver_move':
++                            from .driver_move import PRESENTATION
++                            payload['presentation'] = PRESENTATION
++                    else:
++                        operation = {"assess_trip": self.trip_service.assess,
++                                     "update_trip_facts": self.trip_service.update,
++                                     "get_requirement_evidence": self.trip_service.evidence}[name]
++                        payload = operation(args)
+                     validated = args.copy()
+                 result = {"content": [{"type": "text", "text": encode(payload)}],
+                           "structuredContent": payload, "isError": False}
+@@ -165,7 +187,8 @@
+                     result['content'].insert(0, {'type': 'text', 'text': driver_brief(payload)})
+                     result['content'].insert(0, {'type': 'text', 'text': driver_answer(payload)})
+                 response = {"jsonrpc": "2.0", "id": request_id, "result": result}
+-                self.audit(name, request_id, {"as_received": args, "normalized": validated}, response)
++                self.audit(name, request_id, {"as_received": args, "normalized": validated}, response,
++                           evidence_assessment=evidence_assessment)
+                 return response
+             except InputError as exc:
+                 result = {"content": [{"type": "text", "text": str(exc)}], "isError": True}
+--- r2-before/neo4j_kg/trip_tools.py
++++ neo4j_kg/trip_tools.py
+@@ -18,7 +18,8 @@
+ REQUEST_KEY = {"type": "string", "minLength": 1, "maxLength": 120,
+                "pattern": "^(?=.*\\S)[^\\x00-\\x1f]+$",
+                "description": "Unique synthetic request token. Reuse exactly for retries; a different update needs a new token."}
+-COMMON = {"requester_role": ROLE, "question_scope": SCOPE,
++COMMON = {"requester_role": ROLE, "question_scope": {**SCOPE,
++          "description": "Use trip_dispatch for a complete move to a terminal, including 'Can I use this route with this truck?' when the driver supplies an APM arrival and credential/appointment facts. route is only for an explicitly road-only question excluding terminal entry; mentioning a route does not narrow a complete move. Use terminal_entry for gate-only questions and induction for induction-only questions. Preserve the same scope for corrections."},
+           "facts": FACTS_SCHEMA,
+           "source_message": {"type": "string", "minLength": 1, "maxLength": 8000,
+                              "pattern": "^(?=[\\s\\S]*\\S)[^\\x00]*$",
+@@ -33,6 +34,21 @@
+                      "replace_conflicts": {"type": "boolean", "default": False,
+                        "description": "True only for an explicit user correction or reassignment. Correct one independent existing field per call; fresh dependent facts for its replacement may be included. Otherwise contradictory reports remain conflicts."}},
+                     [*COMMON, "trip_id", "expected_revision"])
++
++# A complete move has fixed scope; operation branches cannot accept each other's fields.
++MOVE_SCHEMA = obj({'action': {'enum': ['create', 'update', 'read']},
++                   **{k: v for k, v in COMMON.items() if k != 'question_scope'},
++                   'trip_id': TRIP_ID,
++                   'expected_revision': UPDATE_SCHEMA['properties']['expected_revision'],
++                   'replace_conflicts': UPDATE_SCHEMA['properties']['replace_conflicts']}, ['action'])
++MOVE_SCHEMA['oneOf'] = [
++    {'properties': {'action': {'const': 'create'}},
++     'required': ['facts', 'source_message', 'request_key'],
++     'not': {'anyOf': [{'required': [k]} for k in ('trip_id', 'expected_revision', 'replace_conflicts')]}},
++    {'properties': {'action': {'const': 'update'}},
++     'required': ['trip_id', 'expected_revision', 'requester_role', 'facts', 'source_message', 'request_key']},
++    {'properties': {'action': {'const': 'read'}}, 'required': ['trip_id'], 'maxProperties': 2},
++]
+ 
+ FACT_RECORD = obj({
+     "value": {"anyOf": [{"type": ["string", "number", "boolean", "array", "null"],
+@@ -238,17 +254,18 @@
+ MUTATES = {"readOnlyHint": False, "destructiveHint": False, "idempotentHint": True, "openWorldHint": False}
+ READS = {**MUTATES, "readOnlyHint": True}
+ INSTRUCTIONS = (
+-    "Assessment tools return a prepared driver answer as the first text block, detailed source briefing second, and full JSON last. Present the prepared answer faithfully with its source links and qualifications; do not add speculative legal conclusions or dates. The full structuredContent and final text block remain available for detailed inspection. "
++    "Compact tools return answer_markdown for direct display. Follow their presentation instruction. Legacy assess_trip and update_trip_facts return a prepared driver answer as the first text block, detailed source briefing second, and full JSON last. Present the prepared answer faithfully with its source links and qualifications; do not add speculative legal conclusions or dates. The full structuredContent and final text block remain available for detailed inspection. "
+     "Read answer_guidance first when explaining an assessment: its qualified comparisons and historical currentness are the supported claims. Never turn unresolved into either permission or a finding of illegality. A rough route helps clarify, not verify. "
+-    "Use assess_trip for ordinary synthetic driver or dispatcher trip questions. Extract only facts supported by the user's words. "
++    "Use assess_driver_move for ordinary complete synthetic driver or dispatcher moves and their corrections. Use assess_trip only for explicitly narrow questions or full evidence inspection. Extract only facts supported by the user's words. "
+     "requester_role is who is asking; subject_role is the assessed person (truck_driver or other). Do not infer subject identity from requester. "
+     "Drivers and dispatchers use the same workflow and evidence standard. Infer requester_role only when clear; unknown is allowed, so do not require a role-selection step. "
+-    "Use trip_dispatch for 'can I take/send this truck', terminal_entry for gate-only questions, and induction only when explicitly asked. "
++    "Use trip_dispatch for a complete move to APM, including 'can I use this route with this truck' with arrival and credential/appointment facts. Use route only for an explicitly road-only question excluding terminal entry; mentioning a route does not narrow the complete move. Use terminal_entry for gate-only questions, and induction only when explicitly asked. "
++    "For a saved-trip follow-up asking about current road/gate conditions, dates, or what findings remain useful, use get_trip_conditions_answer. It freshly reassesses the saved trip and returns a compact answer with citations, without offloading the full assessment into the conversation. Present its links beside the date claims and keep its scope qualifications. "
+     "Missing intent stays unknown. Record quantities with explicit units; ask about ambiguous units. Do not invent IDs or dates. "
+     "Record the user's supplied road sequence in route_description as well as the matching named route_id. Explicit no-Port-Street statements set port_street_in_route=false; absence from a stored sequence alone does not. "
+     "For relative dates, obtain an explicit date/time/timezone before filling trip_at. Leave unavailable facts absent or null. "
+     "Use axle_layout only for explicitly supplied individual axle weights and positions measured from the first axle. Never split group totals or infer positions. Legacy axle_weights/axle_spacings remain ambiguous reports. Review input_review.axle_layout for count or gross-weight inconsistencies; its totals are not bridge or legal calculations. "
+-    "Save the returned trip_id and revision in the conversation. Follow-up answers and explicit corrections use update_trip_facts. "
++    "Save the returned trip_id and revision in the conversation. Follow-up facts and explicit corrections to a complete move use assess_driver_move action=update; narrow cases use update_trip_facts. Keep trip IDs and revisions internally, not in the driver answer. "
+     "Each conversation starts its own case. Never reuse a trip_id, request_key, or reported facts from another conversation. "
+     "For an explicitly new move, create a new case using only facts supplied for that move; if continuation versus a new move is ambiguous, clarify before carrying facts over. "
+     "Use case.revision for updates. write_receipt records the original write and can be older after a retry; the assessment uses the latest saved case. "
+@@ -271,12 +288,40 @@
+     "Never convert pressure, a permit report, or induction success into entry/dispatch clearance. "
+     "This connector accepts synthetic development cases only, not real driver identifiers or credentials."
+ )
++from .driver_move import PRESENTATION
++
++COMPACT_ANSWER_SCHEMA = obj({'trip_id': TRIP_ID, 'revision': {'type': 'integer', 'minimum': 1},
++                            'assessment_id': STRING, 'service_status': {'enum': ['available', 'unavailable']},
++                            'answer_markdown': STRING, 'versions': VERSIONS,
++                            'operational_permission': {'const': 'not_issued'},
++                            'presentation': {'const': PRESENTATION}})
+ TRIP_TOOLS = [
++    {'name': 'assess_driver_move', 'title': 'Assess a complete driver move with source-linked explanation',
++     'description': 'Primary tool for complete synthetic moves to a terminal, including can I use this route with this truck. '
++                    'Always assesses the whole move (trip_dispatch); no caller-selected scope. '
++                    'action=create starts a separate move using only its supplied facts. action=update continues the same trip using trip_id, '
++                    'expected_revision, requester_role, newly supplied facts, exact source_message and a new request_key. '
++                    'Set replace_conflicts=true only for an explicit correction; otherwise contradictory reports remain conflicts. '
++                    'action=read accepts only trip_id and action. Reuse request_key only for an exact retry. '
++                    'Never invent missing facts, units, verification or timestamps. Preserve the complete user source_message. '
++                    'Display answer_markdown verbatim as the driver-facing answer; do not summarize or rewrite its legal passages. Preserve '
++                    'standard truck, unrestricted roadways, configuration and all access exceptions. Keep internal IDs/revisions out of the prose. '
++                    'For date/current-condition follow-ups use get_trip_conditions_answer. For full assessment inspection use assess_trip with trip_id. '
++                    'The full supporting assessment is retained in the local audit, not delivered by this compact tool. No operational permission.',
++     'inputSchema': MOVE_SCHEMA, 'outputSchema': COMPACT_ANSWER_SCHEMA, 'annotations': MUTATES},
++    {"name": "get_trip_conditions_answer", "title": "Recheck saved-trip conditions and explain the source dates",
++     "description": "Use for a follow-up about whether the roads or APM gate are open, the dates of supplied notices, or useful findings despite unknown conditions. Requires an existing trip_id. Freshly reassesses the same saved revision without changing facts or scope. Returns a small source-linked answer; present its citations and qualifications in the answer even when those links appeared in earlier turns. No road-feed or gate-open verification is invented. The response includes precise source dates and supported comparisons. Do not replace the source-linked answer with an uncited recap.",
++     "inputSchema": obj({"trip_id": TRIP_ID}),
++     "outputSchema": obj({"trip_id": TRIP_ID, "revision": {"type": "integer", "minimum": 1},
++                          "assessment_id": STRING, "service_status": {"enum": ["available", "unavailable"]},
++                          "answer_markdown": STRING, "versions": VERSIONS,
++                          "operational_permission": {"const": "not_issued"}}),
++     "annotations": READS},
+     {"name": "assess_trip", "title": "Assess a synthetic driver or dispatcher trip",
+-     "description": INSTRUCTIONS + " Start a new case with facts, source_message and request_key, or reassess an existing case with only trip_id. New cases mutate local state; reassessment reads fresh Neo4j evidence.",
++     "description": "Full assessment inspection or explicitly narrow questions. For ordinary complete moves and corrections use assess_driver_move. " + INSTRUCTIONS + " Start a new case with facts, source_message and request_key, or reassess an existing case with only trip_id. New cases mutate local state; reassessment reads fresh Neo4j evidence.",
+      "inputSchema": CREATE_SCHEMA, "outputSchema": ASSESSMENT_SCHEMA, "annotations": MUTATES},
+     {"name": "update_trip_facts", "title": "Update trip facts and reassess the assignment",
+-     "description": "Continue the same synthetic trip using its returned trip_id and expected_revision. Supply only newly reported or corrected facts. Include current requester_role and question_scope. Use replace_conflicts=true only when the user explicitly corrects or reassigns something; updates otherwise retain conflicting reports. A changed assignment invalidates dependent facts. Reports cannot become verification. Returns the committed revision and a fresh assessment; exact request-key retries do not duplicate writes.",
++     "description": "For complete moves prefer assess_driver_move action=update. This legacy/full-output tool can continue the same synthetic trip using its returned trip_id and expected_revision. Supply only newly reported or corrected facts. Include current requester_role and question_scope. Use replace_conflicts=true only when the user explicitly corrects or reassigns something; updates otherwise retain conflicting reports. A changed assignment invalidates dependent facts. Reports cannot become verification. Returns the committed revision and a fresh assessment; exact request-key retries do not duplicate writes.",
+      "inputSchema": UPDATE_SCHEMA, "outputSchema": ASSESSMENT_SCHEMA, "annotations": MUTATES},
+     {"name": "get_requirement_evidence", "title": "Explain a requirement with exact retained evidence",
+      "description": "Read retained source passages, locators, provenance review notes, publisher, authority, archive dates and limits for a requirement_id returned by assess_trip. Trip assessments already include an evidence_package; use this tool for focused follow-up inspection. Current-route evidence includes a separately labeled dated Port Street observation. Archived evidence is not current policy or credential verification. Empty sources mean an explicit source coverage gap.",
+--- r2-before/tests/test_trip_assessment.py
++++ tests/test_trip_assessment.py
+@@ -258,11 +258,11 @@
+         import jsonschema  # Existing development environment; never a runtime dependency.
+         result = self.create()
+         tools = {t["name"]: t for t in TOOLS}
+-        self.assertEqual(5, len(tools))
+-        for name in ("assess_trip", "update_trip_facts", "get_requirement_evidence"):
++        self.assertEqual(7, len(tools))
++        for name in ("assess_trip", "update_trip_facts", "get_requirement_evidence", "get_trip_conditions_answer", "assess_driver_move"):
+             jsonschema.Draft202012Validator.check_schema(tools[name]["inputSchema"])
+             jsonschema.Draft202012Validator.check_schema(tools[name]["outputSchema"])
+-            self.assertEqual(name == "get_requirement_evidence", tools[name]["annotations"]["readOnlyHint"])
++            self.assertEqual(name in ("get_requirement_evidence", "get_trip_conditions_answer"), tools[name]["annotations"]["readOnlyHint"])
+         jsonschema.validate(result, tools["assess_trip"]["outputSchema"])
+         jsonschema.validate(self.update(result, {"twic_reported": True}), tools["update_trip_facts"]["outputSchema"])
+         for requirement in REQUIREMENTS:
+--- r2-before/README.md
++++ README.md
+@@ -1,18 +1,18 @@
+ # Drayage knowledge-graph prototype
+ 
+-Today's driver experience uses the existing **Claude Desktop
+-drayage-kg-prototype connector**. It now receives a prepared source-linked
+-answer, a detailed evidence briefing and the full structured assessment.
++The agreed local driver experience is finished and passed its four-interaction
++walkthrough in **Claude Desktop with the existing drayage-kg-prototype connector**.
++It presents a trip-specific conclusion, source links and locators, the conditions
++that determine applicability, and useful findings even when the move is unresolved.
+ See [how to use it](docs/driver-experience.md).
+ 
+-**450 local tests pass. The four-turn driver presentation acceptance did not
+-fully pass.** The live walkthrough preserved the same-trip height correction,
+-separate Path B case and exact routes, and useful evidence while current
+-conditions remained unknown. Claude still dropped terminal links from a
+-follow-up and shortened an access-rule qualification. These are outstanding
+-experience defects, not missing sources. The new Path B move also selected a
+-narrower route scope. See the [current state](CURRENT_STATE.md) and
+-[driver experience review](audits/driver-experience-2026-09-19/README.md).
++**462 local tests pass. Actual consumer presentation acceptance passed:** Path A,
++its same-trip height correction under schedule pressure, a sourced date/currentness
++follow-up, and a distinct full-scope Path B move. Complete moves now use compact
++prepared answers; full supporting assessments remain in the local audit. The
++[final consumer review](audits/driver-experience-2026-09-19-r4/consumer-review.md)
++records the observed prose, including one safely rejected request-token collision
++that Claude recovered from automatically. [Current state](CURRENT_STATE.md).
+ 511NJ and the separate browser/app bridge are not gates for this local version.
+ 
+ The underlying engineering checkpoint has eleven bounded requirement evaluators plus the
+@@ -92,8 +92,10 @@
+ 
+ ## Driver and dispatcher trip workflow
+ 
+-The current MCP also supports a saved synthetic trip conversation: `assess_trip`,
+-`update_trip_facts`, and `get_requirement_evidence`. It keeps reported facts and
++The current MCP uses `assess_driver_move` for complete synthetic moves and
++corrections, and `get_trip_conditions_answer` for dated-condition follow-ups.
++`assess_trip`, `update_trip_facts`, and `get_requirement_evidence` retain full
++assessment and focused evidence inspection. It keeps reported facts and
+ corrections, selects requirements across the six study families, rechecks the
+ assignment against Neo4j, and asks up to three focused follow-up questions.
+ Read the [workflow and code guide](docs/trip-workflow.md). Eleven additional
+@@ -113,7 +115,7 @@
+ The `kg/` package and `run_mcp.py` below are preserved historical NetworkX
+ fixtures used by the original provider capture, tests, and offline exports.
+ They are not the Neo4j runtime. The two existing MCP tool contracts are preserved
+-alongside the three new trip tools; whole-repository retrieval is separate work.
++alongside five trip-workflow tools; whole-repository retrieval is separate work.
+ 
+ ## Explore the entire populated graph
+ 
+--- r2-before/CURRENT_STATE.md
++++ CURRENT_STATE.md
+@@ -20,23 +20,29 @@
+ trip must still retain useful supported findings. 511NJ and the separate
+ browser/confirmed-assessment app bridge are not completion gates.
+ 
+-**450 tests pass; the four-turn consumer presentation acceptance did not fully
+-pass.** The connector now supplies a prepared source-linked answer and detailed
+-briefing before its unchanged full JSON. Four actual Claude Desktop calls
+-preserved the Path A correction 175→162 inches on revisions 1→2→2, then created
+-a distinct Path B case at revision 1 with the correct five-segment sequence.
+-All results passed schema/full-JSON/hash checks against the frozen runtime.
++**462 tests pass; the agreed four-interaction consumer presentation acceptance
++passed.** The installed seven-tool connector uses compact prepared answers for
++complete moves/corrections and dated-condition follow-ups. Full supporting
++assessments remain in the local audit and available through the legacy full tools.
+ 
+-The consumer still omitted the APM links from its dated-evidence follow-up,
+-shortened the width rule's standard-truck qualification, and made some
+-imprecise terminal-page statements. Path B selected route-only scope despite
+-the supplied new-move credential facts, leading to an offer for another check.
+-These are the bounded remaining experience defects. Do not declare the
+-project finished from backend counts or reopen unrelated research to fix them.
++Actual Claude Desktop Sonnet 5 Medium kept Path A revisions 1→2→2 and the
++175→162-inch height correction, then created a distinct full-scope Path B case
++with five ordered segments. Source links, standard-truck/configuration/access
++qualifications, and the three distinct APM page/date explanations survived in
++the driver-facing answers. Schedule pressure did not produce permission.
++Missing live conditions did not erase useful supported findings. All four
++responses used compact results directly without command/file-reading detours.
+ 
+-Read the [four-turn review](audits/driver-experience-2026-09-19/consumer-review.md),
+-[checkpoint record](audits/driver-experience-2026-09-19/README.md), and
+-[usage guide](docs/driver-experience.md).
++Five real connector calls produced four successful assessments: an initial
++request-token collision was rejected before writing and automatically retried.
++The event chain includes that rejection. Frozen-runtime, schema, source-message,
++source-binding, route and revision verification passed; the final prose was
++separately inspected in the app. This is bounded local acceptance, not a
++promise of arbitrary future model fidelity or real-world dispatch readiness.
++
++Read the [final consumer review](audits/driver-experience-2026-09-19-r4/consumer-review.md),
++[completion record](audits/driver-experience-2026-09-19-r4/README.md), and
++[usage guide](docs/driver-experience.md). Earlier failed captures remain preserved.
+ 
+ ## Earlier completed core checkpoint
+ 
+@@ -70,7 +76,7 @@
+ 
+ The separate browser → confirmed-assessment app bridge → Claude Desktop
+ experience is still unverified. Its backend and projection exist, but today's
+-consumer capture used the already-installed five-tool connector. A new
++consumer capture used the existing local connector, now with seven tools. A new
+ conversation-scoped app-bridge configuration and actual consumer capture are
+ needed to close that separate path. Do not count direct HTTP/stdio harness
+ results as consumer acceptance.
+@@ -82,10 +88,11 @@
+ road data, domain approval, and full legal coverage remain outside this
+ prototype's acceptance. Operational permission is never issued.
+ 
+-The large MCP payload still leads Claude to read tool-result files with command
+-tools. Prepared/detailed text delivery is now implemented and verified at the
+-connector boundary; final model presentation still has the observed defects
+-described above. Additional instructions alone have not guaranteed fidelity.
++The compact complete-move and conditions responses avoided the old large-payload
++file-reading detour in the accepted walkthrough. Full/narrow/exceptional evidence
++inspection can still return larger payloads. Re-run the bounded consumer protocol
++when changing its model or delivery contract; the retained audit is evidence of
++this observed run, not a model-output guarantee.
+ 
+ ## Parked
+ 
+--- r2-before/PROGRESS.md
++++ PROGRESS.md
+@@ -584,3 +584,35 @@
+ push, deployment or source promotion was performed. Existing dirty work and
+ sealed historical audits were preserved. See the [consumer review](audits/driver-experience-2026-09-19/consumer-review.md)
+ and [usage guide](docs/driver-experience.md).
++
++
++## September 19: finished local driver experience
++
++The agreed Claude Desktop experience passed the unchanged four-prompt protocol:
++Path A at 175 inches, same-trip correction to 162 under schedule pressure,
++fresh date/currentness follow-up, and a separate full-scope Path B move. The
++actual final prose retained source links and defining standard-truck, network,
++return, configuration and exception conditions. Three APM sources remained
++linked beside their distinct dated/undated observations. Unknown conditions did
++not erase useful comparisons or become permission.
++
++Added compact `get_trip_conditions_answer` and `assess_driver_move` delivery.
++The complete-move tool fixes trip_dispatch scope and delegates strictly separated
++create/update/read operations to the existing saved-trip service. Full evidence
++is preserved in local audit events; legacy/full tools remain compatible. No
++source, evaluator, graph, configuration or dependency changes were needed.
++
++**462 tests passed**, with an additional adversarial pass covering stale writes,
++nested verification injection, contradictory height extraction and missing
++reports. Five real connector events include one request-key collision rejected
++before a write and an automatic recovery; four successful assessments preserve
++revisions 1→2→2 and a separate Path B revision 1. All 36 frozen runtime hashes,
++schemas, exact source messages, source bindings, routes and event hashes passed
++verification. Native app prose review separately passed. No command/file-reading
++detour appeared in the four final answers.
++
++The earlier original/r2/r3 failures remain documented, not erased. The local
++synthetic finish line is closed; operational dispatch, 511NJ and the separate
++browser/app bridge are outside this acceptance. No commit, push or deployment.
++[Completion record](audits/driver-experience-2026-09-19-r4/README.md) and
++[usage guide](docs/driver-experience.md).
+--- r2-before/docs/driver-experience.md
++++ docs/driver-experience.md
+@@ -1,9 +1,10 @@
+ # Use the local drayage assistant
+ 
+-**September 19 status:** the local connector and four-turn walkthrough work,
+-but final driver presentation acceptance remains open. Claude can omit supplied
+-links or qualifications when summarizing. The [observed review](../audits/driver-experience-2026-09-19/consumer-review.md)
+-records the exact failures; this guide does not claim a finished experience.
++**September 19 status: finished for the agreed local synthetic experience.**
++The four-interaction walkthrough passed in Claude Desktop: initial move,
++same-trip correction under pressure, source-date/currentness follow-up, and
++separate Path B move. See the [actual conversation](https://claude.ai/chat/0ce6f46c-fd0d-484f-b544-bb0d0dfaa5ef)
++and [observed review](../audits/driver-experience-2026-09-19-r4/consumer-review.md).
+ 
+ Open **Claude Desktop**, start a new chat, and use the existing
+ **drayage-kg-prototype** connector. Claude launches the configured connector;
+@@ -90,15 +91,28 @@
+ 
+ ## Connector delivery contract
+ 
+-Successful `assess_trip` and `update_trip_facts` responses contain three text
+-blocks: a prepared driver answer, a detailed source briefing, and the full JSON
+-assessment. `structuredContent` remains the same full assessment. Consumers
+-that parse JSON from text must use the final block; evidence and legacy tools
+-retain their existing output shape. Narrow scopes fall back to a detailed
+-briefing rather than a broad APM trip answer.
++`assess_driver_move` is the primary complete-move tool. Create, update/correction
++and read operations use the existing saved-trip service; full `trip_dispatch`
++scope is fixed by the tool. A route mentioned in a complete terminal move does
++not exclude terminal prerequisites. `get_trip_conditions_answer` freshly
++reassesses the saved trip without changing its facts or scope.
+ 
+-The prepared answer preserves access-rule qualifiers and source links, but
+-Claude's final narration can shorten them. The full source delivery is not
+-proof that the user actually received a faithful explanation. The latest
+-four-turn capture and reproducible evidence checks are in the
+-[driver experience checkpoint](../audits/driver-experience-2026-09-19/README.md).
++Both return a compact source-linked `answer_markdown` with internal trip/revision
++binding. The complete-move response instructs Claude to display the prepared
++answer without rewriting consequential rule passages. Internal IDs stay out of
++the ordinary driver answer. The full supporting assessment is retained locally
++in the audit; the compact result does not claim every source record was delivered
++to the consumer. Exceptional/bounded findings fall back to the detailed briefing
++so they cannot be hidden by an ordinary unresolved-move summary.
++
++Legacy `assess_trip` and `update_trip_facts` retain their three text blocks:
++prepared driver answer, detailed source briefing and full JSON assessment.
++Their `structuredContent` remains the full assessment. Consumers parsing JSON
++from those text blocks must use the final block. `get_requirement_evidence`
++remains available for focused retained-passage inspection.
++
++The [completion record](../audits/driver-experience-2026-09-19-r4/README.md)
++separates actual observed Claude prose from tool payloads. It records one safely
++rejected request-token collision and automatic retry. The accepted run preserves
++source qualifications and links; future model behavior still warrants the same
++bounded walkthrough when the model or delivery changes.
+--- r2-before/tests/test_conditions_graph_binding.py
++++ tests/test_conditions_graph_binding.py
+@@ -194,8 +194,8 @@
+     def test_model_surfaces_cannot_mint_receipts(self):
+         tools = {t["name"] for t in TOOLS}
+         self.assertEqual({"check_apm_induction", "get_drayage_graph_context", "assess_trip",
+-                          "update_trip_facts", "get_requirement_evidence"}, tools)
+-        for name in ("assess_trip", "update_trip_facts"):
++                          "update_trip_facts", "get_requirement_evidence", "get_trip_conditions_answer", "assess_driver_move"}, tools)
++        for name in ("assess_trip", "update_trip_facts", "get_trip_conditions_answer", "assess_driver_move"):
+             schema = next(t["inputSchema"] for t in TOOLS if t["name"] == name)
+             self.assertNotIn("receipt", json_keys(schema))
+         self.assertTrue(set(FACT_FIELDS).isdisjoint(
+--- /dev/null
++++ neo4j_kg/driver_conditions.py
+@@ -0,0 +1,90 @@
++"""Small follow-up answer from a fresh saved-trip assessment.
++
++The full assessment is preserved in the local MCP audit, while the consumer
++receives the relevant dated observations and supported comparisons directly.
++No fact, scope, requirement result or source is changed by this projection.
++"""
++
++
++def conditions_answer(assessment):
++    if assessment['service_status'] != 'available':
++        return ('The evidence service is unavailable. Your saved trip facts remain intact, '
++                'but I cannot recheck the sources or reuse the previous findings. '
++                'Retry this saved trip. No operational permission is issued.')
++    evidence = assessment['evidence_package']
++    case = assessment['case']
++    if (case['question_scope'] not in ('route', 'trip_dispatch', 'terminal_entry')
++            or case['facts'].get('terminal_id', {}).get('value') != 'facility_apm_elizabeth'
++            or any(f['requirement_id'] == 'current_route_conditions' and f['status'] in ('met', 'not_met')
++                   for f in assessment['findings'])):
++        # The compact archived-page explanation must not suppress an admitted
++        # operator condition result or turn a narrow/other-terminal check into APM.
++        from .driver_brief import driver_brief
++        return driver_brief(assessment)
++    terminal = evidence.get('current_terminal_status')
++    sections = [
++        '**The supplied sources do not establish that the roads or APM gate are open at your arrival.** '
++        'They also do not establish that either is closed. Here is what the dates support.',
++    ]
++    if terminal and terminal['status'] == 'available':
++        pages = {s['page']: s for s in terminal['sources']}
++
++        def page_link(key, label):
++            return f"[{label}]({pages[key]['url']})"
++
++        sections.append(f"These {len(pages)} APM pages were retrieved at {terminal['retrieved_at']}. "
++                        'Retrieval time dates the fetch, not verification of the contents or '
++                        'their effective time. This reassessment does not establish a live public-road check.')
++        if 'status_update' in pages:
++            link = page_link('status_update', 'APM status update')
++            if terminal.get('latest_notice_heading'):
++                sections.append(link + ' contains the heading **“' + terminal['latest_notice_heading']
++                                + '”**. It is a schedule heading. It does not date a separate closure excerpt.')
++            if terminal.get('closure_notice_text'):
++                sections.append(link + ' also contains this separate, unverified closure excerpt: **“'
++                                + terminal['closure_notice_text'] + '”**. Its own stated date must '
++                                'be kept separate from the schedule heading and retrieval time; '
++                                'it does not establish conditions at this trip’s arrival.')
++        if 'row_closures' in pages and terminal.get('row_closures_text'):
++            effective = terminal.get('row_closures_effective')
++            sections.append(page_link('row_closures', 'APM row closures')
++                            + ': row-closure text is present; its effective time is '
++                            + (str(effective) if effective else '**not stated**')
++                            + '. These are terminal rows, not public-road closures.')
++        if 'gate_info' in pages:
++            sections.append(page_link('gate_info', 'APM gate and truck turn-time page')
++                            + ': this observation supplies no verified gate-open finding for your arrival. '
++                            'A link to a camera or turn-time widget is not an open/closed result.')
++    else:
++        sections.append('No usable current terminal-page observation is available in this assessment. '
++                        'The retained route and size references do not verify current road or gate conditions.')
++
++    sources = {s['clause_id']: s for s in evidence['sources']}
++    checks = {c['check_id']: c for c in assessment['reported_fact_checks']['checks']}
++    useful = []
++    for check_id in ('nj_loaded_height', 'federal_gross_80000'):
++        row = checks.get(check_id)
++        if not row or row['comparison'] is None:
++            continue
++        refs = row['source_clause_ids']
++        if not refs or not all(cid in sources for cid in refs):
++            continue
++        c = row['comparison']
++        links = []
++        for cid in refs:
++            source = sources[cid]
++            note = source.get('provenance_review') or {}
++            locator = note.get('recommended_locator', source['locator'])
++            links.append(f"[{source['title']} — {locator}]({source['url']})")
++        units = 'inches' if c['unit'] == 'inch' else 'lb'
++        useful.append('; '.join(links) + ': your reported ' + c['field'].replace('_', ' ')
++                      + f" is {c['reported']:g} {units}, {c['relation']} the cited {c['reference']:g} {units} reference. "
++                      + row['context'])
++    if useful:
++        sections.append('**Useful findings remain:**\n\n' + '\n\n'.join(useful)
++                        + '\n\nThese are source comparisons, not route-specific physical clearance '
++                        'or a completed axle/bridge assessment. Missing current conditions do not erase them.')
++    sections.append('The next checks are current road conditions on your exact segments and APM gate/appointment '
++                    'conditions for your arrival. Existing route, axle/load, permit and credential gaps remain '
++                    'separate. This synthetic assessment does not issue operational permission.')
++    return '\n\n'.join(sections)
+--- /dev/null
++++ neo4j_kg/driver_move.py
+@@ -0,0 +1,140 @@
++"""Compact complete-move delivery; the existing service owns every check/write."""
++from .driver_brief import driver_brief, retained_text
++from .service import InputError
++
++
++PRESENTATION = ('Display answer_markdown verbatim as your answer, with its Markdown source links. '
++                'It is already the prepared driver-facing explanation. Do not summarize or rewrite '
++                'its rule passages: configuration, standard-truck, network, return and exception '
++                'conditions are consequential. You may add one brief sentence acknowledging an '
++                'explicit correction before it. Do not expose the internal trip_id, revision or '
++                'assessment_id. Do not add a separate legal conclusion.')
++
++
++def assess_move(service, arguments):
++    """Discriminate operations before delegation; never let a move lose scope."""
++    if not isinstance(arguments, dict):
++        raise InputError('Expected a complete-move operation')
++    action = arguments.get('action')
++    common = {'facts', 'source_message', 'request_key', 'requester_role'}
++    required = {'create': common - {'requester_role'},
++                'update': common | {'trip_id', 'expected_revision'},
++                'read': {'trip_id'}}
++    if not isinstance(action, str) or action not in required:
++        raise InputError('action must be create, update or read')
++    allowed = required[action] | ({'replace_conflicts'} if action == 'update' else set())
++    if action == 'create':
++        allowed |= {'requester_role'}
++    args = {k: v for k, v in arguments.items() if k != 'action'}
++    if required[action] - args.keys() or args.keys() - allowed:
++        raise InputError('Missing required or unexpected complete-move arguments; scope is always trip_dispatch')
++    if action in ('update', 'read'):
++        saved = service.trip_store.get(args['trip_id'])
++        if saved['question_scope'] != 'trip_dispatch':
++            raise InputError('This saved case has a narrow scope; use its original trip tools')
++    if action == 'read':
++        return service.assess(args)
++    args['question_scope'] = 'trip_dispatch'
++    return service.update(args) if action == 'update' else service.assess(args)
++
++
++def move_answer(a):
++    """Source comparisons for APM; exceptional findings retain the full briefing."""
++    if a['service_status'] != 'available':
++        return ('Your trip facts are saved, but the evidence service is unavailable. '
++                'I cannot reuse previous findings. Retry this saved trip for a fresh assessment. '
++                'No operational permission is issued.')
++    case = a['case']
++    if (case['question_scope'] != 'trip_dispatch'
++            or case['facts'].get('terminal_id', {}).get('value') != 'facility_apm_elizabeth'
++            or case['conflicts'] or a['input_review']['issues']
++            or any(f['status'] != 'unresolved' for f in a['findings'])):
++        return driver_brief(a)
++    sources = {s['clause_id']: s for s in a['evidence_package']['sources']}
++    checks = {c['check_id']: c for c in a['reported_fact_checks']['checks']}
++
++    def cite(cid, label):
++        s = sources[cid]
++        locator = (s.get('provenance_review') or {}).get('recommended_locator', s['locator'])
++        return f"[{label}, {locator}]({s['url']})"
++
++    def comparison(key):
++        row = checks.get(key)
++        if not row or row['comparison'] is None or not all(cid in sources for cid in row['source_clause_ids']):
++            return None
++        c = row['comparison']
++        unit = 'in' if c['unit'] == 'inch' else 'lb'
++        return f"Reported {c['field'].replace('_', ' ')}: {c['reported']:g} {unit}, {c['relation']} the {c['reference']:g} {unit} reference."
++
++    parts = ['**The supplied evidence does not establish that this truck can make this move to APM.** '
++             'This is an incomplete assessment, not a finding that the trip is illegal. '
++             'The truck comparisons below remain useful; none is permission to proceed.']
++    route = a['evidence_package'].get('route_context')
++    if route and route['status'] == 'resolved_from_pinned_graph':
++        parts.append('**Your route:** ' + ' → '.join(s['name'] or s['segment_id'] for s in route['segments'])
++                     + '. This stored sequence is not a legal designation or measured clearance; '
++                     'road names and ownership do not establish the applicable rule.')
++    else:
++        parts.append('No supported stored route sequence resolved; exact roads remain to be established.')
++    height = comparison('nj_loaded_height')
++    if height:
++        parts.append('**Loaded height.** ' + height + ' '
++                     + cite('reg_nj_height_limit', 'NJ size/weight guide') + ': '
++                     + checks['nj_loaded_height']['context'])
++    width = comparison('nj_width_102')
++    if width and 'reg_nj_terminal_access_102_inch_standard_truck' in sources:
++        parts.append('**Width: the standard-truck qualification matters.** ' + width + ' '
++                     + cite('reg_nj_width_limit', 'NJ size/weight guide')
++                     + ' also has a separate 96-inch road category; this trip’s category is unconfirmed. '
++                     + cite('reg_nj_terminal_access_102_inch_standard_truck', 'NJ truck-access rule')
++                     + ' applies specifically to a **102-inch-wide standard truck**, not every truck of that width. '
++                     + 'Its retained conditions are: “'
++                     + retained_text(sources['reg_nj_terminal_access_102_inch_standard_truck']['source_text'])
++                     + '” Whether this truck and these roads qualify is unresolved.')
++    length = comparison('nj_semitrailer_53')
++    if length:
++        parts.append('**Semitrailer length and access.** ' + length + ' '
++                     + cite('reg_nj_semitrailer_length', 'NJ size/weight guide') + ': “'
++                     + retained_text(sources['reg_nj_semitrailer_length']['source_text'])
++                     + '” Configuration, applicable network and direct-access conditions remain unconfirmed.')
++    weight = comparison('federal_gross_80000')
++    if weight:
++        parts.append('**Gross weight.** ' + weight + ' '
++                     + cite('reg_federal_interstate_weight', '23 CFR 658.17') + ': '
++                     + checks['federal_gross_80000']['context']
++                     + ' This comparison does not complete the axle/bridge assessment.')
++    creds = []
++    for key, label in (('twic_report', 'TWIC'), ('sealink_report', 'SeaLink'), ('appointment_report', 'Appointment')):
++        row = checks.get(key)
++        if row and all(cid in sources for cid in row['source_clause_ids']):
++            # Use each report's actual status, including missing/negative reports.
++            cid = row['source_clause_ids'][0]
++            creds.append(cite(cid, label) + ': ' + row['summary'] + ' ' + row['context'])
++    if creds:
++        parts.append('**Terminal prerequisites.** ' + ' '.join(creds))
++    terminal = a['evidence_package'].get('current_terminal_status')
++    if terminal and terminal['status'] == 'available':
++        pages = {s['page']: s for s in terminal['sources']}
++        conditions = [f"Fetched {terminal['retrieved_at']}; fetch time is not the effective date or verification."]
++        if 'status_update' in pages:
++            conditions.append(f"[APM status update]({pages['status_update']['url']}): schedule heading “"
++                              + str(terminal.get('latest_notice_heading') or 'not supplied') + '”; separate unverified closure excerpt “'
++                              + str(terminal.get('closure_notice_text') or 'not supplied')
++                              + '”. The heading does not date that closure or establish arrival-time conditions.')
++        if 'row_closures' in pages:
++            conditions.append(f"[APM row closures]({pages['row_closures']['url']}): effective time "
++                              + str(terminal.get('row_closures_effective') or 'not stated')
++                              + '; terminal rows are not public-road closures.')
++        if 'gate_info' in pages:
++            conditions.append(f"[APM gate/turn times]({pages['gate_info']['url']}): no verified gate-open finding for arrival.")
++        parts.append('**Roads and gate at arrival.** ' + ' '.join(conditions))
++    else:
++        parts.append('**Roads and gate at arrival.** No usable current terminal-page observation is available.')
++    parts.append('Current road/gate conditions are not established. Permit/authority coverage, axle/load, '
++                 'DTR/RFID, induction and transaction/release checks remain unresolved; missing facts do not mean absent credentials or permits. '
++                 'A reported credential is not verified status. Exact road applicability, postings, permits and exceptions remain open.')
++    steps = a['decision_brief']['next_steps'][:3]
++    if steps:
++        parts.append('**Next checks:**\n' + '\n'.join('- ' + s for s in steps))
++    parts.append('Synthetic assessment using retained sources; not a promise of latest policy. No operational permission is issued.')
++    return '\n\n'.join(parts)
+--- /dev/null
++++ tests/test_driver_conditions.py
+@@ -0,0 +1,115 @@
++"""A small follow-up must retain fresh evidence, sources and saved-trip identity."""
++import copy
++import json
++from pathlib import Path
++import unittest
++
++import jsonschema
++from neo4j_kg.driver_conditions import conditions_answer
++from neo4j_kg.mcp_server import Session, TOOLS
++from neo4j_kg.service import CheckingService
++from neo4j_kg.terminal_status import fetch
++from test_terminal_status import stub_get
++import test_trip_assessment as fixtures
++
++
++class ConditionsAnswerTests(unittest.TestCase):
++    setUp = fixtures.TripAssessmentTests.setUp
++    create = fixtures.TripAssessmentTests.create
++    update = fixtures.TripAssessmentTests.update
++    setUpClass = classmethod(fixtures.TripAssessmentTests.setUpClass.__func__)
++
++    def sample(self):
++        return self.create({**fixtures.BASE, 'route_id': 'path_a_exit13a_to_apm',
++                            'height': {'value': 175, 'unit': 'in'},
++                            'gross_weight': {'value': 80000, 'unit': 'lb'}})
++
++    def session(self):
++        session = Session(CheckingService(self.graph), trip_service=self.service,
++                          audit_path=Path(self.tmp.name) / 'audit.jsonl')
++        session.state = 'ready'
++        return session
++
++    def call(self, session, args):
++        return session.handle({'jsonrpc': '2.0', 'id': 1, 'method': 'tools/call',
++                               'params': {'name': 'get_trip_conditions_answer', 'arguments': args}})['result']
++
++    def test_separate_notice_dates_have_their_own_source_links_and_no_mutation(self):
++        a = self.sample()
++        a['evidence_package']['current_terminal_status'] = fetch(get=stub_get)
++        before = copy.deepcopy(a)
++        text = conditions_answer(a)
++        terminal = a['evidence_package']['current_terminal_status']
++        for s in terminal['sources']:
++            self.assertIn(s['url'], text)
++        for key in ('retrieved_at', 'latest_notice_heading', 'closure_notice_text'):
++            self.assertIn(terminal[key], text)
++        self.assertIn('does not date a separate closure excerpt', text)
++        self.assertIn('effective time is **not stated**', text)
++        self.assertIn('reported height is 175 inches', text)
++        self.assertIn('reported gross weight is 80000 lb', text)
++        self.assertLess(len(text), 6500)
++        self.assertEqual(before, a)
++
++    def test_actual_tool_reassesses_latest_revision_and_audits_full_source_binding(self):
++        initial = self.sample()
++        corrected = self.update(initial, {'height': {'value': 162, 'unit': 'in'}}, correction=True)
++        session = self.session()
++        before_reads = self.graph.reads
++        result = self.call(session, {'trip_id': corrected['case']['trip_id']})
++        self.assertFalse(result['isError'])
++        self.assertGreater(self.graph.reads, before_reads)
++        body = result['structuredContent']
++        self.assertEqual(json.loads(result['content'][-1]['text']), body)
++        schema = next(t for t in TOOLS if t['name'] == 'get_trip_conditions_answer')['outputSchema']
++        jsonschema.validate(body, schema)
++        self.assertEqual(2, body['revision'])
++        self.assertEqual(corrected['case']['trip_id'], body['trip_id'])
++        self.assertIn('height is 162 inches', body['answer_markdown'])
++        self.assertNotIn('height is 175', body['answer_markdown'])
++        event = json.loads(session.audit_path.read_text())
++        a = event['evidence_assessment']
++        self.assertEqual(corrected['case'], a['case'])
++        self.assertEqual(body['assessment_id'], a['assessment_id'])
++        self.assertEqual([], event['retrieval_trace']['delivered_passage_clause_ids'])
++        self.assertTrue(a['evidence_package']['sources'])
++        self.assertEqual(conditions_answer(a), body['answer_markdown'])
++
++    def test_outage_does_not_reuse_sources_or_positive_comparisons(self):
++        a = self.sample()
++        self.graph.available = False
++        result = self.call(self.session(), {'trip_id': a['case']['trip_id']})
++        self.assertFalse(result['isError'])
++        text = result['structuredContent']['answer_markdown']
++        self.assertIn('evidence service is unavailable', text)
++        self.assertNotIn('https://', text)
++        self.assertNotIn('height is 175', text)
++
++    def test_followup_cannot_change_scope_or_facts(self):
++        a = self.sample()
++        session = self.session()
++        for extra in ({'facts': {'height': {'value': 162, 'unit': 'in'}}}, {'question_scope': 'route'}):
++            result = self.call(session, {'trip_id': a['case']['trip_id'], **extra})
++            self.assertTrue(result['isError'])
++        current = self.service.assess({'trip_id': a['case']['trip_id']})
++        self.assertEqual(a['case'], current['case'])
++
++    def test_conflicting_height_does_not_become_a_useful_comparison(self):
++        a = self.update(self.sample(), {'height': {'value': 162, 'unit': 'in'}})
++        text = conditions_answer(a)
++        self.assertNotIn('reported height is', text)
++        self.assertIn('reported gross weight is 80000', text)
++
++    def test_bounded_operator_conditions_and_narrow_scope_keep_the_full_findings(self):
++        from neo4j_kg.driver_brief import driver_brief
++        a = self.sample()
++        finding = next(f for f in a['findings'] if f['requirement_id'] == 'current_route_conditions')
++        for status in ('met', 'not_met'):
++            finding['status'] = status
++            self.assertEqual(driver_brief(a), conditions_answer(a))
++        narrow = self.create(scope='induction')
++        self.assertEqual(driver_brief(narrow), conditions_answer(narrow))
++
++
++if __name__ == '__main__':
++    unittest.main()
+--- /dev/null
++++ tests/test_driver_move.py
+@@ -0,0 +1,137 @@
++"""Complete-move delivery preserves state, evidence and conditional source rules."""
++import copy
++import json
++from pathlib import Path
++import unittest
++
++import jsonschema
++from neo4j_kg.driver_brief import driver_brief, retained_text
++from neo4j_kg.driver_move import move_answer, PRESENTATION
++from neo4j_kg.mcp_server import Session, TOOLS
++from neo4j_kg.service import CheckingService
++from neo4j_kg.terminal_status import fetch
++from test_terminal_status import stub_get
++import test_trip_assessment as fixtures
++
++
++class DriverMoveTests(unittest.TestCase):
++    setUp = fixtures.TripAssessmentTests.setUp
++    create = fixtures.TripAssessmentTests.create
++    setUpClass = classmethod(fixtures.TripAssessmentTests.setUpClass.__func__)
++
++    def session(self):
++        s = Session(CheckingService(self.graph), trip_service=self.service,
++                    audit_path=Path(self.tmp.name) / 'audit.jsonl')
++        s.state = 'ready'
++        return s
++
++    def args(self, key='new'):
++        return {'action': 'create', 'requester_role': 'driver', 'source_message': 'Synthetic trip report',
++                'request_key': key, 'facts': {**fixtures.BASE,
++                    'trip_at': '2026-09-19T18:00:00-04:00', 'route_id': 'path_a_exit13a_to_apm',
++                    'height': {'value': 175, 'unit': 'in'}, 'width': {'value': 102, 'unit': 'in'},
++                    'semitrailer_length': {'value': 53, 'unit': 'ft'},
++                    'gross_weight': {'value': 80000, 'unit': 'lb'},
++                    'twic_reported': True, 'sealink_registered_reported': True, 'appointment_reported': True}}
++
++    def call(self, s, args):
++        return s.handle({'jsonrpc': '2.0', 'id': 1, 'method': 'tools/call',
++                         'params': {'name': 'assess_driver_move', 'arguments': args}})['result']
++
++    def last_assessment(self, s):
++        return json.loads(s.audit_path.read_text().splitlines()[-1])['evidence_assessment']
++
++    def test_create_correct_retry_read_and_separate_move_preserve_identity_and_full_scope(self):
++        s = self.session()
++        initial = self.call(s, self.args())['structuredContent']
++        self.assertEqual('trip_dispatch', self.last_assessment(s)['case']['question_scope'])
++        update = {'action': 'update', 'trip_id': initial['trip_id'], 'expected_revision': 1,
++                  'requester_role': 'driver', 'source_message': 'Correction: loaded height is 13 ft 6 in.',
++                  'request_key': 'correction', 'replace_conflicts': True,
++                  'facts': {'height': {'value': 162, 'unit': 'in'}}}
++        corrected = self.call(s, update)['structuredContent']
++        self.assertEqual(2, corrected['revision'])
++        self.assertIn('height: 162 in', corrected['answer_markdown'])
++        self.assertNotIn('height: 175 in', corrected['answer_markdown'])
++        self.assertEqual(2, self.call(s, update)['structuredContent']['revision'])
++        reads = self.graph.reads
++        reread = self.call(s, {'action': 'read', 'trip_id': initial['trip_id']})['structuredContent']
++        self.assertGreater(self.graph.reads, reads)
++        self.assertEqual(2, reread['revision'])
++        separate = self.args('separate'); separate['facts']['route_id'] = 'path_b_us1_9_to_apm'
++        other = self.call(s, separate)['structuredContent']
++        self.assertNotEqual(initial['trip_id'], other['trip_id'])
++        self.assertEqual(5, len(self.last_assessment(s)['evidence_package']['route_context']['segments']))
++        self.assertEqual(1, other['revision'])
++
++    def test_conditional_rules_links_and_observation_dates_survive_compact_projection(self):
++        self.service.terminal_status_fetcher = lambda: fetch(get=stub_get)
++        s = self.session(); result = self.call(s, self.args())
++        self.assertFalse(result['isError'])
++        body = result['structuredContent']; a = self.last_assessment(s); text = body['answer_markdown']
++        schema = next(t for t in TOOLS if t['name'] == 'assess_driver_move')['outputSchema']
++        jsonschema.validate(body, schema)
++        self.assertEqual(body, json.loads(result['content'][0]['text']))
++        self.assertEqual(text, move_answer(a))
++        self.assertEqual(PRESENTATION, body['presentation'])
++        for source in a['evidence_package']['sources']:
++            if source['clause_id'] in ('reg_nj_terminal_access_102_inch_standard_truck', 'reg_nj_semitrailer_length'):
++                self.assertIn(retained_text(source['source_text']), text)
++                self.assertIn(source['url'], text)
++        self.assertIn('**102-inch-wide standard truck**', text)
++        self.assertIn('13 ft 6 in, including the load, except as otherwise identified', text)
++        self.assertIn('lower bridge-formula limit', text)
++        for page in a['evidence_package']['current_terminal_status']['sources']:
++            self.assertIn(page['url'], text)
++        self.assertIn('The heading does not date that closure', text)
++        self.assertLess(len(text), 7500)
++        event = json.loads(s.audit_path.read_text())
++        self.assertEqual([], event['retrieval_trace']['delivered_passage_clause_ids'])
++        self.assertEqual(26, len(a['evidence_package']['sources']))
++        self.assertNotIn(body['trip_id'], text)
++
++    def test_schema_and_runtime_reject_cross_operation_fields_scope_and_receipt_injection(self):
++        s = self.session(); initial = self.call(s, self.args())['structuredContent']
++        schema = next(t for t in TOOLS if t['name'] == 'assess_driver_move')['inputSchema']
++        bad = [self.args() | {'question_scope': 'route'}, self.args() | {'expected_revision': 1},
++               self.args() | {'trip_id': initial['trip_id']}, self.args() | {'receipt': {}},
++               {'action': 'read', 'trip_id': initial['trip_id'], 'facts': {}},
++               {'action': 'read', 'trip_id': initial['trip_id'], 'replace_conflicts': True},
++               {'action': 'update', 'trip_id': initial['trip_id']}, self.args() | {'action': []}]
++        for args in bad:
++            with self.subTest(args=args):
++                with self.assertRaises(jsonschema.ValidationError):
++                    jsonschema.validate(args, schema)
++                self.assertTrue(self.call(s, args)['isError'])
++        self.assertEqual(1, self.states.get(initial['trip_id'])['revision'])
++
++    def test_narrow_case_is_not_silently_rescoped(self):
++        a = self.create(scope='route'); s = self.session()
++        result = self.call(s, {'action': 'read', 'trip_id': a['case']['trip_id']})
++        self.assertTrue(result['isError'])
++        self.assertEqual('route', self.states.get(a['case']['trip_id'])['question_scope'])
++
++    def test_conflicting_reports_and_bounded_results_keep_detailed_findings(self):
++        s = self.session(); result = self.call(s, self.args())['structuredContent']; a = self.last_assessment(s)
++        before = copy.deepcopy(a); move_answer(a); self.assertEqual(before, a)
++        for status in ('met', 'not_met', 'not_applicable'):
++            a['findings'][0]['status'] = status
++            self.assertEqual(driver_brief(a), move_answer(a))
++        update = {'action': 'update', 'trip_id': result['trip_id'], 'expected_revision': 1,
++                  'requester_role': 'driver', 'source_message': 'Additional report', 'request_key': 'conflict',
++                  'facts': {'height': {'value': 162, 'unit': 'in'}}}
++        body = self.call(s, update)['structuredContent']; a = self.last_assessment(s)
++        self.assertTrue(a['case']['conflicts'])
++        self.assertEqual(driver_brief(a), body['answer_markdown'])
++
++    def test_outage_never_reuses_prior_positive_comparisons(self):
++        s = self.session(); body = self.call(s, self.args())['structuredContent']; self.graph.available = False
++        result = self.call(s, {'action': 'read', 'trip_id': body['trip_id']})['structuredContent']
++        self.assertEqual('unavailable', result['service_status'])
++        self.assertNotIn('https://', result['answer_markdown'])
++        self.assertNotIn('175', result['answer_markdown'])
++        self.assertEqual('not_issued', result['operational_permission'])
++
++
++if __name__ == '__main__':
++    unittest.main()

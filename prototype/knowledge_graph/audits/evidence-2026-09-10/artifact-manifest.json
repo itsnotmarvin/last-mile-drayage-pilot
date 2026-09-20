@@ -1,0 +1,363 @@
+{
+  "algorithm": "sha256",
+  "created_at": "2026-09-11T00:10:36.378943+00:00",
+  "scope": "Files within this audit directory, excluding this manifest. Runtime hashes are separately captured in runtime-files.json.",
+  "files": {
+    "README.md": {
+      "sha256": "96ee7ddb72e5850ecc0c607f3aa21dd82899c783bba9449d70bc3ca9783ccad2",
+      "bytes": 10990
+    },
+    "adversarial-results.json": {
+      "sha256": "a5ab8ba7d7993edf4098705a41bf5c719e300eef37c9b58e272adb913a760062",
+      "bytes": 3661
+    },
+    "casebook.json": {
+      "sha256": "605ac47b32d9838fd81831704f8efb1e6766f8a8299ef1db9ea90c8f78f08a7e",
+      "bytes": 82846
+    },
+    "casebook.sha256": {
+      "sha256": "31f1b2b9cf98021f4eb12f0d782520ea1c98b14f30e07fe15d0c8d43a67a817a",
+      "bytes": 65
+    },
+    "direct-mcp-audit.jsonl": {
+      "sha256": "938b0b3b216b6c3313d7b150676826600a843227826ed170ad396fe8d14ab18d",
+      "bytes": 2863473
+    },
+    "direct-partial-results.json": {
+      "sha256": "26bae8c0ce87733c910c8f5a5e88563b2b79f5ad3f94cd19790329c1ed92e0e2",
+      "bytes": 514825
+    },
+    "direct-results.json": {
+      "sha256": "37e96666825615a9e0820e3e858dc11d6d505676a973eebef9a1a257eff131f6",
+      "bytes": 22767
+    },
+    "direct-run.log": {
+      "sha256": "df149743dae16ce937b9f00b8c5a00e6735e7bc60d5b5b6f326f7f8db9876f99",
+      "bytes": 23309
+    },
+    "direct-stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "direct-stdio-transcript.json": {
+      "sha256": "54978b0b761fa270c99f255f1374ee9be6f772a3582f7ab27d957bd03af78295",
+      "bytes": 2200424
+    },
+    "final-integrity-checks.json": {
+      "sha256": "05c65a22204f211a7955098f041d1a090f79943f8d2b4e3b382095c90e92a3b7",
+      "bytes": 481
+    },
+    "pdf-quote-screen.json": {
+      "sha256": "9b92ccce16bc6988438fde08b04e5ee7ba13073b5ef32d323bdafe98bd5407a9",
+      "bytes": 33411
+    },
+    "prompts/S1_AXLE_FACTS__dispatcher__neutral__r1.txt": {
+      "sha256": "a8b63b1eb06a83471d7da7f06e0007c1cb2d1c6944809764f5923dfc3b303558",
+      "bytes": 639
+    },
+    "prompts/S1_AXLE_FACTS__dispatcher__neutral__r2.txt": {
+      "sha256": "a8b63b1eb06a83471d7da7f06e0007c1cb2d1c6944809764f5923dfc3b303558",
+      "bytes": 639
+    },
+    "prompts/S1_AXLE_FACTS__dispatcher__pressure__r1.txt": {
+      "sha256": "7be435c209f2b89e188c457d0d0e330ac0097df47195db175839dc77c4c058e9",
+      "bytes": 771
+    },
+    "prompts/S1_AXLE_FACTS__dispatcher__pressure__r2.txt": {
+      "sha256": "7be435c209f2b89e188c457d0d0e330ac0097df47195db175839dc77c4c058e9",
+      "bytes": 771
+    },
+    "prompts/S1_AXLE_FACTS__driver__neutral__r1.txt": {
+      "sha256": "dc32ce4538cc527fb49b442464db644e618b2383b6f1dcc0ef4bf705adf2b134",
+      "bytes": 621
+    },
+    "prompts/S1_AXLE_FACTS__driver__neutral__r2.txt": {
+      "sha256": "dc32ce4538cc527fb49b442464db644e618b2383b6f1dcc0ef4bf705adf2b134",
+      "bytes": 621
+    },
+    "prompts/S1_AXLE_FACTS__driver__pressure__r1.txt": {
+      "sha256": "2eaac8758682e377da22300706f05db05c4bb0b22b9183cbe00366ae7c41a6bc",
+      "bytes": 732
+    },
+    "prompts/S1_AXLE_FACTS__driver__pressure__r2.txt": {
+      "sha256": "2eaac8758682e377da22300706f05db05c4bb0b22b9183cbe00366ae7c41a6bc",
+      "bytes": 732
+    },
+    "prompts/S2_DIMENSIONS_LOCAL_ACCESS__dispatcher__neutral__r1.txt": {
+      "sha256": "db1fd38f5ef4860979883b3722a0b824eacf4322a6c09e2ec08f233b965cfb1f",
+      "bytes": 918
+    },
+    "prompts/S2_DIMENSIONS_LOCAL_ACCESS__dispatcher__neutral__r2.txt": {
+      "sha256": "db1fd38f5ef4860979883b3722a0b824eacf4322a6c09e2ec08f233b965cfb1f",
+      "bytes": 918
+    },
+    "prompts/S2_DIMENSIONS_LOCAL_ACCESS__dispatcher__pressure__r1.txt": {
+      "sha256": "124d2d8e9249762ee6d84ea3f3837023a2321815ec9983cae8547ead98f0c0df",
+      "bytes": 1050
+    },
+    "prompts/S2_DIMENSIONS_LOCAL_ACCESS__dispatcher__pressure__r2.txt": {
+      "sha256": "124d2d8e9249762ee6d84ea3f3837023a2321815ec9983cae8547ead98f0c0df",
+      "bytes": 1050
+    },
+    "prompts/S2_DIMENSIONS_LOCAL_ACCESS__driver__neutral__r1.txt": {
+      "sha256": "6a9e057dd4d3416f7c11dc544d2dc84c552597474b02c8da7d86e2152016889a",
+      "bytes": 900
+    },
+    "prompts/S2_DIMENSIONS_LOCAL_ACCESS__driver__neutral__r2.txt": {
+      "sha256": "6a9e057dd4d3416f7c11dc544d2dc84c552597474b02c8da7d86e2152016889a",
+      "bytes": 900
+    },
+    "prompts/S2_DIMENSIONS_LOCAL_ACCESS__driver__pressure__r1.txt": {
+      "sha256": "26dd5312222bc23edc6220c02e7d8bc6b9d3f2c9de0520603e77adf030cf844f",
+      "bytes": 1011
+    },
+    "prompts/S2_DIMENSIONS_LOCAL_ACCESS__driver__pressure__r2.txt": {
+      "sha256": "26dd5312222bc23edc6220c02e7d8bc6b9d3f2c9de0520603e77adf030cf844f",
+      "bytes": 1011
+    },
+    "prompts/S3_PERMIT_HANDOFF_88K__dispatcher__neutral__r1.txt": {
+      "sha256": "179f7e8fda3ae0b608cc6bab74500806019a19f54077443cdf88e4c465e5029f",
+      "bytes": 927
+    },
+    "prompts/S3_PERMIT_HANDOFF_88K__dispatcher__neutral__r2.txt": {
+      "sha256": "179f7e8fda3ae0b608cc6bab74500806019a19f54077443cdf88e4c465e5029f",
+      "bytes": 927
+    },
+    "prompts/S3_PERMIT_HANDOFF_88K__dispatcher__pressure__r1.txt": {
+      "sha256": "ed4276313975bfad69b6e47228b04cc64f1fb40b51604bc26cce3502fd493ed3",
+      "bytes": 1059
+    },
+    "prompts/S3_PERMIT_HANDOFF_88K__dispatcher__pressure__r2.txt": {
+      "sha256": "ed4276313975bfad69b6e47228b04cc64f1fb40b51604bc26cce3502fd493ed3",
+      "bytes": 1059
+    },
+    "prompts/S3_PERMIT_HANDOFF_88K__driver__neutral__r1.txt": {
+      "sha256": "21475b5e2555de78ac930bbddc5137f58c0994a9f10d5039835445c54d6ee474",
+      "bytes": 909
+    },
+    "prompts/S3_PERMIT_HANDOFF_88K__driver__neutral__r2.txt": {
+      "sha256": "21475b5e2555de78ac930bbddc5137f58c0994a9f10d5039835445c54d6ee474",
+      "bytes": 909
+    },
+    "prompts/S3_PERMIT_HANDOFF_88K__driver__pressure__r1.txt": {
+      "sha256": "0207315fe07bf299104cc38fcce785fae9c0a24ba34f88154f9ce135feb01831",
+      "bytes": 1020
+    },
+    "prompts/S3_PERMIT_HANDOFF_88K__driver__pressure__r2.txt": {
+      "sha256": "0207315fe07bf299104cc38fcce785fae9c0a24ba34f88154f9ce135feb01831",
+      "bytes": 1020
+    },
+    "prompts/S4_OVERSIZE_MUTABLE_PORT_ST__dispatcher__neutral__r1.txt": {
+      "sha256": "e06921d928c3a51456571d2e08cd7a950991d5533184905a393a89b5a9108489",
+      "bytes": 1061
+    },
+    "prompts/S4_OVERSIZE_MUTABLE_PORT_ST__dispatcher__neutral__r2.txt": {
+      "sha256": "e06921d928c3a51456571d2e08cd7a950991d5533184905a393a89b5a9108489",
+      "bytes": 1061
+    },
+    "prompts/S4_OVERSIZE_MUTABLE_PORT_ST__dispatcher__pressure__r1.txt": {
+      "sha256": "111085630faa06c5fd30235c85945871077498ce2da7663e8ce6819ca86838f8",
+      "bytes": 1193
+    },
+    "prompts/S4_OVERSIZE_MUTABLE_PORT_ST__dispatcher__pressure__r2.txt": {
+      "sha256": "111085630faa06c5fd30235c85945871077498ce2da7663e8ce6819ca86838f8",
+      "bytes": 1193
+    },
+    "prompts/S4_OVERSIZE_MUTABLE_PORT_ST__driver__neutral__r1.txt": {
+      "sha256": "e8b7bd7d5f1beb781dc6d18285e2b1562f9acb2d82ed8760490cc80d4cc00ade",
+      "bytes": 1043
+    },
+    "prompts/S4_OVERSIZE_MUTABLE_PORT_ST__driver__neutral__r2.txt": {
+      "sha256": "e8b7bd7d5f1beb781dc6d18285e2b1562f9acb2d82ed8760490cc80d4cc00ade",
+      "bytes": 1043
+    },
+    "prompts/S4_OVERSIZE_MUTABLE_PORT_ST__driver__pressure__r1.txt": {
+      "sha256": "9c50ad2acad113eb413cd61a5f352311e564a662799f5f234dfbfb14a2f35cb8",
+      "bytes": 1154
+    },
+    "prompts/S4_OVERSIZE_MUTABLE_PORT_ST__driver__pressure__r2.txt": {
+      "sha256": "9c50ad2acad113eb413cd61a5f352311e564a662799f5f234dfbfb14a2f35cb8",
+      "bytes": 1154
+    },
+    "prompts/S5_DTR_CONFLICT__dispatcher__neutral__r1.txt": {
+      "sha256": "6a9f2df1e273dc00574e474a3f0c6236db9e639a606eb17fafeaf8e975642659",
+      "bytes": 919
+    },
+    "prompts/S5_DTR_CONFLICT__dispatcher__neutral__r2.txt": {
+      "sha256": "6a9f2df1e273dc00574e474a3f0c6236db9e639a606eb17fafeaf8e975642659",
+      "bytes": 919
+    },
+    "prompts/S5_DTR_CONFLICT__dispatcher__pressure__r1.txt": {
+      "sha256": "aa2c897e9fab56f3af177d5de7dc58d4be9194a9dc963f40f53467503a67a111",
+      "bytes": 1051
+    },
+    "prompts/S5_DTR_CONFLICT__dispatcher__pressure__r2.txt": {
+      "sha256": "aa2c897e9fab56f3af177d5de7dc58d4be9194a9dc963f40f53467503a67a111",
+      "bytes": 1051
+    },
+    "prompts/S5_DTR_CONFLICT__driver__neutral__r1.txt": {
+      "sha256": "937fb58917c419045e20914f03ee68d27af154491f30ca2bf8d302b5dd924583",
+      "bytes": 901
+    },
+    "prompts/S5_DTR_CONFLICT__driver__neutral__r2.txt": {
+      "sha256": "937fb58917c419045e20914f03ee68d27af154491f30ca2bf8d302b5dd924583",
+      "bytes": 901
+    },
+    "prompts/S5_DTR_CONFLICT__driver__pressure__r1.txt": {
+      "sha256": "532ce172ef33552d647c0b1fdbc17ddf234b8b2c33708fd2bb23e2b733e91110",
+      "bytes": 1012
+    },
+    "prompts/S5_DTR_CONFLICT__driver__pressure__r2.txt": {
+      "sha256": "532ce172ef33552d647c0b1fdbc17ddf234b8b2c33708fd2bb23e2b733e91110",
+      "bytes": 1012
+    },
+    "prompts/S6_GATE_CREDENTIALS__dispatcher__neutral__r1.txt": {
+      "sha256": "a4db203016868f6fe128fc8e1e4478a0eeb649e72114024794866c332fa8077f",
+      "bytes": 842
+    },
+    "prompts/S6_GATE_CREDENTIALS__dispatcher__neutral__r2.txt": {
+      "sha256": "a4db203016868f6fe128fc8e1e4478a0eeb649e72114024794866c332fa8077f",
+      "bytes": 842
+    },
+    "prompts/S6_GATE_CREDENTIALS__dispatcher__pressure__r1.txt": {
+      "sha256": "efa15213193e9d1aa72dcf06e7fffc8301cd95c6f894a96526304f56e22a6208",
+      "bytes": 974
+    },
+    "prompts/S6_GATE_CREDENTIALS__dispatcher__pressure__r2.txt": {
+      "sha256": "efa15213193e9d1aa72dcf06e7fffc8301cd95c6f894a96526304f56e22a6208",
+      "bytes": 974
+    },
+    "prompts/S6_GATE_CREDENTIALS__driver__neutral__r1.txt": {
+      "sha256": "784aff57fe9859d1eb5b048e29bf4c7c9a80226073ba5b79858ae15c889d6a83",
+      "bytes": 824
+    },
+    "prompts/S6_GATE_CREDENTIALS__driver__neutral__r2.txt": {
+      "sha256": "784aff57fe9859d1eb5b048e29bf4c7c9a80226073ba5b79858ae15c889d6a83",
+      "bytes": 824
+    },
+    "prompts/S6_GATE_CREDENTIALS__driver__pressure__r1.txt": {
+      "sha256": "3a1e08bf74df6d3a97642bb9433823cd2a2ce86f2dd23f9cca5fb2cfbb74e419",
+      "bytes": 935
+    },
+    "prompts/S6_GATE_CREDENTIALS__driver__pressure__r2.txt": {
+      "sha256": "3a1e08bf74df6d3a97642bb9433823cd2a2ce86f2dd23f9cca5fb2cfbb74e419",
+      "bytes": 935
+    },
+    "provider/captured-mcp-events.jsonl": {
+      "sha256": "ab71d7e253c3d588bbe7958152d4c643df350dee10c0e1324fdad52606131fd5",
+      "bytes": 69192
+    },
+    "provider/runtime-log-baseline.json": {
+      "sha256": "75cd71cb6ba876f942f4292e9784924f1e1b5a12586132f1420b173939d30efe",
+      "bytes": 1728
+    },
+    "provider-results.json": {
+      "sha256": "7eb0fe5de47126ece13eb224c0c6b442c4716deb49e75ff120cf1adf94eae842",
+      "bytes": 1920
+    },
+    "repository-inventory.json": {
+      "sha256": "8aa3eced25eb0e34afa2c206fca0de52d6ee6c5b8b53e40c869137ba79e98aca",
+      "bytes": 95441
+    },
+    "requirement-evidence.json": {
+      "sha256": "888eaeb6c365081574ccd24e2188a3f2b6732ea3c8acf4658dfe38a9b25823a8",
+      "bytes": 82048
+    },
+    "runtime-files.json": {
+      "sha256": "1db2079dede852995fe108ee74a59559ee47340924d8913b6ba936eef220d132",
+      "bytes": 1334
+    },
+    "source-coverage.json": {
+      "sha256": "d79e6deac2008216bb3620f2aaacbc94b8cd3d172a47c18a45a0182f20720dc7",
+      "bytes": 7557
+    },
+    "source-extracts/elizabeth_code_10_16_050_page_snapshot_2026_08_07.txt": {
+      "sha256": "fd793a5f56a7433b8f23e283aab1d34db903760f816d2ac1c40ecfac6029ecfa",
+      "bytes": 26110
+    },
+    "source-extracts/nj_size_weight_guidebook_2024.txt": {
+      "sha256": "962fea3d452d81daa54389bfd6379061c250eb66dadde084ff37090e2982e07f",
+      "bytes": 100101
+    },
+    "source-extracts/njac_13_18_current_snapshot_2026_08_24.txt": {
+      "sha256": "a18d70037973f6cba5ef422f98f056ea779a0941f191a092336e7c72e82c1968",
+      "bytes": 22704
+    },
+    "source-extracts/njac_16_32_truck_access_current_2023.txt": {
+      "sha256": "cb7c7f5a50363e843bf55318c122a7f82614928eb2580384dc6aca3a963ef1cd",
+      "bytes": 10
+    },
+    "source-extracts/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.txt": {
+      "sha256": "4f711c4639c239c7de5bd8de630d6a4d5f3b0a93c9741997019f3d498e1bbfe7",
+      "bytes": 173301
+    },
+    "source-extracts/panynj_truckers_resource_guidebook.txt": {
+      "sha256": "7c796f1b4600c44fb7d31a9f73130335851ee55d1a56671838a028c4030bb59f",
+      "bytes": 237870
+    },
+    "source-extracts/union_county_laws_2026.txt": {
+      "sha256": "b407d24ceaf55fef4098bc3e4ba33d38318f040ffec69a48758d6931972848d0",
+      "bytes": 779397
+    },
+    "source-manual-review.json": {
+      "sha256": "b2c9d17c115fd4a4192ea4a0a0c521306ebf0c8b0f5b29b7215324b49c8a58fa",
+      "bytes": 6512
+    },
+    "source-review/nj_size_weight_guidebook_2024-p43.png": {
+      "sha256": "b27370de7195c89af54dea6a6ff03e686a4117a802232c9c78934ee5f3527966",
+      "bytes": 292324
+    },
+    "source-review/njac_13_18_current_snapshot_2026_08_24-p2.png": {
+      "sha256": "4e4cf14d158131bb7b25e894c56f0d52fc6de3a2c0af4c43d89fc2060b410aef",
+      "bytes": 315506
+    },
+    "source-review/njac_13_18_current_snapshot_2026_08_24-p3.png": {
+      "sha256": "05616ff4e2c64a7ba61e65f9bb2abf36db53350422eb8e9563c261c6ef8f3966",
+      "bytes": 319051
+    },
+    "source-review/njac_13_18_current_snapshot_2026_08_24-p4.png": {
+      "sha256": "fb113e170b22be3d9de0d5b968040fd65bddc3b77896e80bb42ad9acc1290b45",
+      "bytes": 347392
+    },
+    "source-review/njac_16_32_truck_access_current_2023-p2.png": {
+      "sha256": "d427ee9743f22c0327e4ebf76da4a552944824ac89419220ea6cd91d0ad72c1e",
+      "bytes": 866833
+    },
+    "source-review/njac_16_32_truck_access_current_2023-p3.png": {
+      "sha256": "190534465a5f3bab7e8f3fe670b532892bb4e50b3df0d0b9d5d214b1a1ee8a54",
+      "bytes": 798642
+    },
+    "source-review/njac_16_32_truck_access_current_2023-p4.png": {
+      "sha256": "a2654012b778603d3ea6aae2fcc9c2b29bdf34693a0adb99ce8b7b283aa8b34a",
+      "bytes": 799997
+    },
+    "source-review/panynj_marine_terminal_tariff_pa10_effective_2026_05_01-p16.png": {
+      "sha256": "91494a4b85ff7b0013a5d880c8827031bb87dae45097902c964f5f52989381dd",
+      "bytes": 228671
+    },
+    "source-review/panynj_truckers_resource_guidebook-p11.png": {
+      "sha256": "430799bf8ff4149c8f631ae80f8faeabc5ba165a79f1a3d24ed110a0dfcb812f",
+      "bytes": 497343
+    },
+    "source-review/panynj_truckers_resource_guidebook-p4.png": {
+      "sha256": "fe5b955c012f947bbb28e97bae8b74189e6ef428d735be1f7e8c8dd8b1aa05f5",
+      "bytes": 504417
+    },
+    "source-run.log": {
+      "sha256": "ba1beda0ecf635a3666c5d0223ffe088b3e5710a8d67f342ef413f4032b329f9",
+      "bytes": 7591
+    },
+    "tools.json": {
+      "sha256": "156dddd35f21bb565ecde4d80ae6f32be68eeef8753ac429060f98eb8c30d1af",
+      "bytes": 198509
+    },
+    "unit-tests-final.txt": {
+      "sha256": "ce06ef75d4c76729cccfbc11d1b1b463d875064bd372664dc2450f3c4f6c5b5d",
+      "bytes": 30081
+    },
+    "unit-tests.txt": {
+      "sha256": "263f8f48e4647598129356b7ee2834cdf9dea7fd3f7948be7d8e1881837f466d",
+      "bytes": 29262
+    }
+  }
+}

@@ -1,0 +1,56 @@
+test_explicit_key_required_and_pending_confirmation_rejected_over_http (test_confirmed_advice.ConfirmedAdviceHttpTests.test_explicit_key_required_and_pending_confirmation_rejected_over_http) ... ok
+test_archived_bulletin_is_not_a_current_instruction_in_projection (test_confirmed_advice.ConfirmedAdviceTests.test_archived_bulletin_is_not_a_current_instruction_in_projection) ... ok
+test_confirmed_read_preserves_statement_and_binds_fresh_result (test_confirmed_advice.ConfirmedAdviceTests.test_confirmed_read_preserves_statement_and_binds_fresh_result) ... ok
+test_driver_dispatcher_same_qualified_comparisons_and_boundary (test_confirmed_advice.ConfirmedAdviceTests.test_driver_dispatcher_same_qualified_comparisons_and_boundary) ... ok
+test_legacy_proposal_key_cannot_read_confirmed_assessment (test_confirmed_advice.ConfirmedAdviceTests.test_legacy_proposal_key_cannot_read_confirmed_assessment) ... ok
+test_new_statement_and_unconfirmed_proposal_suppress_old_result (test_confirmed_advice.ConfirmedAdviceTests.test_new_statement_and_unconfirmed_proposal_suppress_old_result) ... ok
+test_other_conversation_message_and_boolean_version_rejected (test_confirmed_advice.ConfirmedAdviceTests.test_other_conversation_message_and_boolean_version_rejected) ... ok
+test_out_of_band_revision_cannot_reuse_confirmation (test_confirmed_advice.ConfirmedAdviceTests.test_out_of_band_revision_cannot_reuse_confirmation) ... ok
+test_outage_clears_explanation_sources_and_comparisons (test_confirmed_advice.ConfirmedAdviceTests.test_outage_clears_explanation_sources_and_comparisons) ... ok
+test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) ... 
+  test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='delete') ... ERROR
+  test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='statement') ... ERROR
+test_sharing_downgrade_revokes_assessment_scope_and_access (test_confirmed_advice.ConfirmedAdviceTests.test_sharing_downgrade_revokes_assessment_scope_and_access) ... ok
+
+======================================================================
+ERROR: test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='delete')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 93, in test_revocation_expiry_and_delete_during_graph_read_suppress_response
+    self.app.model_assessment(self.cap,self.mid,2)
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/trip_app/service.py", line 43, in model_assessment
+    assessment = self.assessments.assess({'trip_id': before['case']['trip_id']})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/neo4j_kg/assessment.py", line 227, in assess
+    return self._assess_saved(case, written="trip_id" not in args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/neo4j_kg/assessment.py", line 252, in _assess_saved
+    if self.trip_store.get(case['trip_id'])['revision'] != case['revision']:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/neo4j_kg/trip_state.py", line 536, in get
+    raise TripNotFound(f"Synthetic trip not found: {trip_id}")
+neo4j_kg.trip_state.TripNotFound: Synthetic trip not found: syn-trip-643c9b4bb6e5ec0ff312056ea5d7c76e
+
+======================================================================
+ERROR: test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='statement')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 83, in test_revocation_expiry_and_delete_during_graph_read_suppress_response
+    self.confirmed()
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 35, in confirmed
+    self.mid, pid = self.proposal(self.facts, text)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 23, in proposal
+    mid=self.ws.message(self.token,self.csrf,self.cid,version,text,self.cid+':'+str(version))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/trip_app/store.py", line 186, in message
+    conversation = self._access(db, user, cid, write=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/trip_app/store.py", line 143, in _access
+    raise Denied('Conversation unavailable')
+trip_app.store.Denied: Conversation unavailable
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.643s
+
+FAILED (errors=2)

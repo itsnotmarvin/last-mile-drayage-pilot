@@ -1,0 +1,106 @@
+{
+  "algorithm": "sha256",
+  "scope": "Every final capture artifact except this manifest; relative paths within this directory.",
+  "files": {
+    "README.md": {
+      "sha256": "4e912e24c985a2c3033645314f8107e3ae9f81c4345629cfa4270ae8570245c7",
+      "bytes": 6035
+    },
+    "activation-receipt.json": {
+      "sha256": "0b61dfe4815c00487f90aa7c28a3bd580b3452226ab33fbb52adc9de052a1067",
+      "bytes": 1288
+    },
+    "axle-http-transcript.json": {
+      "sha256": "d9f4c96fc40b22cc4690f51dd35a01c173ae5187ee62d49157ccda2ecd8472d3",
+      "bytes": 320785
+    },
+    "axle-mcp-transcript.json": {
+      "sha256": "3fbd8273e9c8b9c242b4a5a81f00f1bf7ac6add2b1c7b3f86242a39a3243a50c",
+      "bytes": 2184458
+    },
+    "browser-status.json": {
+      "sha256": "349711d654ed5ed2fcc1f0c0a732522c738a189d36ad1380b14101fc161131e3",
+      "bytes": 460
+    },
+    "inactive-source-candidate/ecfr-bridge-equation.json": {
+      "sha256": "1d3c85ebbbfba22c49dc4b86723fcebfeb7dc10d8161807208f707438b5ffcc5",
+      "bytes": 1087
+    },
+    "inactive-source-candidate/ecfr-bridge-equation.png": {
+      "sha256": "641599047eae05466864b8f05c42d2bf1445a234639d22358982fd8de28b9af8",
+      "bytes": 605
+    },
+    "local-tests.txt": {
+      "sha256": "ee7d5a87c384ac754fd3c46477eb6b13018cde46a275fbbd3715ddff47f0dd25",
+      "bytes": 44997
+    },
+    "proposed-scope.json": {
+      "sha256": "0afb4188e0d294a5fe5ffaaab36e754735e4d2d82394a6ac8f369d125d54dd02",
+      "bytes": 3303
+    },
+    "reported-checks/cases.json": {
+      "sha256": "02d787d319aa94c02626029f27d6c7ef0cc88eab4ea6161e6ada5f1a9d0c893b",
+      "bytes": 2445
+    },
+    "reported-checks/comparison-results.json": {
+      "sha256": "2081aba2ed6c02eec4371bc88f894e74f00c518db33394fd7b75193fd89dfad0",
+      "bytes": 7559
+    },
+    "reported-checks/mcp-transcript.json": {
+      "sha256": "ca8069cc0184c419de38567d3b5979b5a520837d9da651dc9ceb14b44c89c33c",
+      "bytes": 5351048
+    },
+    "reported-checks/mixed-height-report.html": {
+      "sha256": "6fea7be1356f917b73d554d49ba276c15a30c3c2f0b832b7133d36a8678be4b9",
+      "bytes": 46319
+    },
+    "reported-checks/reported-check-catalog.json": {
+      "sha256": "03615c2f3f4725416f61bc7b881eeaf41ef1b1553cd5050e6209b34efac8ed80",
+      "bytes": 22476
+    },
+    "reported-checks/stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "reported-checks/summary.json": {
+      "sha256": "a2d3e094fce44da7ed85545201da7765af885a356be62e98322504cd5fa49762",
+      "bytes": 3689
+    },
+    "reported-checks/tools.json": {
+      "sha256": "8394d09b848410bdbfd2e780d7c0ce76fd5e241d25e8871a2e995e3555aa1e25",
+      "bytes": 400365
+    },
+    "source-inventory.json": {
+      "sha256": "cc6e68c6259a6622df21f55b77b82d6f0d55fc37f77d9dade6a8eed7022b7c1c",
+      "bytes": 41698
+    },
+    "source-review-packet.json": {
+      "sha256": "1f38627868024658147b65eefa59ba2b104052bfdb2b8bffb61b685246ac9297",
+      "bytes": 136173
+    },
+    "stdio-stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "summary.json": {
+      "sha256": "72401911e2a454b2c7892f158388d97afbbd6971068acaa001f74b431a834bae",
+      "bytes": 4558
+    },
+    "tools.json": {
+      "sha256": "8394d09b848410bdbfd2e780d7c0ce76fd5e241d25e8871a2e995e3555aa1e25",
+      "bytes": 400365
+    },
+    "unchanged-release-comparison.json": {
+      "sha256": "b5494624c45fefd9501f13e4e39c4bfd21976ced5ad11bcd3878e8cad9772320",
+      "bytes": 967
+    },
+    "validation-status.json": {
+      "sha256": "13be8103d77bca8475fddb767a2e4d833d630bf78912cc286ad01b150f5d769c",
+      "bytes": 1663
+    },
+    "verifier.py": {
+      "sha256": "b091394feda469268f03dd5870a1e5177da8ef7e7117b57beb55065f3fbe141d",
+      "bytes": 13173
+    }
+  }
+}

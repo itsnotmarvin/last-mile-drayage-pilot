@@ -1,0 +1,29 @@
+{
+  "status": "offline_preparation_checks_passed_not_model_results",
+  "created_at_utc": "2026-09-20T01:33:20.688483+00:00",
+  "frozen_original_dataset_hash_matches": true,
+  "four_prompts_match_original_lock": true,
+  "eight_baseline_responses_match_original_hashes": true,
+  "eight_metadata_prompt_and_response_bindings_match": true,
+  "all_original_model_labels": "Sonnet 5 · Medium",
+  "all_five_claude_positive_rows_selected": true,
+  "three_nonpositive_companion_repetitions_retained": true,
+  "sixteen_selected_original_human_ratings_preserved": true,
+  "reference_design_codebook_gold_evidence_locks_match": true,
+  "accepted_runtime_36_hashes_unchanged": true,
+  "runtime_files_snapshotted": 49,
+  "schedule_slots": 8,
+  "new_model_calls": 0,
+  "new_assessments": 0,
+  "app_or_database_configuration_changes": 0,
+  "application_tests_run": false,
+  "application_test_note": "Preparation-only artifact work; no application checkpoint or behavior changes. Last accepted suite result remains historical, not rerun here.",
+  "packet_manifest_validation": "Run verify_packet.py after sealing manifest.",
+  "remaining_live_checks": [
+    "usage and authentication",
+    "selected model and reasoning setting",
+    "fresh incognito context",
+    "connector availability and audit capture",
+    "complete native response capture"
+  ]
+}

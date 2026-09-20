@@ -1,0 +1,20 @@
+{
+  "captured_at_utc": "2026-09-20T02:46:12.461620+00:00",
+  "response_sha256": "8ca6c028b9b9cd6ef53989467f869595d7d6817ee20a50c5b5056f12927fa1fc",
+  "response_bytes": 3157,
+  "audit_records": [
+    {
+      "path": "audits/missing_dimensions__mcp-session-b7a4f47f77ad4656b782e0308f397fab.jsonl",
+      "snapshot_path": "audits/snapshot__missing_dimensions__mcp-session-b7a4f47f77ad4656b782e0308f397fab.jsonl",
+      "source_session": "mcp-session-b7a4f47f77ad4656b782e0308f397fab.jsonl",
+      "start_offset": 0,
+      "end_offset": 282959,
+      "sha256": "a992871bbda89c08e7f6166a9fe2ecf228b78a1bb9b371c2804f21386a6b213a",
+      "event_count": 1,
+      "methods": [
+        "assess_driver_move"
+      ]
+    }
+  ],
+  "note": "Events are time-window candidates; validate prompt/session attribution before scoring."
+}

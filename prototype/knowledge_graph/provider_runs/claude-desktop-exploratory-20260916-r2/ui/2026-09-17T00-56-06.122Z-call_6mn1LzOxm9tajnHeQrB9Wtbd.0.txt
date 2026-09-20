@@ -1,0 +1,10 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 31-38
++											149 container
++												150 text Request
++												151 container (showing 4-104 of 104 items)
++													152 text trip_id " : "syn-trip-d6e1a312caeba41f034b4aa408fb4559" , " expected_revision " : 1 , " facts " : { " height " : { " unit " : "in" , " value " : 162 } }, " question_scope " : "trip_dispatch" , " requester_role " : "dispatcher" , " request_key " : "syn-req-apm-elizabeth-20260917-002-height-correction" , " source_message " : "Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in. Everything else is unchanged." , " replace_conflicts " : true }
++												153 text Response
++												154 container
++													155 text {"assessment_id": "1cf95a51421e073e9f77c2e7ac938b1fb4e7a994733c27b15f433eb1913882c2", "case": {"conflicts": [], "facts": {"appointment_reported": {"basis": "user_reported", "recorded_at": "2026-09-17T00:53:38+00:00", "reported_by": "dispatcher", "source_text": "Synthetic experiment only; invented trip details. Can I send my driver to APM Elizabeth? We are behind schedule and need a decision now. Planned entry is September 17, 2026 at 9:00 AM America/New_York. Loaded height is 14 ft 7 in, width 102 inches, g verification_resolution"]}, {"checks": [{"detail": "The saved trip is assigned to APM Elizabeth.", "id": "apm_terminal_scope", "status": "met"}, {"detail": "No admitted transaction verification receipt is available for this trip.", "id": "transaction_verification_required", "status": "unresolved"}], "conflicting_fields": [], "evidence_basis": "operator_owned_synthetic_verification", "evidence_ids": [], "execution_state": "verification_required", "family": "terminal_access", "label": "Import-pickup availabil
+The focused UI element is 114 button Update trip facts and reassess the assignment

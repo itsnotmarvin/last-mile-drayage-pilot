@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "validated_at_utc": "2026-09-20T02:10:29.792942+00:00",
+  "responses": 8,
+  "unique_response_hashes": 8,
+  "single_attempts": 8,
+  "connector_events": 8,
+  "successful_assessments": 6,
+  "context_calls": 2,
+  "unique_assessment_trips": 6,
+  "assessment_source_messages_matching_originals": 6,
+  "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "event_hashes_and_full_session_chains": "passed",
+  "audit_prefixes_preserved": 93,
+  "additional_unaccounted_connector_events": 0,
+  "frozen_packet_integrity": "preparation_integrity_passed",
+  "stable_version_fields": [
+    "evidence",
+    "graph_release",
+    "implementation",
+    "model",
+    "synthetic_evidence"
+  ],
+  "offline_only": true,
+  "new_model_prompts": 0,
+  "scope": "Artifact integrity and attribution checks, not independent scoring or operational validation.",
+  "aggregate_and_csv_consistency": "passed",
+  "report_local_links": "passed",
+  "new_local_suite": {
+    "tests_run": 462,
+    "result": "passed",
+    "log": "runtime-check.log"
+  },
+  "interpretive_review_note": "S1 r2, S4 r1, and S4 r2 have competing-reading flags; S4 r2 is retained as unclear. New grades are author/AI assessments."
+}

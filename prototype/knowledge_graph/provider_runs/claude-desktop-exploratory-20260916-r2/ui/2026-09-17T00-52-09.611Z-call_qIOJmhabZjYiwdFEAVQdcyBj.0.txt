@@ -1,0 +1,20 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 127-129
+~											19 text 3 minutes ago
+~											88 text 2 minutes ago
++										134 container
++											135 text Needs your input
++											136 button Needs your input
++											137 text Needs your input
++											138 container
++												139 button (disabled) Update trip facts and reassess the assignment
++												140 text D
++												141 button Claude wants to use Update trip facts and reassess the assignment from drayage-kg-prototype
++													142 text Claude wants to use 
++													143 text Update trip facts and reassess the assignment
++													144 text  from 
++													145 text drayage-kg-prototype
++												146 button Deny
++												147 button Always allow
++												148 button Allow once
+The focused UI element is 98 text entry area (settable) Description: Write your prompt to Claude, Value: 

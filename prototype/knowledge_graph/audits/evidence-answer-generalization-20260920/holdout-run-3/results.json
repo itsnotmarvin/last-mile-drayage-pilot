@@ -1,0 +1,150 @@
+{
+  "surface": "local_mcp_handler_with_archived_oracle_not_consumer_app",
+  "holdout_sha256": "0a0cc75b41e751cc41865c482284c620ac713ffeb61430e50aff8d439d8d1124",
+  "passed": 11,
+  "total": 12,
+  "cases": [
+    {
+      "id": "missing_measurements_local_access",
+      "passed": true,
+      "checks": {
+        "local_access_source": true,
+        "missing_dimensions_explained": true,
+        "reported_driver_context_preserved": true,
+        "no_invented_route": true
+      },
+      "answer_characters": 2280,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "different_weight_annual_permit",
+      "passed": true,
+      "checks": {
+        "permit_source": true,
+        "separate_authorities": true,
+        "group_report_preserved": true,
+        "no_group_split": true
+      },
+      "answer_characters": 6178,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "unknown_destination_weight",
+      "passed": true,
+      "checks": {
+        "weight_source": true,
+        "bridge_spacing_dependency": true,
+        "no_apm_assumption": true,
+        "no_clearance": true
+      },
+      "answer_characters": 5537,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "reported_approvals_are_not_verified",
+      "passed": true,
+      "checks": {
+        "reported_approval_values_preserved": true,
+        "no_verification_promotion": true,
+        "no_clearance": true
+      },
+      "answer_characters": 4763,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "one_negative_approval",
+      "passed": true,
+      "checks": {
+        "negative_vs_positive_preserved": true,
+        "separate_authorities": true,
+        "no_clearance": true
+      },
+      "answer_characters": 3667,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "width_known_then_removed",
+      "passed": true,
+      "checks": {
+        "rule_survives_removed_measurement": true,
+        "old_measurement_absent": true
+      },
+      "answer_characters": 2016,
+      "graph_reads": 2,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "past_date_only",
+      "passed": true,
+      "checks": {
+        "date_preserved_without_timestamp": true,
+        "permit_explanation_not_erased": true
+      },
+      "answer_characters": 3716,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "unrelated_new_terminal",
+      "passed": false,
+      "checks": {
+        "no_apm_applicability": true,
+        "height_source": false,
+        "terminal_coverage_gap": true
+      },
+      "answer_characters": 1701,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "partial_route_with_stored_candidate",
+      "passed": true,
+      "checks": {
+        "candidate_route_not_actual_route": true,
+        "no_route_completion": true
+      },
+      "answer_characters": 2156,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "expired_observation_no_permission",
+      "passed": true,
+      "checks": {
+        "separate_authorities": true,
+        "archived_not_live": true,
+        "no_apm_assumption": true,
+        "no_release_checklist": true
+      },
+      "answer_characters": 7202,
+      "graph_reads": 1,
+      "implementation": "29355c3409b55ab276fc1a365652d474b6bb6155658264c6020a35c39bdbd1fd"
+    },
+    {
+      "id": "fact_text_conflict",
+      "passed": true,
+      "checks": {
+        "atomic_rejection": true
+      },
+      "answer_characters": 0,
+      "graph_reads": 0,
+      "implementation": null
+    },
+    {
+      "id": "evidence_service_outage",
+      "passed": true,
+      "checks": {
+        "no_stale_findings_or_sources": true
+      },
+      "answer_characters": 184,
+      "graph_reads": 2,
+      "implementation": null
+    }
+  ],
+  "limits": "Same-author predeclared checks, not independent human scoring or proof of generalization beyond this set."
+}

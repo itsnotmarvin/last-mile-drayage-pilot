@@ -1,0 +1,26 @@
+**Decision: hold the truck. Do not release it as a cleared legal move yet.**
+
+This is not because 80,000 lb needs a permit. It's because nothing you've given me lets anyone confirm the load is legal.
+
+**Does 80,000 lb gross require a NJ permit?**
+No, not by itself. 80,000 lb is the standard legal maximum gross weight for a five-axle combination, so exactly 80,000 lb is not "overweight" on gross weight. But a gross weight at the limit leaves zero margin, and the axle weights are what usually cause violations. Typical steer/drive/trailer distribution on a moving load is often off, and the load is not yet weighed. Confirm the axle limits (single, tandem and bridge-formula limits) with NJ MVC/NJDOT, since I can't guarantee I have every current NJ figure right.
+
+**Two things matter more than the permit question**
+1. **Overweight permits generally aren't available for divisible loads.** A commercial move of boxes and furniture is almost certainly divisible, so if a scale shows any axle or the gross over the limit, the fix is to shift or remove freight, not to get a permit. Don't count on an overweight permit as a fallback.
+2. **An oversize permit is only realistic for nondivisible loads.** If the loaded width, height or length exceeds the legal limits, you have a legal problem, not a paperwork one. Typical limits are 102 in. wide, 13 ft 6 in. high, and a 53 ft trailer on the designated network. Route matters for some of these.
+
+**How to release it in about 15 minutes, with no agency calls**
+1. Load the truck, then run it over a certified scale (a CAT scale at a truck stop works) and get a ticket showing steer, drive and trailer axle weights plus gross.
+2. Measure loaded width and height with a tape. Confirm the trailer length.
+3. Release the truck only if all of these are true:
+   - Gross is at or under 80,000 lb.
+   - Every axle group is within limits.
+   - Width and height are within legal limits.
+   - The trailer length is legal for the route.
+4. If any item fails, offload or redistribute and re-weigh. Don't dispatch and hope.
+
+**Practical advice:** don't plan to load to exactly 80,000 lb. Real scale weights vary with fuel and load shift, so aim for a few hundred pounds under, and target axle weights well inside their limits.
+
+**One flag:** you said the move is on September 2, 2026, but today is September 19, 2026, so that date has already passed. If you meant a different date, tell me, since holiday and travel restrictions can affect routing. If the move already happened, that's a different conversation, and I can help with that too.
+
+I'm not a lawyer or a regulatory authority, so treat the scale ticket and the state's published limits as the final word. If the ticket comes back clean and the dimensions check out, you're clear to release, and no permit is needed.

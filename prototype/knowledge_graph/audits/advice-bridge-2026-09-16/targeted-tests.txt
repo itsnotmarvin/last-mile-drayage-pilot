@@ -1,0 +1,88 @@
+test_explicit_key_required_and_pending_confirmation_rejected_over_http (test_confirmed_advice.ConfirmedAdviceHttpTests.test_explicit_key_required_and_pending_confirmation_rejected_over_http) ... ok
+test_archived_bulletin_is_not_a_current_instruction_in_projection (test_confirmed_advice.ConfirmedAdviceTests.test_archived_bulletin_is_not_a_current_instruction_in_projection) ... ok
+test_confirmed_read_preserves_statement_and_binds_fresh_result (test_confirmed_advice.ConfirmedAdviceTests.test_confirmed_read_preserves_statement_and_binds_fresh_result) ... ok
+test_driver_dispatcher_same_qualified_comparisons_and_boundary (test_confirmed_advice.ConfirmedAdviceTests.test_driver_dispatcher_same_qualified_comparisons_and_boundary) ... ok
+test_legacy_proposal_key_cannot_read_confirmed_assessment (test_confirmed_advice.ConfirmedAdviceTests.test_legacy_proposal_key_cannot_read_confirmed_assessment) ... ok
+test_new_statement_and_unconfirmed_proposal_suppress_old_result (test_confirmed_advice.ConfirmedAdviceTests.test_new_statement_and_unconfirmed_proposal_suppress_old_result) ... ok
+test_other_conversation_message_and_boolean_version_rejected (test_confirmed_advice.ConfirmedAdviceTests.test_other_conversation_message_and_boolean_version_rejected) ... ok
+test_out_of_band_revision_cannot_reuse_confirmation (test_confirmed_advice.ConfirmedAdviceTests.test_out_of_band_revision_cannot_reuse_confirmation) ... ok
+test_outage_clears_explanation_sources_and_comparisons (test_confirmed_advice.ConfirmedAdviceTests.test_outage_clears_explanation_sources_and_comparisons) ... ok
+test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) ... 
+  test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='expire') ... ERROR
+  test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='delete') ... ERROR
+  test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='statement') ... ERROR
+test_sharing_downgrade_revokes_assessment_scope_and_access (test_confirmed_advice.ConfirmedAdviceTests.test_sharing_downgrade_revokes_assessment_scope_and_access) ... ok
+test_capability_cannot_use_session_endpoints_or_confirm (test_trip_app_web.HttpTests.test_capability_cannot_use_session_endpoints_or_confirm) ... ok
+test_csrf_origin_host_and_content_type_rejections_do_not_write (test_trip_app_web.HttpTests.test_csrf_origin_host_and_content_type_rejections_do_not_write) ... ok
+test_duplicate_json_nonfinite_and_unknown_fields_rejected (test_trip_app_web.HttpTests.test_duplicate_json_nonfinite_and_unknown_fields_rejected) ... ok
+test_http_confirmed_outage_and_stale_conflict (test_trip_app_web.HttpTests.test_http_confirmed_outage_and_stale_conflict) ... ok
+test_login_is_rate_limited (test_trip_app_web.HttpTests.test_login_is_rate_limited) ... ok
+test_mcp_rejects_early_tools_remote_urls_and_bad_ids (test_trip_app_web.HttpTests.test_mcp_rejects_early_tools_remote_urls_and_bad_ids) ... ok
+test_real_stdio_bridge_through_local_http (test_trip_app_web.HttpTests.test_real_stdio_bridge_through_local_http) ... ok
+test_sensitive_errors_are_redacted (test_trip_app_web.HttpTests.test_sensitive_errors_are_redacted) ... ok
+test_session_cookie_security_and_headers (test_trip_app_web.HttpTests.test_session_cookie_security_and_headers) ... ok
+test_bounded_extractor_preserves_mixed_units_and_unknowns (test_trip_app.WorkspaceTests.test_bounded_extractor_preserves_mixed_units_and_unknowns) ... ok
+test_concurrent_confirmations_commit_one_current_proposal (test_trip_app.WorkspaceTests.test_concurrent_confirmations_commit_one_current_proposal) ... ok
+test_idempotent_statement_and_confirmation (test_trip_app.WorkspaceTests.test_idempotent_statement_and_confirmation) ... ok
+test_isolation_sharing_and_revocation (test_trip_app.WorkspaceTests.test_isolation_sharing_and_revocation) ... ok
+test_missing_csrf_cannot_mutate (test_trip_app.WorkspaceTests.test_missing_csrf_cannot_mutate) ... ok
+test_model_can_propose_but_cannot_confirm_or_change_statement (test_trip_app.WorkspaceTests.test_model_can_propose_but_cannot_confirm_or_change_statement) ... ok
+test_model_cannot_supply_permission_or_replace_source_text (test_trip_app.WorkspaceTests.test_model_cannot_supply_permission_or_replace_source_text) ... ok
+test_multi_field_corrections_are_atomic_and_ordered (test_trip_app.WorkspaceTests.test_multi_field_corrections_are_atomic_and_ordered) ... ok
+test_original_statement_is_immutable_and_proposal_is_bound (test_trip_app.WorkspaceTests.test_original_statement_is_immutable_and_proposal_is_bound) ... ok
+test_pending_statement_suppresses_old_case_and_stale_proposal (test_trip_app.WorkspaceTests.test_pending_statement_suppresses_old_case_and_stale_proposal) ... ok
+test_revoked_user_cannot_use_an_existing_session (test_trip_app.WorkspaceTests.test_revoked_user_cannot_use_an_existing_session) ... ok
+test_sessions_and_capabilities_expire_and_are_not_interchangeable (test_trip_app.WorkspaceTests.test_sessions_and_capabilities_expire_and_are_not_interchangeable) ... ok
+
+======================================================================
+ERROR: test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='expire')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 81, in test_revocation_expiry_and_delete_during_graph_read_suppress_response
+    self.confirmed()
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 33, in confirmed
+    self.mid, pid = self.proposal(self.facts, text)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_trip_app.py", line 34, in proposal
+    mid = self.ws.message(self.token, self.csrf, self.cid, version, text, 'message-' + str(version))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/trip_app/store.py", line 191, in message
+    raise Conflict('Request key already used for different text')
+trip_app.store.Conflict: Request key already used for different text
+
+======================================================================
+ERROR: test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='delete')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 81, in test_revocation_expiry_and_delete_during_graph_read_suppress_response
+    self.confirmed()
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 33, in confirmed
+    self.mid, pid = self.proposal(self.facts, text)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_trip_app.py", line 34, in proposal
+    mid = self.ws.message(self.token, self.csrf, self.cid, version, text, 'message-' + str(version))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/trip_app/store.py", line 191, in message
+    raise Conflict('Request key already used for different text')
+trip_app.store.Conflict: Request key already used for different text
+
+======================================================================
+ERROR: test_revocation_expiry_and_delete_during_graph_read_suppress_response (test_confirmed_advice.ConfirmedAdviceTests.test_revocation_expiry_and_delete_during_graph_read_suppress_response) (mutation='statement')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 81, in test_revocation_expiry_and_delete_during_graph_read_suppress_response
+    self.confirmed()
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_confirmed_advice.py", line 33, in confirmed
+    self.mid, pid = self.proposal(self.facts, text)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/tests/test_trip_app.py", line 34, in proposal
+    mid = self.ws.message(self.token, self.csrf, self.cid, version, text, 'message-' + str(version))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/trip_app/store.py", line 191, in message
+    raise Conflict('Request key already used for different text')
+trip_app.store.Conflict: Request key already used for different text
+
+----------------------------------------------------------------------
+Ran 32 tests in 2.284s
+
+FAILED (errors=3)

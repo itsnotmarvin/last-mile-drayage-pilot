@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0-wave4-evidence-lock",
+  "status": "locked_before_primary_collection",
+  "locked_at": "2026-08-30T14:45:08-04:00",
+  "repository_url": "https://github.com/itsnotmarvin/last-mile-drayage-pilot.git",
+  "commit": "7fe49ebb0fc8376f0f183e1f614c06d284c13343",
+  "commit_ref": "origin/main",
+  "tracked_worktree_state": "clean_at_lock",
+  "scope": "The locked repository revision establishes the retained regulatory entities, physical route structure, authority layers, rule texts, source identifiers, and coupling structure used by the Wave 4 reference dispositions.",
+  "locked_files": {
+    "README.md": "5569163f7e8a19ffb845f06dc757e60a598f27c6271b63dc3ed56377fcb47d4d",
+    "data/metadata.json": "438f78bfd89a16f75a7e99438aa0bd2e90c3ea97bd6c6bebce782bfa62efb4f8",
+    "data/processed/entity_nodes.json": "19e2c68c86c2f8abeed623a37e1f8de873db1e05a28cd90469ceadb446428e89",
+    "data/processed/physical_nodes.geojson": "942003287643863e4741a861694cb457c89d68be0d63a70765bd9ab81000fa53",
+    "data/processed/physical_edges.json": "acfca2713be0b2701836f3d6bcc9af6e72b7886249c289a8979dd7840a2808d0",
+    "data/processed/regulatory_nodes.json": "7c56acccb5e18608a0ad30ef019ee7cf050c10e0f5a2196cc4066426faa6a35c",
+    "data/processed/regulatory_edges.json": "5e5c6ed54b00c396ee886b72611edbe9dcc9b9fd03c1eaab9ecb41b2d2514927",
+    "data/processed/coupling_edges.json": "c3f3261a999f25450962b4979354608626438f28b0ecd95258248e734db39668"
+  },
+  "validation": {
+    "all_oracle_rule_ids_resolve": true,
+    "all_oracle_source_ids_resolve": true,
+    "reference_file": "gold_dispositions.json",
+    "rule_catalog": "data/processed/regulatory_nodes.json"
+  },
+  "limits": [
+    "The repository is a bounded evidentiary record, not a guarantee that every restriction affecting a real trip has been identified.",
+    "Mutable conditions require live rechecking and are not promoted to continuing facts.",
+    "Prompt-supplied dated observations and unresolved conflicts remain scenario facts unless the locked repository independently resolves them."
+  ]
+}

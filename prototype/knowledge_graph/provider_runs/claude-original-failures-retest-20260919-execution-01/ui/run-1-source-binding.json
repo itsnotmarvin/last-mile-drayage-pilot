@@ -1,0 +1,8 @@
+[
+  {
+    "event_hash": "1e6168b5ef548539f4e2e24ae934753a7c2059301c46a6f832ce0d7af93f5d69",
+    "method": "assess_driver_move",
+    "source_message_matches_original_ignoring_outer_whitespace": true,
+    "source_message_sha256": "53f233f58f9bd377c281df433cae1246ab525c2a14a98607e82f83e538825eee"
+  }
+]

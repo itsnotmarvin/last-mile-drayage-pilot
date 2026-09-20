@@ -1,0 +1,11 @@
+{
+  "surface": "Chrome via CUA",
+  "origin": "http://127.0.0.1:8765/",
+  "observed_error": "ERR_BLOCKED_BY_CLIENT",
+  "observed_text": "This page has been blocked by Chrome",
+  "cause": "Specific responsible extension, policy or client mechanism not identified.",
+  "final_tab_reselection": "Debugger unattached",
+  "backend_http": "passed separately; does not prove rendered acceptance",
+  "browser_acceptance": "not_passed",
+  "protections_changed": false
+}

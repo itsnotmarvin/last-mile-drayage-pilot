@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:55:04.847Z",
+  "tool_call_id": "call_EctXzCS8b0jCd0C3Y8VhbtJ4",
+  "arguments": {
+    "code": "await claude.click(74); await claude.paste('Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in. Everything else is unchanged. Does that settle it?'); await claude.pressKey('Return'); await claude.getAXState();",
+    "title": "Submit frozen dispatcher height correction"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

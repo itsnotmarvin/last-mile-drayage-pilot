@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T01:38:22.027Z",
+  "tool_call_id": "call_0IYVErdbnfZJP0a99lxNoEjv",
+  "arguments": {
+    "code": "await claude.click(84); await claude.paste('Synthetic experiment only; these are invented trip details, not an actual dispatch. Can I take my truck to APM Elizabeth? Planned entry is September 17, 2026 at 9:00 AM America/New_York. The loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or the exact road sequence. Explain the issues that actually matter and what information would change your answer.'); await claude.pressKey('Return'); await claude.getAXState();",
+    "title": "Submit unchanged driver prompt, r3"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

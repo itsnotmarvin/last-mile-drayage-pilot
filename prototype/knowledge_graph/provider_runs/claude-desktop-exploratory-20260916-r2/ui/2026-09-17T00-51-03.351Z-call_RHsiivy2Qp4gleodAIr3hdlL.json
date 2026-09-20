@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:51:03.351Z",
+  "tool_call_id": "call_RHsiivy2Qp4gleodAIr3hdlL",
+  "arguments": {
+    "code": "await claude.click(42); await claude.scroll([680,340],'up',3); await claude.getAXStateAndScreenshot();",
+    "title": "Preserve driver answer visual, upper section"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

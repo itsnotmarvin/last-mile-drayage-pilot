@@ -1,0 +1,21 @@
+**Short answer:** 80,000 lb gross by itself does not require a New Jersey permit, but I can't tell you to release the truck unconditionally. The information you're missing (axle weights and dimensions) is exactly what decides whether the move is legal.
+
+One thing to check first: today is September 19, 2026, so September 2 has already passed. If you meant a future date, the rules below still apply, but confirm the date.
+
+**Why gross weight isn't a permit trigger**
+- New Jersey requires a permit once a load exceeds its legal limits: 8'6" wide, 13'6" high, or 80,000 pounds gross. Exactly 80,000 is at the limit, not over it.
+- The catch is that the axle limits are 22,400 lbs for a single axle and 34,000 lbs for a tandem, with the federal bridge formula applying to other configurations. A five-axle rig can be legal at 80,000 gross and still be overweight on the drives or trailer tandem if the load is placed badly. Gross weight alone doesn't tell you.
+- An "exactly 80,000" figure usually means an estimate or a calculation. With no margin, a few hundred pounds of error puts you over.
+
+**Dimensions to confirm**
+- Width 8'6" and height 13'6".
+- A 53' semitrailer is legal on Interstates and designated highways, with 41' from kingpin to the center of the rear tandem; other roads limit semitrailers to 48'. This depends on your route, so the unconfirmed route matters.
+- An overweight permit is generally only available for non-divisible loads. A load counts as non-divisible only if it can't be broken down to meet the legal limits. A commercial move is almost certainly divisible. If it ends up over 80,000 or over on an axle group, the fix is to lighten the load, not to get a permit.
+
+**Dispatch decision:** release the driver to load and weigh, not to run the route. Give him this instruction:
+
+> Load, then get a certified scale ticket showing each axle group (steer, drives, trailer tandem) plus gross before leaving. Proceed only if gross is at or under 80,000, steer/single is at or under 22,400, each tandem is at or under 34,000, and the load is within 8'6" wide and 13'6" high with a legal trailer length for the route. If anything is over, shift or offload freight and re-weigh. Do not enter NJ roads overweight.
+
+This doesn't require calling multiple agencies. A certified scale stop takes a few minutes, and it is the one thing I can't substitute for. If everything checks out, no NJ permit is needed. If anything is over, you'd need to fix the load, and a permit likely wouldn't apply to a divisible load.
+
+I'm not a lawyer or a permitting authority. NJDOT's permit office can give a definitive answer for an odd configuration, but you shouldn't need it if the scale ticket shows all groups under their limits.

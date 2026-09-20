@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Find original Claude conversation",
+    "metadata": "ui/2026-09-17T00-48-05.787Z-call_5RDXVRCR5X7mo5xJpomT9Tl9.json"
+  },
+  {
+    "title": "Open isolated driver conversation",
+    "metadata": "ui/2026-09-17T00-48-43.259Z-call_YP1MD4A21sZP94XOusA0NMYZ.json"
+  },
+  {
+    "title": "Verify incognito state visually",
+    "metadata": "ui/2026-09-17T00-48-47.004Z-call_wRIHnWHurEVRoQhqdhY38j8q.json"
+  },
+  {
+    "title": "Submit frozen driver prompt, run two",
+    "metadata": "ui/2026-09-17T00-48-55.896Z-call_t94pVdrvh2gmUY8pKkbIgMd4.json"
+  },
+  {
+    "title": "Observe driver tool call and answer",
+    "metadata": "ui/2026-09-17T00-49-13.263Z-call_ZZgBBOp7uFNHDz6oCErmCD6J.json"
+  },
+  {
+    "title": "Capture driver result progress",
+    "metadata": "ui/2026-09-17T00-49-27.144Z-call_nKkMT3lyelyfLEwojiYq8Aec.json"
+  },
+  {
+    "title": "Read completed driver advice",
+    "metadata": "ui/2026-09-17T00-49-38.456Z-call_4W2sO8fTRS5aDBInMXXBGQWp.json"
+  },
+  {
+    "title": "Inspect tool result attribution",
+    "metadata": "ui/2026-09-17T00-49-51.930Z-call_wGIAx2E0jK9M4Dasbcy5ZMiE.json"
+  },
+  {
+    "title": "Capture full driver answer text",
+    "metadata": "ui/2026-09-17T00-50-12.088Z-call_Igs7k6UiDqVVxGmOgvku5AR6.json"
+  },
+  {
+    "title": "Bind visible driver result to saved assessment",
+    "metadata": "ui/2026-09-17T00-50-27.848Z-call_QbOnBBlQQsMzD7ztyxYIBHjv.json"
+  },
+  {
+    "title": "Preserve driver answer visual, upper section",
+    "metadata": "ui/2026-09-17T00-51-03.351Z-call_RHsiivy2Qp4gleodAIr3hdlL.json"
+  },
+  {
+    "title": "Preserve complete height paragraph visually",
+    "metadata": "ui/2026-09-17T00-51-10.000Z-call_Ptb7rpNmYzFhfzyd2xAjiVrq.json"
+  },
+  {
+    "title": "Capture untruncated height and weight advice",
+    "metadata": "ui/2026-09-17T00-51-15.545Z-call_9MiquLPw6kz1KNLsOk7XlfKj.json"
+  },
+  {
+    "title": "Submit frozen driver height correction",
+    "metadata": "ui/2026-09-17T00-51-27.490Z-call_AwUvUxXWpDDjKRuTLys2rHwO.json"
+  },
+  {
+    "title": "Observe driver correction result",
+    "metadata": "ui/2026-09-17T00-52-09.611Z-call_qIOJmhabZjYiwdFEAVQdcyBj.json"
+  },
+  {
+    "title": "Allow authorized synthetic trip correction once",
+    "metadata": "ui/2026-09-17T00-52-15.245Z-call_Xc9k2jl7iMhh2dtxNNrLIcQQ.json"
+  },
+  {
+    "title": "Capture driver correction answer progress",
+    "metadata": "ui/2026-09-17T00-52-33.597Z-call_PSZSQPo1K3ybMLDpzHVLM2uz.json"
+  },
+  {
+    "title": "Bind correction to updated driver assessment",
+    "metadata": "ui/2026-09-17T00-52-38.816Z-call_p7n7iw7B4C4jUcNedaEQH7vf.json"
+  },
+  {
+    "title": "Preserve driver correction visual",
+    "metadata": "ui/2026-09-17T00-52-45.762Z-call_aJr8oETvrz59Modb1OPeGwYL.json"
+  },
+  {
+    "title": "Leave captured driver conversation",
+    "metadata": "ui/2026-09-17T00-52-52.147Z-call_pYuigFg1UoU64fCRrfRuMeNZ.json"
+  },
+  {
+    "title": "Start independent dispatcher conversation",
+    "metadata": "ui/2026-09-17T00-52-58.873Z-call_6i5YszDsCWe0XXrxzUXA277o.json"
+  },
+  {
+    "title": "Submit frozen dispatcher prompt",
+    "metadata": "ui/2026-09-17T00-53-26.606Z-call_P95Ocyi1teF9CGgMoc9yX6Vg.json"
+  },
+  {
+    "title": "Observe dispatcher tool use",
+    "metadata": "ui/2026-09-17T00-53-42.986Z-call_UV1MnB11UT443oH3KFE4wDit.json"
+  },
+  {
+    "title": "Inspect dispatcher tool progress",
+    "metadata": "ui/2026-09-17T00-53-59.424Z-call_pCcFob46sr6dgMF7IDQWtTS6.json"
+  },
+  {
+    "title": "Capture complete dispatcher initial answer",
+    "metadata": "ui/2026-09-17T00-54-21.752Z-call_vYZPtErReA3v4pahbb1vuU6P.json"
+  },
+  {
+    "title": "Bind dispatcher answer to MCP assessment",
+    "metadata": "ui/2026-09-17T00-54-34.725Z-call_MBUBdiMJGd5RFNMx0BVbxoJ8.json"
+  },
+  {
+    "title": "Preserve full dispatcher height paragraph visually",
+    "metadata": "ui/2026-09-17T00-54-51.133Z-call_EnTWkRACLod5EwBhppRNqFrj.json"
+  },
+  {
+    "title": "Submit frozen dispatcher height correction",
+    "metadata": "ui/2026-09-17T00-55-04.847Z-call_EctXzCS8b0jCd0C3Y8VhbtJ4.json"
+  },
+  {
+    "title": "Observe dispatcher correction tool request",
+    "metadata": "ui/2026-09-17T00-55-21.960Z-call_SwlOFNzCNvY6eUyTsAlhNYWH.json"
+  },
+  {
+    "title": "Allow authorized dispatcher correction once",
+    "metadata": "ui/2026-09-17T00-55-28.831Z-call_8kW1C5IhYi3MEwW7ASpWegAd.json"
+  },
+  {
+    "title": "Capture dispatcher correction response",
+    "metadata": "ui/2026-09-17T00-55-52.135Z-call_dkg7WT6HNXmyhx3vRPoFZbFl.json"
+  },
+  {
+    "title": "Bind dispatcher correction to saved assessment",
+    "metadata": "ui/2026-09-17T00-56-06.122Z-call_6mn1LzOxm9tajnHeQrB9Wtbd.json"
+  },
+  {
+    "title": "Preserve dispatcher final advice visually",
+    "metadata": "ui/2026-09-17T00-56-14.254Z-call_CdbAeNiQpzmcvg7qTJYpMSAr.json"
+  }
+]

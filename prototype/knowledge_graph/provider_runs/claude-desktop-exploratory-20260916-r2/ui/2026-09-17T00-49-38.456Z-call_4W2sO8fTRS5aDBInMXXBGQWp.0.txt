@@ -1,0 +1,2 @@
+There has been no change in the accessibility tree for Window: "Claude".
+The focused UI element is 94 text entry area (settable) Description: Write your prompt to Claude, Value: 

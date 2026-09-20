@@ -1,0 +1,9 @@
+{
+  "schema_validated_successful_mcp_calls": 4,
+  "all_advertised_schemas_valid": true,
+  "preserved_prior_audit_manifest_entries": {
+    "audits/evidence-2026-09-10": 89,
+    "audits/evidence-fix-2026-09-12": 16
+  },
+  "tests_passed": 229
+}

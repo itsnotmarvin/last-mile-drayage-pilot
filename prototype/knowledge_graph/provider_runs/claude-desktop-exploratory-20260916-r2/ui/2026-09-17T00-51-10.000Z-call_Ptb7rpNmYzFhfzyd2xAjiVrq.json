@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:51:10.000Z",
+  "tool_call_id": "call_Ptb7rpNmYzFhfzyd2xAjiVrq",
+  "arguments": {
+    "code": "await claude.click(94); await claude.scroll([680,340],'down',1); await claude.getAXStateAndScreenshot();",
+    "title": "Preserve complete height paragraph visually"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

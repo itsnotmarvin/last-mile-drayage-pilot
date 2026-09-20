@@ -1,0 +1,34 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 106
+~											109 text Used drayage-kg-prototype integration, loaded tools
+~											107 button Used drayage-kg-prototype integration, loaded tools
+~											108 text Used drayage-kg-prototype integration, loaded tools
++											110 container Searched available tools
++												111 text Searched available tools
++												112 button Searched available tools
++											113 container Assess a synthetic driver or dispatcher trip
++												114 text Assess a synthetic driver or dispatcher trip
++												115 text Failed
++												116 button Assess a synthetic driver or dispatcher trip Failed
++											117 container Assess a synthetic driver or dispatcher trip
++												118 text Assess a synthetic driver or dispatcher trip
++												119 button Assess a synthetic driver or dispatcher trip
++											120 text Drafting a clear height-clearance disclaimer for the prototype tool.
++											121 container
++												122 text This  is a synthetic-only  assessment from a  prototype tool — not  a legal ruling and  not real dispatch  clearance. Here's  what actually stands  out.
++												123 text The one number that matters most: height.
++												124 text Your reported 14'7"  (175 in) loaded  height is 
++												125 text above
++												126 text  the  archived NJ baseline  of 13'6" (162 in) for  a commercial vehicle  "on all highways,  except as otherwise  identified." That's a  13-inch overage. This  is the actual red  flag in your numbers  — everything else is  either fine or  unresolved, but this  one is flagged  "attention required."  If that height is  real, you likely need  an oversize permit  and route-specific  clearance (or the  height figure needs  rechecking — it's an  unusual load height  for a container move,  so it's worth  double-checking  whether you measured  correctly).
++												127 text Width and gross weight are not problems by themselves, but aren't cleared either.
++												128 content list
++													129 container
++														130 AXListMarker • 
++														131 text 102 in width sits  exactly at NJ's  standard limit for  the National  Network/Access Routes  (not the stricter 96  in category) — fine  if your route stays  on those roads,  unresolved otherwise.
++													132 container
++														133 AXListMarker • 
++														134 text 80,000 lb gross  sits exactly at both  the federal  Interstate cap and  NJ's standard cap.  That's not a  violation, but it's  also not a pass — the  bridge formula can  require  less  than  80,000 lb depending  on axle spacing, and  you don't have axle  weights. A load at  exactly the ceiling  with unknown axle  distribution is the  case most likely to  actually trip the  bridge formula.
++												135 text Route is the biggest information gap.
++												136 text You said you don't  know the exact road  sequence, and that  turns out to touch  almost everything:  which network the  road belongs to (102  in vs 96 in width  rule), whether you  cross a toll  authority  (Turnpike/Parkway  need separate  approval), whether  Port Street is part  of your path (there's  an active one-lane  restriction near APM
++							137 button Scroll to bottom
+The focused UI element is 107 button Used drayage-kg-prototype integration, loaded tools

@@ -1,0 +1,18 @@
+**The supplied evidence does not establish that this truck can make this move to APM.** This is an incomplete assessment, not a finding that the trip is illegal. The truck comparisons below remain useful; none is permission to proceed.
+
+**What you reported.** Additional reported context, not independently verified or fully structured: “Driver prerequisites are reported satisfied.” These reports are retained without treating them as independent verification.
+
+**Reported approach:** County connectors followed by the direct local approach; final streets are unconfirmed. Exact route membership and restrictions still require confirmation.
+
+No supported stored route sequence resolved; exact roads remain to be established.
+
+**Route access still needs an answer when dimensions are missing.** [N.J.A.C. 16:32 — Truck Access, PDF page 3, N.J.A.C. 16:32-1.4(a)(3); PDF page 9, Appendix C; PDF pages 3-4, N.J.A.C. 16:32-1.5(a)(2); PDF page 2, N.J.A.C. 16:32-1.2(e)](https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf): Appendix C identifies listed county roads in the access network. The separate terminal-access provision concerns a **102-inch-wide standard truck**, **unrestricted local roadways**, necessary terminal access and the **direct route**. Absence from the network list alone establishes neither permission nor prohibition. Obtain the missing loaded dimensions and confirm the actual road sequence, vehicle category, direct terminal access and current local restrictions; a stored route cannot establish those conditions.
+
+**Roads and gate at arrival.** No usable current terminal-page observation is available.
+
+Road/gate conditions and remaining axle, permit, credential and transaction requirements are unresolved. Missing facts do not mean absent credentials or permits.
+
+**Next checks:**
+- Supply any missing loaded dimensions; confirm the actual route, direct terminal access and current restrictions with the responsible road authorities.
+
+These next checks are not an exhaustive release checklist. All unresolved authority, physical-access and terminal requirements remain open. Archived sources do not establish current conditions. Synthetic assessment using retained sources; not a promise of latest policy. No operational permission is issued.

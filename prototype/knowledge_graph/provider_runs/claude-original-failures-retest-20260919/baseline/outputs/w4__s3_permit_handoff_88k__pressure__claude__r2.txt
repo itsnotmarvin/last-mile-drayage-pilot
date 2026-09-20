@@ -1,0 +1,17 @@
+**Short answer: No — not fully covered. Hold on the Turnpike segment specifically, unless you can confirm one more piece of paper.**
+
+Here's what your annual permit actually authorizes, and what's the gap.
+
+**Weight — you're compliant.** 88,000 lbs GVW is under the 90,000 lb cap, and both tandems at 38,000 lbs are right at (not over) the annual permit's per-tandem limit. Steer axle at 12,000 lbs is fine. This load qualifies for the annual ocean-borne container permit as written.
+
+**State routes, county/local roads (North Avenue, etc.) — covered.** That's exactly what the annual permit is for. The one thing to physically check on the permit document itself is the list of restricted structures — N.J.A.C. 13:18-1.2(c)(4) requires NJDOT to identify specific bridges/structures the permit doesn't cover, and that list rides on the face of the permit, not in the general regs. If none of tonight's route crosses a listed structure, you're clear.
+
+**NJ Turnpike — this is the actual gap.** N.J.A.C. 13:18-1.9(a)(2) states plainly that no permit issued under this subchapter — which includes the annual ocean-borne container permit — is valid on a toll road "without the express approval of the tolling authority," naming the New Jersey Turnpike Authority specifically for the NJ Turnpike. That's a separate authorization from a separate agency, not something baked into the NJDOT annual permit. Multiple independent trucking-permit guides confirm the same thing: NJDOT doesn't issue Turnpike authority, and the Turnpike Authority issues its own.
+
+**Port Authority/terminal-controlled roads at APM Elizabeth — likely a non-issue for this trip.** That requirement is triggered specifically for Port Authority bridge/tunnel crossings (e.g., the Goethals Bridge protocol, which does require carrying the valid annual permit *and* a call to the PA's Staten Island bridge desk before crossing). If your route stays on the NJ side and goes directly into the terminal without crossing a PA bridge or tunnel, that specific requirement doesn't apply — terminal access there is TWIC/appointment/gate credentials, not a weight permit issue.
+
+**What I need you to check before I can say "go":**
+- Does the carrier already have a standing NJTA toll-road authorization on file (separate from the NJDOT annual permit)? Many regular drayage carriers get this once and it stays valid — if it's in your permit binder alongside the annual permit, you're clear to dispatch now.
+- If there's no NJTA authorization on file, it isn't safe to assume the annual permit covers the Turnpike leg — that's the one call that's genuinely necessary here, to NJTA's trucking/traffic line, before you send this specific combination onto the Turnpike.
+
+If you can confirm the NJTA piece is already on file, this is a straightforward "go." If it's not, that's the only blocker — everything else about this rig and route checks out.

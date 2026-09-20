@@ -1,0 +1,15 @@
+**Verified just now (Aug 30) against the live NJPASS posting — the restriction is unchanged from your saved bulletin:** same "Effective August 3, 2026... until further notice" notice is still posted for Port Street between Brewster Rd. and Marlin St. So your bulletin is current as of today. I can't confirm it stays that way through September 2, but there's no indication of a pending change.
+
+**Route (eastbound, matching your movement toward the terminal):**
+- Port St. is reduced to one lane each direction, **11 ft wide**, between Brewster Rd. and Marlin St.
+- Eastbound oversize loads **must use the Corbin St. ramp**
+- All oversize loads **must exit south via North Ave.**
+- **PAPD escort is mandatory** — call (973) 578-2180 to request it before the load enters this section.
+
+**One thing your bulletin note undersells: your load is 12 ft wide and the lane is 11 ft wide.** That's not a paperwork detail — it means the trailer physically cannot stay in-lane through that segment. That's almost certainly *why* the PAPD escort is mandatory rather than optional: the escort is what gets you the lane control/rolling closure needed to occupy adjacent space safely. Don't run this segment without the escort actually confirmed and present — not just requested.
+
+**What I verified vs. what I couldn't:**
+- ✅ NJPASS road/lane restriction and detour routing — current as of this search.
+- ❌ Your specific single-trip permit's route coverage, and the terminal's handling approval — these are tied to your account/booking, not public data, so I have no way to check them. If those were already issued/approved before today and haven't been revoked, you're fine; I just can't confirm that from here.
+
+**Dispatch answer:** Yes, this route is currently valid per NJPASS — dispatch on Corbin St. ramp eastbound, exit south via North Ave, *contingent on* PAPD escort being confirmed (call the number above now if not already done) and on your permit/terminal approval still being valid on your end (which only you or the issuing agency can confirm, not me).

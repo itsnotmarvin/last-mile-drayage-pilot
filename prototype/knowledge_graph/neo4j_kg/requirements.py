@@ -1,7 +1,7 @@
 """Static, source-backed requirement intake for synthetic trip assessments.
 
 The catalog says which facts and verification steps a scoped conversation needs.
-Except for the existing induction check, it does not decide compliance.  Source
+Draft evaluators consume operator-owned synthetic verifications for bounded predicates.  Source
 clause IDs point into the pinned Neo4j release; limits retain the source's
 jurisdiction, currentness, and interpretation boundaries.
 """
@@ -49,20 +49,18 @@ _CANONICAL_REQUIREMENTS = (
         ],
         "required_fields": [
             "gross_weight",
-            "axle_weights",
-            "axle_spacings",
-            "axle_count",
+            "axle_layout",
             "route_id",
         ],
         "verification_fields": [
             "gross_weight",
-            "axle_weights",
-            "axle_spacings",
+            "axle_layout",
             "route_id",
         ],
         "owner": "carrier",
         "question_templates": {
             "gross_weight": "What is the loaded gross weight, including the unit?",
+            "axle_layout": "What is the weight on each individual axle and its position measured from the first axle, including units? Leave unknown if only group totals are available.",
             "axle_weights": "What is the loaded weight on each axle or axle group, including the unit?",
             "axle_spacings": "What are the axle spacings, including the unit?",
             "axle_count": "How many axles does the tractor-trailer combination have?",
@@ -70,8 +68,9 @@ _CANONICAL_REQUIREMENTS = (
         },
         "limits": [
             "The federal clause is limited to the Interstate system and reasonable access; the New Jersey single-axle clause is limited to non-Interstate New Jersey roads.",
-            "Which limit applies depends on the exact roadway jurisdiction and route. This catalog implements no bridge-formula, axle-group, tire-load, or legal-weight calculator.",
+            "Which limit applies depends on the exact roadway jurisdiction and route. The draft evaluator compares supported baseline axle/gross/bridge rules; tire-load and special vehicle exceptions remain outside coverage.",
             "Gross weight, axle count, and reported axle weights or spacings do not by themselves establish compliance.",
+            "An explicit individual axle layout resolves input structure only. Its reported sum and span alone do not verify a scale record; legacy arrays remain ambiguous reports.",
             "The NJPASS-hosted route-review clause is excluded from the verified graph because official code-of-record currentness was not independently verified.",
         ],
         "implementation": "evidence_readiness_only",
@@ -88,6 +87,7 @@ _CANONICAL_REQUIREMENTS = (
             "reg_nj_truck_access_local_rule_preservation",
             "reg_nj_access_network_600_series",
             "reg_nj_terminal_access_102_inch_standard_truck",
+            "reg_panynj_terminal_weight_dimensions",
         ],
         "required_fields": [
             "width",
@@ -149,7 +149,7 @@ _CANONICAL_REQUIREMENTS = (
             "permit_route_reported": "Does the reported permit identify this exact route and trip?",
         },
         "limits": [
-            "Permit applicability depends on the load, dimensions, axle facts, trip time, and permit terms; no legal interpretation or permit-validity check is implemented.",
+            "Permit applicability depends on the load, dimensions, axle facts, trip time, and permit terms; the bounded evaluator checks issuer-record status, type prerequisites and numerical envelope, while legal applicability remains separate.",
             "The ocean-container sources concern sealed ocean-borne containers and do not make every container move eligible for that permit type.",
             "The NJPASS-hosted permit clause is retained but excluded from the verified graph because official code-of-record currentness was not independently archived and compared.",
             "A reported permit, including a reported-valid permit, is user-reported evidence and does not establish approval or route coverage.",
@@ -165,6 +165,8 @@ _CANONICAL_REQUIREMENTS = (
             "reg_nj_toll_authority_approval_13_18_portal_copy",
             "reg_nj_truck_access_local_rule_preservation",
             "reg_panynj_terminal_traffic",
+            "reg_njta_roadway_use_limitations",
+            "reg_panynj_terminal_weight_dimensions",
         ],
         "required_fields": [
             "route_id",
@@ -194,6 +196,7 @@ _CANONICAL_REQUIREMENTS = (
         },
         "limits": [
             "A New Jersey State permit does not establish approval for toll, county, local, Port Authority, or terminal-controlled segments.",
+            "The retained Turnpike and marine-terminal clauses concern separate authorities and scopes; their inclusion does not establish that every approval applies to this trip.",
             "Every reported approval requires verification from the responsible authority; a complete set of user reports is not cross-authority clearance.",
             "The retained toll-road approval clause is excluded from the verified graph because official code-of-record currentness was not independently verified.",
         ],
@@ -348,7 +351,7 @@ _CANONICAL_REQUIREMENTS = (
             "induction_reported": "Does the driver report completing APM's induction for that current SeaLink?",
         },
         "limits": [
-            "This is the only catalog requirement with an implemented check, and it uses server-owned synthetic evidence rather than a live training provider.",
+            "This identifier-match check uses server-owned synthetic evidence rather than a live training provider.",
             "A matching synthetic result addresses only induction for the current SeaLink; it is not dispatch, route, permit, or terminal-entry clearance.",
             "Archived policy is not verified as current for the trip, and synthetic assessment dates do not create a training-expiry rule.",
         ],
@@ -376,7 +379,7 @@ _CANONICAL_REQUIREMENTS = (
     },
     {
         "id": "transaction_release",
-        "label": "Same-day transaction and gate release evidence",
+        "label": "Import-pickup availability and transaction scope",
         "family": "terminal_access",
         "source_clause_ids": [],
         "required_fields": ["terminal_id", "trip_at", "transaction_release_reported"],
@@ -388,13 +391,38 @@ _CANONICAL_REQUIREMENTS = (
             "transaction_release_reported": "Is this specific transaction reported as released for the intended gate move?",
         },
         "limits": [
-            "The pinned release contains no retained source clause that establishes same-day transaction or gate-release requirements.",
+            "The pinned graph contains no generic transaction/gate-release clause. Draft graph-linked guide extractions support only pre-arrival import-pickup availability.",
             "No live terminal transaction, gate, cargo-release, or admission integration is implemented. Reported release status cannot establish entry.",
         ],
         "implementation": "evidence_readiness_only",
         "dependencies": ["apm_appointment"],
     },
 )
+
+
+# Concrete binding inputs belong to each implemented evaluator, independently of
+# optional self-reported credential/approval claims. Identity changes invalidate
+# receipts through revision + full case fingerprint even when a field is shared.
+from .verification import REQUIRED_KINDS, required_fields
+_BINDING_QUESTIONS = {
+    'vehicle_id': 'Which synthetic truck is assigned to this move?',
+    'trailer_id': 'Which synthetic trailer is assigned to this move?',
+    'load_id': 'Which synthetic load or container is assigned to this move?',
+    'move_id': 'Which synthetic terminal move is being assessed?',
+    'move_type': 'Is this an import pickup, empty pickup, export dropoff, or empty return?',
+    'trip_at': 'What exact date and time is planned for the move, including time zone?',
+}
+for _requirement in _CANONICAL_REQUIREMENTS:
+    if _requirement['id'] in REQUIRED_KINDS:
+        _requirement['implementation'] = 'bounded_synthetic_verification_v1'
+        # Optional reports remain in the model but cannot substitute for records.
+        _requirement['required_fields'] = required_fields(_requirement['id'])
+        if _requirement['id'] == 'current_route_conditions':
+            _requirement['required_fields'].append('port_street_in_route')
+        for _field in _requirement['required_fields']:
+            _requirement['question_templates'].setdefault(_field, _BINDING_QUESTIONS.get(
+                _field, 'What is the reported '+_field.replace('_', ' ')+' for this trip?'))
+        _requirement['limits'].append('Implemented draft predicates require operator-owned synthetic receipts; no authenticated real authority integration or operational permission is provided.')
 
 
 # Public catalog data is intentionally ordinary JSON-like data for callers and
@@ -466,7 +494,7 @@ def _validate_catalog() -> None:
     if len(ids) != len(set(ids)):
         raise RuntimeError("Duplicate requirement ID")
     allowed_owners = {"driver", "dispatcher", "carrier", "authority"}
-    allowed_implementations = {"induction_identifier_match_v1", "evidence_readiness_only"}
+    allowed_implementations = {"induction_identifier_match_v1", "evidence_readiness_only", "bounded_synthetic_verification_v1"}
     for requirement in _CANONICAL_REQUIREMENTS:
         if requirement["owner"] not in allowed_owners:
             raise RuntimeError("Unsupported requirement owner")

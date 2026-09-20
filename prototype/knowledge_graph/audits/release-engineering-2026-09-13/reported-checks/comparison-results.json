@@ -1,0 +1,254 @@
+[
+  {
+    "case": "mixed_height",
+    "role": "driver",
+    "expected": {
+      "nj_loaded_height": "attention_required",
+      "terminal_height_195": "comparison_only"
+    },
+    "actual": {
+      "nj_loaded_height": "attention_required",
+      "terminal_height_195": "comparison_only"
+    },
+    "assessment_id": "1379e2f15550b537c867ba8db385d5b5b78bd4995ae942d5797117bf33a36d1f"
+  },
+  {
+    "case": "mixed_height",
+    "role": "dispatcher",
+    "expected": {
+      "nj_loaded_height": "attention_required",
+      "terminal_height_195": "comparison_only"
+    },
+    "actual": {
+      "nj_loaded_height": "attention_required",
+      "terminal_height_195": "comparison_only"
+    },
+    "assessment_id": "d401e349473ab4aec255004a26da02de15af6f5c60b1fb110500d5a7b3e1836d"
+  },
+  {
+    "case": "height_boundary",
+    "role": "driver",
+    "expected": {
+      "nj_loaded_height": "comparison_only"
+    },
+    "actual": {
+      "nj_loaded_height": "comparison_only"
+    },
+    "assessment_id": "5c322bc4d97483dbc244fe567ca11275c46ccc43c113c7f26b62726605ea6ea2"
+  },
+  {
+    "case": "height_boundary",
+    "role": "dispatcher",
+    "expected": {
+      "nj_loaded_height": "comparison_only"
+    },
+    "actual": {
+      "nj_loaded_height": "comparison_only"
+    },
+    "assessment_id": "f540166df1251e1f0273d48b2a2f50190271a2349ff89d5bf4096e68476dfa19"
+  },
+  {
+    "case": "wide_ocean_container",
+    "role": "driver",
+    "expected": {
+      "nj_width_102": "attention_required",
+      "terminal_width_132": "attention_required",
+      "ocean_permit_gross_90000": "attention_required",
+      "ocean_container_seal": "reported_unverified"
+    },
+    "actual": {
+      "nj_width_102": "attention_required",
+      "terminal_width_132": "attention_required",
+      "ocean_permit_gross_90000": "attention_required",
+      "ocean_container_seal": "reported_unverified"
+    },
+    "assessment_id": "a69f3ad02540959ac2fa79ac152f439e2cbd6062ac285dacfab49af2cd24e53f"
+  },
+  {
+    "case": "wide_ocean_container",
+    "role": "dispatcher",
+    "expected": {
+      "nj_width_102": "attention_required",
+      "terminal_width_132": "attention_required",
+      "ocean_permit_gross_90000": "attention_required",
+      "ocean_container_seal": "reported_unverified"
+    },
+    "actual": {
+      "nj_width_102": "attention_required",
+      "terminal_width_132": "attention_required",
+      "ocean_permit_gross_90000": "attention_required",
+      "ocean_container_seal": "reported_unverified"
+    },
+    "assessment_id": "2aecee60378424d0445b58ca31cc675919f611ba1247800d0cf48599078acb29"
+  },
+  {
+    "case": "gross_and_axle_groups",
+    "role": "driver",
+    "expected": {
+      "federal_gross_80000": "comparison_only",
+      "axle_and_bridge_gap": "manual_review_required"
+    },
+    "actual": {
+      "federal_gross_80000": "comparison_only",
+      "axle_and_bridge_gap": "manual_review_required"
+    },
+    "assessment_id": "d7d079f550967a60ada6870d00a92a037585b638b5611eda6bf71fad040f6f52"
+  },
+  {
+    "case": "gross_and_axle_groups",
+    "role": "dispatcher",
+    "expected": {
+      "federal_gross_80000": "comparison_only",
+      "axle_and_bridge_gap": "manual_review_required"
+    },
+    "actual": {
+      "federal_gross_80000": "comparison_only",
+      "axle_and_bridge_gap": "manual_review_required"
+    },
+    "assessment_id": "4ab9db43b7666770210d7306329711b7c997533b156feb0d5ae7ed7e2a5637b7"
+  },
+  {
+    "case": "gross_above_baseline",
+    "role": "driver",
+    "expected": {
+      "federal_gross_80000": "attention_required",
+      "terminal_container_gross_128000": "comparison_only"
+    },
+    "actual": {
+      "federal_gross_80000": "attention_required",
+      "terminal_container_gross_128000": "comparison_only"
+    },
+    "assessment_id": "04bb295951b5f83988f068d34c4ba0ba3cd737bc6261d2979ecdb89fd321cad1"
+  },
+  {
+    "case": "gross_above_baseline",
+    "role": "dispatcher",
+    "expected": {
+      "federal_gross_80000": "attention_required",
+      "terminal_container_gross_128000": "comparison_only"
+    },
+    "actual": {
+      "federal_gross_80000": "attention_required",
+      "terminal_container_gross_128000": "comparison_only"
+    },
+    "assessment_id": "41f4014bc29a8b87a0927ca9f5044d613dd7fa212448d2d1d2f8cedc82ba0f98"
+  },
+  {
+    "case": "single_trip_divisible",
+    "role": "driver",
+    "expected": {
+      "single_trip_nondivisible": "attention_required"
+    },
+    "actual": {
+      "single_trip_nondivisible": "attention_required"
+    },
+    "assessment_id": "4c1861d845bb1f3949c0823bb90bca1d56eedc3abd3a3cc3eded5d163ee8b353"
+  },
+  {
+    "case": "single_trip_divisible",
+    "role": "dispatcher",
+    "expected": {
+      "single_trip_nondivisible": "attention_required"
+    },
+    "actual": {
+      "single_trip_nondivisible": "attention_required"
+    },
+    "assessment_id": "203e4ce89d2f41753bb87ef376cff8e12a957a3a2a6ee2a7250e9069f5bd5d8f"
+  },
+  {
+    "case": "old_engine_active_report",
+    "role": "driver",
+    "expected": {
+      "dtr_interpretation_gap": "manual_review_required",
+      "dtr_report": "reported_unverified"
+    },
+    "actual": {
+      "dtr_interpretation_gap": "manual_review_required",
+      "dtr_report": "reported_unverified"
+    },
+    "assessment_id": "6dd92a7ab3a3fbac02a55f7de52360fbd422863d859107b6c931761e868bb029"
+  },
+  {
+    "case": "old_engine_active_report",
+    "role": "dispatcher",
+    "expected": {
+      "dtr_interpretation_gap": "manual_review_required",
+      "dtr_report": "reported_unverified"
+    },
+    "actual": {
+      "dtr_interpretation_gap": "manual_review_required",
+      "dtr_report": "reported_unverified"
+    },
+    "assessment_id": "b8b5558dad3237968d4fd34eff51e08e4b14286f64180bf9a41379a4a9e7054d"
+  },
+  {
+    "case": "missing_appointment",
+    "role": "driver",
+    "expected": {
+      "appointment_report": "attention_required"
+    },
+    "actual": {
+      "appointment_report": "attention_required"
+    },
+    "assessment_id": "6ca12b5476a43010e99a1d32df4ae2093e62a63646d8a451826b0ea7708fe3b7"
+  },
+  {
+    "case": "missing_appointment",
+    "role": "dispatcher",
+    "expected": {
+      "appointment_report": "attention_required"
+    },
+    "actual": {
+      "appointment_report": "attention_required"
+    },
+    "assessment_id": "2eb9c15602ce0ef5df070518f023c5ccbad71458da87545d3abf940e79152c93"
+  },
+  {
+    "case": "no_rfid",
+    "role": "driver",
+    "expected": {
+      "rfid_report": "attention_required"
+    },
+    "actual": {
+      "rfid_report": "attention_required"
+    },
+    "assessment_id": "102fb6a229617062d594fba571e19f5ece3f823ef98aac218128793040f75493"
+  },
+  {
+    "case": "no_rfid",
+    "role": "dispatcher",
+    "expected": {
+      "rfid_report": "attention_required"
+    },
+    "actual": {
+      "rfid_report": "attention_required"
+    },
+    "assessment_id": "17c672533de1d48da19530c6b7da005df715d8fb0cfbec23624e881936a3f205"
+  },
+  {
+    "case": "all_unknown",
+    "role": "driver",
+    "expected": {
+      "nj_loaded_height": "missing_facts",
+      "twic_report": "missing_facts"
+    },
+    "actual": {
+      "nj_loaded_height": "missing_facts",
+      "twic_report": "missing_facts"
+    },
+    "assessment_id": "2849a932d0234c7f1133a532045b54c9541f2b37b3d7a6fe968b3905175881ba"
+  },
+  {
+    "case": "all_unknown",
+    "role": "dispatcher",
+    "expected": {
+      "nj_loaded_height": "missing_facts",
+      "twic_report": "missing_facts"
+    },
+    "actual": {
+      "nj_loaded_height": "missing_facts",
+      "twic_report": "missing_facts"
+    },
+    "assessment_id": "27f1c1c1bb3066f798ac6518ea9ed05ed7984f354ad96d9a4e2fad09278d00c6"
+  }
+]

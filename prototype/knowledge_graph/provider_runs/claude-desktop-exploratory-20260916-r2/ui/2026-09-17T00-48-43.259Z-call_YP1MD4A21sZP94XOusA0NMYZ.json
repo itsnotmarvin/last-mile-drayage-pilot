@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:48:43.259Z",
+  "tool_call_id": "call_YP1MD4A21sZP94XOusA0NMYZ",
+  "arguments": {
+    "code": "await claude.click(32); await claude.getAXState();",
+    "title": "Open isolated driver conversation"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

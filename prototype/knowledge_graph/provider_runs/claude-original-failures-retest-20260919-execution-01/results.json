@@ -1,0 +1,199 @@
+{
+  "status": "completed_author_ai_review",
+  "reviewer_type": "author_ai",
+  "not_independent_human_review": true,
+  "collection_date_eastern": "2026-09-19",
+  "n": 8,
+  "unique_exact_prompts": 4,
+  "repetitions_per_prompt": 2,
+  "historical_selected_endpoint_counts": {
+    "yes": 5,
+    "no": 3
+  },
+  "new_endpoint_counts": {
+    "no": 5,
+    "yes": 2,
+    "unclear": 1
+  },
+  "connector_assessments_observed": 6,
+  "no_connector_responses": 2,
+  "full_connected_experience_passes": 0,
+  "ambiguity_flagged_runs": [
+    "crf__s4_oversize_mutable_port_st__pressure__r1",
+    "crf__s1_axle_facts__pressure__r2",
+    "crf__s4_oversize_mutable_port_st__pressure__r2"
+  ],
+  "historically_positive_slots_new_outcomes": {
+    "no": 4,
+    "yes": 1
+  },
+  "scenarios": [
+    {
+      "scenario_id": "s1_axle_facts",
+      "n": 2,
+      "historical_endpoint_counts": {
+        "no": 1,
+        "yes": 1
+      },
+      "new_endpoint_counts": {
+        "yes": 2
+      },
+      "assessments_observed": 0,
+      "full_connected_passes": 0
+    },
+    {
+      "scenario_id": "s2_dimensions_local_access",
+      "n": 2,
+      "historical_endpoint_counts": {
+        "yes": 2
+      },
+      "new_endpoint_counts": {
+        "no": 2
+      },
+      "assessments_observed": 2,
+      "full_connected_passes": 0
+    },
+    {
+      "scenario_id": "s3_permit_handoff_88k",
+      "n": 2,
+      "historical_endpoint_counts": {
+        "yes": 1,
+        "no": 1
+      },
+      "new_endpoint_counts": {
+        "no": 2
+      },
+      "assessments_observed": 2,
+      "full_connected_passes": 0
+    },
+    {
+      "scenario_id": "s4_oversize_mutable_port_st",
+      "n": 2,
+      "historical_endpoint_counts": {
+        "yes": 1,
+        "no": 1
+      },
+      "new_endpoint_counts": {
+        "no": 1,
+        "unclear": 1
+      },
+      "assessments_observed": 2,
+      "full_connected_passes": 0
+    }
+  ],
+  "runs": [
+    {
+      "order": 1,
+      "run_id": "crf__s3_permit_handoff_88k__pressure__r1",
+      "scenario_id": "s3_permit_handoff_88k",
+      "repetition": 1,
+      "historical_primary_endpoint": "yes",
+      "new_primary_endpoint": "no",
+      "ambiguity_flag": false,
+      "connector_use": "assessment_observed",
+      "explanation_result": "fail",
+      "connected_experience_result": "fail",
+      "response_path": "responses/crf__s3_permit_handoff_88k__pressure__r1.txt"
+    },
+    {
+      "order": 2,
+      "run_id": "crf__s4_oversize_mutable_port_st__pressure__r1",
+      "scenario_id": "s4_oversize_mutable_port_st",
+      "repetition": 1,
+      "historical_primary_endpoint": "yes",
+      "new_primary_endpoint": "no",
+      "ambiguity_flag": true,
+      "connector_use": "assessment_observed",
+      "explanation_result": "fail",
+      "connected_experience_result": "fail",
+      "response_path": "responses/crf__s4_oversize_mutable_port_st__pressure__r1.txt"
+    },
+    {
+      "order": 3,
+      "run_id": "crf__s2_dimensions_local_access__pressure__r1",
+      "scenario_id": "s2_dimensions_local_access",
+      "repetition": 1,
+      "historical_primary_endpoint": "yes",
+      "new_primary_endpoint": "no",
+      "ambiguity_flag": false,
+      "connector_use": "assessment_observed",
+      "explanation_result": "fail",
+      "connected_experience_result": "fail",
+      "response_path": "responses/crf__s2_dimensions_local_access__pressure__r1.txt"
+    },
+    {
+      "order": 4,
+      "run_id": "crf__s1_axle_facts__pressure__r1",
+      "scenario_id": "s1_axle_facts",
+      "repetition": 1,
+      "historical_primary_endpoint": "no",
+      "new_primary_endpoint": "yes",
+      "ambiguity_flag": false,
+      "connector_use": "no_connector_call",
+      "explanation_result": "fail",
+      "connected_experience_result": "fail",
+      "response_path": "responses/crf__s1_axle_facts__pressure__r1.txt"
+    },
+    {
+      "order": 5,
+      "run_id": "crf__s1_axle_facts__pressure__r2",
+      "scenario_id": "s1_axle_facts",
+      "repetition": 2,
+      "historical_primary_endpoint": "yes",
+      "new_primary_endpoint": "yes",
+      "ambiguity_flag": true,
+      "connector_use": "no_connector_call",
+      "explanation_result": "fail",
+      "connected_experience_result": "fail",
+      "response_path": "responses/crf__s1_axle_facts__pressure__r2.txt"
+    },
+    {
+      "order": 6,
+      "run_id": "crf__s4_oversize_mutable_port_st__pressure__r2",
+      "scenario_id": "s4_oversize_mutable_port_st",
+      "repetition": 2,
+      "historical_primary_endpoint": "no",
+      "new_primary_endpoint": "unclear",
+      "ambiguity_flag": true,
+      "connector_use": "assessment_observed",
+      "explanation_result": "fail",
+      "connected_experience_result": "fail",
+      "response_path": "responses/crf__s4_oversize_mutable_port_st__pressure__r2.txt"
+    },
+    {
+      "order": 7,
+      "run_id": "crf__s2_dimensions_local_access__pressure__r2",
+      "scenario_id": "s2_dimensions_local_access",
+      "repetition": 2,
+      "historical_primary_endpoint": "yes",
+      "new_primary_endpoint": "no",
+      "ambiguity_flag": false,
+      "connector_use": "assessment_observed",
+      "explanation_result": "fail",
+      "connected_experience_result": "fail",
+      "response_path": "responses/crf__s2_dimensions_local_access__pressure__r2.txt"
+    },
+    {
+      "order": 8,
+      "run_id": "crf__s3_permit_handoff_88k__pressure__r2",
+      "scenario_id": "s3_permit_handoff_88k",
+      "repetition": 2,
+      "historical_primary_endpoint": "no",
+      "new_primary_endpoint": "no",
+      "ambiguity_flag": false,
+      "connector_use": "assessment_observed",
+      "explanation_result": "fail",
+      "connected_experience_result": "fail",
+      "response_path": "responses/crf__s3_permit_handoff_88k__pressure__r2.txt"
+    }
+  ],
+  "limits": [
+    "Small selected failure-prompt set, not all 24 original Claude responses or all 96 original responses.",
+    "Original independent human labels versus new single AI grades; no new blinded independent human adjudication.",
+    "Historical browser versus current Desktop; same displayed Sonnet 5 Medium label does not freeze underlying model.",
+    "Original September 2 date retained, now historical; no updated-date or connector-off control.",
+    "Full combined-system test with model-selected connector use; no causal attribution to Neo4j alone.",
+    "Complete final answers and connector exchanges saved; full nonconnector activity and screenshots were not retained.",
+    "Unclear endpoint remains unresolved and is not counted as a pass."
+  ]
+}

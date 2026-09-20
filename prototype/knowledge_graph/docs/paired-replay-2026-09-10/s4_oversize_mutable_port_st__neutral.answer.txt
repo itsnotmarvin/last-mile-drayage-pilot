@@ -1,0 +1,26 @@
+Important finding: since the vehicle's height is 14'7" (14.583 ft), it's above the 14'6" route-survey trigger threshold noted in that archived bulletin — that alone means a survey attachment is a live question mark, on top of everything else that's unverified. Here's the straight answer.
+
+No — don't dispatch on the saved bulletin alone. The connector can't give you a green light here; it explicitly returns "unresolved / not assessed," and every relevant piece of your plan is flagged as unverified, not confirmed:
+
+- The Port Street bulletin (Aug 24) is an archived, mutable-source snapshot, not a live status feed. The tool flags it as something that "must be rechecked before any operational use" — it's not being treated as still true for Sept 2.
+- Your height (14'7") sits right at/above the 14'6" route-survey trigger the same bulletin mentions. If that threshold still applies, your NJ permit application needed a route survey attached — worth confirming before dispatch, since it affects permit validity, not just routing.
+- NJPASS's own scope note says it issues permits for State Routes only, and any county/local connecting segments (which Port Street likely is) needed to be called out in the permit application comments or the request "should be returned/denied." You haven't confirmed Port Street was handled that way in your permit.
+- Port/terminal approval and terminal handling approval are both reported as not yet obtained in your facts.
+- PAPD escort was "until further notice" as of Aug 3 — no current confirmation it's still required or still the same contact.
+
+What the archived bulletin said (Aug 24, not verified current for Sept 2):
+
+- Port St. between Brewster Rd. and Marlin St.: one lane each direction, 11-ft lanes
+- Eastbound oversize → must use Corbin St. ramp
+- Westbound oversize → must use Marlin St./Kellogg St. detour or Outer Port St.
+- All oversize loads must exit south via North Ave.
+- Oversize loads must call PAPD at (973) 578-2180 to request escort
+
+For dispatch, before releasing the truck:
+
+1. Call NJPASS/NJDOT (or check the current NJPASS bulletin) to confirm the Port Street restriction, detour routing, and North Ave. exit requirement are still in effect for Sept 2, and confirm whether your 14'7" height still requires the attached route survey on your permit.
+2. Call PAPD at (973) 578-2180 (verify this number is still current) to confirm escort is still required and to schedule it.
+3. Get port/terminal handling approval confirmed in writing for this trip — it's currently unconfirmed.
+4. Reconfirm the permit's approved route explicitly includes the Port Street segment (state-route-only scope means county/local connectors like this needed separate sign-off).
+
+Once those four are confirmed same-day or close to it, the route above is what to give the driver — but as of right now, it's a plan to verify, not a cleared dispatch.

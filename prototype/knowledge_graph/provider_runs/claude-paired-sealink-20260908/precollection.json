@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-09-08T03:09:49.623599+00:00",
+  "observed_model": "Sonnet 5 Medium",
+  "plan": "Free",
+  "incognito": true,
+  "unrelated_connectors": "All eleven observed connectors disabled via UI; initial values all enabled.",
+  "web_search": "Disabled; initial enabled.",
+  "drayage_connector": "Disabled for A; initial enabled.",
+  "configured_service": "Original last-mile-drayage-pilot local checkout; all five kg module bytes compared identical to published clone.",
+  "audit_logs_before": {
+    "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/.runtime/mcp-session-b182796809a94bb7b2b217638350efbd.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/.runtime/mcp-session-2fe88b7214684e5a80900dc818032b27.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/.runtime/mcp-session-72aac2edca55425fb9f9fb9e9b094052.jsonl": {
+      "bytes": 52907,
+      "sha256": "2bb05a52e5cc55129b6961a32e3ad67660c6730db668c833b2483b9da2fadb88"
+    },
+    "/Users/marbin/Developer/last-mile-drayage-pilot/prototype/knowledge_graph/.runtime/mcp-session-b3d214d1401b4016b5e1d5830745acff.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

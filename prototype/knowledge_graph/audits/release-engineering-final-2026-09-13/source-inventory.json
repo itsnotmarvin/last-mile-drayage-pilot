@@ -1,0 +1,956 @@
+{
+  "schema_version": "drayage-source-review-v1",
+  "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "operational_use": false,
+  "sources": [
+    {
+      "source_id": "apm_appointment_system",
+      "title": "APM Terminals Elizabeth Truck Appointment System",
+      "publisher": "APM Terminals",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/e-tools/truck-appointment-system",
+      "publication_date": null,
+      "accessed_date": null,
+      "record_sha256": "c7257b4d25596fcc3147bf017b7abc3847ab1a8e2474befecda5d32b75037954",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/port_authority/apm_elizabeth_truck_appointment_system.pdf",
+          "role": "page_snapshot_pdf",
+          "sha256": "2fe8f0f94f61832512d7efd68fe07cac4c38ea0fe3295edd845d87a2e465b4ac"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "apm_directions",
+      "title": "APM Terminals Elizabeth Contact and Directions",
+      "publisher": "APM Terminals",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/contact/contact-and-directions",
+      "publication_date": null,
+      "accessed_date": null,
+      "record_sha256": "448622f8019268080f82f0110278365c2336987b4b748cea946d2498e981331e",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/port_authority/apm_elizabeth_contact_directions.pdf",
+          "role": "page_snapshot_pdf",
+          "sha256": "921a2a2254faca26b60c5ee434a3f4c23b15686548e74e88eb1213be6e36e7de"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "apm_hours_ops",
+      "title": "APM Terminals Elizabeth Hours of Operation",
+      "publisher": "APM Terminals",
+      "url": "https://www.apmterminals.com/en/port-elizabeth/practical-information/hours-of-operation",
+      "publication_date": null,
+      "accessed_date": null,
+      "record_sha256": "8a0a91aaa3a0fc77417604766c2b7fe82840340484b56cbd5ac9acd554bc0134",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/port_authority/apm_elizabeth_hours_of_operation.pdf",
+          "role": "page_snapshot_pdf",
+          "sha256": "5fdd2d5d074ec07c75a8457bea3dcc380a46d47e89a677334237a2e70c417063"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "ecfr_23_cfr_658_17_2026_07_29",
+      "title": "23 CFR 658.17 — Weight",
+      "publisher": "Office of the Federal Register / Government Publishing Office",
+      "url": "https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-658/section-658.17",
+      "publication_date": null,
+      "accessed_date": "2026-07-31",
+      "record_sha256": "e388cce3f4ff984c20248c61a422c487a5d93289167e07e6928d5fdf8c12b848",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/federal/ecfr_23_cfr_658_17_as_of_2026_07_29.xml",
+          "role": "ecfr_api_point_in_time_xml",
+          "sha256": "d846fa89b50edd7d24346082f2f2f68e640eee0295969e6b4f5c82ba1f5fbbe0"
+        }
+      ],
+      "clause_ids": [
+        "reg_federal_interstate_weight"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [
+        "axle_weight_evidence"
+      ],
+      "reported_check_ids": [
+        "federal_gross_80000",
+        "axle_and_bridge_gap"
+      ],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "ecfr_33_cfr_101_514_2026_07_29",
+      "title": "33 CFR 101.514 — TWIC Requirement",
+      "publisher": "Office of the Federal Register / Government Publishing Office",
+      "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-101/subpart-E/section-101.514",
+      "publication_date": null,
+      "accessed_date": "2026-07-31",
+      "record_sha256": "19d4e46515d93e17c4fff22a30080ee16dfa6a2f514222d2629859c71421728c",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/federal/ecfr_33_cfr_101_514_as_of_2026_07_29.xml",
+          "role": "ecfr_api_point_in_time_xml",
+          "sha256": "daf1e34cd704b61e120825633280d8d428f6a883012adefd1aca64ff09e83411"
+        }
+      ],
+      "clause_ids": [
+        "reg_federal_twic"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [
+        "driver_twic"
+      ],
+      "reported_check_ids": [
+        "twic_report"
+      ],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "ecfr_49_cfr_383_2026_07_29",
+      "title": "eCFR Title 49, Part 383",
+      "publisher": "Office of the Federal Register / Government Publishing Office",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383",
+      "publication_date": null,
+      "accessed_date": "2026-07-31",
+      "record_sha256": "e07bdcb20b9fdd90ed816105ebcda5862be3a78733dbfb21cb4c958463908ccd",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/federal/ecfr_49_cfr_part_383_as_of_2026_07_29.xml",
+          "role": "ecfr_api_point_in_time_xml",
+          "sha256": "519aeea036ae7fb5f250a58686861e8021b821b859c151e968e014828d7ec52b"
+        }
+      ],
+      "clause_ids": [
+        "reg_federal_cdl",
+        "reg_federal_group_a_cmv"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "ecfr_twic_1572",
+      "title": "eCFR Title 49, Part 1572 — Credentialing and Security Threat Assessments",
+      "publisher": "Office of the Federal Register / Government Publishing Office",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-D/part-1572",
+      "publication_date": null,
+      "accessed_date": null,
+      "record_sha256": "9726e8aa495cc8f39c0d2adc20bb6538da82bba6a9ce264a5b63a0280022e5c4",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/federal/ecfr_49_cfr_part_1572_twic.pdf",
+          "role": "page_snapshot_pdf",
+          "sha256": "0b167e8a4f3feddb0fde2cb931fbb89ee8edbef373d59b7ad1a601a73ba592c7"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "elizabeth_code_10_16_050_2025_11_11",
+      "title": "Elizabeth Code of Ordinances, 10.16.050 — An 80,000 pound overweight vehicle zone limit—Streets affected",
+      "publisher": "City of Elizabeth",
+      "url": "https://library.municode.com/nj/elizabeth/codes/code_of_ordinances?nodeId=TIT10VETR_CH10.16WELI_10.16.05080POOVEZOLISTAF",
+      "publication_date": null,
+      "accessed_date": "2026-07-31",
+      "record_sha256": "29f12258a99d7f9e0a9e59ebb3074e9f25561fa5d94ec7bd002cf25159526bc4",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/municipal/elizabeth_code_10_16_050_page_snapshot_2026_08_07.pdf",
+          "role": "page_snapshot_pdf",
+          "sha256": "bd44da640a8913789736132240f32c57d719ddbd39eea7f8c1e12b4c520b3606"
+        },
+        {
+          "path": "data/raw/documents/municipal/elizabeth_code_ch_10_16_municode_api_2026_08_07.json",
+          "role": "municode_api_content",
+          "sha256": "ac448f78739bfa933f882e24a4deca5d5f098f07c89906f4029f416cb004be22"
+        }
+      ],
+      "clause_ids": [
+        "reg_elizabeth_five_ton_limit_streets",
+        "reg_elizabeth_four_ton_limit_streets",
+        "reg_elizabeth_north_avenue_east_zone"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "elizabeth_kapkowski_corridor_concept_report_2022",
+      "title": "Kapkowski Road Corridor Improvements Project Concept Development Report",
+      "publisher": "City of Elizabeth Department of Engineering",
+      "url": "https://www.elizabethnj.org/DocumentCenter/View/5308/01_Kapkowski-Rd-Corridor-Improvements-Final-CD-Rept-0822",
+      "publication_date": "2022-08-02",
+      "accessed_date": "2026-08-20",
+      "record_sha256": "180a030a62e862314fb6e7a2fa16bc3bc48ff42ebdf8daa7498bf39086206c19",
+      "archived_files": [],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "fhwa_nhs_shapefile_2025_08_08",
+      "title": "FHWA National Highway System shapefile, version 2025-08-08 — Union County study-route extract",
+      "publisher": "Federal Highway Administration, U.S. Department of Transportation",
+      "url": "https://www.fhwa.dot.gov/planning/national_highway_system/nhs_maps/nhs_2025-08-08.zip",
+      "publication_date": "2025-08-08",
+      "accessed_date": "2026-08-07",
+      "record_sha256": "9c984aa11a9d1ba413456f84fdf875a7f1d87a198f2d6c36f2d09304b25ab460",
+      "archived_files": [
+        {
+          "path": "data/raw/gis/official/fhwa_nhs_2025_union_study_extract_2026_08_07.geojson",
+          "role": "gis_extract_geojson",
+          "sha256": "8b92536bedb6b0b722101563948c54b9bbfbd89d17a44206b17f1badd73bd69b"
+        },
+        {
+          "path": "data/raw/gis/official/fhwa_nhs_shapefile_metadata_2023_09_06.docx",
+          "role": "source_metadata",
+          "sha256": "65ca4342196c14d020c4e673ec35c7f68e03bf6336d235c0ab866a9dd8ba858a"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "google_maps_route_observation_2026_07_31",
+      "title": "Google Maps route observation — Tripoli Street to APM Terminals Elizabeth",
+      "publisher": "Google Maps",
+      "url": "https://www.google.com/maps/@40.6734498,-74.1583229,3a,75y,107.83h,90t/data=!3m4!1e1!3m2!1s9gAJHVMjoN_Uk4hVTOP76A!2e0",
+      "publication_date": null,
+      "accessed_date": null,
+      "record_sha256": "b41a1a79229e715376ad4c4d6657593bf50749e97a95db28ae292fc579c51334",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/third_party/google_streetview_tripoli_st_pano_9gAJHVMjoN_2026_08_07.png",
+          "role": "streetview_screenshot",
+          "sha256": "3a5f210ed29e444b10ff7a8eaa01e914d92431d5a6c76d01d1430686159cd6a4"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "nj_large_truck_map",
+      "title": "2024 NJ Large Truck Map",
+      "publisher": "New Jersey Department of Transportation",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/largetruckmap.pdf",
+      "publication_date": "2024-01-22",
+      "accessed_date": "2026-06-25",
+      "record_sha256": "52f86fbbbcb4a107796b3f10fea0d8151171dd8f3bc631165f0fbff7f015a9bd",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/nj_large_truck_map_2024.pdf",
+          "role": "document_pdf",
+          "sha256": "06a0bf8cda058f9f032f39b8ef4e921a6ab9ac989e1573de55c914aeff5d93ef"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "nj_size_weight_guidebook",
+      "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+      "publisher": "New Jersey Department of Transportation",
+      "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+      "publication_date": "2024-01",
+      "accessed_date": "2026-06-25",
+      "record_sha256": "759836853d93a7b950844627148f19ce90cd98efb296c8f6e7c068aba163c742",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+          "role": "document_pdf",
+          "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+        }
+      ],
+      "clause_ids": [
+        "reg_nj_height_limit",
+        "reg_nj_noninterstate_single_axle",
+        "reg_nj_ocean_container_permit",
+        "reg_nj_semitrailer_length",
+        "reg_nj_single_trip_osow_permit",
+        "reg_nj_tandem_gross_bridge",
+        "reg_nj_width_limit"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [
+        "axle_weight_evidence",
+        "dimensions_and_route",
+        "permit_eligibility"
+      ],
+      "reported_check_ids": [
+        "nj_loaded_height",
+        "nj_width_102",
+        "nj_width_96",
+        "nj_semitrailer_53",
+        "nj_semitrailer_48_access",
+        "nj_gross_80000",
+        "ocean_permit_gross_90000",
+        "ocean_container_seal",
+        "single_trip_nondivisible",
+        "axle_and_bridge_gap"
+      ],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njac_13_18_osow_portal_copy_2026_08_24",
+      "title": "N.J.A.C. 13:18, Subchapter 1 — Permits for Overdimensional or Overweight Vehicles",
+      "publisher": "New Jersey Motor Vehicle Commission; hosted by the New Jersey Department of Transportation NJPASS system",
+      "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/current-rule.pdf",
+      "publication_date": null,
+      "accessed_date": "2026-08-24",
+      "record_sha256": "79f55f519a4baccd6c66e89003947a3c972b93ff79a37be387a5de42c3ef20fc",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/njac_13_18_current_snapshot_2026_08_24.pdf",
+          "role": "document_pdf",
+          "sha256": "64af8bc4878c5d9add64c3dcc8216d12c5deb1879fb549479b3d553fdb1ef6c5"
+        }
+      ],
+      "clause_ids": [
+        "reg_nj_osow_permit_requirement_13_18_portal_copy",
+        "reg_nj_single_trip_route_review_13_18_portal_copy",
+        "reg_nj_toll_authority_approval_13_18_portal_copy"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [
+        "trip_context",
+        "axle_weight_evidence",
+        "permit_eligibility",
+        "cross_authority_coverage"
+      ],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njac_16_32_readoption_njr_2023_01_03",
+      "title": "Truck Access — Readoption with Amendments, N.J.A.C. 16:32 (55 N.J.R. 72(a))",
+      "publisher": "New Jersey Department of Transportation / New Jersey Register",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/R.2023%20d.002%20(55%20N.J.R.%2072(a)).pdf",
+      "publication_date": null,
+      "accessed_date": "2026-08-24",
+      "record_sha256": "d4cfab522e38274ee1a19860cab6c37806b65556129d275853db9fae6660a00f",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/njac_16_32_readoption_amendments_njr_2023_01_03.pdf",
+          "role": "document_pdf",
+          "sha256": "676c8bb3b6e04a01772168fa84f452d6b73f31626515593469948d256cb65094"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njac_16_32_truck_access_current_2023",
+      "title": "N.J.A.C. 16:32 — Truck Access",
+      "publisher": "New Jersey Department of Transportation",
+      "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+      "publication_date": null,
+      "accessed_date": "2026-07-31",
+      "record_sha256": "ab21c2f74872088c070dbb5b91d75f9d631671547343ac5d487055cac9422928",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+          "role": "document_pdf",
+          "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+        }
+      ],
+      "clause_ids": [
+        "reg_nj_access_network_600_series",
+        "reg_nj_terminal_access_102_inch_standard_truck",
+        "reg_nj_truck_access_local_rule_preservation"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [
+        "dimensions_and_route",
+        "cross_authority_coverage",
+        "current_route_conditions"
+      ],
+      "reported_check_ids": [
+        "cross_authority_gap",
+        "current_conditions_gap"
+      ],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njac_19_9_1_9_cornell_2026_08_07",
+      "title": "N.J.A.C. 19:9-1.9 — Limitations on use of Roadway (Cornell LII codification snapshot)",
+      "publisher": "Cornell Law School Legal Information Institute (codification mirror)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-19-9-1-9",
+      "publication_date": null,
+      "accessed_date": "2026-08-07",
+      "record_sha256": "719b8ed7ddd5274b85ff25dc5561bfebc7f5aab07f68f5860b167bee96cdb7d5",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/njac_19_9_1_9_cornell_snapshot_2026_08_07.html",
+          "role": "page_snapshot_html",
+          "sha256": "0159cbb4d0dd0f3e8f08dad945138774d2ea10d20311e3b02c7d7ffe1fd51f55"
+        }
+      ],
+      "clause_ids": [
+        "reg_njta_roadway_use_limitations"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [
+        "cross_authority_coverage"
+      ],
+      "reported_check_ids": [
+        "cross_authority_gap"
+      ],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njdot_traffic_count_2024_station_3_3_024",
+      "title": "NJDOT 2024 Traffic Count dataset with AADTs — County Route 624 upstream station 3-3-024",
+      "publisher": "New Jersey Department of Transportation",
+      "url": "https://www.nj.gov/transportation/refdata/roadway/mdb/TrafficCount2024DataSetwithAADTs.csv",
+      "publication_date": null,
+      "accessed_date": "2026-08-20",
+      "record_sha256": "2997f4390fe89022b9970ac397aacf824895c82cebad1e11e0cb1397f97a7659",
+      "archived_files": [
+        {
+          "path": "data/raw/observations/njdot_traffic_count_2024_station_3-3-024_2026_08_20.json",
+          "role": "selected_csv_rows_as_json",
+          "sha256": "407149ba22b1e586a966bf103720662fca49050e4c726dd4bab3896d33de9ae9"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njdot_traffic_counts_c74r_6c8d_route624_2018",
+      "title": "NJDOT Traffic Counts Data — County Route 624 stations 3-3-024 and 182001, count year 2018",
+      "publisher": "New Jersey Department of Transportation via NJOIT Open Data Center",
+      "url": "https://data.nj.gov/Transportation/Traffic-Counts-Data/c74r-6c8d",
+      "publication_date": null,
+      "accessed_date": "2026-08-20",
+      "record_sha256": "0c47630eb1ca0e3e83df719c11f4705d3e7a8dfff72d10907a8d8e80c3562cce",
+      "archived_files": [
+        {
+          "path": "data/raw/observations/njdot_route_624_station_aadt_2018_2026_08_20.json",
+          "role": "api_query_extract",
+          "sha256": "b08628f105c17fe2a0b64bdd945fcac12d957b4d4ba02ce379c2bb326a142769"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njdot_traffic_counts_c74r_6c8d_station_3_3_024_2020_2022",
+      "title": "NJDOT Traffic Counts Data — County Route 624 upstream station 3-3-024, count years 2020–2022",
+      "publisher": "New Jersey Department of Transportation via NJOIT Open Data Center",
+      "url": "https://data.nj.gov/Transportation/Traffic-Counts-Data/c74r-6c8d",
+      "publication_date": null,
+      "accessed_date": "2026-08-20",
+      "record_sha256": "d42a6946ecfb9a484cf4d6c88534ccfb40eb51b56109ed0d1bed742aa9d764b5",
+      "archived_files": [
+        {
+          "path": "data/raw/observations/njdot_route_624_station_3-3-024_aadt_2020_2022_2026_08_20.json",
+          "role": "api_query_extract",
+          "sha256": "f019f11a6ca8a3de45c323d8bd4428cca9a2a84a5bf5711b447c918e67aa714f"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njdot_truck_routing_regulations_2026_08_24",
+      "title": "NJDOT Truck Routing Regulations page",
+      "publisher": "New Jersey Department of Transportation",
+      "url": "https://www.nj.gov/transportation/freight/trucking/routing_regulations.shtm",
+      "publication_date": null,
+      "accessed_date": "2026-08-24",
+      "record_sha256": "c32dbcb9ad8c12fc53bd78805f328500ce81c1d801f93898c0a90f84a20be02c",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/njdot_truck_routing_regulations_snapshot_2026_08_24.html",
+          "role": "page_snapshot_html",
+          "sha256": "f50a005ad5c244e4caa1cc41c96adc14f85825117590f55f5fed448baf286777"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njogis_county_boundaries_2026_07_26",
+      "title": "County Boundaries of NJ, Hosted, 3424 — Union County extract",
+      "publisher": "New Jersey Office of GIS",
+      "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Counties_3424/FeatureServer/0",
+      "publication_date": "2025-04-10",
+      "accessed_date": "2026-07-26",
+      "record_sha256": "be1998329ccf2a5d6c2588a653671245952ff346909ff6051ade1b2899e0849b",
+      "archived_files": [
+        {
+          "path": "data/raw/gis/official/njogis_union_county_boundary_2026_07_26.geojson",
+          "role": "gis_extract_geojson",
+          "sha256": "e5ef1a84529a25af1623b3683a8050d154f914fb2619d13221cd0b1d80eba79c"
+        },
+        {
+          "path": "data/raw/gis/official/njogis_county_boundaries_item_2026_07_26.json",
+          "role": "service_item_metadata",
+          "sha256": "8dfd7e5ff991e239916443adcd8347700903186a039d17d0d5eb3e7ddb313fa2"
+        },
+        {
+          "path": "data/raw/gis/official/njogis_county_boundaries_layer_2026_07_26.json",
+          "role": "service_layer_schema",
+          "sha256": "f10b61a012c1faea0d95127b1ab21d160d8dbd0ce7d0805867e1ea675340612b"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njogis_municipal_boundaries_2026_07_26",
+      "title": "Municipal Boundaries of NJ, Hosted, 3424 — Elizabeth extract",
+      "publisher": "New Jersey Office of GIS",
+      "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/NJ_Municipal_Boundaries_3424/FeatureServer/0",
+      "publication_date": "2026-02-05",
+      "accessed_date": "2026-07-26",
+      "record_sha256": "a8cb3e756b9b8af160908c43f405a594838f44914bb8833f51249516948ca381",
+      "archived_files": [
+        {
+          "path": "data/raw/gis/official/njogis_elizabeth_boundary_2026_07_26.geojson",
+          "role": "gis_extract_geojson",
+          "sha256": "3d8d76e7e810a8eff0d0f55968e07fd51b152d03852141b2be3b2ac360689b44"
+        },
+        {
+          "path": "data/raw/gis/official/njogis_municipal_boundaries_item_2026_07_26.json",
+          "role": "service_item_metadata",
+          "sha256": "2604527ca34cc31579773c33c609d6261cf89073c364f2b91eb03c678906de09"
+        },
+        {
+          "path": "data/raw/gis/official/njogis_municipal_boundaries_layer_2026_07_26.json",
+          "role": "service_layer_schema",
+          "sha256": "b0f96b4f7f5121ab542332fcb895b45fab22ccb0c44f967fd0609ac38204ccaf"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njogis_road_centerlines_2026_07_26",
+      "title": "Road Centerlines of NJ, Hosted, 3424 — APM study-area extract",
+      "publisher": "New Jersey Office of GIS",
+      "url": "https://services2.arcgis.com/XVOqAjTOJ5P6ngMu/arcgis/rest/services/Tran_road/FeatureServer/0",
+      "publication_date": "2026-05-20",
+      "accessed_date": "2026-07-26",
+      "record_sha256": "b7c1efe0dc62972cad03aff358bab28efcb07370579c0e60ecbe97042dfd7352",
+      "archived_files": [
+        {
+          "path": "data/raw/gis/official/njogis_apm_study_area_roads_2026_07_26.geojson",
+          "role": "gis_extract_geojson",
+          "sha256": "9a7b56932b93e793d782f64cf2266f97c2e5913f29688b246796f25c4d38120d"
+        },
+        {
+          "path": "data/raw/gis/official/njogis_road_centerlines_item_2026_07_26.json",
+          "role": "service_item_metadata",
+          "sha256": "40f732706b91844e1a328466548f38a81f2d2bbea3329990911bccf3a98cbfc8"
+        },
+        {
+          "path": "data/raw/gis/official/njogis_road_centerlines_layer_2026_07_26.json",
+          "role": "service_layer_schema",
+          "sha256": "f19809f9c1464b42fcc4afaa0df5ad332964f26cfac47ae9a22767a7a22730d0"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "njpass_home_2026_08_24",
+      "title": "NJPASS SUPERLOAD home page and bulletin",
+      "publisher": "New Jersey Department of Transportation",
+      "url": "https://nj.gotpermits.com/njpass/",
+      "publication_date": null,
+      "accessed_date": "2026-08-24",
+      "record_sha256": "ac5b7cf410b1fdbb1564a59a86c862993aea11a3430591d38fb252035255b339",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/njpass_home_snapshot_2026_08_24.html",
+          "role": "page_snapshot_html",
+          "sha256": "ed89d6688dd3290bb9c10cc24fa57b87edc57ecd597f5f9ad67505c4e9fcfc75"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [
+        "njpass_connecting_local_routes_application_comments",
+        "njpass_nonstate_permit_authorities",
+        "njpass_port_st_oversize_restrictions_2026_08_03",
+        "njpass_route_survey_threshold",
+        "njpass_state_routes_only_system_scope"
+      ],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": "Obtain suitable current verification for each move; an archived observation is not live status."
+    },
+    {
+      "source_id": "njta_rules_readoption_2024",
+      "title": "New Jersey Turnpike Authority Rules — Readoption with Amendments, N.J.A.C. 19:9 (56 N.J.R. 321)",
+      "publisher": "New Jersey Turnpike Authority / New Jersey Register",
+      "url": "https://www.njta.gov/document/new-jersey-turnpike-authority-rules-re-adoption-with-amendments/",
+      "publication_date": "2024-03-04",
+      "accessed_date": "2026-08-07",
+      "record_sha256": "9dbc8068725f7066a5550475482bce345881d2d40ae3858cab5be19055f80bc7",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/state/njta_rules_readoption_njr_2024_03_04.pdf",
+          "role": "document_pdf",
+          "sha256": "05745f11a639b7fbb906b033a5e5ef4c41486de6edbeeaaa632ea2e46039f5da"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "panynj_facilities_map_2020",
+      "title": "Port Authority Facilities Locator — Port Newark/Elizabeth and Doremus Avenue Overweight Corridor",
+      "publisher": "Port Authority of New York and New Jersey",
+      "url": "https://www.panynj.gov/content/dam/port/customer-library-pdfs/facilities-map.pdf",
+      "publication_date": "2020-01",
+      "accessed_date": "2026-08-24",
+      "record_sha256": "98960445257483e1859b46b4afee3264234a834018000818654b5841cf146db2",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/port_authority/panynj_facilities_map_2020.pdf",
+          "role": "document_pdf",
+          "sha256": "1b8de1b6a83ba331c9515ce8e5e13d0bb6fa0851c1f5b2a07abcbc8b41ffa71d"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "panynj_marine_terminal_tariff",
+      "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
+      "publisher": "Port Authority of New York and New Jersey",
+      "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+      "publication_date": null,
+      "accessed_date": "2026-06-25",
+      "record_sha256": "78a337058947a6a5008da4cfcceb01dc52c241a65aff2b3c95947fb77ab783b5",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+          "role": "document_pdf",
+          "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+        },
+        {
+          "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+          "role": "current_landing_page_snapshot_html",
+          "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
+        }
+      ],
+      "clause_ids": [
+        "reg_panynj_drayage_truck_deadline_34_1140",
+        "reg_panynj_dtr",
+        "reg_panynj_dtr_engine",
+        "reg_panynj_terminal_traffic",
+        "reg_panynj_terminal_weight_dimensions"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [
+        "dimensions_and_route",
+        "cross_authority_coverage",
+        "current_route_conditions",
+        "dtr_registration_and_rfid",
+        "dtr_engine_policy"
+      ],
+      "reported_check_ids": [
+        "terminal_height_195",
+        "terminal_width_132",
+        "terminal_container_gross_128000",
+        "dtr_report",
+        "cross_authority_gap",
+        "current_conditions_gap",
+        "dtr_interpretation_gap"
+      ],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "panynj_truck_info",
+      "title": "Truck Information",
+      "publisher": "Port Authority of New York and New Jersey",
+      "url": "https://www.panynj.gov/port/en/shipping/truck.html",
+      "publication_date": null,
+      "accessed_date": null,
+      "record_sha256": "070b31baf95d3501bb9b36808107c856a9fb96affcad1af0a989a5c49e925b17",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/port_authority/panynj_truck_information_page.pdf",
+          "role": "page_snapshot_pdf",
+          "sha256": "85414ab61578326a507da7384a3bd8810b2afd2fd8e4fefaff5126164996e489"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "panynj_truckers_guide",
+      "title": "Truckers Resource Guidebook",
+      "publisher": "Port Authority of New York and New Jersey",
+      "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+      "publication_date": "2025-08",
+      "accessed_date": "2026-06-25",
+      "record_sha256": "35fb87b23ec0a01e69937b454d710cf9dc2af780c86304856ae861d96899a690",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+          "role": "document_pdf",
+          "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+        }
+      ],
+      "clause_ids": [
+        "prototype_clause_induction_sealink_change",
+        "reg_apm_appointment",
+        "reg_apm_safety_induction",
+        "reg_panynj_rfid",
+        "reg_panynj_sealink_twic"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [
+        "trip_context",
+        "dtr_registration_and_rfid",
+        "driver_twic",
+        "sealink_registration",
+        "apm_induction",
+        "apm_appointment"
+      ],
+      "reported_check_ids": [
+        "twic_report",
+        "sealink_report",
+        "rfid_report",
+        "appointment_report"
+      ],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "porttruckpass_tips",
+      "title": "PortTruckPass",
+      "publisher": "Sustainable Terminal Services, Inc.",
+      "url": "https://www.porttruckpass.com/",
+      "publication_date": null,
+      "accessed_date": null,
+      "record_sha256": "534db2546f2b305c16433769a29664d7053fb5a132c70ab2775b9b9d6e4896de",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/port_authority/porttruckpass_tips_homepage.pdf",
+          "role": "page_snapshot_pdf",
+          "sha256": "791b0491296ebb5fde8cc75b7ee8a8d8a5c9fda73b0e10ee1147ac36299d43c6"
+        }
+      ],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "union_county_laws_2026",
+      "title": "Laws of Union County, 2026 edition — Chapter 138, Vehicles and Traffic",
+      "publisher": "Union County Board of County Commissioners",
+      "url": "https://ucnj.org/commissioners/wp-content/uploads/sites/29/2026/04/2026-Laws-of-Union-County.pdf",
+      "publication_date": null,
+      "accessed_date": "2026-08-07",
+      "record_sha256": "b0a9d707ea2ffd0c772132040e7438b093cb5ae45f33ae45e83c97347a28e980",
+      "archived_files": [
+        {
+          "path": "data/raw/documents/county/union_county_laws_2026.pdf",
+          "role": "document_pdf",
+          "sha256": "590c74b68a5f2750ee817ff2cd1e5b92b2427aa1d3340c044c759623ac2bf0fa"
+        }
+      ],
+      "clause_ids": [
+        "reg_union_county_truck_routes_reserved"
+      ],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    },
+    {
+      "source_id": "union_county_truck_mobility_study_2021",
+      "title": "Union County Truck Mobility Study Final Report",
+      "publisher": "Union County",
+      "url": "https://ucnj.org/wp-content/uploads/2024/07/Union-County-Truck-Mobility-Study-Final-Report_Compressed.pdf",
+      "publication_date": "2021-06-01",
+      "accessed_date": "2026-08-20",
+      "record_sha256": "5e34107e3ab3e686255d50907ab910de5dc9bfac8b0cf41e440fdcbe45e4e37c",
+      "archived_files": [],
+      "clause_ids": [],
+      "observation_ids": [],
+      "requirement_ids": [],
+      "reported_check_ids": [],
+      "assigned_reviewer": null,
+      "review_status": "pending_human_review",
+      "rule_review_trigger": "Material source change, correction, reported error or applicability question.",
+      "operating_context_requirement": null
+    }
+  ],
+  "requirements_without_retained_clauses": [
+    "transaction_release"
+  ],
+  "missing_required_clause_ids": [],
+  "limits": [
+    "Source inventory is not a completeness or current-law certification.",
+    "Publication dates, access dates, rule versions and operating-condition observations remain distinct.",
+    "No periodic refresh or successful download automatically approves a source."
+  ]
+}

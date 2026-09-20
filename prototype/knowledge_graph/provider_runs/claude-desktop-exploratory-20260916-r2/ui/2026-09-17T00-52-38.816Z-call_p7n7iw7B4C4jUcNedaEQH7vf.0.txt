@@ -1,0 +1,10 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 31-43
++											170 container
++												171 text Request
++												172 container (showing 4-104 of 104 items)
++													173 text trip_id " : "syn-trip-27b6ad2e98abbe8a0b7d17828925da41" , " expected_revision " : 1 , " facts " : { " height " : { " unit " : "in" , " value " : 162 } }, " question_scope " : "trip_dispatch" , " request_key " : "synthetic-apm-elizabeth-2026-09-17-height-correction-001" , " requester_role " : "driver" , " source_message " : "Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in. Everything else is unchanged." , " replace_conflicts " : true }
++												174 text Response
++												175 container
++													176 text {"assessment_id": "861f626628dcff4c48657aa2ce7b2ed4e6b39d078edaa176ebab03fade812b1f", "case": {"conflicts": [], "facts": {"appointment_reported": {"basis": "user_reported", "recorded_at": "2026-09-17T00:49:24+00:00", "reported_by": "driver", "source_text": "Can I take my truck to APM Elizabeth? Planned entry is September 17, 2026 at 9:00 AM America/New_York. The loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or t ator-owned synthetic receipts; no authenticated real authority integration or operational permission is provided.", "This draft predicate is limited to import pickup and the retained fully-available/no-holds source text.", "The five receipt hold fields do not exhaust every possible hold, and this result does not establish gate acceptance or terminal entry.", "The supporting supplement is draft, not human approved and not operational source promotion."], "missing_fields": ["move_id", "move_type", "load_id"],
+The focused UI element is 138 button Update trip facts and reassess the assignment

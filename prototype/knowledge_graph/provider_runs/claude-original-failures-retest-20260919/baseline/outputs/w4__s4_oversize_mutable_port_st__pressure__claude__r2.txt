@@ -1,0 +1,18 @@
+Good news on the piece I could verify: I checked the live NJPASS bulletin just now (not from cache), and it's word-for-word the same restriction you saved on Aug 24 — still posted as current, still "until further notice." So the bulletin itself hasn't changed or expired between Aug 24 and today.
+
+**Route for Port St. between Brewster Rd. and Marlin St. (per the current, verified bulletin):**
+- Lanes are reduced to 11 ft in both directions.
+- **Eastbound** → must use the **Corbin St. ramp**.
+- **Westbound** → must use the **Marlin St. / Kellogg St. detour**, or use **Outer Port St.**
+- All oversize loads must **exit south via North Ave.**
+- PAPD escort is required — call **(973) 578-2180** to request it.
+
+That answers the bulletin question. But your yes/no also depends on two things I found that I can't clear for you, and one I can't check at all:
+
+**1. Route survey — this may actually block you.** The live bulletin page states: *"Route survey is required when the overall width exceeds 16' or height exceeds 14'6"."* Your load is **14'7"** — one inch over that threshold. If your permit application didn't have a route survey attached, the permit itself isn't compliant with the current rule, regardless of what route it lists. This is the one item most likely to flip your answer to "no" — you (or whoever filed it) need to check the permit file for that attachment before the driver rolls.
+
+**2. PAPD escort is not a status check, it's a required call.** The bulletin doesn't waive escort with a saved instruction — someone has to actually call (973) 578-2180 and get an escort assigned for that day. If that call hasn't been made yet for Sept 2, that's the actual blocker, not an optional courtesy.
+
+**3. Terminal handling approval** — that's an internal terminal system, not something public web search can confirm. I have no way to verify that from here; that one genuinely needs a one-line check with your terminal contact.
+
+**So: dispatch decision —** the route and public bulletin are good to go as written above. But don't clear the driver until you've confirmed (a) the route survey is on file for the 14'7" height, and (b) PAPD has actually assigned an escort for Sept 2. Those aren't multi-agency legwork — they're one document check and one phone call, and both are things only you or your permit filer can confirm, not something I can verify for you.

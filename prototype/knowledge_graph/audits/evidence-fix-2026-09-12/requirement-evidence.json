@@ -1,0 +1,1620 @@
+{
+  "trip_context": {
+    "request_id": 28,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "shared_trip_context",
+      "implementation": "evidence_readiness_only",
+      "label": "Trip, terminal, and timing context",
+      "limits": [
+        "These facts select assessment scope; they do not establish dispatch, route, or entry clearance.",
+        "The catalog's terminal-specific evidence supports APM Elizabeth only. A missing terminal leaves applicability unresolved, and another terminal creates an unsupported-terminal coverage gap rather than an exemption.",
+        "The NJPASS-hosted route-review clause is retained evidence, but its official code-of-record currentness was not independently verified."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "trip_context",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-08-24",
+          "archive_graph_eligibility": "exclude_currentness_not_fully_verified",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_13_18_current_snapshot_2026_08_24.pdf",
+              "role": "document_pdf",
+              "sha256": "64af8bc4878c5d9add64c3dcc8216d12c5deb1879fb549479b3d553fdb1ef6c5"
+            }
+          ],
+          "authority_entity_id": "authority_njmvc",
+          "clause_id": "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF pages 3-4, N.J.A.C. 13:18-1.5(b)(3)-(7), (d), and (e)",
+          "named_blocker": null,
+          "provenance_review": {
+            "issue": "incomplete_archive_page_locator",
+            "note": "Items (b)(3) and (b)(4) occur on PDF page 2; remaining retained items and (d)/(e) occur on page 3. The archive locator remains unchanged for reproducibility.",
+            "quotation_form": "retained_passages",
+            "recommended_locator": "PDF pages 2-3, N.J.A.C. 13:18-1.5(b)(3)-(7), (d), and (e)",
+            "review_record": "audits/evidence-2026-09-10/source-manual-review.json",
+            "review_status": "development_visual_review_not_policy_approval",
+            "reviewed_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c"
+          },
+          "publication_date": null,
+          "publisher": "New Jersey Motor Vehicle Commission; hosted by the New Jersey Department of Transportation NJPASS system",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "axle_weights",
+            "axle_spacings",
+            "dimensions",
+            "trip_timing",
+            "route_geometry",
+            "permit_credential_status"
+          ],
+          "source_id": "njac_13_18_osow_portal_copy_2026_08_24",
+          "source_text": [
+            "3. The vehicle height, length and width;",
+            "4. The axle configuration and weight over each axle;",
+            "5. The overall gross vehicle weight;",
+            "6. The dates of travel;",
+            "7. The details of the anticipated route of travel, including locations of the entrance to and exit from the New Jersey State highway system, including, but not limited to, the interstate highways, the New Jersey Turnpike, the Garden State Parkway south of Exit 105 and the Atlantic City Expressway; and",
+            "(d) Applications for single-trip permits will be reviewed for acceptability of the route being used in conjunction with the vehicle's load and axle configuration.",
+            "(e) Applications for single-trip permits will be rejected where the vehicle's load and axle configuration overstress the structures being crossed on the anticipated route of travel. Rejected applications will identify the structures on the proposed route being overstressed. Applicants can either modify the vehicle's load, weight over each axle or axle spacing to lessen the load impact or choose an alternative route. Applicants can contact the New Jersey Department of Transportation, Bureau of Structural Engineering at 609-530-2579 for assistance in the choice of acceptable alternative routes."
+          ],
+          "title": "N.J.A.C. 13:18, Subchapter 1 — Permits for Overdimensional or Overweight Vehicles",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/current-rule.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+              "role": "document_pdf",
+              "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+            }
+          ],
+          "authority_entity_id": "operator_apm_terminals",
+          "clause_id": "reg_apm_safety_induction",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 11 / printed page 18, APM TERMINALS — Mandatory Trucker Training",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2025-08",
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_truckers_guide",
+          "source_text": "All truck drivers are required to complete the MANDATORY online safety induction video/quiz in order to access the terminal",
+          "title": "Truckers Resource Guidebook",
+          "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "axle_weight_evidence": {
+    "request_id": 29,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "axle_weight",
+      "implementation": "evidence_readiness_only",
+      "label": "Gross, axle, and spacing evidence",
+      "limits": [
+        "The federal clause is limited to the Interstate system and reasonable access; the New Jersey single-axle clause is limited to non-Interstate New Jersey roads.",
+        "Which limit applies depends on the exact roadway jurisdiction and route. This catalog implements no bridge-formula, axle-group, tire-load, or legal-weight calculator.",
+        "Gross weight, axle count, and reported axle weights or spacings do not by themselves establish compliance.",
+        "The NJPASS-hosted route-review clause is excluded from the verified graph because official code-of-record currentness was not independently verified."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "axle_weight_evidence",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-07-31",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/federal/ecfr_23_cfr_658_17_as_of_2026_07_29.xml",
+              "role": "ecfr_api_point_in_time_xml",
+              "sha256": "d846fa89b50edd7d24346082f2f2f68e640eee0295969e6b4f5c82ba1f5fbbe0"
+            }
+          ],
+          "authority_entity_id": "authority_fhwa",
+          "clause_id": "reg_federal_interstate_weight",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "23 CFR 658.17(a)-(e)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Office of the Federal Register / Government Publishing Office",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "axles"
+          ],
+          "source_id": "ecfr_23_cfr_658_17_2026_07_29",
+          "source_text": [
+            "(a) The provisions of the section are applicable to the National System of Interstate and Defense Highways and reasonable access thereto.",
+            "(b) The maximum gross vehicle weight shall be 80,000 pounds except where lower gross vehicle weight is dictated by the bridge formula.",
+            "(c) The maximum gross weight upon any one axle, including any one axle of a group of axles, or a vehicle is 20,000 pounds.",
+            "(d) The maximum gross weight on tandem axles is 34,000 pounds.",
+            "(e) No vehicle or combination of vehicles shall be moved or operated on any Interstate highway when the gross weight on two or more consecutive axles exceeds the limitations prescribed by the following formula, referred to as the Bridge Gross Weight Formula:"
+          ],
+          "title": "23 CFR 658.17 — Weight",
+          "url": "https://www.ecfr.gov/current/title-23/chapter-I/subchapter-G/part-658/section-658.17",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+              "role": "document_pdf",
+              "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_noninterstate_single_axle",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 27; section 2.2.1",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2024-01",
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "axles"
+          ],
+          "source_id": "nj_size_weight_guidebook",
+          "source_text": "The maximum weight allowed on a signle axle is 22,400 lbs.",
+          "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+              "role": "document_pdf",
+              "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_tandem_gross_bridge",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF pages 28-29; sections 2.2.2, 2.2.2.1, and 2.2.2.2",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2024-01",
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "axles"
+          ],
+          "source_id": "nj_size_weight_guidebook",
+          "source_text": [
+            "The maximum weight allowed on axle group of this type is 34,000 lbs.",
+            "The gross vehicle weight is defined as a vehicle or combination of vehicles, including load or contents. The maximum overall gross weight of a vehicle is 80,000 lbs., as shown in the diagram above.",
+            "NOTE: Compliance with bridge formula weight limits may require axle weights lower than the standard weight limits of 34,000 pounds for a tandem axle set and a gross weight lower than the standard 80,000-pound limit."
+          ],
+          "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-08-24",
+          "archive_graph_eligibility": "exclude_currentness_not_fully_verified",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_13_18_current_snapshot_2026_08_24.pdf",
+              "role": "document_pdf",
+              "sha256": "64af8bc4878c5d9add64c3dcc8216d12c5deb1879fb549479b3d553fdb1ef6c5"
+            }
+          ],
+          "authority_entity_id": "authority_njmvc",
+          "clause_id": "reg_nj_single_trip_route_review_13_18_portal_copy",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF pages 3-4, N.J.A.C. 13:18-1.5(b)(3)-(7), (d), and (e)",
+          "named_blocker": null,
+          "provenance_review": {
+            "issue": "incomplete_archive_page_locator",
+            "note": "Items (b)(3) and (b)(4) occur on PDF page 2; remaining retained items and (d)/(e) occur on page 3. The archive locator remains unchanged for reproducibility.",
+            "quotation_form": "retained_passages",
+            "recommended_locator": "PDF pages 2-3, N.J.A.C. 13:18-1.5(b)(3)-(7), (d), and (e)",
+            "review_record": "audits/evidence-2026-09-10/source-manual-review.json",
+            "review_status": "development_visual_review_not_policy_approval",
+            "reviewed_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c"
+          },
+          "publication_date": null,
+          "publisher": "New Jersey Motor Vehicle Commission; hosted by the New Jersey Department of Transportation NJPASS system",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "axle_weights",
+            "axle_spacings",
+            "dimensions",
+            "trip_timing",
+            "route_geometry",
+            "permit_credential_status"
+          ],
+          "source_id": "njac_13_18_osow_portal_copy_2026_08_24",
+          "source_text": [
+            "3. The vehicle height, length and width;",
+            "4. The axle configuration and weight over each axle;",
+            "5. The overall gross vehicle weight;",
+            "6. The dates of travel;",
+            "7. The details of the anticipated route of travel, including locations of the entrance to and exit from the New Jersey State highway system, including, but not limited to, the interstate highways, the New Jersey Turnpike, the Garden State Parkway south of Exit 105 and the Atlantic City Expressway; and",
+            "(d) Applications for single-trip permits will be reviewed for acceptability of the route being used in conjunction with the vehicle's load and axle configuration.",
+            "(e) Applications for single-trip permits will be rejected where the vehicle's load and axle configuration overstress the structures being crossed on the anticipated route of travel. Rejected applications will identify the structures on the proposed route being overstressed. Applicants can either modify the vehicle's load, weight over each axle or axle spacing to lessen the load impact or choose an alternative route. Applicants can contact the New Jersey Department of Transportation, Bureau of Structural Engineering at 609-530-2579 for assistance in the choice of acceptable alternative routes."
+          ],
+          "title": "N.J.A.C. 13:18, Subchapter 1 — Permits for Overdimensional or Overweight Vehicles",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/current-rule.pdf",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "dimensions_and_route": {
+    "request_id": 30,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "dimensions_route",
+      "implementation": "evidence_readiness_only",
+      "label": "Loaded dimensions and exact route access",
+      "limits": [
+        "Width limits depend on route-network status, and the cited local-access rule is expressly limited to a 102-inch-wide standard truck using unrestricted local roads by the direct route.",
+        "A road's absence from a listed network or restriction table establishes neither permission nor prohibition. Current local postings and every segment still require verification.",
+        "Published terminal directions and stored route topology are not legal route designation, bridge-clearance evidence, or navigable truck-route approval."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "dimensions_and_route",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+              "role": "document_pdf",
+              "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_width_limit",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 13, section 2.1.1",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2024-01",
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "dimensions"
+          ],
+          "source_id": "nj_size_weight_guidebook",
+          "source_text": [
+            "Width 96 inches on routes that are not National Network or NJ Access Routes 102 inches on National Network and NJ Access Routes",
+            "As the diagram above shows, the maximum width of a commercial vehicle traveling within the State of New Jersey is 102 inches (or 8 feet 6 inches). In some instances, rules and regulations may be promulgated for those public roads, streets or highways or public or quasi-public property in this State, where it is determined that the interests of public safety and welfare require the maximum outside width be no more than 96 inches."
+          ],
+          "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+              "role": "document_pdf",
+              "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_height_limit",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 14, section 2.1.2",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2024-01",
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "dimensions"
+          ],
+          "source_id": "nj_size_weight_guidebook",
+          "source_text": "The maximum height of any commercial vehicle or combination of vehicles, including load or contents of any part or portion thereof, traveling within the State of New Jersey is 13’-6” on all highways, except as otherwise identified, as shown in the height diagram above.",
+          "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+              "role": "document_pdf",
+              "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_semitrailer_length",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 21, section 2.1.3.6",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2024-01",
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "dimensions"
+          ],
+          "source_id": "nj_size_weight_guidebook",
+          "source_text": [
+            "As the diagram above shows, the maximum length of a semitrailer shall not exceed 53 feet when operated as part of a combination of vehicles consisting of one motor-drawn vehicle and a drawing or power unit vehicle.",
+            "Semitrailers greater than 48 feet in length but not more than 53 feet in length must be transported using the National Network unless seeking food, fuel, rest, repairs or to reach a terminal by the direct route (that is, the shortest travel distance). Upon completing each trip, the large truck should return to the National Network in a manner consistent with reaching its next terminal. Trips off of the National Network or the New Jersey Access Network onto all other local unrestricted roadways should only be for the purpose of accessing a terminal on those roadways, by the shortest distance."
+          ],
+          "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-07-31",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+              "role": "document_pdf",
+              "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_truck_access_local_rule_preservation",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 2, N.J.A.C. 16:32-1.2(e)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [],
+          "source_id": "njac_16_32_truck_access_current_2023",
+          "source_text": "The rules of this chapter do not supersede other State rules outside of this chapter, municipal ordinances, and county resolutions, which may otherwise restrict or control the through-movements of trucks or other vehicles. An example of such a restriction is a maximum weight posting or the designation of local \"truck route\" restrictions that have been adopted and posted as provided at N.J.S.A. 40:67-16.1 et seq.",
+          "title": "N.J.A.C. 16:32 — Truck Access",
+          "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-07-31",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+              "role": "document_pdf",
+              "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_access_network_600_series",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 3, N.J.A.C. 16:32-1.4(a)(3); PDF page 9, Appendix C",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "dimensions"
+          ],
+          "source_id": "njac_16_32_truck_access_current_2023",
+          "source_text": "Those county \"600\" series roads listed under Appendix C, incorporated herein by reference, approximately 80 miles; and",
+          "title": "N.J.A.C. 16:32 — Truck Access",
+          "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-07-31",
+          "archive_graph_eligibility": "include_as_exact_conditional_rule",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+              "role": "document_pdf",
+              "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_terminal_access_102_inch_standard_truck",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF pages 3-4, N.J.A.C. 16:32-1.5(a)(2)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "dimensions"
+          ],
+          "source_id": "njac_16_32_truck_access_current_2023",
+          "source_text": "A 102-inch-wide standard truck may use local unrestricted roadways only as necessary to: i. Access a terminal located on a local unrestricted roadway, but must return to the National Network or New Jersey Access Network by the direct route unless continued use of the local unrestricted roadway provides the direct route to the next terminal located on a local unrestricted roadway; or ii. Reach the New Jersey Access Network from the National Network by the direct route or to access the National Network from the New Jersey Access Network by the direct route; and",
+          "title": "N.J.A.C. 16:32 — Truck Access",
+          "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+              "role": "document_pdf",
+              "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+            },
+            {
+              "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+              "role": "current_landing_page_snapshot_html",
+              "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_terminal_weight_dimensions",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "Subrule 34-046, PDF page 16",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "dimensions"
+          ],
+          "source_id": "panynj_marine_terminal_tariff",
+          "source_text": [
+            "Gross vehicle weight of containerized shipments (tractor, chassis, container, cargo, etc.) shall not exceed 128,000 lbs. and shall not exceed manufacturer safe working loads.",
+            "Vehicles exceeding 16’3” high and/or 11’ wide are considered over dimensional and require approval for shipment through the Marine Terminals from the Office of the Manager, Marine Terminals."
+          ],
+          "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
+          "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "permit_eligibility": {
+    "request_id": 31,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "permit_coverage",
+      "implementation": "evidence_readiness_only",
+      "label": "Permit type and load eligibility evidence",
+      "limits": [
+        "Permit applicability depends on the load, dimensions, axle facts, trip time, and permit terms; no legal interpretation or permit-validity check is implemented.",
+        "The ocean-container sources concern sealed ocean-borne containers and do not make every container move eligible for that permit type.",
+        "The NJPASS-hosted permit clause is retained but excluded from the verified graph because official code-of-record currentness was not independently archived and compared.",
+        "A reported permit, including a reported-valid permit, is user-reported evidence and does not establish approval or route coverage."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "permit_eligibility",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-08-24",
+          "archive_graph_eligibility": "exclude_currentness_not_fully_verified",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_13_18_current_snapshot_2026_08_24.pdf",
+              "role": "document_pdf",
+              "sha256": "64af8bc4878c5d9add64c3dcc8216d12c5deb1879fb549479b3d553fdb1ef6c5"
+            }
+          ],
+          "authority_entity_id": "authority_njmvc",
+          "clause_id": "reg_nj_osow_permit_requirement_13_18_portal_copy",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF pages 1-2, N.J.A.C. 13:18-1.2(a)-(c)(2)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "New Jersey Motor Vehicle Commission; hosted by the New Jersey Department of Transportation NJPASS system",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "axle_weights",
+            "dimensions",
+            "container_seal_status",
+            "permit_credential_status"
+          ],
+          "source_id": "njac_13_18_osow_portal_copy_2026_08_24",
+          "source_text": [
+            "(a) Except as provided in (c) below, a single-trip permit is required for each one-way trip of an oversize or overweight vehicle that exceeds the dimension or weight provisions of N.J.S.A. 39:3-84.",
+            "(b) In the event the vehicle is both oversize and overweight, a single-trip permit will be issued for each one-way trip.",
+            "(c) An annual ocean borne containerized cargo multiple-trip permit may be issued for a tractor semitrailer combination engaged in the transportation of sealed containers of the type commonly used for the conveyance of freight transportation in international ocean going commerce as follows:",
+            "1. Sealed containers transported under an annual ocean borne containerized cargo multiple-trip permit shall bear the seal of the United States Custom Service, the seal of another governmental agency or the seal of a shipper;",
+            "2. The combined gross vehicle weight of any tractor semitrailer combination, including load or content conveying sealed containers, shall not exceed 90,000 pounds. The tractor semitrailer combination per-axle combined weight shall not exceed 38,000 pounds for any one tandem axle unit in any tractor semitrailer combination and shall not exceed 56,400 pounds for any tri-axle trailer configuration. Additionally, vehicles shall conform with the axle limitations in N.J.S.A. 39:3-84 and the maximum tire load limit in N.J.A.C. 13:18-1.10(a)2. Vehicles or combination of vehicles that exceed these weight limits may not use an annual ocean borne containerized cargo multiple-trip permit and shall obtain a single-trip permit as described in (a) above;"
+          ],
+          "title": "N.J.A.C. 13:18, Subchapter 1 — Permits for Overdimensional or Overweight Vehicles",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/current-rule.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include_as_exact_conditional_rule_scope_unresolved",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+              "role": "document_pdf",
+              "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_single_trip_osow_permit",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 40, section 3.1",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2024-01",
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "axle_weights",
+            "axle_spacings",
+            "dimensions",
+            "load_divisibility",
+            "trip_timing",
+            "permit_credential_status"
+          ],
+          "source_id": "nj_size_weight_guidebook",
+          "source_text": "A single-trip permit allows a carrier to haul a non-divisible load above legal size and/or weight limitations and is valid for a single trip within a period of five days. In the event the one-way trip cannot be completed within the valid life of the single-trip permit due to hazardous road conditions or vehicle breakdown, a one-day extension may be granted provided that the request is made to the DOT before the permit has expired. Permit restrictions are assigned based on requested dimensions and weights.",
+          "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include_as_exact_conditional_rule_scope_unresolved",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/nj_size_weight_guidebook_2024.pdf",
+              "role": "document_pdf",
+              "sha256": "5a427385dfb7ad26e4d571c1bdd44348d976e82fcfcb78121a9ddd02a415fb70"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_ocean_container_permit",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 43, section 3.4 and Table 5",
+          "named_blocker": null,
+          "provenance_review": {
+            "issue": "table_linearization_labeled_verbatim",
+            "note": "The Table 5 entry is a linearized three-column table, not a continuous verbatim sentence. Gross 90,000 lb, tandem 38,000 lb and tri-axle 56,400 lb values match the PDF. Preserve surrounding scope and qualifications; these numbers alone do not establish permit eligibility.",
+            "quotation_form": "prose_and_linearized_table",
+            "recommended_locator": "PDF page 43, section 3.4 and Table 5",
+            "review_record": "audits/evidence-2026-09-10/source-manual-review.json",
+            "review_status": "development_visual_review_not_policy_approval",
+            "reviewed_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c"
+          },
+          "publication_date": "2024-01",
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "axle_weights",
+            "dimensions",
+            "container_seal_status",
+            "trip_timing",
+            "permit_credential_status"
+          ],
+          "source_id": "nj_size_weight_guidebook",
+          "source_text": [
+            "An Ocean Borne Container Permit can be obtained for a truck tractor semitrailer combination engaged in the overweight transportation of sealed containers of the type commonly used for the conveyance of freight transportation in international ocean-going commerce. Moves made under this permit type must be of legal dimensions and are subject to the weight limitations shown in Table 5.",
+            "TABLE 5 OCEAN BORNE CONTAINER PERMIT WEIGHT LIMITATIONS: Maximum Gross Weight 90,000 lbs; Maximum Tandem Weight 38,000 lbs; Maximum Tri-axle Weight 56,400 lbs."
+          ],
+          "title": "NJ Commercial Vehicle Size and Weight Guidebook",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/Final%20CVG%202024-01-05.pdf",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "cross_authority_coverage": {
+    "request_id": 32,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "permit_coverage",
+      "implementation": "evidence_readiness_only",
+      "label": "Cross-authority route and permit coverage",
+      "limits": [
+        "A New Jersey State permit does not establish approval for toll, county, local, Port Authority, or terminal-controlled segments.",
+        "The retained Turnpike and marine-terminal clauses concern separate authorities and scopes; their inclusion does not establish that every approval applies to this trip.",
+        "Every reported approval requires verification from the responsible authority; a complete set of user reports is not cross-authority clearance.",
+        "The retained toll-road approval clause is excluded from the verified graph because official code-of-record currentness was not independently verified."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "cross_authority_coverage",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-08-24",
+          "archive_graph_eligibility": "exclude_currentness_not_fully_verified",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_13_18_current_snapshot_2026_08_24.pdf",
+              "role": "document_pdf",
+              "sha256": "64af8bc4878c5d9add64c3dcc8216d12c5deb1879fb549479b3d553fdb1ef6c5"
+            }
+          ],
+          "authority_entity_id": "authority_njmvc",
+          "clause_id": "reg_nj_toll_authority_approval_13_18_portal_copy",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 5, N.J.A.C. 13:18-1.9(a)(2)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "New Jersey Motor Vehicle Commission; hosted by the New Jersey Department of Transportation NJPASS system",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "route_geometry",
+            "permit_credential_status"
+          ],
+          "source_id": "njac_13_18_osow_portal_copy_2026_08_24",
+          "source_text": "2. On any toll road, without the express approval of the tolling authority, including, but not limited to, the South Jersey Transportation Authority for the Atlantic City Expressway; and the New Jersey Turnpike Authority for the New Jersey Turnpike and the Garden State Parkway;",
+          "title": "N.J.A.C. 13:18, Subchapter 1 — Permits for Overdimensional or Overweight Vehicles",
+          "url": "https://nj.gotpermits.com/njpass/Content/state/NJ/PublicMaterials/current-rule.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-07-31",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+              "role": "document_pdf",
+              "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_truck_access_local_rule_preservation",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 2, N.J.A.C. 16:32-1.2(e)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [],
+          "source_id": "njac_16_32_truck_access_current_2023",
+          "source_text": "The rules of this chapter do not supersede other State rules outside of this chapter, municipal ordinances, and county resolutions, which may otherwise restrict or control the through-movements of trucks or other vehicles. An example of such a restriction is a maximum weight posting or the designation of local \"truck route\" restrictions that have been adopted and posted as provided at N.J.S.A. 40:67-16.1 et seq.",
+          "title": "N.J.A.C. 16:32 — Truck Access",
+          "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+              "role": "document_pdf",
+              "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+            },
+            {
+              "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+              "role": "current_landing_page_snapshot_html",
+              "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_terminal_traffic",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "Subrule 34-290(3)-(5), PDF page 33",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_marine_terminal_tariff",
+          "source_text": [
+            "All persons on any air terminal highway or marine terminal highway must at all times comply with any lawful order, signal or direction by voice or hand of any member of the Port Authority police force. When traffic is controlled by traffic lights, signs or by mechanical or electrical signals, such lights, signs and signals shall be obeyed unless a Port Authority police officer directs otherwise.",
+            "Unless otherwise directed, all vehicles on any air terminal highway or marine terminal highway shall at all times stay to the right of the center of the roadway, except in the case of one-way roadways; slow- moving vehicles shall remain as close as possible to the right-hand edge or curb of the roadway; and where a roadway is marked with traffic lanes, vehicles shall not cross markings.",
+            "No person shall operate a motor vehicle on an air terminal highway or marine terminal highway unless he is duly authorized to operate such vehicle on State and municipal highways in the State in which such air terminal highway or marine terminal highway is located, or unless he is especially authorized by the Port Authority to operate motor vehicles on such air terminal highway or marine terminal highway. No motor vehicle shall be permitted on any air terminal highway or marine terminal highway unless it is registered in accordance with the provisions of the law of the State in which such air terminal highway or marine terminal highway is located, or unless it is especially authorized by the Port Authority to be operated on such air terminal highway or marine terminal highway."
+          ],
+          "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
+          "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-08-07",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_19_9_1_9_cornell_snapshot_2026_08_07.html",
+              "role": "page_snapshot_html",
+              "sha256": "0159cbb4d0dd0f3e8f08dad945138774d2ea10d20311e3b02c7d7ffe1fd51f55"
+            }
+          ],
+          "authority_entity_id": "authority_njta",
+          "clause_id": "reg_njta_roadway_use_limitations",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "N.J.A.C. 19:9-1.9(a), introductory paragraph and items 21 and 24",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Cornell Law School Legal Information Institute (codification mirror)",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "dimensions",
+            "permit_credential_status"
+          ],
+          "source_id": "njac_19_9_1_9_cornell_2026_08_07",
+          "source_text": [
+            "(a) Use of the Roadway and entry thereon by the following, unless otherwise authorized by the Authority, is prohibited:",
+            "21. Commercial motor vehicles, trailers and semitrailers, including, but not limited to, farm trucks, while loaded with hay or straw when the extreme overall dimension is greater than 102 inches in width, without special permit;",
+            "24. Vehicles operated with a tandem trailer combination, commonly known as a \"double bottom,\" if one or more of the individual trailers exceeds 28 feet, six inches in length;"
+          ],
+          "title": "N.J.A.C. 19:9-1.9 — Limitations on use of Roadway (Cornell LII codification snapshot)",
+          "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-19-9-1-9",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+              "role": "document_pdf",
+              "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+            },
+            {
+              "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+              "role": "current_landing_page_snapshot_html",
+              "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_terminal_weight_dimensions",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "Subrule 34-046, PDF page 16",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "dimensions"
+          ],
+          "source_id": "panynj_marine_terminal_tariff",
+          "source_text": [
+            "Gross vehicle weight of containerized shipments (tractor, chassis, container, cargo, etc.) shall not exceed 128,000 lbs. and shall not exceed manufacturer safe working loads.",
+            "Vehicles exceeding 16’3” high and/or 11’ wide are considered over dimensional and require approval for shipment through the Marine Terminals from the Office of the Manager, Marine Terminals."
+          ],
+          "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
+          "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "current_route_conditions": {
+    "request_id": 33,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "current_route_conditions",
+      "implementation": "evidence_readiness_only",
+      "label": "Current route postings and operating conditions",
+      "limits": [
+        "No live current-policy, posting, closure, lane, detour, escort, or route-condition integration is implemented.",
+        "The archived Port Street bulletin is a quarantined dated observation, not a source clause or proof of conditions on the trip date; it must be rechecked before operational use.",
+        "A user-reported check time does not verify the result, authority, route coverage, or continued currentness of that check."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [
+        {
+          "accessed_date": "2026-08-24",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njpass_home_snapshot_2026_08_24.html",
+              "role": "page_snapshot_html",
+              "sha256": "ed89d6688dd3290bb9c10cc24fa57b87edc57ecd597f5f9ad67505c4e9fcfc75"
+            }
+          ],
+          "condition_id": "njpass_port_st_oversize_restrictions_2026_08_03",
+          "currentness": "archived_observation_not_verified_for_this_trip",
+          "operational_use": false,
+          "publication_date": null,
+          "publisher": "New Jersey Department of Transportation",
+          "record": {
+            "archive_context": {
+              "condition_count": 5,
+              "coupling_eligibility": "prohibited",
+              "description": "Timestamped operational and permitting conditions observed on mutable official pages. These records are excluded from the verified graph and must be rechecked before operational use.",
+              "graph_eligibility": "exclude_mutable_not_for_verified_visual",
+              "must_recheck_before_any_operational_use": true,
+              "observed_at": "2026-08-24T00:01:51-04:00",
+              "schema_version": "1.0-observed-mutable-conditions",
+              "source_id": "njpass_home_2026_08_24",
+              "status": "retained_observations_not_continuing_currentness_claims"
+            },
+            "compliance_status": "not_a_compliance_claim",
+            "condition_id": "njpass_port_st_oversize_restrictions_2026_08_03",
+            "currentness_status": "observed_on_2026_08_24_not_a_continuing_validity_claim",
+            "label": "Port St. Oversize Load Restrictions",
+            "source_locator": "Archived NJPASS home HTML, Bulletin panel",
+            "source_stated_duration_text": "until further notice",
+            "source_stated_effective_from": "2026-08-03",
+            "source_text": "Effective August 3, 2026, a section of Port St. will be reduced to one lane in both directions between Brewster Rd. and Marlin St. until further notice. In this section of Port St., lanes will be reduced to 11 feet wide and all oversize loads heading eastbound on Port St. MUST utilize the Corbin St. ramp. All oversize loads heading westbound on Port St. MUST follow the Marlin St. / Kellogg St. detour or utilize Outer Port St. until further notice. All oversize loads MUST exit through the south via North Ave. Please call the Port Authority Police Department (PAPD) at (973) 578-2180 to request an escort for any oversize loads travelling through the port.",
+            "source_text_verbatim": true,
+            "spatial_scope": "Port Street between Brewster Road and Marlin Street and the source-stated port exit movements",
+            "vehicle_scope": "oversize loads"
+          },
+          "source_id": "njpass_home_2026_08_24",
+          "title": "NJPASS SUPERLOAD home page and bulletin",
+          "url": "https://nj.gotpermits.com/njpass/"
+        }
+      ],
+      "operational_use": false,
+      "requirement_id": "current_route_conditions",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-07-31",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/state/njac_16_32_truck_access_current_2023.pdf",
+              "role": "document_pdf",
+              "sha256": "bc38021ace1ee95e1be1543a60fea80e7e7b906516e2b1f4dc4f0a960b8d2d03"
+            }
+          ],
+          "authority_entity_id": "authority_njdot",
+          "clause_id": "reg_nj_truck_access_local_rule_preservation",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 2, N.J.A.C. 16:32-1.2(e)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "New Jersey Department of Transportation",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [],
+          "source_id": "njac_16_32_truck_access_current_2023",
+          "source_text": "The rules of this chapter do not supersede other State rules outside of this chapter, municipal ordinances, and county resolutions, which may otherwise restrict or control the through-movements of trucks or other vehicles. An example of such a restriction is a maximum weight posting or the designation of local \"truck route\" restrictions that have been adopted and posted as provided at N.J.S.A. 40:67-16.1 et seq.",
+          "title": "N.J.A.C. 16:32 — Truck Access",
+          "url": "https://www.nj.gov/transportation/freight/trucking/pdf/16.32.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+              "role": "document_pdf",
+              "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+            },
+            {
+              "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+              "role": "current_landing_page_snapshot_html",
+              "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_terminal_traffic",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "Subrule 34-290(3)-(5), PDF page 33",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_marine_terminal_tariff",
+          "source_text": [
+            "All persons on any air terminal highway or marine terminal highway must at all times comply with any lawful order, signal or direction by voice or hand of any member of the Port Authority police force. When traffic is controlled by traffic lights, signs or by mechanical or electrical signals, such lights, signs and signals shall be obeyed unless a Port Authority police officer directs otherwise.",
+            "Unless otherwise directed, all vehicles on any air terminal highway or marine terminal highway shall at all times stay to the right of the center of the roadway, except in the case of one-way roadways; slow- moving vehicles shall remain as close as possible to the right-hand edge or curb of the roadway; and where a roadway is marked with traffic lanes, vehicles shall not cross markings.",
+            "No person shall operate a motor vehicle on an air terminal highway or marine terminal highway unless he is duly authorized to operate such vehicle on State and municipal highways in the State in which such air terminal highway or marine terminal highway is located, or unless he is especially authorized by the Port Authority to operate motor vehicles on such air terminal highway or marine terminal highway. No motor vehicle shall be permitted on any air terminal highway or marine terminal highway unless it is registered in accordance with the provisions of the law of the State in which such air terminal highway or marine terminal highway is located, or unless it is especially authorized by the Port Authority to be operated on such air terminal highway or marine terminal highway."
+          ],
+          "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
+          "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "dtr_registration_and_rfid": {
+    "request_id": 34,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "dtr",
+      "implementation": "evidence_readiness_only",
+      "label": "DTR registration and vehicle RFID evidence",
+      "limits": [
+        "No live PortTruckPass, DTR, ownership-amendment, or RFID lookup is implemented.",
+        "Reported DTR or RFID status is not registry verification and does not establish terminal entry."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "dtr_registration_and_rfid",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+              "role": "document_pdf",
+              "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+            },
+            {
+              "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+              "role": "current_landing_page_snapshot_html",
+              "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_dtr",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "Subrule 34-1100, PDF page 55",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_marine_terminal_tariff",
+          "source_text": "All Drayage Trucks seeking entry onto any Port Authority Terminal shall be registered in the DTR prior to the date of entry. Registration in the DTR shall be in electronic format via the PortTruckPass (PTP) website (www.porttruckpass.com). In the event of a change to the information provided for registration in the DTR with respect to a registered vehicle, such information shall be amended within ten (10) calendar days of the change via the PortTruckPass website (www.porttruckpass.com). Supporting documentation may be required for verification purposes with regard to registration or amendment.",
+          "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
+          "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+              "role": "document_pdf",
+              "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_rfid",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 4, Radio-Frequency Identification (RFID)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2025-08",
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "weight",
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_truckers_guide",
+          "source_text": [
+            "All Class 8 drayage trucks seeking entry onto any Port of New York and New Jersey Marine Terminal must be registered in the Drayage Truck Registry (DTR) and have a valid RFID tag properly mounted on the vehicle.",
+            "No tag, no entry."
+          ],
+          "title": "Truckers Resource Guidebook",
+          "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "dtr_engine_policy": {
+    "request_id": 35,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "dtr",
+      "implementation": "evidence_readiness_only",
+      "label": "DTR engine-policy evidence and retained tariff conflict",
+      "limits": [
+        "The release preserves an unresolved internal tension between Subrules 34-1101 and 34-1140; the deadline clause is explicitly excluded from verified use.",
+        "This catalog does not reconcile the tariff, infer enforcement, or categorically approve or deny a truck from engine model year alone.",
+        "The 2014 engine language concerns completing DTR registration and must not be silently converted into a universal terminal-entry rule."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "dtr_engine_policy",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include_as_verified_requirement",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+              "role": "document_pdf",
+              "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+            },
+            {
+              "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+              "role": "current_landing_page_snapshot_html",
+              "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_dtr_engine",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "Subrule 34-1101, PDF page 56",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "engine_model_year"
+          ],
+          "source_id": "panynj_marine_terminal_tariff",
+          "source_text": "Beginning July 2, 2023 at 12:01 AM, only Drayage Trucks that are equipped with an engine that meets or exceeds federal Environmental Protection Agency on-road emission standards for engine model year 2014 heavy-duty diesel-fueled shall be permitted to complete registration in the DTR via the PortTruckPass website (www.porttruckpass.com).",
+          "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
+          "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "exclude_unresolved_not_for_verified_visual",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_marine_terminal_tariff_pa10_effective_2026_05_01.pdf",
+              "role": "document_pdf",
+              "sha256": "bcf0927670efd36b626ab8882ce7d687a0c7dd8c994d489063f993118dfa6d7a"
+            },
+            {
+              "path": "data/raw/documents/port_authority/panynj_tariffs_page_snapshot_2026_08_24.html",
+              "role": "current_landing_page_snapshot_html",
+              "sha256": "ff686005a6e2d774f7ba7755cdcd19885dc5f914f8a1fb3c79dcdfe3de914e88"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_drayage_truck_deadline_34_1140",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": "The retained tariff text does not reconcile Subrule 34-1140(c) with Subrule 34-1101's diesel-engine DTR registration pathway. The repository preserves both clauses and makes no denial, compliance, contradiction, enforcement, or route-feasibility inference.",
+          "interpretation_status": "unresolved_internal_text_tension",
+          "locator": "Subrule 34-1140, PDF page 56",
+          "named_blocker": "PANYNJ authoritative clarification, erratum, or superseding PA-10 text resolving Subrule 34-1140(c)",
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "engine_model_year",
+            "fuel_powertrain_type",
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_marine_terminal_tariff",
+          "source_text": {
+            "effective_2023_07_02": {
+              "clauses": [
+                "a) Any Drayage Truck that cannot be verified as compliant by reference to the Drayage Truck’s records in the DTR, or",
+                "b) Any Drayage Truck equipped with an engine of model year 1998 or older, or",
+                "c) Any Drayage Truck that is not an Alternative Drayage Truck as defined in SUBRULE 34-1060."
+              ],
+              "intro": "Beginning July 2, 2023, at 12:01 AM, no Container Terminal Facility shall permit access into any Port Authority Terminal by:"
+            },
+            "effective_2027_05_01": {
+              "clauses": [
+                "a) Any Drayage Truck that cannot be verified as compliant by reference to the Drayage Truck’s records in the DTR, or",
+                "b) Any Drayage Truck equipped with an engine of model year 1999 or older, or",
+                "c) Any Drayage Truck that is not an Alternative Truck as defined in SUBRULE 34-1060."
+              ],
+              "intro": "Beginning May 1, 2027, at 12:01 AM, no Container Terminal Facility shall permit access into any Port Authority Terminal by:"
+            },
+            "effective_2028_05_01": {
+              "clauses": [
+                "a) Any Drayage Truck that cannot be verified as compliant by reference to the Drayage Truck’s records in the DTR, or",
+                "b) Any Drayage Truck equipped with an engine of model year 2000 or older, or",
+                "c) Any Drayage Truck that is not an Alternative Truck as defined in SUBRULE 34-1060."
+              ],
+              "intro": "Beginning May 1, 2028, at 12:01 AM, no Container Terminal Facility shall permit access into any Port Authority Terminal by:"
+            }
+          },
+          "title": "Port Authority Marine Terminal Tariff FMC Schedule No. PA-10",
+          "url": "https://www.panynj.gov/port/en/doing-business/tariffs.html",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "driver_twic": {
+    "request_id": 36,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "terminal_access",
+      "implementation": "evidence_readiness_only",
+      "label": "Driver TWIC evidence",
+      "limits": [
+        "The federal clause concerns unescorted access to regulated secure areas and retains its stated exceptions; this catalog does not determine whether an exception applies.",
+        "No live TSA or Port Authority credential verification is implemented. A reported TWIC is not verified access authorization."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "driver_twic",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-07-31",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/federal/ecfr_33_cfr_101_514_as_of_2026_07_29.xml",
+              "role": "ecfr_api_point_in_time_xml",
+              "sha256": "daf1e34cd704b61e120825633280d8d428f6a883012adefd1aca64ff09e83411"
+            }
+          ],
+          "authority_entity_id": "authority_uscg",
+          "clause_id": "reg_federal_twic",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "33 CFR 101.514(a)",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": null,
+          "publisher": "Office of the Federal Register / Government Publishing Office",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "ecfr_33_cfr_101_514_2026_07_29",
+          "source_text": "All persons requiring unescorted access to secure areas of vessels, facilities, and OCS facilities regulated by parts 104, 105 or 106 of this subchapter must possess a TWIC before such access is granted, except as otherwise noted in this section. A TWIC must be obtained via the procedures established by TSA in 49 CFR part 1572.",
+          "title": "33 CFR 101.514 — TWIC Requirement",
+          "url": "https://www.ecfr.gov/current/title-33/chapter-I/subchapter-H/part-101/subpart-E/section-101.514",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+              "role": "document_pdf",
+              "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_sealink_twic",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 4, SeaLink® and TWIC and SeaLink®",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2025-08",
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_truckers_guide",
+          "source_text": [
+            "SeaLink® is mandatory for all truckers doing business at the Port of New York and New Jersey.",
+            "Anyone with SeaLink® identification must also have a TWIC. You must register your TWIC with the Port Authority at the Truck Service Center. (Registration is free.)"
+          ],
+          "title": "Truckers Resource Guidebook",
+          "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "sealink_registration": {
+    "request_id": 37,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "terminal_access",
+      "implementation": "evidence_readiness_only",
+      "label": "SeaLink and TWIC registration evidence",
+      "limits": [
+        "No live SeaLink or TWIC-registration lookup is implemented.",
+        "Possession of an identifier and a reported registration do not establish current validity or terminal entry."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "sealink_registration",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+              "role": "document_pdf",
+              "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+            }
+          ],
+          "authority_entity_id": "authority_panynj",
+          "clause_id": "reg_panynj_sealink_twic",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 4, SeaLink® and TWIC and SeaLink®",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2025-08",
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_truckers_guide",
+          "source_text": [
+            "SeaLink® is mandatory for all truckers doing business at the Port of New York and New Jersey.",
+            "Anyone with SeaLink® identification must also have a TWIC. You must register your TWIC with the Port Authority at the Truck Service Center. (Registration is free.)"
+          ],
+          "title": "Truckers Resource Guidebook",
+          "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "apm_induction": {
+    "request_id": 38,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "terminal_access",
+      "implementation": "induction_identifier_match_v1",
+      "label": "APM safety induction tied to the current SeaLink",
+      "limits": [
+        "This is the only catalog requirement with an implemented check, and it uses server-owned synthetic evidence rather than a live training provider.",
+        "A matching synthetic result addresses only induction for the current SeaLink; it is not dispatch, route, permit, or terminal-entry clearance.",
+        "Archived policy is not verified as current for the trip, and synthetic assessment dates do not create a training-expiry rule."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "apm_induction",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+              "role": "document_pdf",
+              "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+            }
+          ],
+          "authority_entity_id": "operator_apm_terminals",
+          "clause_id": "reg_apm_safety_induction",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 11 / printed page 18, APM TERMINALS — Mandatory Trucker Training",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2025-08",
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_truckers_guide",
+          "source_text": "All truck drivers are required to complete the MANDATORY online safety induction video/quiz in order to access the terminal",
+          "title": "Truckers Resource Guidebook",
+          "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+          "verbatim": true
+        },
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": null,
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+              "role": "document_pdf",
+              "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+            }
+          ],
+          "authority_entity_id": null,
+          "clause_id": "prototype_clause_induction_sealink_change",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "extraction_status": "prototype_not_promoted_to_canonical_archive",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 11 / printed page 18, Mandatory Trucker Training, fourth bullet",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2025-08",
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [],
+          "source_id": "panynj_truckers_guide",
+          "source_text": "Truckers obtaining a new SeaLink card will need to retake the Safety Induction Training with their new SeaLink number. Driver’s DO NOT have to retake the induction if they switch companies, as long as they keep the same Sealink number.",
+          "title": "Truckers Resource Guidebook",
+          "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+          "verbatim": null
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "apm_appointment": {
+    "request_id": 39,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "archived_only",
+      "family": "terminal_access",
+      "implementation": "evidence_readiness_only",
+      "label": "APM gate appointment evidence",
+      "limits": [
+        "No live TERMPoint or terminal appointment lookup is implemented.",
+        "A reported appointment does not establish that it is current, matches this movement, or will be accepted at the gate."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "apm_appointment",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [
+        {
+          "accessed_date": "2026-06-25",
+          "archive_graph_eligibility": "include",
+          "archived_files": [
+            {
+              "path": "data/raw/documents/port_authority/panynj_truckers_resource_guidebook.pdf",
+              "role": "document_pdf",
+              "sha256": "420453b5261f855e49628b5c914b575e0f4c73e8bb0b81c14c608aac96d67cb1"
+            }
+          ],
+          "authority_entity_id": "operator_apm_terminals",
+          "clause_id": "reg_apm_appointment",
+          "currentness": "archived_evidence_only_not_verified_for_this_trip",
+          "interpretation_boundary": null,
+          "interpretation_status": null,
+          "locator": "PDF page 11 / printed page 18, APM TERMINALS",
+          "named_blocker": null,
+          "provenance_review": null,
+          "publication_date": "2025-08",
+          "publisher": "Port Authority of New York and New Jersey",
+          "scope_basis": "retained_source_locator_and_text_not_user_trip_applicability",
+          "scope_dimensions": [
+            "permit_credential_status"
+          ],
+          "source_id": "panynj_truckers_guide",
+          "source_text": [
+            "ALL GATE MOVES AT APMT REQUIRE AN APPOINTMENT",
+            "All appointments must be made on the TERMPoint website or APP."
+          ],
+          "title": "Truckers Resource Guidebook",
+          "url": "https://www.panynj.gov/content/dam/port/shipping/port-truckers-resource-guidebook.pdf",
+          "verbatim": true
+        }
+      ],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  },
+  "transaction_release": {
+    "request_id": 40,
+    "payload": {
+      "approval_status": "draft_not_human_approved",
+      "catalog_version": "d2a779683a7111f638fbb004d563aada5cc6f8e22a96a0480cd303b6433dfe73",
+      "evidence_status": "source_coverage_gap",
+      "family": "terminal_access",
+      "implementation": "evidence_readiness_only",
+      "label": "Same-day transaction and gate release evidence",
+      "limits": [
+        "The pinned release contains no retained source clause that establishes same-day transaction or gate-release requirements.",
+        "No live terminal transaction, gate, cargo-release, or admission integration is implemented. Reported release status cannot establish entry."
+      ],
+      "mode": "synthetic_prototype_only",
+      "observations": [],
+      "operational_use": false,
+      "requirement_id": "transaction_release",
+      "schema_version": "drayage-requirement-evidence-v1",
+      "sources": [],
+      "versions": {
+        "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+        "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+        "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+      }
+    },
+    "field_mismatches": []
+  }
+}

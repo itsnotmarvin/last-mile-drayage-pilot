@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-09-13T00:42:56.343152+00:00",
+  "surface": "Claude Desktop restart; initialization and tool discovery only",
+  "runtime_matches_live_verification": true,
+  "implementation": "4fa3a70b7386220dcdbd5c0ba4d5b9c9b78005ca9a293f9fba521ee160e52926",
+  "configuration_changed": false,
+  "model_prompt_sent": false,
+  "startup_events": [
+    "2026-09-13T00:42:40.482Z [drayage-kg-prototype] [info] Server started and connected successfully { metadata: undefined }",
+    "2026-09-13T00:42:40.525Z [drayage-kg-prototype] [info] Message from client: method=\"initialize\" id=0 params { metadata: undefined }",
+    "2026-09-13T00:42:40.930Z [drayage-kg-prototype] [info] Message from server: id=0 result { metadata: undefined }",
+    "2026-09-13T00:42:40.932Z [drayage-kg-prototype] [info] Message from client: method=\"notifications/initialized\" { metadata: undefined }",
+    "2026-09-13T00:42:40.939Z [drayage-kg-prototype] [info] Message from client: method=\"tools/list\" id=1 params { metadata: undefined }",
+    "2026-09-13T00:42:40.945Z [drayage-kg-prototype] [info] Message from server: id=1 result { metadata: undefined }"
+  ]
+}

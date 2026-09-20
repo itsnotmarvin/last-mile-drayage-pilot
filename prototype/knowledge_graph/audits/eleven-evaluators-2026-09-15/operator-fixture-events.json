@@ -1,0 +1,4426 @@
+[
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-e8e71b6a64254a64a08cabba15a73ea5",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-0953654b9c565d6cd3265572b1e4bfc4",
+        "trip_revision": 1,
+        "case_sha256": "d9fd32453b1c41b7830b3b0df82607cfe0d4c4c73a88cd1ea1c0d46c9d6b824e",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "70910b1183b7f0ed6576bf146f9dab99fd9f317b9405f00b76e8a3a4a5eff8b3"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-23f658fb4b70402fb71baf648d40caf7",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-e2c4959b3f4b1e49a479588263a7a72b",
+        "trip_revision": 1,
+        "case_sha256": "f1f47b874a34f49a59dda92c22a6cd9b20e4983b616a2e1f61d48bbce759fbd9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "172468dce72250b68fa056cad621c7baaeda9cf3af292e9033ddc02884bdf831"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 82000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 22000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-29910cc599ea4e5d9a91d55c08968574",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-8b4822ed6ba7441c60e2dbab9292624e",
+        "trip_revision": 1,
+        "case_sha256": "fbe84e6206f5c92d65c308e6065e29461bc43265760796c79d1686c891352e20",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "d1a30efe530c5b30333db1d8b804019f3d155b8598142ff69799ab25658262e0"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 163,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 163,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-f83ed38eaafe4a7eaca6686bf9521a52",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6c256809e7db709032217f2fb653bda8",
+        "trip_revision": 1,
+        "case_sha256": "2b3afd3ac9f55ad2a20e6819de9dc06663bfac177e40b2c54ee6293191e1a4a9",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "3ca31ab8b71cb914a4748c6f1f57f9e52ec8acd91ea67dc7232d63b62a55bd8c"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-351101781a5943b08d9561f68667d64a",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-351101781a5943b08d9561f68667d64a",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-351101781a5943b08d9561f68667d64a",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-351101781a5943b08d9561f68667d64a",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "revoked",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-351101781a5943b08d9561f68667d64a",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-351101781a5943b08d9561f68667d64a",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-351101781a5943b08d9561f68667d64a",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-351101781a5943b08d9561f68667d64a",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-351101781a5943b08d9561f68667d64a",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-351101781a5943b08d9561f68667d64a",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-351101781a5943b08d9561f68667d64a",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1b407a327f328a9240e53d66cc5ae0eb",
+        "trip_revision": 1,
+        "case_sha256": "09b9551135b9b69ecc8fd55a5bc4b21805cdf0eefb92b246c281321d485458ce",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "a78314acd57ccd670effc73978055e6e6a2d346d049cb2ef2c425797fd618914"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "denied",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-821bb500cbb14b97b909cabcf60bd57d",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-ca836dbd41b345c655fa13a97925dc40",
+        "trip_revision": 1,
+        "case_sha256": "b388cf8f0168ec2e02c00668a83a32b0480f77de23452a2ae82d1745dbb7187f",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "20cd00dbb0d49d5fb26380c40e30ca4824f3e7585b5f8636bb77173f79b59618"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "closed",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-d6ce6b2a0df348f596a7911cfd990bce",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-236b790f6d5da947216e6a5efdc6d8cf",
+        "trip_revision": 1,
+        "case_sha256": "8e5cf2a4e3f19272fbdd8233bae4761e2540a5d8eb46461e38c2f02867958ba0",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "b6db5f07c2ba7f6dee5e894742cc52356e348a260b3297884eedb9bfed78f8e2"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": false,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-19cb5f19c3734c5bbb852cbba623d265",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-1ec5456a29ec3616504f8a33bf514f25",
+        "trip_revision": 1,
+        "case_sha256": "e2c52d82f0df49f4eaf7ee8b598b622059d73b7d9e045860382d0bc90ed16502",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "09ce70b91655fedabb654f9c77cc9cd5438ffbe4a51f6a4253f69fc899d6912e"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": false,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-d8bc63b6cc2b43d58481667088885a2d",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-2f00306fa855dd18a2067be00d472ace",
+        "trip_revision": 1,
+        "case_sha256": "db146be2a36d9a106a89857c0f1bc0a3fe3db4c82fe5c65bb8d93a39cc8b7952",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "ba564724895556aea67f8d76729e1e3cfabd65a5b3698a72c20cbb50040a2c19"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "revoked",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-9414d09394b942e8a589e327b5f9eb70",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-c6cbbd9005868f27f3c9d8c457db877b",
+        "trip_revision": 1,
+        "case_sha256": "c58fe83b138dd63314fbaad58c112e606a365b29496dd96f3e9b8144ae22566b",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "00babb1d413b2c6bbb2ac28e4510a219fbf7634f19436a8c7d9440a0457faee7"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": false,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-46d1532dc81044228d370f17e42dcb3f",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-6d8124cd517f3ae1e041322af7e27ae2",
+        "trip_revision": 1,
+        "case_sha256": "4131bc5a0c22796258dc33e93d2bac6d7bb04bd67b42a9cb086065ec96babcf6",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "93794872708d3bd16a77425dd62b52dcaeaf7c7225207b2404147f7fd1b6c5b2"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-5c24b418ccde4a26af6349e094511d64",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-5c24b418ccde4a26af6349e094511d64",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-5c24b418ccde4a26af6349e094511d64",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-5c24b418ccde4a26af6349e094511d64",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-5c24b418ccde4a26af6349e094511d64",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-5c24b418ccde4a26af6349e094511d64",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-5c24b418ccde4a26af6349e094511d64",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-5c24b418ccde4a26af6349e094511d64",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-5c24b418ccde4a26af6349e094511d64",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-5c24b418ccde4a26af6349e094511d64",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "cancelled",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-5c24b418ccde4a26af6349e094511d64",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-17f9619d2c775f19279b7ae1852c104e",
+        "trip_revision": 1,
+        "case_sha256": "cb40ef0680b0d1e9e34298477a6585575d8f73d33f99ed46f4549d1938eb1c0d",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": true,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": false,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "bee9985202b17122cdd2dfbc04af6f0583b2f8f19c99000a9451de169361b19a"
+  },
+  {
+    "operation": "synthetic_operator_seed",
+    "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+    "receipts": [
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-scale-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "scale",
+        "provider_id": "syn-provider-scale",
+        "authority_role": "scale_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "gross_weight_lb": 70000,
+          "axle_layout": {
+            "axles": [
+              {
+                "position_inches": 0,
+                "weight_lb": 10000
+              },
+              {
+                "position_inches": 144,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 192,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 576,
+                "weight_lb": 15000
+              },
+              {
+                "position_inches": 624,
+                "weight_lb": 15000
+              }
+            ]
+          },
+          "weighing_method": "fixed_scale"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dimensions-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "dimensions",
+        "provider_id": "syn-provider-dimensions",
+        "authority_role": "equipment_measurement",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "height_inches": 162,
+          "width_inches": 102,
+          "overall_length_inches": 840,
+          "semitrailer_length_inches": 576,
+          "kingpin_to_rear_axle_inches": null,
+          "configuration": "standard_tractor_semitrailer"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-route-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "route",
+        "provider_id": "syn-provider-route",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "terminal_id": "facility_apm_elizabeth",
+          "complete_sequence_verified": true,
+          "exception_claimed": false,
+          "segments": [
+            {
+              "segment_id": "syn-segment-interstate",
+              "authority": "nj_state",
+              "weight_regime": "federal_interstate",
+              "dimension_regime": "nj_102_network",
+              "local_direct_terminal_access_verified": false,
+              "long_semitrailer_access_verified": false,
+              "access": "permitted",
+              "posted_limits": {}
+            }
+          ]
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-permit-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "permit",
+        "provider_id": "syn-provider-permit",
+        "authority_role": "permit_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "permit_type": "nj_single_trip",
+          "permit_id": "syn-permit-eval",
+          "issuer": "nj_state",
+          "status": "valid",
+          "load_nondivisible": true,
+          "sealed_ocean_borne_container": true,
+          "conditions_satisfied": true,
+          "authorized_limits": {
+            "gross_lb": 90000,
+            "single_axle_lb": 22000,
+            "tandem_lb": 38000,
+            "height_inches": 162,
+            "width_inches": 102,
+            "overall_length_inches": 840,
+            "semitrailer_length_inches": 576
+          }
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-approval-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "approval",
+        "provider_id": "syn-provider-approval",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "authority": "nj_state",
+          "segment_ids": [
+            "syn-segment-interstate"
+          ],
+          "status": "approved",
+          "conditions_satisfied": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-conditions-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "conditions",
+        "provider_id": "syn-provider-conditions",
+        "authority_role": "road_authority",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "trailer_id": "syn-trailer-eval",
+          "load_id": "syn-load-eval",
+          "route_id": "path_a_exit13a_to_apm",
+          "route_description": "Synthetic Interstate segment to APM",
+          "segment_id": "syn-segment-interstate",
+          "authority": "nj_state",
+          "posting_checked": true,
+          "closure_checked": true,
+          "lane_and_detour_checked": true,
+          "escort_checked": true,
+          "status": "open",
+          "conditions_satisfied": true,
+          "posted_limits": {}
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-dtr-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "dtr",
+        "provider_id": "syn-provider-dtr",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "vehicle_id": "syn-vehicle-eval",
+          "drayage_truck": true,
+          "class_8": true,
+          "registered": true,
+          "active": true,
+          "rfid_assigned": true,
+          "rfid_mounted": true,
+          "rfid_valid": true,
+          "registered_at": "2026-08-01T00:00:00-04:00",
+          "registration_changed_at": null,
+          "registration_amended_at": null,
+          "engine_model_year": 2015,
+          "meets_2014_emissions_standard": true,
+          "registration_event": "existing_registration"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-twic-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "twic",
+        "provider_id": "syn-provider-twic",
+        "authority_role": "credential_verifier",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "unescorted_secure_access": true,
+          "exception_claimed": false,
+          "status": "valid",
+          "credential_expires_at": "2026-12-31T00:00:00-05:00",
+          "physically_present": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-sealink-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "sealink",
+        "provider_id": "syn-provider-sealink",
+        "authority_role": "port_registry",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "driver_id": "syn-driver-complete",
+          "current_sealink_id": "SYN-SL-A",
+          "active": true,
+          "twic_registered": true
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-appointment-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "appointment",
+        "provider_id": "syn-provider-appointment",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "vehicle_id": "syn-vehicle-eval",
+          "status": "confirmed",
+          "slot_start": "2026-09-13T12:00:00-04:00",
+          "slot_end": "2026-09-13T16:00:00-04:00"
+        }
+      },
+      {
+        "schema_version": "drayage-verification-v1",
+        "mode": "synthetic_only",
+        "id": "syn-verification-transaction-afd81ae6ea7945438726b9ccf8d95fc6",
+        "kind": "transaction",
+        "provider_id": "syn-provider-transaction",
+        "authority_role": "terminal_operator",
+        "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+        "trip_id": "syn-trip-b38d591514ddf4b010c750d3e4c8d87b",
+        "trip_revision": 1,
+        "case_sha256": "435a69c843795f528aa717314ea6949a4b13489b33e02ca404f9822efa1be477",
+        "observed_at": "2026-09-13T12:00:00-04:00",
+        "valid_from": "2026-09-13T12:00:00-04:00",
+        "valid_until": "2026-09-13T16:00:00-04:00",
+        "payload": {
+          "move_id": "syn-move-eval",
+          "move_type": "import_pickup",
+          "terminal_id": "facility_apm_elizabeth",
+          "load_id": "syn-load-eval",
+          "fully_available": false,
+          "holds_complete": true,
+          "freight_hold": false,
+          "customer_hold": false,
+          "demurrage_hold": false,
+          "customs_hold": true,
+          "other_hold": false
+        }
+      }
+    ],
+    "snapshot_version": "ddb88bab02ac0edfca21603458a7e0e78ca450de9c0cf7cbeb3e4ca5dc4b465c"
+  },
+  {
+    "operation": "synthetic_operator_revoke",
+    "id": "syn-verification-twic-e8e71b6a64254a64a08cabba15a73ea5"
+  }
+]

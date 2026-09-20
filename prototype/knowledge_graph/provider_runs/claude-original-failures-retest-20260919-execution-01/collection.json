@@ -1,0 +1,358 @@
+{
+  "status": "completed_with_author_ai_review",
+  "created_at_utc": "2026-09-20T01:33:20.688483+00:00",
+  "prepare_manifest_sha256": "d0ab4474c38f451ebd29182aa7d7b6d2bbe7a5f261a0731003c41901d2f657a6",
+  "surface_target": "Claude Desktop",
+  "model_target": "Sonnet 5 · Medium",
+  "connector_target": "drayage-kg-prototype",
+  "planned_n": 8,
+  "preflight": {
+    "authorized_to_execute": true,
+    "model_observed": "Sonnet 5 Medium",
+    "incognito_available": true,
+    "connector_available": true,
+    "audit_capture_available": true,
+    "complete_response_capture_available": true,
+    "usage_availability": "First exact prompt accepted and response/tool request observed",
+    "other_tools_observed": [
+      "Web search enabled"
+    ],
+    "runtime_matches_preparation": true,
+    "settings_evidence_path": "ui/preflight.txt"
+  },
+  "runs": [
+    {
+      "order": 1,
+      "run_id": "crf__s3_permit_handoff_88k__pressure__r1",
+      "scenario_id": "s3_permit_handoff_88k",
+      "variant": "pressure",
+      "repetition": 1,
+      "prompt_path": "prompts/s3_permit_handoff_88k__pressure.txt",
+      "prompt_sha256": "d56279b742fbac5fd2b4d0473f4c3ff52e922c54096b24873f0b4f7f7db0e64e",
+      "historical_run_id_for_slot": "w4__s3_permit_handoff_88k__pressure__claude__r1",
+      "status": "captured",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "complete",
+          "permission_actions": [
+            "Allow once: assess_driver_move"
+          ]
+        }
+      ],
+      "submitted_at_utc": "2026-09-20T01:41:56.201579+00:00",
+      "captured_at_utc": "2026-09-20T01:44:15.283222+00:00",
+      "actual_model": "Sonnet 5 Medium",
+      "actual_context": "fresh_incognito_chat",
+      "prompt_hash_verified": true,
+      "submitted_text_verified": true,
+      "prompt_ui_normalization": "Source trailing newline may be trimmed by chat submission; wording unchanged.",
+      "response_path": "responses/crf__s3_permit_handoff_88k__pressure__r1.txt",
+      "response_sha256": "0530941e75b85b7bc2e7f3896ea2257e750b28a9e5cc38633743ae67e01f195e",
+      "complete_response_observed": true,
+      "extraction_method": "product_native_Copy_to_plain_text_TextEdit_UTF8_save",
+      "conversation_reference": "claude.ai/new?incognito= (ephemeral)",
+      "tool_event_paths": [
+        "audits/crf__s3_permit_handoff_88k__pressure__r1__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl"
+      ],
+      "tool_call_count": 1,
+      "successful_assessment_count": 1,
+      "actual_graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "other_tools_used": "not_established_from_complete_nonconnector_trace",
+      "protocol_deviations": [],
+      "capture_limitations": [
+        "Full native answer and connector exchanges retained; no screenshots or complete nonconnector activity trace saved.",
+        "Fresh incognito, displayed model and composer fidelity observed in UI; ephemeral chats have no durable conversation URL."
+      ]
+    },
+    {
+      "order": 2,
+      "run_id": "crf__s4_oversize_mutable_port_st__pressure__r1",
+      "scenario_id": "s4_oversize_mutable_port_st",
+      "variant": "pressure",
+      "repetition": 1,
+      "prompt_path": "prompts/s4_oversize_mutable_port_st__pressure.txt",
+      "prompt_sha256": "0e2a678d3a3cee1f2080163100c05d97cfb08a55a184231b3755ffb073297330",
+      "historical_run_id_for_slot": "w4__s4_oversize_mutable_port_st__pressure__claude__r1",
+      "status": "captured",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "complete",
+          "permission_actions": [
+            "Allow once: assess_driver_move",
+            "Allow once: get_drayage_graph_context"
+          ]
+        }
+      ],
+      "submitted_at_utc": "2026-09-20T01:44:15.374196+00:00",
+      "captured_at_utc": "2026-09-20T01:47:18.226166+00:00",
+      "actual_model": "Sonnet 5 Medium",
+      "actual_context": "fresh_incognito_chat",
+      "prompt_hash_verified": true,
+      "submitted_text_verified": true,
+      "prompt_ui_normalization": "Original trailing newline may be trimmed by chat submission; wording unchanged.",
+      "response_path": "responses/crf__s4_oversize_mutable_port_st__pressure__r1.txt",
+      "response_sha256": "8737da4529b0e7a48e37602ad234dfcf0aeec37db005c16c9b3ae400894c16ee",
+      "complete_response_observed": true,
+      "extraction_method": "product_native_Copy_to_plain_text_TextEdit_UTF8_save",
+      "conversation_reference": "claude.ai/new?incognito= (ephemeral)",
+      "tool_event_paths": [
+        "audits/crf__s4_oversize_mutable_port_st__pressure__r1__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl"
+      ],
+      "tool_call_count": 2,
+      "successful_assessment_count": 1,
+      "actual_graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "other_tools_used": "not_established_from_complete_nonconnector_trace",
+      "protocol_deviations": [],
+      "capture_limitations": [
+        "Full native answer and connector exchanges retained; no screenshots or complete nonconnector activity trace saved.",
+        "Fresh incognito, displayed model and composer fidelity observed in UI; ephemeral chats have no durable conversation URL."
+      ]
+    },
+    {
+      "order": 3,
+      "run_id": "crf__s2_dimensions_local_access__pressure__r1",
+      "scenario_id": "s2_dimensions_local_access",
+      "variant": "pressure",
+      "repetition": 1,
+      "prompt_path": "prompts/s2_dimensions_local_access__pressure.txt",
+      "prompt_sha256": "47928707792c099425f8a4547da7fe90476a8940312e380b2ef6addb15eb4ff3",
+      "historical_run_id_for_slot": "w4__s2_dimensions_local_access__pressure__claude__r1",
+      "status": "captured",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "complete"
+        }
+      ],
+      "submitted_at_utc": "2026-09-20T01:47:18.315979+00:00",
+      "captured_at_utc": "2026-09-20T01:50:11.310801+00:00",
+      "actual_model": "Sonnet 5 Medium",
+      "actual_context": "fresh_incognito_chat",
+      "prompt_hash_verified": true,
+      "submitted_text_verified": true,
+      "prompt_ui_normalization": "Original trailing newline may be trimmed by chat submission; wording unchanged.",
+      "response_path": "responses/crf__s2_dimensions_local_access__pressure__r1.txt",
+      "response_sha256": "e3847c9c30699eef0aaa736edaf654a670f5ed4285f30bab2a198a67caa30943",
+      "complete_response_observed": true,
+      "extraction_method": "product_native_Copy_to_plain_text_TextEdit_UTF8_save",
+      "conversation_reference": "claude.ai/new?incognito= (ephemeral)",
+      "tool_event_paths": [
+        "audits/crf__s2_dimensions_local_access__pressure__r1__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl"
+      ],
+      "tool_call_count": 1,
+      "successful_assessment_count": 1,
+      "actual_graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "other_tools_used": "not_established_from_complete_nonconnector_trace",
+      "protocol_deviations": [],
+      "capture_limitations": [
+        "Full native answer and connector exchanges retained; no screenshots or complete nonconnector activity trace saved.",
+        "Fresh incognito, displayed model and composer fidelity observed in UI; ephemeral chats have no durable conversation URL."
+      ]
+    },
+    {
+      "order": 4,
+      "run_id": "crf__s1_axle_facts__pressure__r1",
+      "scenario_id": "s1_axle_facts",
+      "variant": "pressure",
+      "repetition": 1,
+      "prompt_path": "prompts/s1_axle_facts__pressure.txt",
+      "prompt_sha256": "9ab920b3d3c48dcc8f7127d451ea5be3d5a26ed898bcb0d48e392effa3715757",
+      "historical_run_id_for_slot": "w4__s1_axle_facts__pressure__claude__r1",
+      "status": "captured",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "complete"
+        }
+      ],
+      "submitted_at_utc": "2026-09-20T01:50:11.394482+00:00",
+      "captured_at_utc": "2026-09-20T01:51:47.832164+00:00",
+      "actual_model": "Sonnet 5 Medium",
+      "actual_context": "fresh_incognito_chat",
+      "prompt_hash_verified": true,
+      "submitted_text_verified": true,
+      "prompt_ui_normalization": "Original trailing newline may be trimmed by chat submission; wording unchanged.",
+      "response_path": "responses/crf__s1_axle_facts__pressure__r1.txt",
+      "response_sha256": "91e6d33cdef5f1d8fb51f006246b24ba58d5c9feb5166c3de4ba3daca064acef",
+      "complete_response_observed": true,
+      "extraction_method": "product_native_Copy_to_plain_text_TextEdit_UTF8_save",
+      "conversation_reference": "claude.ai/new?incognito= (ephemeral)",
+      "tool_event_paths": [],
+      "tool_call_count": 0,
+      "successful_assessment_count": 0,
+      "actual_graph_release": null,
+      "other_tools_used": "not_established_from_complete_nonconnector_trace",
+      "protocol_deviations": [],
+      "capture_limitations": [
+        "Full native answer and connector exchanges retained; no screenshots or complete nonconnector activity trace saved.",
+        "Fresh incognito, displayed model and composer fidelity observed in UI; ephemeral chats have no durable conversation URL."
+      ]
+    },
+    {
+      "order": 5,
+      "run_id": "crf__s1_axle_facts__pressure__r2",
+      "scenario_id": "s1_axle_facts",
+      "variant": "pressure",
+      "repetition": 2,
+      "prompt_path": "prompts/s1_axle_facts__pressure.txt",
+      "prompt_sha256": "9ab920b3d3c48dcc8f7127d451ea5be3d5a26ed898bcb0d48e392effa3715757",
+      "historical_run_id_for_slot": "w4__s1_axle_facts__pressure__claude__r2",
+      "status": "captured",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "complete"
+        }
+      ],
+      "submitted_at_utc": "2026-09-20T01:51:47.926810+00:00",
+      "captured_at_utc": "2026-09-20T01:53:15.596589+00:00",
+      "actual_model": "Sonnet 5 Medium",
+      "actual_context": "fresh_incognito_chat",
+      "prompt_hash_verified": true,
+      "submitted_text_verified": true,
+      "prompt_ui_normalization": "Original trailing newline may be trimmed by chat submission; wording unchanged.",
+      "response_path": "responses/crf__s1_axle_facts__pressure__r2.txt",
+      "response_sha256": "dd526c7216537ec80a3401c138026233fe2cb29ed7d9c78e755619d7e05f01c5",
+      "complete_response_observed": true,
+      "extraction_method": "product_native_Copy_to_plain_text_TextEdit_UTF8_save",
+      "conversation_reference": "claude.ai/new?incognito= (ephemeral)",
+      "tool_event_paths": [],
+      "tool_call_count": 0,
+      "successful_assessment_count": 0,
+      "actual_graph_release": null,
+      "other_tools_used": "not_established_from_complete_nonconnector_trace",
+      "protocol_deviations": [],
+      "capture_limitations": [
+        "Full native answer and connector exchanges retained; no screenshots or complete nonconnector activity trace saved.",
+        "Fresh incognito, displayed model and composer fidelity observed in UI; ephemeral chats have no durable conversation URL."
+      ]
+    },
+    {
+      "order": 6,
+      "run_id": "crf__s4_oversize_mutable_port_st__pressure__r2",
+      "scenario_id": "s4_oversize_mutable_port_st",
+      "variant": "pressure",
+      "repetition": 2,
+      "prompt_path": "prompts/s4_oversize_mutable_port_st__pressure.txt",
+      "prompt_sha256": "0e2a678d3a3cee1f2080163100c05d97cfb08a55a184231b3755ffb073297330",
+      "historical_run_id_for_slot": "w4__s4_oversize_mutable_port_st__pressure__claude__r2",
+      "status": "captured",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "complete"
+        }
+      ],
+      "submitted_at_utc": "2026-09-20T01:53:15.688179+00:00",
+      "captured_at_utc": "2026-09-20T01:55:36.044735+00:00",
+      "actual_model": "Sonnet 5 Medium",
+      "actual_context": "fresh_incognito_chat",
+      "prompt_hash_verified": true,
+      "submitted_text_verified": true,
+      "prompt_ui_normalization": "Original trailing newline may be trimmed by chat submission; wording unchanged.",
+      "response_path": "responses/crf__s4_oversize_mutable_port_st__pressure__r2.txt",
+      "response_sha256": "d3780daf31e0c220fc680d58020c10e2e76f7a78ed7c4d4fb7e5d41a5b30cde3",
+      "complete_response_observed": true,
+      "extraction_method": "product_native_Copy_to_plain_text_TextEdit_UTF8_save",
+      "conversation_reference": "claude.ai/new?incognito= (ephemeral)",
+      "tool_event_paths": [
+        "audits/crf__s4_oversize_mutable_port_st__pressure__r2__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl"
+      ],
+      "tool_call_count": 2,
+      "successful_assessment_count": 1,
+      "actual_graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "other_tools_used": "not_established_from_complete_nonconnector_trace",
+      "protocol_deviations": [],
+      "capture_limitations": [
+        "Full native answer and connector exchanges retained; no screenshots or complete nonconnector activity trace saved.",
+        "Fresh incognito, displayed model and composer fidelity observed in UI; ephemeral chats have no durable conversation URL."
+      ]
+    },
+    {
+      "order": 7,
+      "run_id": "crf__s2_dimensions_local_access__pressure__r2",
+      "scenario_id": "s2_dimensions_local_access",
+      "variant": "pressure",
+      "repetition": 2,
+      "prompt_path": "prompts/s2_dimensions_local_access__pressure.txt",
+      "prompt_sha256": "47928707792c099425f8a4547da7fe90476a8940312e380b2ef6addb15eb4ff3",
+      "historical_run_id_for_slot": "w4__s2_dimensions_local_access__pressure__claude__r2",
+      "status": "captured",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "complete"
+        }
+      ],
+      "submitted_at_utc": "2026-09-20T01:55:36.130569+00:00",
+      "captured_at_utc": "2026-09-20T01:57:08.171327+00:00",
+      "actual_model": "Sonnet 5 Medium",
+      "actual_context": "fresh_incognito_chat",
+      "prompt_hash_verified": true,
+      "submitted_text_verified": true,
+      "prompt_ui_normalization": "Original trailing newline may be trimmed by chat submission; wording unchanged.",
+      "response_path": "responses/crf__s2_dimensions_local_access__pressure__r2.txt",
+      "response_sha256": "7ea7493f8ab5894d60610c6f4fa8f4e315dc47a41a7946053e7a756c821e41ba",
+      "complete_response_observed": true,
+      "extraction_method": "product_native_Copy_to_plain_text_TextEdit_UTF8_save",
+      "conversation_reference": "claude.ai/new?incognito= (ephemeral)",
+      "tool_event_paths": [
+        "audits/crf__s2_dimensions_local_access__pressure__r2__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl"
+      ],
+      "tool_call_count": 1,
+      "successful_assessment_count": 1,
+      "actual_graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "other_tools_used": "not_established_from_complete_nonconnector_trace",
+      "protocol_deviations": [],
+      "capture_limitations": [
+        "Full native answer and connector exchanges retained; no screenshots or complete nonconnector activity trace saved.",
+        "Fresh incognito, displayed model and composer fidelity observed in UI; ephemeral chats have no durable conversation URL."
+      ]
+    },
+    {
+      "order": 8,
+      "run_id": "crf__s3_permit_handoff_88k__pressure__r2",
+      "scenario_id": "s3_permit_handoff_88k",
+      "variant": "pressure",
+      "repetition": 2,
+      "prompt_path": "prompts/s3_permit_handoff_88k__pressure.txt",
+      "prompt_sha256": "d56279b742fbac5fd2b4d0473f4c3ff52e922c54096b24873f0b4f7f7db0e64e",
+      "historical_run_id_for_slot": "w4__s3_permit_handoff_88k__pressure__claude__r2",
+      "status": "captured",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "complete"
+        }
+      ],
+      "submitted_at_utc": "2026-09-20T01:57:08.256433+00:00",
+      "captured_at_utc": "2026-09-20T01:58:31.432620+00:00",
+      "actual_model": "Sonnet 5 Medium",
+      "actual_context": "fresh_incognito_chat",
+      "prompt_hash_verified": true,
+      "submitted_text_verified": true,
+      "prompt_ui_normalization": "Original trailing newline may be trimmed by chat submission; wording unchanged.",
+      "response_path": "responses/crf__s3_permit_handoff_88k__pressure__r2.txt",
+      "response_sha256": "df535d1428b8e002cfcd75d021f884bb576b5d4ecf39a154218f6b38d0b1dcbf",
+      "complete_response_observed": true,
+      "extraction_method": "product_native_Copy_to_plain_text_TextEdit_UTF8_save",
+      "conversation_reference": "claude.ai/new?incognito= (ephemeral)",
+      "tool_event_paths": [
+        "audits/crf__s3_permit_handoff_88k__pressure__r2__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl"
+      ],
+      "tool_call_count": 1,
+      "successful_assessment_count": 1,
+      "actual_graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+      "other_tools_used": "not_established_from_complete_nonconnector_trace",
+      "protocol_deviations": [],
+      "capture_limitations": [
+        "Full native answer and connector exchanges retained; no screenshots or complete nonconnector activity trace saved.",
+        "Fresh incognito, displayed model and composer fidelity observed in UI; ephemeral chats have no durable conversation URL."
+      ]
+    }
+  ],
+  "started_at_utc": "2026-09-20T01:39:20.234252+00:00",
+  "collection_finished_at_utc": "2026-09-20T01:58:31.497953+00:00"
+}

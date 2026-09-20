@@ -1,0 +1,46 @@
+{
+  "preserved_at": "2026-09-16T15:49:54.912741+00:00",
+  "kind": "retrospective_preservation_of_existing_screenshots",
+  "screenshots": [
+    {
+      "original_path": "/tmp/app-check-5.png",
+      "preserved_path": "browser/app-check-5.png",
+      "original_mtime_utc": "2026-09-15T23:26:40.840188+00:00",
+      "sha256": "0a8b5db719a10a336cacb6685c54b919841ba29fbc480add3f5cd4a7048c23ae",
+      "bytes": 211662,
+      "visible_stage": "describe"
+    },
+    {
+      "original_path": "/tmp/app-check-6.png",
+      "preserved_path": "browser/app-check-6.png",
+      "original_mtime_utc": "2026-09-15T23:27:11.683999+00:00",
+      "sha256": "6b1440652b4a8eaf5238fb658de17af915cc18e1e5e5cb3b44e2c567448eefd2",
+      "bytes": 302064,
+      "visible_stage": "original_statement_and_review"
+    },
+    {
+      "original_path": "/tmp/app-check-7.png",
+      "preserved_path": "browser/app-check-7.png",
+      "original_mtime_utc": "2026-09-15T23:27:32.063229+00:00",
+      "sha256": "6975686147aa127dc7679ff1c0b877ff7eccda3973bdf53cc0355f734f4235b0",
+      "bytes": 170597,
+      "visible_stage": "measurements_and_confirmation"
+    },
+    {
+      "original_path": "/tmp/app-check-8.png",
+      "preserved_path": "browser/app-check-8.png",
+      "original_mtime_utc": "2026-09-15T23:27:56.902296+00:00",
+      "sha256": "4978001354cfe9a45387c4493a94ad78e67a081710187a9e51442abd428f899a",
+      "bytes": 284665,
+      "visible_stage": "assessment"
+    }
+  ],
+  "runtime_binding_at_original_capture": "not_recorded",
+  "new_browser_run": false,
+  "limits": [
+    "File modification times are filesystem metadata, not authenticated capture timestamps.",
+    "Preservation hashes establish these bytes from September 16 onward, not which code or server supplied the original screen.",
+    "Selected screenshots show synthetic content and were visually inspected; earlier login-stage images are not copied.",
+    "No complete action/network transcript was retained with these images. Dispatcher, responsive, accessibility and model acceptance remain open."
+  ]
+}

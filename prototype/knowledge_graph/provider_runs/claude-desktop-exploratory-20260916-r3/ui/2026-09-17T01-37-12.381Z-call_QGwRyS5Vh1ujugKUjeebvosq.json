@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T01:37:12.381Z",
+  "tool_call_id": "call_QGwRyS5Vh1ujugKUjeebvosq",
+  "arguments": {
+    "code": "await claude.pressKey('super+q');",
+    "title": "Restart existing Claude connector to load revised runtime"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

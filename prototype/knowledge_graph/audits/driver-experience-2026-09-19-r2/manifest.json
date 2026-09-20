@@ -1,0 +1,30 @@
+{
+  "result": "consumer_presentation_not_passed",
+  "artifacts": {
+    "activation-attempt-audit.json": "b817bdee12b7c096bf71719276db231dd34c78ccd3c8e8c0d1017fd86c462546",
+    "baseline.json": "73a0aa38db2da8b3d9299fe54815430fcafd7adab8f965127827428598e18bbf",
+    "before/CURRENT_STATE.md": "431fa792073e67d9eb4984bc6fb27c381fdba7afafed78d3499bb41894eb620a",
+    "before/PROGRESS.md": "c490ede95c83c13872acade0378ec3639d256f953f2d31ec751945192dcf2085",
+    "before/README.md": "2b381c3f66014526c2b459e62588e4bc0b9db23aca0befaf736a0e2d37d5e9ca",
+    "before/docs/driver-experience.md": "ca39e08558e517ee022af16bc343dfc477bab06e5aebc7c058fa6f6b9fb868ac",
+    "before/neo4j_kg/driver_answer.py": "08cd3bc1f2307a6d541266d0697f45e450f75dabb546e7c3c275a9a431a1496a",
+    "before/neo4j_kg/mcp_server.py": "d7f262880bcf4e186154e5593d0903a7aef5cdfaa5362da8892d3690392dc105",
+    "before/neo4j_kg/trip_tools.py": "ebec68d74c19b4fd03c2685a650785c7c33613364e171e9cca5f40b7e006df3c",
+    "before/tests/test_conditions_graph_binding.py": "277228c6daabc17fdc1e327bb69fdf2b0d45b3411703f1d6b69e6824c4da28e7",
+    "before/tests/test_driver_brief.py": "1f2a2a555084a96b7b04bd194813769e7046c7ad50164e80cb298b61fd0a21f3",
+    "before/tests/test_trip_assessment.py": "f18f1eeaee47f9c91a092211fab708d3eb16c562353da830ec889edbfecda278",
+    "capture-start.json": "db6110e09ba5988a33304091277463f544f842a88cbf29f4c644526756ab0e75",
+    "conditions-preview.md": "d300e5c114b675065029653aabb779ecd022cc285bc76c686ca2a120a13fdf7e",
+    "consumer-audit.json": "a85b25608319ae8a5f74f735ff8b1fe3b5d803bf6715d6ce508e989979ebd612",
+    "consumer-review.md": "e3fab64da6a1dc558e1714d092492bc755b38926d470db15e2f3736c7f6d85db",
+    "consumer-verification.json": "0c080c1590f9a82c0ea31420e9f3a37828cee62765f7b3aaf2dd996969eaa4f0",
+    "protocol.json": "07fb2eea2f8b43ec3768ae6b7200a5e1da49c55b0d693720eab4c0987dedbc60",
+    "service-answer-1.md": "01ddf671b6c9e809cb1ff57ede07fea62ae05cc83fa54758cb903ff2eb1d6c9b",
+    "service-answer-2.md": "fcc11cafdc2772d4b7ffdb3598e95872b02baebfabb402c4af2937eb912229c4",
+    "service-answer-3.md": "c6c100a01b763c8866eaf81c79aae74b5144ee93e25693bf12223d9982c9b4a7",
+    "service-answer-4.md": "3f25262f9462075d0be5d37a80c6ba1a583906da450f13d447c0e08d833ff014",
+    "tests-final.log": "5b53b2dd74a0492396a5c6dcb0d1910e8ca6f580453b2ed8025d992ed4452369",
+    "tests.log": "81b6ab14b34fae4f768a4cbddaa5cbd586a6267241b6c5c80155eb51f36fbed6",
+    "verify_capture.py": "21297b9fb45b3fc0d24160257f077313a7786407d292b15e378aecbbcdb3881b"
+  }
+}

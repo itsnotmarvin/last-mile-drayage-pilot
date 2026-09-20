@@ -1,0 +1,18 @@
+test_available_status_validates_and_matches_unavailable_decisions (test_terminal_status.TerminalStatusTests.test_available_status_validates_and_matches_unavailable_decisions) ... ok
+test_changed_layout_is_unavailable_not_invented (test_terminal_status.TerminalStatusTests.test_changed_layout_is_unavailable_not_invented) ... ok
+test_default_skips_network_without_env_flag (test_terminal_status.TerminalStatusTests.test_default_skips_network_without_env_flag) ... ok
+test_explicit_gate_sentence_captured_verbatim (test_terminal_status.TerminalStatusTests.test_explicit_gate_sentence_captured_verbatim) ... ok
+test_fetch_error_is_unavailable (test_terminal_status.TerminalStatusTests.test_fetch_error_is_unavailable) ... ok
+test_fresh_retrieval_does_not_make_old_notice_current (test_terminal_status.TerminalStatusTests.test_fresh_retrieval_does_not_make_old_notice_current) ... ok
+test_latest_schedule_selected_by_explicit_date_not_document_order (test_terminal_status.TerminalStatusTests.test_latest_schedule_selected_by_explicit_date_not_document_order) ... ok
+test_old_individual_source_cannot_hide_behind_fresh_envelope (test_terminal_status.TerminalStatusTests.test_old_individual_source_cannot_hide_behind_fresh_envelope) ... ok
+test_open_terminal_text_cannot_clear_trip (test_terminal_status.TerminalStatusTests.test_open_terminal_text_cannot_clear_trip) ... ok
+test_parse_real_page_shapes (test_terminal_status.TerminalStatusTests.test_parse_real_page_shapes) ... ok
+test_provenance_recorded_per_source (test_terminal_status.TerminalStatusTests.test_provenance_recorded_per_source) ... ok
+test_stale_future_and_previous_local_day_captures_are_unavailable (test_terminal_status.TerminalStatusTests.test_stale_future_and_previous_local_day_captures_are_unavailable) ... ok
+test_unavailable_status_keeps_assessment_intact (test_terminal_status.TerminalStatusTests.test_unavailable_status_keeps_assessment_intact) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 2.184s
+
+OK

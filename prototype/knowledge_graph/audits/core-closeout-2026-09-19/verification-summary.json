@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "schemas_validated": 10,
+  "graph_checks": 10,
+  "local_tests": 442,
+  "consumer_successful_turns": 2,
+  "consumer_audit_chain_valid": true,
+  "runtime_unchanged_during_consumer_capture": true,
+  "provider_surface": "Claude Desktop Sonnet 5 Medium",
+  "provider_url": "https://claude.ai/chat/f3a186ca-04ec-42cc-b8e1-294ed77e5b19",
+  "limits": [
+    "Two-turn development acceptance only; no general fidelity or safety claim",
+    "Operator receipts are synthetic, not authenticated real authority verification",
+    "Browser-confirmation to Claude Desktop app bridge remains unverified",
+    "UI answer captures are accessibility transcriptions with normalized formatting",
+    "Claude used command tools to inspect large response files; payload delivery remains verbose",
+    "Initial source_message omitted trailing tool-use instructions; trip facts preserved; original full prompt retained in protocol"
+  ]
+}

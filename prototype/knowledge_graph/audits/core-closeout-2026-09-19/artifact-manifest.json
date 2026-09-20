@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-19T19:33:03.836125+00:00",
+  "files": {
+    "README.md": "69dc3bba7c638f5a6c1abe8c40a00ed4e7152811c78a4a1d168235cab3232110",
+    "baseline-tests.log": "6b4812f3e868cd4d8a96924d03dc16544db192763b810e99399500e2a11897e3",
+    "baseline.json": "d66596ef4b31a652d7e0f4ebdb74031228c913f94795bef30914966ed4000699",
+    "before/neo4j_kg/answer_guidance.py": "d9ef6d5ae9041366efb610ca3b432c451c6cca74e3d332fe7ff97ade6c11af70",
+    "before/neo4j_kg/assessment.py": "ef6d7e0b34743733a26a90628808f2f29f1ae5808ec0696b5e7ccd02a8acc497",
+    "before/neo4j_kg/terminal_status.py": "debce752697d73f7400dba5c661530851d3e4fdd2122765e7441b866a966a57e",
+    "before/neo4j_kg/trip_tools.py": "137ae294743e101c46dbb9301c7d325f233adb309aef725b2733e79340ba8177",
+    "before/neo4j_kg/verification.py": "469e6e0eee0c1403b6b6a42c2c612da08a8ada777e36786750f02f2b968ccc34",
+    "before/tests/test_conditions_graph_binding.py": "de7c36281c935ab89e647e9c76aee672849f67c306e79fa658859434cd0216de",
+    "before/tests/test_confirmed_advice.py": "7c209f15bc4b3dd3240a921308096b690b78b12f00861735aa896a12a49cd646",
+    "before/tests/test_terminal_status.py": "147e4ad6623c5cca44daf02e637e8eaeaadfaedd409fb70a5bac8aa98b5c16d2",
+    "consumer-audit.json": "9485da8ea0d2a388ac96591a44e6e14b7101a06c30186f338417d7e68ddbceab",
+    "consumer-correction.txt": "dd98c8be93738b934fe1044335dcd465df20bc9b6238078d25550cd8c214189a",
+    "consumer-initial.txt": "61a3362e762e10dd2931bfdb338f786f5b377e09fbd64751b3b2df787784e52d",
+    "consumer-protocol.json": "2694648c56d63573672141707c55c4041d3c7f9c459a394bc197746abd8971a5",
+    "final-tests.log": "ab31fe02d86f3660389879b98cab30a6d949fa65f51ff06c76a874d6da9c7d11",
+    "graph-receipt.json": "96207098737bc2b229f62c99cbc355f4a5e8f95ba305c33b0c82659a685360d5",
+    "live-conditions.json": "1401fcc112057749ef6738cc205232683678531f8f390c118090432d5e5458e9",
+    "live-validation.log": "6a5ed6c6ec5af7219b5a5cf6177c318d5dbd776c23edd50f5463073c4c614ba7",
+    "route-regression-after.log": "8fc5b5eb3e8f274d48bd1adfd2cc9a6791fe0256acbba90ddf404c82751aa317",
+    "route-regression-before.log": "f58693dbc0bd49681e85887b7e2ed8d2850a834146c299e16381955a928905af",
+    "session-changes.patch": "98c978c384540ea98dfded8ddd1f10b657fc2199acdb20b5933d541bf4770741",
+    "terminal-regressions.log": "ad900a1822af01c7017e4921ae32b033e950a3b534bc396b3836e162ff595ad9",
+    "verification-summary.json": "6036c8ef3820032605d672ec2dae4048157799e8768c1d9a7f61579ae84e0049",
+    "verify_live_conditions.py": "adc0edf083ad0a8f8129a65a56e36a9064ecfc98be925113cb3400cfa29bb56b"
+  }
+}

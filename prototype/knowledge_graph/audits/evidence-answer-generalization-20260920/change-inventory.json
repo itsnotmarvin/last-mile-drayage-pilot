@@ -1,0 +1,53 @@
+{
+  "changed_from_saved_dirty_baseline": [
+    "CURRENT_STATE.md",
+    "PROGRESS.md",
+    "README.md",
+    "docs/driver-experience.md",
+    "neo4j_kg/answer_guidance.py",
+    "neo4j_kg/driver_answer.py",
+    "neo4j_kg/driver_move.py",
+    "neo4j_kg/followups.py",
+    "neo4j_kg/trip_state.py",
+    "neo4j_kg/trip_tools.py"
+  ],
+  "unchanged_from_saved_dirty_baseline": [
+    "neo4j_kg/__init__.py",
+    "neo4j_kg/assessment.py",
+    "neo4j_kg/axle_layout.py",
+    "neo4j_kg/bridge_math.py",
+    "neo4j_kg/common.py",
+    "neo4j_kg/config.py",
+    "neo4j_kg/decision_brief.py",
+    "neo4j_kg/driver_brief.py",
+    "neo4j_kg/driver_conditions.py",
+    "neo4j_kg/evidence.py",
+    "neo4j_kg/input_review.py",
+    "neo4j_kg/mcp_server.py",
+    "neo4j_kg/provenance_notes.py",
+    "neo4j_kg/release_readiness.py",
+    "neo4j_kg/reported_checks.py",
+    "neo4j_kg/requirements.py",
+    "neo4j_kg/retrieval_trace.py",
+    "neo4j_kg/road_evaluators.py",
+    "neo4j_kg/route_context.py",
+    "neo4j_kg/service.py",
+    "neo4j_kg/source_review.py",
+    "neo4j_kg/source_supplements.py",
+    "neo4j_kg/store.py",
+    "neo4j_kg/terminal_evaluators.py",
+    "neo4j_kg/terminal_status.py",
+    "neo4j_kg/trip_models.py",
+    "neo4j_kg/verification.py",
+    "neo4j_kg/verification_models.py",
+    "neo4j_kg/verification_store.py"
+  ],
+  "added": [
+    "neo4j_kg/explanation_context.py",
+    "tests/test_explanation_generalization.py",
+    "tools/verify_explanation_generalization.py",
+    "docs/evidence-answer-generalization.md"
+  ],
+  "sealed_prior_execution_artifacts_verified": 52,
+  "note": "Baseline was existing working-tree content, not git HEAD; unrelated dirty changes are preserved."
+}

@@ -1,0 +1,38 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 152-153
++											156 text Loaded tools, used drayage-kg-prototype integration
+~											154 button Loaded tools, used drayage-kg-prototype integration
+~											155 text Loaded tools, used drayage-kg-prototype integration
++											157 container Searched available tools
++												158 text Searched available tools
++												159 button Searched available tools
++											160 container Assess a synthetic driver or dispatcher trip
++												161 text Assess a synthetic driver or dispatcher trip
++												162 button Assess a synthetic driver or dispatcher trip
++											163 container
++												164 text Stra ight answer for  this synthetic case: 
++												165 text no clearance can be issued right now, and the height figure is the thing most likely to actually stop the truck.
++												166 text The issue that matters most: height.
++												167 text The reported loaded  height is 14 ft 7 in  (175 in). The  retained NJ baseline  is 13 ft 6 in (162  in) on NJ highways  generally, and the  Port Authority's  separate  marine-terminal  threshold for "over  dimensional" is 16 ft  3 in. Your load is  above the general NJ  roadway limit by 13  inches but below the  terminal-specific  threshold. That's the  real go/no-go  question: is this  load moving on a  roadway where 13'6"  applies, and if so,  do you have oversize  permit authorization  and a route that's  actually been cleared  for that height? A  load "behind  schedule" that turns  out to be over-height  on the wrong road is  the kind of thing  that gets stopped at  a bridge or a  low-clearance ramp,  not waved through.
++												168 text Width and weight are not blockers by themselves.
++												169 text 102 in width  matches the standard  "National Network /  NJ Access Route"  allowance — but  there's a separate,  more restrictive  96-inch category for  some roads, so which  road matters. 80,000  lb gross is exactly  at the standard  federal/NJ cap —  which is fine only if  the bridge formula  and per-axle/tandem  limits are also  satisfied. Since you  don't have axle  weights, that can't  be checked at all: a  legal gross weight  can still fail the  bridge formula if  it's distributed  wrong across axles  that are too close  together.
++												170 text Credentials (TWIC/SeaLink/appointment) are reported, not verified.
++												171 text Having them is  necessary but the  system has no way to  confirm they're  active, matched to  this driver, or that  the appointment  matches this specific  move — that gate-side  confirmation happens  at TERMPoint/the gate  itself, not here.
++												172 text What's simply unknown and blocks a real answer:
++												173 content list
++													174 container
++														175 AXListMarker • 
++														176 text Exact route  (which roads, which  entrance/exit to APM  Elizabeth) — this  decides which  height/width regime  applies and whether  Port Street's current  lane restrictions  near APM Elizabeth  (posted since Aug 3,  2026, oversize-load  specific detours) are  relevant
++													177 container
++														178 AXListMarker • 
++														179 text Axle  weights/spacing —  needed for  bridge-formula and  tandem checks
++													180 container
++														181 AXListMarker • 
++														182 text Permit status — if  this load needs an NJ  oversize/overweight  single-trip permit  given the height
++													183 container
++														184 AXListMarker • 
++														185 text DTR/RFID/engine-year status for the truck  itself
++												186 text Bottom line:
++												187 text being behind schedule
++							188 button Scroll to bottom
+The focused UI element is 154 button Loaded tools, used drayage-kg-prototype integration

@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-09-16T16:59:30.168633+00:00",
+  "user_scope": "Use public sources and synthetic trip records for now",
+  "surface": "Claude Desktop consumer Chat",
+  "observed_model_label": "Sonnet 5 Medium",
+  "observed_plan": "Free",
+  "conversation_mode": "incognito",
+  "connector": "drayage-kg-prototype",
+  "connector_command": ".venv-neo4j/bin/python run_neo4j_mcp.py --audit",
+  "neo4j_preflight": {
+    "available": true,
+    "records": 144,
+    "relationships": 228,
+    "release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c"
+  },
+  "public_evidence": "real retained public documents, pinned archive; not newly checked for legal currentness",
+  "real_authority_integration": "not tested; no operational records supplied",
+  "app_confirmation_path": "not exercised by direct five-tool connector"
+}

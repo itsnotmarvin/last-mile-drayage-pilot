@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-13T03:00:02.081086+00:00",
+  "unit_integration_suite": {
+    "passed": 257,
+    "failed": 0
+  },
+  "javascript_syntax": "passed_node_check",
+  "runtime_python_syntax": "passed",
+  "historical_kg": "git_diff_empty",
+  "neo4j_runtime_networkx": "not_installed_and_no_imports",
+  "browser_acceptance": {
+    "status": "blocked",
+    "surface": "Chrome browser automation",
+    "error": "ERR_BLOCKED_BY_CLIENT",
+    "url": "http://127.0.0.1:8765",
+    "rendered_flow_verified": false
+  },
+  "new_claude_bridge_configuration": "not_applied",
+  "language_model_invocations": 0,
+  "production_release": "blocked"
+}

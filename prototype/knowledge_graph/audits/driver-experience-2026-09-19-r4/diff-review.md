@@ -1,0 +1,7 @@
+# Final diff and adversarial review
+
+Reviewed cumulative delivery edits against the preserved r2 baseline and final instruction changes against r3. Scope remains source presentation plus narrow MCP orchestration; source/evaluator/graph behavior is unchanged. Legacy assess/update retain their full schema and three text blocks. New compact tools preserve full supporting assessment separately and do not claim all 26 passages were delivered. Fixed full-move scope is applied before delegating to existing creation/update validation. Read requests cannot mutate; narrow saved cases are rejected by the complete-move tool rather than silently rescoping them. Conflicts, input-review issues, other terminals and evaluated/bounded findings retain the detailed briefing. Service outage cannot reuse earlier findings.
+
+Existing tests were not skipped or narrowed; inventory assertions expanded to include the new tools. 462 tests and the additional recorded adversarial checks pass. Native consumer narration was independently inspected in the real app after verifying deployed formatter parity. One request-key collision was recorded and safely recovered, not omitted from the event chain. Earlier sealed checkpoint artifact hashes still match.
+
+Documentation links and git diff --check pass. No edits to parent evidence, historical kg runtime, Wave-4, dependencies or application configuration. No commit/push/deployment.

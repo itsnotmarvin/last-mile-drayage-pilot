@@ -1,0 +1,44 @@
+{
+  "recorded_at": "2026-09-13T12:58:48.270362+00:00",
+  "connector": "drayage-kg-prototype",
+  "surface": "Claude Desktop startup and tool discovery only",
+  "ui_action": "Quit and reopened Claude through CUA; fresh accessibility state showed an empty new-chat composer.",
+  "process_stop_observed": true,
+  "configuration_changed": false,
+  "new_proposal_bridge_attached": false,
+  "model_prompt_submitted": false,
+  "consumer_assessment_or_answer_verified": false,
+  "startup_and_discovery_events": [
+    {
+      "at": "2026-09-13T12:52:01.225Z",
+      "event": "server_connected"
+    },
+    {
+      "at": "2026-09-13T12:52:01.226Z",
+      "event": "client_initialize",
+      "request_id": 0
+    },
+    {
+      "at": "2026-09-13T12:52:01.384Z",
+      "event": "server_result",
+      "request_id": 0
+    },
+    {
+      "at": "2026-09-13T12:52:01.386Z",
+      "event": "client_notifications/initialized",
+      "request_id": null
+    },
+    {
+      "at": "2026-09-13T12:52:01.388Z",
+      "event": "client_tools/list",
+      "request_id": 1
+    },
+    {
+      "at": "2026-09-13T12:52:01.390Z",
+      "event": "server_result",
+      "request_id": 1
+    }
+  ],
+  "discovery_log_limit": "The client log records result receipt, not the tool schema body. Current output fields were captured separately in tools.json through local stdio.",
+  "runtime_binding": "summary.json contains local runtime SHA256 values verified unchanged after startup and during the HTTP capture."
+}

@@ -1,0 +1,31 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 125-141
+~							124 text Claude is responding
++							125 container Chat messages
++								126 text Use the up and down arrow keys to move between messages.
++								127 container
++									128 container Message 1 of 2
++										129 heading You said: Synthetic experiment only; these are invented trip details, not an actual dispatch., Value: 2
++											130 text You said: Synthetic experiment only; these are invented trip details, not an actual dispatch.
++										131 text Synthetic experiment only; these are invented trip details, not an actual dispatch. Can I send my driver to APM Elizabeth? We are behind schedule and need a decision now. Planned entry is September 17, 2026 at 9:00 AM America/New_York. The loaded height is 14 ft 7 in, width 102 inches, gross weight 80,000 lb. I have TWIC, SeaLink and an appointment. I do not know the axle weights or the exact road sequence. Explain the issues that actually matter and what information would change your answer.
++										132 button Show message actions for You said: Synthetic experiment only; these are invented trip details, not an actual dispatch.
++									133 container Currently streaming message
++										134 text Picturing
++										135 text Picturing
++							136 button Quick answer
++							137 container
++								138 container
++									139 container
++										140 container
++											141 text entry area (settable) Description: Write your prompt to Claude, Value: 
+
++										142 pop up button Add files, connectors, and more
++										143 button Stop response
++										144 container Dictate
++											145 button Dictate
++											146 pop up button Microphone
++									147 text Incognito chats aren’t saved to history or used to train models.
++									148 pop up button Model: Sonnet 5 Medium
++										149 text Sonnet 5
++										150 text Medium
+The focused UI element is 141 text entry area (settable) Description: Write your prompt to Claude, Value: 

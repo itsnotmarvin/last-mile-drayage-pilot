@@ -1,0 +1,475 @@
+[
+  {
+    "event_hash": "d35319f9e2ba5d505d20c9345944f35ffe2c0650ddfa734d83b2f8a6b66a83b3",
+    "method": "assess_trip",
+    "previous_event_hash": "396e1cb43282590f0f6ff3164f6baa0f001525a26dfc1c5d14a1456e50886ad6",
+    "recorded_at": "2026-09-10T12:50:25.633527+00:00",
+    "request_id": 3,
+    "response": {
+      "id": 3,
+      "jsonrpc": "2.0",
+      "result": {
+        "content": [
+          {
+            "text": "{\"assessment_id\": \"03d0f8e1044694cf1d7ea47585e00a9234aaec05ebfff0af922b5c06f66bb21e\", \"case\": {\"conflicts\": [], \"facts\": {\"appointment_reported\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": true}, \"axle_count\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": 5}, \"cargo_hazardous\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": false}, \"dtr_reported\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": true}, \"permit_type\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": \"none\"}, \"port_street_in_route\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": true}, \"rfid_reported\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": true}, \"route_description\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": \"US Route 1 & 9 southbound, then North Avenue East and North Avenue (County Route 624), then local streets by the direct route to APM Terminals Elizabeth.\"}, \"route_id\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": \"other\"}, \"subject_role\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": \"truck_driver\"}, \"terminal_id\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": \"facility_apm_elizabeth\"}, \"trip_at\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T12:50:23+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?\", \"unit\": null, \"value\": \"2026-09-02T13:00:00+00:00\"}}, \"invalidated_fields\": [], \"mode\": \"synthetic_prototype_only\", \"question_scope\": \"route\", \"requester_role\": \"dispatcher\", \"revision\": 1, \"trip_id\": \"syn-trip-72b16978a223d316225c0962d28db2bb\"}, \"coverage\": {\"catalog_complete\": false, \"complete_trip_check\": false, \"executed_requirements\": [], \"gaps\": [\"catalog_incomplete\", \"current_policy_not_verified\", \"same_day_gate_status_not_verified\", \"terminal_and_driver_scope_not_assessed\"], \"not_executed_requirements\": [\"trip_context\", \"axle_weight_evidence\", \"dimensions_and_route\", \"permit_eligibility\", \"cross_authority_coverage\", \"current_route_conditions\"], \"selected_requirements\": [\"trip_context\", \"axle_weight_evidence\", \"dimensions_and_route\", \"permit_eligibility\", \"cross_authority_coverage\", \"current_route_conditions\"]}, \"findings\": [{\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"intake_only\", \"family\": \"shared_trip_context\", \"label\": \"Trip, terminal, and timing context\", \"limits\": [\"These facts select assessment scope; they do not establish dispatch, route, or entry clearance.\", \"The catalog's terminal-specific evidence supports APM Elizabeth only. A missing terminal leaves applicability unresolved, and another terminal creates an unsupported-terminal coverage gap rather than an exemption.\", \"The NJPASS-hosted route-review clause is retained evidence, but its official code-of-record currentness was not independently verified.\"], \"missing_fields\": [], \"owner\": \"dispatcher\", \"reason_codes\": [\"CONTEXT_RECORDED_NOT_VERIFIED\"], \"reported_absences\": [], \"requirement_id\": \"trip_context\", \"source_clause_ids\": [\"reg_nj_single_trip_route_review_13_18_portal_copy\", \"reg_apm_safety_induction\"], \"status\": \"unresolved\", \"verification_needed\": []}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"axle_weight\", \"label\": \"Gross, axle, and spacing evidence\", \"limits\": [\"The federal clause is limited to the Interstate system and reasonable access; the New Jersey single-axle clause is limited to non-Interstate New Jersey roads.\", \"Which limit applies depends on the exact roadway jurisdiction and route. This catalog implements no bridge-formula, axle-group, tire-load, or legal-weight calculator.\", \"Gross weight, axle count, and reported axle weights or spacings do not by themselves establish compliance.\", \"The NJPASS-hosted route-review clause is excluded from the verified graph because official code-of-record currentness was not independently verified.\"], \"missing_fields\": [\"gross_weight\", \"axle_weights\", \"axle_spacings\"], \"owner\": \"carrier\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"axle_weight_evidence\", \"source_clause_ids\": [\"reg_federal_interstate_weight\", \"reg_nj_noninterstate_single_axle\", \"reg_nj_tandem_gross_bridge\", \"reg_nj_single_trip_route_review_13_18_portal_copy\"], \"status\": \"unresolved\", \"verification_needed\": [\"gross_weight\", \"axle_weights\", \"axle_spacings\", \"route_id\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"dimensions_route\", \"label\": \"Loaded dimensions and exact route access\", \"limits\": [\"Width limits depend on route-network status, and the cited local-access rule is expressly limited to a 102-inch-wide standard truck using unrestricted local roads by the direct route.\", \"A road's absence from a listed network or restriction table establishes neither permission nor prohibition. Current local postings and every segment still require verification.\", \"Published terminal directions and stored route topology are not legal route designation, bridge-clearance evidence, or navigable truck-route approval.\"], \"missing_fields\": [\"width\", \"height\", \"overall_length\", \"semitrailer_length\"], \"owner\": \"carrier\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"dimensions_and_route\", \"source_clause_ids\": [\"reg_nj_width_limit\", \"reg_nj_height_limit\", \"reg_nj_semitrailer_length\", \"reg_nj_truck_access_local_rule_preservation\", \"reg_nj_access_network_600_series\", \"reg_nj_terminal_access_102_inch_standard_truck\"], \"status\": \"unresolved\", \"verification_needed\": [\"width\", \"height\", \"overall_length\", \"semitrailer_length\", \"route_id\", \"route_description\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"permit_coverage\", \"label\": \"Permit type and load eligibility evidence\", \"limits\": [\"Permit applicability depends on the load, dimensions, axle facts, trip time, and permit terms; no legal interpretation or permit-validity check is implemented.\", \"The ocean-container sources concern sealed ocean-borne containers and do not make every container move eligible for that permit type.\", \"The NJPASS-hosted permit clause is retained but excluded from the verified graph because official code-of-record currentness was not independently archived and compared.\", \"A reported permit, including a reported-valid permit, is user-reported evidence and does not establish approval or route coverage.\"], \"missing_fields\": [\"container_sealed\", \"load_divisible\"], \"owner\": \"carrier\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"permit_eligibility\", \"source_clause_ids\": [\"reg_nj_osow_permit_requirement_13_18_portal_copy\", \"reg_nj_single_trip_osow_permit\", \"reg_nj_ocean_container_permit\"], \"status\": \"unresolved\", \"verification_needed\": [\"permit_type\", \"permit_route_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"permit_coverage\", \"label\": \"Cross-authority route and permit coverage\", \"limits\": [\"A New Jersey State permit does not establish approval for toll, county, local, Port Authority, or terminal-controlled segments.\", \"Every reported approval requires verification from the responsible authority; a complete set of user reports is not cross-authority clearance.\", \"The retained toll-road approval clause is excluded from the verified graph because official code-of-record currentness was not independently verified.\"], \"missing_fields\": [\"permit_route_reported\", \"turnpike_approval_reported\", \"local_approval_reported\", \"port_approval_reported\", \"terminal_approval_reported\"], \"owner\": \"authority\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"cross_authority_coverage\", \"source_clause_ids\": [\"reg_nj_toll_authority_approval_13_18_portal_copy\", \"reg_nj_truck_access_local_rule_preservation\", \"reg_panynj_terminal_traffic\"], \"status\": \"unresolved\", \"verification_needed\": [\"permit_route_reported\", \"turnpike_approval_reported\", \"local_approval_reported\", \"port_approval_reported\", \"terminal_approval_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"current_route_conditions\", \"label\": \"Current route postings and operating conditions\", \"limits\": [\"No live current-policy, posting, closure, lane, detour, escort, or route-condition integration is implemented.\", \"The archived Port Street bulletin is a quarantined dated observation, not a source clause or proof of conditions on the trip date; it must be rechecked before operational use.\", \"A user-reported check time does not verify the result, authority, route coverage, or continued currentness of that check.\"], \"missing_fields\": [\"route_conditions_checked_at\"], \"owner\": \"authority\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"current_route_conditions\", \"source_clause_ids\": [\"reg_nj_truck_access_local_rule_preservation\", \"reg_panynj_terminal_traffic\"], \"status\": \"unresolved\", \"verification_needed\": [\"route_conditions_checked_at\"]}], \"limits\": [\"Synthetic development cases only; no operational entry or dispatch clearance.\", \"Reported facts are not authoritative verification, even when a reporter says verified.\", \"The catalog is incomplete; current policy, CDL, gate state and other duties remain outside executable coverage.\", \"Archived directions and bulletins do not establish legal access or current road conditions.\", \"Only APM induction has an executable evaluator, using server-owned synthetic fixtures.\"], \"mode\": \"synthetic_prototype_only\", \"next_questions\": [{\"field\": \"width\", \"kind\": \"missing_fact\", \"owner\": \"carrier\", \"question\": \"What is the loaded overall width, including the unit?\", \"reason\": \"This fact is needed to determine requirement applicability or evidence readiness.\", \"requirement_ids\": [\"dimensions_and_route\"]}, {\"field\": \"height\", \"kind\": \"missing_fact\", \"owner\": \"carrier\", \"question\": \"What is the loaded overall height, including the unit?\", \"reason\": \"This fact is needed to determine requirement applicability or evidence readiness.\", \"requirement_ids\": [\"dimensions_and_route\"]}, {\"field\": \"semitrailer_length\", \"kind\": \"missing_fact\", \"owner\": \"carrier\", \"question\": \"What is the semitrailer length, including the unit?\", \"reason\": \"This fact is needed to determine requirement applicability or evidence readiness.\", \"requirement_ids\": [\"dimensions_and_route\"]}], \"operational_status\": \"unresolved_not_assessed\", \"requested_scope_status\": \"unresolved\", \"schema_version\": \"drayage-trip-assessment-v1\", \"service_status\": \"available\", \"versions\": {\"evidence\": \"7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108\", \"graph_release\": \"f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c\", \"implementation\": \"fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019\", \"model\": \"e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775\", \"requirement_catalog\": \"3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158\", \"synthetic_evidence\": \"32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d\"}, \"write_receipt\": {\"revision\": 1, \"trip_id\": \"syn-trip-72b16978a223d316225c0962d28db2bb\"}}",
+            "type": "text"
+          }
+        ],
+        "isError": false,
+        "structuredContent": {
+          "assessment_id": "03d0f8e1044694cf1d7ea47585e00a9234aaec05ebfff0af922b5c06f66bb21e",
+          "case": {
+            "conflicts": [],
+            "facts": {
+              "appointment_reported": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": true
+              },
+              "axle_count": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": 5
+              },
+              "cargo_hazardous": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": false
+              },
+              "dtr_reported": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": true
+              },
+              "permit_type": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": "none"
+              },
+              "port_street_in_route": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": true
+              },
+              "rfid_reported": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": true
+              },
+              "route_description": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": "US Route 1 & 9 southbound, then North Avenue East and North Avenue (County Route 624), then local streets by the direct route to APM Terminals Elizabeth."
+              },
+              "route_id": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": "other"
+              },
+              "subject_role": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": "truck_driver"
+              },
+              "terminal_id": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": "facility_apm_elizabeth"
+              },
+              "trip_at": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T12:50:23+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?",
+                "unit": null,
+                "value": "2026-09-02T13:00:00+00:00"
+              }
+            },
+            "invalidated_fields": [],
+            "mode": "synthetic_prototype_only",
+            "question_scope": "route",
+            "requester_role": "dispatcher",
+            "revision": 1,
+            "trip_id": "syn-trip-72b16978a223d316225c0962d28db2bb"
+          },
+          "coverage": {
+            "catalog_complete": false,
+            "complete_trip_check": false,
+            "executed_requirements": [],
+            "gaps": [
+              "catalog_incomplete",
+              "current_policy_not_verified",
+              "same_day_gate_status_not_verified",
+              "terminal_and_driver_scope_not_assessed"
+            ],
+            "not_executed_requirements": [
+              "trip_context",
+              "axle_weight_evidence",
+              "dimensions_and_route",
+              "permit_eligibility",
+              "cross_authority_coverage",
+              "current_route_conditions"
+            ],
+            "selected_requirements": [
+              "trip_context",
+              "axle_weight_evidence",
+              "dimensions_and_route",
+              "permit_eligibility",
+              "cross_authority_coverage",
+              "current_route_conditions"
+            ]
+          },
+          "findings": [
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "intake_only",
+              "family": "shared_trip_context",
+              "label": "Trip, terminal, and timing context",
+              "limits": [
+                "These facts select assessment scope; they do not establish dispatch, route, or entry clearance.",
+                "The catalog's terminal-specific evidence supports APM Elizabeth only. A missing terminal leaves applicability unresolved, and another terminal creates an unsupported-terminal coverage gap rather than an exemption.",
+                "The NJPASS-hosted route-review clause is retained evidence, but its official code-of-record currentness was not independently verified."
+              ],
+              "missing_fields": [],
+              "owner": "dispatcher",
+              "reason_codes": [
+                "CONTEXT_RECORDED_NOT_VERIFIED"
+              ],
+              "reported_absences": [],
+              "requirement_id": "trip_context",
+              "source_clause_ids": [
+                "reg_nj_single_trip_route_review_13_18_portal_copy",
+                "reg_apm_safety_induction"
+              ],
+              "status": "unresolved",
+              "verification_needed": []
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "axle_weight",
+              "label": "Gross, axle, and spacing evidence",
+              "limits": [
+                "The federal clause is limited to the Interstate system and reasonable access; the New Jersey single-axle clause is limited to non-Interstate New Jersey roads.",
+                "Which limit applies depends on the exact roadway jurisdiction and route. This catalog implements no bridge-formula, axle-group, tire-load, or legal-weight calculator.",
+                "Gross weight, axle count, and reported axle weights or spacings do not by themselves establish compliance.",
+                "The NJPASS-hosted route-review clause is excluded from the verified graph because official code-of-record currentness was not independently verified."
+              ],
+              "missing_fields": [
+                "gross_weight",
+                "axle_weights",
+                "axle_spacings"
+              ],
+              "owner": "carrier",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "axle_weight_evidence",
+              "source_clause_ids": [
+                "reg_federal_interstate_weight",
+                "reg_nj_noninterstate_single_axle",
+                "reg_nj_tandem_gross_bridge",
+                "reg_nj_single_trip_route_review_13_18_portal_copy"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "gross_weight",
+                "axle_weights",
+                "axle_spacings",
+                "route_id"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "dimensions_route",
+              "label": "Loaded dimensions and exact route access",
+              "limits": [
+                "Width limits depend on route-network status, and the cited local-access rule is expressly limited to a 102-inch-wide standard truck using unrestricted local roads by the direct route.",
+                "A road's absence from a listed network or restriction table establishes neither permission nor prohibition. Current local postings and every segment still require verification.",
+                "Published terminal directions and stored route topology are not legal route designation, bridge-clearance evidence, or navigable truck-route approval."
+              ],
+              "missing_fields": [
+                "width",
+                "height",
+                "overall_length",
+                "semitrailer_length"
+              ],
+              "owner": "carrier",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "dimensions_and_route",
+              "source_clause_ids": [
+                "reg_nj_width_limit",
+                "reg_nj_height_limit",
+                "reg_nj_semitrailer_length",
+                "reg_nj_truck_access_local_rule_preservation",
+                "reg_nj_access_network_600_series",
+                "reg_nj_terminal_access_102_inch_standard_truck"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "width",
+                "height",
+                "overall_length",
+                "semitrailer_length",
+                "route_id",
+                "route_description"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "permit_coverage",
+              "label": "Permit type and load eligibility evidence",
+              "limits": [
+                "Permit applicability depends on the load, dimensions, axle facts, trip time, and permit terms; no legal interpretation or permit-validity check is implemented.",
+                "The ocean-container sources concern sealed ocean-borne containers and do not make every container move eligible for that permit type.",
+                "The NJPASS-hosted permit clause is retained but excluded from the verified graph because official code-of-record currentness was not independently archived and compared.",
+                "A reported permit, including a reported-valid permit, is user-reported evidence and does not establish approval or route coverage."
+              ],
+              "missing_fields": [
+                "container_sealed",
+                "load_divisible"
+              ],
+              "owner": "carrier",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "permit_eligibility",
+              "source_clause_ids": [
+                "reg_nj_osow_permit_requirement_13_18_portal_copy",
+                "reg_nj_single_trip_osow_permit",
+                "reg_nj_ocean_container_permit"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "permit_type",
+                "permit_route_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "permit_coverage",
+              "label": "Cross-authority route and permit coverage",
+              "limits": [
+                "A New Jersey State permit does not establish approval for toll, county, local, Port Authority, or terminal-controlled segments.",
+                "Every reported approval requires verification from the responsible authority; a complete set of user reports is not cross-authority clearance.",
+                "The retained toll-road approval clause is excluded from the verified graph because official code-of-record currentness was not independently verified."
+              ],
+              "missing_fields": [
+                "permit_route_reported",
+                "turnpike_approval_reported",
+                "local_approval_reported",
+                "port_approval_reported",
+                "terminal_approval_reported"
+              ],
+              "owner": "authority",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "cross_authority_coverage",
+              "source_clause_ids": [
+                "reg_nj_toll_authority_approval_13_18_portal_copy",
+                "reg_nj_truck_access_local_rule_preservation",
+                "reg_panynj_terminal_traffic"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "permit_route_reported",
+                "turnpike_approval_reported",
+                "local_approval_reported",
+                "port_approval_reported",
+                "terminal_approval_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "current_route_conditions",
+              "label": "Current route postings and operating conditions",
+              "limits": [
+                "No live current-policy, posting, closure, lane, detour, escort, or route-condition integration is implemented.",
+                "The archived Port Street bulletin is a quarantined dated observation, not a source clause or proof of conditions on the trip date; it must be rechecked before operational use.",
+                "A user-reported check time does not verify the result, authority, route coverage, or continued currentness of that check."
+              ],
+              "missing_fields": [
+                "route_conditions_checked_at"
+              ],
+              "owner": "authority",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "current_route_conditions",
+              "source_clause_ids": [
+                "reg_nj_truck_access_local_rule_preservation",
+                "reg_panynj_terminal_traffic"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "route_conditions_checked_at"
+              ]
+            }
+          ],
+          "limits": [
+            "Synthetic development cases only; no operational entry or dispatch clearance.",
+            "Reported facts are not authoritative verification, even when a reporter says verified.",
+            "The catalog is incomplete; current policy, CDL, gate state and other duties remain outside executable coverage.",
+            "Archived directions and bulletins do not establish legal access or current road conditions.",
+            "Only APM induction has an executable evaluator, using server-owned synthetic fixtures."
+          ],
+          "mode": "synthetic_prototype_only",
+          "next_questions": [
+            {
+              "field": "width",
+              "kind": "missing_fact",
+              "owner": "carrier",
+              "question": "What is the loaded overall width, including the unit?",
+              "reason": "This fact is needed to determine requirement applicability or evidence readiness.",
+              "requirement_ids": [
+                "dimensions_and_route"
+              ]
+            },
+            {
+              "field": "height",
+              "kind": "missing_fact",
+              "owner": "carrier",
+              "question": "What is the loaded overall height, including the unit?",
+              "reason": "This fact is needed to determine requirement applicability or evidence readiness.",
+              "requirement_ids": [
+                "dimensions_and_route"
+              ]
+            },
+            {
+              "field": "semitrailer_length",
+              "kind": "missing_fact",
+              "owner": "carrier",
+              "question": "What is the semitrailer length, including the unit?",
+              "reason": "This fact is needed to determine requirement applicability or evidence readiness.",
+              "requirement_ids": [
+                "dimensions_and_route"
+              ]
+            }
+          ],
+          "operational_status": "unresolved_not_assessed",
+          "requested_scope_status": "unresolved",
+          "schema_version": "drayage-trip-assessment-v1",
+          "service_status": "available",
+          "versions": {
+            "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+            "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+            "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+            "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+            "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+            "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+          },
+          "write_receipt": {
+            "revision": 1,
+            "trip_id": "syn-trip-72b16978a223d316225c0962d28db2bb"
+          }
+        }
+      }
+    },
+    "sequence": 2,
+    "surface": "mcp_client_not_yet_attributed_to_provider",
+    "validated_arguments": {
+      "as_received": {
+        "facts": {
+          "appointment_reported": true,
+          "axle_count": 5,
+          "cargo_hazardous": false,
+          "dtr_reported": true,
+          "permit_type": "none",
+          "port_street_in_route": true,
+          "rfid_reported": true,
+          "route_description": "US Route 1 & 9 southbound, then North Avenue East and North Avenue (County Route 624), then local streets by the direct route to APM Terminals Elizabeth.",
+          "route_id": "other",
+          "subject_role": "truck_driver",
+          "terminal_id": "facility_apm_elizabeth",
+          "trip_at": "2026-09-02T09:00:00-04:00"
+        },
+        "question_scope": "route",
+        "request_key": "dispatch-apm-2026-09-02-cr624-001",
+        "requester_role": "dispatcher",
+        "source_message": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?"
+      },
+      "normalized": {
+        "facts": {
+          "appointment_reported": true,
+          "axle_count": 5,
+          "cargo_hazardous": false,
+          "dtr_reported": true,
+          "permit_type": "none",
+          "port_street_in_route": true,
+          "rfid_reported": true,
+          "route_description": "US Route 1 & 9 southbound, then North Avenue East and North Avenue (County Route 624), then local streets by the direct route to APM Terminals Elizabeth.",
+          "route_id": "other",
+          "subject_role": "truck_driver",
+          "terminal_id": "facility_apm_elizabeth",
+          "trip_at": "2026-09-02T09:00:00-04:00"
+        },
+        "question_scope": "route",
+        "request_key": "dispatch-apm-2026-09-02-cr624-001",
+        "requester_role": "dispatcher",
+        "source_message": "Dispatching a nonhazardous five-axle tractor-semitrailer to APM Terminals Elizabeth on September 2, 2026. Certified weights and axle spacings are within ordinary New Jersey limits, truck is DTR-verified with a valid RFID tag, driver and appointment requirements otherwise satisfied. Proposed final approach: U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal. Loaded width, loaded height, and semitrailer length not yet known. Not confirmed whether every local segment is currently unrestricted. CR 624 is not listed in N.J.A.C. 16:32 Appendix C. Question: can this truck use the route without an oversize permit, or does CR 624's absence from Appendix C prohibit it?"
+      }
+    }
+  }
+]

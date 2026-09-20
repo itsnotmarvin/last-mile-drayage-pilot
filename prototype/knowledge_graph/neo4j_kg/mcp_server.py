@@ -78,7 +78,7 @@ class Session:
         self.sequence = 0
         self.previous_event_hash = None
 
-    def audit(self, method, request_id, arguments, response):
+    def audit(self, method, request_id, arguments, response, evidence_assessment=None):
         if self.audit_path is None:
             return
         from .common import digest
@@ -87,6 +87,11 @@ class Session:
                  "surface": "mcp_client_not_yet_attributed_to_provider", "method": method,
                  "request_id": request_id, "validated_arguments": arguments,
                  "response": response, "previous_event_hash": self.previous_event_hash}
+        from .retrieval_trace import receipt
+        if evidence_assessment is not None:
+            event['evidence_assessment'] = evidence_assessment
+            event['evidence_assessment_note'] = 'Full supporting assessment retained locally; only the response projection was delivered to the consumer.'
+        event["retrieval_trace"] = receipt(response.get("result", {}).get("structuredContent", {}))
         event["event_hash"] = digest(event)
         self.previous_event_hash = event["event_hash"]
         with self.audit_path.open("a", encoding="utf-8") as handle:
@@ -135,6 +140,9 @@ class Session:
             args = params.get("arguments", {})
             if not isinstance(name, str) or name not in {tool["name"] for tool in TOOLS}:
                 return error(-32602, "Unknown tool")
+            from .retrieval_trace import begin, finish
+            trace_token = begin(self.audit_path is not None)
+            evidence_assessment = None
             try:
                 if name == "check_apm_induction":
                     validated = normalize(args)
@@ -148,21 +156,51 @@ class Session:
                     if self.trip_service is None:
                         from .assessment import TripService
                         self.trip_service = TripService(self.service.store)
-                    operation = {"assess_trip": self.trip_service.assess,
-                                 "update_trip_facts": self.trip_service.update,
-                                 "get_requirement_evidence": self.trip_service.evidence}[name]
-                    payload = operation(args)
+                    if name in ('get_trip_conditions_answer', 'assess_driver_move'):
+                        if name == 'get_trip_conditions_answer':
+                            if not isinstance(args, dict) or set(args) != {'trip_id'}:
+                                raise InputError('Expected only a saved trip_id; this tool cannot change trip facts or scope')
+                            from .driver_conditions import conditions_answer as render_answer
+                            evidence_assessment = self.trip_service.assess(args)
+                        else:
+                            from .driver_move import assess_move, move_answer as render_answer
+                            evidence_assessment = assess_move(self.trip_service, args)
+                        a = evidence_assessment
+                        payload = {'trip_id': a['case']['trip_id'], 'revision': a['case']['revision'],
+                                   'assessment_id': a['assessment_id'], 'service_status': a['service_status'],
+                                   'versions': a['versions'], 'operational_permission': 'not_issued',
+                                   'answer_markdown': render_answer(a)}
+                        if name == 'assess_driver_move':
+                            from .driver_move import PRESENTATION
+                            payload['presentation'] = PRESENTATION
+                    else:
+                        operation = {"assess_trip": self.trip_service.assess,
+                                     "update_trip_facts": self.trip_service.update,
+                                     "get_requirement_evidence": self.trip_service.evidence}[name]
+                        payload = operation(args)
                     validated = args.copy()
                 result = {"content": [{"type": "text", "text": encode(payload)}],
                           "structuredContent": payload, "isError": False}
+                if name in ("assess_trip", "update_trip_facts"):
+                    from .driver_brief import driver_brief
+                    from .driver_answer import driver_answer
+                    result['content'].insert(0, {'type': 'text', 'text': driver_brief(payload)})
+                    result['content'].insert(0, {'type': 'text', 'text': driver_answer(payload)})
                 response = {"jsonrpc": "2.0", "id": request_id, "result": result}
-                self.audit(name, request_id, {"as_received": args, "normalized": validated}, response)
+                self.audit(name, request_id, {"as_received": args, "normalized": validated}, response,
+                           evidence_assessment=evidence_assessment)
                 return response
             except InputError as exc:
                 result = {"content": [{"type": "text", "text": str(exc)}], "isError": True}
+                self.audit(name, request_id, {"rejected_input_omitted": True},
+                           {"jsonrpc": "2.0", "id": request_id, "result": result})
             except Exception:
                 # Do not emit tracebacks, paths, raw input or accidental secrets to the client.
                 result = {"content": [{"type": "text", "text": "Checking service failed; no result or clearance is available."}], "isError": True}
+                self.audit(name, request_id, {"failed_input_omitted": True},
+                           {"jsonrpc": "2.0", "id": request_id, "result": result})
+            finally:
+                finish(trace_token)
         else:
             return error(-32601, "Method not found")
         return {"jsonrpc": "2.0", "id": request_id, "result": result}

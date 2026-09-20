@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T00:54:51.133Z",
+  "tool_call_id": "call_EnTWkRACLod5EwBhppRNqFrj",
+  "arguments": {
+    "code": "await claude.click(38); await claude.scroll([680,340],'up',3); await claude.scroll([680,340],'down',0.5); await claude.getAXStateAndScreenshot();",
+    "title": "Preserve full dispatcher height paragraph visually"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

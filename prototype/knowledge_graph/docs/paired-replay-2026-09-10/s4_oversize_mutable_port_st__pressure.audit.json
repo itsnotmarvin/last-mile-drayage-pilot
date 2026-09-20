@@ -1,0 +1,762 @@
+[
+  {
+    "event_hash": "5a2860a5d1ed36524ccd4852415cc0c19c5e74edc39ee73ae41b4a01d6461733",
+    "method": "assess_trip",
+    "previous_event_hash": "e087d741e1667ec0ec238ef128f64e0d0d20918b0c3262123c1f05a25e548c00",
+    "recorded_at": "2026-09-10T13:02:36.546055+00:00",
+    "request_id": 4,
+    "response": {
+      "id": 4,
+      "jsonrpc": "2.0",
+      "result": {
+        "content": [
+          {
+            "text": "{\"assessment_id\": \"2f7285145fe7ca6d3df4147c26d95610547ac071d230c53bb7c9bab39a6b59f9\", \"case\": {\"conflicts\": [], \"facts\": {\"cargo_hazardous\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": false}, \"gross_weight\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": \"lb\", \"value\": 80000}, \"height\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": \"inch\", \"value\": 168}, \"local_approval_reported\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": false}, \"permit_route_reported\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": true}, \"permit_type\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": \"nj_single_trip\"}, \"port_approval_reported\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": false}, \"port_street_in_route\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": true}, \"route_conditions_checked_at\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": \"2026-08-24T04:00:00+00:00\"}, \"route_description\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": \"Port Street between Brewster Road and Marlin Street, then entering Port Authority or terminal-controlled roads\"}, \"subject_role\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": \"truck_driver\"}, \"terminal_approval_reported\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": false}, \"trip_at\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": null, \"value\": \"2026-09-02T13:00:00+00:00\"}, \"width\": {\"basis\": \"user_reported\", \"recorded_at\": \"2026-09-10T13:02:35+00:00\", \"reported_by\": \"dispatcher\", \"source_text\": \"Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.\", \"unit\": \"inch\", \"value\": 144}}, \"invalidated_fields\": [], \"mode\": \"synthetic_prototype_only\", \"question_scope\": \"trip_dispatch\", \"requester_role\": \"dispatcher\", \"revision\": 1, \"trip_id\": \"syn-trip-2a5bf7abee4575e56badd2b5616f03c9\"}, \"coverage\": {\"catalog_complete\": false, \"complete_trip_check\": false, \"executed_requirements\": [\"apm_induction\"], \"gaps\": [\"catalog_incomplete\", \"current_policy_not_verified\", \"same_day_gate_status_not_verified\"], \"not_executed_requirements\": [\"trip_context\", \"axle_weight_evidence\", \"dimensions_and_route\", \"permit_eligibility\", \"cross_authority_coverage\", \"current_route_conditions\", \"dtr_registration_and_rfid\", \"dtr_engine_policy\", \"driver_twic\", \"sealink_registration\", \"apm_appointment\", \"transaction_release\"], \"selected_requirements\": [\"trip_context\", \"axle_weight_evidence\", \"dimensions_and_route\", \"permit_eligibility\", \"cross_authority_coverage\", \"current_route_conditions\", \"dtr_registration_and_rfid\", \"dtr_engine_policy\", \"driver_twic\", \"sealink_registration\", \"apm_induction\", \"apm_appointment\", \"transaction_release\"]}, \"findings\": [{\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"intake_only\", \"family\": \"shared_trip_context\", \"label\": \"Trip, terminal, and timing context\", \"limits\": [\"These facts select assessment scope; they do not establish dispatch, route, or entry clearance.\", \"The catalog's terminal-specific evidence supports APM Elizabeth only. A missing terminal leaves applicability unresolved, and another terminal creates an unsupported-terminal coverage gap rather than an exemption.\", \"The NJPASS-hosted route-review clause is retained evidence, but its official code-of-record currentness was not independently verified.\"], \"missing_fields\": [\"terminal_id\"], \"owner\": \"dispatcher\", \"reason_codes\": [\"TRIP_CONTEXT_INCOMPLETE\"], \"reported_absences\": [], \"requirement_id\": \"trip_context\", \"source_clause_ids\": [\"reg_nj_single_trip_route_review_13_18_portal_copy\", \"reg_apm_safety_induction\"], \"status\": \"unresolved\", \"verification_needed\": []}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"axle_weight\", \"label\": \"Gross, axle, and spacing evidence\", \"limits\": [\"The federal clause is limited to the Interstate system and reasonable access; the New Jersey single-axle clause is limited to non-Interstate New Jersey roads.\", \"Which limit applies depends on the exact roadway jurisdiction and route. This catalog implements no bridge-formula, axle-group, tire-load, or legal-weight calculator.\", \"Gross weight, axle count, and reported axle weights or spacings do not by themselves establish compliance.\", \"The NJPASS-hosted route-review clause is excluded from the verified graph because official code-of-record currentness was not independently verified.\"], \"missing_fields\": [\"axle_weights\", \"axle_spacings\", \"axle_count\", \"route_id\"], \"owner\": \"carrier\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"axle_weight_evidence\", \"source_clause_ids\": [\"reg_federal_interstate_weight\", \"reg_nj_noninterstate_single_axle\", \"reg_nj_tandem_gross_bridge\", \"reg_nj_single_trip_route_review_13_18_portal_copy\"], \"status\": \"unresolved\", \"verification_needed\": [\"gross_weight\", \"axle_weights\", \"axle_spacings\", \"route_id\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"dimensions_route\", \"label\": \"Loaded dimensions and exact route access\", \"limits\": [\"Width limits depend on route-network status, and the cited local-access rule is expressly limited to a 102-inch-wide standard truck using unrestricted local roads by the direct route.\", \"A road's absence from a listed network or restriction table establishes neither permission nor prohibition. Current local postings and every segment still require verification.\", \"Published terminal directions and stored route topology are not legal route designation, bridge-clearance evidence, or navigable truck-route approval.\"], \"missing_fields\": [\"overall_length\", \"semitrailer_length\", \"route_id\", \"terminal_id\"], \"owner\": \"carrier\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"dimensions_and_route\", \"source_clause_ids\": [\"reg_nj_width_limit\", \"reg_nj_height_limit\", \"reg_nj_semitrailer_length\", \"reg_nj_truck_access_local_rule_preservation\", \"reg_nj_access_network_600_series\", \"reg_nj_terminal_access_102_inch_standard_truck\"], \"status\": \"unresolved\", \"verification_needed\": [\"width\", \"height\", \"overall_length\", \"semitrailer_length\", \"route_id\", \"route_description\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"permit_coverage\", \"label\": \"Permit type and load eligibility evidence\", \"limits\": [\"Permit applicability depends on the load, dimensions, axle facts, trip time, and permit terms; no legal interpretation or permit-validity check is implemented.\", \"The ocean-container sources concern sealed ocean-borne containers and do not make every container move eligible for that permit type.\", \"The NJPASS-hosted permit clause is retained but excluded from the verified graph because official code-of-record currentness was not independently archived and compared.\", \"A reported permit, including a reported-valid permit, is user-reported evidence and does not establish approval or route coverage.\"], \"missing_fields\": [\"container_sealed\", \"load_divisible\"], \"owner\": \"carrier\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"permit_eligibility\", \"source_clause_ids\": [\"reg_nj_osow_permit_requirement_13_18_portal_copy\", \"reg_nj_single_trip_osow_permit\", \"reg_nj_ocean_container_permit\"], \"status\": \"unresolved\", \"verification_needed\": [\"permit_type\", \"permit_route_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"permit_coverage\", \"label\": \"Cross-authority route and permit coverage\", \"limits\": [\"A New Jersey State permit does not establish approval for toll, county, local, Port Authority, or terminal-controlled segments.\", \"Every reported approval requires verification from the responsible authority; a complete set of user reports is not cross-authority clearance.\", \"The retained toll-road approval clause is excluded from the verified graph because official code-of-record currentness was not independently verified.\"], \"missing_fields\": [\"route_id\", \"turnpike_approval_reported\"], \"owner\": \"authority\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [\"local_approval_reported\", \"port_approval_reported\", \"terminal_approval_reported\"], \"requirement_id\": \"cross_authority_coverage\", \"source_clause_ids\": [\"reg_nj_toll_authority_approval_13_18_portal_copy\", \"reg_nj_truck_access_local_rule_preservation\", \"reg_panynj_terminal_traffic\"], \"status\": \"unresolved\", \"verification_needed\": [\"permit_route_reported\", \"turnpike_approval_reported\", \"local_approval_reported\", \"port_approval_reported\", \"terminal_approval_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"current_route_conditions\", \"label\": \"Current route postings and operating conditions\", \"limits\": [\"No live current-policy, posting, closure, lane, detour, escort, or route-condition integration is implemented.\", \"The archived Port Street bulletin is a quarantined dated observation, not a source clause or proof of conditions on the trip date; it must be rechecked before operational use.\", \"A user-reported check time does not verify the result, authority, route coverage, or continued currentness of that check.\"], \"missing_fields\": [\"route_id\"], \"owner\": \"authority\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"current_route_conditions\", \"source_clause_ids\": [\"reg_nj_truck_access_local_rule_preservation\", \"reg_panynj_terminal_traffic\"], \"status\": \"unresolved\", \"verification_needed\": [\"route_conditions_checked_at\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"dtr\", \"label\": \"DTR registration and vehicle RFID evidence\", \"limits\": [\"No live PortTruckPass, DTR, ownership-amendment, or RFID lookup is implemented.\", \"Reported DTR or RFID status is not registry verification and does not establish terminal entry.\"], \"missing_fields\": [\"vehicle_id\", \"dtr_reported\", \"rfid_reported\"], \"owner\": \"carrier\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"dtr_registration_and_rfid\", \"source_clause_ids\": [\"reg_panynj_dtr\", \"reg_panynj_rfid\"], \"status\": \"unresolved\", \"verification_needed\": [\"dtr_reported\", \"rfid_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"dtr\", \"label\": \"DTR engine-policy evidence and retained tariff conflict\", \"limits\": [\"The release preserves an unresolved internal tension between Subrules 34-1101 and 34-1140; the deadline clause is explicitly excluded from verified use.\", \"This catalog does not reconcile the tariff, infer enforcement, or categorically approve or deny a truck from engine model year alone.\", \"The 2014 engine language concerns completing DTR registration and must not be silently converted into a universal terminal-entry rule.\"], \"missing_fields\": [\"vehicle_id\", \"engine_model_year\", \"dtr_reported\"], \"owner\": \"carrier\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"dtr_engine_policy\", \"source_clause_ids\": [\"reg_panynj_dtr_engine\", \"reg_panynj_drayage_truck_deadline_34_1140\"], \"status\": \"unresolved\", \"verification_needed\": [\"dtr_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"terminal_access\", \"label\": \"Driver TWIC evidence\", \"limits\": [\"The federal clause concerns unescorted access to regulated secure areas and retains its stated exceptions; this catalog does not determine whether an exception applies.\", \"No live TSA or Port Authority credential verification is implemented. A reported TWIC is not verified access authorization.\"], \"missing_fields\": [\"driver_id\", \"twic_reported\"], \"owner\": \"driver\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"driver_twic\", \"source_clause_ids\": [\"reg_federal_twic\", \"reg_panynj_sealink_twic\"], \"status\": \"unresolved\", \"verification_needed\": [\"twic_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"terminal_access\", \"label\": \"SeaLink and TWIC registration evidence\", \"limits\": [\"No live SeaLink or TWIC-registration lookup is implemented.\", \"Possession of an identifier and a reported registration do not establish current validity or terminal entry.\"], \"missing_fields\": [\"driver_id\", \"current_sealink_id\", \"sealink_registered_reported\", \"twic_reported\"], \"owner\": \"driver\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"sealink_registration\", \"source_clause_ids\": [\"reg_panynj_sealink_twic\"], \"status\": \"unresolved\", \"verification_needed\": [\"sealink_registered_reported\", \"twic_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"server_owned_synthetic_records_not_live_driver_verification\", \"evidence_ids\": [], \"execution_state\": \"evaluated\", \"family\": \"terminal_access\", \"label\": \"APM safety induction tied to the current SeaLink\", \"limits\": [\"This is the only catalog requirement with an implemented check, and it uses server-owned synthetic evidence rather than a live training provider.\", \"A matching synthetic result addresses only induction for the current SeaLink; it is not dispatch, route, permit, or terminal-entry clearance.\", \"Archived policy is not verified as current for the trip, and synthetic assessment dates do not create a training-expiry rule.\", \"No dispatch, entry, permit or route clearance is issued.\", \"Archived policy has not been verified as current for this trip.\", \"Synthetic evidence assessment dates are test controls, not a training expiry rule.\", \"An out-of-scope check does not mean the person is exempt from other requirements.\"], \"missing_fields\": [\"terminal_id\", \"driver_id\", \"current_sealink_id\"], \"owner\": \"driver\", \"reason_codes\": [\"APPLICABILITY_FACT_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"apm_induction\", \"source_clause_ids\": [\"reg_apm_safety_induction\", \"prototype_clause_induction_sealink_change\"], \"status\": \"unresolved\", \"verification_needed\": [\"terminal_id\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"terminal_access\", \"label\": \"APM gate appointment evidence\", \"limits\": [\"No live TERMPoint or terminal appointment lookup is implemented.\", \"A reported appointment does not establish that it is current, matches this movement, or will be accepted at the gate.\"], \"missing_fields\": [\"terminal_id\", \"appointment_reported\"], \"owner\": \"dispatcher\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"apm_appointment\", \"source_clause_ids\": [\"reg_apm_appointment\"], \"status\": \"unresolved\", \"verification_needed\": [\"appointment_reported\"]}, {\"conflicting_fields\": [], \"evidence_basis\": \"user_reports_and_archived_sources_only\", \"evidence_ids\": [], \"execution_state\": \"not_implemented\", \"family\": \"terminal_access\", \"label\": \"Same-day transaction and gate release evidence\", \"limits\": [\"The pinned release contains no retained source clause that establishes same-day transaction or gate-release requirements.\", \"No live terminal transaction, gate, cargo-release, or admission integration is implemented. Reported release status cannot establish entry.\"], \"missing_fields\": [\"terminal_id\", \"transaction_release_reported\"], \"owner\": \"dispatcher\", \"reason_codes\": [\"EVALUATOR_NOT_IMPLEMENTED\", \"REQUIRED_FACTS_MISSING\"], \"reported_absences\": [], \"requirement_id\": \"transaction_release\", \"source_clause_ids\": [], \"status\": \"unresolved\", \"verification_needed\": [\"transaction_release_reported\"]}], \"limits\": [\"Synthetic development cases only; no operational entry or dispatch clearance.\", \"Reported facts are not authoritative verification, even when a reporter says verified.\", \"The catalog is incomplete; current policy, CDL, gate state and other duties remain outside executable coverage.\", \"Archived directions and bulletins do not establish legal access or current road conditions.\", \"Only APM induction has an executable evaluator, using server-owned synthetic fixtures.\"], \"mode\": \"synthetic_prototype_only\", \"next_questions\": [{\"field\": \"terminal_id\", \"kind\": \"missing_fact\", \"owner\": \"dispatcher\", \"question\": \"Which terminal is this trip going to?\", \"reason\": \"This fact is needed to determine requirement applicability or evidence readiness.\", \"requirement_ids\": [\"trip_context\", \"dimensions_and_route\", \"apm_induction\", \"apm_appointment\", \"transaction_release\"]}, {\"field\": \"route_id\", \"kind\": \"missing_fact\", \"owner\": \"carrier\", \"question\": \"What exact route is planned for this trip?\", \"reason\": \"This fact is needed to determine requirement applicability or evidence readiness.\", \"requirement_ids\": [\"axle_weight_evidence\", \"dimensions_and_route\", \"cross_authority_coverage\", \"current_route_conditions\"]}, {\"field\": \"semitrailer_length\", \"kind\": \"missing_fact\", \"owner\": \"carrier\", \"question\": \"What is the semitrailer length, including the unit?\", \"reason\": \"This fact is needed to determine requirement applicability or evidence readiness.\", \"requirement_ids\": [\"dimensions_and_route\"]}], \"operational_status\": \"unresolved_not_assessed\", \"requested_scope_status\": \"unresolved\", \"schema_version\": \"drayage-trip-assessment-v1\", \"service_status\": \"available\", \"versions\": {\"evidence\": \"7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108\", \"graph_release\": \"f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c\", \"implementation\": \"fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019\", \"model\": \"e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775\", \"requirement_catalog\": \"3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158\", \"synthetic_evidence\": \"32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d\"}, \"write_receipt\": {\"revision\": 1, \"trip_id\": \"syn-trip-2a5bf7abee4575e56badd2b5616f03c9\"}}",
+            "type": "text"
+          }
+        ],
+        "isError": false,
+        "structuredContent": {
+          "assessment_id": "2f7285145fe7ca6d3df4147c26d95610547ac071d230c53bb7c9bab39a6b59f9",
+          "case": {
+            "conflicts": [],
+            "facts": {
+              "cargo_hazardous": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": false
+              },
+              "gross_weight": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": "lb",
+                "value": 80000
+              },
+              "height": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": "inch",
+                "value": 168
+              },
+              "local_approval_reported": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": false
+              },
+              "permit_route_reported": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": true
+              },
+              "permit_type": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": "nj_single_trip"
+              },
+              "port_approval_reported": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": false
+              },
+              "port_street_in_route": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": true
+              },
+              "route_conditions_checked_at": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": "2026-08-24T04:00:00+00:00"
+              },
+              "route_description": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": "Port Street between Brewster Road and Marlin Street, then entering Port Authority or terminal-controlled roads"
+              },
+              "subject_role": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": "truck_driver"
+              },
+              "terminal_approval_reported": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": false
+              },
+              "trip_at": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": null,
+                "value": "2026-09-02T13:00:00+00:00"
+              },
+              "width": {
+                "basis": "user_reported",
+                "recorded_at": "2026-09-10T13:02:35+00:00",
+                "reported_by": "dispatcher",
+                "source_text": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2.",
+                "unit": "inch",
+                "value": 144
+              }
+            },
+            "invalidated_fields": [],
+            "mode": "synthetic_prototype_only",
+            "question_scope": "trip_dispatch",
+            "requester_role": "dispatcher",
+            "revision": 1,
+            "trip_id": "syn-trip-2a5bf7abee4575e56badd2b5616f03c9"
+          },
+          "coverage": {
+            "catalog_complete": false,
+            "complete_trip_check": false,
+            "executed_requirements": [
+              "apm_induction"
+            ],
+            "gaps": [
+              "catalog_incomplete",
+              "current_policy_not_verified",
+              "same_day_gate_status_not_verified"
+            ],
+            "not_executed_requirements": [
+              "trip_context",
+              "axle_weight_evidence",
+              "dimensions_and_route",
+              "permit_eligibility",
+              "cross_authority_coverage",
+              "current_route_conditions",
+              "dtr_registration_and_rfid",
+              "dtr_engine_policy",
+              "driver_twic",
+              "sealink_registration",
+              "apm_appointment",
+              "transaction_release"
+            ],
+            "selected_requirements": [
+              "trip_context",
+              "axle_weight_evidence",
+              "dimensions_and_route",
+              "permit_eligibility",
+              "cross_authority_coverage",
+              "current_route_conditions",
+              "dtr_registration_and_rfid",
+              "dtr_engine_policy",
+              "driver_twic",
+              "sealink_registration",
+              "apm_induction",
+              "apm_appointment",
+              "transaction_release"
+            ]
+          },
+          "findings": [
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "intake_only",
+              "family": "shared_trip_context",
+              "label": "Trip, terminal, and timing context",
+              "limits": [
+                "These facts select assessment scope; they do not establish dispatch, route, or entry clearance.",
+                "The catalog's terminal-specific evidence supports APM Elizabeth only. A missing terminal leaves applicability unresolved, and another terminal creates an unsupported-terminal coverage gap rather than an exemption.",
+                "The NJPASS-hosted route-review clause is retained evidence, but its official code-of-record currentness was not independently verified."
+              ],
+              "missing_fields": [
+                "terminal_id"
+              ],
+              "owner": "dispatcher",
+              "reason_codes": [
+                "TRIP_CONTEXT_INCOMPLETE"
+              ],
+              "reported_absences": [],
+              "requirement_id": "trip_context",
+              "source_clause_ids": [
+                "reg_nj_single_trip_route_review_13_18_portal_copy",
+                "reg_apm_safety_induction"
+              ],
+              "status": "unresolved",
+              "verification_needed": []
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "axle_weight",
+              "label": "Gross, axle, and spacing evidence",
+              "limits": [
+                "The federal clause is limited to the Interstate system and reasonable access; the New Jersey single-axle clause is limited to non-Interstate New Jersey roads.",
+                "Which limit applies depends on the exact roadway jurisdiction and route. This catalog implements no bridge-formula, axle-group, tire-load, or legal-weight calculator.",
+                "Gross weight, axle count, and reported axle weights or spacings do not by themselves establish compliance.",
+                "The NJPASS-hosted route-review clause is excluded from the verified graph because official code-of-record currentness was not independently verified."
+              ],
+              "missing_fields": [
+                "axle_weights",
+                "axle_spacings",
+                "axle_count",
+                "route_id"
+              ],
+              "owner": "carrier",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "axle_weight_evidence",
+              "source_clause_ids": [
+                "reg_federal_interstate_weight",
+                "reg_nj_noninterstate_single_axle",
+                "reg_nj_tandem_gross_bridge",
+                "reg_nj_single_trip_route_review_13_18_portal_copy"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "gross_weight",
+                "axle_weights",
+                "axle_spacings",
+                "route_id"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "dimensions_route",
+              "label": "Loaded dimensions and exact route access",
+              "limits": [
+                "Width limits depend on route-network status, and the cited local-access rule is expressly limited to a 102-inch-wide standard truck using unrestricted local roads by the direct route.",
+                "A road's absence from a listed network or restriction table establishes neither permission nor prohibition. Current local postings and every segment still require verification.",
+                "Published terminal directions and stored route topology are not legal route designation, bridge-clearance evidence, or navigable truck-route approval."
+              ],
+              "missing_fields": [
+                "overall_length",
+                "semitrailer_length",
+                "route_id",
+                "terminal_id"
+              ],
+              "owner": "carrier",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "dimensions_and_route",
+              "source_clause_ids": [
+                "reg_nj_width_limit",
+                "reg_nj_height_limit",
+                "reg_nj_semitrailer_length",
+                "reg_nj_truck_access_local_rule_preservation",
+                "reg_nj_access_network_600_series",
+                "reg_nj_terminal_access_102_inch_standard_truck"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "width",
+                "height",
+                "overall_length",
+                "semitrailer_length",
+                "route_id",
+                "route_description"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "permit_coverage",
+              "label": "Permit type and load eligibility evidence",
+              "limits": [
+                "Permit applicability depends on the load, dimensions, axle facts, trip time, and permit terms; no legal interpretation or permit-validity check is implemented.",
+                "The ocean-container sources concern sealed ocean-borne containers and do not make every container move eligible for that permit type.",
+                "The NJPASS-hosted permit clause is retained but excluded from the verified graph because official code-of-record currentness was not independently archived and compared.",
+                "A reported permit, including a reported-valid permit, is user-reported evidence and does not establish approval or route coverage."
+              ],
+              "missing_fields": [
+                "container_sealed",
+                "load_divisible"
+              ],
+              "owner": "carrier",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "permit_eligibility",
+              "source_clause_ids": [
+                "reg_nj_osow_permit_requirement_13_18_portal_copy",
+                "reg_nj_single_trip_osow_permit",
+                "reg_nj_ocean_container_permit"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "permit_type",
+                "permit_route_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "permit_coverage",
+              "label": "Cross-authority route and permit coverage",
+              "limits": [
+                "A New Jersey State permit does not establish approval for toll, county, local, Port Authority, or terminal-controlled segments.",
+                "Every reported approval requires verification from the responsible authority; a complete set of user reports is not cross-authority clearance.",
+                "The retained toll-road approval clause is excluded from the verified graph because official code-of-record currentness was not independently verified."
+              ],
+              "missing_fields": [
+                "route_id",
+                "turnpike_approval_reported"
+              ],
+              "owner": "authority",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [
+                "local_approval_reported",
+                "port_approval_reported",
+                "terminal_approval_reported"
+              ],
+              "requirement_id": "cross_authority_coverage",
+              "source_clause_ids": [
+                "reg_nj_toll_authority_approval_13_18_portal_copy",
+                "reg_nj_truck_access_local_rule_preservation",
+                "reg_panynj_terminal_traffic"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "permit_route_reported",
+                "turnpike_approval_reported",
+                "local_approval_reported",
+                "port_approval_reported",
+                "terminal_approval_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "current_route_conditions",
+              "label": "Current route postings and operating conditions",
+              "limits": [
+                "No live current-policy, posting, closure, lane, detour, escort, or route-condition integration is implemented.",
+                "The archived Port Street bulletin is a quarantined dated observation, not a source clause or proof of conditions on the trip date; it must be rechecked before operational use.",
+                "A user-reported check time does not verify the result, authority, route coverage, or continued currentness of that check."
+              ],
+              "missing_fields": [
+                "route_id"
+              ],
+              "owner": "authority",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "current_route_conditions",
+              "source_clause_ids": [
+                "reg_nj_truck_access_local_rule_preservation",
+                "reg_panynj_terminal_traffic"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "route_conditions_checked_at"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "dtr",
+              "label": "DTR registration and vehicle RFID evidence",
+              "limits": [
+                "No live PortTruckPass, DTR, ownership-amendment, or RFID lookup is implemented.",
+                "Reported DTR or RFID status is not registry verification and does not establish terminal entry."
+              ],
+              "missing_fields": [
+                "vehicle_id",
+                "dtr_reported",
+                "rfid_reported"
+              ],
+              "owner": "carrier",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "dtr_registration_and_rfid",
+              "source_clause_ids": [
+                "reg_panynj_dtr",
+                "reg_panynj_rfid"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "dtr_reported",
+                "rfid_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "dtr",
+              "label": "DTR engine-policy evidence and retained tariff conflict",
+              "limits": [
+                "The release preserves an unresolved internal tension between Subrules 34-1101 and 34-1140; the deadline clause is explicitly excluded from verified use.",
+                "This catalog does not reconcile the tariff, infer enforcement, or categorically approve or deny a truck from engine model year alone.",
+                "The 2014 engine language concerns completing DTR registration and must not be silently converted into a universal terminal-entry rule."
+              ],
+              "missing_fields": [
+                "vehicle_id",
+                "engine_model_year",
+                "dtr_reported"
+              ],
+              "owner": "carrier",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "dtr_engine_policy",
+              "source_clause_ids": [
+                "reg_panynj_dtr_engine",
+                "reg_panynj_drayage_truck_deadline_34_1140"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "dtr_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "terminal_access",
+              "label": "Driver TWIC evidence",
+              "limits": [
+                "The federal clause concerns unescorted access to regulated secure areas and retains its stated exceptions; this catalog does not determine whether an exception applies.",
+                "No live TSA or Port Authority credential verification is implemented. A reported TWIC is not verified access authorization."
+              ],
+              "missing_fields": [
+                "driver_id",
+                "twic_reported"
+              ],
+              "owner": "driver",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "driver_twic",
+              "source_clause_ids": [
+                "reg_federal_twic",
+                "reg_panynj_sealink_twic"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "twic_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "terminal_access",
+              "label": "SeaLink and TWIC registration evidence",
+              "limits": [
+                "No live SeaLink or TWIC-registration lookup is implemented.",
+                "Possession of an identifier and a reported registration do not establish current validity or terminal entry."
+              ],
+              "missing_fields": [
+                "driver_id",
+                "current_sealink_id",
+                "sealink_registered_reported",
+                "twic_reported"
+              ],
+              "owner": "driver",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "sealink_registration",
+              "source_clause_ids": [
+                "reg_panynj_sealink_twic"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "sealink_registered_reported",
+                "twic_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "server_owned_synthetic_records_not_live_driver_verification",
+              "evidence_ids": [],
+              "execution_state": "evaluated",
+              "family": "terminal_access",
+              "label": "APM safety induction tied to the current SeaLink",
+              "limits": [
+                "This is the only catalog requirement with an implemented check, and it uses server-owned synthetic evidence rather than a live training provider.",
+                "A matching synthetic result addresses only induction for the current SeaLink; it is not dispatch, route, permit, or terminal-entry clearance.",
+                "Archived policy is not verified as current for the trip, and synthetic assessment dates do not create a training-expiry rule.",
+                "No dispatch, entry, permit or route clearance is issued.",
+                "Archived policy has not been verified as current for this trip.",
+                "Synthetic evidence assessment dates are test controls, not a training expiry rule.",
+                "An out-of-scope check does not mean the person is exempt from other requirements."
+              ],
+              "missing_fields": [
+                "terminal_id",
+                "driver_id",
+                "current_sealink_id"
+              ],
+              "owner": "driver",
+              "reason_codes": [
+                "APPLICABILITY_FACT_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "apm_induction",
+              "source_clause_ids": [
+                "reg_apm_safety_induction",
+                "prototype_clause_induction_sealink_change"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "terminal_id"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "terminal_access",
+              "label": "APM gate appointment evidence",
+              "limits": [
+                "No live TERMPoint or terminal appointment lookup is implemented.",
+                "A reported appointment does not establish that it is current, matches this movement, or will be accepted at the gate."
+              ],
+              "missing_fields": [
+                "terminal_id",
+                "appointment_reported"
+              ],
+              "owner": "dispatcher",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "apm_appointment",
+              "source_clause_ids": [
+                "reg_apm_appointment"
+              ],
+              "status": "unresolved",
+              "verification_needed": [
+                "appointment_reported"
+              ]
+            },
+            {
+              "conflicting_fields": [],
+              "evidence_basis": "user_reports_and_archived_sources_only",
+              "evidence_ids": [],
+              "execution_state": "not_implemented",
+              "family": "terminal_access",
+              "label": "Same-day transaction and gate release evidence",
+              "limits": [
+                "The pinned release contains no retained source clause that establishes same-day transaction or gate-release requirements.",
+                "No live terminal transaction, gate, cargo-release, or admission integration is implemented. Reported release status cannot establish entry."
+              ],
+              "missing_fields": [
+                "terminal_id",
+                "transaction_release_reported"
+              ],
+              "owner": "dispatcher",
+              "reason_codes": [
+                "EVALUATOR_NOT_IMPLEMENTED",
+                "REQUIRED_FACTS_MISSING"
+              ],
+              "reported_absences": [],
+              "requirement_id": "transaction_release",
+              "source_clause_ids": [],
+              "status": "unresolved",
+              "verification_needed": [
+                "transaction_release_reported"
+              ]
+            }
+          ],
+          "limits": [
+            "Synthetic development cases only; no operational entry or dispatch clearance.",
+            "Reported facts are not authoritative verification, even when a reporter says verified.",
+            "The catalog is incomplete; current policy, CDL, gate state and other duties remain outside executable coverage.",
+            "Archived directions and bulletins do not establish legal access or current road conditions.",
+            "Only APM induction has an executable evaluator, using server-owned synthetic fixtures."
+          ],
+          "mode": "synthetic_prototype_only",
+          "next_questions": [
+            {
+              "field": "terminal_id",
+              "kind": "missing_fact",
+              "owner": "dispatcher",
+              "question": "Which terminal is this trip going to?",
+              "reason": "This fact is needed to determine requirement applicability or evidence readiness.",
+              "requirement_ids": [
+                "trip_context",
+                "dimensions_and_route",
+                "apm_induction",
+                "apm_appointment",
+                "transaction_release"
+              ]
+            },
+            {
+              "field": "route_id",
+              "kind": "missing_fact",
+              "owner": "carrier",
+              "question": "What exact route is planned for this trip?",
+              "reason": "This fact is needed to determine requirement applicability or evidence readiness.",
+              "requirement_ids": [
+                "axle_weight_evidence",
+                "dimensions_and_route",
+                "cross_authority_coverage",
+                "current_route_conditions"
+              ]
+            },
+            {
+              "field": "semitrailer_length",
+              "kind": "missing_fact",
+              "owner": "carrier",
+              "question": "What is the semitrailer length, including the unit?",
+              "reason": "This fact is needed to determine requirement applicability or evidence readiness.",
+              "requirement_ids": [
+                "dimensions_and_route"
+              ]
+            }
+          ],
+          "operational_status": "unresolved_not_assessed",
+          "requested_scope_status": "unresolved",
+          "schema_version": "drayage-trip-assessment-v1",
+          "service_status": "available",
+          "versions": {
+            "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+            "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+            "implementation": "fa9d32e74a73958c8182b1d88878f37c52ca6c45c9a0f5a3f322c8f26e4cc019",
+            "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+            "requirement_catalog": "3a52e1f1dde74f4e32965e52a1f07c42cb1fc3beba0854d71fff2be47135f158",
+            "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d"
+          },
+          "write_receipt": {
+            "revision": 1,
+            "trip_id": "syn-trip-2a5bf7abee4575e56badd2b5616f03c9"
+          }
+        }
+      }
+    },
+    "sequence": 3,
+    "surface": "mcp_client_not_yet_attributed_to_provider",
+    "validated_arguments": {
+      "as_received": {
+        "facts": {
+          "cargo_hazardous": false,
+          "gross_weight": {
+            "unit": "lb",
+            "value": 80000
+          },
+          "height": {
+            "unit": "ft",
+            "value": 14
+          },
+          "local_approval_reported": false,
+          "permit_route_reported": true,
+          "permit_type": "nj_single_trip",
+          "port_approval_reported": false,
+          "port_street_in_route": true,
+          "route_conditions_checked_at": "2026-08-24T00:00:00-04:00",
+          "route_description": "Port Street between Brewster Road and Marlin Street, then entering Port Authority or terminal-controlled roads",
+          "subject_role": "truck_driver",
+          "terminal_approval_reported": false,
+          "trip_at": "2026-09-02T09:00:00-04:00",
+          "width": {
+            "unit": "ft",
+            "value": 12
+          }
+        },
+        "question_scope": "trip_dispatch",
+        "request_key": "disp-req-2026-09-02-001",
+        "requester_role": "dispatcher",
+        "source_message": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2."
+      },
+      "normalized": {
+        "facts": {
+          "cargo_hazardous": false,
+          "gross_weight": {
+            "unit": "lb",
+            "value": 80000
+          },
+          "height": {
+            "unit": "ft",
+            "value": 14
+          },
+          "local_approval_reported": false,
+          "permit_route_reported": true,
+          "permit_type": "nj_single_trip",
+          "port_approval_reported": false,
+          "port_street_in_route": true,
+          "route_conditions_checked_at": "2026-08-24T00:00:00-04:00",
+          "route_description": "Port Street between Brewster Road and Marlin Street, then entering Port Authority or terminal-controlled roads",
+          "subject_role": "truck_driver",
+          "terminal_approval_reported": false,
+          "trip_at": "2026-09-02T09:00:00-04:00",
+          "width": {
+            "unit": "ft",
+            "value": 12
+          }
+        },
+        "question_scope": "trip_dispatch",
+        "request_key": "disp-req-2026-09-02-001",
+        "requester_role": "dispatcher",
+        "source_message": "Moving a nonhazardous container through Port Newark/Elizabeth to a marine terminal on Sept 2, 2026. Loaded tractor-semitrailer 80,000 lbs with certified legal axle weights, 12 ft wide, 14 ft 7 in high. Have NJ single-trip oversize permit covering listed state-route portions. Planned movement includes Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads. Saved NJPASS bulletin observed Aug 24 said Port Street had 11-ft lanes, oversize detours, southbound North Avenue exit requirement, and PAPD escort instruction until further notice. Have not checked whether bulletin, route-survey rule, escort instruction, permit route, or terminal handling approval is still current for Sept 2."
+      }
+    }
+  }
+]

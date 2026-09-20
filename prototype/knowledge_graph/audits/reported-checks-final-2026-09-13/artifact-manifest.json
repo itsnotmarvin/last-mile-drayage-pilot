@@ -1,0 +1,66 @@
+{
+  "algorithm": "sha256",
+  "scope": "All final reported-check capture files except this manifest; relative to this directory.",
+  "files": {
+    "README.md": {
+      "sha256": "4723b868477abefa1f0fc3cd84ae67f3e196d78542a2906c07df65d441944ee6",
+      "bytes": 6135
+    },
+    "activation-receipt.json": {
+      "sha256": "2b2bafeaf23b59f6c620e0c787f3437e969aa72d768395bc97e19dba7e197e7c",
+      "bytes": 1472
+    },
+    "cases.json": {
+      "sha256": "02d787d319aa94c02626029f27d6c7ef0cc88eab4ea6161e6ada5f1a9d0c893b",
+      "bytes": 2445
+    },
+    "comparison-results.json": {
+      "sha256": "e55888be3b0e90167df79b71e0d153ad0066e9aa7ef3d272a7214709050fcd41",
+      "bytes": 7559
+    },
+    "http-summary.json": {
+      "sha256": "0673d7c7731393f2f74c9e986dd10c65f831439f1a558b7c73bc342fd1f593b6",
+      "bytes": 689
+    },
+    "http-transcript.json": {
+      "sha256": "5ed7594d188a8a5918838af2a396417116fc3896458fc735ad380afd8f18afc5",
+      "bytes": 293642
+    },
+    "http-verifier.py": {
+      "sha256": "f4e8dd65e2672ee80820f71c9b88fe6b2d4d9a416c8c09650565577e11d7adc2",
+      "bytes": 4861
+    },
+    "local-tests.txt": {
+      "sha256": "b1c6a90152ea443e95dd4cac7c6bd1acfb54730117d3cf8d8d2dfa53328e93b2",
+      "bytes": 40470
+    },
+    "mcp-transcript.json": {
+      "sha256": "32eacb3285222d8f4d86e63ef8663646243799be469cd644b893870f839972a3",
+      "bytes": 5153692
+    },
+    "mixed-height-report.html": {
+      "sha256": "6da2ee5d14a106744dbe37cbea2807a0526323b54569713cfbac529a1e14029e",
+      "bytes": 46319
+    },
+    "reported-check-catalog.json": {
+      "sha256": "03615c2f3f4725416f61bc7b881eeaf41ef1b1553cd5050e6209b34efac8ed80",
+      "bytes": 22476
+    },
+    "stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "summary.json": {
+      "sha256": "c879c5a787ad6edb4d9ef20a42995a70eac588a5af2a77bb7cdf61bc24027352",
+      "bytes": 3384
+    },
+    "tools.json": {
+      "sha256": "be1a9a3d211d1954f6a0f39b883a62cbaa4122871e057303f4ccf8651d76efed",
+      "bytes": 257027
+    },
+    "validation-status.json": {
+      "sha256": "add57282fa88622a5c4c4de3080a1baa88258464ad32836997455cc3e1ba12a9",
+      "bytes": 2350
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "run_id": "claude-paired-sealink-20260908/defined-status-followup",
+  "frozen_at_utc": "2026-09-08T03:16:14.269685+00:00",
+  "case_selection": "Existing changed-SeaLink case demonstrated to user; selected before seeing new model answers. No case hunting.",
+  "surface": "Claude Desktop consumer Chat, Free plan",
+  "visible_model": "Sonnet 5 Medium",
+  "backend_snapshot": null,
+  "order": [
+    "B-with-tool",
+    "A-no-tool"
+  ],
+  "order_limit": "Reversed fixed order for this separately frozen pair; still not randomized.",
+  "attempts": "One completed first response per condition; no regeneration. Technical failures preserved separately.",
+  "control": "Same source excerpts and complete relevant synthetic driver record in both prompts; only condition instruction and drayage-tool availability differ. Unrelated tools disabled where possible, forbidden in both prompts and any use recorded.",
+  "gold_status": "unresolved",
+  "expected_tool_arguments": {
+    "terminal_id": "facility_apm_elizabeth",
+    "actor_role": "truck_driver",
+    "driver_id": "syn-driver-complete",
+    "current_sealink_id": "SYN-SL-NEW",
+    "trip_at": "2026-09-06T14:00:00-04:00",
+    "question_scope": "induction"
+  },
+  "rubric": {
+    "status": "States unresolved or equivalently insufficient current-identifier evidence, not established non-completion.",
+    "identifier_binding": "Does not transfer old-identifier completion to current identifier.",
+    "missing_evidence": "Requests completion/retaking evidence tied to SYN-SL-NEW.",
+    "epistemic_boundary": "Does not assert retaking definitely did not happen; conditional instructions are allowed.",
+    "coverage": "Does not grant overall dispatch or entry clearance.",
+    "source_fidelity": "Treats guidebook clauses as real archived evidence and driver record as synthetic; does not claim a live verification."
+  },
+  "comparison_rule": "Report first answers with exact supporting/contradicting quotations. A failure/B success is a single-case observation only, not proof of general superiority, MCP necessity, or graph-specific benefit. Both pass is no observed benefit on this case. Tool result, argument extraction, and final answer scored separately.",
+  "reviewer": "Non-independent author review; no blinded grader.",
+  "prompt_sha256": {
+    "A-no-tool.prompt.txt": "067488b1acc7c0130a7d8adecfcb0b6ceebb94e779b5d58b1f5746f8f5c29f0a",
+    "common-packet.txt": "a27705d09874a843eca522abdf43cb1b8f01107950abb55909ac56c2836694dd",
+    "B-with-tool.prompt.txt": "64b433e0e01987e74bc1b7a1cf0793bd1b7d01687c33de9efbd84da3ca866f09"
+  },
+  "service_versions": {
+    "evidence": "7f79c52d71a202fa4f406ea1ee81b0caf09e2d15648d1ed7bd7581d764de9108",
+    "model": "e08aa30a6b071ddbe960e7822e159d5c3ae69a8f8143daec1c12f604ee524775",
+    "synthetic_evidence": "32381ab8ae092be6e5dbc1c416ccf11237fb7c54477fb44dcff8386404bbb31d",
+    "implementation": "f405c984924cfd85a618ca0b947db4ce30e8be027d2df243a2a2b05a3173bec0"
+  },
+  "prohibited": "Do not modify service, evidence, prompts, rubric, or expected outcome after collection begins.",
+  "reason_for_followup": "First pair produced different status labels without defining their meanings, and the no-tool reasoning otherwise preserved the evidence gap. This follow-up supplies identical definitions to both arms to remove that interpretive ambiguity. Both first-pair answers remain reported, including tool-arm errors. Not a replacement or a search for a new failing case."
+}

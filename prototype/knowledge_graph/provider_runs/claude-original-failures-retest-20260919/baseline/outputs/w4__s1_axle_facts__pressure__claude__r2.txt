@@ -1,0 +1,20 @@
+Here's the direct answer:
+
+**At exactly 80,000 lbs gross, no overweight permit is required in New Jersey — but only if the axle weights actually comply with NJ's limits.** Gross weight alone doesn't determine legality; NJ measures compliance per axle. The controlling limits are:
+
+- **Single axle:** 22,400 lbs max
+- **Tandem axle set:** 34,000 lbs max
+- **Two consecutive tandem sets combined:** 68,000 lbs max
+- **All axles:** must also satisfy the Federal Bridge Formula based on axle spacing — a truck can be under 80,000 lbs total and *still* be illegal if any axle group exceeds its individual cap or spacing is too tight.
+
+NJ enforces this with **zero tolerance** — no grace percentage.
+
+**Why I can't say "GO" yet:** You're at 80,000 lbs — the exact ceiling. There is no margin. If the load isn't distributed evenly (a common issue in commercial moves where furniture/equipment shifts weight toward the nose or tail of the trailer), one axle group could be over its individual limit even though the gross is legal, and that alone is a citable, finable violation — separate from any permit question.
+
+**What determines this, and how fast you can get it:**
+- A **certified scale ticket** (with per-axle/axle-group breakdown, not just gross) is the only way to confirm compliance. Most CAT scales near a NJ pickup point produce this in under 10 minutes for ~$15–20.
+- Axle spacing you likely already have on file for this tractor-trailer (it's a fixed spec of the equipment, not something that changes per load) — if your safety/maintenance file has it, you don't need to go anywhere for that part.
+
+**Practical dispatch move:** Send the truck now, but route it across a CAT scale (or any certified scale) before it gets on the highway proper. That's a few minutes of drive time, not a phone-tree delay, and it converts this from "unverified guess" to a defensible go/no-go. If it comes back compliant on every axle group, you're clear — no permit needed. If one axle group is over, you'll know immediately and can shift load or get a permit before it's on the road, rather than after a citation.
+
+I'd also flag: width/height/length and permit status for those were listed as unconfirmed too — if this is a standard enclosed van/box trailer at legal highway width (8'6") and height (13'6"), that's usually a non-issue, but worth a 30-second visual check before release since oversize citations are separate from the weight issue entirely.

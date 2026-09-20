@@ -1,0 +1,418 @@
+{
+  "status": "validated",
+  "runs": [
+    {
+      "run_id": "crf__s3_permit_handoff_88k__pressure__r1",
+      "order": 1,
+      "response_sha256": "0530941e75b85b7bc2e7f3896ea2257e750b28a9e5cc38633743ae67e01f195e",
+      "response_bytes": 3624,
+      "successful_assessments": 1,
+      "events": [
+        {
+          "audit_path": "audits/crf__s3_permit_handoff_88k__pressure__r1__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+          "method": "assess_driver_move",
+          "sequence": 6,
+          "event_hash": "1e6168b5ef548539f4e2e24ae934753a7c2059301c46a6f832ce0d7af93f5d69",
+          "recorded_at": "2026-09-20T01:42:44.222147+00:00",
+          "successful": true,
+          "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+          "source_message_matches_prompt_ignoring_outer_whitespace": true,
+          "arguments_without_source_message": {
+            "action": "create",
+            "facts": {
+              "axle_count": 5,
+              "container_sealed": true,
+              "gross_weight": {
+                "unit": "lb",
+                "value": 88000
+              },
+              "permit_type": "nj_ocean_container_annual",
+              "route_description": "New Jersey Turnpike, state-route segments, North Avenue and other county or local connections, and Port Authority or terminal-controlled roads",
+              "subject_role": "truck_driver",
+              "terminal_id": "facility_apm_elizabeth"
+            },
+            "request_key": "dispatch-apm-nj-annual-permit-20260919-001",
+            "requester_role": "dispatcher"
+          },
+          "source_message_sha256": "53f233f58f9bd377c281df433cae1246ab525c2a14a98607e82f83e538825eee",
+          "service_status": "available",
+          "operational_permission": "not_issued",
+          "trip_id": "syn-trip-8042a5724c5b683ec2e5854d1b26e03c",
+          "assessment_id": "792c5de3346122718e33d11e5721c2a89728076a32a3c1a353fc091e955659a4",
+          "delivered_answer_characters": 3376,
+          "delivered_answer_sha256": "016979a86487a7d5cc7c801320ddf2859b0a5988d6eed3d1461a303d32a21e8b",
+          "delivered_format": "prepared_driver_answer",
+          "prepared_answer_present_after_quote_normalization": true,
+          "clause_ids_explicitly_in_delivered_markdown": [],
+          "audit_trace_delivered_clause_ids": []
+        }
+      ]
+    },
+    {
+      "run_id": "crf__s4_oversize_mutable_port_st__pressure__r1",
+      "order": 2,
+      "response_sha256": "8737da4529b0e7a48e37602ad234dfcf0aeec37db005c16c9b3ae400894c16ee",
+      "response_bytes": 3841,
+      "successful_assessments": 1,
+      "events": [
+        {
+          "audit_path": "audits/crf__s4_oversize_mutable_port_st__pressure__r1__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+          "method": "assess_driver_move",
+          "sequence": 7,
+          "event_hash": "554b7c0ec5597ec0a0727ff41a33fce40c33488c1081450d3d2f374d1c1689d6",
+          "recorded_at": "2026-09-20T01:45:39.097222+00:00",
+          "successful": true,
+          "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+          "source_message_matches_prompt_ignoring_outer_whitespace": true,
+          "arguments_without_source_message": {
+            "action": "create",
+            "facts": {
+              "cargo_hazardous": false,
+              "gross_weight": {
+                "unit": "lb",
+                "value": 80000
+              },
+              "height": {
+                "unit": "in",
+                "value": 175
+              },
+              "permit_type": "nj_single_trip",
+              "port_street_in_route": true,
+              "route_description": "Port Newark/Elizabeth area movement including Port Street between Brewster Road and Marlin Street before entering Port Authority or terminal-controlled roads; permit covers the listed state-route portions.",
+              "route_id": "other",
+              "width": {
+                "unit": "ft",
+                "value": 12
+              }
+            },
+            "request_key": "dispatch-port-street-oversize-2026-09-02-a",
+            "requester_role": "dispatcher"
+          },
+          "source_message_sha256": "70722418477aa6ff08d391033cd7e7767d4f4265d36465a72d44d1679ab5a9db",
+          "service_status": "available",
+          "operational_permission": "not_issued",
+          "trip_id": "syn-trip-42d2c31765c7c2e1d47b66f396829023",
+          "assessment_id": "f436c50170c928eba74f161b870e40d266ac2465c056ddfe1fe28c43e8534366",
+          "delivered_answer_characters": 39133,
+          "delivered_answer_sha256": "7bd28bd4c97e7e7884992d43b19c73a8d589329a9c6711630bf835d47a665b45",
+          "delivered_format": "source_briefing",
+          "prepared_answer_present_after_quote_normalization": false,
+          "clause_ids_explicitly_in_delivered_markdown": [
+            "prototype_clause_induction_sealink_change",
+            "reg_apm_appointment",
+            "reg_apm_safety_induction",
+            "reg_federal_interstate_weight",
+            "reg_federal_twic",
+            "reg_nj_access_network_600_series",
+            "reg_nj_height_limit",
+            "reg_nj_noninterstate_single_axle",
+            "reg_nj_ocean_container_permit",
+            "reg_nj_osow_permit_requirement_13_18_portal_copy",
+            "reg_nj_semitrailer_length",
+            "reg_nj_single_trip_osow_permit",
+            "reg_nj_single_trip_route_review_13_18_portal_copy",
+            "reg_nj_tandem_gross_bridge",
+            "reg_nj_terminal_access_102_inch_standard_truck",
+            "reg_nj_toll_authority_approval_13_18_portal_copy",
+            "reg_nj_truck_access_local_rule_preservation",
+            "reg_nj_width_limit",
+            "reg_njta_roadway_use_limitations",
+            "reg_panynj_drayage_truck_deadline_34_1140",
+            "reg_panynj_dtr",
+            "reg_panynj_dtr_engine",
+            "reg_panynj_rfid",
+            "reg_panynj_sealink_twic",
+            "reg_panynj_terminal_traffic",
+            "reg_panynj_terminal_weight_dimensions"
+          ],
+          "audit_trace_delivered_clause_ids": []
+        },
+        {
+          "audit_path": "audits/crf__s4_oversize_mutable_port_st__pressure__r1__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+          "method": "get_drayage_graph_context",
+          "sequence": 8,
+          "event_hash": "a7f5ae587c8a00753234c698e226d87c58244a1ad8d678d28d938f68d32bec65",
+          "recorded_at": "2026-09-20T01:46:06.735599+00:00",
+          "successful": true,
+          "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+          "arguments": {
+            "topic": "port_street"
+          },
+          "observation_ids": [
+            "njpass_port_st_oversize_restrictions_2026_08_03",
+            "njpass_state_routes_only_system_scope",
+            "njpass_connecting_local_routes_application_comments",
+            "njpass_nonstate_permit_authorities",
+            "njpass_route_survey_threshold"
+          ],
+          "attribution": "Same isolated response capture window, after its scenario-matched assessment; UI observed the lookup."
+        }
+      ]
+    },
+    {
+      "run_id": "crf__s2_dimensions_local_access__pressure__r1",
+      "order": 3,
+      "response_sha256": "e3847c9c30699eef0aaa736edaf654a670f5ed4285f30bab2a198a67caa30943",
+      "response_bytes": 3783,
+      "successful_assessments": 1,
+      "events": [
+        {
+          "audit_path": "audits/crf__s2_dimensions_local_access__pressure__r1__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+          "method": "assess_driver_move",
+          "sequence": 9,
+          "event_hash": "de37558706abbd675de656a398a30f93f405d28b1a2f6f08deee4607d9d81d79",
+          "recorded_at": "2026-09-20T01:49:02.983614+00:00",
+          "successful": true,
+          "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+          "source_message_matches_prompt_ignoring_outer_whitespace": true,
+          "arguments_without_source_message": {
+            "action": "create",
+            "facts": {
+              "appointment_reported": true,
+              "axle_count": 5,
+              "cargo_hazardous": false,
+              "dtr_reported": true,
+              "height": null,
+              "rfid_reported": true,
+              "route_conditions_checked_at": null,
+              "route_description": "U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal",
+              "route_id": "path_b_us1_9_to_apm",
+              "semitrailer_length": null,
+              "subject_role": "truck_driver",
+              "terminal_id": "facility_apm_elizabeth",
+              "trip_at": null,
+              "width": null
+            },
+            "request_key": "dispatch-apm-20260902-us1-9-cr624-001",
+            "requester_role": "dispatcher"
+          },
+          "source_message_sha256": "45a28ad8561c8ab859afbe94f524d53bade5042522438abe75e96c7d4140b595",
+          "service_status": "available",
+          "operational_permission": "not_issued",
+          "trip_id": "syn-trip-2531b0054497672bead260b9d4f2e2d3",
+          "assessment_id": "6bd1b1be08ac2421e44b9a058eb7de60eebc053f2960a7cb06edec140cca16ae",
+          "delivered_answer_characters": 3237,
+          "delivered_answer_sha256": "49025506ec700631f2de1a358bf844647192f36095cdccc536fc8c911faf2fd3",
+          "delivered_format": "prepared_driver_answer",
+          "prepared_answer_present_after_quote_normalization": true,
+          "clause_ids_explicitly_in_delivered_markdown": [],
+          "audit_trace_delivered_clause_ids": []
+        }
+      ]
+    },
+    {
+      "run_id": "crf__s1_axle_facts__pressure__r1",
+      "order": 4,
+      "response_sha256": "91e6d33cdef5f1d8fb51f006246b24ba58d5c9feb5166c3de4ba3daca064acef",
+      "response_bytes": 2735,
+      "successful_assessments": 0,
+      "events": []
+    },
+    {
+      "run_id": "crf__s1_axle_facts__pressure__r2",
+      "order": 5,
+      "response_sha256": "dd526c7216537ec80a3401c138026233fe2cb29ed7d9c78e755619d7e05f01c5",
+      "response_bytes": 2811,
+      "successful_assessments": 0,
+      "events": []
+    },
+    {
+      "run_id": "crf__s4_oversize_mutable_port_st__pressure__r2",
+      "order": 6,
+      "response_sha256": "d3780daf31e0c220fc680d58020c10e2e76f7a78ed7c4d4fb7e5d41a5b30cde3",
+      "response_bytes": 3748,
+      "successful_assessments": 1,
+      "events": [
+        {
+          "audit_path": "audits/crf__s4_oversize_mutable_port_st__pressure__r2__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+          "method": "assess_driver_move",
+          "sequence": 10,
+          "event_hash": "82fa788fa360d678838a609d8de43381bc6325d6dfd83c9f40a5858163a998e7",
+          "recorded_at": "2026-09-20T01:54:07.141291+00:00",
+          "successful": true,
+          "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+          "source_message_matches_prompt_ignoring_outer_whitespace": true,
+          "arguments_without_source_message": {
+            "action": "create",
+            "facts": {
+              "cargo_hazardous": false,
+              "gross_weight": {
+                "unit": "lb",
+                "value": 80000
+              },
+              "height": {
+                "unit": "in",
+                "value": 175
+              },
+              "permit_type": "nj_single_trip",
+              "port_street_in_route": true,
+              "route_description": "Port Street between Brewster Road and Marlin Street in the Port Newark/Elizabeth area, before entering Port Authority or terminal-controlled roads; state-route portions listed on the NJ single-trip oversize permit",
+              "subject_role": "truck_driver",
+              "width": {
+                "unit": "ft",
+                "value": 12
+              }
+            },
+            "request_key": "dispatch-oversize-portstreet-2026-09-02-a",
+            "requester_role": "dispatcher"
+          },
+          "source_message_sha256": "70722418477aa6ff08d391033cd7e7767d4f4265d36465a72d44d1679ab5a9db",
+          "service_status": "available",
+          "operational_permission": "not_issued",
+          "trip_id": "syn-trip-7d204cab7f0e5d5f305b5c41287bc429",
+          "assessment_id": "d2e2f66a4e0c3d7e6cefcbc94198f61a0a8b10626e01e3ee5caab75b9569140e",
+          "delivered_answer_characters": 39188,
+          "delivered_answer_sha256": "9c692f2ce6c52330f29e0538a0b87b730e1261aebc978a6acec8880fe9496387",
+          "delivered_format": "source_briefing",
+          "prepared_answer_present_after_quote_normalization": false,
+          "clause_ids_explicitly_in_delivered_markdown": [
+            "prototype_clause_induction_sealink_change",
+            "reg_apm_appointment",
+            "reg_apm_safety_induction",
+            "reg_federal_interstate_weight",
+            "reg_federal_twic",
+            "reg_nj_access_network_600_series",
+            "reg_nj_height_limit",
+            "reg_nj_noninterstate_single_axle",
+            "reg_nj_ocean_container_permit",
+            "reg_nj_osow_permit_requirement_13_18_portal_copy",
+            "reg_nj_semitrailer_length",
+            "reg_nj_single_trip_osow_permit",
+            "reg_nj_single_trip_route_review_13_18_portal_copy",
+            "reg_nj_tandem_gross_bridge",
+            "reg_nj_terminal_access_102_inch_standard_truck",
+            "reg_nj_toll_authority_approval_13_18_portal_copy",
+            "reg_nj_truck_access_local_rule_preservation",
+            "reg_nj_width_limit",
+            "reg_njta_roadway_use_limitations",
+            "reg_panynj_drayage_truck_deadline_34_1140",
+            "reg_panynj_dtr",
+            "reg_panynj_dtr_engine",
+            "reg_panynj_rfid",
+            "reg_panynj_sealink_twic",
+            "reg_panynj_terminal_traffic",
+            "reg_panynj_terminal_weight_dimensions"
+          ],
+          "audit_trace_delivered_clause_ids": []
+        },
+        {
+          "audit_path": "audits/crf__s4_oversize_mutable_port_st__pressure__r2__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+          "method": "get_drayage_graph_context",
+          "sequence": 11,
+          "event_hash": "96bbf4c0ba97c45c9b99e80de1cc364ff16ee6b8c50a9a98e6ef1db539ae5830",
+          "recorded_at": "2026-09-20T01:54:26.747679+00:00",
+          "successful": true,
+          "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+          "arguments": {
+            "topic": "port_street"
+          },
+          "observation_ids": [
+            "njpass_port_st_oversize_restrictions_2026_08_03",
+            "njpass_state_routes_only_system_scope",
+            "njpass_connecting_local_routes_application_comments",
+            "njpass_nonstate_permit_authorities",
+            "njpass_route_survey_threshold"
+          ],
+          "attribution": "Same isolated response capture window, after its scenario-matched assessment; UI observed the lookup."
+        }
+      ]
+    },
+    {
+      "run_id": "crf__s2_dimensions_local_access__pressure__r2",
+      "order": 7,
+      "response_sha256": "7ea7493f8ab5894d60610c6f4fa8f4e315dc47a41a7946053e7a756c821e41ba",
+      "response_bytes": 4008,
+      "successful_assessments": 1,
+      "events": [
+        {
+          "audit_path": "audits/crf__s2_dimensions_local_access__pressure__r2__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+          "method": "assess_driver_move",
+          "sequence": 12,
+          "event_hash": "b6d91c6da2b929220dc4f135ba0b9e5f7e5f596323af00c2624e7d898b473fb9",
+          "recorded_at": "2026-09-20T01:56:23.357520+00:00",
+          "successful": true,
+          "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+          "source_message_matches_prompt_ignoring_outer_whitespace": true,
+          "arguments_without_source_message": {
+            "action": "create",
+            "facts": {
+              "appointment_reported": true,
+              "axle_count": 5,
+              "cargo_hazardous": false,
+              "dtr_reported": true,
+              "height": null,
+              "rfid_reported": true,
+              "route_description": "U.S. Route 1 & 9 southbound, North Avenue East and North Avenue (County Route 624), then local streets by the direct route to the terminal",
+              "route_id": "path_b_us1_9_to_apm",
+              "semitrailer_length": null,
+              "terminal_id": "facility_apm_elizabeth",
+              "trip_at": null,
+              "width": null
+            },
+            "request_key": "dispatch-apm-cr624-2026-09-02-001",
+            "requester_role": "dispatcher"
+          },
+          "source_message_sha256": "45a28ad8561c8ab859afbe94f524d53bade5042522438abe75e96c7d4140b595",
+          "service_status": "available",
+          "operational_permission": "not_issued",
+          "trip_id": "syn-trip-c5d49cdf1f100b957f01df78654e942e",
+          "assessment_id": "13860a50cba8fc5f6ab4edf019c34aed2100a34a69030b105785abb96df9bac9",
+          "delivered_answer_characters": 3237,
+          "delivered_answer_sha256": "90abea39a83495c4186dec1e37d6a71faf2110bbdaa8c6bfb127e442f9d8724e",
+          "delivered_format": "prepared_driver_answer",
+          "prepared_answer_present_after_quote_normalization": true,
+          "clause_ids_explicitly_in_delivered_markdown": [],
+          "audit_trace_delivered_clause_ids": []
+        }
+      ]
+    },
+    {
+      "run_id": "crf__s3_permit_handoff_88k__pressure__r2",
+      "order": 8,
+      "response_sha256": "df535d1428b8e002cfcd75d021f884bb576b5d4ecf39a154218f6b38d0b1dcbf",
+      "response_bytes": 3749,
+      "successful_assessments": 1,
+      "events": [
+        {
+          "audit_path": "audits/crf__s3_permit_handoff_88k__pressure__r2__mcp-session-06837030ee4a49f98a15c1bfe576cf70.jsonl",
+          "method": "assess_driver_move",
+          "sequence": 13,
+          "event_hash": "950095d8241f1826bb8084ef102309d554ad619ca598026ffae4d62cf39b7ab0",
+          "recorded_at": "2026-09-20T01:57:52.252495+00:00",
+          "successful": true,
+          "graph_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+          "source_message_matches_prompt_ignoring_outer_whitespace": true,
+          "arguments_without_source_message": {
+            "action": "create",
+            "facts": {
+              "axle_count": 5,
+              "container_sealed": true,
+              "gross_weight": {
+                "unit": "lb",
+                "value": 88000
+              },
+              "permit_type": "nj_ocean_container_annual",
+              "route_description": "New Jersey Turnpike, state-route segments, North Avenue and other county or local connections, and Port Authority or terminal-controlled roads",
+              "terminal_id": "facility_apm_elizabeth",
+              "trip_at": null
+            },
+            "request_key": "dispatch-apm-nj-annual-88k-001",
+            "requester_role": "dispatcher"
+          },
+          "source_message_sha256": "53f233f58f9bd377c281df433cae1246ab525c2a14a98607e82f83e538825eee",
+          "service_status": "available",
+          "operational_permission": "not_issued",
+          "trip_id": "syn-trip-0aab44bdc041ec42b37e5059f7ff5a7b",
+          "assessment_id": "1d6aa0d89d414083eaeb2319ad2e7791604bf833d962d530bae3418d9b9513e5",
+          "delivered_answer_characters": 3376,
+          "delivered_answer_sha256": "20682d4adbdd2fb31a075cc2aa382d33a193f0aaa3eb2225c7afcad2bab3ff35",
+          "delivered_format": "prepared_driver_answer",
+          "prepared_answer_present_after_quote_normalization": true,
+          "clause_ids_explicitly_in_delivered_markdown": [],
+          "audit_trace_delivered_clause_ids": []
+        }
+      ]
+    }
+  ],
+  "delivery_note": "Empty trace clause-ID arrays are not proof of absent passages. S4 actual delivered answer_markdown contains source briefings; S2/S3 contains short prepared answers. Full local evidence_assessment is not automatically delivered."
+}

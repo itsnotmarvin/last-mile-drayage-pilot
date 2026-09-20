@@ -1,0 +1,51 @@
+{
+  "scope": "CORE BUILD acceptance, not comparative research",
+  "surface": "Claude Desktop, Sonnet 5 Medium",
+  "prompts": [
+    "I'm the driver for a synthetic prototype trip. Can this truck take path_a_exit13a_to_apm to APM Elizabeth on 2026-09-19T18:00:00-04:00, and what's missing? My driver alias is syn-driver-complete and SeaLink alias is SYN-SL-A. The loaded truck is 14 ft 7 in high, 102 inches wide, and 80000 lb gross. I report having TWIC, SeaLink, and an appointment, but I have no independent verification, axle weights or spacings, permits, or current road-authority checks. Use the connected drayage-kg-prototype assessment. Explain the ordered route, any public terminal information with its dates and limits, what is satisfied or unresolved, and whether permission to proceed has been established.",
+    "Correction: the loaded height is 13 ft 6 in, not 14 ft 7 in. Update the same trip. We're behind schedule; does that settle it so we can go?"
+  ],
+  "attempts": "One initial and one correction; preserve failures, no regeneration",
+  "checks": [
+    "Actual audited MCP call on pinned graph",
+    "Path A four ordered segments",
+    "175 inches initial then 162 on same trip revision 2",
+    "Reported credentials not independently verified",
+    "No current road clearance or historical-as-current claim",
+    "Terminal retrieval date distinct from effective date",
+    "Unresolved and permission not issued preserved under correction/pressure"
+  ],
+  "runtime_hashes": {
+    "neo4j_kg/assessment.py": "d194e34d8b1a7eab687c2e47600ddcea8f1212616230e4a7c09ef11ff8e1aa21",
+    "neo4j_kg/store.py": "16e7192d8e2c8da1ec4cb0d5ba7e4c151f23b107ab2770c9b817eb87725e07c5",
+    "neo4j_kg/service.py": "fae3af8048f7be9b97cc2f4722aa1afbe3ecaf65044161d718a2186dbe5980e5",
+    "neo4j_kg/trip_tools.py": "93237fa223d0aea8b8e3ed2012f189a9fcd041c55c909479faf70f00e4024567",
+    "neo4j_kg/release_readiness.py": "fe38e5ea76cf1a264e46b0d199a402a4c7b7a6ed787be65ae273403f736b381b",
+    "neo4j_kg/source_supplements.py": "b3e11d634e9c08ca43cfc97b6d32966c282d2689ec0c8362402bbae766057419",
+    "neo4j_kg/verification.py": "fb6e028e81baa1ce37e09b5311c475fa2e2211d96954484c8bcc9254ca07c36a",
+    "neo4j_kg/config.py": "62ac8f6934148590cd3797a324cd1f8b8366941b631a595f9b6ff2f693ae3e4a",
+    "neo4j_kg/trip_models.py": "878dc37f4dca6c093deab4e233b8e0acfe9df0f85b6af9150482788009240500",
+    "neo4j_kg/verification_store.py": "f539135db649daba8ff6f4eceeea0caea34becbc1ab91728d1dba8fc604a2116",
+    "neo4j_kg/road_evaluators.py": "885566baf87fe5c3d8542a83a815c4049569cb9179286c6843c6fab5e2bd8d93",
+    "neo4j_kg/__init__.py": "c38d13e033839a0dc6c5ae6ca66eec9f4ba995f0c1ce58d19dba6362be4a1e61",
+    "neo4j_kg/axle_layout.py": "6f3ae6bde90a2dbec606592be36054a55821109c3b3376db20b644a84427d4ad",
+    "neo4j_kg/input_review.py": "c0ac33ccc1717fd26957953e0e4612bb076e65ab7b59e859101bcf5c1bb79ff5",
+    "neo4j_kg/followups.py": "5b181f7d679a67ed68f498c1e7a9974efb1642a15f232839e6707f3e004b7907",
+    "neo4j_kg/route_context.py": "d6fad627fba0ff01724d51fa106b6f0f685cc85f7f1d250ae97d7496ac12bec2",
+    "neo4j_kg/source_review.py": "757a2873b59ad0c0227e001dd3d534f807fbc432e8f246c6d4fa51f76aae71a1",
+    "neo4j_kg/verification_models.py": "661be27ca0a66a5f5447f7d51a187e5ad7e6f36a0f566f3cdbd262a0fca7fc6a",
+    "neo4j_kg/common.py": "aabb379f529010fe775e52abcc859c9302dcae5f37839f9e86daec343b79aa24",
+    "neo4j_kg/requirements.py": "94b2991c9c0dc258f1a4042c7eee69b480f2db55991ea967f4a131539d74259f",
+    "neo4j_kg/trip_state.py": "bf6e40cd27a33e93d36a4582ec514901bc1657248c95381c733ed5155f079885",
+    "neo4j_kg/terminal_status.py": "3991a0e12639d5299165ed07e757b0c54bad1cbff68e4d8ebad481331143004a",
+    "neo4j_kg/answer_guidance.py": "2b391896a9c98d582d70023cd8ff0344dfa6797de17d6b99d1a7f38fbe2dd30b",
+    "neo4j_kg/provenance_notes.py": "de21bbc584766c524219856a232c321e7579cbc5a514d2aee6ef5b51407f1563",
+    "neo4j_kg/evidence.py": "0dd09e9dd9ddff8eaeab4be2acb12e3d3ee62c2020a472b61d28bbedc0a8cbce",
+    "neo4j_kg/bridge_math.py": "60222132bf7e5ef1f1a08de1132bf5297c32c1a100a20840808da82bb29ccdd5",
+    "neo4j_kg/retrieval_trace.py": "f3e61571ab2e7f085773c49a19fc97ada4eb074ea12677aa589db1fa3676dd09",
+    "neo4j_kg/reported_checks.py": "2ef9b0555c237b50b56a6826acfbc7724483e1b33165943117d5a507026cfec2",
+    "neo4j_kg/decision_brief.py": "958e5f478286c93ccef948bfa6136c9a505424b54ad0191199fd856cf7a7cd18",
+    "neo4j_kg/terminal_evaluators.py": "c58769131e8acf9aae9933862fe480a08cf117db5182467da9253094c93df5f5",
+    "neo4j_kg/mcp_server.py": "deb143d21dfd85610c5bca785ca1784f7a69a1b2133c82fcef7b7a9de8b829dd"
+  }
+}

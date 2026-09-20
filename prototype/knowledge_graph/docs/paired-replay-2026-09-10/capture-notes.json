@@ -1,0 +1,12 @@
+{
+  "surface": "Claude Desktop native incognito",
+  "model": "Sonnet 5 Medium",
+  "answer_capture": "Manually transcribed from complete native accessibility paragraph/list text. Paragraph spans rejoined and list whitespace normalized; not a raw clipboard export.",
+  "prompt_capture": "Frozen exact submitted strings retained separately; native rich-text composer may normalize blank paragraphs.",
+  "account_switch": "First quota-interrupted attempt kept separate; four completed conditions planned under the user-switched account. No identifiers recorded.",
+  "app_restart": {
+    "recorded_at_utc": "2026-09-10T12:59:56.122583+00:00",
+    "reason": "Accessibility state and screenshot disagreed during incognito navigation; clipboard attempts timed out. No pressure-condition tool execution occurred before restart. Restarted app, kept same model and runtime; then submitted pressure prompt in verified incognito."
+  },
+  "additional_navigation_issue": "Repeated stale incognito controls before S4 neutral; no neutral prompt execution occurred during the failed navigation. App restart attempted to restore consistent controls."
+}

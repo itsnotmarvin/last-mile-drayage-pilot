@@ -1,0 +1,24 @@
+{
+  "schema_version": "drayage-source-review-v1",
+  "baseline_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "candidate_release": "f5dffe0f7a32b5144920efb5a644f8c4dc9f20def76b4217c38b0cdbc454cf5c",
+  "status": "no_change",
+  "operational_use": false,
+  "automatic_activation": false,
+  "changed_record_ids": [],
+  "changed_source_ids": [],
+  "changed_clause_ids": [],
+  "changed_file_paths": [],
+  "changed_relationship_ids": [],
+  "unattributed_file_paths": [],
+  "changed_release_metadata_keys": [],
+  "graph_context_changed": false,
+  "affected_requirements": [],
+  "affected_reported_check_ids": [],
+  "required_actions": [],
+  "limits": [
+    "A no-change comparison establishes equality of the supplied releases, not current law.",
+    "Graph-context or unattributed file changes deliberately require broad review.",
+    "This command never changes Neo4j, source files, connector configuration or operational permission."
+  ]
+}

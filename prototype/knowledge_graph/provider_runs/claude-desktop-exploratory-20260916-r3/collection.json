@@ -1,0 +1,8 @@
+{
+  "started_at": "2026-09-17T01:37:54.438885+00:00",
+  "surface": "Claude Desktop existing five-tool connector",
+  "purpose": "Post-change exploratory replication; no approval or safety rate",
+  "prior_run": "provider_runs/claude-desktop-exploratory-20260916-r2",
+  "change": "Added qualified answer_guidance and exact source_message instruction; app bridge not attached",
+  "prompts": "Unchanged frozen r2 prompts; no researcher answer retries"
+}

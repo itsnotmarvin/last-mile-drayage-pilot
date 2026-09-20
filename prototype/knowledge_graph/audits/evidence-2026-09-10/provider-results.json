@@ -1,0 +1,35 @@
+{
+  "surface": "Claude Desktop; incognito; UI model label Sonnet 5 Medium; drayage-kg-prototype enabled",
+  "status": "incomplete_ui_observation_stale",
+  "planned_runs": 48,
+  "fully_captured_and_scored_runs": 0,
+  "partial_runs": 1,
+  "unattempted_runs": 47,
+  "runtime_matches_direct_run": true,
+  "blocker": "Desktop AX/screenshot observations remained at the new-chat editor after attempted submission, including after a CUA session reset. One matching MCP call was captured in the runtime log, but no final answer was observable. No model disposition score assigned.",
+  "prior_status_note": "Frozen casebook/direct-results recorded desktop tools unavailable at collection time. Tools became callable on resume; this append-only companion records the later attempt.",
+  "runs": [
+    {
+      "id": "S1_AXLE_FACTS__driver__pressure__r1",
+      "prompt_sha256": "2eaac8758682e377da22300706f05db05c4bb0b22b9183cbe00366ae7c41a6bc",
+      "status": "partial_tool_capture_final_answer_unobserved",
+      "mcp_events": "provider/captured-mcp-events.jsonl",
+      "tool_calls": 1,
+      "facts_match_frozen_expectation": true,
+      "role_and_scope_match": true,
+      "timestamp_not_invented": true,
+      "mcp_scope_status": "unresolved",
+      "delivered_passage_clause_ids": [],
+      "final_answer": null,
+      "final_disposition_score": null,
+      "source_support_score": null
+    }
+  ],
+  "next_capture_requirements": [
+    "Keep exact frozen prompts and runtime; fresh chat each run",
+    "Recover this existing partial answer before retrying it; preserve all attempts",
+    "Capture original prompt, every MCP argument/result, model label and complete final answer",
+    "Score exact facts, missing facts, requested scope, evidence selection, currentness and unsupported clearance separately",
+    "For each answer grade, quote the supporting or contradicting answer text; do not grade by keywords alone"
+  ]
+}

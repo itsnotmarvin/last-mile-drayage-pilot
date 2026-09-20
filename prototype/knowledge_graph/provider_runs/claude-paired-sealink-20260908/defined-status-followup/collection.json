@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-09-08T03:24:05.345149+00:00",
+  "order": [
+    "B-with-tool",
+    "A-no-tool"
+  ],
+  "completed_responses": 2,
+  "graph_events_since_initial_precollection": 2,
+  "audit_snapshots_after_A": {
+    "mcp-session-b182796809a94bb7b2b217638350efbd.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "mcp-session-2fe88b7214684e5a80900dc818032b27.jsonl": {
+      "bytes": 17776,
+      "sha256": "a0fd2f8506c6399864e564c71e66356927ec6404bd184c57ced78d712e2bc051"
+    },
+    "mcp-session-72aac2edca55425fb9f9fb9e9b094052.jsonl": {
+      "bytes": 52907,
+      "sha256": "2bb05a52e5cc55129b6961a32e3ad67660c6730db668c833b2483b9da2fadb88"
+    },
+    "mcp-session-b3d214d1401b4016b5e1d5830745acff.jsonl": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "B_UI_arguments_match_captured_event": true,
+  "A_UI_tool_cards": 0,
+  "A_connectors": "All 12 off; web search off; verified before submission",
+  "transcription": "Visible accessibility text; paragraph/formatting whitespace normalized, not raw provider Markdown. UI evidence in assistant tool transcript, no screenshot files bundled.",
+  "incident": "Free-plan limit dialog appeared after A submission. Dismissing it revealed a complete first answer. No retry or regeneration. Earlier interim report incorrectly inferred blocking and was corrected immediately."
+}

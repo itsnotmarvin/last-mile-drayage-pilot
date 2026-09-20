@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-09-17T01:40:34.179Z",
+  "tool_call_id": "call_aQBkWDCA8Cf5mi1QVTLXs5tt",
+  "arguments": {
+    "code": "await claude.click(167); await claude.getAXState();",
+    "title": "Record how Claude handled oversized tool result"
+  },
+  "source_thread": "db2f55fe-c183-42b0-874a-f41de3d4e9b4",
+  "provenance": "Exact completed CUA result recovered from local provider event log. Accessibility text can truncate individual elements; screenshots and streaming observations supplement it."
+}

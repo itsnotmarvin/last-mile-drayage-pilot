@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-13T00:05:47.090980+00:00",
+  "surface": "Claude Desktop startup and native connector UI; no model prompt sent",
+  "connector": "drayage-kg-prototype",
+  "ui_enabled": true,
+  "ui_returned_to_empty_new_chat": true,
+  "configuration_modified": false,
+  "runtime_matches_verified_fix": true,
+  "implementation": "e0fc2cb7f6bf4846d4747fc186ff1f77a7c9d4b3924eedb4f059ddbb9af1290f",
+  "startup_log_events": [
+    "2026-09-13T00:04:00.255Z [drayage-kg-prototype] [info] Server started and connected successfully { metadata: undefined }",
+    "2026-09-13T00:04:00.381Z [drayage-kg-prototype] [info] Message from client: method=\"initialize\" id=0 params { metadata: undefined }",
+    "2026-09-13T00:04:00.679Z [drayage-kg-prototype] [info] Message from server: id=0 result { metadata: undefined }",
+    "2026-09-13T00:04:00.710Z [drayage-kg-prototype] [info] Message from client: method=\"notifications/initialized\" { metadata: undefined }",
+    "2026-09-13T00:04:00.713Z [drayage-kg-prototype] [info] Message from client: method=\"tools/list\" id=1 params { metadata: undefined }",
+    "2026-09-13T00:04:00.716Z [drayage-kg-prototype] [info] Message from server: id=1 result { metadata: undefined }"
+  ],
+  "limits": [
+    "Startup handshake and tool discovery only; no new assessment call or Claude answer was captured.",
+    "Desktop logs summarize responses; exact initialization/tool-schema payloads are in the separately captured live stdio backend audit."
+  ]
+}

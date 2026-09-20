@@ -1,0 +1,38 @@
+Capture method: transcription of the complete visible answer from Claude Desktop's accessibility tree. Paragraph/list formatting normalized; this is not a raw provider export. Original conversation: https://claude.ai/chat/f3a186ca-04ec-42cc-b8e1-294ed77e5b19
+
+Here's the assessment for this synthetic trip (trip_id syn-trip-51901aa9225116a7024edb3586775207, revision 1).
+
+Bottom line: Permission has not been established. This is not a finding that the trip is illegal — it's simply that nothing in this system has verified the trip is clear to run. Every category below remains "unresolved."
+
+Ordered route (path_a_exit13a_to_apm), as resolved from the pinned graph:
+1. FR NJ Turnpike SB to NJ 81 NB (Turnpike connector, jurisdiction: City of Elizabeth / Union County)
+2. North Avenue (county road)
+3. McLester Street (municipal)
+4. Tripoli Street → ends at APM Terminals Elizabeth
+
+This is candidate structure from the graph only — not a verified or legally designated route. You'd need to explicitly confirm this is your intended path (no deviations) and separately report whether Port Street is anywhere in your actual route, since it can't be inferred from this topology.
+
+Public terminal information retrieved (APM Elizabeth), with dates/limits:
+- Retrieved 2026-09-19; latest dated notice heading is "Short-Term Vessel Schedule 9/18/26."
+- A closure excerpt reads "APM Terminals Elizabeth will be closed Mon. 9/7 in observance of Labor Day" — this is an undated-currentness page excerpt, not confirmation of today's (9/19) status.
+- Row/street closures list (B400–B800, G050, G100, etc.) is present but has no stated effective date.
+- Gate indicators (happiness index, live cameras, turn times) are listed as present but no gate-status text was found.
+- None of this is dispatch, entry, or route clearance — it's dated operating context only, and its currentness for your trip time is unknown.
+
+Reported-fact comparisons (comparisons only, not legal findings):
+- Height 175 in vs. NJ statewide 162 in baseline → above by 13 in (flagged for attention)
+- Width 102 in vs. NJ 102 in national-network baseline → at reference (comparison only)
+- Width 102 in vs. NJ 96 in local-road baseline → above by 6 in (flagged for attention)
+- Gross weight 80,000 lb vs. federal Interstate 80,000 lb and NJ 80,000 lb baselines → at reference (comparison only; bridge formula could still require less)
+- Height/width vs. PANYNJ terminal over-dimensional triggers (195 in / 132 in) → below both (comparison only)
+- Gross weight vs. PANYNJ containerized ceiling (128,000 lb) → below (comparison only)
+
+None of these establishes compliance or clearance — applicability, jurisdiction, exceptions, and permits are all still open.
+
+What's satisfied vs. unresolved:
+- Nothing is marked "met" except two narrow scope checks (trip is scoped to APM Elizabeth).
+- Unresolved requirements: trip context, axle/gross weight evidence, dimensions & route, permit eligibility, cross-authority coverage, current route conditions, DTR registration & RFID, DTR engine policy (with an unresolved internal tariff conflict between Subrules 34-1101/34-1140), driver TWIC, SeaLink registration, APM induction, APM appointment, and transaction/release.
+- Your reports (TWIC, SeaLink, appointment) are logged as reported, not verified — no operator-owned verification receipts exist for any of them.
+- You're missing several facts entirely: vehicle/trailer/load IDs, semitrailer length, axle layout/spacings, move ID/type, permit type, and confirmation of the exact route/Port Street membership.
+
+Operational permission: not issued. Priority next steps flagged by the system: confirm/resolve the loaded height and route exceptions, and verify the width against the applicable road-network category with the carrier and road authorities.

@@ -1,0 +1,32 @@
+{
+  "surface": "Local unit-test fixtures and injected failures; no live Neo4j mutation or outage induced",
+  "source": "unit-tests-final.txt",
+  "suite_test_count": 209,
+  "suite_passed": true,
+  "selected_checks": [
+    "test_empty_expectations_do_not_claim_perfect_recall (test_evidence_audit.EvidenceCoverageTests.test_empty_expectations_do_not_claim_perfect_recall) ... ok",
+    "test_extra_or_duplicate_passages_cannot_replace_missing_evidence (test_evidence_audit.EvidenceCoverageTests.test_extra_or_duplicate_passages_cannot_replace_missing_evidence) ... ok",
+    "test_focus_omission_is_distinct_from_catalog_unavailability (test_evidence_audit.EvidenceCoverageTests.test_focus_omission_is_distinct_from_catalog_unavailability) ... ok",
+    "test_failed_request_is_receipted_and_next_request_is_isolated (test_evidence_audit.SessionReceiptTests.test_failed_request_is_receipted_and_next_request_is_isolated) ... ok",
+    "test_rejected_input_is_not_copied_into_audit (test_evidence_audit.SessionReceiptTests.test_rejected_input_is_not_copied_into_audit) ... ok",
+    "test_fresh_read_after_success_cannot_hide_database_outage (test_neo4j_migration.MigrationTests.test_fresh_read_after_success_cannot_hide_database_outage) ... ok",
+    "test_missing_node_or_edge_fails_release_validation (test_neo4j_migration.MigrationTests.test_missing_node_or_edge_fails_release_validation) ... ok",
+    "test_modified_node_or_edge_fails_release_validation (test_neo4j_migration.MigrationTests.test_modified_node_or_edge_fails_release_validation) ... ok",
+    "test_recomputed_hash_does_not_allow_dangling_endpoints (test_neo4j_migration.MigrationTests.test_recomputed_hash_does_not_allow_dangling_endpoints) ... ok",
+    "test_source_path_escape_and_changed_bytes_fail_closed (test_neo4j_migration.MigrationTests.test_source_path_escape_and_changed_bytes_fail_closed) ... ok",
+    "test_unpinned_or_malformed_revision_rejected (test_neo4j_migration.MigrationTests.test_unpinned_or_malformed_revision_rejected) ... ok",
+    "test_disabled_tracing_preserves_query_result (test_retrieval_trace.RetrievalTraceTests.test_disabled_tracing_preserves_query_result) ... ok",
+    "test_failed_query_records_type_without_exception_secret (test_retrieval_trace.RetrievalTraceTests.test_failed_query_records_type_without_exception_secret) ... ok",
+    "test_requests_do_not_leak_previous_trace (test_retrieval_trace.RetrievalTraceTests.test_requests_do_not_leak_previous_trace) ... ok",
+    "test_validation_reads_and_supplied_evidence_are_distinct (test_retrieval_trace.RetrievalTraceTests.test_validation_reads_and_supplied_evidence_are_distinct) ... ok",
+    "test_driver_sealink_and_date_changes_cannot_reuse_pass (test_trip_assessment.TripAssessmentTests.test_driver_sealink_and_date_changes_cannot_reuse_pass) ... ok",
+    "test_outage_returns_saved_revision_but_no_cached_finding_then_recovers (test_trip_assessment.TripAssessmentTests.test_outage_returns_saved_revision_but_no_cached_finding_then_recovers) ... ok",
+    "test_replayed_old_write_cannot_resurrect_a_superseded_pass (test_trip_assessment.TripAssessmentTests.test_replayed_old_write_cannot_resurrect_a_superseded_pass) ... ok",
+    "test_identity_conflict_invalidates_dependent_reports (test_trip_state.TripStoreTests.test_identity_conflict_invalidates_dependent_reports) ... ok"
+  ],
+  "limits": [
+    "Passing unit controls does not repair measured recall failures",
+    "Audit log disk-full/unwritable behavior was inspected but not fault-injected",
+    "Trace passage IDs count clause_id/source_text records; route path_id and mutable condition_id payloads must be inspected in the full transcript"
+  ]
+}

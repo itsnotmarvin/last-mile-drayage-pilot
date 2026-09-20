@@ -1,0 +1,15 @@
+The following is a diff from the previous accessibility tree for Window: "Claude" with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
++											157 container
++												158 container assess trip drayage APM Elizabeth
++													159 container
++														160 text Searched available tools assess trip drayage APM Elizabeth
++													161 button Searched available tools assess trip drayage APM Elizabeth
++												162 container Assess a synthetic driver or dispatcher trip
++													163 text Assess a synthetic driver or dispatcher trip
++													164 button Assess a synthetic driver or dispatcher trip
++												165 container Ran a command
++													166 text Ran a command
++													167 button Ran a command
++												168 text Pulling the findings together into a clear answer.
++							169 button Scroll to bottom
+The focused UI element is 115 button Loaded tools, ran a command, used drayage-kg-prototype integration
